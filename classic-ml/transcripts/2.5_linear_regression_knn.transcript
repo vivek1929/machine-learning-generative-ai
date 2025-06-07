@@ -1,0 +1,2972 @@
+Video transcript
+This transcript is AI-generated and may not be 100% accurate.
+
+Unknown: Good
+morning everyone. Hope everybody is doing good
+morning. Very good morning. We wait for five minutes and then
+we start. Okay.
+Good morning everyone.
+Hi. Very good morning, maharash.
+Thank you, sir. How are you? I'm doing good. Thanks for asking.
+Okay, shall we start good to go, everyone?
+So let us follow the same style. I'll first start discussing
+problem, and once you understand, I'll stop for a
+minute, and then we'll take up the questions. Okay? When
+decision is going on? You
+I think we lost,
+yeah, I'm not sure if just me, but I'm not able to hear you
+better, but I think they get
+stressed,
+breaking in between.
+Okay, is it clear now? Yes, sir, okay, great, yes,
+okay, great. Now
+I think Alpha vice is not breaking right?
+Yeah, that's
+fine. Actually, it is
+heavy raining here, so maybe you can fail. So whenever you feel
+some disturbance, you can just
+ask me to repeat it. I'll repeat it. Okay.
+The topics are, I see regression model, but I'm not sure if
+different from
+come again. So what is the topic actually today we is in, I mean,
+I see regression model in your that's
+what we are discussing. Okay,
+okay, let's, let's, yeah, okay, fine, yeah. Let's see if it is
+matching with what they gave.
+I think it was KNN model. I'm not sure
+if you whatever it is given. Boss, okay, whatever in pre
+reading is given. Let me explain you later. You can, you know,
+help you. So we have, first half will be linear regression model.
+Second half we are going to discuss about K nearest neighbor
+algorithm. Okay,
+okay, let's start the session first. Please mute yourself.
+Whenever I say you have the questions, we can unmute
+yourself and you can ask the questions. Today we are going to
+jump. We are going to take next step, jumping into discussing
+classical machine learning algorithms. So we'll start with
+the regression model first. Okay.
+Okay, no problem. So no need to post in chart, please, because
+the chart, whenever I'm seeing something, I'm thinking that
+it's a question, okay, so let us keep it so first we start with
+the regression model. Just let us have a recap when we started
+with AML outdoors and, you know, when we discussed about
+classical machine learning in the beginning of the sessions.
+So we have like, what is the Y? Y is equal to fx plus mx plus c,
+what is those things? Right? Let us start with that problem
+statement first, when you look into this number, 13579,
+so if I ask you, what is the next number? So we say the next
+number is 11, which is an odd numbers.
+So when we say it's an odd number, okay, but can we write
+like any function, something like that, so that it can
+represent generic equation? So then we say, Okay, if you
+represent functional representation, it can be 2x
+plus one. Next equation, 139, 1933, if I ask you, what is the
+next number? Next number is 51 and what is the equation?
+Equation is 2x square plus one is the equation. So how do we
+solve these problems? So generally, when you look into
+the problem statement, as a human being, we are trying to
+see the pattern. And according to the pattern, we are trying to
+use one function, then we are implementing using those
+functions present values. We are inserting and we are looking if
+the answer is correct or not, if you are able to get the correct
+answers. Okay, this is the generic function. We can use it.
+And whenever you see an unseen number or a new number, put it
+over there, and that can give you the answers. This is what we
+are trying to solve.
+Now. So in machine learning terminology, we say that when a
+problem statement is given. Now today we just talking about
+regression model only Okay. In the first half, second half,
+we'll discuss about K nearest neighbor algorithm that is a
+classification so as we are into regression models. So what we
+are trying to do as a classical machine learning model, we are
+trying to understand the pattern. Then that pattern, we
+are deriving a function that is 2x square plus one, something
+like that. Okay, for example, in the previous problem, 139, that
+is right. So in that situation, we are trying to say f of x is
+2x plus one, something like that. So function is something
+like which is going to give us a complete pattern understanding,
+and then whenever an unseen data is injected in the suffix, we
+are going to get a new data. Okay, so how do we solve these
+kind of problems? Using machine learning.
+So generally, if you look into the life cycle of machine
+learning, we are going to have a data, and that data is given to
+an algorithm, and algorithm is going to produce a function
+known as f of x. This is what we are trying to do correct so our
+end of the goal, end of the goal of machine learning is we need
+to find what is the f of x value so that when in whenever we see
+unseen data is given, we can find the predictor value, okay.
+Now this is we know very well that is answer is 51 in this
+situation, okay. And the equation is 2x square plus one.
+And for example, if you have these kind of numbers, then, as
+a human being, it is tough for us. So then the rise of machine
+learning comes in, and machine learning can do the job for us.
+Okay. Now consider another example. Consider a series of 2d
+points, like 1326394,
+and 12. If I ask you, what is the next number, we say five and
+five two.
+For example, five, next number, what will be the next number?
+Five is a 15, right? So we can say five, comma x, comma, 3x
+something like that. We are trying to give correct. So we
+are trying to find the pattern, and then we have pattern we are
+giving. So if you are drawing a two dimensional curve. Also, we
+can see that for one, I got three. For two, I got six, and
+for three, I got nine, four, I got 12. So from this, if I'm
+drawing a line, something like this, so I can understand now
+that it is somewhere it is intercepting that will be your C
+value, and this one will be your slope. And once you know the
+slope and intercept, we can get a function y is equal to
+something like mx plus c. This is what we are trying to do.
+Okay, straight line.
+Okay, done. Now tell me, in these two lines, which is the
+best fit from your understanding, which one will be
+the best fit. Do you think left side or right side? Left?
+Left one. Okay, coming to the next. Here in this if you are
+looking at, for example, left upper and left down, right,
+upper, right, lower. If you are looking at we see the line which
+is passing through most of the data points that will be the
+best fit line. So what do you mean by best fit line? Best fit
+line is the one which passes through most of the data points,
+so it needs to pass through most of the data points that will be
+known as best fit line. Now how do we find this best fit line we
+are talking about, you know, classical machine learning in
+that. Today we are starting with one of the classical machine
+learning algorithm is the first algorithm is a linear regression
+in that we try to find what is the mathematical intuition in
+that. Then we are going to
+implement practically that into, you know, code part into the
+collab notebook. Okay, so now here, how do we decide which is
+the best line? So simple. When you look into the line,
+whichever the line is passing through most of the data points
+that is known as the best fit line. Another option is we can
+use, we can find something like, you know, errors. Also, we can
+find wherever the error is decreasing that one will be the
+best fit line. What do you mean by decreasing the error? That is
+known as a loss, and for that loss, generally, we are going to
+use in the further sessions. We call it as an iterative
+algorithm. One of the iterative algorithm is known as a gradient
+descent. We use that for that purpose. Okay, so in a glance,
+what we are trying to do is, for example,
+if you have some of the data points, how do we understand
+that? For example, if the line equation is y is equal to
+something like 2x
+Plus five. What do you mean by this
+means? Here we say that slope is two. That means Y goes, you
+know, up by two for each one increment of x. That means
+effect in X increments 1y will go, how much two units y, for
+example, for 0123,
+so for the value of zero, okay, one step, how much we are
+getting plus. So this how much time it is going to multiply two
+times. For one, how much time, two time. So for a one increase
+in X, it is the y value, is m value? What it is doing? It is
+going by two times. Okay, and what do you mean by five? Five
+is something like an intercept. For example, here is the line
+equation. Here it is touching. So when the value of x is equal
+to zero, what is the value of y? That will be your intercept. We
+call it in this example, if y is x value zero, then what is the y
+value five? So Y intercept is nothing but a phi. So we can say
+that a line which is intersecting on the y coordinate
+that is known as a y intercept. From there it is starting. Okay,
+so let us take a simple example. First understand the linear
+regression, mathematical intuition behind the linear
+regression, then we can implement with the code path,
+okay,
+so let me take an example here. For example, I have something
+very basic example I take, then we can implement any sample
+data. Okay. For example, I have one column as a temperature, and
+the second column is something like ice cream sales.
+Okay,
+now, so as the temperature increases, I want to predict
+what will be the ice cream sales, for example, for the
+temperature 20 degrees, sales is 200 for the temperature, 25
+sales is 250 for the temperature, 30 sales is 300
+Okay, let us take only three samples and try to understand
+the mathematical intuition behind a linear regression.
+Okay, if you want to plot this onto X and Y axis. How do we
+plot for example, this is the y axis and this is the x axis. Let
+us take 10 units as 110,
+2030,
+and 40. Let us consider as something like a 50 as a one
+unit, 50, then 101.
+50 then 200 250
+then we have a 300 Okay, now for 20 how much we have 200 so for
+20 we got 200 somewhere. Here is the data point. And for 25 we
+got 250 for this example, this is a 25 in between, how much we
+got 250 over here. And for 30 we got How much 300 is something
+over here?
+Okay, so now if you try to plot this, that means, if you
+understand in this graph, however, if you are plotting a
+line, this is the line which is passing through most of the
+lines, most of the points, correct,
+yes or no.
+Okay, that means, that means for one degree increment. So
+temperature increase, sales increases by how much, 10 times
+something like that. Okay, so that is the main idea. So how do
+you prove this technically. How do we draw this line? How do we
+get so to get the value of this so let me little
+bit mathematics. I'll explain. This is not needed, but for
+understanding purpose. Okay, now tell me, what is the x value? X
+value is 2025,
+and 30 y value is 200
+250
+and 300
+now let us say x times y. What will be the x times right? 20
+into 200 will be
+4025
+25 it is 625. So 6250
+33 it is 9000
+now, when I find summation of x, y will be, this is zero. This is
+five and two, nine plus 615, plus 419, 250 This is the
+summation of x and y, correct. Now let us find x square. X
+square only 2020. Is a 425
+25 is a 625. 3030. Is a 900 so summation of x square will be
+how much
+we are getting. This is five and then two, nine plus 615,
+1925, so.
+So this is what we got. It okay, this is 19,002 50. This is 1925
+now what is summation of x? Summation of x will be 20 plus
+2545 plus 30? How much 75 summation of y is
+two plus two, 400 750
+okay, then I have summation of x, y, summation of x, square.
+Logically to find the slope, mathematical formula is to find
+the slope.
+Slope m equal to how do you find the formula will be,
+we can say,
+I'll write down first equation, then I'll take up the questions,
+okay, n times of summation of X i Y, I then summation of x i
+times summation of y, I we have,
+then n times of summation of x i square minus summation of x i
+whole square. This is a formula to find slope n.
+Okay, let's substitute this n means how many samples we have,
+how many samples we have, three samples, summation of x and y,
+multiplication, how much we got 19,002 50 minus summation of xi,
+we got 75
+and summation of y, I, We got 750
+divided by again n means three times of summation of x square.
+How much we got? 1925,
+minus summation of xi whole square. That means 75 square.
+So approximately how much we'll get now this one will be 3003
+fives are 15, three to the sixth. One is seven. Three nines
+are 27
+three ones are three plus 257, negative seven. Fives are 35
+seven. Sevens are 4949
+so this one will be, this is
+750 right? It's not 700 so, 75 75,020
+587, 56, so 56, 250, divided by
+three times of 19253,
+fives are 15 and then three to the 617731.
+The three, five, okay. Next, 7575
+5625,
+okay, so we have 57,007
+50. Then 56,002 50, we are going to get zero. This is five. This
+is one. How much we got 1500 divided by so we are going to
+get this is 07 minus two is five. Seven minus six is one,
+150, 00, cancel 15, one, the 15 turns up how much we got stope
+as in M, so in y is equal to mx plus c,
+we got m as How much 10.
+So M is 10,
+then what we need to find, we need to find the c value. So c
+is equal to Formula summation of
+y, I, then the slope times of summation of x i divided by n.
+Now tell me summation of y i is how much we got, 750 right.
+Okay, so we got here 750 minus m is 10 and x i we got as a 750
+and then divided by how many samples we have three. So that
+will be 750
+sorry, 75 so minus 750 divided by three how much we are getting
+zero. So now we got the slope as zero. So once we got slope and
+intercept, then we are finding y is equal to mx plus c, so y will
+be MX is 10x plus c is the formula. So C is how much now
+zero. So finally, f of x will be 10 times of x. This is the
+equation we got it.
+Okay. So mathematically, when we are trying to do we are able to
+get something like M value as 10 and x value c value as
+around zero. We got it correct.
+Now let us implement the same thing inside a linear regression
+and see whether we are able to get the same values or not.
+Okay, so.
+How should we do that? So first of all, we'll get into
+collab.
+Can you notebook? I
+see 25 session
+today is 24th may 2025
+something.
+Let me share the notebook I
+it copy link, done.
+Yes, Manoj we will do that also. But y2, minus y1, by x2, minus
+x1, is the slope where you get it. But for a single value, it
+works. But when you have multiple values it doesn't work.
+Okay? So it means if you have multi variant, doesn't work that
+formula. So we are going to have mathematical formula like that.
+Okay, so first of all, what we have to do is let us first
+understand, before writing any algorithm, what are the basic
+steps? Okay, first thing is import all the required
+libraries,
+liquefied libraries. This is the first step. Second is read the
+file into data frame.
+Into data frame. Third step is pre process.
+What do you mean a pre process? If there are null values, okay,
+or something like, you know, special characters,
+remove them.
+Fourth thing, apply standard scalar. If you have some
+categorical values, apply label encoder. Then fifth one, what we
+have to do is we have to
+define what is x and what is y6. Step, split the data.
+How do you split the data? X, train, I expressed y train and y
+test. Next one we are going to have now create
+object of
+any algorithm
+then fit the model.
+Okay, after fitting the model, evaluate the model.
+So basically, we are going to apply all these step by step.
+First of all, import all required libraries. Second one,
+read the file into a data frame, pre process null values, and
+then standard scalar apply, split into X and Y, split the
+data into X and X train and y train, then create an object of
+an algorithm, then fit the model, then evaluate the model.
+So for this sample, we have a small sample, right? So we not
+injecting the data. First of all, let me explain with a
+simple example. Then later, I'll take any data sample from the
+UCI repository. Then we'll apply that step by step. Okay, so
+basically, we need to import all the required libraries. First of
+all, I want to import,
+for example, SQL learn dot, linear underscore model.
+Import which algorithm, linear
+regression. This is the first one I'm importing,
+okay from SK learn dot, linear underscore model we are
+importing
+linear regression. First step is done. Second step is we need to
+inject the data into a data frame. So presently, we don't
+have data to be injected. Let us define what is x and y. So I
+will take something like, you know,
+x is equal
+first value how much we have. 22nd
+we have 25
+and the third value we have as 30,
+then y is equal to, in the Y, how much we have 200 then
+250
+then 300 sons. So.
+Okay, we define x and y. Now, as we have only three samples, I'm
+not going to split the data and all those things directly. I'm
+going to create an object. What is the object? Now, model is
+equals to
+linear regression. Create an object, and then we write model
+dot fit X and Y. Generally, what we do we are going to train the
+model with X train and extras done. Now we want to print
+format. For example,
+slope
+m is
+model dot
+coefficient and a similar way, intercept is model dot
+intercept.
+Okay.
+Now, done. Print it how much we got slope as a 10 intercept, we
+got zero. So whatever manual calculations I did, we got the
+same or not.
+Okay, so that means this linear regression, what it is doing
+backside, when you are applying the linear regression, all these
+mathematical calculations are going on, and using this
+mathematical calculation, it is going to apply,
+then it is going to give a function f of x as a slope and
+intercept, once we got slope and intersect, and when unseen data
+is there, it is going to be applied. And now there is one
+myth. What Is that myth is people that think that in linear
+regression fit process, for example, x is 20, y is 200x
+is 20, 5y value is 250 x is 30 y, value is 300 so people, what
+they think is, generally, when they're studying the classical
+machine learning algorithm, especially linear regression,
+they say that in the first iteration it will find some
+value. Second iteration it will find next value. Third
+iteration, it is going to find the next value. That means what
+is slope and intercept for individual rows? Okay, so linear
+regression does not learn row by row. So instead of it uses a
+closed form solution. We call it. What do we call closed form
+solution? What do you mean by that? That means it is going to
+read the values like at this finding the summation of this
+mean and summation of this one, and then it is substituting in
+the formula. And then it is going to calculate the best fit
+line. So once it is calculating, so let us take that best fit
+line how it is calculating. So we got
+something like this. This is 1020,
+and 30. So we have a 20. We have, for example, let us say 50
+and 100, 150
+202
+50. Then 300 now for 20 how much we got 200 we got somewhere
+here, right? And for 25 we got 250 and for 30, we got 300
+Okay, so here actually it is going like you know, from the
+center, so intercept is zero, and the slope will be. We can
+calculate like this, because it is simple values. You can take
+it. This is how much
+25 comma, 250 This is and then this one will be 20 comma, 200
+so if you consider x and y1, x2 and y2 slow formula will be y2,
+minus y1, by x2 minus x1 so this will be 250, minus 200 divided
+by 25, minus 20. So 50 by five, five times a 50 like this
+period. This is for what only. You have only 1x value. This
+works single, smaller values. But when you have multiple
+values of you know, X, 123, features we have, then this
+formula doesn't apply. We cannot do that. So that is the reason
+we are going to take a mathematical formula to apply,
+you know, regression.
+So let me
+take the questions.
+You're open to the questions, please go ahead if you have any
+questions
+one by one, please raise your hands in the sequence I call yes
+Santosh, go ahead.
+So in this example, we have taken the values are 20, 2250
+3300, right. So automatically, we are
+meeting all the points. But if the values are not naturally
+aligned, we should try to draw a line which will meet most of the
+points. Is it Yes, exactly,
+and that that is called best fit. Best fit line? Yes, okay,
+okay, thank you. How do you issue that? By applying the
+statistical formula actually backside.
+A mathematical when you're writing a fit right at that
+time, it is calculating summation of x, summation of y,
+all those things and applying, yes. Srinivas, yeah.
+Can you go into colab?
+Colab notebook? Okay, yeah, yeah. Here we have taken x,
+well, x expression like a first brackets, and we read the list
+2025,
+but why we take now a single bracket to all the three values?
+So can we tell me difference? Why you taking like, what? Okay,
+okay.
+Okay. So generally,
+we have features and label. This is our concept, right? Yeah. So
+sometimes what we are going to do, for example, if you are
+defining a numpy array, we can just write NP, dot array of we
+can write 2025,
+30, then we add a function known as reshape, negative one to one.
+So here, what is the shape without reshape, before taking
+this will be three, like this, three comma, right? So when you
+say reshape, this will become 3131, in the sense three values.
+How many features? One feature, so it is a feature must be like
+this, right? And label must be some values. So if you are
+trying to put it in this way, we can say like features are
+something. If you have some feature, X, is there? What is
+the feature 20? What is the value of y, x, 25 and what is
+the value of 30? Index is 012, now why for these features? What
+is the level 200 for these features? What is the level 250
+for these features? What is the label 300 so skr needs this as a
+vector so that the combination of features can represent one
+value. That means, for example, here, if you consider Iris data
+sample in the x, what do we write? Sepal length, sepal
+width, petal length, petal width. For this, what is the
+species? For example, zero Setosa. For one, we have sepal
+length, sepal width, petal length, petal width, maybe one.
+So for two, we have sepal length, sepal width, petal
+length, petal width. So the features must be together. So
+that is the reason, as a matrix, we represent rows and columns
+understand so one row with all the feature columns. So that is
+the reason we define whenever we are taking x, we just reshape x
+as a negative. One to One are being closed inside the two
+square bracket to represent as a rows and columns. If I don't
+represent this, you are going to get single column only, right?
+The combination of columns won't work here. This is a single
+column which is assigned one single value. So that is the
+reason, whenever you see sometimes we write reshape to x,
+whereas for y, we don't write reshape, because y value is
+actual. This complete feature is assigned with one single value
+understood. Okay.
+Thank you. Yeah, welcome
+next question.
+Yeah. Who is there? Hanuman, sir,
+yeah. So if the mathematics behind this will be seen for the
+equations like y equal to mx square plus c, also
+MX square plus c, also polynomial. That is okay, so
+that does not, that does not come under this, right? No, no,
+no, we didn't discuss polynomial regression. We are just
+discussing, only, not about the quadratic equation, simple
+equation. We are discussing, okay, when it comes to quadratic
+equation, then instead of linear, we write poly, okay,
+okay, yeah. Uh. Arrow.
+Hello, sir. This is regarding the fitting process. If you
+could help us understand how this fitting thing works
+internally, how can
+it, you know, aligned itself in order to meet the most of the
+points?
+You want me to explain fit how fit happens. Yes, yes, true.
+When fit is called, that means we are passing feature and
+level, right, correct. Correct. When you are passing
+automatically, I have just completed all the mathematics
+behind that, right. So in the fit, it is going to calculate
+all those things, and then it understand what is intercept
+time coefficient.
+So like, let's have three points, or let's, let's have
+three elements in my data set, and two of them are matched, you
+know, meeting in the line, but the third one is out of the
+line. So then, how does fit that? See Tarun, every algorithm
+they have. So let me for everyone. Let me keep you one
+word for every algorithm. There's a mathematical
+intuition. Okay, so for a particular problem statement,
+for example, as Tarun said, if the line is not fitting
+properly, and when you find the score, score is below around
+says 50% something you are getting, you are not going to
+stick with that linear aggregation. So what we do will.
+Ahead with looking for some other mathematical intuition.
+For example, decision tree regressor or KNN regressor like
+that. If we stick to linear regression, we might have not
+got all the algorithms right. So main idea from the beginning,
+keep in mind, if you are unable to get something new data point
+comes in, how should I the linear regression doesn't work
+right? What should I do? I need to take another linear
+regression, so another algorithm applied. So whichever algorithms
+you are applying, every algorithm, they have their own
+mathematical intuition. Okay, for example, after the break,
+when we discuss about K nearest neighbor algorithm, it is having
+another type of mathematical intuition. So maybe in the first
+problem for this problem, whatever I'm discussing, it fits
+very well. It is drawing the best line correct. But when it
+comes to the data is not scattered properly, this
+algorithm doesn't work. What should we do now? We change the
+algorithm. As a data scientist, we don't rely on this. We'll see
+the score. If the score is not good, then we'll go to another
+algorithm. For example, we take decision tree regressor, which
+is working with the concept of rule based engine. Otherwise, we
+take a can and birds with similar feather flow fly
+together the neighbors algorithm that okay, then support vector
+machine margin line. So every now and then, we go on changing
+the algorithms. Whichever the algorithm giving the best score
+will adapt that Tarun, Okay, understood. Thank you. Okay, so
+keep in mind, going forward, that it is not the algorithm
+hole and so regression like this, we have 10s and 20s of
+regression algorithms. Are there? Okay? Understood? Yeah.
+Citage,
+Sir, actually, in this example, if one sample, another sample,
+it will be, suppose 3350,
+so from the two first two samples, the equation will be, y
+is equal to 10x but from the linear regression point of view,
+it may be different. So by you are saying that the passing
+through the two most points will be the best fit. So here y is
+equal to 10x will be the best fit. Or linear regression, that
+fit will be the best
+side. It is linear regression, best fit, or one or two here to
+just to black box I'm opening how linear regression works,
+right? So that black box I have opened with in front of you, and
+then I have applied an algorithm saying that. Okay, the
+mathematical intuition is something like this, if it is
+happening. So how do we know that this is the best fit line?
+One thing is you can visualize it. Other one, we can find the
+score. For example, when you say, model dot score and with x
+and y, if you are able to get good score, for example, more
+than 80% if you are getting algorithm is good to go. If it
+is, if you are not getting 80 more than 80% if you are not
+getting that means this algorithm doesn't fit properly
+to the data. We need to change the algorithm, another
+algorithm. Okay, so don't visualize the algorithm end of
+the day, because here we have just three samples you are able
+to visualize. But in real world, we don't have three millions of
+samples are there, so we cannot visualize them, and we cannot
+draw a line saying that intercept is coming here, and
+something like that, right? So only thing is, we are going to
+rely on the evolution metric. If the evolution metric is giving
+good results, we'll take it up. Otherwise, we'll just go on
+changing the data, or will pre process techniques will change
+it. Or what we'll do, then we'll try to implement some other
+algorithms. Okay, okay, sir. Thank you, sir. Yeah, very good.
+Jaipal, what's the question?
+Jaipa, sir, in my honest equations, is said y2, minus y1,
+by x2, minus itself. If I have
+three, four points, then this formula can be used. No, no, we
+cannot use that. That's what she said. Multi coefficient, it we
+cannot use them.
+Okay? Priyanka,
+Hi, sir. I remember in previous classes you used to fit,
+underscore transform here you used to fit. So just wanted to
+understand why. Because, okay, Priyanka, for algorithms, we do
+fit. But for pre processing, we say that understand and
+transform according, for example, standard scalar label
+encoder for those things, we say transform, change from one state
+to another state, okay, but in this, it means we are trying to
+understand the pattern derive the equation. Okay. So for all
+the machine learning algorithms, what we do? We do fit. For
+example, if you have from,
+uh, SK learn dot pre processing, okay, yeah. Then import, for
+example. I said, standard scalar.
+Now I get it so standard scalar, what it is doing. I said, Okay,
+go through the pattern, identify the values, and then
+transforming. Is that clear? Yeah, yes, sir.
+Thank you.
+Is how many of you understood standard scale of how it works,
+understood or not? Transform is happening, right?
+Yes. Okay, great. Anyway, I'll give you a simple example to
+make that understandable. Anyway, first, let us finish the
+limitation. Ashok. What is the question? Ashok? Go ahead, yeah,
+sir, came in here, right? So like, if, I mean, we are
+selecting the intercepting points and whichever is the best
+fit. And for example, like, if one of the regression is does
+not fit right, so do, like we are following a set of steps to
+collect the data and derive the algorithm. If that doesn't fit
+right? Again, we need to follow all for the different algorithm.
+Yes, I mean, yeah, okay. Again, we need to start from the
+beginning, not from the beginning. Just okay, replace
+the algorithm from here, this part, okay,
+okay, so
+the data collection and all which we gathered earlier,
+right? That will fit for any other, any other, any algorithm,
+any other algorithm. Okay, okay, got it. Thank you, yeah, sort of
+after here the basis of the linear regression is to identify
+the the relation should be, the relationship should be linear
+between the features and the Y, Y, right?
+How we identify that? Because here this the problem was pretty
+simple. We can plot in the graph, and we can identify, in
+case of multiple features, how we will identify whether the
+relationship is linear or not. Sort of one thing is we can use
+some of the external algorithms to do that. Otherwise, hit and
+run type, hit and run type, in the sense, implement an
+algorithm, look for the score if it is not working, change the
+algorithm. That means algorithms which work for non linear data,
+also that we have, okay, okay, thank you. Manu, Ash, if you are
+done with the question, please lower your hand. Banana, also,
+if you are done, please lower your hand. Manu, yeah,
+Sir, actually. Robin, questions, for example, we have millions of
+data, right, so we have already pre processed it. Now we are
+going to travel with a model, so that is giving some lows. So how
+would I know? So now, what is my next step, whether I have to
+reprocess again with some other kind of mechanism, or I have to
+change the model, on what basis you will decide? So one thing,
+Manu, first of all, the step is, if this particular algorithm is
+not working, for example, okay, you are getting the list score.
+We'll apply standard scaling first, and even standard scaling
+also, if it is not working, then we'll see maybe there is a
+chance of data pre processing technique itself is a wrong we
+check it still. If it is not giving accuracy, then we'll take
+a step to change the algorithm.
+Okay? So there is no basis right
+experience,
+but one thing we can do is, later, onwards, I'll show you,
+once you have these things, I'll give you some
+algorithms which can do the job for you. Like, why data
+profiling is there, right? So through web data performance, we
+can get some insights. So from the data dependency, then we
+apply the feature engineering. So definitely, after getting the
+feature engineering, there is a library known as app tuna, okay,
+so in the second unit, third unit, when I take technical
+session, just remind me, I'll give you the example at the
+time, because now at the time, you are good to go with
+understanding of what is optimized so that optional can
+help you understanding that. Okay, boss, you made a mistake
+in pre processing, or you made a mistake in the standard scaling.
+Maybe standard scaling doesn't work here, apply min, max scale
+or something like that. Okay,
+thank you. Yeah.
+Sorry. I think from long back, you just ran I didn't see that?
+Yeah, sir. My question is about like in like, in the tensor
+product js, in tensor pro.js we can add a console dot log, and
+you can see what is happening, how it is happening. So same,
+same way, can we see the code of the SK learn and how the
+regression model is actually excluding? No, no, we can't.
+Okay, it is a complete black box. You cannot see that.
+Okay, yeah. Vijay Bhaskar,
+Habib, you have list down some steps in the one notebook,
+right? So can you come Okay, map that with this one, whatever you
+listed in the program. Okay, let us do that. Let us map that.
+Okay, one by one. So if good to go with all the questions. Now,
+everyone is done.
+Everyone is done.
+Okay, let us do one thing. Let us apply all this. Okay, first
+of all, go to UCI repository,
+machine learning repository, let us download
+just taking your time so.
+Okay, now we have auto
+MPC I'll take and implement with that. Okay.
+Search for auto mpg.
+We got auto mpg.
+Download the data, which is around 145 KB, okay,
+so extract this.
+Now let us open auto mpg, this data names.
+Okay, so what are the names? Tell me, names is equal to, ah,
+good,
+miles per gallon, mpg,
+then second, one cylinders,
+displacement,
+okay, This place went, ask power,
+ask for weight,
+then wait, ex relation,
+and we have
+acceleration.
+Then model year
+motor, underscore, year
+origin,
+origin,
+car name
+then let us take our under Support name.
+We take this,
+we'll see, close this and close this, close this.
+Let us go to this session.
+Okay, told me give it as a name something. Now upload the data,
+which data we are using, auto, mpg, which one dot, D, A, T,
+okay.
+Now, let me just execute this. Keep it aside. First step is,
+what is the first step? Now, let us map here. I said import all
+required libraries. So let us import. We know the problem is
+linear regression. So we can say, from scale, learn dot,
+linear underscore, model. Import linear regression. Okay, first
+step the need to pre process. So from SK learn dot pre
+processing, okay. Import which one standard scalar, okay, then
+from SK learn
+dot model, underscore, selection, import we need to do
+train, underscore, test, underscore, split, okay,
+import pandas as PD, import NumPy As NB and import c1
+as SNS, whatever the libraries required, import all of them.
+First step is done.
+Second step, read the data into data frame. What the data frame?
+Data Frame is a structure and which have some functionalities
+where we can apply so, auto mpg, dot, CSV, then we know how auto
+mpg, right? We did with the data free processing let us apply
+directly. Names is equal to names and what is the separator
+we use? Separator is equals to half. Go ahead, single quotes,
+slash
+s plus, right.
+Yes, we did it or not. In the last exercise, I'm not going to
+Yes, sir,
+yes, we did it. I'm taking again that same mea values is equal to
+question. Let us say there's a question mark, right? Perfect.
+Now, done.
+So it says there is no Oh, sorry. Mpg, dot, D, A, T, right.
+Okay. Now, C, D, F, dot, info, first step to check whether the
+data is proper format or not. Okay, all of them is float and
+integer, object, perfect. Now, df.is, Na, dot sum, what it is
+going to do. It is going to give us. Is there any null values?
+Are there? So we see horsepower have null values, right? So we
+can say new data, frame, DF is equal, DF, dot, draw, na
+done.
+Okay. After doing this, what we need to do now. First step is
+done. Pre processing is done now. So when you say df, dot
+shape, we can see how many samples we have, 392, by nine.
+Second step is we need to define what is.
+X and y. So what is x? Now, x will be, let us say df, dot
+columns so we see miles per gallon, cylinder displacement,
+origin, hard spot, something like that. Now, let us define
+features. What is the x? Now, I am going to take the cylinders
+up to, for example. I'll consider origin also, okay, take
+that.
+So how do you do that? Df of two square brackets, we have tried
+separated. Okay, now we got
+x value after that. What is y. Now define what is Y. Y is
+equals to df of carbon, no, no miles per gallon regression,
+right? Okay, okay, we are going to find miles per gallon. Okay,
+x and y. We got it. Now. The data is not uniform, right? So
+if you look into DF dot head, we can say data is not on the same
+line. DF dot head, when I say data is not on the same line. So
+here we have 18 and eight, something like that. So what
+should we do now? We need to convert this into standard
+scalar. So we can say that we need to already we applied the
+standard so x underscores k. So first define the object. Scalar
+is equal, okay. What is the class we are using standard
+scalar. Okay. Then
+let us I'll just transfer directly x itself X underscore
+scale is equal.
+Now you see here I said fit underscore transform, because
+standard scalar is not an algorithm. It is a pre
+processing technique. So I'm saying first understand the
+sample, then transform it. So this is the next step done, once
+the data is transformed, what should we do now? Next step will
+be anupa said, Where was the problem with data? What is the
+problem with data?
+He's asking why we are scaling.
+Uh huh, okay, the last time I think I discussed right. Reason
+for that is, for example, weight is how much we have, four
+digits, miles per gallon, two digits. Cylinder is eight as a
+human being. What we do when we look into the data samples,
+whoever is having the highest values will construct those
+depending upon that that we are going to predict machine
+learning algorithm also will do the same thing. It will be
+biased towards the columns which are having highest values. So
+what should we do? We need to make them, all of them, into one
+scaling so for that, how many scaling techniques are there
+three types of scalings we have. One is standard scalar. Second
+is min, max scalar. Third is the Z scaling again, please.
+Srividya, you said, What about non numerical data? Don't we
+need to process? Do you find here car name? I'm not
+considering okay, because it doesn't depend on a car name. So
+I took only x. If you are considering the car name, then
+we need to do the label encoding. Okay, could you please
+print data after pre processing? Yes, I can just write down x
+scale.
+You can see the data like we have 1.4 1.0 like this scale
+data.
+Okay,
+so how scaling happening? I'll explain, because most of the
+people, their brain stuck there. Only they say that, how the
+scaling? Black Box of scaling. How happens? Okay, I'll do one
+thing.
+Let me take some t is equal to 123,
+okay. I want to scale this data.
+To scale the data we write z is equal to x minus mu by sigma.
+What is mu? Nu is the mean,
+sigma is standard
+deviation.
+Okay,
+now tell me
+for this mean and standard deviation, how we are going to
+find,
+tell me what is the formula to find the mean
+sum of all the values, number of average,
+one plus two plus three by three, some divided by number,
+yeah, okay,
+so six by three, that is two,
+okay. What about the standard deviation?
+Okay, so mean is how much
+three by three. So this will be how much we are getting. Two
+plus 336, by three means how much we get two.
+Got it. Okay. Now we are going to find the standard deviation.
+So.
+How do you find the standard deviation?
+So standard deviation is we are going to get
+square root of x minus for example, the mean whole square
+divided by n samples. So we are going to get one minus two
+square one minus two square plus two, minus two, square plus
+three, minus two square divided by how
+many samples we have three. So we got one minus two is how much
+one two minus 203
+minus 211 plus one is how much two by three, so square root of
+two by three.
+Okay, tell me what is two by three.
+Two by three means 0.36
+1820, remaining three, 618, something like this. So 0.66 so
+square root of 64 is how much eight, right? Eight, eight is 64
+so we can write something zero point how much? Tell me, take
+your calculator mobile tell me square root of two by three is
+how much
+0.82
+0.82 we got
+square root of sigma mean into mean by n, 0.78 What is this?
+0.78
+0.816 Yeah, 816, is the correct one, precisely. Okay, now we got
+sigma z. Now tell me what is the first value. First value is one,
+second value is 2/3, value is three mu, how much we got two
+sigma, how much we got 0.816
+something correct. Okay, now for this Z, how much will take to
+tell me one minus Mu is how much two by 0.816
+for this, one two minus mu is two 0.8163
+minus two 0.816
+so this is how much negative one by 0.8160
+by 0.816
+this is positive. One by 0.816,
+tell me one by 81816,
+how much we got?
+Okay, I do my calculator
+itself,
+1.42 1.22
+okay, 1.225 okay, perfect. So we write negative 1.225
+1.225 now, please use your microphones. This is we did
+manual calculations. Right?
+Exactly?
+I'll do one thing here. Let us say C is equals to one, comma,
+two, comma, three. Okay. Now new underscore. C is equal to
+scalar. Dot fit underscore.
+Transform which 1c
+then print new underscore. C,
+oh, sorry, we need to give it in last square bracket again.
+What is happening?
+It? Underscore, for see it got 00, you pass
+the data, print, no, NP, dot,
+okay,
+no, no, I said just standard scalar.
+Scalar, just a minute, just a minute. DFS is equal to
+it
+is taking previous values. Let me, I'll change that. Okay,
+don't worry.
+So here,
+let us say C will
+be, C will be how much one, comma, two, comma, three,
+then close it.
+Okay. Sf is equal DFS, DFS of what is
+C, right,
+transform, SF,
+okay, we got negative 1.220
+1.22 we got it or not. Same thing we got or not. When
+we do manual calculations, you got the same right? Yes, sir,
+negative 1.220 1.22
+so now you understand the black box. What is standard square is
+doing clear? So.
+So it is going to apply the particular value minus mean
+divided by standard deviation. So that's why we are getting
+this 1.48 1.08 like this, scaled values. We got it. Okay,
+okay, now we got the scaled values. Once we got the scaled
+values, what should we do now Next, press split the data. How
+do we split the data? X, underscore, training, then x,
+underscore, test, then Y, underscore, training, then Y,
+underscore. Test is equal. Train, underscore, test,
+underscore, split
+x, underscore, scale data. I need to take y and random.
+Still, you know, what is 0.2 0.2 in the sense, 20%
+I kept for testing, remaining 80% I took for
+training,
+whatever random still it is, randomly we are shuffling the
+data.
+How many times we are shuffling?
+Two times like that. So, good. Shuffle. Okay, done. We split
+the data after that. What should we do now? We create a model. LR
+is equal, for example, linear regression. Create object, then
+we say, LR dot fit on which data train, Data X train and y train.
+Okay, done.
+Now we need to find the scores. Scores will be on both like, you
+know, we have on X ray and y train. We need to find the score
+and extract and white test. We need to find the score. So LR,
+dot score. We can say x, underscore, train, y train.
+Print the score. We got 82%
+then LR, dot Score on test data, also we need to check so X test
+and y, test, test,
+okay, we got around 79 means 80 percentage, 82% both are very
+similar, very similar. Algorithm is good to go with production
+actually, we can use algorithm for production purpose.
+Okay, so
+like, What do you mean by production purpose? Either we
+can use some of the tools, like, you know, BOC to create a radio
+or something. Now, if you look into this process here, let us
+say one by one, what we did, first of all, we imported all
+the libraries, done. We read the MPG file into data frame. It is
+done. Then what we did? We pre process the data. Yes. We
+replace the null values. Next one standard scalar applied. We
+don't have any textual data, so we don't work it. We define what
+is x and y, then we apply, okay. Then split the data into extreme
+done. Then create object of algorithm. LR is equal linear
+regression, done. Then fit the model, done, then evaluate the
+model. We trade it correct, create
+or not.
+Yes, yes,
+okay.
+Now, tell me any now open to questions. Please raise your
+hands and I'll take up the questions before giving you a
+sample in production how things will be.
+Okay. Please mute yourself. Only the person who is raising the
+hands they are unmute them to unmute themselves.
+Okay. Kishore, what's the question? So, in our pre
+processing technique last time, right? We use some algorithm to
+select the features, right? But here we have kind of selected
+all the features. Does this in like, have any impact on the
+score, definitely it will have an impact Kishore. But feature
+engineering we didn't study, that is just select k best one
+sample is given. So when you study in the unit two, we are
+going to see feature engineering. After studying
+feature engineering, those techniques will be applied in
+pre processing. Okay, okay. But if, in the same example, if I
+use select k best features does? It will also have change in the
+score, right? Yes, change in the score. And it can say that
+latency on the CPU can be decreased because instead of
+taking all the columns, we are considering small columns. But
+selects k is not the industry standard Kishore. It is just for
+you people to understand how the features are selected. Okay, so
+we don't use select k best real time. Okay,
+thank you. Yeah. Welcome
+next question, sir, which part will call out of this code
+create object of algorithm
+out of the scope, in the sense this, this code, what we wrote
+down in the collab, okay, out of the scope. I didn't get you.
+What do you mean out of the scope, out of the code. This
+code, what will be the create object of algorithm?
+Yeah, large. Equal to linear regression. Linear Regression.
+This one.
+Uh,
+when you are studying object oriented concept in Python,
+after defining a class, how do we create an object? We say a is
+equal to class name, right? So now linear regression is the
+class name. I'm creating an object with the name LR. Now,
+instead of linear relation, I can access all the methods in
+linear regression using LR, for example, LR, dot, predict, LR,
+dot, score, LR, dot, fate, like that. So score, fate, predict,
+they are part of linear regression class, so I need to
+create an object of that class. Clear, yes.
+Hi. So I a bit. So
+you have explained a mathematical formula as to how
+the linear regression works, right? So you have walked us
+through that. Is that the only kind of implementation that the
+linear regression has? Or does it have different kinds of
+implementations within that,
+in that in other algorithms, they have different
+implementations, like, for example, good question they can
+use. Sometimes, there is a technique called as, for
+example, beta is equal to we are going to say x transpose time of
+x, inverse then x transpose of y. This is also used, what is
+this? This is going to give us the
+slope and intercept. It is going to give you two things. Now,
+tell me, what is x? Now, x is 2025, 30, right? And what is Y?
+Y is 202
+50 and 300
+Now tell me, x transpose in the sense what happens it will row
+will become column. So how we'll get 2025,
+30
+correct x will be 2025,
+30 to the power of negative one. Okay, I will do later on what
+this one? I'll just keep it here. Now tell me, so how we are
+going to do the calculations. It is row times one, right? So
+2020, 2400
+plus 625, plus 900
+so how much we are getting here. Tell me around. Huh? Nine plus
+six is 15 plus 419, 1925, 1925,
+negative 1x, transpose, y, okay. Now tell me, 1925 negative one
+means, can I write this one by 1925
+Yeah. Okay. Now, what is X transpose? Now, tell me, x
+transpose is 2030
+2530
+what is Y? Y is 200
+300 and sorry, 250 and 300 correct. Now, when you multiply,
+how much we get?
+400
+Okay,
+4000 4000 4000 sorry,
+yeah, 9009 169,000
+9000. 19,002, 5019,
+25 so how much we are getting now? So 10, comma zero, so it is
+in the list format you get it. So what is the slope? Now, slope
+is 10. What is interested zero? This will also be applied
+mathematics, okay,
+right? So the linear regression library that we used, which kind
+of implementation does it use internally? Is it this one or
+the one that you described earlier? This one earlier,
+earlier used? Okay, okay, yeah, thank you, welcome, okay, is
+that clear?
+Okay, now, how do you predict? How do you predict? LR, dot
+predict.
+Okay. Now actually, for example, let us take a test sample.
+What is the test sample? Test is equal to NP, dot array of okay.
+Take
+any test sample. For example, let me take these values so
+is so how much miles per gallon we are expecting? 80. Correct.
+Okay, eight comma, this comma, this comma, this
+now tell me algorithm is trained on the raw data or scale data,
+scaled data. So
+what should we do now, when we algorithms trained a raw data,
+who said data
+we take? This is the raw data. Boss.
+Raw data is something like this. After we are scaling people,
+fitting right, we are fitting on scale data, not the raw data. So
+when I'm giving an input raw data, prediction is wrong. So
+what should we do? Take the input data, first, scale it then
+do the prediction understood. Okay?
+Okay,
+seven features. Was not expecting one feature as input.
+It is not giving seven features. See, missing. How many features
+are there?
+1234567,
+features NB,
+scalar, dot, transform, test,
+let us Print
+test, underscore, scale, click,
+transform,
+to do
+the scale input need to be there only for the input parameters.
+Okay, now, LR, dot, yes, only input parameters,
+the scale
+predict. Right?
+Let's get how much we got, how many parameters? LR dot predict
+good, but it is giving seven features. One feature is
+missing,
+1234,
+okay.
+Actually, we need to convert into data frame. I'm trying, if
+it without data frame, also, it's working well and good.
+Found array with three dimensional regression expected
+to perfect.
+Let us see why it is giving features how many features we
+have?
+Test Kit, we got it perfect.
+So test care now has shape one and seven
+sample with this.
+Okay, let us do one thing,
+take these values directly. So
+seven rows, one column, so you need to transpose it like
+meaning seven features, one row. You have to say again, sir, the
+test scale is actually showing us, okay, okay, got it. Got it.
+Just give me a moment. Let us do one thing. Can
+you do the reshape of that? No, no, let me just explain. LR. Dot
+predict. Yep, there is a mismatch over there. Here, we
+need to get the first value
+and then the second value,
+then The third value,
+then fourth value,
+then fifth value. So
+so last 1/6,
+and seventh values,
+then get this.
+Okay,
+so we got this one correct. We got negative 21630,
+so what should we do now, actually, this is in standard
+scaling. Again, we need to do the reverse one correct or not.
+We need to reverse it or not. Yes, yes, okay,
+we can say
+here
+whatever the value are getting. Let us keep this in the result.
+Result is equal to something we got it when you print the
+result. We got
+this one right now, scalar.we
+have inverse transform the result, whatever result we got
+it, and we can keep that in two dimensional value.
+So how much we got inversion? We got some error. We.
+17.659
+Okay, so it is 17.65 in 100 percentage. You have to divide
+it, okay. So 17.6 means it's approximately how much we got
+around 18 correct. So 17.6 18 means nearby. So let's say,
+right? That is the reason we got around how much we say, 80% of
+accuracy we are able to achieve. Okay, so this is where we are
+just trying to predict some sample values. Now, if you want
+to apply, for example, a sample you want to show in real time,
+there is a library. We call it that is, we call it as radio.
+Okay, so radio is actually, let me just show you what is radio.
+Okay, so this is for building a machine learning model sharing.
+That means, if you want to give a POC at the time, we are going
+to use what you call radio. So most of the companies, like
+Google, Amazon, Facebook, like, you know, IITs and MIT, those
+people, they use this one to just show the POC. What do you
+mean by that? For example, here, let me take the simple example.
+What is that? Okay, let us take this one.
+Okay, now,
+fit the algorithm. Where is that? Okay?
+Intro, C,
+okay, then we write model dot predict.
+For example, I want to predict for
+25 temperature, how much sales will be there. So we got 250
+correct answer or not
+correct? Yes. Okay, so now what we do if I want to implement
+using radio for this, one input is one, right? So first of all,
+we import radio as gr, then we need to define a function, for
+example, test, which is going to take one number,
+then using the number it is going to return,
+let us say
+result
+is equals to model dot predict that particular number, return
+the result. Then
+we write,
+interface is equal
+gr dot interface, we are saying a function is the test function.
+Calling inputs is one number. Output is a number, and we just
+write down launch when I click this very simple.
+It will take a moment.
+Okay, you will get something like this interface. If you want
+to access here, share is equal true. If you writing share is
+equal to true, then even you can access it is going to give a
+link which is staying for around one week, okay, one week anybody
+can access. That means, if you click this, for example, when we
+write 25 when I say submit,
+I'm going to get the values.
+Okay, so it is taking time, so just to click this here, you'll
+get an interface.
+So this link anybody, you can share with anyone stakeholders.
+No need to create any, I did create any interface or
+anything, right? So generally, basically, when you are writing
+a simple algorithms and POCs. At that time, we use the radio this
+one, so no need to have any knowledge of what you call,
+for example, any UI, for example, you don't need to have
+no JS or something like that. Anybody can just print by
+writing of two, three lines of code. Okay, we'll see that in
+depth. How we are going to implement just I have given an
+example.
+Seen data accuracy should be close to 100% correct. Okay,
+that is 82% we got born, not 100% the previous example. For
+this example, you get 100% okay. Now let me take a question from
+Ashok. You raised the hand for a long time. Do you have any
+question
+or yes, yeah, I have one question.
+So your first one is, I'm trying to understand the score
+function. So is it, I mean, the underlying fact that, like, I
+mean, is it the calculation based on the algorithm which we
+derive? Right? So how many.
+Data points. Is it is passing through by the number of points?
+Is that like, when, how you can understand? Yes,
+okay, so that means, like, if it is more than 50% means, yeah,
+most of the points it is touching. So we can predict that
+it is good algorithm Exactly. But when you get a regression,
+actually regression, you don't get exact values, nearby values.
+Okay, you don't get for 1818, you don't get sometimes 17.5
+17.9 like that. Okay, if it is a prediction, classification, will
+get exactly Apple banana or something like that. Yeah.
+Regression values.
+Yeah, got it, sir. And another question I have is, like, so
+you're saying that the regression algorithm we are
+using to predict right. So
+as a data science engineer, are we going to use, which is there
+available in the system, or, like, are we going to build in
+feature? So how the the
+block bugs currently working right? So we will use, what is
+the
+question as a data scientist? Yeah. Yeah. So I mean this
+linear regression algorithm, right? So we are using it as is,
+like we are based on the test data. So in future, in the
+also, we will use the same way. Or are we going to do
+anything, doing your PhD research, something you take a
+linear regression and just go through the methodology and
+conclusion and see what are the problems linear regression is
+giving if you're coming up with a new one that is a research but
+as a data scientist, okay, we just implement them out.
+Okay, sir, okay, got it, yeah? Thank you. Yeah. Naveen, what's
+the question away
+So, sir, one question on the Predict part of the auto mpg,
+example, when we try to test the value right, we got the scaled
+value as minus 18. And then when we bumped up we tried to get the
+original value. The original still came it as minus 17. But I
+was expecting the value to be the one shown in the actual
+debt. It should be 18, roughly or near to 18 right positive
+value? Yeah, yes. But actually here when you apply a scalar
+inverse function,
+so in real time, when we are using regression techniques. So
+instead of, you know, standard scalar generally, we imply
+minma, because standard scaling, the chance of getting a negative
+values, right? So if you are getting a negative values,
+actually we just because we are going to convert that symbol 82
+positive, we don't have any negative values in that, right?
+So that we have to apply it is internet is not there. So if you
+want to do that better, we go with the min, max scalar, or we
+use the Z scaling techniques. So this is a sample data. Actually,
+we didn't implement it in real time. If you are implementing if
+you're implementing so then the transformation will be
+different. One, right? We'll see that if you are getting negative
+values, better to choose the other kind of scaling
+techniques. Okay? Thank you, sir. Yeah. Bianca,
+in the grade your example, you defined a function test and
+where you are passing variable in, but when you are actually
+using function test, you are not passing anything. So internally,
+what gets passed? There? Here, input.
+Oh, okay. Inputs will be the passing to this. Sir, okay. But
+how? Okay, inputs you are getting from the web like you
+are taking on the fly. Yes, here only right, so that it will
+understand the logic. Okay, see the one here you are defining.
+Okay, okay, got
+it. Yeah. Welcome next question. Aditi, sir, I know you have not
+picked up this topic, but whenever you get time, save you
+can discover this, so often I read some jargons, for example,
+overfitting. So this is a some features, these terms which
+explain, I think, the data, how we are choosing. So if you take
+some time, if you can just explain little bit on these,
+whenever you are teaching third session, next session, when we
+discuss a quotation tree, there is a separate session for
+overfitting. Okay, okay, sir, thank you. Week you have in the
+first thing June, you have the session decision tree at that
+time complete over fitting, under fitting, best fitting,
+feature engineering, everything. Little bit is there. Okay? We'll
+discuss, though. Thank you, sir. Thank you. Yeah, sort of
+when we are doing the scaling and all this, right? So we did
+the same. We use the same object to scale the test variable as
+well, right? But in the normal project scenario, when we deploy
+this model and when the new data set is coming up, so how we are
+going, because, how we are going to use the same scaling object,
+like because that scaling object is only pertaining to this code,
+right, when we deploy the model, then how we are using the scalar
+in that in those scenarios, those scenario, same scaling for
+that particular value only. So the scaling will be done on this
+particular values only. This object doesn't need previous
+scaling technique, okay, so what it is doing just because already
+fit is done, right? So when it is doing fit that object,
+understand the pattern, and then we have to apply here.
+So for example, in real time, what we do is, whenever new data
+comes in, as you said, Very good question. Sauron, in real time,
+what we do is we just fit it and then transform on the test data.
+So we don't transform the original data. We tell the
+scalar to understand the pattern from the original data and then
+transform the test data. So instead of using the previous
+object here, we need to create an object of the original data
+and pass it to the scalar, understand, then do the fitra.
+So here fit transform can be split into fit and then
+transform to process understood. Okay, perfect. Thank you. Yeah.
+Welcome. Good question. This time you know you people are now
+you are moving towards the maturity of the machine learning
+algorithms. Very good questions, rain and you see Nova scoop.
+Tell me what's the question? Yeah, same
+before. So data is continuously updating there. So how can we
+give the exactly this one? So, okay, Understood.
+Understood or not. What I said,
+yeah, not sir. Okay, Sourav asked me that, sir, if we are
+building a model, okay, when you are building the model, we did
+the scaling, so model understand the previous data, okay? But
+when you're passing a test data, it doesn't know what is the
+previous understanding the pattern, right? So without that,
+if it is scaling, there is a mismatching. So I said again, if
+you are scaling a test data, we create a object, and we don't
+transform the original data. We just say fit, understand the
+previous data, and according to the transform the test data.
+Okay. So here the Fit transform will be converted into fit, then
+transform, then that particular data will be given to the values
+clear,
+okay, but this data is every time is uh, updating, or
+dynamically, it will update. So whatever the data we are
+that is dynamical updating pipeline, you have to do, go to
+the GitHub repository. Then you have to write down the script on
+that GitHub repository. Okay? So for example, if you take any
+GitHub repository and you're writing a pipeline that, okay,
+whenever data comes in, you have to say that, okay, apply the
+standard scaling, find the null values, all those things we do
+in the pipelining. So in when you are real time you're working
+in the GitHub repository, you create a repository, and then
+you write the GitHub action script on that, okay, okay, I'll
+show that. Don't worry. I'll show that. Okay, thank you.
+Sorry, yeah. Jaipal, sir, you mean the test. Sorry,
+sir. Here you get scalar right. But in earlier example, as we
+see minus one point and zero point, here we are getting
+seven. So here also we should get minus one range, right?
+Minus one through some one range. Why? It is a difference,
+depal You didn't say, followed by exponential of 00, plus two
+divided by 1010, by 210,
+plus 1.33
+Yeah, okay. Here is there. Exponential is written. If you
+round up, you will get those things. Okay, yeah. But he said,
+last class, he said, right, some scalar wellness will get some
+range of minus one to two? Is this the standard for every data
+set we will get that? No, no. It depends upon the data, because
+we are applying x minus mu by sigma, right? So mostly between
+negative one to one. But it is not compulsory. Negative 1.2 to
+1.3 depends upon the data sample scaling, okay, but if you are
+coming to the min max scaling, it always between minimum and
+maximum. Okay, yeah, got it.
+Dhaiwati, what's the question?
+Yeah, in continuation to saurabh's question, I'm just
+reiterating my understanding. So you mean to say, in
+real standards that test data and prime data goes through the
+same pre processing pipeline.
+Yes, only features, yeah, only features, yeah, yes, perfect,
+yeah. I mean input the features we give to predict, yeah, go
+through the standard scaling, same scaling, yeah. That all we
+keep in a pipeline. So to both, we apply the same box, the
+pipeline box, yeah, we write CICD pipeline so that both will
+go through the same scaling techniques and we are
+implementing, yeah, thank you. Thank you. Okay, good. So before
+going for a break, let us take
+simple recall. Recall is we started with, what is a linear
+regression, right? So, what is a linear regression? Now you
+understood linear regression, that linear regression is a
+technique, mathematical technique, where we are going to
+take the data in two dimensional or three dimensional and using a
+best fit line, it is finding a.
+Function that function best fit line. Function is taken and it
+is used for future predictions. So there what we did. First of
+all, we imported all the required libraries, then we
+injected data into a data frame. Then after that, we defined what
+is x and what is y. Then applied some scaling, and after that, we
+are splitting the data into X train and y train. Then we are
+creating an object of a linear regression. Then we say, LR dot
+fit, and then x train and y train. Now behind the black box,
+we opened it, and we said that, how algorithm identify the best
+fit line. Is it going by iteratively? No, it is known as
+a closed form solution. We call it. So generally, if you are
+using some algorithms, are there in going forward use that is
+known as a what do you call Stochastic gradient descent? We
+call it as a name, gradient descent, every time it is going
+to get for the lower values and the best step values. So
+iteration will be done at that time. It is going to take row by
+row values and then refine it. Or when we discuss about neural
+networks, perceptron model, those things work, but generally
+for for example, in this situation, it's called as a
+closed form, directly apply. So the last formula, what I
+discussed is x, transpose of x, negative one times of x,
+transpose of y. In this way we are going to get the slope and
+intercept. This is a black box of a linear regression. So once
+it is done linear regression, then we are going with a
+deployment. Either we can deploy using our own GCP Azure, or
+something like that, but we don't have a deployment now.
+Deployment will discuss in unit four about the algorithms,
+right? So just to have given in a class like a gradio, if you
+are not understanding, gravity is not a problem. In coming
+sessions in unit two, we are going to discuss in detail how
+the deployment will happens in the radio. How do we define the
+values and what are those things? Even if you want, you
+can just go to Radio. The documentation is very easy. He
+will give you a simple use that simple example, and you can
+implement over here. Okay,
+so radio is not similar to stream lit, Suresh. Radio is
+just only in, you know, local we are doing, whereas a stream lit,
+you can deploy, and you are going to convert that into what
+you call an IP address you are getting. Using that IP address,
+you can access that streamlet, and deployment of the streamlet
+is supported by most of the Cloud Platform. So generally, we
+don't use streamlit. We use the fast API, which is the latest
+technique and industry as a data scientist and engineers, they
+use it. Okay,
+so next question, okay, still you have questions, okay,
+Chakrapani, what's the question?
+Chakrapani, for here we have used only one input variable and
+one output variable, right? So, yeah, can linear regression also
+have multiple input variables and output variables and
+not multiple autompg, how many we have?
+Automp, example, we took it right? Chakrapani, there we
+have, ah, miles per gallon we are predicting. But what we are
+taking cylinders and all those things are not taking weight.
+It's multiple values only, right. Okay, yeah, yeah.
+Hanuman, what's the question? Yes, sir. So in this case, since
+we have multiple features, we will get multiple coefficients
+right? Yes, multiple coefficient x1 x2 x3 like that, yeah. And so
+depending upon the score, we can say that the model is good. But
+how will I know that this is the right? This is really a linear
+regres Or it can be even a quadratic or a polynomial,
+right? But how will I know when should I go to the different
+model? Yeah, good question. Armand when, if it is not linear
+equation, you don't get the score of 80, you will get 2030,
+something like that. Okay, okay, so that makes sense that okay,
+it is not needed, right? So when you write LR dot coefficient,
+you can print, see, 1234567,
+coefficients are there, right? We got here because how many we
+have? Seven features, clear, yeah,
+what's the question? So now let us go to the break. Yeah, sir,
+can you summarize the scaling? Let's say, in scaling, we'll do
+the fit and transform, right?
+Let's say, if We'll not do the fit, what will we write the
+problem? So I'm not, I mean completely make a summary of it.
+Okay, so now, very simple. Here scalar. We are saying fit,
+underscore, transform. Reason is when you say fit, fit is the
+normal keyword, right? So fit is the one which is understanding
+the patterns. Once you understand the pattern, that
+means you identify the mean, standard deviation everything,
+and apply those things onto the scale data. That is transform.
+We call it the fit. What it is doing. It is finding what is the
+mu and standard deviation. When you say transform, it is
+applying those things onto the data. So the combining, we call
+it as a fit. Underscore, transform is that clear? So.
+Hmm,
+sir, if you could, can explain with one small example still. I
+mean, it's not example for everything you cannot open black
+box, not okay. So generally, you tell me, pick what happens. Tell
+me, everybody knows, right when you have an algorithm, scalar,
+dot fit when you say it is going to give you a function or not.
+Yes, okay, here in the scalar the function, instead of
+function, it is giving us mu and standard deviation, Understood,
+understood or not? Yeah. Now, okay, fit, underscore transform
+means using this values. It is transforming x value like this.
+So this is happening in transform. So this is happening
+in so when you write, fit, what happens? It is finding mu and
+sigma. When you say, just transform, then it apply this
+one and x minus mu by sigma, it will do now it is clear.
+Okay, yeah, okay, good, yeah, please. Go ahead. Next question
+is faster. How many again? Okay. Rajita, go ahead. First. Let us
+go to the I don't have a question. I wanted to take a
+screenshot of the steps you shared some time back, like
+importing files and
+Okay,
+now it's 1040 if you don't have any questions, you can go for a
+break and we'll back by 1110. Okay, yeah, rajita, take your
+question, please. Rajita,
+no, I wanted to take a screenshot of that steps, which
+you shared sometime back in that boat. Some nine steps to share
+PDF. I'll share after the you know, session, okay,
+okay, yeah, so could you please share the data file,
+auto, mpg, why never they go to USC, we say repository, download
+it. Right. Okay. Okay, sure. Yeah, okay. Mahesh,
+yeah. Okay, oh, well, train the model. We only scale. We only
+transform the features set right? We didn't scale why,
+but
+labels will be changed. We don't scale why
+features once we predict we are inverse transforming the result,
+result, because, if you are trans, if you are converting
+that right, if I convert because I didn't touch it,
+okay, if I don't touch it, you have to get it. Otherwise you
+can get the values. Okay, I'll show that with an example. Okay,
+okay. Deepam, what's the question? Deep? Man, Hi, Doctor.
+So my question was like, you know, I don't know whether you
+have covered it earlier or not. That you know, in scalar dot
+inverse transform, our result is negative. Is there any, you
+know, significance of that negative
+mean is highest value, then negative will get deep. And I
+have given the formula right, x minus mu, if your mu is highest
+value compared to the value of x, definitely get a negative
+value. Yeah, that I understood even in the inverse transform.
+Why is it negative? Because inverse transfer means because,
+as we applied the standard scaling negative values are
+there that is impacting actually, we need to convert
+that into positive. That's it. Okay. So that negative and
+inverse transform has no significance. No significance,
+nothing. Okay, Okay, understood. Thank you
+so Okay, everyone
+take a break, and it is now 1040 we'll be back by 1110. Good to
+go.
+After the break, we'll start with k, nearest neighbor
+classification, and after that, we'll take more questions, if
+you want. We can take it. So keep in mind that, how black
+now, just the boundary. Start thinking later, onward, step by
+step. In unit two, when we expand, we get more ideas of
+like, you know, how to implementation, all those
+things. So black box, I'll try to open and mathematical
+intuition. I'll show you that. Just try to understand that
+mathematical addition. Okay,
+we'll be back by 1110, I think. Okay,
+welcome back.
+Lot of questions here. Data is the first row from heads above
+MPG prediction based upon seven feature, the AMI, when often the
+inverse, negatively, it is actually there is somewhere we
+are colliding with them, you know, data maybe so the result,
+fmpg is, anyway, in standard, typically enterprise, you
+publish your own API platform and other application, call
+consume API. Yes, correct restaurant.
+Okay.
+Shall we start everybody just ping, yes. Dr, Avi, I have a
+question. Yeah, please go ahead if you open that code that you
+written.
+Okay, do.
+I cannot see it. You cannot see it. Okay, sorry, I didn't share
+so,
+yeah,
+right, the standard scalar is applied only on the input data,
+right? It's not the transformation is not applied
+actually on the Y.
+On the label, meaning which is NPG over here. So when you did
+that 17, when you actually read, try to calculate or predict the
+value of the row that we had put in, we should not be doing the
+inverse transformation, if I understand, right. Yeah,
+exactly. But what happened is, in the previous we combined two
+models. So there, when you're compiling the above code,
+somewhere, mpg also converted. So that is the reason I did it.
+So if you are copying all of that at single place, for
+example, let me do it
+here. Okay. Now why I'm saying that is, I'm actually able to
+get 14. Yes,
+approximately 14.9 you will get it. I'll show that. Okay.
+Because, yeah, if it is clear that we are not going to apply
+reverse transformation, if it was already separate, I'm fine
+with it. Yeah, actually, thing is, like previous code, which is
+having, you know, interpreting with the R code. That is the
+reason I did
+the reverse transformation. Okay. So anyway, I'll just give
+you the moment everything will be clear. Okay, here, okay, the
+first one,
+what I will do here is just, I'll change the runtime
+completely.
+Disconnect. Okay, restart the session. Okay.
+Restart. Yes, okay, now good to go.
+Where is the data we have? So let us take this part.
+Okay, control C.
+Then
+we need to drop null values. Where is that?
+Drop any
+okay. Then after that,
+we can see
+x and y.
+Then apply standard scalar
+we're applying on only
+x values.
+Okay. Then after that,
+we
+split the data.
+Okay? After that,
+we
+apply the transformation here due to the same code, previous
+code, it was doing
+now,
+auto MPG data we are reading time by dropping the values.
+Okay, done. Now we can say new underscore data is equals to
+np dot array of Okay. So what do we have now, tell me how much we
+activated.
+We took this one right? Where is the value?
+Control? C,
+I took these values, okay, because already in the array
+format, even if you don't reshape, not a problem. Now new
+data scale is equal to new data when you apply here we are
+getting data is transformed. Okay? So once the data is
+transformed, what should we do?
+What is the model name? LR, right. LR, dot predict
+a new data scale data, you can get around 14.89
+previously, why I did reverse? Because there is a
+transformation is already applied on that, because I have
+added two
+programs together, right? So, due to the availability of
+lapping, did it? So in the case if you are getting you have to
+do the reversing. But here, if you're writing independently
+with a new one. Now directly we can, because we are only scaling
+the features right, then you can get the data. So 14.89 actually
+is 18. So we can say around 15. This 118 so three is the
+difference. We got it still, if you want to, you know,
+increment, you know, increase the accuracy. Instead of linear
+regression, we go with another example. So for example, K
+nearest neighbor regressor, we can apply, okay. But anyway, we
+are going to first start with classification, then we'll see
+if the time permits. I'll show with KNN. If it is going good,
+that's good.
+Thank you. Yeah. Welcome you.
+So let me take the next part.
+Okay, now we'll start with another interesting algorithm
+that is known as K years neighbor classifier. Now we
+start first half. We took the regression problem,
+so in regression, the target column is the continuous values.
+Then we apply the regression, then we are able to predict on
+that. So for that, now we got the complete, you know, the
+steps right, similar step we need to apply. Now we need to
+take an example of a classification. So the simplest
+algorithm to understand is the K nearest neighbor classifier.
+Will start with KNN
+in glance. What is k nearest neighbor algorithm? That means,
+for example, I have some of the data samples, x, x
+and x is there some like this, triangles I have, whenever a new
+data point is inserted here the question mark, so it is
+surrounded a majority of the cross marks. If I ask you, what
+is this question mark? You can say, Happy. The question mark is
+cross. If I have some value here, you can say, what is the
+question mark? You can say happy. Question mark is the
+triangle. So this is how it will be calculated. Word. This is the
+nearest neighbor. We'll see that. Okay. First,
+let us start with a sample PowerPoint presentations, and
+then we'll jump into the implementations. Okay?
+So first we start with k nearest neighbor algorithm. It says that
+birds with similar feather, they fly together. This is the,
+actually the concept behind k nearest neighbor algorithm. So
+it says that whenever an unknown sample is given, looking at the
+neighbors, we can decide what that unknown sample is, whether
+it is belongs to which neighbor, majority neighbors, we need to
+consider, how do we consider? We'll see that, for example, let
+us say we have a two features. Just
+we have 10 red and 10 green box. And testing is five blocks are
+there, for example, here. So when you look into the black
+boxes, immediately you can say, for example, these are oranges,
+and these are orange and Opal, and this is something. So when
+I'm taking minimum three neighbors, tell me, what is this
+question mark? Question mark is orange. This question mark is
+orange because majority is in this epsilon radius. What is the
+majority in the three neighbors? Majority is oranges, right? So
+it is going to say it's an RN here, majority is apple here,
+majority is an apple here, majority is a orange. So
+whenever you put some question mark here, we are going to look
+into number of neighbors. If I say number of neighbors is equal
+to three. So just draw, uh, you know the circle around the three
+neighbors, covering three number neighbors, and in this neighbor,
+whoever is having majority, that majority level is assigned to
+that question mark. Okay, so for example, we got it three
+neighbors. We got it.
+For example, whatever the majority is there, according to
+that majority, we are able to assign the data. For example,
+let us say we got three out of five correct answers. We got it.
+This is for example. Okay, so actually, how do we calculate
+this is the way we calculate it. Now, after calculation, how do
+we check that our model is performing well? In the previous
+algorithm, we got, actually, it's the regression. Regression
+is going to use a mean square error technique, and from that
+it is deriving the score. So we can say that actual value is
+18.0 miles per gallon, but predicted value is 14.8 so
+difference is the mean square error. What do you have? That
+error is nothing but a loss. We can say, okay, that much loss.
+So we can say that up to 80% is nearer, but remaining 20% is
+missing, right? So that's what we are trying to understand. But
+when it comes to classification, we have a clear idea. Model is
+working on how much data samples and how many correct
+predictions, how many wrong predictions that can be done?
+Okay? So for that, we are going to find the accuracy here. So
+instead of score, we can find the accuracy also. What do you
+mean by accuracy? For example, three out of five got correct.
+If we got five out of five Correct. Mean, that means, what
+if I say five out of five, everything is correct, if I'm
+giving five samples and it gave the five answers, correct answer
+100% accurate, right? So for example, if you say three out of
+five got correct, we say that accuracy is 60% error is 40%
+so now 60% is not a good model, right? So we say that more than
+80% if you have something industry, actually, we accept
+the model, and then later onwards, we are going to create
+a pipeline to improve the accuracy of the model. Okay? So
+those things will discuss later in. How do we improve, you know,
+improve the accuracies. So.
+So what is the accuracy here? Accuracy in the sense we are
+going to check we are going to take the test. So in simple
+words, for example, I have five test samples, okay? And one is
+say apple, and second, say orange. Third, said orange,
+fourth said Apple And fifth, side and apple. This is actual
+test data, okay, but the model predicted something like this.
+It said orange, and then orange, then orange, then it said
+orange, then it said apple. Now tell me actually it is apple,
+but model is predicting orange. Now this is orange. This is
+orange perfect. This is orange. This is orange perfect. This is
+apple. This is orange, apple. So out of five samples, like you
+know, how many it is predicted correctly, how many predicted
+correctly? 123, predictions correctly, remaining two wrong
+predictions correct. So from that, we can derive that, okay,
+what is the percentage of accuracy? We can do that. So
+when it is coming to the classification model, finding
+the percentage is very easy there. We can use one matrix. We
+call it as a confusion matrix. We can use it like how many
+correct predictions and how many run predictions, for example.
+Let me give you a simple example.
+Say, apple
+and orange,
+apple and
+orange like this. Okay,
+so there are five samples, five answers. We got it so, model
+said apple. And actually, in the
+data, which I kept aside, that also Apple, how many correct it
+recognized, three it correct recognized. And when it comes to
+Apple orange, there is no
+misclassification. It did perfectly. It never said that
+Apple is orange. Now coming to the orange, it said Apple,
+something. Maybe it's predicted one as a wrong actually, RN, but
+it said Apple, now orange. RN, correctly predicted as a three,
+for example. Okay. Now, how do you find the accuracy? Accuracy?
+We can find how many correct predictions, Apple, Apple,
+whatever it may be, this is the correct prediction. Diagonal,
+orange, orange. Orange is the correct prediction. But model
+said orange. But in the test data, what is there? Apple is
+there? Okay, so that means there's a one mistake here.
+There is no mistakes totally. How many samples we have? Seven
+samples out of seven samples, what is the correct predictions?
+Tell me six. Diagonal six. So now six divided by seven means
+how much we get approximately
+zero point ah.
+Seven eights are 56,
+seven nines are
+63,
+eight point something correct. So how much accuracy we got? 82%
+accuracy we got it. So this way we are going to identify the
+accuracies. So in the classification problems, we are
+going to find the accuracies, something like this. Okay, so
+what is the correct predictions and the wrong predictions. We'll
+see that
+now coming to the slides here, and we said, Okay, now what are
+the challenges in K, nearest neighbor algorithm? Neighbors is
+the challenge. We need to take neighbors generally negative
+values, and that means 3579,
+like that. The reason is, if you take positive values, sorry,
+even numbers, okay, instead of odd numbers, what happens if you
+take four? That means when the question mark is surrounded by
+four neighbors, this one and this one. Now, what is the
+majority?
+No triangle. Majority, not cross. Majority, right? If you
+have an odd number, for example, two and x and data, and, for
+example, another triangle. Now five, okay, odd numbers, we can
+say, how many you know triangles, how many classes?
+Majority is the triangles? We are going to assign question
+mark with the triangles. So that is the reason in K nearest
+neighbor algorithm, k value is always with, considered as a odd
+number, and coming to the like, how many we take, generally,
+maximum K neighbors will take, go up to 30, less than 30, if it
+is crossing 30, then we'll stop the K nearest neighbor
+algorithm. Then we go with the another classification
+algorithm. Okay, so now the question is, okay. So how do we
+know that these are the nearest neighbors? When I say nearest
+neighbors right, nearest neighbors means, from this
+question mark, you are going to find the distances right,
+whichever is having nearest distances, you are going to
+write in ascending order when i.
+Say three, you're going to take top three. When I say five,
+you're going to take top five data samples, which are near to
+question marks, right? So how do we calculate that? To calculate
+that we are going to have three kinds of distances, generally,
+we use it, okay, we'll, I'll just discuss those things like
+one example, we are going to use Euclidean distance, either we
+are going to use a Manhattan Minkowski and hamming distance,
+anything we can use it, any one of the distance we can take it.
+So generally, hamming distance is like a binary value. So if
+you want to use hamming distance, the values the column
+must be binarized, okay, otherwise we cannot apply. So
+generally, we use the Manhattan and Euclidean three, these two,
+we use it. So what is the formula for Euclidean? Euclidean
+is summation of x i minus x2 whole square. That means, if
+there are two points, x1 and y1 and x2 and y2 How do you find
+the distance square root of x2 minus x1 whole square plus y2,
+minus y1, whole square. This is known as Euclidean distance.
+What about the Manhattan distance? Very simple, x1, minus
+x2, modulus plus y1, minus y2, modulus, like this. We do it.
+This is Manhattan distance. Now coming to the Minkowski.
+Minkowski is a generalized form of Manhattan and Euclidian. How?
+Let us see an example. Man, when you say this one, Manhattan is
+similar to the we have a combination of, you know,
+modulus operator and to the power something, right? So if
+the value of q is equal to one, then tell me what is the formula
+summation of i is equal to one to k, if the value Q is equal to
+one, what happens this one will become
+mod of x, i
+minus x, k, x
+becomes man at a distance, right? Yeah, the value of q is
+equal to then this will become U. Summation of i is equal to 1x
+i square one by two, one by two means I can write square root,
+right? So square root of this one is nothing but which
+distance, Euclidean. So if it is more than two, then only we call
+it as a Minkowski distance. If you want to find the Minkowski
+distance, minimum Q value will be how much three. That means,
+if Qi value is equal to one, which distance man had done, Q
+value is two, which distance? Euclidean distance, if q value
+is equal to three, which distance? Minkowski so when we
+are defining the parameter at that time will define, okay, and
+then, what about this hamming distance? Hamming distance?
+Hamming distance is applied onto only the binarized column,
+numerical columns you cannot apply. First, we have to
+binaries the column, then the hamming distance will be the
+binary values will be calculated. How much distance is
+there? Okay, so these are the distances we are going to
+calculate. So here
+how we are going to find the nearest neighbors by using the
+distance. For example, I'm considering Euclidean distance.
+What is the Euclidean distance? Square root of x2, minus x1,
+square plus y2, minus y1, square, for example, between two
+values. Okay, next one, another one, if, like previously, when I
+give k is equal to three, for example, neighbors is equal to
+three, we are able to get some correct answers and remaining
+long answers. When I increase the value of neighbors, we are
+able to get more corrections right, more correct values. That
+means maybe I'll get 100% of the accuracy. So k value is
+something like hit and run. We can use it or later onwards.
+What we do is we are going to use grid search CV algorithm, or
+up to now, to find what is the best K value. Meanwhile, what we
+do, we just write an iterator for loop, and then we hit and
+run with the k value wherever we are getting the best accuracy
+that k will be considered. Okay, so now coming to the next part.
+Somebody, please mute yourself. Sonia,
+okay. Now, when it comes to,
+as I said, we have, whenever a new data point is introduced, we
+are calculating the distances, and then we are going to find
+the distance right. According to that, we are going to classify
+whether it belongs to class one, class two or class three. Okay,
+so in the K nearest neighbor algorithm, what is the main
+criteria? Criteria is the distance is the criteria? Then
+neighbors is the criteria? Okay, then depending upon the whatever
+the region, in that region, how many neighbors we have,
+depending upon those neighbors, we are going to give a label,
+okay,
+for example. Let us take
+an example. Before that, I think there is a lot of questions. Let
+me take in the chat box. How do we define decide? Q.
+Two very skew,
+okay,
+okay, Abhishek, right distance is it is something like depends
+upon the accuracy. You can choose it. If you have binary
+columns, go with the hamming distance. Otherwise, you can
+take any one of the distances. You can take Hamilton,
+Manhattan, or Euclidian or anything. There is no like, you
+know, not compulsory. There is any thumb rule saying that this
+is, you know, what do you call we need to take Euclidean only,
+or we need to take, you know, for example, Manhattan, or any
+hamming distance something, this is up to you only try and find
+the accuracies if you are changing the Distance Matrix, if
+you are getting accuracy well and good, you can use it, okay.
+Uh, Pavan Kumar says that. Can you explain why K need to be R?
+Okay, if the k is not odd, and if you are taking neighbors as
+an even number, for example, I have two cross marks surrounded
+by two
+triangles. Now, what is the majority? Now? Is it possible if
+I am taking a even number, majority identifying is not
+possible, right? So that is the
+reason. Always consider it as a odd number. So if it is the
+cases like multiple, more than two classes, how we are going to
+do it.
+More than two classes, how we are going to do? Yeah? Because
+in that cases, it is a possibility, like a majority may
+not be a identified easily.
+Yeah,
+that's the increase the number, right? We are
+going to increase that because that odd number logic may not be
+working there. That's what I am no, no, fresh. Our number logic
+works there. Maybe you have three or four numbers also
+majority. How do you come account with our numbers only,
+right? So if you have even numbers, there is a, if you have
+three, then divide by two to two there is a, again, means it is
+ambiguous, right? Which one should I take it? Okay, so that
+is the reason we take as a. But my example, my example, My
+example is like, for example, there are three classes, Apple,
+oranges and other fruit. Okay, yeah. Even if you take the odd
+there is a possibility of two apple and two oranges and one
+some other thing, yeah, yeah. Then even if it has a odd
+number, we are not able to clearly identify the majority,
+yeah. So No, no in that case, okay, Suresh, but randomly it
+will select it. Okay. So in that case, if you think that k
+nearest neighbor is not a good choice, then we'll go with
+another algorithm. Okay, sure. Thank you. Okay, so it is not
+fixed that we have to take this one only, as you said, in that
+case, we got two, two and then one. Then what we do? We are
+going to use the water class voting classifier there. Voting
+classifier is not only going to give us what do you call the
+numbers, it is going to give the probabilities also what is the
+highest probability. Then we choose that. So going forward,
+use it, but you know, if it is not working, we'll go with
+another algorithm.
+Thank you. Okay, so before going for the questions, just let me
+take Give me two minutes. I'll explain in detail, and then
+we'll take up the questions. Okay, now,
+everybody have in mind that in fit process, what happens it is
+going to create a function, right? This is what we have in
+linear regression. When we say fit, it is identifying what is
+the slope and what is the intercept. So from that, we are
+able to get a function, something like mx plus c. Now
+whenever a new data comes in five so we are saying that two
+times of five plus one, we are saying is 11 is the answer. But
+when it comes to
+K, nearest neighbor algorithm, remember in fit process, it is
+not going to give a function. It is going to memorize the
+location of the data. What it is going to do? It is going to
+memorize it. So after that, in the fit process, it memorizing
+where is the data. So let me give you a simple example for
+understanding. Let us say I have some data samples. X is equal.
+Two features are there? Okay, two features means three and
+four and two and three, for example, four and five and six
+and three and five and for example, eight. And this is
+prediction classes. This belongs to class one, class two, class
+three. How many classes we have now, three classes correct. Now,
+if you draw
+a diagram like this. Okay, now tell me here we have, 1234567,
+and eight. Here. 123456,
+how much eight, right? So we can say
+seven and eight. So for three and one, how much we what is the
+level? Three and one? Level is one, correct? So three and four
+level is one. For three and four, what is the level? Level
+is one. Then we have.
+Second, one, two and three. I think right, two and three level
+is one, so two and three level is one, next, one, four and
+five. Level is six, four and five,
+four and five label is how much two
+and then six and three level is two. Six and three level is two.
+Now,
+what is the last number five and eight? So this is five and
+eight. What is the Label? Label is three,
+okay. So say this is one label, this is second label, and this
+is a third label.
+Okay. So now, when I say fit, what happens? It memorizes
+dislocations when I say predict. For example, when I say predict
+three and five, what is answer? So, where is three and five?
+This is three and five is here. This is a question mark, right?
+So it is going to again swapping like this, and introduce the
+question mark here. Then find the distances. So in fit
+process, KNN is what is trying to do. It is memorizing the
+locations of all the classes on the two dimensional or three
+dimensional. Okay, so this way we call this as a lazy learning
+algorithm. What do you mean by lazy learning? KNN is not
+learning any pattern. It is memorizing but defying the
+locations. Whereas linear regression, it is memory,
+understanding the pattern, deriving the function in the fit
+process Correct. Whereas in KNN, it is not understanding the
+pattern, it is memorizing it locations. And when you predict
+what happens, it is going to call that complete location. So
+that is way KNN is called as memory intensive algorithm. That
+means if you have a small amount of data, we can use KNN, but if
+you have huge amount of the data, don't use KNN. Go with
+another classification algorithm. It's clear. So why
+KNN is known as lazy learning algorithm, because in fit
+process, it is not trying to learn the pattern, it is just
+trying to memorize the location, so that in the prediction it can
+put that locations, and then you, whenever a new data point
+come in, it can calculate the distances. Okay,
+so before implementation, I'll take up the questions.
+Manikonta says that in Minkowski, what Q denotes and
+what basis we need to decide. Manikanda actually, when you are
+defining the KNN algorithm there, we write the parameter q.
+So to pass that Q, Minkowski is taken, okay, so if it is one, it
+says that Euclidean. Instead of writing Euclidean, we can just
+take it as a simple write down Euclidean or Minkowski, then
+write the value Q as two. It will be Euclidean. We'll see
+that, okay, how to choose a distance it is completely after
+getting the accuracy, we can see which one is working fine.
+According to that, we take addition, okay, okay. Now, let
+me take the questions. Anubhav, go ahead.
+Hey, hi. Can you open the PPT? I have questions from one of the
+PPT page,
+yeah, go to the page where it is defined. It is maximum 13. I
+didn't understand that maximum,
+yeah, which is 30,
+yeah, this one
+that yeah, k equals two, three, assume that it can also be
+some I didn't understand this page. Actually, you're
+explaining.
+I said K value, generally, we take odd numbers. Okay, even if
+you take even number. Also, some cases it matches, like somebody
+fare, somebody told me, right, when you have two to one like
+that, in that situation, try with even number. It works,
+okay. Otherwise better, always choose the thumb rule is odd
+numbers only if in the odd numbers, it's unable to get the
+values better to change the algorithm. Okay? So always we
+say that odd why? Because majority finding, if the odd
+number is then it is good. That is the reason we are taking but
+in some cases, like, you know, hypothesis cases, if you are
+taking three classes are there, then you have two, two and one.
+In that situation, negative doesn't play any role, right? So
+maybe because two of them are equal majority, then how to
+decide? Then better to change the algorithm. Go with some
+other algorithm where probability is there clear.
+Okay, okay, got it, yeah,
+okay. Now, sitar, what's the question? Siddharth, yeah,
+sorry, actually, I am not able to understand the Euclidean
+Manhattan. And can you just repeat once again, please? Uh,
+sitar, actually, they are finding a distance between two
+points. Okay, we'll see that. Now, if you say that, I need to
+find three neighbors. Okay, when I say in the KNN, I need to find
+the three neighbors. How do you find the three neighbors? For
+this is a question mark. Okay?
+Okay, I want to identify three neighbors. How do you find from
+here to here? What is the distance here to here? What is
+the distance here to here? What is the distance here to here?
+What is the distance right? Whichever is near one. I need to
+choose them as a neighbors, if the value of k is equal to three
+correct. So how do we know that they are nearer? We need to have
+a distance. So to calculate the distance in mathematic we have
+different distance formulas. Are there? Either you can use the
+Euclidean distance, or we can use the Manhattan distance, or
+generalized form of these two, is known as a Minkowski
+distance, anyone we can use it, okay, just to find the distance
+clear. Is there any way to decide which one to pick?
+No that is totally on you generally, we use Euclidean
+distance. If you want the Manhattan distance, also you can
+use it, but that depends upon your data sample, due to some
+you know, absolute values, when you are finding there is a
+chance of, you know, the distance, maybe going in a way,
+or sometimes, you know, near. So what we have to do, we have to
+see the accuracy. If the accuracy is good, use that you
+know distance, otherwise, change the distance. That's
+it. Okay, perfect. Thank you. Kishore,
+so my question is more on this distance part, a bit like when
+you have, like, a point where we need to calculate distance,
+right? There are some points can be very far right. So do we
+calculate the distance of every point from that particular
+reference, or no? How much
+for that? We say that whenever you're applying K nearest
+neighbor algorithm, you have to apply standard scalar, then only
+apply the
+K nearest neighbor so when you say scattered scalar, which are
+away from the center, they will bring to the towards the center.
+Okay,
+okay, yeah, that was my question.
+Good. Good question. Neha, so Dr, Habib, I understood that for
+KNN, fit is used to get the coordinates right, but not
+coordinates, just memorizing the locations, memorizing the
+location of the other, like the nearest and all. But what would
+be the difference between training and testing that,
+right? I understand the intensive every time you run it,
+or you have to do it for a given point, then it would run for the
+whole set again, right? There is no difference between train and
+test. Yes. So in train, there is no Yeah, good point, yeah. So
+test is different. Train is different, right? So when you
+say, train, what is happening, it is memorizing the location,
+right? You test it, what happens the memorized locations, it is
+mapping with the test data, and then it is finding the distances
+and says that, okay, the this is an error neighbor, that feature
+is assigned so training part, it's just trying to memorize the
+location in the testing part that is creating a copy of that
+memory.
+Yes, just implementation only. There is no training. Correct
+got Yeah.
+We call this as a lazy learning algorithm. If anybody in
+classical machine learning. Do you know any lesson learning
+algorithm that is KNN,
+yes. Thank you so much.
+Aish, good morning. Yes, sir. For the this apples and oranges
+example. Now you choose k as three, five and seven, and we
+calculate the all the three distance that is Euclidean,
+Manhattan and minosky? Anyone? Anyone? My question is that if
+you do that, if we do that, then I'll have a matrix of three by
+three right, K on the number of k's on the x axis and the
+various distances on the Y axis. Now, how do I choose that? This
+is the best combination for me,
+for not only, difference. You are not choosing anything.
+Algorithm is choosing. When you are taking the value k is equal
+to three, okay, maybe you have three dimension or four
+dimension. We are not mapping the values with that values. We
+are mapping the
+class right? In that classes, we are finding the distances. So
+when the mapping the class, class is generally in two
+dimension or three dimension, but the class to class distance
+is same, right? So that, if you have a three points, distance is
+same, x2, minus x1 whole square y2, minus one whole square x3
+minus x3 whole square, like that, z1, minus z2, whole
+square. We are calculating that distance only. So mapping three
+dimension four dimension is not a problem, because we are
+considering only the label of the class and the
+classification. Okay, so that distance will be calculated. So
+don't think of like, you know, how the things are mapping only
+the distance between three four it is going to calculate by, you
+know, for example, k n algorithm. We are not going to
+bother any distance calculating and embedding it. When you write
+fit and when you predict algorithm automatically take the
+distance matrix.
+Okay, I think I probably did not explain my question properly. So
+I'm saying for let's say k is equal to three, right? Okay, is
+three. I'm doing three iterations. I.
+Are nearest neighbors and three neighbors?
+Yeah, three neighbors, three
+levels distance.
+Now this, if I do for a K is equal to five, I will have a
+different classification for the unknown label. Yes, correct,
+sir. Now I do it for seven, another different so how that
+what is the optimum k similarly, what is the distance? I mean,
+optimum which distance? Okay, good question. Okay, when you're
+having what is the best K value? Is the challenge I share? Okay,
+okay. So for that, what we do is, generally, we didn't do any
+up to now implementation or bit search CV, we didn't discuss,
+right? So generally, we use up to now, and we'll give that
+okay, what is the distance? Best distance battery? What is the
+best K value it is? It will do all the iterations combinations
+from stating value of k from one to 30 something. Okay, but now
+we don't have that implementation. What we can do
+is here we'll type the k value, for example, from three to 25
+something. Then what we'll do, we'll find the accuracy in each
+k value. Wherever you are getting good accuracy, we'll
+say, Okay, this is the best K value. Understood. Understood,
+that's right, yeah, yeah. Thank you, yeah. Revati, what's the
+question? Dhaiwati,
+sir, my question is related to distances are in the pre read
+material, the Euclidean distance, is related like,
+referred as a crow, flying from one point to other point.
+Manhattan is like moving on the roads. And when it comes to the
+third one, miniscopy, some So, sir, if it is q is greater than
+two, I am just trying to relate to the real world. Is there some
+example you can give, like
+generalized formula that is not like everything must related to
+real world examples on the road or on the fly, right? It is
+something like you have a generalized formula of Minkowski
+is like cube root when you have more simple thing, distance
+values decrease, right? When you are writing the cube through
+same utility distance only the distance values decrease. That's
+it.
+Okay,
+yeah. Sindhu, what's the question? Sindhu,
+okay, so, sir, I'm trying to understand, like, what exactly
+is the machine trying to learn here? Like we are not really
+identifying the pattern with in the data, right? That's what I
+am trying to say from half an hour Sindhu saying that this
+algorithm is not learning anything, just it is memorizing
+locations. Okay, that is the reason this is known as a lazy
+learning algorithm, and this can be replaced tomorrow with a
+classifier or logistic regression. Okay, so there is
+first introduced KNN algorithm. So it is best suited when you
+have small amount of the data, when you have huge amount of
+data. We cannot implement KNN, okay. And another thing, if you
+have more number of classes, it is not preferably used for more
+number of classes, also discrete classes, okay, so it is not
+learning anything, just it is memorizing. But define
+locations, and by using the distance formula, it is trying
+to find whoever is there in that particular region. Majority it
+will take it and say, this is the one, something like that.
+Clear, okay, yeah, makes sense. Thank you, yeah.
+Okay. Go ahead. Once you have done your question, please lower
+your hands so I can understand who is remaining.
+Revati, still you have a question. Okay, what's the
+question? Man, based
+on accuracy. But we need to go into the picture, right? So that
+accuracy is completely based on the Q value of
+the
+problem of
+the equation. So we need to check for all p values for
+specific range
+any other solution. Second time, I'm not able to hear anything. A
+lot of background noise was can you able to hear me? Now? Yes,
+but still, okay. Meanwhile, Naveen, can you just come up
+with a question? Yeah. So, sir, you said we'll not be learning
+anything over here, and we are memorizing the location. The
+function or algorithm memorizes the location, right? Yes. So
+whenever a location is memorized, and then we are
+giving a new predict value, like, okay, predict the label.
+So again, that after giving the predict, we should, again, the
+algorithm should go and calculate the distance from the
+predict to the neighbors, right? Exactly. So, so the distance is
+not memorized, right? So memorized only at the time it is
+going to memorize later onwards. If you want to keep the
+distances memorized, we can use in between Redis. We call it one
+temporary data storage. We can use it, but actually we don't
+use KNN for that purpose. Okay, so KNN is just, if you have a
+small amount of the data you want to do classification, use
+KNN in real world. Yeah. So I think you brought up the right
+point. So I think because I was thinking the memorizing of the
+distance, we.
+Be will not be useful, because the point we predict can change
+and come from any location in the graph, right? So there's no
+point in memorizing the distances and understand
+Correct. Yes, correct. Okay, perfect. Okay, thank you. Yeah.
+Manu.
+Manu,
+yeah, hi. So actually, I want to know in this KNN algorithm. So
+how we do this scaling, and all
+scaling, standard scaling, we apply same I do that. Okay,
+same, same thing. Okay, sir.
+Like, what is the accuracy that we can achieve out of KNN? And
+if the data is scattered too much, can we use KNN, or we have
+more algorithms to lot algorithms are the decision
+tree, is there support vector machine and classify the random
+forest? Is the coating classifier. We have bagging
+classifiers. We have one by one. We'll do that. Okay? So
+basically, we are under the baby step of understanding our basic
+algorithms and KNN we don't use generally, because nowadays we
+don't have small amount of data, right? We have huge amount of
+the data. So better we go with the other algorithms. But how
+algorithm works? Black Box we need to understand. Clear,
+yes, okay, yes. Manikanta, what's question manikanta,
+Vijay Kumar, KNN, used for classification and regressor
+also, is there. I'll show the regressor also. Okay, yeah, tell
+me money can towards the question.
+I hope you can able to hear me right now. Yes, I can hear you
+now properly. Go ahead. Yeah. So my concern is, like, as you
+said, for the accuracy part, we need to keep we need to check
+with respect to different kind of distance pattern, which comes
+into the picture there. So for for minosky part, we need to
+increase the Q value when we need to check for the accuracy
+part. So what is the max threshold Q value? We can keep
+it like we need to keep on search until for that overall
+accuracy of 100% like reaching 100% or 90% case, or how exactly
+in that, it is completely like, as you said, No, up to achieving
+up to 95% something like that. Overall, we are just trying one
+changing and that to be we don't manually change American time.
+Going forward, as I said, two algorithms are there up to now,
+and grid search CV. They will help us in identifying the best
+values. That is known as an hyper parameter tuning. We call
+it Okay, so to tune that we are going to have that otherwise,
+manually. What we can do? We can write an simple code, and then
+we find the accuracy. Wherever you find good accuracy, use it
+and implement it. Clear that
+algorithm should resolve instead of going for all array update,
+like all Q values, exactly. Okay. Now let us implement a
+simple KNN algorithm using the data sample, which I have
+provided. Okay, so first we required libraries we are
+importing, import NumPy as NP, import pandas as PD, then from
+SQL, learn
+dot Now, previously, we took linear underscore model. Right
+now we have neighbors. Import K neighbor classifier. We call it
+K neighbor classifier. Then pre processing. You want any
+standard scaling. So now what I will do, because I have very I
+will take very simple data to make you understand. Later,
+inverse, we can take any sample data for the classification.
+Okay. So what is x? Now x will be NP, dot array of we have some
+of the values right. What are the values we took just now?
+Three and four is the one sample. And another one we took
+around, I think two and three. Next one we took around
+something, how much four and five? And next one we took, I
+think 636,
+and three, and the last one is five and eight.
+Okay. Now this is done. Now, what is why we took y is equal
+to NB dot array of something
+we said,
+one, comma, one, two, comma, two, then three classes we took
+done.
+Now we need to create an object of a neighbor. So KNN is equal K
+neighbor classifier.
+Okay, and then we have neighbors history. So when you hover your
+mouse, you can see metric is equal to Minkowski, and the
+value of p is equal to two. Will you see p is equal to, is that?
+Did you see p is equal to, yeah,
+yeah. For two is nothing, but this is the which is Euclidean,
+right? So don't think that it must be Q only. I've just given
+a formula. So already it is said that neighbors how many I took
+three. Now, if I don't mention the metric, what is the metric?
+Now.
+Know,
+Euclidean, right?
+Yes, but I agree. Why? Because it said Minkowski, and the value
+of P is how much two, that means it is Minkowski instead of Q,
+how much we have to write two that is nothing but Euclidean
+distance, right? If you don't want here, you can just write
+down
+metric is equal Euclidean. You can write like this. Also
+you can use this one or default if you don't write anything
+which distance is taking. Euclidean, right?
+Okay, now we train the algorithm. When we train the
+algorithm, what is happening here is it identifying the
+patterns, or what it is doing,
+memorizing. It's memory, memorizing, memorizing. Now let
+us introduce new data point.
+New data is equal to NP, dot, array of let us consider a data
+point as something like three and five, which we took just
+right.
+Okay.
+Then how do you predict? KNN, dot predict. When I say, predict
+what is happening. Now it is already memorized, right? So
+that data it is calling correct, then it is printing. So what is
+the class we got? One? Is it correct or not here
+the class one is or not.
+Yeah. Why? Because, if you look into this sample here, this
+question mark three and five. This is the three and five
+surrounded by how many three neighbors I said? So this is the
+clearest three neighbors. Now, majority is 112, what is the
+majority one? So it is giving as a class,
+majority correct,
+understood. Now, okay. Now here we have, for example, from SK
+learn
+dot matrix
+import. We can say accuracy score. We can use it Okay,
+another one.
+We can use confusion matrix. We call it
+okay. What do you mean by that? For example, when I say KNN dot
+predict which data, why what we are getting.
+Where is y?
+Predict?
+Let us keep that into two square brackets,
+five features, expecting to sorry, why we are giving X, X,
+i, x,
+we got 11121,
+okay, so now let us say, if you want to print the confusion
+matrix
+of
+let us this one as
+Y, underscore,
+predict
+is input this one. Okay,
+now confusion matrix between Y, predict and y.
+So if you map this, you
+123,
+classes. 123, classes. Now see the matrix. What is the matrix?
+Look into the matrix, 200110100,
+right?
+2001001110110,
+then finally, 100,
+I said, whatever the diagonal is there that is the correct
+predictions. Right diagonal is correct predictions. How many
+correct predictions we
+got, three, three total number of samples. How many we have,
+five,
+five. So approximately zero point how much you get,
+six, point 6.6,
+so let us do that. We can find that
+accuracy score,
+y and y prediction, whatever you got it, right?
+Vibrate, okay. Why predict we have given name right?
+How much we got 60%
+accuracy we got so whatever the confusion matrix is saying, is
+this correct or not?
+Yes, yes. Okay, so here in the classification.
+Question. We have the confusion matrix only in classification
+accuracy and confusion. Confusion matrix is in
+classification only if it is a regression. We don't have that
+understood. We don't have that why? Because in the regression,
+we are not classifying a class. We are classifying me. We are
+trying to predict nearby value. Now coming to the regression do
+we have k nearest neighbor regressor? Yes, we have k
+nearest neighbor regressor also is available. So what it is
+going to do is, whenever a new data point is introduced, for
+example, here, I got 2020, and 30. Now what it is going to do,
+it is going to take the average of these three, and that will be
+assigned that is it regression understood?
+Clear or not?
+Yeah,
+yes. So, so this confusion matrix is not you can repeat
+again, confusion matrix.
+Sorry, this confusion confusion
+matrix is a problem you don't understand. So confusion matrix
+is not clear. Can I repeat it again? Okay, confusion matrix is
+something like we are going to map the values between this is
+we are going to keep a test data asset right, and this is the
+actual data. Now this model is how many correct predictions it
+do. So for one, how many correct predictions, it did two. And for
+when it is the value, input is one, it said two, no. When input
+is one, it said three, no. So again, for the two, it one means
+there is one mistake when the actually value is two, but it
+said one, okay, actual value is two. It said one, okay, perfect.
+Actual value is two. It says three, No, zero, times now, then
+we have actual value is three. It said one, yes, actual value
+is three. It said 02, no. Actual value is three, and actual
+values three, yes. Did it something? We don't have
+anything. Okay. Now we are going to calculate this diagonal is
+the correct value. So actual values two predictor values two,
+how many times it predicted correctly, one time it created
+correctly, how many times it predicted to one correctly. Two
+times it predicted, how many times three it created
+correctly, zero times. So the total correct values are three
+divided by total number of values. So this is going to give
+us the confusion matrix. Through confusion matrix, it is going to
+find the accuracy of the models. Okay, understood.
+How did we arrive to value five? Yeah, exactly. Total number of
+samples? How many tested 2111, how many? How many test samples
+I applied,
+five samples, right
+2112,
+times it actually correct predictions, done, one, wrong
+prediction, one, wrong prediction, one, correct
+prediction. So totally. How many predictions we are working on
+samples? How many
+five, five samples? Total samples is five? Suppose, if you
+are taking y, predict y, predict how many samples are there in y,
+predict how
+many samples in y, predict 12345, right, total.
+So total samples are y. So now say, Okay, let us do one thing.
+I'll do one thing, DF is equal
+BF, compare, for example, compare is equals to pd, dot,
+data frame.
+Okay. Now why
+is y then Y, pred,
+y, underscore, red y predict
+is equal to I put something then, DF, underscore, compare.
+Y is 112233,
+correct. See, y is 11223,
+agree.
+Yes, sir. No, yeah, yes. Okay. Now I am giving X as a input.
+When I give x as an input, x, it is taking what it is taking,
+342-345-6358,
+and it did the predictions correct. So what is the
+predictions? It said, 11121, so if you compare side by side, y
+is one actual value, my model predicted one, this is correct
+or wrong,
+correct, correct, correct, this is one, and my model predicted
+one, correct or wrong, correct.
+Prediction is two. It created one is wrong or correct, wrong,
+wrong, this one correct,
+wrong. Okay. Now, if you map this with something like, for
+example, if you map with the confusion matrix,
+okay. Now tell me,
+one, two.
+23123,
+now actually, how many ones are there? Two ones, right, left
+side, left
+side. How many months we have two ones? Two ones, two, one,
+correct predictions or
+not? Yes. Now, when the input is one, do you got anywhere two
+input is one? Do you got any two no no when input is one? Do you
+got three?
+No no no when input is two? How many ones we got 111?
+When input is two? How many twos we got one when
+input is two? How many threes we got zero?
+Take three. When input is three, how many ones we got 113,
+how many twos we got zero? Input is three, how many threes we got
+zero? These diagonals are correct predictions, and these
+are the total numbers, right?
+Yeah. Now it makes sense.
+Yes. Yes, sir, yes. This clearly nobody can explain.
+Okay, I hope. Because, okay, good. Thank you. Thank you.
+Yeah, no problem. Welcome. Okay, done. Good to go, sir. You
+talked about regression rate. Can you please give me an
+example? I kind of understood what you're trying to tell but
+if you can just give an example, I can correlate that how
+regression happens here.
+Okay,
+let me do that. Okay. For regressor, let us take the same
+data, okay, which data, previous data we took it, right?
+Yeah. Please mute yourself, boss. Okay. X is equal to we got
+how much uh,
+previous example, 20 and 25
+correct. Then we got how much 30.
+What is line?
+209
+300
+Now tell me, is this regression or classification? This problem?
+Regression? Okay. Now, what should we do? Now we need to
+apply from SK, learn, dot, neighbor,
+import, okay.
+K, neighbor regressor. You see regressor,
+Okay, done. After that, we create a object. How do we
+create object? KNN, regressor is equal. K, neighbor regressor,
+okay, how many neighbors? Three, if you keep your mouse. Here it
+is similar, okay, uh, distance is min, cava, ski, what is the
+value of p2 so that means which distance it is taking. Neighbors
+only, right? In fit, what happens? Now, tell me. In fit,
+what happens? Memorizes. Memorizes. Now, if you want to
+predict, how do you predict? KNN? Dot predict, okay, for
+example, 2530 let us take 35
+okay,
+never expecting two features.
+Where is two features? Here,
+okay, in an underscore. Rank master,
+sorry.
+In a same notebook, if you write a lot of code, this is the
+confusion, I think. Okay.
+Now we got How much 250 nearby. So in 35 what it do? It is
+taking the average of all of this. So approximately 300 plus
+250 whichever is coming in 200 so we got around how much
+750 right, divided by three. So we are going to get around How
+much 250
+so like average neighbors, it is taking, it's not going to derive
+the class. Okay. Now, if you want to find KNN dot score, we
+can do it 10 and our score for x and y, so okay, then right.
+We got 0% means model is no way. Three samples, there is no
+accuracy at all, randomly throwing answers. Okay, sir, if
+you don't mind, can you make the N neighbor says one and then
+give it trial tax,
+and this will work. Okay? So when you have because number of
+values are three, that may it is going to give us zero. Now you
+will get neighbors is 100% you get one because
+one value, right? So 35 300 only. If you write 45 you'll get
+300 only, only one value. It is no average will be taken, right?
+So generally, if you have more samples, that will be better. So
+this is the way regressor will work. So in the previous sample,
+if you consider auto mpg, is there, right? So in the auto
+mpg, what we can do now, we'll try with the K neighbors
+regressor, but it is not suggested. Why? Because in auto
+M, P, G, we have 392, samples, right?
+Okay, maybe going forward, we are going to have some millions
+of samples at that time, using k nearest neighbor is not
+suggested, because it is going to take, you know, the what do
+you say? The efficiencies. Logo, efficiency, we call it. So as
+the number of samples increases, the efficiency will go down.
+Okay,
+so it should be sorry, sir. Sorry to interrupt. So can we
+say this? KNN neighbor is optimal to use when data set is
+very low and we have to predict the classification. Yeah. So
+when the data sample is very low, this is one answer. Second
+thing is we don't have more number of features, because when
+you're mapping more number of features, distance calculation
+is also intensive, right? So then it is better to jump in two
+cases
+you can consider,
+yeah, Neha, what is the question? I'm sorry, kind of
+bringing an in between question took in continuation to your
+explanation of KNN for regression from this example, it
+appears we should not use it when the relationship is linear
+between the feature and label, right? It's more relevant for
+non linear relationship, right? Exactly, exactly when it is
+scattered, not properly, exactly at that time k regressor was now
+you got an idea. Now, why? Because data is linearly
+separable. Now, if you are applying linear regression, we
+are able to get good accuracy right, but when it is not
+clearly better, we go with the K neighbor quickness, so their
+linear regression won't work. Very good, very good. Takeaway,
+okay, okay. Manu,
+any other questions? Yeah,
+great, great. So now K neighbor classifier is clear. Now,
+good to go.
+Okay. Now here the part of scaling also I've explained, and
+we have seen the distances also. So if you are applying the
+scaling, then better. Okay, so let me take an example
+where we have something like a fruits data is there, right? We
+can take that sample,
+our advertising sample. Also, we can take it.
+Let us take fruits data just for understanding.
+Okay, so here is the code. Let me take this path I'll
+write down in the same notebook, exclamatory W get
+old, start CSV.
+Let us close this. I
+Okay, so again, what should we do? Import all the required
+libraries, right? Tell me binders as PD, import NumPy as
+NP, then from SK, learn dot, neighbors, which algorithms are
+importing, K, neighbor classifier, then from SK, learn
+dot model, underscore, selection, import,
+train, underscore, please close your microphones. Please switch
+off your microphone. Okay, mute your microphone, sir. Then, from
+pre processing, we can take standard scalar, and if you want
+accuracy from a scale and dot matrix, we can import accuracy
+score and then confusion matrix. Also, if you want to find we can
+take it. These are the things we done now we need to do here. DF
+is equal
+P dot, read CSV. Okay, done. Our DF, dot, head,
+okay. So here we have a color and label like that, right? So
+when we have a color and label. Okay, so what should we do now
+for the color and labels? We need to convert that into which
+format.
+Go ahead,
+binary format,
+label and
+we do which one label encoding or
+mapping also we can do manually, right?
+Yeah, yes,
+we can do manual mapping, or we can use
+label encoder, anything.
+Okay, so.
+So let me take that
+anyway, that fruits data you have, right? So,
+okay, no problem.
+So for the color we have red, orange, orange, red, red. Weight
+is there, so I need to encode that either. Okay, one, another,
+one. Another one, I'll show you. One is label encoder. You know,
+right label encoder. How do we do we import standard scalar,
+then label encoder, then fit transform. It will do correct.
+Otherwise, we can use mapping also. We can say df, dot, map,
+replace with the values. Another option is that in pandas, we
+have option.
+Just me recall dummies. Let us take that. I will show you,
+okay.
+Data encoded is equal we can say
+PD, dot get dummies of a data frame which column,
+columns is equal
+which one
+color, capital C, so
+color
+Now, if you look into data and put it i
+Okay, this way it is going
+okay. So what do we have now? We have
+something like
+weight and sphericity, and the labels are apple, orange,
+orange, orange. Now color is there. So label is my target
+column. Color is given false, false and false, true, false,
+like that, correct. It can dums. You can do it otherwise, if you
+get us some confusion of this one better use with
+the label encoding. I think when the text file data is there,
+I'll explain that. Okay, maybe a lot of questions come in now, so
+let us stick with it. Is it like a one hot encoding? So number of
+features getting increases there? Yes, yes, yes. Did you
+take a one hot encoding or not?
+Not taught here, sorry, in this class. Okay, so I think in the
+lab, once you take that, I'll explain this. Okay. Meanwhile,
+let
+us do one thing
+first, let us read the data again. So DF, DF, dot, head,
+now, le is equal label importer.
+Then,
+then we say free transform. Which one color, right?
+I'll remove this.
+We didn't define label encoder, okay? We didn't execute to the
+code cell.
+Okay. Now when you say df, dot, head.
+Now it makes sense for you. So we got some numerical values.
+Okay, so you can see DF sample. Now the data is ready. Now tell
+me what is x. Now, x will be df.so,
+DF, dot
+columns, go ahead. Next will be features. What are the features
+we have? DF, of
+color, weight, specificity,
+right?
+Okay,
+city. Okay. Typos here, lot of
+small capital letters. Also place it forward.
+Okay, now we got the labels after that. What should we do?
+Generally, we need to apply the standard scaling correct. So
+from, SK, learn
+dot, pre processing, import, standard scalar. Scalar is equal
+standard scalar then fit, transform x, scale, we got it.
+Okay. SK, learn, typo.
+Okay, done. Now, what should we do? We need to split the data,
+X, train, X test, then Y, train, then y test is equal, train,
+underscore, test, underscore, split. Which one should we take?
+Now, scale, SK, perfect, then y test size is
+equal
+to something,
+no, no, there is
+okay,
+okay, that is great to see involvement. Good.
+Thank you for you know, identifying, great. Okay, now,
+what should we do? Now, create object, right? How do we create
+KNN is equal. Let us take as KNN 1k neighbor classifier imported,
+and let us take how many neighbors,
+three. Okay, we have very samples. Do it fit? Now we want
+to find the accuracy. What should we do? Y pred is equal
+prediction from the model, KNN, dot predict. KNN, one dot
+prediction.
+N and one dot predict.
+Okay, great, done. Now accuracy score will be
+between y test and the Y prediction. What I did correct.
+Now, how much score I got, 100% accurate I got. Now, for
+example, if you want to know, okay, that Habib, I want to know
+the best K value. What should we do? Very simple, for i in range.
+Okay, let us start from three to, for example, 30. Every time
+how much we are incrementing two step size, right? Then you write
+the KNN is equal to fit, vibrate. Then print the
+accuracies. How do you print the accuracy is F?
+You can say accuracy for K in this particular now, when I do
+this, you can print for accuracy K. We got three, we got 100% for
+five, we got 0.9 when we take 25 we got zero. So which is the
+best one? First one we got it that will be the best K value.
+This is randomly. We are written down. We are doing actually,
+this is not the correct way of identifying later, onwards, we
+are going to use a library known as captura. What we'll use.
+Meanwhile, if you want to do some research, you can do it
+hyper parameter optimization framework. This is the one which
+you are going to use. It. Okay, so when we discuss about the
+feature engineering at that time, I reach for you like, how
+we are going to identify this one, or by using grid search CV,
+which can give us the you know, best hyper parameter. So as a
+data scientist, we don't need to bother about like, you know,
+what is the best K value? Shall I go with the Minkowski metric?
+Or shall I go with the Euclidean metrics? Or shall I go with the
+hamming distance? Which one? Right? So a lot of questions
+will come in. So as a data scientist nowadays, the work is
+very simple. Just you implement any one of this algorithm,
+aptunia, or itself, CV, so those going to give us the these are
+the best parameters. So I try to lead the test, the uh, test,
+over all those things manually we are doing automated.
+Automation will be done by those algorithms, and then they'll
+give us the best K value, so we can use it, and we'll go with
+the production. Okay, so this is about the
+KNN algorithm, so let us take the questions first, then we'll
+jump into review of what we discussed today. Okay? Vishnu,
+Priya, what is the questions? Please raise your hand one by
+one. Yeah, I have raised the question earlier, but I think
+now I got the answer with op tuna.
+So the problem, my, my, my question was
+the metric. When you said, we have multiple ways to calculate
+the distance, like Euclidean Minkowski, right? How do I
+choose that? But as you said, with when we get to know about
+op tuna, I think I'll be able to decide whether I should
+Manhattan or Minkowski or recreate manually. We don't do
+that. We use another algorithms, intelligence, okay, thank you.
+Yeah. Welcome Naveen. What's the question, sir? The question is
+regarding the previous ice cream example, where we are predicting
+using the regressor K and regressor, when we try to
+predict for 35 my brain said it should be 350 but the values we
+got is 300 because the y labels are only set to 250 203 100. So
+we are understanding the label scope, right? So like in such
+kind of scenarios, how will the like we should the data
+scientist completely ignore the can and regressor, because it's
+wrong. You know that it's wrong, right?
+Or have three samples, boss. So actually, real time, we don't
+use three samples, right? Millions of samples are there,
+so at that time, we'll get the answers anyway. So don't relate
+three with that million versus, okay, three I'm giving just to
+understand how things are working if I take the bigger
+values you don't understand, right? So what I am doing
+precisely taking small data and applying to understand the
+mathematics behind that. Okay? Now, so only end of the day
+accuracy matters. If accuracy is wrong, change algorithm. That's
+it. Okay?
+Thank
+you. Yeah, in the above, the data has been label encoded. So
+what happened in there that all there were so many columns
+there, so it has been reduced to these columns.
+It's reduced no more, no man. Label encoding color is actually
+textual data. So.
+That color, red, orange. He's giving numeric data. That's it.
+Where is reduction? Reducing the columns? Yeah,
+I think he's referring to when you had transformed that into
+multiple columns of true and false. So, yeah,
+that was another change you did in between, right? I think he
+got confused for that, just actually I applied dummies.
+Okay, that's removed. No need, because, you know, one hard
+encoding at the time. I'll discuss dummies. Okay,
+yeah, sure.
+So my question like I understood, but we'll be able to
+print the distances internally calculated in the collab. Do we
+have any library to see what distance has been calculated. If
+you want me, I can write down the code to print all the
+distances,
+okay, but it will take a time to print the distances. We have
+neighbors is there which can print the neighbors only, but
+distances we have tried Pythonic code for that we don't have any
+library, okay. Okay,
+clear,
+yeah,
+clear, yeah. Thank you.
+Next question, Herman,
+sir, when we are determining the nearest neighbors of k equal to
+three,
+does the model first list all the neighbors, for example, out
+of 69 we are training 80% of it, so we will it list all of the
+remain of 80% and then determine the top three. Or how exactly it
+will do, no, no. Actually, what happens is it is going to
+remember all of them and map it like this. Okay? Then after
+mapping, here is something like that, right? All the all of
+them. Then wherever question mark comes in, it is going to
+calculate all the distances. First there is going to write in
+ascending order. When you say three neighbors, it is going to
+consider the three. When you say five neighbors, it will consider
+five like this.
+Okay, so it is going to calculate the distance of all
+the points and then take the top three in the sending order,
+exactly, if you are writing three neighbors, if you write
+five, yeah, Python like that. And that calculation will be
+loaded from the memory,
+not memory. It is going to calculate at the moment, early.
+So only data swapping is done from the memory locations.
+Got it and and, for example, when we are predicting so,
+so for that, also we need to do the label encoding right for the
+target. No need target. No need level encoding. This algorithm
+will take discrete values. Some algorithms won't take. So at the
+time you have to change. But can and the Shatter algorithms, they
+will take. Not a problem, okay? Yeah. Thank you, sir. Yeah.
+Welcome Jaipur.
+You used one word block box right in today's class. I don't
+understand. What is that block box. Block box is like, this is
+the algorithm, right? It is like a black box backside. How it is
+working. Mathematics I'm trying to show that is
+known as a black box, means inside how it is working. That's
+what we are trying to show it. Okay,
+yeah. Manoj,
+so after the
+test all this, use the algorithm, then we need to check
+the score. Then we'll get to know to change that algorithm or
+not. That is a
+exactly later onwards. Also what we do. Instead of changing the
+algorithm, we have another library that is known as auto
+ml. We use it. Okay? Auto ml? What it will do? It is going to
+give us list of algorithm in a tabular format, which is the
+best algorithms for you, for your data? Okay? Then we can
+take a decision clear.
+But as we are in the baby steps, we are going to learn all the
+algorithms when real time implementation. We'll try to see
+like which algorithm is best. So just take the data, give it to
+auto ml, it will take a decision.
+Okay?
+So this is about So let me give you the brief review of what we
+discussed. Okay, we started with first linear regression, where,
+like simple template, I discussed the template. What is
+the template? First of all, import all the required
+libraries. Second, read the file into a data frame. Third one
+split x and y. Fourth one apply standard scalar pre processing
+level, encoding or replay, imputation, whatever you want.
+You can do it. Fifth one, you split the data as a training and
+testing. Then. Six one create an object of algorithm. Seventh one
+fit the model. Eighth one evaluate the model. So complete
+throughout the classes, going forward, we are going to find
+use this analogy. So first of all, we import all the required
+libraries. Second one, we are going to ingest the data into a
+data frame. Third one.
+One, we are going to apply whatever the standard x and y.
+First we split them, what are the features and the label? Then
+we are going to apply, you know, standard scalar pre processing,
+technical level encoding period domains or whatever it may be.
+You are going to use it. We are going to do that then splitting
+the data to creating an object of the algorithm, fitting and
+evaluating the model. This is what we are doing in linear
+regression, R, KNN also. So linear regression, we are trying
+to find what is mx plus c, so how is m is calculated and C is
+calculated. It is not iterative. We call it as a closed mapping.
+Okay. This is, and you have seen, the formula, how to
+calculate the I means the backside when you create object,
+how it is working. I have shown you. Okay. Next one we discussed
+is the KNN algorithm, which is easiest algorithm. What it is
+doing. For example, KNN, nearest neighbors like okay. For
+example, in the classroom, number of star students are
+sitting, okay, like that. So whenever you are sitting beside
+some of the students, who is very intelligent, so you get
+treated as intelligent only right, because people there, you
+are trying to, you know, have a friendship with them, and then
+you're doing this is not a universal example, just for
+understanding, right? So you will get adapt to those things.
+So for example, if you have at home, if you have a kids, if you
+have, for example, you have three baby baby girls, or baby
+boys, another baby boy, baby for example, you got it. So he is
+going to get the features from these two only right when he is
+playing with them and understanding them, like that
+learning process. So, like, you know, the language, everything
+he learned from that. So that is the concept is introduced in
+KNN. So the K nearest neighbor means, whenever this question
+mark is introduced, we are trying to find who is the
+neighbors. According to the neighbors, we are going to take
+the decision majority. This is what we are doing in KNN
+classifier. And there is a question that, okay, if it is a
+regressor, then how is how things will happen. Regressor
+means, if I say three neighbors, what it is going to do, it is
+going to take the first neighbor, second neighbor, third
+neighbor, value divided by three. That means we are going
+to get the average value. That average value will be assigned
+here. Okay, so that means x1 x2 and x3 so x1 plus x2 plus x3
+divided by three. That will be assigned. This is what we have
+seen. But remember, when you are applying the K nearest neighbor
+algorithm, we need to scale the data. The reason is why we are
+scaling the data. If you don't scale the data, data is away
+from the center. In that situation, as we are, depending
+upon the distance matrix, some points may be away from the
+center, there will be ignored. So that is the reason. First of
+all, when you applying any k nearest neighbor classifier,
+first apply the standard scalar, then split the data, then feed
+the data. This is what we are trying to set clear.
+Okay, so what I will do now, I'll take somebody ask for the
+notes, right? I'll export these notes
+desktop
+towards the name, so linear,
+KNN combination, okay.
+Now in the chat box,
+see 25 will linear. 25
+there it is,
+industrial, okay,
+so for everyone,
+data, dot, CSV and how they are already in your what do you call
+in the notebook? It is there?
+Okay, I everything. It's included in the notebook, like I
+have written a W gate, right? So they're available. Remaining
+data is also available. Only auto mpg. If you want auto UPG,
+I can share that. Mpg,
+yeah, automatically when you can download from UCI repository and
+but anyway, I have shared it. Okay. Hope
+it is clear everyone.
+I made it very simple. So this way, now we got to know. The
+first step into we implemented with the linear regression and
+implementation later onwards. When we do the implementation,
+we are going to use, you know, API, conversion, all those
+things in the first step only, no need to discuss those things.
+It will create, I know, confusion for you. Okay. So
+today we discussed about two algorithms, linear regression, I
+K, nearest neighbor classifier. One is a regression problem.
+Second is the classifier problem. Okay, so do have some,
+you know, you can have review of that, and tomorrow, when we
+discuss about the linear classifier and one perceptron
+model.
+Link from where I downloaded, okay, this is UCI repository.
+And okay, just let me give you.com
+UCI, machine learning repository. You.
+Uh, auto auto
+mpg.
+Okay, this is the link.
+Directly you can access auto mpg, okay,
+so best practices in lab, you have something in the practice.
+Still, if you have anything, take from the repository. Also
+you can take, you say, repository, try with that one
+month, yeah, what is the question one month? Yes, sir. So
+suppose if you want to check for no need to download Vijay. When
+you have collab notebook already, it is there? Fruit,
+dot, CSV, just execute W get it is there. Okay, now you could
+have, yeah, go ahead. Sorry, yeah, yeah, if you want to test
+for a particular three values, that is color, weight and
+specificity, and determine the label right? So for example, for
+me, the values are like orange, 310, 0.95,
+so the first step that I do is to do the label encoding right,
+because Orange has to be converted into three to one, any
+one value, right, anyone.
+And then I need to do the standard scalar and then pass it
+on to the function. Perfect. Okay, yeah, that was thanks,
+yeah. Aisha,
+yeah. So my question is, we have seen two, three new tools today,
+at least. I have seen
+auto ml, then optuna And one more.
+So next,
+next time I won't show those tools. Then if you are
+confusing,
+no, no. My question is, as a as a data scientist, and whatever
+our professional objectives, how much competent or how much hands
+on are we required to be on these tools? No need. I should
+just create object and give it that's hands on. That's it. Very
+simple. Okay, no need to do any hands or anything as a data
+scientist. Now the job is, if you crack the interview, that's
+it. Remaining, our tools are doing the job for us. Okay,
+okay, so you want to drop the class you can drop. Thank you
+for your comments. Neha, okay. Aish, good. So, okay, so are we
+be covering these tools anytime?
+Going forward, we'll take those tools. Don't worry. Okay, okay,
+right, right. Thank you so much. And I had a great class today.
+Thoroughly enjoy it. Thank you so much. Great, great. Thank you
+for your good comments. Okay.
+Okay. Then still you have Manoj, any question, yeah, sir. Concept
+is getting very good, clear clarity. Understood that when
+you're going to collapse and typing on the algorithm and all
+these things getting difficult. So how will that will come to
+immediately, that things
+Okay, so you don't want me to type live coding. You want me to
+take a notebook and explain that or I didn't understand. No, no.
+So conceptuating getting cleared when you're doing whiteboard.
+Listen, concept getting clear when collab. So sitting lot of
+algorithm and use that one. Yeah, that is with practice.
+Manoj, if you practice, definitely you can get similar
+to me more than me. Okay, sir.
+Okay, so
+this is just practice. That's it. Okay, that's simple. What's
+the question? Yeah, so Habib, sir, I have one option in any of
+the use cases. We never be doing level and coding for target
+columns, right?
+No. Never be doing input level encoding for use cases.
+Let us take, is there any use case that we do still label
+encoding for target columns? Yes, the question, for example,
+logistic regression, when you are doing we have to do that.
+Okay.
+Okay.
+Introduce
+example that you are shown for. Get one. But when it comes to
+label squad, your kid is showing something, okay, I can hear your
+kid. I'm not understanding what is your question is okay?
+So,
+so I'm sorry. I'm sorry.
+So my question is clear, sir, my question is straightforward.
+That is there any use case that we still do label encoding for
+target columns? If that is the case
+classes. Next class, I will show you, okay, what is the criteria
+that when, when we I'll show that. I'll show I'll show that.
+Okay, yeah. Jaipal,
+step
+three, step five, similar on the rate the linear
+regression. Steps come again, come again,
+come again. Third step and fourth step is Sir, similar,
+right? Sir, yeah, third and fourth, everyone is similar.
+Yeah,
+okay. Why do we give different steps
+where we give different step in Alva? Yeah?
+Yeah, you written on whiteboard. Step one, step two, like step
+three, like regression for regression today's
+whole you written it in the last
+Yeah,
+so those
+the third step and fifth step are similar to, right? No, no,
+not similar. First step is importing the library. Second,
+ingest into the data frame. Third is define what is x and y.
+Fourth one is clean the data features and everything, okay,
+and all those things, okay. It's not same. Yeah, okay, right.
+Gotcha, yeah,
+next Prashant, go ahead. Yes, sir, actually, I have one
+question regarding, you know, what is the difference between
+KNN and KNN classifier? Like I got disconnected during that
+time, so it's not able to relate how KNN classifier is different
+from KNN.
+KNN classifier different from KNN. KNN is the classifier? What
+is KNN? The same thing, right? What's same? I like assume that
+both are same in short form, we read. KNN, okay, okay, got it.
+Thanks. That's all right, yeah, no problem. Sindhu, so like,
+would you recommend any book for reference for these concepts?
+Yeah, definitely. I'll give you some books. Okay, orally, books
+out there, once you have done with the unit one, I'll share
+the books. Yeah. Thank you, sir, yeah. Prabhaka, what's the
+question? Prabhaka, hello, sir. This is including the data file,
+the thing last week we heard Iris CSA file.
+Oh, I'm unable to download that file.
+Okay, so just there is a duplicate and CDN repository is
+there when you are attending the labs, ask them, they'll share
+that CDN repository. There you have Iris data, all the data
+samples available.
+Okay, repository, yeah, directory, it is a repo. Get
+repo somewhere cloud. We have from that we can using double
+GET command, you can download in your local system. Okay, thank
+you. Thank you. Yeah. Rajasika, hi. Dr Abhi, hi, so you said
+like about deciding with what algorithm to go ahead. It comes
+with experience, right? So when some data comes to you to decide
+on the algorithm, basically how many algorithms are on top of
+your mind to quickly decide on it? Yeah, that's it, correctly,
+yeah. I mean, can you tell the number, like, how many
+algorithms? Love, roughly, that you have in your mind, I can get
+into 14 algorithms, approximately 14. Okay, out of
+14, you'll be able to select one with your experience, right? But
+later onwards, even without an experience, using auto ml tool,
+we can select that. Okay, okay, yeah, thanks. Now. Okay, thanks.
+Okay, good questions. And today I see very planned class, and
+properly they ask the question, and there is no havoc and no
+here and there questions. Love it, and hope let us do the same
+way and learn that process. Okay, take care. Everyone. Catch
+up tomorrow. Bye. You.

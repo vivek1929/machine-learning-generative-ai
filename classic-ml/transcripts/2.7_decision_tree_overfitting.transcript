@@ -1,0 +1,2866 @@
+Video transcript
+This transcript is AI-generated and may not be 100% accurate.
+
+Unknown: Good morning everyone.
+Hope everybody is doing
+good. Good morning, sir, very good morning. Yeah, good
+morning.
+Very good morning,
+still 35 participants still joining, till now, joining.
+Yeah.
+So working professionals, they need a little bit time. Today's
+site is very slow. LMS, actually, it took around five
+minutes for me to log in and open the zone. That could be the
+reason.
+That's also maybe the reason, yeah, okay, yeah. Director is
+very poor.
+No, actually, from morning I've seen most of the website, the
+data centers may be somewhere they're impacting it
+is little bit slow. I thought my internet is slow. I just
+rebooted my modem, but it seems some issue with the ISP borders,
+maybe.
+Now what I observe every day morning, I think talent sprint.
+Site is a little bit slow after eight, nine o'clock that is
+working gets expected, okay, little
+bit latency, maybe, let us see.
+Say to almost 50 minutes to serve the the page to load, sir.
+But one thing loaded, then it I could easily log in, but logging
+and the loading itself took a lot of time. Demonic, sir, okay,
+one thing we you can do is,
+I think every time, because most of the time you are using
+website, right? So clear the browser cache and reopen. Maybe
+that may sometimes it will resolve the issue. Try that
+also, okay, yes, yes. For me, it's, I tried the same, yeah,
+that's great. Yeah, you can try incognit mode. Also, it's
+better. Ah, that's also Yeah, because it's not storing, you
+know, cookies and all those things somewhere, it will be
+faster. Yeah?
+Okay, so, let us start The session now.
+No, okay?
+So let us start the session. Please mute yourself. Somebody's
+microphone is on
+DHAI, please mute your microphone. Okay, thank you.
+Today, we'll discuss about some interesting algorithm and a
+popular algorithm used in most of the Kaggle competitions.
+Okay,
+that is a decision tree classifier. Today, we'll discuss
+about decision tree classifier.
+So last time, we have seen a perceptron model and we have
+seen a logistic regression. Also, those two are the
+classification models, whereas a logistic regression, we are
+saying that it is similar to linear regression. After getting
+linear regression results, we are trying to put into a sigmoid
+function to get a threshold between zero to 0.5 and more
+than 0.5 to one belongs to another class. So depending upon
+completely a step function, we have seen how things are
+working. That's all about now. Today, we'll start with the
+decision tree classifier. And what the decision tree
+classifier, mathematical intuition, and on what basis
+decision tree is going to, you know, classify the classes,
+we'll see that.
+So we'll do one thing before going for the class. I'm going
+to explain you mathematical intuition. So people who is
+looking at the mathematical edition Don't get afraid that we
+need to do the mathematical intuition. Also. Mathematical
+intuition is some just purpose is to make you understand how
+this algorithm is working internally. So I'm just trying
+to open the black box so you can get more understanding. Okay,
+but in real time, you're not going to worry about all those
+mathematics and statistics. Simply we write.
+It a simple line,
+create an object of the decision tree. We use it. That's what we
+are trying to do. Okay, so let us start with decision tree
+classifier. So as I said, it is one of the most popular tool and
+very easy to understand. It is like a flow chart and if else
+conditions. So for example, if we start i
+Okay, so let us start the messages, because I'm thinking
+some questions for me, so later we can communicate about the
+site down or anything. Okay,
+so some issue with the portal login, I think it wait for some
+time. Even I struggled for 10 minutes. And at last I used
+link to join. Okay. Portal has been working. Okay, okay, okay,
+done. We'll take
+two more minutes. Okay.
+Hanuman, you may unmuted yourself. You have any question,
+yeah, I just want to say that I posted the link in the chat
+group, Whatsapp group,
+I think that should help. Okay, great. Thanks for that.
+Yeah, I use that link to join. Okay, great,
+sir. Ayush,
+yes. Ayush, yeah. Good morning, sir. So to understand, sir, the
+multi colinearity. Is it an issue with classification
+problems also and the algorithms, the way it is for
+regression? Do we need to check for multi polarity in
+classification problems?
+Did we discuss any multicollinearity? Ayush,
+not yet. Was I was reading about classifier. So, yeah, I'll tell
+you, yeah. So later, I'll discuss you understood what is
+multicollinearity. We are going to take in depth and then we
+see, okay, all right, yeah, okay, I
+think good to go now. 200 plus participants, right?
+Yes. Raj Lakshmi,
+yes,
+okay, okay,
+okay, so thanks for understanding other problems.
+Also, that's problems also, that is good. Okay, so now looking at
+decision tree, classifier, how it look like, for example, right
+side, if you see we have something like, If height is
+greater than 180 centimeters, we say return male. Else, if the
+weight is greater than 80 kilos, we say return female, male,
+female, whatever it may be. Else, return female. This is a
+rule based right if else condition rule based so decision
+tree works with like these kind of conditions. For example, when
+we classify last time I took an example of Pia elements. Okay,
+so in Pia elements, we say that, for example, it is a first name,
+make it as a PA. If it is not, then not PA, last name, account
+number, email address. So personal identifiable
+information, actually, that is from that we can identify who
+the person is. Like. Somebody got your credit card, they know
+all the information. Somebody got your Aadhar card, they know
+all the information somebody got your email address by checking
+out the Google they can get all the information right. So those
+elements, we need to hide them. If I want to build a machine
+learning algorithm for that, we need to if, without any machine
+learning, if I write defense conditions, I need to write a
+lot of different conditions, right? So decision tree works
+with these kind of problem statements. So when you have lot
+of rules to define at that time easily, we can think that, Okay,
+why don't we go for decision tree algorithm? So these, for
+example, if you start with height is, let
+us say high time gender we have. Height is 140 centimeter, we say
+it's a male. 150 centimeter is a male. 120 centimeter female. 100
+centimeter is a female, 90 centimeter is a female,
+something like this. Okay, now maybe I'm concerned, this is one
+column. Okay, not a problem. But if I have two columns, for
+example, I have an height and weight. Then in that situation,
+we are going to say height and then weight, and I need to
+classify the gender, okay, if I am building a tree. So decision
+tree is going to build a tree from the tree it is going to
+classify whether it belongs to male or female. So if you look
+into this part, height is like a tree only, right? If height is
+greater than 180 centimeter, we said yes, we are saying directly
+male. No, again, we are looking for another condition. Weight is
+greater than 80 kilo, yes means male, no means female. So if I
+want to find a female, height must be less than 180
+centimeter, and weight must be less than 80 kilo. We call that
+person. Gender is male, female, right? If it is, height is 180
+centimeters greater than directly we can say male, but
+height is lesser and the weight is greater than 80 kilo, we call
+as a male. So it is like a tree we are traversing. The question
+I.
+Is now the question we have. How many features we have? Two
+features, height and weight. Need to classify a gender. Now,
+which one should I make a root node? Means, shall I start with
+a height, or shall I start with a Y weight? Which one should I
+make as a root node? Then I need to build a tree to go to the
+leaf nodes. So we have a root node, then the child nodes, then
+we need to leaf node. Leaf node is our classification. So in the
+decision tree, a problem is, how do we decide which one is? For
+example, if you consider Iris data sample. In Iris data
+sample, we have sepal length, sepal width, petal length and
+petal width. These are the features, right? So when we have
+this features, which feature must be a root node? Shall I
+make? SL is the root node, sorry, shall I make? SW is the
+root node. Shall I make? Pl is the root node, or shall I make
+PW is the root node. Which one should I make as a root node?
+That is the biggest challenge in decision tree classifiers. So to
+make that this is the root node, or this one is the root node, or
+this one is the root node, this one, any one root node, we are
+going to take some criteria. Okay. What are the criteria?
+We'll see now. Okay, so here it says that we need to look for
+the best feature which is going to participate more into the
+client or prediction column. For example, if I'm thinking circle
+length is the one which is best feature, then that will be a
+root node. After that, what we'll do we split into subsets,
+and we'll go on repeating next one. What is the repeating?
+Finally, we are going to have a what do you call the leaf node?
+Leaf node is your decision. That means whether the person is male
+or female, or something like that. So now splitting criteria
+is, shall I go with the weight, or shall I go with the height,
+or what is the order? How should we decide that? Okay, so for
+example, if you look into this tree, we have something like
+sphericity. Is there a weight we have? And then we have, for
+example, some samples are there. So depending upon the sample, we
+are saying whether it belongs to apple or orange or something
+like that. Okay, so let us try to understand
+mathematically how decision tree works.
+Okay, so we say that something like input features, we have x
+underscore train and output features we have X underscore
+train, then we are going to train an algorithm, which
+algorithm we are using now, today, decision tree algorithm.
+Now the decision tree algorithm is going to give us f of x, no,
+it is going to take a output will be it's building a tree. So
+when it is building a tree, like a rule based whenever you give
+some input features. According to that tree it is going to
+traverse. Okay, what is the leaf node? Now the challenge is,
+getting to the root node is the challenge. So to get to the root
+node, we are going to use three types of criteria. One is known
+as an entropy. We use it using entropy. Second thing we call it
+as Genie indexing.
+Third one is information gain.
+So what are these three criterion? Grease criteria are
+making us to understand which one is your root node.
+Okay, which one is a root node? That means using this criteria,
+okay, that may be, for example, I'm using entropy, or Genie
+indexing. I'm using or I'm using information gain,
+using depending upon the values, we are going to decide which one
+is the best root node. Now let us try to understand what is
+entropy. First one. Let us start with the entropy. Let
+us start with start with entropy.
+Okay, anybody have an idea what is entropy? You studied
+probability, right? Yeah, in thermodynamics, we studied it's
+a degree of randomness.
+Randomness, yeah, measure of disturbance. Okay, impurity.
+Perfect, perfect. Perfect impurity. We call it perfect. So
+entropy is something like which is used to measure the impurity
+or uncertainty in the data. Okay. So for example, if I say,
+if all the classes, you know, belongs to all the whatever the
+data points are there, if all the data points belongs to same
+class, then the entropy is zero. That means, if I have a feature,
+something, ABC, A is the feature all the data points belongs to
+only one class, then it is pure, correct. This is one example. We
+can say.
+For example, these data points are main.
+Fixed in a way that some belongs to one class, some belongs to
+another class. We call it as a mixed one. The entry, we call it
+as a impure so this one is the pure one, so there is no
+uncertainty here. This one is the impure one. Think like most
+of the time, when you are studying probability, we know
+there is a box with all some red box, red balls, some of the
+white balls. Then they will ask you, what is the probability
+that we are going to get a red ball correct?
+So in this box, out of 10, we have five red ball sign, five
+green balls. For example. Is it pure or impure?
+Impure? Why? Because we have two classes. All the balls doesn't
+belongs to one class. Rate. Now I have a box where all the 10
+balls belongs to one class. If I say, what is the probability of
+getting what
+do you say? Red ball? So all of them belongs to only mostly,
+we'll say one red ball means one by 10 we have, okay, are getting
+a red ball will be totally one only probability. We are going
+to give 10 by 10. We are getting one only, right. So that way we
+are trying to calculate the impurity. So mathematically, how
+do we calculate entropy? Okay, so to calculate the entropy, the
+formula is.
+To calculate entropy, we use the formula minus, for example,
+probability of i log to the probability of i. That means, if
+you have, for example, there are red balls and green balls, okay,
+for example, here is the
+five red balls and five green balls. So then, what is the
+entropy negative probability of red ball? How much
+one over
+five
+log one over five plus probability of green balls, one
+over five total number of how many green balls we have, one
+over five like this. So this way we are going to get, if you take
+one over five, it's a common so we can say
+two by five log one over by this one. If you calculate this to
+the base two, we are going to get the answer, something like
+we are getting answer. So mostly here we'll get, for example, if
+I have all of them, belongs to one color only. So then we say,
+what is the probability of getting particular red ball one
+by 10? Probability of one by 10? Okay, so when we write one by
+10, means 10 to the power of minus one, it comes in 10. So
+log to the base 10 will one. So totally we are going to get one
+as the entropy. If the one is entropy, sorry, we are going to
+get a negative logarithmic one is zero. So if you're getting
+zero, the entropy zero means it is completely pure. So if you
+are calculating the entropy, you have to look for lowest entropy.
+That will be your root node. That means if I have sepal
+length, sepal weight, petal length and petal weight. If I
+calculate the entropy of sepal length, calculate entropy of
+sepal width, calculate entropy of petal length, calculate
+entropy of petal rate, whichever the column is having smallest
+entropy value that will be your root node. So lesser the value.
+Impure is the pure is the column. This is what we are
+going to consider. Okay. So for that, let us take one simple
+example. First, then we'll take one data sample, and then we'll
+implement it, okay, so as we do most of the time, let us take a
+sample, data sample, first one, then we'll implement it, and
+then we'll see how things work. Then we'll take some
+data. Okay.
+So for that, let me start with,
+yeah. Meanwhile, collab is starting, you can mute, unmute
+yourself and go with the questions,
+sir, I have a question. Is that the logarithmic of p, is it p
+complement, pi compliments
+in the formula,
+pi, compliment,
+there you mentioned PA and then logarithmic of PA, right?
+Yeah, there is one round on top. Like, is it the ice.or
+is it any other value?
+Round means I can get you. Can you open that formula? Sir,
+once.
+And yeah, so the minus of pi and then into log.
+Summation of i is equal to one to n, p, i log to the base 2p,
+i, Oh, okay. Thank you, sir.
+Okay,
+okay, let us start with sharing notebook.
+Okay, so.
+Little bit calculations are little complicated. Take your
+time to understand. Don't get panic. Okay, see 25
+decision tree. Today is 31st
+May, 2025
+okay?
+So C, 25 let me take
+one data sample dating.
+Okay, so before that, let me
+show you data sample how it looks like.
+Very simple data sample we have Outlook, temperature, humidity,
+when and the plate. So Outlook is sunny, temperature is hard,
+humidity is high, wind is weak. We say we can play the tennis.
+Actually, this is the data sample to check whether Can we
+play tennis or not. So we have four columns, and one is our
+target column. So we are going to first of all calculate the
+entropy of the target column, then entropy of the individual
+columns, then weighted average will get it, and then we are
+going to implement decision tree classifier. Okay, so before
+jumping into the calculations, let us take up the questions.
+Yeah. Ramanidhi, what is the question?
+Yeah? Ramesh, yeah. So we are placing the best notes at the
+top right, like which has the best entropy, so as read on, so
+it will become impure and the features will have
+unrelated data. So will it not impact? The results are as good
+drill down,
+no,
+it doesn't impact because it is ID three algorithm, iterative
+algorithm, is the condition statement, so it doesn't have
+any impact on the relation. So we have, like, you know, top
+only thing is somewhere there's a chance of over learning. Then
+we are going to get me five red balls and five green balls. Then
+probability of getting red ball is one by two, right?
+Manageable. There's two things. One is a condition, a
+conditional probability given that the ball is red, given that
+the ball is green, if you're writing conditional probability
+is different directly if you're finding one by 10. Okay, so, but
+here five red balls are. The total red balls is five. You're
+choosing out of five your one, right? One by two only. If you
+have five and six green balls separately in the box, then we
+say it is not combined together, like we have that separated in
+the box. Then individual properties, if it is separated
+combined, then you have take conditional probability
+directly. You cannot use it. Kamal Kiran, what is the
+question?
+Come on that each node, there's only a single feature, right?
+It's not a combination of features, single features only.
+Yeah, okay. Ayush, yes. So you mentioned that we'll be taking
+the intro before the target column also, which is my labels,
+which I need to find at the target. We need to decide the
+the the root note, which we which I will decide from column,
+ABCD,
+so, but why for the echo column? E,
+okay, so here.
+So what we are saying place the best feature of the data set at
+the root of the tree. What do you mean? The best feature it is
+participating more in predicting the target column, right,
+correct. If you don't correct the how do you know whether it
+is participating? We need to find the correlation of that
+particular target column, right. Okay. So instead of that, we are
+going to compare with the entropy. Clear
+entropy will use later for information gain, but general
+entropy, we no need of target column finding, okay, just to
+keep the entropy aside, and when we want to find information
+gain, at that time, we'll use it. But the general we are going
+to use Outlook temperature differently, then we apply it.
+Okay, the feature columns understood. Yes, thank you.
+Okay, good. So let us jump into the required libraries we need
+to import, okay,
+import
+pandas as TD,
+then data frame DF is equal To PD, dot, read, underscore, CSV,
+dt, dot, CSV.
+So you
+can zoom a bit, sir, like it will be front is larger, like
+that.
+Okay,
+enough. Yes sir, thank you, sir. Welcome. So now we have Outlook,
+temperature.
+Humidity, wind and play, all of them as categorical columns,
+right? Sun is categorical, temperature is categorical,
+humidity is categorical, wind is categorical, play is
+categorical. Correct?
+Now let us find, first of all to the play. So what I will do
+here, just write df,
+tell me out of this, how many in the play column? How many know
+we have? How many s1,
+234555,
+knows totally. How many samples, 14 samples, five NO NO MEANS
+remaining is, how many
+s is? How many 99999?
+Okay,
+we have something like 813, 13 is there? So eight plus 513,
+zero, 14 is here. Where is zero, okay, zero, okay. Index is zero,
+right.
+Zero to 13 means 14. Right, correct.
+So how many know we have in play,
+like 54555,
+how many Yes? 999,
+now I need to find the entropy.
+Click. What is the summation i is equal to one to n,
+probability of i log to the base two probability of i. This is
+what we are trying to do, right Negative. Negative. Tell me what
+is the probability of getting
+this? No How many knows. We have five. Total number of samples,
+1414,
+log to the base to five by 14, plus next one, one by nine, nine
+by 14. Log, nine by 14. So this way we are going to get the
+entropy correct. So
+this is entropy of what play. So if you calculate a log to the
+base two, if you want to calculate generally, how can we
+do that?
+Let me take this. Okay,
+sorry.
+From math,
+import log two.
+Okay. Now let us say first. What do we have so
+ah, five by 14, so negative. Ah, pi by 14, times of log two, how
+much?
+Plus nine by 414
+block two,
+particularly we need to do like this.
+Okay, nine by 14
+times of log two of how much
+1414? How Okay, so there is one,
+okay,
+how much we got, 0.9402,
+is the entropy Correct?
+Yes or no, yes. Okay. This is manually we are trying to do,
+right if you if I do it with sci fi package from sci fi, dot
+stats, import
+entropy.
+Okay. Then,
+for example, let us say play underscore entropy. Let us
+calculate pay entropy. How do we calculate play entropy? Entropy
+of five by 14. This you have tried five by 14 and nine by 14.
+What is the base? Lock the base two, right? Then play entropy.
+So we got same or not. So
+yes, correct. That means either you mathematically, you can do
+it, or inside by we have an entropy formula which will take
+care of only, only thing we have, right? What are the
+probabilities? That's it, and what is the base like this?
+Correct, okay, good. Now, if I want to find
+the entropy of this column, okay, output column, it must be
+related to play only correct. So what we have to do, first of
+all, let us do one thing.
+I.
+Okay, then I'm
+okay, now I want to get the
+entropy of each column
+outlook.
+Okay,
+so in entropy of Outlook, how many categories are there in
+Outlook? Big categories, sunny,
+right? Where?
+Hmm,
+then rain,
+let us say, in sunny, how many years and how many No? Let us
+say, tell me, in sunny, how many years? How many no we have,
+Sunny five.
+Sunny five, perfect. Okay, how many nos? Three No,
+sure. Make it Sure. Okay,
+three overcast, overcast is one, yes. Overcast is two years.
+Overcast is three years. Overcast is 4s, 4s, overcast,
+any No,
+no, then coming to the rain. Let us say rain is rain is one, rain
+is two.
+Sun is five, total five,
+yes.
+Noise three, sir, okay, this is one. Noise three,
+yes is two. Yes is two, sir,
+this is two. No is three. Done. Now coming to the Rain, rain,
+how many we have? Rain s is one, two. Rain is
+three. Then Okay, three, rain s and two is No, sir, one
+and anyone? No, sir. So totally, how many two plus three is five,
+five plus four is nine, nine plus five is 14. Perfect Match.
+We got it correct. So now, if you have three categories like
+this, how do you find the entropy? Now, first of all, we
+have to find the entropy of sunny.
+Then entropy of
+overcast, then entropy of rain. After that, we are going to get
+the weighted entropy that is going to give us, what is the
+total entropy of the outlook understood.
+So with target column, we are going to consider how many, yes
+or no, how many binary classification, or whatever it
+may be, right? So we'll take that. So can I directly write
+down the entropy formula? Can I use it or you want me to do on
+the whiteboard? Which one do you prefer
+whiteboard? Sir, selfish.
+Okay, one thing, one, one I will do here in whiteboard. Second
+onwards, we'll do that, okay, in the direct coding part. So DS
+not shared in the collab. Could you please share that? Okay, if
+you're working with me, you can take DS dot CSV.
+25
+dt dot CSV. Okay. Here is an old
+file.
+Okay. It is in the use.
+Okay, we take it out. Okay. So first of all, let us take the
+sunny. So sunny, how many acid we have, so entropy of sunny. Go
+ahead. Tell me negative,
+two over
+two or 552,
+or five plus three over five, logs to three.
+Now, entropy, overcast.
+Tell me, negative, four over four, log four over four. Next
+one, zero over four. Log 044,
+last one, drain,
+three by five, three by five, three by five, two plus two by
+five, two by five, perfect. Then weighted average. We need to
+find Correct. Okay, in weighted average, how do we are going to
+get I'll show you. Weighted Average means totally. How many
+sunny we have five, totally. How many workouts we have four, how
+many rain we have five, five, right? So now we.
+We are writing over weighted average. First we'll write for
+the sunny totally, how many sunny we have five Correct. Five
+over total is how many samples 14. So five over 14 times are
+Sunny? Entropy, okay. Plus next we have four over 14 of which
+one overcast. Entropy, overcast.
+Then finally, over 14 of which one main this one will give us
+the outlook entropy. So for each column, we need to calculate the
+entropy like this understood.
+Okay, so let us do that step by step. In a simple What do you
+say,
+Okay, let us give a meaningful names to understand, step by
+step. Everybody. Okay, first of all, we need to get which one
+entropy
+of sunny before that, let me do one thing. Instead of manually
+calculating all the you know values, I'll do one thing,
+play underscore counts
+due to the time complexity, let us do one thing. I'll take three
+columns, not a problem.
+Instead of four columns, let us take three columns. Later you
+find four columns? Good. Okay, okay, okay,
+sir, Outlook, so you'll understand
+counts. Then we have temperature counts,
+temp counts,
+then we have wind. I don't need Okay, I need humidity, for
+example.
+So totally we have Outlook, temperature, humidity, and we
+have a wind also, I don't consider wind. Let us take these
+columns and do it. So for that, what we do here,
+DF, dot
+columns, we get it, then new DF is equal to df of how many
+columns are constrained,
+three.
+Now I don't want when,
+okay, let us say this is our final DF. Okay. Now I said df of
+play counts, what it is going to give it is going to give us the
+play counts, okay? When I say outlook counts, DF, dot, Outlook
+counts, value counts, it's getting, but with respect to
+which one I need, with respect to
+play,
+right? Then, Value Cards, temperature, with respect to
+play, play. Then here actually it is, you have to give us
+this.
+So then this one,
+as we applying a function, we have to do it.
+Then we have, instead of print, we are going to take humidity,
+right? Humidity? So let us take humidity here,
+with respect to,
+okay. Now
+we can print
+F first of all, which one play counts and then humidity counts
+like this, okay, let us see what happens,
+outlook of play, what to say, data frame object is not
+callable
+and.is missing between out. Just give a minute. Actually, we have
+to group by right. I didn't group by
+I need to group the columns by their categories.
+So we have dot group by that. I missed it. I
+Hmm,
+I think in play counts also.
+Okay, so when I take play counts, I got how many now, nine
+Yes, nine, yes and nine, no final, right? This is what we
+get, it five and nine. This is correct, right now coming to the
+next one or Outlook. Let us say outlook. We got overcast as how
+many s 4s there is no no in that. We did it rain. How many
+s3, yes, two, no. Sunny. Three and two. No need to count
+correct
+yes or no.
+Yes, yes.
+Okay, so let us do one thing. First of all, we start with the
+output. Take the outlook column, entropy of which one? First we
+start with
+Outlook. So.
+So first do this.
+Now let us find the entropy of the outlook column. So first we
+start with entropy of which one
+outlook.
+No, it's not okay. We didn't print it. Okay. Just give me a
+moment. Let me print this. Okay, entropy of which one. Let us
+start with the uh, we started with Sunny, right? Sunny. Let's
+take Sunny.
+Okay, then entropy of next one is overcast.
+Then entropy of next one is rain, rain. Consider this,
+okay. Now, what is the entropy of sunny? Now, entropy of Sun is
+entropy? Okay? Then. Now tell me in sunny, how many yes and how
+many No? We have three and two, right? So we can say two by five
+and three by five. Okay, then what is the base? Base, two,
+two, done. Okay, similar,
+uh, entropy of next one is, let us take a ring, three by five,
+two by five, same, right? So three by 592,
+divided by
+cost,
+we have how many by four, by four by four, by four by four,
+zero by four, zero by four.
+What is the base now, two bases, one, two, comma base is equal to
+two. So zero by four, zero by four, sir, okay, zero by four.
+Okay. So now we have
+next we have
+rain, rain, rain. How many we have? Three and
+two. We got this. What we need? We need weighted
+orange. Age of which one
+Outlook, Outlook,
+totally. Let us give five by 14, because for Sunny, we have five,
+and for rain, we have
+five. Overcast we have four. So five by 14. So in sunny, how
+many we have five samples, entropy of sunny, entropy of
+overcast, we have overcast. How many we have? Four by 14,
+perfect entry of protein. We have that. Then we have weighted
+average. So we can get it.
+How much we got?
+Point six, nine points
+done
+now, similar way we need to find the
+entropy of which one temperature and quantity, right? So let us
+go with the temperature next one.
+Okay. Temperature counts.
+Okay, done.
+Okay. So now let us start with how many in the temperature we
+have three categories, so we can say entropy of first, one cool
+entropy of second, one hot entropy of third one, entropy of
+Mild. Mild, done. Now, what is the entropy of cool? Now?
+Entropy,
+entropy, okay. Now tell me how many
+we have, three by four.
+Gamma. Yes. Equal to two. Okay, done. Next, one,
+two by four, two by four,
+two by four,
+two by four, space
+is equal to two. The last, one
+by six,
+four by six, four by six, two by six. Entropy, four by six,
+four divided by six, then by six, two divided by six, base
+two, this is equal to two. Then we need
+weighted average of temperature. So 413 plus one is four by 14
+entropy of cool, two by two, four by 14 entropy of hot, six
+by 14 entropy of we got. How much we got? 0.91
+then we need to find the next column. What is the next column?
+Humidity? So
+humidity column. Okay,
+then find humidity counts. Okay, done
+so now entropy of how many categories we have, high, high,
+normal.
+The second one, Entropia,
+normal.
+What is the entropy of high three by seven,
+four by seven, three by seven, right? Three by seven, four by
+seven, okay. Anyway, not a problem. You can write three by
+seven also not a problem. Sequence is not a problem.
+Sequence is not a problem. It will consider Okay, base two,
+then base is equal to two done, then we have
+is equal to six by seven,
+by seven. Comma, one by
+seven seven, then space is equal to two.
+Okay. Then finally, we need weighted average of humidity.
+How much we got? Seven by four, four plus three, seven by 14.
+Entropy of high, six plus one is seven by 14. Entropy of low,
+we got 17. Now tell me which is having high, lowest entropy out
+of three.
+Outlook figure out how much 0.69
+and entropy of 0.91
+humidity is how much 0.78
+According to us, which one will be a root node, the lowest
+one, Outlook is the root node. Okay, so let us do one thing
+now, as we know, Outlook is the root node. We did completely
+manual calculations, right using mathematical calculations. Now
+let us do like from SK learn, let us implement the decision
+tree classifier, and then we'll see. So before going for that,
+okay, let me take some of the questions, please, so you can
+unmute yourself and please raise your hands if you have any
+questions, we can
+Okay. Chaitanya, what's the question?
+Chaitanya, so doctor in the a little more up at one place we
+gave a zero by four. Also, when, when there is a no option
+available. Is that mandatory? Which one here? 04, yes,
+correct, yeah, two. We have to give because here there are two
+categories, right? All of them is or no. With the target column
+started column, we have yes or no. Yes? Is there no, is
+missing, so we have to include that for that no, the question
+is zero by four is zero? So Correct? That's
+error out, or it's a mandatory. It is mandatory as a syntax, but
+if you don't include, not a problem, but as a syntax, we
+have to include it. Okay, okay, yeah. Thanks, yeah. Saurabh,
+sir,
+what will happen in case of an imbalance class, because,
+because it's depend, because it's we are calculating the
+probability, right? So in that case, the probability for one of
+the class will be very higher than the other, right? And
+second question is, sir, we are having a categorical columns as
+the as the columns, right?
+What? What happens if we have, maybe you can discuss with later
+also, sir, like, what will happen if we have a continuous
+value, in case of not the, not the the target value. I'm
+talking about the good questions for I'll take example of sepal
+and sepal rate. I'll show you. Okay,
+thank you. Okay, don't worry. And coming to the islands, as
+you said, imbalance data is there, then definitely it have
+an impact. So I need to do imbalance definitely. We have to
+imbalance data need to manipulate, so we have to make
+it as a balance. Then only any algorithm don't work. Okay?
+Another Vikram says B base is directly related to the
+categories. No. Vikram, it is base two is the logarithmic
+formula to find the entropy, we have to consider that. Do we
+need to choose the columns which has less entropy values? Yes.
+Ramesh, less entropy means more impure. Okay, so that is the
+reason we are going to choose less entropy. Algorithm is going
+to choose less entropy. So the mathematical intuition behind
+algorithm is finding the entropies and choosing whichever
+is having lowest entropy. So how the entropy is calculated,
+whatever we did now is a manual calculation, right? So now we
+are going to do the,
+you know, we are going to take, for example, algorithm, and then
+we'll implement, see whatever manual we did. Same thing we are
+getting or not. Okay,
+yeah, Jaipur,
+yeah, sir. Here you will find the 10 drop in,
+right, sir, two by five. Comma, three by five. But the formula
+is two by five over log of three, two by five,
+where, let's
+see Entropia, yeah. Jaipal, when you are writing entropy, sci fi
+will take care of those things, okay. Side drop in the Sci Fi,
+we are importing interval function, right? So this way, if
+you are taking it, will expand in that way, only okay. And Anil
+questions, why only low entropy column to be chosen as a root
+node? Why not high value entropy column? Can you please explain
+how it makes a difference? Anil command, if you are taking high
+entropy, that means more uncertainty in the data that is
+not going to contribute much so in machine.
+Learning algorithms. As a data scientist, we look for the
+column which is more participating. So how do we
+calculate? Either we calculate using correlation, or we can use
+the entropy, okay, that is where we are going to consider if it
+is high entropy means it is no way participating in the column.
+Okay, yeah, one month go for the question. So if the target
+column has more than two classes, the decision tree can
+be applied, anything, any multi classes, it can apply, okay. And
+accordingly, entropy function will have those many calculate,
+yes. So we are not going to calculate just we are going to
+give a formula. And Madhuri is asking, where is negative sign
+in the formula? Madri, when I said entropy function, it is
+going to cancel all those things. Okay, if you're writing
+manually, we have to write negative one. So when you're
+writing the function, that is where we are using inbuilt
+functions, right? There is no if I use again negative in the
+function, there is no use it is considering. So when you see the
+entropy formula inside, it is there, okay, yeah, everybody. Go
+ahead with the
+question. Yes. Sir,
+for each of the features we are calculating, I'm trying to
+understand how we arrived at this entropy calculation. Like,
+I mean, see with for the humidity column you are
+considering the play, right? The target, the end all the columns,
+each and every column, yeah, for example, I'm taking,
+okay, so is that mean, like at the split itself? I mean at the
+root node itself. You are trying to make sure
+there can be some balance in the tree, like we
+are actually calculating how many S's and how many knows with
+respect to this entropy, right? Like, that's
+my question. Is, like, I could not actually understand why we
+need to consider the feature with respect to the target and
+calculate entropy. Yeah, if you don't consider if target column,
+how do you split the tree? On what basis will split the tree?
+If you consider height and weight, depending on the gender,
+only we can work going to reach to the leaf node right? Slitting
+the tree definitely needs the leaf node values. Without that,
+we cannot reach to criteria, right. That is where that is
+correct. Algorithm we are going to consider,
+okay. ANOVA,
+yeah, fast, yeah, yeah. Can you hear me? Yeah, I can hear you.
+Go ahead, yeah. So I was asking, like, suppose you have taken an
+example. Like, of all the in above, there are 100 apples. All
+are 100 then probability will be one. So in that another, where
+is the probability? Man, no, consider, don't. Don't go in
+another direction. We are not considering any probability.
+Entropy inside is the probability, okay, entropy
+formula is in probability. We are not considering entropy,
+sorry, probability. We are considering entropy. Entropy
+inside consists of a probability. Okay, so don't make
+up the probability happening. So for IMDb data set, also,
+somebody asked me, right? If the highest probability, so that's
+okay, probability inside you are considering, but IMDb something,
+I means imbalanced data set is there, right? So at that time,
+we need to balance the data for any algorithm. But here, don't
+consider probability. I'm not saying about any probability.
+I'm discussing about entropy, right? So entropy inside,
+whatever it may be, I'm just opening the entropy, you're able
+to see that, okay, there is a probability. You're asking the
+question. If I just write entropy, you don't ask the
+question, right? So inside, how is the formula we are not going
+to bother entropy means what entropy is something we are
+trying to find. There is a purity, more purity or less
+purity. If it is more pure, that means that is the column which
+is more participating in the
+prediction column, right and above. So that's why we are
+trying to understand so keep one direction that we need to
+calculate entropy. What is entropy? Uncertainty or
+impurity? If it is pure, well and good, that node can be
+considered it's impure, rejected, understood.
+Got the point?
+Yeah, yeah, okay. Aish, so I just wanted to confirm. So when
+the impurity is zero, it is only one class, and we say the data
+is pure, yes, okay, and it is one, then we will have multiple
+labels, multiple classes, maybe, sorry, sir, maybe, maybe
+depending upon the, you know, target column. And how does all
+of this stitch together when we said that it is not
+participating in the in the column, you mentioned this
+statement, I'm COVID this statement in this framework, no,
+no. In this framework, I'm just trying to make you understand
+that actually, unless, until you see correlation and feature
+engineering, you don't understand explainability of the
+model, right? So to make you just simple understanding, let
+us say four features are there. If one of the feature is having
+highest, you know, purity, that means lowest entropy, the.
+Is participating more in predicting the target column.
+That way try to understand. Is it clear? Okay, yeah. Makes
+sense, right? Yeah. Okay, good. Chakrapani,
+so is that negative sign that you put in the whiteboard taken
+care of this entropy expression already? Yes. Expression itself,
+it is going to take, yeah, yes. So here, when we are calling
+entropy, already in the entropies. Define the negative
+symbol, so just we are using it, okay, no need to mention again,
+improve negative entropy. Anything.
+Okay, yeah. Okay, good. Now we are good to go. So till now we
+did, like just we tried to open the black box audition tree. How
+is the maths behind that? But as a data scientist, we are not
+bothered about all these things just as a learning process. We
+need to understand that how things are happening inside an
+algorithm, right? This is what we are trying to understand,
+Okay, once we got some idea, let us do with real time
+implementation of addition tree, then we'll see, okay. So this is
+the way algorithm is working, right? So first of all, if you
+look into the data sample, DF, how is the data? Data is all the
+data is categorical, right? So what I need to do, I need to
+convert them into numerical values. So how can I convert
+them into numerical values?
+We can
+just use the label encoder, right? So let me take from SK
+learn. Can
+anybody? Can anybody please share the collab notebook?
+Somebody is asking colab notebook,
+reprocessing,
+import, which one
+label encoder.
+Okay, then
+we can take a object, or, let us say, I'll do one thing, DF is
+equal to DF, dot apply. Which one label encoder fit,
+transform. Now do DF.
+So what I did, I took the complete data frame with clay,
+also consists of S or No, right? And I said, Okay, use this label
+encoder, fit and transform. So instead of taking individual
+columns, I applied to the complete data frame. Because
+complete data frame is categorical,
+good, this step is clear, okay. Now if you say df, dot columns,
+now tell me what is x. Now features are df of
+Outlook.
+Temperature, right? Okay, this is then, what is Y? Y will be df
+of,
+Okay, done. Now I'm not going to split the data, because very
+sample 1314, samples are there. Okay, if I split the data, you
+don't get the correct results, so I don't split it now from SK,
+learn
+dot tree, see previously what we did for linear regression. We
+said SK, learn dot linear underscore, model for the
+neighbor classifier we have given SK, learn dot neighbors
+correct similar way we are going to say, import decision tree
+classifier, then from SK learn
+dot three, I'll import,
+export text instead of graphics. Let us take it as
+text. Then all these two things are not needed. I'm not going to
+plan. Then decision tree is equal to dt. I need to mention
+the criteria. Okay, what is the criteria? Now we what we used,
+entropy, correct.
+Okay, and let us give some random state is equal to 42
+because here I'm not taking train test split, right? I need
+to shuffle the data. That is where I'm trying to do max step.
+I'll take as a three. Means I'm going to consider up to three
+levels of the tree, okay? Because we have only three
+columns, right? I'm just considering in that way,
+manually. I don't know whether it is perfect or not. Again, a
+question will comes immediately. Somebody unmute says that, okay,
+why did you take that three so it is randomly. I took it hit
+and run. Okay, a criteria. Why? Why I took criteria? Because I
+want to check manually, whatever. We checked it whether
+it is doing same with the algorithm or not. Okay. We got
+the decision tree algorithm. Now let us see tree underscore,
+rules
+is equal to export text,
+then data. What are the features we have? Outlook, temperature
+and humidity and print the rules. What is the base notice?
+Tell
+me outlook, right? Yeah, Outlook, Outlook. So even
+decision tree also calculated the same as Outlook correct. So
+that means whatever we did manual calculations, which is
+finding an entropy, all those things are happening at the
+stage of fit process, correct, and then the splitting will
+happens.
+So this is a way decision tree algorithm works. If anybody asks
+you, the back of the decision tree algorithm is there are
+three criterias. One is an entropy. Second one is the
+information gain. Third one is the gene indexing. So depending
+upon that, it is going to give us the what do you say?
+Whether to split the data. How do you make a root node and
+coming to the entropy is considering whichever the column
+is having lowest entropy, whichever is for coming to the
+information gain, whichever the column is having highest
+information gain, that is going to be considered coming to the
+genie indexing whichever is having the lowest entropy that
+will be considered. Okay. So now, how do we find the another
+two formulas are there, right? So let me take the two formulas
+also. I'll explain.
+Okay,
+somebody questions are please share today's collab notebook.
+Okay, done. What happens if you have the noise data? It Right?
+Cause issue? Right for entropy manikanta,
+whenever we are building any machine learning algorithm, what
+are the process we started, remember, what is the template?
+We said, first, import all the required libraries. What is the
+second step? We said, data ingestion. Third step is pre
+process the data. Then fourth step define x and y, then fifth
+step is apply the scaling. Then here we are after train, test
+split. We're applying the algorithm. Where is the question
+of
+again, the noise in the data? Right? Because already we did
+the pre processing. Then only we are applying again. You're
+jumping back to the old one. Where is the if the noise
+consists of something, it doesn't happen, because here
+only after the stage, processing all those things. We are into
+this here. So whatever we did in the previous classes, instead of
+that, we are going to take which one we are going to consider,
+whichever is having lowest entropy. Okay? And somebody says
+that, Suresh, circle. You can add window column now. Okay,
+good. I can add to Window column, also, not a problem,
+Suresh, we can consider it, but mathematical calculations are
+more right. That is the reason I just drop it. I want to give
+information gain also, then I will do it again. Is MACD always
+odd values, or it can be taken even values, anything. Rakesh,
+we can take even values or odd values. Not a problem. Okay.
+Only thing is you have to find the accuracy and check for the
+overfitting. If you are increasing the depth of the
+algorithm, somewhere, chance of getting an overfitting we have
+to consider. So after the break, we are going to see what is
+meant by overfitting. Sir, what is the meaning of humidity is
+greater than 0.5
+Vinay Kumar, after taking the values, it is looking for the
+pattern that if the humidity threshold is greater than 0.5
+then the chance of playing tennis. So that is internally it
+is calculating. We no need to bother about those things.
+Internet calculate, internal calculations. Okay, so for a
+given data set, how can conclude criteria Entropia, one from the
+other two. Now, similar from the beginning. For you people, I'm
+telling this is completely hit and run Correct? That means
+first try with entropy is try with Gene indexing, drive in
+information gain. Later onwards, we are going to apply a
+optimizer library which is going to give us the best hyper
+parameters. Okay, from the beginning, I'm conveying the
+message that how we find this hyper parameters. One is hitter,
+hit and turn process. Second one is second one is what using the
+hyper parameter tuning aptuna or grid set, CV, okay, search,
+search using the high participation column for the
+target classification that it has by us, the target results,
+no Ramesh. It is when you say high participation column as a
+root, that means splitting the root. It's not discarding other
+columns, right? It is considering all the columns. But
+where should I start? That is where it is going. Okay, and let
+us take Neha, okay, go ahead. Neha, what's the question?
+Sorry, doctor, if I missed it just because temperature had a
+high entropy, that's why it's not in any of the nodes.
+I have
+taken only No, no. I have taken only depth of three, right in
+the depth this temperature is not coming. If you increase
+that, you will get it. Okay, got it. Got
+it. Just to avoid the confusion, I'm trying to make it simple,
+you know, simple numbers that 40. Okay, try that. Maybe I will
+try that on my own. Sure. Yeah, you people will try do
+experiments tomorrow. Also, we have a class, right? So at the
+time, if you have anything, you can ask, or in the lab sessions,
+also you can ask the questions, not a problem.
+Okay, okay, yeah. So now is it clear? So just one. So can you
+explain about the other two? We need that some information game,
+like, how I'm doing that only,
+okay, okay, okay, okay, I don't leave you without showing those
+things. Okay, don't worry. Now, let us calculate information
+gain of Outlook
+first. Okay, how do we calculate? First of all, we need
+to calculate the entropy of play, and then the weighted
+average of the Outlook.
+Two, what is the entropy of play? Tell me, what is entropy
+of play?
+Entropy of entropy of play is what? Nine by 14, nine, five by
+14, right?
+Yes, sir, yes, sir. Great. Did it right here? Entropy of play,
+how much we want? 0.945
+by 14, nine by 14, right? So that is in play, entropy. So how
+do we calculate the information gain? Now, information gain of
+Outlook can be calculated as play, entropy minus weighted
+average outlook and information gain temperature is play,
+entropy weighted average of temperature and humidity. Now
+let us print them, all of them,
+iG, Outlook.
+IG, temperature and humidity.
+Now tell me who is having highest information gain.
+Outlook, highest terms, Outlook, Outlook,
+Outlook. That means even in the information gain also, we are
+getting outlook as a root note correct, what is our information
+gain? Information gain as the meaning itself, which is giving
+more information regarding the target column. So how do you
+calculate, actually, whatever the total entropy minus the
+weighted entropy that is going to give us the information gain?
+Understood?
+Excellent. Dr Habib, it is exactly like it is depend,
+straightly dependent.
+Entropy itself isn't Yes. Entropy itself so there is
+nothing like nothing new is found because straightforward,
+directly proportion, yes, entropy, yeah,
+okay, people, is perception is actually,
+that is the reason, when you write entropy automatically
+inside information gain only calculated, okay? And in the
+decision tree, they have given another,
+you know, feature, a criteria. So the latest one, log loss, we
+call it. So we can use The Log loss also we can apply client,
+okay. So generally, we use entropy and the gene indexing.
+Okay,
+thank you, yeah,
+okay. Now coming to the Gini indexing, the formula for the
+genie index. Okay, let us do one thing. I'll write down all the
+formulas so it will be clear for you people.
+First one, entropy, formula,
+negative. Summation of i is equal to one to number of
+classes, whatever you have column pi, number of categories,
+okay, like that. You can remember log to the pi,
+then coming to the genie of S will be one minus this is what
+we did, right? One minus i is equal to one to the category pi
+square. This is Gene indexing, coming to the information gain
+entropy of parent minus summation of j is equal to one
+to 1s j by s entropy of that column, that means same thing
+here. Categorical column we are going to consider understood
+this is information gain formula. So what we did now
+information gain of particular outlook. We say information
+entropy of play minus weighted average of which one outlook
+that is going to give us the information gain. Okay? Now, if
+you want me to calculate gene indexing, I will do that.
+But for that,
+we have to do more calculations. One I will show you. Okay,
+I'll show one.
+Which one let us say I'll go with a first of all, I'll
+create a simple function,
+Genie,
+okay, then, which is going to take some of the probability
+list, for Example.
+Okay, now I will return
+one minus
+sum of
+probability square p in playlist.
+Formula is what one minus pi score only, right? That's what
+I'm trying to do here. This is what Genie now I need for which
+one root. What is the root play?
+So Genie for play.
+So what is a question here? Gene index is lowest? Can you please
+show the formula for information gain?
+How many times I'm showing Raghava? See this is not the
+information game, entropy of the parent, minus the intro,
+weighted entropy of the particular column. Okay.
+Anyway, I'll share this. No, you know, PDF also after the
+session. Next, I'll write clip cleanly so we can make a
+reference. Okay,
+okay,
+Genie, do.
+Play
+is equal to
+Genie
+for play, how many? What is the probability of play, five by 14,
+nine by 14, right?
+Yes or no, yes,
+yes. Probability of play, yes or no, yes, yes.
+So getting Genie play, how much we got? 45 for Genie play. Okay,
+now we need to calculate for which one outlook.
+But in Outlook, how many we have? Tell me how many
+categories we have
+two outlook, how many categories? Three,
+sunny, overcast, right, right. We have three. Then what should
+we do weighted average Genie outlook we need to calculate,
+okay, then print it.
+This is for
+Outlook, similar way we do for which one
+temperature,
+right
+temperature,
+okay, then genie of cool, Genie of high heart, Genie of mild.
+Then weighted,
+weighted average,
+instead of Outlook, we can take
+temperature is equal to
+three by four, correct, three by seven, three by 794, by seven,
+three plus 142, plus 244, plus two, six, correct. So here we
+have, this is wrong. So for genicul, how much
+ah, Genie cool, four by four by 414,
+Genie heart, how much?
+Four bytes, four by
+1414,
+six by 14.
+Then print average.
+So from this also, we can understand who is it the if you
+write ascending order, which will come in the
+top outlook as the name index, indexing, when you are doing
+first will come will get a lowest value, second value, like
+that, right? So in indexing also, which are getting the
+lowest value, that will be a root node. So from this, we can
+understand that either use gene indexing or information gain,
+or, for example, if you taking any other also, we are able to
+get it properly that, okay, algorithm works with a splitting
+is that clear now? Decision Tree, yeah, I have a small
+question. Habib, why didn't we calculate the Gini for the play?
+Because that is the target column.
+Later onwards, no later onwards, when you are using this right,
+just showing you like, for example, how do we calculate the
+pay? But after that, when you are taking maybe, for example,
+similar to the what do you call information gain? If you want to
+calculate one minus, if you want to do to lower the values, you
+can do it. But just to for understanding, I have given you
+genie to play. How Genie works, because I have written a
+function here, right? So make you understand that function. I
+have given this example, but actually we are going to
+consider only the output, because we need the index of the
+features, not the target column. Okay. Okay, thank you. Yeah, hi.
+Abi, hi. For this example, whether you use the gene index
+or IG, I understood we got the same output, but there should be
+some reason, right? Where do you have two different kind of
+things in the algorithm? There should be a reason, I believe
+maybe, for this data set, maybe both are giving same perfect. Is
+there any way we use compartment? Yeah, good
+question. Ramakrishna, I understood your question. So
+when we have this, if there is no difference, we might have
+taken only one criteria, but there is something mathematical
+difference. That is the reason we are able to get three
+different criteria, right. Good question. Ramakrishna, so this
+one depends upon the data sample. As you said, on this
+data sample three are working fine. Some other data sample,
+entropy will lead to the less accuracy. What should we do now?
+We change the criteria to which one information gain and look
+for the accuracy if, again, if your information gain, you're
+getting less accuracy. Get with the gene indexing whichever is
+giving it the highest accuracy, that is your best criteria on
+particular that data. Okay, that is what we are trying to do. But
+as you said, this is the library is to decide, and which is based
+on Yes, upturn and grid search CV, which can go through the
+iteration instead of we are doing it is doing okay?
+Yeah, perfect. Do we try and calculate, is there any case
+that all the three features get similar entropy, information
+gain?
+Shiva, the values will be different. Boss, information
+gain is subtracting from the main right? So definitely the
+entropy minus information gave less only the both can both
+three cannot be same, but the criteria would.
+Three can match. For example, lowest entropy, information
+gain, highest gene indexing, lowest three can match. Here in
+this data sample, all of three are matching with which one
+outlook column, right? That case is possible, but not the three
+values will come similar. Okay. Naveen, what's the question? I
+mean? So the question is like, here we're getting outlook as
+the root node in all the three approaches, right? Guinea, yes.
+So Can there be scenarios where they those three give different
+root nodes? Maybe a chance. That's what we are discussing
+right before the question is like Ramakrishna, somebody put
+the question that, why these three criteria? So when you are
+using the three criteria and three different samples, maybe
+you can expect three different What do you say? Columns? Okay,
+the root node. Okay, yeah. So let us try to understand
+precisely that. We started with decision tree algorithm. What is
+a decision tree algorithm? This is also known as rule based
+algorithm, which is most popular
+tool in Kaggle.
+Okay, but one problem is there with this tool, there is a
+chance of overfitting. After the break, we'll discuss about
+overfitting, and after the break, I'll show you something
+like this is the categorical data we use it right? For
+example, if you have a Iris data, how things will happen.
+I'll show that. Okay, so we'll get a clarity decision tree, how
+it works, and then we apply the most of the time, if we will ask
+that we didn't apply train, test, split, right? So that also
+I'll apply. And you see,
+I will go some now we discuss about three types of criteria.
+What is the three criterions we have? One is either you can take
+an entropy, we can take an information gain, or Genie
+indexing, what is an entropy? Entropy is nothing, but how pure
+is the node is so purity in the sense, not like all of them, you
+know, something like, you know, pure, good data, all of them
+integers, all of them float, all of them straw, string, look like
+beautiful string, something No,
+pure in the sense like they all of the belongs to particularly
+one column are there belongs to two columns, something like
+that. If you have three different columns, then
+impurities more. We call it information gain, as the name
+indicates whichever column is giving more information about
+the playing of the tennis. So if you say that, okay, here,
+Outlook is good, overcast, something we can place the
+tennis so that is giving more information gain. So information
+gain formula, we have seen one minus weighted average that we
+have seen right the final we have a gene indexing. Gene
+indexing is it is calculating the probability square, then
+subtracting from one and creating an indexing format. So
+whichever is having the lowest one that will be your root node,
+whatever the entropy we are going to consider which entropy,
+lowest entropy, this one, highest information gain coming
+to Genie,
+lowest Genie values. That's where we are trying to do. Now,
+if you want to see mathematical formula for these three, we said
+that entropy will be E is equals to we can write negative I is
+equal to one to whatever the categories we have. C stands for
+categories three, categories four, categories five in the
+Outlook, how many categories we have in
+Outlook,
+categories that is then coming to the information gain. What is
+the formula entropy of that particular parent minus
+summation of j is equal to one to k weighted average that one.
+Okay, all of the properties are summing and particular column
+probability then coming to the last one. What is the it is a
+gene indexing. Gene indexing of that particular column will be
+one minus i is equal to one, two. How many categories you
+have that categories probability square. For example, if I'm
+applying to Outlook, how many categories are there in Outlook?
+We have three category overcast, Sunny and rain. So we are going
+to calculate summation of the squares of that probabilities,
+and subtracting from one, we are going to get the genie. So
+whatever the sequence of the indexing we are getting that
+will be your top index, whatever it may be column that is
+considered as
+the root node, okay? So generally, in precisely, we can
+say that,
+like genie and entropy, both measure the impurity only, okay,
+information gain is usually calculated using entropy only.
+So in all of them, somewhere entropy is included. Okay, so
+that is where we are trying to understand in your what do you
+say? Decision Tree, algorithms. Okay,
+so before going for a break, if you have any questions, please
+go ahead with the questions.
+I would love to see how decision tree collapse when we choose
+highest entropy element as a root
+function would take the lowest entropy manager you have tried
+separate code for that. Okay? You have to build your own
+decision tree, then consider it as a highest entropy works. But
+this ID three algorithm, it's considering the lowest entropy
+only when you are considering Okay, see Lakshmi, go ahead with
+the question in.
+Yeah, Sir, actually, entropy, we have a inbuilt function, right?
+Similarly for Genie we don't have, right?
+Yes, we don't have that. So in sci fi, it is entropy is there,
+because entropy statistical measurement, right? So the Sci
+Fi package consists of those we have included, and gene is not
+there manually. I have written the code. That's it. Okay. So
+out of three methods, if I choose one, if my like, will it?
+Will it possible to analyze like, only by entropy, like,
+instead of calculating gene?
+Select me as a data scientist. What we do is, our goal is, end
+of the day, getting highest accuracy Correct. Everybody
+again. Okay, yes. So what we do? What we do, we treat these three
+criteria. We'll see on our particular data, which criteria
+works better for we take entropy, Genie and information
+gain, then we'll try to calculate the accuracy. So
+whichever is giving good accuracy, that will be our base,
+okay, is completely hit and run only now, if you say no, dr,
+Habib, can we go with some other means? Options. You can use grid
+search, CVR, up to now that will help.
+Yeah, sure. That's good. You sure? Yeah, good morning. So my
+question is, yeah, my question is, when your decision tree
+depth is more like if you have more features and the
+combination of the tree depth is more in that case, does it have
+any impact on the accuracy of the model?
+Accuracy? Generally training will get more accuracy the over
+over training happens. Okay, so that is where we call decision
+tree as a prone to overfitting. So we'll see how to stop the
+decision tree coming over to the overfitting. We'll see that
+after the break. Okay,
+Suresh,
+yeah, sir, this max depth, you have put it as three and that's
+why it took three levels.
+Ah, yes. Three levels only. You can increase that one, yeah, put
+it.
+It will dynamically calculate. It basically take the best one.
+Exactly, yes, so, okay. So if you don't give, it will
+dynamically calculate the best one. Generally, if you don't
+give Max, then default value is five.
+Okay, yeah. And the other question is, typically, in the
+model, we always look for when we deploy right.
+We look for model responding positively, for uncertain data
+or unexpected data. Here in case of decision tree, when we are
+selecting the root node, we are going for a certain data, I mean
+comparatively right, less entropy. So what is the intake?
+Are you pushing the noise below the, you know, lower levels of
+the tree? Or how is
+that? That is Suresh, again, see there. We call it an
+observability of the model. Okay, using Grafana, Prometheus,
+will connect our model. I will see if the accuracy is going
+down comparing with the loss. We are going to retrain with the
+new data. Okay, we cannot relay the model completely, so every
+now and then go on training the model so it's not going to push
+into the entry or into the loop node. If you are getting less
+accuracies and misclassifications, we call it
+as a false positive, then we retrain the model. So how do you
+know the false positives for that? We have the tools known as
+ml flow, or we'll connect with the Grafana Prometheus, and
+we'll beat the dashboard. From the dashboard we are going to
+connect indicating the drifting is happening, threshold. Then
+retrain the model. So whenever you are getting the accuracy is
+less, retraining of the model, we'll take understanding of the
+pattern. That's it. By one, boss, one by one. Okay, one
+Suresh, complete. Okay, sorry, this one. This is basically
+again, you know, a standard, but we do trial and error based upon
+our data set, and keep on making it accurate towards that
+exactly. Okay, yeah, thank you. Deepa mat circle, welcome,
+right? So, Doctor V, my question is that, like the leave the
+parent. Here you had, you know, mentioned a term called Parent.
+Is it always the same as the target? Yeah, target will
+always be the parent. Yes, okay. And another thing is that, you
+know, the right now, we got the root node. Okay, once we get the
+root node, what is the next? What's Next? Next? Again, next
+root node. Who is the root? Next root node. Remaining columns
+will be calculated entropy, and then will be built again. Okay,
+so once, but how will the test data, you know, get into the
+picture? So once the test data gets into the picture. So the
+test data will be split into in so how will we category classify
+the test data here? Once we classify, man, the algorithm
+understands, okay, so when, if it is not able to understand the
+test data, that means this algorithm is not good, we'll
+change the algorithm. Yeah.
+Okay, okay, so we are not concerning about the test data.
+We are just trying to train on the actual data, and it was able
+to understand and build the tree, or not. If it is building
+the tree, then we'll take the test data. If it is not working
+well on the test data, we need to change the algorithm, or we
+need to change the criteria Correct. Okay, Okay, understood.
+See Vidya, I said, After the break, we'll check for the
+overfitting. Now the question is, how do we check if the model
+is overfitting after the break, I'll say, I said, discuss that.
+Okay, yeah, don't worry. Next one. Jaipal, what's the question
+I initially missed? It's a first 15 to 10 minutes class today due
+to network issue, what should I do?
+Okay, entropy. What is entropy? How do we calculate that one?
+Just try it. Okay, end of the class. Just stay for five
+minutes. I'll recall, okay, loving, loving station tree that
+you are displaying on the screen right I could see that the root
+node is outlook. And on the left side, we go for values less than
+point five, and right we are going for the point for greater
+right. So after that the second level child node, we have
+humidity as the root, right.
+So, and then again, Outlook is coming into the picture. So,
+so again, we are
+moving left and right based on Outlook less than 1.1 greater
+than 1.5 right? Yeah. So that is completely in. Again, what we
+are doing here. First of all, we need to find the root node,
+okay, after the recording the problem and the threshold it is
+going to navigate, we no need to worry about left right
+navigations. Okay. Algorithm will take care of the
+thresholds, and according to that, will move on. Our duty is
+only identifying the root node so that also to taken care by
+the decision tree algorithm. Correct? Yeah, yeah, okay. So
+that means, like a given column attribute can be considered for
+classification at different levels in the tree that is
+managed. Okay, yes, yes. So depending upon the threshold
+values, it can navigate.
+Mayuri.
+Mayuri, what's the question, sir? I think it's related to the
+same on the dpayan. And then person asked, like, when we
+calculate the levels, we are finding the root node at each
+level. And just for clarification purposes, so
+outlook is the root but then the next level you want to find the
+roots. Which like are like this one Mayuri, let me put it in
+this way. Out of four columns, one is the root node, Okay,
+which one is the root node? Outlook? Okay. Once it
+identifies outlook is the root node, it is going to look for
+the threshold values on which threshold values this particular
+class means plate, and is yes, is working on which values the
+combinations which makes the plate any snow. So that
+combination pattern will be understand by your decision
+tree. According to that it is drawing rules, okay, the left
+and right navigation rules by station tree itself, there
+again, we don't calculate the entropy and all those things
+only. First time we are calculating, then getting into
+the data, it is deciding the split. Okay, okay, okay, okay,
+yeah, that makes sense. Thank you. Thank you. Okay, so anyway,
+it's a break time. It's 1110, 25 we'll be back by uh, 1105, if,
+if you don't have a question, you can take a break. Okay,
+we'll back by 1105 Okay, two more questions. Suresh and
+Narsimha, tell me what's the question coming for delaying
+your tea time? No problem. Yeah. If you look at this data, data
+is like for sunny days, it is saying no, no, play majority of
+the time, and for over cash, it is saying, yes, play. So the
+data quality, it's technically not good, right? Because you
+normally pay more on sunny day. So how do I determine, I mean,
+if it is not now, maybe in the later feature engineering, you
+will talk about, how do I determine data quality is not
+good? Feature engineering will do that. Suresh, okay. Feature
+engineering, using IMD imbalance data library will do that. Okay,
+that's similar. What's the question?
+So we have determined the road mode, okay, so using entropy now
+next subsequent nodes, right, will be decided based on
+what values
+the entropy values of the same features that we calculated that
+similar, I think this is third time somebody is again, same
+question, right?
+Deepam and got the same question and same I explained it, right?
+I said, first of all, out of four, one will be the root node
+after that, yes, right? That we are going to look into the
+values. Who is going to look decently. Look for the values on
+which values based threshold it is going to the play yes or no,
+according to that it is navigating understood.
+So my question here is validating of other features.
+Other features will you.
+Means that, you know, root node is created, okay. Now I'm going
+to level nodes. So next level node can be temperature or
+humidity, right, whatever, anything. Okay, so that decision
+of the second level nodes is based on what is my based on
+threshold of the values, not similar, okay, so based on
+threshold of Outlook itself, the other feature values will be
+discussed. Yes, okay, thank you. Yeah. Chakrapani, the last
+question is, you identified a root node in base after the root
+node,
+set of nodes,
+right? So the question is, is there anything kind of
+prediction that you do in this model? No, we don't do anything
+traditionally. Algorithm is to ID three. Algorithm, it is
+reaching to the leaf nodes automatically by iterating.
+Break. Suresh, we can hear you. Suresh.
+Okay.
+Next, done.
+Sorry. One
+final question, yes, you mentioned the Grafana
+parameters, right? Understood in real time when we run the script
+on the baby scheduler basis, depending on data set,
+everything right? Then we will check the all the stats, and if
+the accuracy is going down. Maybe we revisit the script, and
+we may change the algorithm that could be the depending on the
+what is the new data came compared to when we train this
+model. This All right. Perfect. Ramakrishna, perfect,
+understood, do we gonna do this kind of intending during our
+course? Any, any like, yes, yes. We do that when you are taking
+the, know, the diploma, when you have the project work at the
+time you do that. Okay, okay, yeah,
+okay. So we'll take a break, and after the break, we'll look for
+Iris data sample without categorical, how things are
+working. And then we'll try to understand again, decision tree.
+Later, we'll think of overfitting also. Okay, so we're
+back by 1105 Exactly. Take a break and we'll be back by 1105
+okay. I think shade in the chat 1105
+this okay. Okay, good. You.
+Okay, welcome back
+Naresh Nara. Question is, once the root node identified, why
+the algorithm is considering the Outlook feature for inner
+we cannot say why algorithm is constrained. Algorithm is build
+like that, okay. So what it is going to do is it is going to
+understand the patterns of the data, samples, threshold values
+according to that if needs that Outlook, you know, for example,
+Outlook is participating in that particular target column, then
+that will be considered. So values will be considered going
+next, like, for example, height, weight, we are considering
+weight is 80 kilos, something like that, right? That will be
+construct. That is a reason we are going to see outlook again
+repeated. Okay,
+good to everyone. Just bring in chat. Yes,
+yes, sir,
+okay,
+okay, great,
+okay, let us start.
+Okay, now,
+let us do one thing.
+For example, if I apply
+from
+SK learn,
+dot datasets, import,
+high risk, load, Iris,
+train, test, net and which algorithm,
+tree, dictionary, classifier,
+Okay,
+done. Now,
+Iris is equal. Let
+us take Iris is equal load. Iris
+as the data set doesn't have any null values and pre processing
+is not required. All are at the similar scale.
+We can write x as Iris dot data. What is y? Y as Iris dot target.
+Done. Then we are going to split the data, X, underscore, train
+X, underscore, test y, underscore, train y, underscore.
+Test is equal train underscore, test underscore, split x and y.
+Test size equals something, then dt is equal to decision tree,
+classifier
+with criteria we are going to consider as a.
+In entropy, and let us consider max depth is equal to
+pi. And
+then we can run a state, no need, because already applied in
+the
+train, tested right then we write dt, dot fit
+X, underscore train y, underscore train.
+Then we can write TT, dot, score
+X, underscore train y, underscore train.
+So we got how much 0.99 let us consider score of test data also
+x, underscore test y, underscore test
+so we got nearly same right, 90 900% 0.9916
+is 100%
+we got score is good? Is
+it clear decision tree, how it works now?
+Now the question is, most of the people, they have that
+previous problem statement, we have categorical so that is the
+reason it is finding with the values like you know, whether it
+is 01, or something like that, okay. But when it comes to x as
+a for
+example, we have a outlook and temperature, humidity, we are
+able to get it with the categorical values with the play
+we are doing. But here we have all numerical values, right in
+Iris data. What do we have? All numerical values, if you
+consider x here, what do we have? We have all the numerical
+values.
+So this numerical values, how it is going to map. For example,
+we'll take x off
+colon, all the values which column, zero column, so we are
+going to get this one, 5.149
+like this, right? Continuous values we have we don't have in
+like, you know, sunny, heart or temperature. Then how algorithm
+is going to decide this? Okay, generally algorithm, what it is
+going to do, if it is a numerical values it is going to
+take in pandas, the quartile cut function is there that will be
+applied?
+Okay, what it is going to apply? It is going to apply quartile
+function to best understand. I will give you a simple example
+of PD cut. Then you can understand. Then we'll see how
+that implements into this one. Okay, consider we have something
+like,
+x is equal 12345,
+think like this is a simple length, okay. Now I have a
+target as two values, 00011,
+this is the target column. Tell me in the target column, how
+many classes we have,
+two, two,
+whatever the sepal length. Sepal length is continuous, right? It
+is something like, you know, heart, sunny, or something we
+have, like, numerical values are there. So then how decision
+tree, on what basis it is going to make a root node and the
+splitting will happen, right? How it is going to calculate the
+entropy? So to calculate the entropy, there is, in pandas,
+there is a function. We call it as a PD, dot, Q, cut, that is
+nothing but quantile based,
+quantile based binding. We call it what is mean by bin, been in
+the sense like a box, correct?
+Been in the sense it is a box, right? So we can say that, for
+example, 12345,
+we are going to keep all of them into one box. This is on one
+box. So this box is zero, this box is one. This way we can take
+now, how many bins are there? Now, Bin one, nine, Bin two,
+like this. We can do it okay. That is one option directly to
+understand. So if you take now, for example, x is equal to how
+much we have. One, comma, two, comma, three, comma, five. Now
+when I apply PD, dot, Q, cut on this 1x where I want, how many
+bins? Two bins I need, because target column, how many features
+are
+there? Or we can take three bins, also assigned to two.
+Okay, two bins. We can have three column, three features,
+also not a problem, okay, so for q2 that means we need to divide
+the bins into 50% each. Correct.
+We need to divide the bundle into 50% each. So how they are
+going to calculate now we say zero percentile quantile. What
+is the first number that is minimum of x? We call it, what
+is the minimum of x1?
+100% quantile
+maximum of X? How much?
+Five? Right?
+It
+okay. Now we need to compute another bin, 50% of
+50%
+quantile.
+How do we compute 50% content?
+So we have a position is equals to there is a formula n minus
+one times of q by 100. So how many samples we have? 12345,
+means
+whatever q2
+by 100. So how much will get?
+Eight by
+0.08
+Okay, so here we are going to get around. What's the Q value?
+Actually,
+Q value is
+5q. Value is the Q value is 50 right? You concluding the 50%
+quantile Right, correct. So 50% 5152
+so how much we are getting four by two is how much two? Okay?
+12345,
+what is
+the index? 014,
+now we got a index of which one two. So it says that index of
+two will be your index of two will be your three 50% quarter.
+Okay,
+okay, so index of two how much we have now, tell me
+three. Now, if I divide into bins, how many quantas we have,
+one is the minimum, five is the maximum. What is the middle 133,
+so these are the quantiles, correct? So 0% quantile,
+50% quantile and 100% quantile. Now let us take bin one, Bin one
+will be 123, will be bin one, Bin two will be three to five.
+Okay, now you take the value, for example we have, how much
+values we have, 12345,
+now tell me one belongs to which bin,
+bin one, one
+index is zero.
+Bin one, okay,
+this is x and this is y, right now, we did the beaming. Okay?
+Bin one, uh, what about two? Two belongs to
+bin one, whatever. Three,
+Bin one, okay, no, we don't exclude in that three is just we
+explored here again already it is there, right? So then bin one
+already we have three is given now, okay, so now four is bin
+two, five is
+now we can write, instead of x, we can write bin one that
+samples is one, three, and Bin 235,
+like this we can assign so now feature of x will be one three,
+which one zero in between and one three in between, zero in
+between, one three is equal to zero. And finally, three and
+five will be one. Three and five will be one. So this is the way
+it is going to create the binning understood.
+So this is known as binning process. So let us do one thing.
+Let us apply the binning on your Setosa varicosa data. So what I
+will do now, let us take this part again.
+I'll explain for one column that is enough.
+So okay, I'll explain for simple length. Is it enough?
+Okay? Then all the we cannot take all the columns, right? It
+will take a lot of time to do mathematics,
+just for understanding data. Frame is equal. Data is equal to
+which one we have, Iris, dot data column is feature name,
+then target is I use dot target if you want to name target
+names, if you want to snap, we can write
+df of
+target, underscore name is equal to target. We can apply lambda,
+or we can take dictionary also, okay, not a problem. Now, print
+it,
+DF, dot, head,
+so sepal length is the one. Target name is Setosa. Let us
+construct this one. How many target times here we have tell
+me three
+quad target names, right?
+So okay, what should we do now? Let us take the sepal length.
+Okay, so what I will do now, df of sepal length,
+underscore, Bin I need to find right is equal to.
+It. Okay. Did we imported pandas, okay? BD, dot, Q, cut. I
+am just showing manually. This will not done by you. Actually,
+when we are writing in the decision tree, we just write
+like this, okay? As a data scientist, you are not supposed
+to do this job. Just simply import the libraries, fit the
+target and find the accuracy. That's it. But as a student, you
+want to learn, and you want to understand how things are
+happening internally, so that's what I'm showing Okay, so PD,
+cut, we are not doing going to do anything. Okay, which column?
+Tell me now, which column we are constrained, separate, length
+this one. Okay. Now, how many bins I need? How
+many classes we have?
+I say, if there is a duplicates, drop it.
+Okay. Now we can say df of okay. Let us do one thing, sepal,
+underscore, length,
+I'll give you the counts. Is equal to
+DF, dot, group by,
+okay, which column sepal length, Bin column,
+Okay, which one target names. Then I said value counts.
+The drop is the feature we have protected
+now print sepal length counts.
+Drop duplicates here, two times duplicates. We got it.
+Okay, so we got a bin from this to this which one Setosa? Okay,
+we have how many 45 in this bin? How many is Setosa? 45 Setosa,
+versicolor, six, virginica three. So in this bin, three
+classes fall in and it is something like s. No, correct,
+yes, no, like that. In the previous we have similar here,
+here instead of s, no. How many we have three classes in this
+bin. We have this. In this bin, you have this. So these are the
+values. Now after this, it is going to apply the algorithm,
+understood,
+clear, yeah. So actually, what happens here inside? Remember
+that actually it is a continuous data, but we need to convert
+that into categorical for decision tree to build the tree.
+So inside that it is going to put p, dot cut. Means Q cut,
+quantile cut, we call it, and later it is going to show this
+values. For example, if you
+write print, D, F, of why should you write print? Okay.
+So uh, sepal length in centimeter.
+Okay, this is one another column. I will show sepal length
+bin.
+Then we'll show target underscore,
+target underscore names
+okay,
+then we can say dot head print it.
+So you can say sepal length centimeter. And sepal length bin
+is there. So it is from 4.2 to 5.1 it says Setosa. And then it
+shows this value as a set. Also like this, it's assigning,
+right? So these are the bins now, Bin one, Bin two, like how
+many bins we have now, three bins are there. So that three
+bins, it's going to calculate with the set of so we can have
+four pins. Also not a problem, because four pin second can
+have, for example, in the Outlook column, what we have, we
+have rain, overcast and sunny, right? Three. And how many
+target values are there? Two. So it's not necessary that target
+value must be same as the bins. Bins can be any so that
+automatically, done by the algorithm will take care of
+those things. Externally, we cannot modify the bin threshold
+or anything, okay,
+for example, if you want to find the entropy of this particular
+sepal length, how it is going to be, for
+example, overall entropy. You want to calculate, how do we do
+first of all, Bin groups. First we need to find right brain
+groups. Is equal to okay, PDF, dot group by which one separate
+length bin, then print the bin underscore groups.
+Okay, so we can see
+default
+of the multiplication will be here in the future. Okay, it is
+going to give us the address it is giving. We need to extract
+that, okay. So how do we extract that part number of grips? We
+have to write a for loop to get the group counts and from the
+bin groups. So we can say, for example, we.
+For name,
+we can give group
+in which one bin groups print F group bin name we can anything.
+So it is printing turret values and grouping all those things.
+So first, one in between, group first, this is one bin, second
+group bin, third group, Bin, like that. It's okay. How many
+groups it is creating? Three groups it is creating, okay,
+clear. So once it is creating your groups, then automatically
+we can calculate the audition tree classifier. Can implement
+it, and then it can do that. How algorithm decides number of bins
+used by Q cut? Is it random? Prashant, it is considered
+automatically ID three. Algorithm. Optimization can be
+done by itself. Okay? We call it as order algorithm. It will
+consider that, it will iterate, and it will find what is the
+best cut. We are not going to, you know, externally, use that
+value bigger it is externally, it is working like that. Okay,
+so internally, it is working like that. So that is where you
+are seeing. Is that clear? Now,
+any questions? Good to go with the questions, yeah. Now
+understood for the random values, also like, you know,
+continuous values, how things are working, internal edition
+tree,
+this binding concept is clear, yes or no,
+yes. Any any questions, yes, sir.
+Any questions go ahead. We'll have five minutes of time. We'll
+take the questions. So decision tree, in which scenarios we will
+prefer this algorithms, but
+they there is no scenario to Lakshmi generally. As I said,
+most useful tool. We call it right use tool in Kaggle. But
+only problem is, when you are building the decision tree,
+sometimes the chance of overfitting, you have to take
+care of that. If it is overfitting, then we'll go with
+another algorithm, another random forest cluster we can
+apply on top of that.
+Okay,
+and about this mathematics, don't worry. This mathematics is
+very simple, and you no need to practice this mathematics. Only
+thing is like black box, how things are working, if you are
+able to understand that is enough. Okay.
+Okay, good.
+Yes, Saurav, what is the question? Sir, sorry to
+interrupt, but, sir, the formula for the quantile is it n minus
+one into p by 100, or is it n plus 1p by 100? Because I know
+that the quantile formula that we studied, it statistics, is n
+plus one into p by 100. Maybe I'm wrong. Actually, sort of
+this is positions for we are talking about interquarter
+range, q1 q3 that is different, okay. Oh, okay, okay. This is we
+are trying to find the position. Oh, okay, okay, okay. After
+finding the position, you can directly enter quantile range.
+You can find it. Okay, if it is a continuous values or some
+decimal values, better with the formula of q1 and then q2 we
+applied last time, right? That we can use it?
+Yeah. Kamal, what's the question? Kamal,
+so in the pre reading material, they said that decision tree
+output is the the tree that you build, right? It's, it's done
+one time. So when you incrementally add new data for
+training, does it have to do the whole thing again? Or, like,
+when you are adding Kamal, what do you mean by adding the data
+to whom you are adding? Tell me you people are most of the time
+for the training. Like, let's say I have a large set of data
+that I let me put it what I'm thinking, what? Okay, let me put
+it something this way. So you are thinking that there is an
+Excel sheet, dot CSV file, okay, ABC, dot CSV. You train the
+model and you deploy the model.
+Now you are adding data to this CSV. Or what do you mean by
+adding data?
+Let's say I had a new class of like information that is
+combined. Question is water, two
+data I have just a minute. Okay? Kamal, just a question. Answer
+must be like, you know, straight forward. Tell me now I have 100
+sample in CSV. ABC, okay, okay, 100 samples, okay. Now you want
+to add sample. How many samples you want to add, for example,
+five samples you want to add, okay, whatever it may the class
+or something you want to add to this CSV. Or what do you mean by
+adding
+this CSV, this CSV, okay, now all data consists of 100
+samples. New data consists of one, not five samples. Now tell
+me, without training, do you think deployment is possible,
+sir, can I amplify? No, no, no. I should No, no. Only to
+amplify. Just let me finish with Kamal. Then I'll come to you
+again without because we updated the data set right when you are
+updating the data set.
+Can without training? Is it possible that the changes will
+come?
+Mean deployment,
+no, no, no. So whenever you are adding the data in the sense you
+are training the model, again, from the scratch, again, x,
+train, y, train, and everything right, when training happens, it
+is understanding the remaining five samples. Also, then we are
+doing deployment. These things can be done by in the GitHub
+repository, we use Git action command, okay, what is that Git
+action command? Whenever you change this for example, I'll
+show you simple example.
+GitHub.
+Okay,
+okay,
+this is example, okay, this is your CSV,
+correct. Now, here what I'm going to do. I'm going to add
+new data.
+For example. Let us add new data. Edit everybody knows,
+GitHub, right?
+Yes,
+yes, yes, okay, give me, for example, this any n is the right
+I replace with four, four, 4.5 something, and I'll add 7.6
+comma, 5.7
+comma, 6.7
+comma, 9.0
+target I'm Giving as a or something. Say that
+come up.
+Okay. Now what I will do? I will commit the changes.
+Update CSV. When I commit the changes, have written a GitHub
+actions here,
+okay, what happened now? Just now, right? Update CSV. It is
+doing so
+it is valid. Take how much time it took? Four seconds. It is
+validating,
+okay. This is action script validating. If the data is
+valid, it will take it. And then I can write all the training
+process, everything here, right.
+Success, right. We push the data. Now, when I open this code
+sample,
+I can see that this data is pushed. If it is a null values,
+I don't want to push it. Once it is pushed, I write in the GitHub
+action what I will write, if you look into this
+workflows, this is validate IRS started. So I said validate the
+iris sample I have given, actually to just pre processing.
+We'll do this. So we install the dependencies, whatever the
+dependencies are there I am calling which file now
+validate.py file I'm calling, right? So what is the Validate
+Python, what it is doing now it is expected. Types. Are this
+string types, and if the new sample is null values, I said,
+error, null values found in the sample. You need to give an
+error. Our data type is mismatching. I said
+new means that is invalid. If everything goes well, new sample
+is valid. Now let us say if I'm inserting a new sample with
+something like 5.6
+and Nan and 7.8
+and n a n and 9.0
+comma, test, anything when I click Commit, changes,
+Okay. Then action starts.
+Now. Updated ircsp,
+did I committed or not?
+Action Script,
+it is committed. See it is validating which far which file
+it is calling validate.py, Python, file, it says, process
+incomplete with error code, why? When you click this, you can see
+it is throwing that tokenizing expected five fields in line
+numbers. So we got how many six we got it. So this way, we send
+the error to the slack or WhatsApp or emails, then the
+data engineer will correct that. So in mind, remember that this
+completely we call it as a CI CD pipeline. We call it.
+Can I ask a follow up question on this? Meaning, what I'm
+trying to ask is, if the new data comes in, I already have a
+decision tree. If the decision tree is significantly not
+changed, because I can infer from the input value whether the
+existing decision tree actually works or not, and then decide on
+whether I want to retrain or not, right? That's the so the
+idea of inferencing from an existing tree versus retraining,
+then, because I'm thinking retraining is expensive, yes, I
+should know whether I need to retrain or not. Hmm.
+Perfect so that inferencing can be done with the existing tree.
+Yes. Okay, so there you can maintain a log and check for the
+accuracies. If it is there going down, then we'll go otherwise.
+What you're saying here is you can automate these actions based
+on a certain rule set, where you can go through the entire flow,
+where your your pipeline gets executed. Yeah. So once you have
+done then we are asking them to go through the pipeline to
+understand, okay, good. Thank you. Yes. Raghavender, what's
+the question? Yeah, hi, sir. So can we see the decision tree for
+this continuous data? And is it like it is using the bins as
+nodes? In this case,
+just want to understand that. No, it doesn't take bins. It
+will take column name only, Outlook item. How it is taking
+similar way it is going to take the column names. Okay, so Can,
+can we see the tree ones? Yeah, thank you.
+You know right was how to
+do that. What do we do? Export text. Tell me.
+DT, decision tree. Name, Iris, feature, printer rules,
+petal width is the root node.
+Okay, okay, okay, yeah, got it, thanks.
+Got it. Okay, good to go. Now you understood. Now, decision
+tree perfectly with continuous values and what is the bin those
+things, little bit revision is needed. So I want you people to
+go through this, you know, the PDF file that will help you
+understand what is the first quarter minimum point well, and
+how it is working. Okay? Done. So we are able to, you know,
+dissect the decision tree and understand how decision tree
+works. Now let us go to the next part. That is decision tree,
+overfitting, what is that?
+Okay?
+Before that, tell me, for example, most of the time. I'll
+give an example of you know, for just remembering, there are
+three students. Student Name is A, B and C. These people are
+think like, you know,
+B Tech students. So generally, B Tech students, it's not
+generally. Just, let us take a common case, hypothetical case,
+that B Tech student, they're buying, what do you call a
+question? Like something from market, and they're studying for
+the exam. Okay? Or keep it that the three be the students. One
+is, there is a exam going to be on addition, subtraction and
+multiplication. Student A, what he did is he studied everything.
+He spent all the time understanding, not understanding
+plus. But before class, what is the number before? After plus,
+what is the number? So he but if I numerical values? Okay?
+Student, a, Student B, what he did is, he's little bit lazy, so
+he was able to understand addition, uh, meanwhile, he
+didn't, I didn't understand what is a subtraction and
+multiplication. Student C is an intelligent person. What he did
+is he is trying to understand how addition works and how
+Subtraction works and how multiplication works. He
+understood. Now there is a exam on unseen data. That means all
+the numerical values changed and they got a plus b, MS, B,
+something like this.
+A will not perform well, agree, he's very good at training, yes,
+but he won't, because what he did a he memorized the numerical
+values. If same nuclear numerical values comes in, he
+will answer 100% but the numerical values unseen data
+changed. So AI is very good at training himself, right? But
+what about the testing
+phase? Is not good? He failed, right? Okay, coming to the B
+model, he was able to understand some of the patterns, but when
+it comes to the examination, he is not doing good in training,
+not doing good in testing, also because he was unable to
+understand the remaining two patterns. Also, right now coming
+to the sea, he was very good understanding the pattern in
+training, and he was very good at understanding the patterns in
+testing and giving the answers. Figure. Now, Which model do you
+think? Like this is nothing but the training is happening with
+some decision tree algorithm, with some logistic regression,
+or something like, you know, KNN classifier, or something like
+that. Okay, different classifiers. So one classifier
+is just understanding the numerical values. One classifier
+was able to understand only one pattern. Another classifier able
+to understand each and every pattern with plus, minus and
+multiplication. Now, which classifier Do you think better?
+The number one, number two or number three? Number one is KNN?
+No. I said question is, which classifier is better? Number
+333,
+is better. Everybody agree.
+Yes, okay, good. So now what do you call that? This is known as
+the the model which is performing well in training but
+not performing well in testing. We call it as over fitting. The
+model is over fitting. So if the model is over fitting, what do
+we do? We discard the model. Now the model is not performing well
+in training as well as in testing. This is we call it as
+under fitting. Now, coming to the model which is performing
+well in training and performing well in testing, we call it as a
+best fitting. So now, as a data scientist, our job is to look
+for best fitting algorithm. Clear,
+yes, that's true. Okay, now coming to the decision tree
+classifier. Why it most of the time. You know, overfits. Let us
+take simple slides, and then we jump into the code sample to
+understand, okay.
+These slides are just to give you overview of what is the new
+dysentery model, how look like. Again, recall and then, okay. So
+for example, if I say, guess an animal, I have animal in my
+mind. Now what kind of questions you'll ask me? You can ask the
+question like
+based on my guess. You have to then, if the questions are
+truthful, you can give me you can guess the animal. Okay, now
+the question is, what questions we need to ask generally, and
+why that question that is up to you to analyze, right?
+For example, when I say, Guess the animal, if you ask the
+question, Does it have a stripes? How to decide,
+because we need to look some data, right. So I'm saying that
+you need to decide the animal on, how many legs it is having.
+Does it fly? Is it a wild animal? Is it a natural or fur
+feather, or farm animal, something like that? So when I
+say how many legs, it says zero. Means, what is the animals
+you'll get in your mind, snake, worm, micro bomb, or any aquatic
+animal, because doesn't have a legs, right? If I say number of
+legs, two, what kind of animals who think of some birds, okay,
+chicken or something like that. Right number of lexico four you
+can say dog, donkey, monkey, and, you know, tiger, lion or
+whatever, maybe six, and more than six, Millipore, centipedes,
+Caterpillar or something like that. So depending upon the
+question, you know when you're asking the question, and
+depending upon the answer, you are taking a decision that you
+are able to answer, like, what kind of animal it is? Now, if
+you dig deeper, if you want to build a tree like and when you
+say, two legs are there, then you have a question. Now, does
+it fly? If you say yes, means it is a crow. If it doesn't say no,
+there is a penguin or kiwi, ostrich or emo or human ape or
+something. Now coming to number of legs, four, when I say wild
+animal, yes, it is a zebra, lion, tiger, we say no, it is a
+cat, dog, cow, sheep, something like that. Not sure. We say
+cricket, mosquito. Yes means no, means butterfly, something like
+that. So what? What it is doing, actually. So these questions we
+are trying to ask, like, you know, inside a tree type of
+navigation,
+whether, you know, should I reach to the destination? What
+kind of questions we need to start it? So that is what we are
+trying to understand in decision tree algorithm. Then we started
+with the root node, and then in that root node, we are trying to
+find the, you know, different kinds of values, and then we are
+reaching to the simple, you know, what you say, the leaf
+node. So, like, what?
+Most of the time, what is a good question? You know most of the
+time, if you say good question means which reduces the
+possibility of wrong answers, that's what we call it, as a
+good question, right? If it is a possibility of getting a wrong
+answers, then it's not a good question. So if there is a
+certain uncertainty in that, in the question, we can say it's
+not a good question and is not leading to the correct answer.
+So like this, we go on, and then here the term comes in, entropy.
+Now we understand what is entropy, right? So entropy is
+something like uncertainty. We are trying to calculate that all
+the formulas you know need to understand, because already we
+have taken an example. Taken an example and then initially, how
+entropy will works, how entropy calculated. We have seen all
+those things, right. No
+need to again, go with the calculations. Correct. Yes,
+no, we don't spell okay. Now let us come into this part here.
+Implementation we have seen
+like from decision tree classifier, import the decision
+tree and fit the model and predict. This is very simple. In
+three lines of code, we are able to train a decision tree
+classifier. Now, what is the advantages and disadvantages of
+your decision tree classifier
+so we know the.
+It, sorry.
+So generally we it is very fast. And next thing is, it hand is
+categorical values, right? So that's what we have seen. We are
+creating into bins, and then we are using, okay. Another thing
+it can understand the rules, and you can build the rules. So,
+like another thing also, can I say that
+it can indicate the good features? Because we know when
+we are building the tree, we started with which one the root
+node, root or how do you decide the root node, root node is our
+best column, right? Even SK one doesn't support but root node,
+we are able to calculate through the decision tree, so somewhere,
+indicating directly it is supporting, what is the best
+feature in that right? So actually, decision trees are not
+good with the regression. We don't use for the regression. It
+is not suitable. But regression is there. There is no don't
+think like there is no regression. Regression is there.
+But due to the, you know, the behavior of the decision tree to
+create the bin somewhere, the latency if you have more
+continuous values, okay? And another thing we say that if,
+mostly, if the data is scattered in the rectangular format, then
+better we can use the decision tree classifier. If it is like,
+you know, separation, like line by separation, then don't use
+decision tree. Go with the linear classifier. We know that
+right, and it is little bit expensive. Why? Because it need
+to calculate the entropy and backside. It need to calculate
+the PD, dot, Q, cut, apply, and then we need to implement and
+then, if it changing the criteria again, it need to
+recalculate everything. So that is where we say it is a little
+bit expensive, but most of the time, the chance of overfitting.
+Now here we got the term overfitting. What do you mean by
+the term overfitting? Overfitting in the sense, for
+example, first in the depth one, if you're something like the
+classified how many misclassifications are there? We
+can see,
+for example, this is misclassification. This is one
+misclassification. Another one correct. Now in the second
+depth, it is reclined the format it is doing. Again, how many
+misclassifications are there? There is only one
+misclassification Correct. Actually, this must be red, but
+it is
+into which zone, red zone. Now, when, if you draw this kind of
+thing, do you have any misclassification no means, like
+in the training, by increasing the depth, we can go up to
+accuracy of 100. Okay, well and good. But when it comes to the
+training testing, what happens this learning will not help
+somewhere. If the data is coming over here, this learning will
+not help, right? So that way we are going to get the accuracy
+degraded. So when the accuracy is degraded in the what do you
+call what do you say in your
+decision tree model, what should we do now? We need to stop, at
+least stopping and pruning. We call it. What do you mean by
+pruning? You know, when the tree is growing, if you want to stop
+it, they'll cut the leaves, right? So that's why the same
+kind of you're saying at least stopping will do it. So how do
+we do that? Let us see, for example, with a practical
+example, we'll see that. So before getting into the
+practical example, I just want to have an idea that for you
+people, you did understand what is overfitting and underfitting
+and best fitting you are able to understand, right? So here, in
+this example, we got something around how much accuracy we got.
+Where is that
+okay? Here is the accuracy. Okay. We got training accuracy,
+how much we got 99 percentage and testing accuracy, how much
+we got 100% can I say this is overfitting?
+Can I say it's over fitting? Yes.
+In test it
+also it is doing good, because the same data set you are using,
+test
+data is another one, right? It didn't participate in training,
+but the accuracy is one here and one Okay, so if there is a 5%
+uh, difference, acceptable, okay, if it's more than 5% we
+say it's overfitting, remember? Okay.
+One by one, boss, raise your hands and the sequence, don't,
+don't immediately talk. Okay, okay. Okay, Tarun, what's the
+question? Tarun,
+sir, I have a question regarding the PPT you were saying earlier,
+when you said, when things are getting you know, in the zone of
+overfitting, the accuracy degrades. I don't testing
+accuracy gives us
+the correct results, right, sir, if it is even overfitted, is
+even, remember, training accuracy is good. Means on
+seeing data, it can do well, right? But when you're giving an
+unseen data, it won't perform well, then it's not over
+fitting. Oh, Understood, understood. Sorry, my bad. I
+correted it with a different thing.
+So, yeah, check up money. So when you're saying go fitting in
+that example on the notebook, you're trying to say that it is
+doing much better on the test samples rather than on the
+training data.
+Here. Okay, so I thought, is it 5%
+more in the testing data than the print data, right? Yeah,
+anywhere there are difference in both of them, 5% we call it as a
+overfitting more than 5%
+okay, Neha,
+so eventually, what is I can explain that 5% thing. So
+because over fitting would happen when accuracy in training
+is better than testing correct,
+or testing is better than training also once in detects
+working, that's also overfitting only got it, got it. And what
+does that 5% imply when you said that? Is that, for example, I
+got 99% of training accuracy, and I got 95% of testing
+accuracy. So model is good to go. Okay, for example, if I get
+95 in training, 99 interesting, that also good to go. But for
+example, I got 99 in training, I got 80% in testing. That means
+model is not performing well on unseen data. So we need to go
+with any test. 10% difference is there. So we can retrain the
+model, or we'll go with another exam, another model, or we do
+the L is swapping, we call it Okay, match. Depth will
+decrease. That's it. Yeah.
+Manu Kumar,
+so means it can be, uh,
+happen in this in the reverse case as well, right? Like, for
+example, in training, it is happening like 80% of scoring
+80% or maybe 85% and the testing, it is going around 99%
+so that can also be treated as a overfitting, overfitting only,
+yeah. Okay.
+Okay, done.
+Okay, let us take a sample example to understand. So
+anyway, I don't have a data sample which is prone to
+overfitting. What I will do is I will take a synthetic data
+example. Okay, so what is synthetic data? We have some of
+the libraries in skrn known as make classification. Is there?
+Okay, make regression. So let us take that sample and look for
+the
+overfitting example. Okay, so from SK learn
+dot data sets, generally we import here, load Iris, right
+load Iris is which is the best one, but it's completely curated
+data. If you are using you don't find any overfitting. Just now
+we did it right. So for that to make, we use, for example, let
+me take one make classification, I use it, and then from SK learn
+dot
+tree,
+yes. Bhattacharya, go ahead with the question,
+importation classifier, and then we'll take that yeah. Great
+question is, like, you know, overfitting, underfitting. And
+this best fitting can also happen due to the data also,
+right. Like, how the like, how the sample is like training
+sample is
+when to like, how to understand whether this happening for the
+data or the model, like, the model is not appropriate for
+this, or you are not take, we have not taken the data
+correctly.
+So
+you have to use the different algorithms, and anyway, coming
+to the data, we are curating the data. Right after curating the
+data, also pre processing, also after applying different
+algorithms. Also, if you are getting overfitting, that means
+the complete data is wrong. We have to change the data. We have
+to look for the good training data. Okay, that completes
+replacement. You have to do it. That's the only option. Okay,
+okay. And one question. Prabhakar, if training accuracy,
+75 and testing accuracy, this is under fitting,
+okay? Because more than 80% we call it as a good fitting, 75%
+70% we call it under fitting only, okay. Kamal, what's the
+question? Kamal, so if you get better results on the test. It
+could also mean that the test is biased, meaning there's some
+form of bias in the test, maybe. So that's the reason we are
+saying any The difference is that we just keep that into
+overfitting.
+Okay, one question, it always mean over 15 fitting, or it's
+like a bad test. Not bad test, overfitting. Only that
+overfitting also falls into category of bad test only Okay,
+your testing data is not good.
+Does overfitting lead to lower accuracy on the test data?
+Chakrapani you are unable to interpret question. Is
+overfitting in the sense the model is.
+Working very well in training, but in testing, it is fail. That
+is what we are trying to understand, overfitting
+testing, it is feeding in what parameters are you saying
+testing is? Are you saying it's a prediction is slow. Accuracy
+is low. What is you mean by fail? Accuracy only, prediction
+is low. Accuracy is what is the difference? I heard you say
+when I asked the same question, you said it could be both ways
+that even the test score can be better than a training score.
+What parameter we are deciding right accuracy, our prediction
+score you are saying, What is the difference? I didn't
+understand both. Both are same.
+Yeah, both are same, correct for me, also the same. But I think
+when you are asking the same question. I think few minutes
+back, you said it can be even the testing score can be better
+than the train and it's also an overfitting scenario. Yeah,
+that's what I'm saying till now, same I'm on that same point.
+So what is the question
+now? Same question. So the question is that, what then
+you're saying overfitting needs to lower accuracy on the testing
+which means the test prediction value, whatever you get, is
+lesser than the train data, right? Okay, even, even if the
+data training data, you got lesser accuracy, and sometimes
+testing is more that also the difference in right. I said the
+difference is more than five. Treat it as a overfitting,
+understood. Okay, either way.
+Next one, we said that if we see overfitting, should we switch to
+a different algorithm? Yeah. Ramesh Babu, good question.
+Either you can switch with a random forest classifier.
+Manu, please mute yourself.
+Okay, so overfitting is like you can change the algorithm or
+little bit, try to play with the data. Pre processing, if you're
+able to get that's okay. So in underfitting, neither performs
+well on training, not testing it correct answer. Neha Malik,
+okay. So there, for example, I got 50% of accuracy in training,
+50% accuracy. Interesting, that also fails into falls into
+underfitting only. So there is no good accuracy score. We call
+it as a under fitting Okay,
+okay. Now we have trained test place. Now let me write down x
+and y is equals to
+make classification. Let me take 1000 samples. Means how many
+rows we have
+1000 rows number of features in
+separate length. How many features are there in Iris data?
+How many features we have?
+544, features I am taking. How many features here? 20 features.
+How many classes? Two classes? That means, Sr, no, or anything
+randomly. Okay, now we need to spread. So if you understand
+here, n samples in the sense total, how many rows we are
+creating, 1000 sample rows we are creating. How many feature
+columns, 20 columns randomly. Number of classes is target
+column, class? How many y2, classes, 0112, or anything
+random. State is just shuffle the data. Don't take in the
+sequence. This is what I'm trying to is what I'm trying to
+do. Now, let us split the data, X, train, X, test, then Y,
+train,
+then Y. Test
+is equal, train, underscore, test, underscore, split x and y,
+then test size. Let us take it as 0.3
+for example, because most of the time we took 0.225 right?
+Then random state is equal 42 okay. Train test is happening.
+That after train test happens. What should we do? Let us
+understand decision tree. One is equals to I'm building the
+decision tree classifier. Okay. Now let us take an entropy
+criteria and max depth is equal. I don't take any depth, for
+example,
+none.
+Okay. Now I said fit the model. After fitting the model, what
+should I do now?
+DT, one print.
+F
+train score. DT, one score, test score. Dt, one score of text,
+is it we got one in the training testing, I got 84 percentage. So
+what's the difference around 16 percentage, right? So can I say,
+is it overfitting? Yes, yes, sir, yes, yes, yes. So what
+should we do now?
+We need to change the light. No, no. We don't change it. We said,
+prune it. Prune it in the sense, okay, we need to give the depth,
+what depth we need to Okay. So here I'm going to add, for
+example, I'll try this is also hit and run, okay? DT, one, one
+is equal Max step. Let us start with five. Okay, then dt, one,
+one, dot. Fit extreme. And then scores we are printing. So.
+So we got 0.95 and 87
+so
+should still go and modify the
+like this. We just try to modify it. So sometimes in the
+industry, sometimes what is due to data variation. Some there is
+no standard that mostly 5% only. Some people, a data scientist,
+depending upon the data, they consider up to five to 10 also
+they'll consider as a no overfitting. And sometimes they
+say more than 10% is overfitting like that depends upon the data
+and the threshold they are keeping that maybe, for example,
+if you have medical data or financial data or e Commerce
+Data and something, those things also matter. So depending upon
+those things, we are going to take the decision understood.
+This is what we are trying to,
+you know, understand what is the decision tree classifier is, and
+how do we decide the max depth, and all those things clear.
+So now, could adding more train data not have help to improve
+maybe, Neha, but we can think of it. You know, if you have more
+data, also, we can think of it as of now we are thinking that
+Max step is equal to none. Means I'm not taking any trees at all.
+Uh,
+no tip. Manju only, first root node only, okay, root node and
+leaf, no, directly. Okay, any one column we are deciding,
+that's where it was able to good in training, because I've seen
+data, it will do well right on the unseen data. It don't do
+well because I need remaining thresholds also, that is where
+it is trying to understand, okay, so if we increase and
+decrease the number of features, for example, we have taken 20
+features. Go ahead, 20 features. So, so now, if you make it
+tense, will it improve the
+maybe,
+maybe, depending upon the data, maybe
+as part of feature selection, something that can be done to
+improve, yeah, that will be done at the time, but it can. But now
+our main goal is need to understand what is overfitting,
+okay? And how do we handle overfitting and coming to the
+feature engineering part, think like you did it, okay, we are
+not doing it. So when we understand, when we take the
+session of the feature engineering at that time, we'll
+see you know
+how to implement feature engineering, which is the best
+and all those things will implement. Now the concept is in
+decision tree. Mostly decision tree is prone to overfitting
+what we are saying. So what we are trying to understand, is
+this overfitting, it really happens, and if it is happening,
+how do we handle so one way of is like, you know, pruning the
+tree. Second way sometimes, you know, even,
+for example, due to number of features, or the data is not pre
+profit process correctly. Or maybe data is not not scaled on
+the similar, you know, the scaling also, that is a
+different thing. Those things, as I said, Remember, those
+things will be considered when we are trying to put like, you
+know, app tuna, or, you know, bit, search, CV, to do that as
+now as you are not in that stage, what you have to do, hit
+and run, go on, changing the depth, five and 6473,
+like that. Or you can take a depth of something, for example,
+say one to 20, and print the accuracy. So wherever you think
+that the training, testing accuracy is good, then you can
+say, Okay, this is the best place. For example, here let us
+say, for i in range, how much? Let us start with one, two, for
+example, 20, okay, then Writing decision tree,
+okay. Print
+here we can say so.
+For
+I,
+I
+that
+accuracy is
+okay.
+Depth means leaves, not leaves, roots, you can see, I'll just
+draw the tree. You can understand for the depth
+accuracy is 90 590-795-9795,
+input was not changed to eyes. Oh, sorry, we need to change it.
+That's what I'm saying. Oh, it's good.
+So we got for I depth 188, 8480 880-489-8493,
+85 right? So there's a difference of eight somewhere
+like this. Go on C whenever.
+You think that the difference is not much, we can consider that,
+okay,
+because I have selected data in a way of getting the overfitting
+only. So most of the time you see it's an overfitting. But
+coming to this, if you are using decision tree one, for example
+here, if you want to print. Okay, so, but i in range
+here we can construct, okay, so in what maximum depth it is
+working, if still, if it's overfitting, then we need to
+discard and use which, which algorithm, random, Forex, which
+is not prone to overfitting. Okay, okay, that direction we
+have to take into, okay. Aish, what's your question? Aish, sir,
+the does pruning means always to reduce the depth. Nothing to do
+with the number of features. Reduction in number of features,
+no only with but with the depth only. Okay. Feature engineering,
+again, that comes into when, if you think that model is still
+not
+performing well, then
+feature engineering,
+okay.
+Next question, you change the match dip randomly, right? Can I
+remove one particular node if I want in the tree to No? Not
+possible, not possible, not possible. You cannot touch the
+each node.
+Any other questions? Vikram,
+sir, yeah, you just said there's another algorithm, but it's not
+grown overfitting, right? So why would anyone, why would anyone
+choose to go with decision tree in that case, are there specific
+scenarios where we have to choose where it where choosing
+decision tree makes sense more sense than the other algorithm.
+Actually see decision tree is due to the tree based algorithm.
+There is mostly chance of overfitting. Okay, so if you
+apply on any sample data, or it may be your data, whatever it
+may be data you have, and if you are getting something, training
+is good and testing is bad, our testing is good, we are getting
+training is bad. That is, we call it as an overfitting. And
+then, in that situation, just simply change the algorithm and
+go with random forest classifier. Is there one which
+is the combination of decision tree? Then what we do, even if
+it's not working well, in that case, we'll go with the Otting
+classifier. We call it oding classifier. In the sense, in
+random forest classifier, we are going to take similar decision
+trees only, so number of trees together, we call it as a
+forest, right? So we take a minimum of 100 trees to build
+minimum one random forest. So the name is given in a way that
+the combination of all the trees together is a forest. That's
+where the name is random forest is given. Will we are going to
+discuss in coming session, random forest algorithm? So in
+that situation,
+for example, even random forest is not doing good, they'd go to
+voting classifier. What is voting classifier on same data,
+we are going to apply three or four different algorithms, and
+we'll ask for the voting from that. So when I'm giving Setosa
+data, one algorithm says, for this particular 5.1 7.1 7.2 7.3
+Setosa. One says Setosa. Third says varicose, four says Setosa.
+How many majorities we are getting out of four. Majority
+three is set of right? So that way it is going to classify. So
+that classifier will study when we are discussing about voting
+classifier. So either way to come out the problem of what do
+you call
+this one overfitting, we go with the random forest. Still, if you
+are unable to do it, then we'll go with the what
+do you call voting classifiers, okay? In the coming sessions,
+we'll see that those things, okay, yeah, for example, let me
+take
+another just to show you the DT. Is there, right? Dt, one so we
+have
+from
+SQL learn
+dot three,
+import export graph, s,
+import graph is
+available, okay, no need to install. So data is equal.
+Export graph is dt 11. We can take it, okay. Feature names
+is Iris. Feature names, class name is given. Field is equal,
+true. Special characters, if you have something true, we can say
+and here we can
+get the max depth also. Here, did you mention max depth?
+Here we can mention
+max depth is equal, for
+example, five.
+Okay. Then you can say source is the day.
+Yeah, then we can say render.
+Here you can give a name,
+fruit,
+through
+something
+and format is.
+Format is which one will take. Could take it as a PNG, dot, PNG
+file.
+Then
+clean up. Is there or not?
+Must have a cleaner Okay, clean up physical tool, just to show
+you the clear picture.
+Then graph. Let us try, uh,
+length of feature names. Four doesn't match number of feature
+20. Okay. So let us do one thing. What is the name of we'll
+take this one, Iris data. There
+is Iris data,
+target names. No, here is that is data, right?
+So importer, is data, data, okay, X ray, dt, D, dot, fit
+score. Is there?
+We got it. Okay. Now here, instead of
+the T, tt,
+okay.
+Now see this is level one, okay. This is level two, this is level
+three, this is level four, then level five. After that, we got a
+leaf nodes like this. Okay, so max depth is equal to five.
+Means it is going to calculate how many levels are there?
+Clear, so that way we can print it. And if you want, we can
+store the file. Also, we can just click it,
+this one, just download it, and you can see the light like this,
+clear.
+Okay, yes,
+Chaitanya. Go ahead.
+Yeah. Thank you. So sorry. This could be a redundant question,
+but how do we accept redundant questions? I have a habit of
+accepting Chaitanya. Go ahead. Thank you. So how do we come to
+a conclusion that back step could be five or the head and
+run Chaitanya print accuracy in each and depth, whichever depth
+is good, you can accept it. Okay. Okay, yeah. Naveen, sir.
+So when we say pruning, it is going from depth n to depth M,
+where n is better than m. Is that understanding correct, sir,
+or should we start only from depth equal to none? No, no.
+First understanding is good. DHAI, okay.
+Thank you. Yeah. Aish, yeah. Dr, so in this example, we have 120
+samples. Now, if the 121 sample comes which is unlabeled, so I
+did not go to the entire trading phase again. Basically using
+this already developed classification tree, I can
+easily find out the label for this unlabeled sample, 121,
+yeah. Can you correct? Yeah, correct. Okay, okay, make sense.
+That's what we are doing, right? So whenever unseated, but if the
+accuracy is not good, when you're seeing unseen data, is
+something different. You got it. That's not the label expected,
+then we retrain the algorithm. That's it. Okay, okay. So there
+you have again, batch training. Is there? Real Time Training is
+there? Batch training in the sense, if you don't have, you
+know, the resource is not a constraint. We'll take a bunch
+of data, we'll train the model or real time. Whenever data
+comes in, we'll check it, and then we'll retrain. That is also
+happening. We'll see that in unit two, when we discuss about
+what is our training happens after feature engineering, okay,
+okay, makes sense, yeah. Thanks. DPM. Man Sarkar, what is the
+question
+so, Doctor B, can we see the white bread for this?
+Come again? Can we see the why predicted, predicted?
+Yeah, that's what score is my predicted only, right, okay, but
+I'm talking not just about the score, actually. I'm just
+talking about, like, you know, the actual labels, metrics you
+want, yeah, the predicted labels. Can we see? Because, you
+know, till now, I think, okay, matrix import, predictor table
+is what you have import, for example,
+which one accuracy score, okay. Now if you want, we can take
+white bread is equal. DD, dot predict test and accuracy score.
+This is going to give the test accuracy, okay. And now, if you
+want to predict, how do you predict? DD? Dot predict. Okay,
+take any one of the samples of Iris data. Which one
+here we have somewhere, right?
+Okay, let us take 5.1
+up to this one, right.
+What is the.
+Our target name, Setosa, correct,
+yes. So Setosa is how much value zero.
+So write down here.
+This is comma.
+This is comma. We're not doing any scaling, okay, yeah.
+We got set of zero correct Yeah,
+100%
+accuracy in the balance, most of the data, if you just give it,
+it is going to give you the mostly correct answers. Okay,
+0.9 9.9 9.316 means nearly 100, right? So it is going to give
+you all the correct answers. Mostly,
+clear. Yeah, clear, clear, welcome. Okay. Now,
+let us have a recap, and then we'll see. Okay, Kishore, what's
+the question? Kishore, go ahead, yeah. Can you go back to the key
+diagram, which you printed?
+Graph is
+so if I look at any node, right? There are only two classes, like
+Setosa or maricosa, but we have three values in the target
+names, right? Oh, the what
+it's predicting it is on basis of this. It is predicting as
+vertical or on base of this is pretty as Setosa, like in the
+previous example, height, weight, right? Like that is
+internal. It is doing the material, the matrix, it is
+doing internally, the threshold values. It is saying this,
+depending upon this threshold values, it is beginning. So what
+is the
+problem like? As the target names has three possible values,
+right? Yeah, vertical comes in. Setosa came in. Vertical coming
+virginica comes in. So three,
+okay, to traverse through and then identify the label anyway,
+yeah. Level is identifying,
+yeah.
+So
+when we, when we are working with a huge data,
+how can we iterate through the multiple steps and understand
+which one is a good one to frame it. Is
+there any specific algorithm to identify
+that? Chetana I said up to now? How many times I mentioned in
+the class grid search, CV, up to
+now, right? Yeah. So those are for hyper parameter tuning,
+right? So don't worry, the data is biggest or huge, something.
+Only thing is research intensive. It is going to take
+more GPU and CPU. So we are going to use that one is hit and
+run you through it. Otherwise, use the app to another. Anyway,
+no problem. What is the question?
+So drip the first question is, at what level is the idea to
+improve the train by doing the pruning train score, or to find
+the best where the train score is also high. Maybe it's a
+repeat question.
+The reason is, at what depth the train score is high as well as
+the it's a best fit. That means the difference between train and
+test, yes, 5%
+Yeah. So what we are trying to do is even the max step you are
+considering in a way that it must be very similar to the
+train and test score, and that must be more than around 85
+percentage. That is what we are trying to understand. Okay,
+got it. And the second question is, Dr Pavi, like the quantile
+based, see, the method is only three entropy genie and your
+information gain. So should quantile based feature
+improvement not be used before you do the decision tree? I know
+in the example, you did it afterwards, right? So it's not a
+direct method, but it's to improve your numerical
+Yeah. Yeah. I did later in the sense, first I applied the
+algorithm correct. Then to make you understand how algorithm is
+working, later, I did it. So actually, inside algorithm, when
+it is fit, it happens first quartile, then apply the
+categorical right? That's it. That's what I wanted to
+understand. Because it's not directly a method, but just a
+way to improve. Yeah, yeah. So ideals,
+yeah, not ideal scenario. Most of the time it is, first of all,
+it is going to read the continuous values, then Q cut
+applied, then it is going to take a decision tree to train
+the model. Okay, so first of all, what we did is we train the
+model. Now with a lot of questions in your mind that
+continuous data, how it is doing mathematically, as we do
+research, we know that mathematics how it's working,
+right? That's why I'm trying to show that. Okay, this is the way
+things are happening in the algorithm. Clear, got it and
+yeah.
+Now, Prashant, what's the question? Prashant, yes, sir. So
+can you go back to that graph?
+Where should I go back? Tell me that graph is graph which you
+plotted, right? So you can see here is like, you know, at the
+root node the entropy is high, and as we go down towards the
+leaf node, the entropy keeps on decreasing. So what is
+significance of this? I mean, does that mean that as we move
+towards the root node, we are much more certain of the target
+or outcome? So this means I made a mistake showing the graph. Are
+you.
+People, right?
+No, I mean, I just noticed it
+actually see individually, you cannot do like that. So entropy,
+in the sense it is going to take these values for this particular
+column, okay, those are the entropies. So for, again, this
+values of this entropy here, for this particular number sample,
+so 41 plus 39 samples, then that entropy value is calculated
+individually, so it is just showing printing, okay, so this
+is not the real one. Graphics is not completely implemented your
+decision tree algorithm, so it just showing in a mimicking of
+the algorithm. So maybe they are not correct values also. Okay,
+got it? Yeah.
+Ramakrishna, you
+have a question or just admitted randomly, the same thing that I
+thought, asked about the values in the graph. What of examples
+is coming?
+As you move further away from the root word, accuracy
+increase, and so is the overfitting. Wow. Something
+different you identified. Did I say like that you are moving
+away from the root node. Is not the overfitting. You are moving
+away from the root node. You're traversing only right? Only
+thing is sometimes, if you are increasing the depth, means you
+are trying to understand more and more memorizing, but define,
+okay? So when you are buttifying, you know the
+answers, but unseen data you don't well, right? So that is
+where you are trying to just say it's overfitting. So
+that is what I meant, yes, yeah, farther away from root is
+basically traversing from the road to the leaves, whatever is
+the depth that you have specified in the model, right?
+Yeah. Yeah. Okay, good,
+great. So
+now, okay, let us do the recap. What we started first we talked
+about decision tree. We say that it is one, one of the most
+popular algorithm used in Kaggle, and it is going to be a
+rule based algorithm. And then we said that it is going to
+identify the root node is a challenge identifying there. We
+took a help of three criteria. One is an entropy. Second one is
+the genie indexing. Third one is the what is the third one
+information game, right? Then mathematically, we are trying to
+open the black box of entropy, how it works, and Genie how it
+works, and information how it works. I have taken an weather
+data, for example, weather dot CSV file there will consist of
+Outlook and temperature, humidity, and then we have play
+or not something. Okay, wind is there, but we didn't consider
+wind. You can play with it. Okay? I have already shared the
+file. You can play with it. Then how it is understanding to the
+target column. We are trying to make it okay once it is done,
+what we are doing now, we are trying to find the accuracies.
+How do you find the accuracies, training accuracy and testing
+accuracy? So if the training accuracy, testing accuracy is
+very good, more than 80% and both are very similar, with a
+difference of five to 10% between, then we can accept and
+we say model is good to go in the production. If there is a
+difference in more than 10 or more than 5% depending upon the
+data, if you see we say that model is overfitting. So what
+should we do? We need to decrease the depth, or introduce
+the concept of depth and try to find it. So that way we can do,
+you know, the problem of overcoming overfitting still, if
+you are unable to get and still, it's overfitting that we drop
+the decision tree algorithm. We'll go with the random forest
+algorithm, which we are going to discuss in coming sessions.
+Okay, so that is what the overall understanding of the
+session.
+Hope it is clear now, mathematically and technically
+everything you understood.
+Yes, sir. Okay, great. Navi, what's the question? Navi, so
+the SIR, the question is related to the winning part. So the
+beginning part in this takeaway is for classification of the
+labels only, right? Yes, according to the label, we need
+to when the continuous data is there, if it is not categorical,
+generally, we say that decision reverse the categorical data,
+right? So to come out that problem binning is happening
+internally. Okay,
+okay, yeah, thank you,
+sir. Kalyani, so we are overfitting, underfitting, and
+best fitting, what I understood is 95% if train is 95% and test
+is 5% that is over fitting, right?
+If 5050, is it is under fitting. What we if we get 80% train and
+and the remaining percent as test. What is it, sir, then
+come again. Come again. Something new concept you are
+teaching Kalyani, I said overfitting in the sense 90%
+accuracy in training, and you got 80% in testing, the
+difference of 10% that is over.
+15 Okay,
+percent. What is the percentage you are telling? Can you please
+explain it again? Like 10% if we get difference that is
+overfitting, right? Yes, okay. What if it is 15% sir, like
+that. Overfitting only more than 10% anything
+more than 10% is
+1516, 1720, 1900 also poor fitting. Only okay, then
+underfitting, sir, something less than 80% anything 70% 60%
+if you are getting that is overfitting, depending upon the
+data, training, also less testing also best fit means it
+is more than 80% for example, in training, very similar, same
+kind of testing, if you are getting that is the best
+fit. Okay, okay.
+Ayush, sir, can you repeat, sir, what you mentioned to Naveen,
+sir. Naveen question that for categorical variables, we need
+to convert them into numerical values, which we also did for
+the for the playground example, which you took in the most, is
+that what it said, Sir, yes, bins will be happening inside
+internally, okay, to calculate the entropy. So label encoding
+would be
+programmers prerogative, or it'll happen automatically on
+its own. We do not worry about it. May not worry about it.
+Level encoding happens by decision tree itself. Okay, sir,
+right. Thank you, sir. Yeah. Bhavani, you
+said like the decision tree is prone to overfitting most of the
+time, and then only. We'll go for random forest, right? As we
+know that it when it tend to overfitting. Why don't we go for
+rain the RF algorithm directly, why to go for decision tree,
+first check it and then go further and forest,
+random forest, random forest. Sorry, directly, we can go to
+random forest. Not a problem Pavani. But the thing is, random
+forest is a little bit cost intensive. We call it okay
+training, okay, and coming to the decision tree, I said most
+of the time it's overfitting, but not always okay. So
+sometimes it works fine. Then we can use it. That's where, when
+algorithm is available. We'll do that later on. What you say
+that? Probably now, even after learning Gen AI, we say that,
+okay, even we can drop this one. Use DNA, also, no problem. So
+that's on you. Like, how just a hit and trial if it best, if it
+will go with the least, like, whatever. And is there any real
+time example, like in the current industry, where we use
+the decision tree just to correlate the things,
+recommendation system we use that Pavani, okay, yeah. So, for
+example, recommending the movie, recommending the product, and
+all those things, generally, we use decision tree algorithm.
+Okay, thank you. Thank you. Yes, welcome.
+Okay, thanks everyone.
+So hope everybody is clear about what is decision tree and what
+is it worth fitting, and as it does under fitting,
+yes, Srinivas,
+yeah, please share the notes, yeah, give me the PowerPoint
+slides are already it is the in the, you know, they are going to
+upload into LMS or no worry, I'll export this notebook.
+It is something like, you know, doctors handwriting, so don't
+scold me for the handwriting. Just try to understand. Okay, so
+decision tree relate with what we discussed, right? So that
+will help you.
+Okay, good. Okay, sir. Next week is a hackathon. So looks like in
+hackathon, they will talk about voting classifier and all is it
+a protocol that you will teach it before that, or we have to
+learn it during hackathon? How is that in random forest
+algorithm we are coming into the next session, we'll discuss
+that. Okay, that's tomorrow, correct? Yeah, not tomorrow. I
+think tomorrow. There is no random forest.
+But in hackathon, if you have a team classifier, remind me. I'll
+give you the example. Okay,
+yeah. I mean, I mean, what the protocol should we learn on our
+own in hackathon? Or actually, you have to learn by yourself,
+because already you know these algorithms, right? But if you
+remind me, I'll take a moment and I'll explain. Okay, not a
+problem. Okay, thank you. Okay, yeah, thank you. Thanks a lot
+for your nice comments, guys, it is happy to teach you and you
+grasp the things. Thanks a lot. Thank you for your patience.
+Thank you, sir. Thank you.
+Thank you,
+sir. Do you have a question? Santosh,
+yeah,
+this is Santosh. Santosh, I think, raise the hand. Hello.
+Santosh, do you have Yeah? Santosh, go ahead. Yeah, yeah.
+So this is regarding previous session. Most of us had doubt on
+that. So this is regarding the.
+Sequence of most of us. You are representing most of us.
+Santosh, I didn't understand. Yeah, yeah. So we were
+discussing Whatsapp group, and also in lab session, we were
+discussing about this doubt, this doubt. So this is about the
+sequence of operations, so
+regarding train and test split and then doing the scaling, or
+the vice versa.
+So should we do
+scaling to Santosh? Two options, okay. One thing is, take x as
+First, take the x values, do the split, you know, scaling, then
+do the training. That's keep that in mind. Okay,
+sorry. Can you repeat first take the x, okay, scale it then split
+into extreme
+y train,
+okay, scale data only keep that in the concept, okay, yeah.
+Chakrapani, sir, sorry, I just want to
+sorry, on this hackathon, Sir, is it like some problem
+statement would be given and we will be asked to solve, or they
+will be also that you have to that you have to ask with Raju
+abhina, okay, okay, no issues. Thank you. Yeah. Manu, what is
+the question same,
+sir, this may be out of context, but I just want to know out of
+curiosity, is there
+any model, or you can say that learns incrementally based upon
+the time that we are testing the data? It learns automatically?
+Yes, continuous learning. We call it in coming sessions,
+we'll see that in unit four. Okay. Yeah. Thank you. Welcome.
+Okay, guys, take care, catch up tomorrow. Have a nice day.
+Thank you,
+sir,
+hi, hello, please participate in the session level feedback. We
+are receiving only 30 to 35
+feedbacks from your page. Please participate in
+that, hello, actually,
+I missed one.
+Just check, okay, okay, so it is enabled, right? I just check
+your email. Okay, sure.
+And also last week, Sunday, lab, actually, I have not attended.
+So till till we have time to submit it, you will have one
+week of window, right? Yeah, last week, last Sunday, I have
+not till
+today, till today, today, you have a time till what time, 6pm
+till 6pm six.
+Okay, Chef,
+so we have lap time start to six.
+Okay, so
+this week, I mean, there is no, I mean, like permanent mentor,
+that
+every week the mentors will change,
+perfect based on the notebook, the mentors will change, Okay,
+thanks, thanks, and and Raju, one more question. So how is the
+the structure of this hackathon going to be like? We have gotten
+mails and groups assigned for it. So,
+yeah, so any structure, or how is it going to be, any inputs
+from just a minute?
+Yeah,
+hello,
+yes, yes, yeah. Anyway, today afternoon, we have a assignment
+session right in that we will explain about that hackathon at
+all. Okay,
+here, yeah, I have missed last year, last week
+process. I got time to CFP last
+week. Simply,
+dear voices. Is breaking. Chetanya, I can't hear you. How
+about now? Raju,
+hello, Raja, am I audible now? Yeah, yes. Now it is okay. Raju,
+Cfu test three of 25th may have missed it. I couldn't attend
+session last week. Enable that session for me.
+Any particular reason why you I can, I can talk to you. Yeah,
+please call me, then we'll speak sure
+how I should, how we should reach out to you.
+My phone number is right in the group.
+Am sending the messages in the obviously, whatsoever
+I am sharing in a chart. Yes. Okay.
+Raju, so someone said that they have received some information
+or email for hackathon, but I think some of the folks have not
+received any information at all, or grouping at all. So will it
+be shared? Yeah, only one group that has not received today
+morning I have sent just check your email. Hazma, right. Just
+been
+sorry, sorry, yeah, sure.
+Check your email answer. We shared, sent an email yesterday,
+like hamza.saigarnova.com
+email id is arrived.
+We send the email to your office. Email
+I just checked. I haven't received anything. Okay, I'll
+check and I'll resend it again. No problem. Sure. Thank you.
+This is only for your your teammates also, yeah, for entire
+team, I think
+entire team you not received, yeah.
+Raja messaged you on WhatsApp. Can you please take one quick?
+Sure, sure. Thank
+you. I'll check and I'll replay Chaitanya.

@@ -1,0 +1,3289 @@
+Video transcript
+This transcript is AI-generated and may not be 100% accurate.
+
+Unknown: Okay, good morning everyone. Let us start the
+session.
+Yesterday, we jumped into an era of classical machine learning,
+where we discussed two algorithms. One is a linear
+regression. Second one is the K nearest sniper classifier gain
+and classifier, we call it, okay, then we have seen what is
+the mathematical intuition behind k nearest sniper
+algorithm and linear regression. Today we'll see another two
+algorithms. One is any one of the linear classifier, maybe
+I'll take perceptron model, and the second one we'll discuss is
+the logistic regression. Two algorithms will be there. Okay,
+so
+the first algorithm is talking about the classification. So
+this algorithm is like, you know, if the data is linearly
+classifiable, then drawing a line, we can classify the data.
+So how do we apply the data, and what do you mean by weights, and
+what is the mathematical intuition behind that? Will look
+into those things. Seems like you were showing the slide deck,
+but we are seeing the notes.
+Yeah, I'm just showing whiteboard only. I didn't jump
+into the slides. Still. Yeah,
+so
+let us jump into the slides.
+Okay, so yesterday, we have seen one as a regression problem.
+Second, we considered an example of classification. There we took
+an example of, for example, one fruits example, we consider, or
+we can take a diabetic sample, we can consider, and then we
+classify given data. That's what we did in
+linear classifier. Sorry, classification can and
+classification model.
+Now the limitation of the K N classifier is it doesn't work if
+you have huge amount of the data. And next thing is, it is
+not learning algorithm. It just memorize the places, and then
+using the Distance Matrix, it is going to find the neighbors. Now
+today, we start with another classification algorithm,
+generalized form. We call it as a linear classifier. Okay, so do
+you remember in the last time when we started with AML
+concepts? At that time we discussed the abstraction
+function, f, W, X, what do you mean by that here? Y is equal to
+f of w, comma, x, where y is our prediction, column, value,
+prediction f is the function. X is the features. W is from
+features, we learn some weights, right that those weights, we
+call it as a w.
+So precisely, if you have two features, for example, x1 and x2
+then the function can be w1, times of x1, w2, times of x2,
+and we can call it as a bias. We can say B, we can call or
+sometimes we call as A, C, sometimes we call it as A, WC,
+zero, any terminology, not a problem. Okay, so if you expand
+this function of w and x, what do you mean by that? That means
+these weights we are learning from. Algorithm is learning from
+the data, and those weights we are finally substituting here in
+the previous example, when we discussed about linear
+regression, f of w x, when we say Yesterday's problem, W is 2x
+plus one, bias is one, we got it right. That is one example we
+took yesterday in the class so that abstraction we are going to
+use. Okay, what is mean by a linear linear in the sense,
+function is linear function. That means we have something
+like a notation of y is equal to mx plus c, m1, plus x m1, x1 m2,
+x2 in this kind of notation, if you have a line that is known as
+a linear Okay, so now using that line, if you are able to
+separate two classes, for example, here we have blue color
+dots, and here we have some red color dots, and by drawing the
+line, we are able to separate two classes, okay, So that is,
+we call it as a linear classifier. Precisely this, also
+known as like summation of W, i, x, I, we call it or we can say W
+transpose of x. What do you mean by that? That means, if you have
+some weights, are there, how do we write the weights? Weights
+are W zero, w1 w2
+w3 something like this, correct. Now we have x. If you have X
+values, how is x values inside
+something like this? Brackets right? You can say x1, x2 x3 is
+it possible to multiply this and this?
+No, correct. So if you want to get.
+Kind of equation. What should I do now I need to transpose this
+w. So when I transpose this W, will get Z, w1, w2, like this.
+And then we have an x1, x2 so now if you multiply, we got W,
+0x one plus w1, terms of x1, plus w2, times of x2, like this.
+So the same thing. This notation is also written as W, transpose
+of times x, like that. Okay, the same summation of W i x, I can
+be written as this also. So that is, there is no difference. All
+the equation lead to the final equation that is, w1, times of
+x1, w2 times of x2, finally, we can add a bias, okay. Now, if
+you look into this linear classifier, there is
+any perceptron rule. We call it the classifier rule is we can
+say something like, y
+is one when the function value is greater than or equal to
+zero, is zero, when, if the function value is less than
+zero, that means, if you consider z is equals to w1,
+times of x1, w2 times of x2, w3, times of x3, plus bias, for
+example. Okay, so that means how many features we have, three
+features we have after getting the values of these three
+feature coefficients, that is w1 w2 and w3 when you substitute
+here in the bias, we are going to get some value right. If the
+value is something negative two, then what is the value of y?
+Tell me,
+will be zero. Correct? If it is something like two, the value of
+y will be one. If it is something like zero, Y value
+will be one. So this is known as a step function. We call it,
+okay. So r we call as a step rule. We call it. So, what is
+that? This is a line which is passing. This is known as W.
+Transpose of x is equal to zero. That means something like mx
+plus c is equal to zero, if it is greater than or equal to zero
+that belongs to one class, if it is less than zero belongs to
+another class. So this is the way the linear classifier
+mathematically works. Okay. Now, for example, yesterday's same
+yesterday's data sample. Let us consider state data sample. We
+have some apples, uh, red apples. Oranges are in the green
+now we want to put a line that's separate. Yesterday, we have
+written here neighbors right now, instead of neighbors, we
+are going to draw a line which separates. For example, this is
+the line we got it. So what is the line equation we got for
+this one, something like x1 plus two times of x2 plus two is
+equal to zero. Okay, so this is okay, this line is okay, but
+somewhere we are doing some misclassification. What is that?
+Some misclassification here, actually, it needs to be red,
+but we got an orange here. It needs to be RN, but we got an
+apple. So let us see another line if you are drawing okay. So
+if you draw this line, what happens again here? A lot of
+misclassifications. Two oranges misclassified. Here, three
+apples misclassified. Now, if you draw another line, something
+okay. So this is the line if I'm drawing again. Now this one. So
+first we started with this line. This is the first line, and this
+is the second line, and this one is the third line. Even if I'm
+drawing a line something like this, still we have some
+misclassifications correct. So what is a learning here? In
+previous linear regression, we are trying to get a line which
+is passing through most of the data points here, we need a line
+which is trying to separate two classes without any false
+positives, any without any mistake something like that.
+Okay,
+now if you think of out of these three, tell me which is the best
+fit line, 123, which one is the best fit line in your
+one
+is the best fit line. Okay,
+so here in linear classifier, some of the characteristics we
+can see. Linear classifier consists of D minus one
+additions and D multiplications. What do you mean by that? For
+example, if you have sepal length, sepal width, petal
+length, petal width, then we have a species, for example.
+Okay, now, in this data sample, tell me how many features we
+have, four features, so x 1x 2x 3x 3x four, and this is my y
+column. Now if I write a generalized equation, how do we
+write first one w1, times of x1, plus w2, times of x2, plus w3,
+times of x3,
+D plus w4, times of x4,
+correct. This is the main equation, which is the line W,
+transpose of x is equal to zero. I'm saying this line. There is
+no bias on that line. Okay. Now here, if you think of how many
+features we have, four features, okay. So when we have a four
+features, three here, one addition symbol, here, another
+one addition symbol, here, another addition symbol, that
+means four minus one additions
+correct. Now coming to how many multiplications we have as a d4,
+1234,
+multiplication. So we say that in the linear classifier, we are
+going to have D minus one additions and D multiplication.
+What is d here? Number of features. And you may ask, Okay,
+why don't we add the bias? The line doesn't have a bias here.
+The line, which is classifying, separating these two doesn't
+have a bias. Which is we call it as the limit of w, transpose of
+x is equal to zero. Is the line. Okay, so it is very easy to
+understand. And here we can say that
+if you say number of samples is indicated by n, and number of
+features are indicated by D, there are term d given the
+reason is actually the dimensions presents the starts
+with the D. So we are going to use D as the presentation of the
+number of features. Okay.
+Now
+consider you have a linear classifier as a neuron now we
+jumped into the concept of little bit of you know, neural
+network concept comes here.
+So linear classifier is related to like a think like a neuron.
+What do you mean by think like a neuron here? What neuron? What
+happens is, generally, when we have some weights, x1, and y1,
+w1, x2 and w2 x3 and w3 we are going to get the summation.
+After getting the summation, the summation will pass through one
+function. We call it here, that function,
+generally in neural networks, we call it as a activation
+function, so linear classifier is mimicking like that. What do
+you mean by that? For example, if you consider, I will take
+three features, sepal length, sepal width and petal length
+only, for example, for understanding. Okay, now we got
+the equation. How do we write sepal length times of w1, sepal
+width times of w2, petal length times of w3, so we can write
+something like w1 times of sepal length, then w2, times of sepal
+width, w3, times of petal length. This is the equation. We
+got it. Now, already we know what is the value of w1, w2, w3,
+we know the values of sepal length, sepal width and petal
+length. So when, when you put this values, we are going to get
+something like, for example, say, z, okay, in between, we are
+getting right? So set the some variable name as a z. Now, for
+example, I got 10 something. Now how do we decide what is the
+value of y? Actually, it's a linear classifier. Means it is
+going to take only binary, only binary format. It doesn't take,
+uh, ternary means three or something. Again, there's one to
+one relationship. We'll discuss there. Keep in mind we have only
+binary classification. Okay. So in that situation, we know the
+step function is one if f of x is greater than or equal to 00,
+if f of x value is less than zero. Now we got how much. Now
+we got 10. That means the value of y will be one. So that is the
+reason we call it as like linear classifier is mimicking like a
+neuron. So what is neuron in depth? For example, when we
+started with classical machine learning, okay, as I said in the
+beginning of the classes, like when we first introduced the
+term of artificial intelligence, it is in 1956 we got the term,
+okay, then it is vanished for a decade later onwards, after two
+decades, they introduced the term of machine learning. What
+is this machine learning is doing? Machine learning? What it
+is doing. It is taking some examples. Okay, for example, I'm
+getting four examples of adding numbers. Let us say adding two
+and three is how much two and three is five, one and one is
+two, two and four is six, five and five is 10. Like this. We
+are giving some samples with input and output, input and
+output, input and output. Then the machine learning, taking
+this historical data, trying to understand the pattern. From
+that pattern, it is deriving a function f of x. Now this
+function we are using to predict on unknown data. This is what a
+machine learning is doing right now, after that little bit of
+you know, the improvements in AI is done through neural networks.
+So there the term neuron, or we call it as a percept.
+On. So how is how it is going to learn perceptron? How it is
+going to learn perceptron is learning something like, you
+know, in our brain, we have a neuron, something like this
+biological neuron, okay, so in this biological neuron you are
+going to have here, the center cell is there, that is known as
+a nucleus, and there are some connections. Okay, nerve index
+which is connecting to another one. So in biological neuron,
+for example, when I ask you a question, what you are going to
+do? For example, let us say,
+I'm going to ask a question.
+You need to give me the answer immediately. So now your brain
+is waiting for the question. When I say the first number is
+two, you're taking the first number storing in your brain.
+Second number is three. You're taking that and storing into the
+brain. When I say, okay, add them, both of them, what you
+will do immediately, you will perform addition, and you will
+say two plus three is five. Something.
+When I say first number is 0.9912
+something, second number is 0.9512
+something, bigger number. Now your brain immediately it will
+not give the answer. So the first neuron will take the 0.99
+and 0.99912
+something, then it will try to get in depth another three
+neurons. These three neurons will fire like another three
+neurons. These three neurons like this. If you have a complex
+problem, it is going on firing until it reaches the answer. So
+we say that, okay, we are thinking. So when we are
+thinking, what is the process happening in our brain?
+Actually, the neurons are firing with each other with a complex
+problem to understand. So the same thing has been introduced,
+and the term neural network is given, okay, so now actually we
+are not going to discuss deep learning, but as the term
+perceptron is one of the linear classifier so we are going to
+take the basic of how perceptron works, the neural networks
+works. Okay. So that is the reason we got some introduction
+here. What do you mean by neuron? Why the term neural
+network came in? So the term machine learning is introduced
+with the concept of taking historical data, understanding
+the pattern, creating a function. Is classical machine
+learning when it comes to neural networks, that is a deep
+learning. What do we call is something depends upon the
+neuron so in the early stages, we started with the perceptron
+model. Then the perceptron model was not that much successful.
+Then they enhanced that, and they started with neural
+networks. So multiple perceptron model, they kept together. Okay,
+so that is what we are trying to understand today. Okay, so now
+we have what is the brain as a human brain? Similar way they
+did the mimic and they created the perceptron model. Okay? So
+okay, so before jumping into I'll take up questions. If you
+have any questions,
+good to go,
+raise your hands in the sequence I'll take it.
+Okay, first, let us take from the chat box. What if some data
+points on on the best fit line? Then how can we classify? Okay?
+KAUSHIK, if the some data points are on the best straight line,
+we don't use the classifier. Then we use another one that is
+known as support vector machine, which is going to find the
+margin in the margin, the data points can decide. So it is
+something like, you know, yesterday, as I said, If you are
+unable to get this this algorithm, don't force the
+algorithm to do it. What we'll do? We'll just change the
+algorithm. That's it. So when you have data points on the same
+line unable to classify, then we will move with another algorithm
+known as SVM, which is support vector machine, which is going
+to use the concept of margin, okay. Okay. Repeat concept one
+more time. Okay. Neural concept is like you know, generally when
+we start with machine learning. I have given a basic example to
+understand right? What is that? For example, when you are a
+third standard or fourth standard, and you are trying to
+understand mathematics, your mathematics teacher jumps in.
+She'll try to give an example, something like, two plus five is
+seven, five plus seven is 12, six plus six is 12. So this way,
+what is she's showing, uh, showing us input and output,
+input and output, as well as correct input and output. How
+many samples we got? It around four samples we got our brain
+try to understand four samples. So when she asked five plus five
+is how much we are giving the answer? Right?
+Right? So from this, we are trying to derive a function, and
+using this function, we are applying five plus fine this
+function, we are giving the answer why this is happening in
+classical machine learning when it comes to neuron, so it's
+mimicking what is happening. Now, for example, we have some
+complex problem. So first of all, one neuron will take the
+problem, it will try to solve the problem. If it is unable to
+solve, it is going to fire three more neurons like that. And even
+if the complex problem, it is going to solve three more
+neurons like this. So this way the firing happens until it
+reaches to the solution. So this kind of architecture, we call it
+as a neural networks. So in depth, we are going to discuss
+in deep learning. When we discuss the deep learning,
+convolution, neural networks and all those things today, as we
+have a perceptron, basically simple neuron, how it works, we
+are trying to understand one of the classifier we are discussing
+is the perceptron model. Okay, okay,
+let us take up the question. Another Go ahead, yeah, is this
+line always straight in the background? Come again? Is this
+line always straight when cleaner classification,
+which line,
+the line which divides? The binary
+aspire, so always be straight line. Yeah, always straight
+line. If you want, we are going to have, there is one algorithm
+known as support vector machine algorithm. There we have a
+polynomial, and there will be a curve. Also, like this, also,
+okay, okay, so that we need to happen. So, for example, this
+algorithm, linear classifier, works only if the data is
+scattered something like this. Okay. So now we can draw a line,
+we can separate it. This is how for which one linear classifier.
+But sometimes, if the data is we have something like this, the
+data,
+okay. Now by drawing a line. We cannot separate them, right? So
+we need to draw the curve. This is known as a poly we call it
+polyline. Then sometimes what happens is we have a data,
+something like this, surrounded by the data, something like
+this. Okay. Then we need to draw a circle. We call this as a RBF.
+So these things will discuss when we are going with a support
+vector machine. But today we are starting with only simple
+classifier. We know that linearly separable, okay, and
+that data only. It works,
+one question. So, if this is the line, so this will be have a
+like, y equals to some x line. This, right?
+Yeah, this line is W transpose of x is equal to x. Line, okay,
+yeah. If it is greater than or equal to 01, class less than
+zero, another class, okay.
+Neha, go ahead. So doctor, just trying to intuitively
+understand, when you said there would be no bias. So by I'm just
+trying to understand because it has to cut the axis. Right? They
+can cut the axis. No, I need to cut the ax. Yeah. Got it some.
+Sometimes maybe you can have so if the data is scattered in that
+way, but for simple linear classifier, no need to have
+we think that bias is there, but it can be zero, something like
+that later. Okay, okay, got it. Thank you. Yeah,
+yeah. Next question, sir. Good morning. So just an observation.
+Correct me if I'm wrong. So since this is a linear
+classifier, and we are getting one or zero, so if I based on
+the Iris data set, if the target labels are p,
+so that will not work or cannot be applicable. It is applicable,
+but that's what I said, right. Moving forward, I'll explain
+that also. For example, if you have three classes, one is
+something like this, another one is something like this, like
+this. If they are linearly separable, it will first draw
+the line in these two what is the class we are getting? For
+example, we got cross now, whatever the answer we are
+getting cross over this one, the classification will be done in
+this two. So this known as a one to one classifier. We call it or
+one too many. That is applicable. Okay,
+okay, yeah, yeah, thanks. But generally, Hannah, best
+practices, if you have multiple classes, better not to go with a
+simple linear classifier. Okay, we'll go with other classifiers
+known as support vector machine and Decision Tree classifiers.
+More. Yeah. Thanks, yeah. Mahesh,
+yeah. Hi, sir. Good morning. Very. Good morning. Yeah. So in
+linear classifier understood like we have two functions. One
+is summation of W, X, A, once we get that value, we have
+activation function where we will binary that value. Right.
+Okay, yes, correct, yeah,
+yes. Relax. Me. Happy,
+actually. Like, how we.
+Understand this line like this data by seeing the Excel data we
+cannot identify right. This is
+like, this is line linear or KNN algorithm. This plot before
+deciding algorithm. We have to plot this graph right.
+Plotting is one where we can decide, but when you have
+multiple features, two dimensional plotting is not
+possible, right
+situation, what we can do is hit and run first. We'll do it.
+Okay? We'll try algorithms. Whichever algorithm is giving
+the best accuracy. We can adapt that algorithm. This is one
+option. Okay? So again, what we can do is later onwards, when we
+have high dimensional feature, we'll first decrease them to
+lower dimension by using principal component analysis,
+single value decomposer algorithms. Then we'll plot it.
+Then if you think it is linear classifier, we apply it. Okay,
+step by step process, yeah. Santosh, ah,
+doctor, Habib. So in your example of linear classifier of
+apples or oranges, we always had one or two Miss classification,
+right? So will that translate to score or efficiency of that
+line? Exactly, okay. So that means some if you are saying one
+or two misclassification is acceptable, right? But when you
+have more then we need to change the algorithm. That's it.
+Accuracy is greater less than, for example, less than 60% or
+70% you discard the algorithm, go with another algorithm. Okay,
+thank you.
+Okay, so let us try to understand mathematically how
+perceptron model works.
+Okay,
+I'll do one thing. I'll take a very simple example, then I'll
+implement perceptron, and I'll show you mathematical
+calculations also, okay, so we get more clarity on that. For
+example, I have an input as 0x,
+and y as 00011011,
+then I have y is something like 0001,
+okay, this is x1 and x2
+I think when you look at the data, everybody might have
+understood that this is a which gate
+and gate, right? Yes, yes, okay,
+perfect. So for 00, let us say zeros are indicated by cross.
+One is indicated by triangle. So now tell me for 00, we've got
+zero. That means here is a cross correct. Now second one for 01,
+the value of x is zero, y value is one. How much we need getting
+zero means a cross mark. One, zero. Here it is a cross mark
+for one, one. I got triangle. Is it linearly separable or not?
+Yes, yes, yes. Drawing this line, we can linearly separable,
+correct?
+Yeah, okay. Let us take this, take this example and implement
+the code, and then we'll see mathematics. And then we can
+take some other Iris data. Also you can work with, okay, as I
+said, it will start with one to one, one to many like that.
+Okay,
+collab. You
+25
+session today is 25th
+May, 2025
+okay,
+let me share the link.
+Okay.
+SK, let us the first step import all the required libraries,
+right from SK learn, dot, linear underscore model,
+I'm going to import
+perceptron model. Okay,
+so let's. Let us connect the notebook I'm
+work, first step, second step, import
+NumPy as NP,
+then define X. X is equal np dot array of
+we can say, for example, Z.
+00. Is the first one,
+second 101,
+comma, third, one, one comma, 0/4,
+one, one comma, one.
+Okay. Next. What is y? Y is NP, dot, array of
+0000,
+comma, zero, comma, zero, comma, one.
+Okay, we got X and Y.
+Now create object model is equal. What is the object I'm
+going to consider?
+Percept, draw, perceptron
+algorithm, creating an object of perceptron algorithm. Let us say
+Max iterations. I'll consider as 10 for understanding estimated
+time of arrival. We call it in our terminology. We call it as a
+learning rate. Let me take the learning rate as 1.0
+and random state is your wish. So let us take random state as
+something like 42
+okay,
+so done here. What we are trying to do, we are creating an object
+of the model after that. Modal dot fit,
+okay, we have only x and y, very simple data. We are not applying
+any train test or anything, just for the basic understanding
+later. We can take Iris data, all those things we can apply.
+Okay, now,
+print,
+for example, I want to print
+Final,
+final weights,
+okay,
+of W for understanding, okay. Folder.co,
+efficient,
+then similar I want to print.
+Yes, final, bass, I
+string. Okay,
+so we got weights as two, two and bass is this one now
+predictions?
+What is the model name? Modal, dot predict. Okay, we are going
+to get x
+right. So after that, print
+predictions on training data we got in.
+So we got 0001, is the correct prediction or
+not.
+Okay?
+Now here we took Max iteration as a 10 and eta, we call it
+estimated time of error. It is also known as a learning rate,
+okay, so if you try to understand maths behind this,
+okay, let us see how maths work generally. Here, first in a
+glass I will explain. Then I'll take the whiteboard and to
+explain how mathematics behind perceptron model works. I have
+defined an X and Y, okay, created an object of perceptron.
+Here I said maximum iteration is but how much 10? That means I
+need to iterate through the values. How many times 10 times
+I need to go back and forth. Okay, then here, fit x5
+yourself. So when we do fit x, y, it using this max iteration
+10 and the learning rate as a 101,
+it is going to find the best weights. So after 10 iteration,
+it was able to find, finally, a model coefficient. As for
+example, it got as two and two, and intercept it got as minus
+three. So that means we have some samples on the zero axis,
+right on the zero Exactly. That is the reason there's a cut off
+the line. Happens somewhere by us minus three. Now, if you
+translate this into for understanding, so we got,
+now how many features we have consider x1 and x 2y, is that.
+So how do we write this? One w1, times of x1,
+w2, times of x2,
+then bias. Okay, let us take this as w1, how much we got two
+times of x1, plus two times of x2, minus bias is three. This is
+what we got correct. This is the equation. Now, on this equation,
+first values are how much we got 00,
+and what is the answer for 000,
+What is the step function? Tell me step function is, it is one
+if f of x is greater than or equal to zero, that is why.
+Okay, zero f of x is less than zero,
+it will, you know, you will get a little bit of confusion. So
+just carefully observe what I'm doing. Okay. Now, in this
+equation, when you put 00 tell me how much we'll get.
+Okay, two times of zero plus zero, negative three, how much
+we are getting. So
+when you apply here minus three, minus three is less than zero,
+right? That means y cap. The y cap means the prediction we are
+getting. What is the prediction we are getting. What is the
+prediction we are getting now zero? What is the actual value?
+Is zero. Now error is equal we write, this is actual y. So y
+cap minus y, so zero minus zero, error zero. So if error is zero,
+we don't need to update the weights correct. This way it is
+happening. So next one, if you take the second 101, what is the
+prediction zero? Let us apply here, two times of zero plus two
+times of one minus three, this is 02. Minus three is negative
+one. Negative one is less than zero. What is output? Zero?
+Actual zero. Prediction zero. Next one for for example, one,
+one, so two times of one plus two times of one minus three,
+four minus three. How much we getting one? One is greater than
+or equal to zero, yes, what is the output we are getting?
+One actually is one predicted also one? So this is a way the
+prediction is happening.
+Okay, please mute your microphones with the sound
+Naveen and dhaipathi, please.
+Okay,
+okay, great. Now you understand, like how it is substituting the
+values, right? So let us understand what is epoch means.
+That means iteration, how it happens? Iterations,
+okay, I'll take step by step. Very simple example,
+if you not understanding, just ping me in the chat. Okay, we
+didn't understand here. So total, Max iteration, how much
+we are giving
+10
+that means we said, repeat in 10 times.
+Okay, so let us start with the
+first I will take up to around one or two. Just to explain, I
+will, I won't take 10. If you take 10, it reach up to 1230
+Okay. So first, let us start with Z equation. What does that
+equation tell me in your bodies, w1, times of x1, w2, times of
+x2, plus some bias, this is our equation. Okay. Now, when we say
+Max iteration, we need to find what is W and what is a, b. So
+first of all, algorithm randomly. It selects some
+values. Let us consider it started with 00, as a first
+initial weights bias also started with zero. This is
+random first value, for example. Consider like this. So
+initially, it started weights with a zero and zero bias with
+zero. Then now what we need to do now we need to take the
+equation and substitute it. Okay, row one, in row one, what
+do we have 00,
+as the x values and what is Y. Y is zero. Correct. First row
+we have 00011011,
+here it is 0001,
+this is x1 this is x2, and this is one.
+Okay, this is what we have. Now let us use this first row. What
+do we have? 00, and y is zero. What about this 00, initially?
+Who gave this? Perceptron started assuming that let us
+start first with a 00, okay. Now calculate Z. How do we calculate
+z? Now z will be a zero times of zero.
+W1, times of x1, w2, times of x2 consider this as a w1, this as a
+w2,
+x1 x2 okay. Plus zero times of zero, plus how much bias we got
+zero, so totally Z value is how much we got zero. Now we apply
+step function on this. Apply
+step function.
+What is the step function? Now we got f of that y of zero,
+right? That is known as y cap, okay, when the value of zero,
+that means we say that if greater than or equal to zero,
+it is one less than zero, how much zero? Now greater than or
+equal to zero means it satisfies first condition, correct. So
+that means y cap value is how much
+y cap value is how much one so.
+Yes or no? Yes,
+sir. Okay, we got y cap one. Now we need to find the error. What
+is the error predicted value? Okay, sorry, y minus y cap. What
+is y here? Zero y cap is how much one? So how much we are
+getting negative one? So there is an error. If we have an
+error, what should we do? We need to update the weights. If
+there is no error, no, don't update the weights. Update the
+weights. How do we update the weights? Now, to update the
+weights, we have a formula. W new is equal to W old
+plus learning rate, times of error, times of x. Now tell me,
+what is the W old, zero, how much learning rate we took. One,
+what is the error negative one? What is
+the value of x? What is the value
+of x? 00, right? Yes.
+Okay, so now, how much will get when
+you multiplying with 00, this is zero, only, right? This is zero.
+We got new values. How much W new value is zero? No change in
+that. So we can say 00,
+W new value now we need to update we need to update bias.
+Okay, old bias is equal so the B old, B new is equals to b old
+plus learning rate into error. Here we don't consider the input
+features. Now tell me what is beyond zero. Learning rate is
+one. This is negative one. So how much will get now? Negative
+one. So now what is the new weights? Tell me,
+ah, 00,
+and what is the
+bias? Negative one.
+These steps are clear. Tell me first.
+So this after, after we convert the error after that part, sir,
+if you can repeat that part, okay, minus one Understood, sir.
+After that okay, error is minus one. Okay. After getting error
+minus one,
+we got error how much
+minus one? If error minus one, what should we do?
+Update
+weights. If error is equal to zero,
+no. Update
+Correct.
+Okay. Now update weight. How update weight happen? So update
+weight says W new is equal to there is a formula for this one.
+We use W old plus learning rate, times of error, whatever
+getting, then features. Now, what is the W old? We got zero.
+What is the learning rate? One error we got negative. One the
+values of x is 00,
+okay, in the feature format we are taking so we can say
+it's right. Come again W old is. W old is like so maybe I miss
+you something. W is pair of coordinates, x, comma, y, right,
+W, old, you are just taking zero. How we are taking it as
+just 000,
+is okay. Now,
+yeah, yeah, both are zeros. That's why I took as zero
+singular value. Okay, okay, to arrive the confusion. Take like
+that only good catch, okay, 00, okay.
+Then,
+yes, it 000, only
+one times of negative, negative one times of 00. When you
+multiply negative, one times of 00, negative, one times 00, we
+got it now. What is W new
+00, agree, understood.
+How are you taking oneness? Learning? Is it because of
+the assumption? Assumption only. This is all random values, so
+after 10 iterations, we are going to get the values. Okay?
+Initially, we are taking a learning rate as a one, because
+here how many samples, we have four samples, right? So if you
+have minutes of samples, one, learning rate won't work. We
+have to be something less than one, 0.01 0.02 something like
+that. Okay. Learning rate is something the step between
+every value. So that means it is something like randomness. So
+first we start with zero, then update the weight with one, next
+one with one another like this. This is a learning rate. If you
+have 0.10
+0.1 0.2 like this, we need to update the weights understood.
+So.
+That is learning rate. So learning rate initially we are
+guessing. So who is guessing? We are writing here in the equation
+of when we are defining the perceptron model. Here we define
+learning rate, how much we are giving eta 1.0
+Correct. Yeah. So eta is nothing but learning rate. Learning
+rate, yeah.
+Okay. Thank you, yeah, what is the random state? There come
+again.
+Who is asking this random state? Tell me random state. How many
+times we discuss random state?
+What is random state? Tell me, in your words, still you are
+unable to get random state. I'll explain.
+Naveen, you don't know I am so comfortable to understand the
+random state here, actually, what? No, sit down. What is
+random state? Do you have an idea previously,
+Sir, did you call me to answer that random state? Sir? No, no.
+Siddharth is asking the question. Just let me answer
+Siddharth. Do you have a problem in understanding random state?
+Or previously we discussed random state, same thing, right?
+Whenever you see random state, wherever it may be, it is inside
+the algorithm or inside a function, the behavior of random
+state is only shuffle the data understood even in the
+algorithm, also what we do, because either you shuffle a
+train test split, or you shuffle in the algorithm. Here, I didn't
+use train test right? Siddha, okay, I didn't use train test
+split. Yes or no.
+Here, we have not used any trainer state, but we are still
+using the random state, but just reshuffling the data,
+that's it. Because if you have a train test, don't use random
+state here already, okay?
+If you have train test, if you apply random state, don't use
+it. Random state is wherever if you are using the purpose of
+random state is just to shuffle the data, right?
+Okay, just
+here, also what we are doing, because I didn't shuffle the
+data in the train test I'm using here. That's it. If you don't
+want, you can remove it. Every algorithm have random state
+inside. Okay, okay, okay, yeah, whatever. The y cap actually,
+unfortunately, not able to follow that part, the y cap part
+that you are discussing. Y cap is predicted value, just to
+differentiate between predicted value and actual value, I just
+kept by cap. That's it.
+Okay, okay, let me do one thing again. I'll repeat in a simple
+manner, see what is the first weights we are initializing. We
+are saying the weights as 00, who is doing this? Perceptron
+model? When we initialize perceptron model, it initializes
+the weights as 00, and bias as 00,
+maybe it's not exactly, but we are mimicking we are trying to
+understand the intuition. Don't say Habib Exactly. It is
+starting with 00, maybe it is starting with 0.1 0.2 R also
+something right randomly. Algorithm knows that we don't
+know, because random state they when they writing random seed,
+it can be any number, but to mimic that behavior, we are
+starting with 00, okay, now we have, this is the weights and
+bias. Who decided perceptron model started in the initial
+thinking that, okay, let us start with the weights as 00,
+bias as 00, and let us walk through. So how do we walk
+through? We'll take the first row one. In row one, what do we
+have? We have 00, as x features, and what is the y value for this
+00, we have zero. So we have x1, x2 and y x1 x2 is 00011011,
+for 00, how much we have 0001,
+now I'm taking which row, the first row I'm taking, this is
+why? Clear everyone. Okay, now we need to apply the formula
+that is equal. This is think as w1, w2 this is x1, x2 now w1,
+times of x1,
+plus w2, times of x2 plus this bias. Now substitute the values.
+This is zero times of 00, times of zero. Bias is zero. We got z
+value. How much we got z value as zero. So once we get z value
+is equal to zero, we know the y cap is one. If f of x is greater
+than or equal to zero, it is zero if f of x is less than
+zero. Now tell me what is the z value we got. It 00. Means it
+satisfies this condition or this condition. This condition
+correct. So that means y cap, how much we are getting. Now y
+cap is one. This is nothing but predicted value.
+Okay, this is actual value. Now we need to find the error. How
+do you find the error? Now, error will be one.
+Actual value minus predicted value. What is the actual value?
+Zero minus what is the predicted value? Y, cap is one. So that
+means we got error as a negative one. When error is negative one,
+what should we do if negative is negative one? What should we do?
+We need to update the weights.
+Now. What is the formula to update the weights? Weights new
+is equals to weight, all plus learning rate, times of error,
+then
+we have x value. Now, tell me, what is old? We got 00, correct.
+This is where this is old. Okay, then learning rate, how much we
+started guessing one error. We got how much negative one? What
+is the first row values, 00, now 00, will be zero, only one times
+of negative one. Negative, one times of 00, when you multiply,
+we got 00, that means W new we got how much 00, okay, got it.
+Now we need to find bias. What is the bias? Now updated bias is
+equal bias new is equals to bias. Old plus learning rate
+times of error. Now, bass old, we started with zero. Correct.
+Learning rate is one. How much error we got? Negative one. So
+one times of negative one, negative one. So now we got bias
+as new now new
+things finish it. When I say ask the question, you have to ask
+the question. Okay, it
+is going to disturb everyone. Wait a minute. Okay. Now we have
+new weights. Is 00,
+then what is the bias? Negative, one. Okay. Now good to go ask
+the questions. Now go ahead,
+one by one according to the sequence of raising the hands.
+Okay,
+yes, sir, you have used the randomness right in the
+perceptron model. If randomness is going to increase the
+randomness of the equation, I'm going to say the error. Do we
+really have to consider the randomness, because you said I
+don't understand what is 42 mean there? Or do we have to take the
+value if it is going not going to do the right values
+previously, when we are taking train test plate at that time,
+use random state? Right?
+Yes. But when you say random state, what is the impact of
+this random state on the actual performance of the model? Don't
+see the performance boss. I'm not saying about the performance
+now. Think of like, what is random state? Okay, then
+performance will discuss when we are coming to the performance of
+the algorithms. Okay, here, randomness is only shuffling the
+data. So by shuffling the data, how it is going to affect that
+we can discuss when we are talking about precision recall
+and the fund scores. Here, random state is simply it is
+going to shuffle the data. Okay? Now, by shuffling what is the
+impact, we are not digging into the accuracies and performances
+right now, just what we are doing. Instead of taking
+sequentially, we are trying to take randomly. That's it clear.
+Yeah, okay, and one, one, another question, sir, you have
+taken a step of one here, right? Yeah, it also something that, do
+we know? How do we take these values of step? Because here you
+construct one. You also said, in a larger data set, you can take
+001, as well, right? Okay. Chakra here a white I took one
+is actually to make you understand the mathematical
+calculations clearly I took one, frankly. Okay, so generally, the
+learning rate starts from 0.01
+and then we'll take it and we'll try to train it. And the data
+samples are only four, right? So four means there is not that
+much complicated data. I know that is the reason I have
+applied learning rate as a one and another thing, as I said
+yesterday, when we discussed, I said hyper parameter values. How
+do we decide this learning rate we use up to an algorithm that
+is going to give us the correct over learning rates? Correct,
+okay, yeah, maximum iteration. Again, you people are repeating
+the same questions. So let us take something new. Okay, so
+whatever we discussed, it's probably similar one. So we
+started with one. The reason is just only the reason is to make
+you the calculation understandable. I started with
+one if I'm taking 0.011 the calculation is little bit tough,
+right? I need to do hundreds of calculations to make it easy how
+the mathematical intuition is happening. I took one as a
+value. Clear, okay, now, Priyanka.
+Priyanka, yes, sir, sir. And the W new, when we calculated W new,
+it came to be 00, which is same as the old W value. So is it
+because it is same here calculating bias new, or is it
+like irrespective of whatever the value w new might be, we
+still calculate every time bias new as well, exactly every time
+we calculate bias and W both will calculate, okay, got it.
+Thank you. Yeah. Siddharth, i.
+Yeah. Sorry, sir. Disturbing so many times coming from the non,
+non AIML background and completely different, you know,
+I love to teach siddha. I teach most of non, you know, AML
+backgrounds. I'll mostly black box, everything. I'll give my
+best with the patient. So not a problem, yeah. Thing is, like,
+you know, we need to be in the box. When we cross the box, what
+happens is everybody will get Hava. That's the reason that's
+right, yeah.
+So one quick question here only, only I have. So when we are
+calculating the WDO, we are considering the x as a part of
+the function and including into that word calculating WDO. But
+for this where the bias we are calculating the new we are
+including this x part. I just want to understand why we are
+excluding the expert, maybe a very stupid question, but the
+mathematical formula, sit down when you say A plus B, whole
+square is when you are different. Mathematical formula,
+okay, mathematical formula to calculate this bi, it is a
+research so that actually another thing is simple one.
+Bias is a constant. Constant doesn't play any value with the
+coefficient values.
+Maybe the
+simple answer,
+okay, that's good. Thanks. Sreenvas,
+okay, so Kumar,
+I have question with respect to the iterations you have
+mentioned 10, right? So just trying to understand, like, we
+have only four samples, so how iteration works. Will it go
+through all four at a time and like that? It will go for 10
+times, like no, no first, it will
+go through one by one, row one row two, row two in first
+iteration, okay, then again, second row two, row one, row two
+like that. So totally around how many iterations we can think of
+four times of 1040, something like that, correct,
+right. Okay, so along with that, it will shuffle 42 exactly.
+Okay, got it, sir, yeah. Thank you. Welcome. Hari.
+Hari, once you have done your question, please lower your
+hand. Hari, Vishnu, you are unmuted but still unable to hear
+you. No No question. No question myself, no question. Okay,
+great. Hi, sir. Previously I was didn't unmute myself. So, so my
+question is
+W new and B, new. We calculate for each input. I mean, 000110,
+and one, one, right exactly, and we all. We also calculate the
+error accordingly. In one, in one case, we don't get error. In
+another case, we might get another. So we have to sell only
+those, ah, particular concerns, or how we iterate multiple times
+wherever we as you mentioned earlier, if there is no error,
+we not calculate any weights or by us. So for the other part,
+like one, one, we still need to calculate further, right? Yes,
+one by one will go on Srinivas. First of all, we start with, I
+poke one, okay. Then we update the weights. After that, once we
+are getting updated waves, we take the second row, what is the
+second row? Now, for example, we got the updated weights. Okay?
+Now we got the updated weights as this one. Now we'll go to the
+second row. What is the second row? 01, target is y is equal to
+zero. Now substitute the equation now, zero times of
+zero. This is w1, w2 this is x1, and x2 right? So this will be
+w1, times of x1, zero times of zero, w2, times of x1, zero
+times of one, plus the bias is negative one. So how much we are
+getting now negative one. What is this negative 1z value? So
+why cap? How do we calculate now one zero? If the value is
+greater than or equal to zero, we call it as a one less than or
+equal less than zero. We call it as zero. Now negative one is
+less than zero, or greater than or equal to zero, less than
+zero. So yeah, what is y cap? Now, y cap is zero. Now, tell me
+what is the error? Now, error zero y minus y cap. That means
+zero minus zero is zero. Now, do we need to update the weights?
+No
+one by RC is negative one. We'll go to the next row. What is the
+next row? Now, one zero with how much
+prediction y is equal to zero. Again, we'll do that. So once we
+reach to that, okay, once we final, we are getting the first
+epoch is done, then we'll go to the second of both, third epoch
+like that. So when we do refining finally, where we get
+all of the four, we get to zero. Then we say, okay, best weights,
+we'll use it and do the prediction. Yeah, Okay,
+understood. And thanks. Thank you, sir. Yeah, clear, everyone.
+And another thing, so you mean like that 10 times we need to do
+when we initialize 10. Revati, just a minute, actually, this no
+need to you. No need to, you know, understand this
+mathematics just when we write this fit, okay, this all maths
+is happening behind. So I'm just trying to open this box and
+showing you how things are happening. Just enjoy the
+working of the algorithm, okay, and try to mimic it. And but
+when you are, I.
+Attending interviews are real time when you are working as a
+data scientist, this background mathematics is not needed at
+all. Only thing we write, model dot fit and working. So as a
+curiosity, black box we have that how things are working. I'm
+giving my best to make you understand that. Okay, this is
+the way things are working. Okay.
+Okay, good. Relief. Pavani is very happy. Now. No need to do
+any math. Pavani just fit is enough. You know, fit that's
+enough. Okay.
+Priyanka, where's the question? Sorry, sir. One big question in
+the row two. Row two that you have explained you took x equal
+to 01, and y equal to zero, and then when you are calculating Z
+value, so are you taking the w1, w2 and b values from the new
+values that we derived from row one example? Yeah, new values
+only, right? W1, w2 is new values b is the new value minus
+one I am putting here. So does that mean w1 w2 will be same for
+all the rows.
+Maybe here, if error comes, maybe it will change. Here it is
+no error, no change, right? Yeah, but I'm just trying to
+understand so we are using the new values that we calculated
+for row one in row two. So does that mean w1 w2 will be constant
+throughout all all the rows. Priyanka, P value, just you
+know, people are again, see first row, row one, okay. Row
+two, row three, row four, row one. We started with 00, okay.
+Weights, will try to find if it is okay. We'll go to the next
+one. We don't take 00, if a update comes in, we'll take the
+update. We'll go here. If there is no update, no problem, we'll
+take the old one. If update comes here again, update comes
+here after that, the final update is there. This again,
+will go to row one again. This update. So it is going through
+all these updates like that this, how many times these
+iterations will happen? 10 times. Because I said 10 epochs,
+right? For example, if I have A, B and c2, and three is five,
+four and six is 10. Now, if I say, tell me the function. What
+is the function? So how do you write? First of all, 2x plus 3y
+is equal to five, 4x plus 6x 6y is equal to 10. Then we'll try
+to find the values of XR, XY or not? Yes, sir, okay, for these
+two, okay, but this same whatever XY we are finding, is
+it possible for the remaining values also? No. There may be
+change, right? So we'll try to find the best one, which is with
+the minimum error understood. Okay, okay, that satisfies all
+the four,
+maybe millions satisfy,
+okay, okay, got it. So we'll we are finding just single value of
+w1, single value of w2, and single value of b1, which would
+satisfy all the rows, perfect understanding, understood so
+which can satisfy most of the millions of less errors. That's
+it. Yeah, got it. Thank you. Yeah, welcome.
+I would love to differ with you, sir, as you said, now that we
+need to only understand it, I would love to share my interview
+experience. What they asked me. They never asked me any Python
+code. What they asked me only mathematics behind the model,
+and they wanted me to put in English how, how this is going
+to work, perfect manager. So they are not sticking the Python
+code. They are not taking them quitting and all what they are
+saying that, are you able to describe the problem in plain
+English. And do you understand math behind what is happening
+these two point, they asked me, sir, yeah, good. Even as when
+I'm taking interviews, I'll do that part only. But the only
+thing is, like, here, as we are studying, right? So I'm trying
+to give you like black box. Try to understand, that's it. But
+don't get you know, havoc that okay, all this mathematics is
+needed. I need to understand and all those things, okay, just try
+to understand that's it. Okay. Good. Thanks,
+yeah, Vishnu, go ahead.
+Vishnu, are Yes. Hi, sir. So here, when you said there are
+multiple iterations, multiple epochs going on, let's say, in
+the middle of the iterations going on, I get the best values
+for weights and biases. So do I stop there? Or how do I know
+where to stop, when to stop? How do I choose?
+As I said, coming in the sessions, we call it as a early
+stopping. We call it okay. So we are going to log at the time. We
+see in the log, if you are getting best score, will say,
+stop there, at least stopping. We call it in neural networks,
+okay, so, but in the perception every
+okay. So every step we make sure we measure the score is.
+I You didn't get me in neural network. That is happening. But
+in the perceptron model, we don't have the choice. You have
+to redo the all the things. Okay,
+okay, okay, but, but model itself, internally learns what
+is the best value? Yes, of all the standard durations, yes.
+Iteration, it learns. And then it is going to keep that best
+values remembering, and finally, it is going to put into
+Thank you. You're welcome, Vikram, last question, Vikram,
+go
+ahead, sir, is lower the learning rate and higher
+titrations is the efficient algorithm? Yes, that depends
+upon like you know, if you have resources, you can do that. If
+you are unable to get the accuracy, only thing what we can
+do is we can increase the iterations and decrease the
+learning rate. Okay,
+yeah, okay. Let me do one thing, how it is classified. So I'll
+just show you graphically. So in the first step, this is the
+importing the model. Second step, defining the numpy value
+created a perceptron model fit and found just we found W and
+the intercept, we got it correct. Now, let us plot it,
+for example, for label, let me import the
+matplotlib. Also import matplotlib.
+Okay, this is also not needed, just for your understanding. I'm
+plotting so that how the line comes in. Is it separate or not?
+Marker, I can take some color also
+in
+zip, okay, I need to add
+brain. We have zero to one with the two classes we have right
+Zero to One is the class we have. And let me take o circle
+notation
+and next one as a
+cross notation. Okay, so zero means it is O and x1. Means x,
+and let me take two colors, blue and red. Not a problem. Now I'll
+plot a scatter plot, label.
+Then we take 0x label. Marker color is equal to label. Then
+close the label.
+Okay.
+Now
+let me define here.
+X values is equal to we can say NP, dot, length, space, uh, uh,
+let
+us take negative value also negative value to something
+around 1.2 the values I'm just considering randomly. Maybe if
+it is crossing the boundary, I'll change them. Okay, then I
+need to find the y values.
+Is equals to, uh, uh,
+let us start with negative
+W value of because we have how many two, right? So W of zero
+times, we are going to multiply with X values
+then plus adding the bias and divided by one, okay, then plot
+x values, y values. Color is equal to black.
+Let's take a dotted line.
+Color is equal to black. We can label
+as
+position
+on read something,
+okay,
+then you can
+dot.we,
+can consider x label. So
+all as x1,
+plot by label.
+Dot, dot.
+Okay, we got two parts
+on top by label
+is equal to x2
+and we can
+take a limit also plot.we
+can say something x limit between
+negative 0.2
+something and we can take 1.2
+and plot dot y limit. We can take the same negative 0.2
+then 1.2
+okay, then one.
+You can give
+grid not needed, okay, plot.so, let us see simple,
+un terminated
+straw. One
+operand could not broadcast together. Shape two and 100.
+Where is that
+we got two rho, y values. Let
+us take the intercept we got. And W is the how many
+coefficients we are getting to write model intercept. Okay.
+Chapter W, small amount of typos. Just look for the typos.
+Row number 13. It is the counter exchange,
+sir. I think it's the hyphen in front of the way,
+no X values, where is, where is hyphen
+near the y values, okay,
+it is
+minus, not hyphen. I gave it as a minus,
+w times of zero. Let us make it as
+so sometimes
+even the
+collab also behaves weird.
+Okay,
+try to find if there are some typos, we can correct them.
+Okay, okay, okay, okay, I need to take one by one. Here is the
+mistake I'm taking.
+Okay, got it so this
+is just to make your intuition. This is our dotted line. I have
+kept it so this is a way it is trying to learn
+why limit there is a typo while limb we can give.
+Okay, now good to go. This is a code sample.
+Now this is the separator, which is separating three blue lines
+and one cross line clear
+this. No need to go for all this code sample, but I will explain
+you in simple words when I say W, let us print w here
+and
+print b.
+So, two, two. Why? Because W we are getting inside a list. So
+you are going to get w as like this one. Okay, I need to
+extract this one. So I have written W of zero. Otherwise it
+is multi dimensional. So this is two, two, and weight is how much
+negative three. This is what we got right in the previous one.
+So two, two minus three is the line, which is, you know,
+somewhere it is cutting at Y axis at three somewhere, if you
+are crossing like this, negative three somewhere, it is cutting
+the line. And then we are just like, this is a matplotlib I
+think you might have seen when you are doing your Python
+sessions, basic matplotlib. And when we visualize it, we use
+matplotlib, or better. Nowadays we don't use MATLAB matplotlib.
+You see one only like in the last session, when we do
+property processing, we explained about c1 pair plot
+right? That is where we are trying to understand so
+precisely how the things are happening. Let me put it in a
+glance that we started with first linear classifier.
+So one of the linear classifier which I discussed, is, which,
+which? What is the name perceptron is the linear
+classifier. Okay, this one. So linear classifier works when, if
+you have the data linearly separable, then only the linear
+classifier applies. Now you have a question, like lot of
+questions comes in, what the question is? Habib, that Habib?
+How do we know they are linearly classifiable, and if you have
+multi classes, then how do we separate them? Something like
+this, right for the those questions, answer is
+directly visualization is not possible. But later onwards,
+when we jump into advanced session, unit two and Unit
+Three, it is a higher dimension. What we do we lower the
+dimensions? So we decrease the dimension of suppose 100
+dimensions are there. We can decrease up to two dimension and
+we can visualize the data. Okay? That way we can do
+visualization. Now, as we are into the first step, what we can
+do here? Instead of visualizing, we apply this algorithm. We'll
+look for the score. If the score is good, we'll go with.
+This algorithm. If score is not good, we'll take another
+algorithm. This is the first process we have to do. Now, in
+this example, when we define a perceptron model, we started
+with perceptron. I said here Max iteration is equal to 10 and eta
+zero learning rate. I took as a one random state, because if you
+take the train test split, no need to define here, if you
+don't define train test split, define here, just to get the
+randomness. Okay, I don't want in the sequence to be row
+selected. That's it, if you don't give also not a problem,
+because for four samples, it doesn't have any impact. But
+when we use more samples, there will be an impact on that. Okay.
+How this algorithm works. The black box is just we are trying
+to mimic the mathematical intuition how things will
+happen. So we have how many rows we have, row one, row two, row
+three and row four. This is row one, this is row two, and this
+is row three, and this is row four. Now, first of all,
+initially, the weights are initialized as 00,
+and bias as zero, and learning data as a one. Then we take the
+row one and we'll substitute here, and we got the z value.
+Once we get the z value, we'll check with y cap, if one, if the
+z value is greater than or equal to 00, if it is less than zero,
+we'll do like this. Okay, so now we got z as a minus one. That
+means what is the y cap? We are going to get a zero. Y is equal
+to zero. Now we'll check what is the Y here. So y cap and y both
+are same. There is no error. We'll take the same weights,
+move on to the second row, and second row, if there is a
+change, we got new w1 Okay, new W. What should we do? We'll take
+this new w1, applying row three, no change, for example. So the
+same weight will go to row four after that. What are how many
+iterations completed? Now, one is completed. Now again, this
+updated weights will go and starting from beginning. Again,
+it process happens. Second will done what we finally we got some
+weights again, third time, like this. How many times we are
+iterating? 10 times we are iterating after iterating. 10
+times we got some W. That is two, comma two, and bias we got
+as a negative three. Now we got the equation. That's it. This is
+learning. So now this perceptron.
+Perceptron took the input as x, output as y, and then it got a
+function, something like 2x one plus 2x two minus three. Now,
+unseen data, if you have, for example, anything unseen data,
+if you have keep it there, for example, let us say one and one
+is unseen for it, so we can write two times of one plus two
+times of two, one minus three. So we are getting two plus two
+is four minus three. We got one. So we know that greater than or
+equal to zero how much one so for one is one. So we got
+correct values. So this way perceptron model understands and
+do the calculation. And here we came extra across with the term
+known as a perceptron. We call it single perceptron. In our non
+biological we call it as a neuron. So whenever people say
+perceptron or neuron, both are same. So we started with a
+single perceptron model. Means only one perceptron is coming in
+with all the features. So how many features? Here we have x1
+and x2 here we got the Z after that, we apply the step function
+from self. Step function, what we are getting, y value we are
+getting. So this is the same type of mimic of a neuron. For
+example, if you have a complex problem, what we do instead of
+one neuron, we introduce multiple neurons like this. So
+this is known as neural networks, those things we'll
+discuss when we are into deep learning. Okay, hope the first
+half is clear. Now you're open to the questions. Please go
+ahead with any questions.
+Okay, Kishore, first raised up. Go ahead. Kishore, yeah. One
+question,
+yeah. Kishore, go ahead, yeah. So most of the data points, like
+in this example, right? Can you go up? It's a most of them are
+zeros or ones, right? So if, if the new, new data is coming in
+is other than zeros and ones, still, it will be able to adapt
+to it. Or do we need to do anything?
+I don't think it adapt. We need to train on that data, right? So
+just for this example, we are seeing how the data is working,
+algorithm is working. So whatever the data you have, you
+have to train on that data. Okay, if, if my new data is
+coming is more than, like two, comma three, then I have to
+train again. You have to train the algorithm. Okay, thank you.
+Yeah, out of the scope, we have to train the algorithm again.
+Okay. Siddharth, yeah, what is the semi perceptron?
+Semi perceptron, single perceptron, single person, okay,
+single perceptron is
+neuron. One last question is that currently we are
+doing with like only the two parameters here, but if it is a
+multiple levels.
+Like, if it's a like a mango, orange and Apple, then in that
+case, how could we fit this one linear?
+I think you people are missing some sessions. I don't know.
+Somebody asked me this one, right? If you have this one, I
+have drawn it, and I have shown you, first of all, it will
+classify in these two, whatever the result it is getting, then
+it will take this result and this one. So one to one
+relationship,
+okay, one to one prediction will be done.
+Okay.
+Jaipa, here we calculated weights that expression, I got
+3x plus one and 2x plus two. So when do we stop that expression
+is correct? So that weights, calculating weights and
+stop unless, until your max iterations. So if you have that,
+we need to check the accuracy. Actually, okay. If the accuracy
+is you can stop there, or you can increase iterations and
+learning rate. Jaipal, you need to change those two things.
+Vikram,
+oh, sir. Like, this is the score is nothing, but like for the for
+the final weights that it came that the like equation came up
+after this thing, and like for how many equations is this
+fitting? Can that be considered as the score like sir? No, no,
+no, no. So model dot score, we have x and y. We got how much
+one, for example, from SK learn dot matrix import, we can take
+accuracy score also, and then we can print it. Okay, so here very
+simple one.
+We got it that means the number of iterations and learning rate
+is good to go. That's it. Stop there. And if you're getting
+accuracy is less than then you need to change the hyper
+parameter, increase the max iterations and decrease the
+learning rate. For example, take it as 0.5 now try it. Otherwise,
+go to 0.01, more. Let's less. Such steps. Okay, no, I meant to
+say so let for now it is one that does mean the weights are
+fulfilling for all the equations, like for all the
+inputs we have given. Let's say, if it is point nine, that does
+mean out of 100, like 90% of it satisfied to see this, the final
+weights are right. That is why 90 of the equation, but not the
+10 out of it
+is that? Yeah, correct,
+yeah.
+Thank you. Naveen,
+so the question is regarding that may be little bit out of
+scope, but when you said we are lowering the dimensions right
+for that page, when you explain.
+So let's say, if we even after lowering the dimensions, if we
+have three dimensions, will the line become a plane kind of
+thing to separate the labels Naveen, as I said, out of scope.
+So it is completely out of scope only. So when we discussed about
+feature engineering at the time, I'll show you.
+Okay, yeah,
+good.
+So I hope it is clear. Now, okay, what is the question? So I
+think these are my maybe there's a basic problem in my
+understanding, sir, and it's stupid question. Then let me
+know, sir, I understand that
+there are two types of data, data points. One is a discrete
+data for which we use classification answer for
+continuous data. So we use regression, right? Sir. Now,
+sir, we have linear regression for continuous data, sir. And we
+have classy for example, cane and all type of things for Sir,
+classifiers. Now, sir, when we are saying sir, linear
+classification, sir, I'm just trying to fit this, this one
+into any one of these buckets, sir. So is this a regression
+model or this is a classifier, sir? So may be some basic
+concepts. I think I am so, don't look at the name. And you know,
+misunderstood linear classifier in the sense by drawing a line,
+we are separating the classes so it is something like we are, one
+is plotting the line, and we are trying to get the best fit line
+that is in regression problem. Here we are just drawing the
+line. So line is there, okay? That is the reason we call it as
+a linear classifier. That means using a line, we are separating
+them, okay. That is the reason the name is given as a linear
+classifiers. If the line is not there, for example, you have
+something like, you know, curly line, then we don't say linear.
+We say poly class, polynomial core classifiers. That means we
+have a, like a polynomial line. Okay, clear
+answer here. The output is similar to the data for
+classifier. Basically they are like 01, discrete outcomes,
+right? Sir, yeah. So then, will it be a again, I think the basic
+research, the reason, sir, will it be a linear regression?
+A kind of a problem, or we should treat as it is a
+classifier, kind
+of 001, is not continuous, right? Two classes. So two
+classes means, think in mind very simple Aditi. If the label
+consists of some classes, discrete values, it is
+classification, whatever it may be, the name people they like,
+the name they may give it linear classifier or something pandas
+is given, right? So, like that their name is given to the
+algorithm because they're taking consideration of the line they
+implemented the logic, mathematics. So don't take that
+one names. Okay, only took for the problem statement. If the
+label consists of discrete values, it is a classification.
+The label consists of continuous values, regression, that's it.
+Don't go out of that. Then say it is a classification. So then
+it is exactly it is classification because 0013,
+zeros and one, right classification, that's it. Yes,
+I know. I'm not here, sir. Thank you. Thank you. Naveen, again,
+yeah,
+so are you going to
+proceed with the further iterations of the weight, new
+calculation, bias, new calculation. Or should you do?
+You want us to
+proceed further? I want you people to proceed further and
+reach to two and two. Yeah. See, that was the question. He said.
+Last question that to achieve the multiple linear classifier.
+How could use the perceptron? Or should we use the defined model
+for multiple here we have how many two right one feature, if
+not multiple
+RAM, I want to be the multiple linear classifier means the
+multiple lines, to separate multiple items, multiple not
+multiple lines. Actually, first it will draw one line separate
+it. What is the answer is getting? Then one two others, it
+is going to map one too many. That way it is calculated if you
+have more classes. Okay, so generally preferable is all the
+needed classifier are preferable for binary classification. If
+you have multi class classification, we'll go with a
+decision tree algorithm, and then we'll go with support
+vector machine like that. Okay, okay, got it. Thank you.
+Okay, so linear regression, predicting the continuous
+number. Linear classification, predicting the classification
+Mahesh Babu, okay, maybe by us during the next word prediction.
+The train data has lot of black color. One out of topic question
+while coding, how is that colavi intelligence is predicting that
+we are going to use the color as a black sai Krishna. It is a
+prompt engineering sai Krishna. So when I'm writing
+the prompting kind of thing. So variable name automatically, b i
+use, right? So colors are used, so it is taking. So that is
+known as learning prompting. We call it. So when you discuss Gen
+DHAI the time, you'll understand, okay, but yes,
+Aditi, what is the question? Last question, sir, in real
+life, sir, in what kind of problems would you would we
+think of implementing this kind of
+a real life use case, sir, where we should be using this kind of
+a perception algorithm, sir. Okay, so, like, for example, if
+you want to classify spam and ham, okay, email, then we can
+use this classifier. Or if you want to classify whether the
+person is going to be
+diabetic or non diabetic. We can use this one. Or we are going to
+say whether the person is going to purchase the product or not.
+We are going to use this product and whether the person is going
+to resign from the job or not. We can use that attrition. We
+can identify, like, a lot of use cases are there? Okay? Sindhu,
+sir, so like, like, not every time, we'll have the
+visualization. Like, which points are closer to the line,
+right? So how do we know like, which points are like, clearly
+away from the line and which points are closer to the line?
+Because the ones closer to the line can be like, either here or
+there, right? Yeah. So Sindhu, the No need no visualization is
+there. As a data scientist, what we do is just, we look for the
+score. If the score is good, our end of the day goal is score. We
+are not supposed to look into the visualization part, all
+those things we are just trying to understand, which means we
+are trying to dissect the algorithm, trying to understand
+but in real life, as a data scientist, I'm not going to use
+all those things. What I will do, I'll just train the model. I
+look for the accuracy. Accuracy is good. I'll publish the model.
+Otherwise, I'll drop it. I'll go with another algorithm. That's
+it. Okay, okay, so, like, the score is for the entire model,
+but like for certain points, I can say that maybe the
+confidence level is not too high, but you're saying that
+it's just the model score that is important. Exactly. Model
+score is the important
+one in real life, yeah, hi, just, can you scroll up?
+Scroll up. Can you, can you just brief me a little X wells and y
+wells,
+X values, yes.
+In space, is there right now?
+Dot linspace means actually we have in NumPy when you say a is
+equal to NP, dot arrange,
+for example, one to 20. So when you say a, what we'll get
+one to 1993,
+so when you say a is equal to Lin NP, dot, linspace,
+linspace, we say one to two, do some 20 parts. That means a is
+going to create how many parts, 20 parts of one thing between
+one to two. Okay, that is what we are trying to do. That's it.
+Okay, that that variable like which will be array between 0.2
+to 1.2
+between one to two dividing 20 parts, 20 is excluded, but here
+two is included. That's the only difference. Okay, being
+specific,
+and why and why? Well, why? Wealth is the formula y values
+is equal to formula just I'm taking the weight and
+multiplying that divided by w1 to plot this graph. Okay, okay,
+okay,
+okay, done.
+Okay, so hope it is clear. Let us take a break now. It is 1038,
+arnam,
+okay,
+we'll be back by 1110 Okay, so meanwhile, if anybody want to
+take a break, if you don't have a questions, you can take a
+break. We'll be back by 1110,
+okay, yep, tell me what's the last question? Yeah, sir.
+Actually,
+I almost understand all the linearization models we told
+because I come from math background, this I am,
+I am trying to visualize conceptually, because at the
+beginning of the our aim, and we are taught like, you know,
+training, testing,
+exactly, this is what I'm saying. So, sir, my question is,
+like when we are dealing this kind of example, for example,
+today, you have taken this example like this, 00010,
+you have taken the entire data. So I don't see that anything
+like you have like
+you did something like pasting dating.
+So I'm just not being able to understand like the theories we
+learned and now that we are applying here. So this is the
+thing. I mean, I understood what I understood. What is your
+question? So my question is, for example, today, in in today's
+example, can you please show us like because, as per my
+understanding, you have taken the entire data that 00011011,
+for training the model. But as per our learning, we generally
+leave aside a part of the data for safety, Stop, sir. Arnab, I
+said in the beginning, Arnab, we are first need to understand how
+algorithm works, right? Then take the data, applying. So all
+the algorithms have given the steps, right? What are the
+steps? First, import the libraries, inject the data,
+extend by all those things. So here what we are trying to
+understand. Once you understand the algorithm, all the steps of
+common right, the math, if you are, for example, if I take that
+biggest data, if I try to explain for two samples, you are
+unable to follow. If I take nine features, if I explain these
+things are happening, you don't understand, right? So first of
+all, we are taking an understanding, not theoretical.
+Practically, we are understanding. Then you take any
+sample, for example, diabetic data. So after the break, when
+you comes to come back, we'll take a diabetic data, implement
+the perceptron model, like in the last class. Also we took the
+auto MPG data, right? That's what we are trying to do. So
+where is the problem?
+We are not following that pattern, yeah,
+yeah. So don't get panic, just we are taking sample data means,
+first of all, to make you understand how things are
+working. Practically, when you see an implementation is very
+easy. Once you understand we can apply to any algorithm, right?
+That's what we are trying to do. Okay? Yes. Naveen,
+sir, I was trying the other iteration. Just wanted to check
+I could see that the weights are going in the negative axis and
+error.
+Sorry, new weights are going in the y, in the negative
+direction. So
+maybe,
+maybe you can get different weights, not in algorithms,
+right? Because we are doing handmade hand calculations,
+little difference.
+Okay, we just wanted to check if error is still the y cap minus y
+or y minus y, cap y, cap minus y, y, minus y, cap y, minus y.
+Cap, okay. Thank you, yeah. Okay, that
+Okay, so let me have some three and back. Priyanka, still you
+have question. Go ahead. Sorry, sir. Uh, following to what athna
+was asking. I think his question was, um.
+Why didn't we split the data into test and train? In this
+example, I understood what he mean to say is, we are taking
+very small amount of data. Why don't we take some big data and
+do the train, test split and all those things, right? That's what
+he's saying. That's I said. First of all, we are trying to
+understand basically how algorithm works. Once you got an
+idea, all the algorithms are same steps you're applying,
+importing the libraries, injecting the data, like in
+linear regression, we took an example of which one auto MPG
+right after explaining so that way today you took it. So where
+is I am doing? What? What I'm doing? First of all, I'm taking
+a sample with the 2025, 300 I did it. Then I took another big
+data, we applied, right? So the concept is, we are trying to
+understand concept on smaller amount of data, then we apply in
+the real data. So after the break, when we are coming up,
+we'll take a diabetic data and we implement a perceptron model,
+right?
+And you're telling will also split the data at that time.
+Yeah, we need if you have been split, right? Train test split
+everything. Here we have only four samples. That is the reason
+we are not splitting. We are trying to understand, right?
+Yeah, got it.
+Okay, so give me a break. I'll have some coffee, and I'll be
+back to answer all of your questions. Yes, you need some.
+You need to energize yourself.
+Okay, but good questions. Happy that I'm answering all the
+questions. Okay? So one more thing request is like, you know
+people when they're giving a comment saying that 50% of time
+they're spending on question answers, because in the unit one
+generally, what happens is everybody's in learning phase,
+and when you are going for the interviews, these questions will
+play a vital role. Okay, remember that the basic
+questions people when they're not understanding, they'll ask
+that questions, right? Even you're a professional, you miss
+those things. So those questions plays vital role. You will enjoy
+at the time when giving interviews, so nothing is
+wasted. Every question is valid. So just listen to the question.
+Okay? If you have a knowledge that's well and good, you can
+say, okay, I can explain something. But generally,
+listening to the question will what happens is, like in the
+brain will memorize something like when you're writing or
+listening. Okay, that's only the suggestion, take care. Okay,
+we'll catch up after the break. Bye.
+Anybody from the talent spread? You?
+Hello, anybody?
+Anybody from talent sprint? I had a question
+question for me and for the talent sprint, I'm also from
+talent
+Okay,
+something with the logistics. Uh, no man like the the
+assignment, right? When, basically what has happened is,
+uh, yeah. I mean, the timing for the Cfu is, like between 9pm and
+9am which is very odd, actually. So after the class at six
+o'clock, it becomes very tiring, and we have lot of work at home
+and other things. So sometimes we forget, actually. So this is
+graded exam for yesterday, and could not just
+forgot to anybody. Is there? Please listen to Kiran. Okay.
+Multiple people have been asking this, actually, that to at least
+start, okay, I think okay, after the class, I think you can stay.
+I'll inform you. They'll answer, okay,
+yeah, thank you,
+sir, sir. This is Mayuri. I just wanted to say that we appreciate
+your patience a lot, actually, and totally agree with what you
+said earlier about, you know, listening to different
+perspectives give you a different idea and cements in
+the brain Exactly. Yeah, and really appreciate the class. So
+just wanted to let you know. Okay, okay, thank you, Mary. And
+one thing is that people, maybe they panic that we are missing.
+Some topics are like that. So even I'm taking all the
+questions and I'm covering all the topics, from zero to the
+end, whatever we planned, it Okay, so don't worry.
+Peacefully. Have tea, sir, yeah, okay, please. We love your
+class. Yeah,
+yeah.
+No, do we have anyone from talent sprint here? I
+uh, AML support team,
+can you hear
+me? Yes, hi,
+I'm sorry if I'm putting this again or if this is already
+requested,
+so check for preparation. Test timing is seems to me bit odd,
+9pm to 9am
+you're giving during odd hours right to attend the test. So
+requesting it to extend the deadline,
+or at least pre pone the start, it is checking for preparation,
+right? And you are sharing the material on Monday before we so
+why can't we open it at the same time? So as soon as we get
+prepared for this session, we'll take that test,
+but we already
+transfer with that our team, but the spelling like
+the previous batch timings are different
+by checking that previous batch and some participants are
+requested to change the timings. So that's why we have more to
+9pm
+to 9am earlier. The previous batch timings are only one hour,
+8am to 9am but we are giving 12 hours of time to take the test.
+12 hour timing is good, but what we're saying is it is in the
+night when everybody shuts down, right? So only request is once
+we finish our labs, I mean session, you can have that time
+pre pone from nine, 9pm to earlier time. That's all
+it sounds even, because it's a weekend night, right? We already
+spending the full day in the class, and again, we need to
+wait for the late night, right? But there doesn't make sense
+even the that someone just rightly pointed right? We can
+keep it to the second half, maybe not 12 hours. We just need
+six hours, right, somewhere from the 2pm to maybe 8pm or anything
+that will work rather keeping overnight, right?
+I think that may not work for people who are not in the same
+time zone. So henceforth, they put it's actually supposed to be
+an hour's test, it seems like, but they extended it 12 hours to
+cover all the time zones. Actually. Yeah, they can. They
+can overlap, right? Not just keep to one time zone, right?
+Keep some six hours here, another six hours the other side
+that are keeping completely overnight. I don't, I don't
+actually work for talent sprint, but the way I understood,
+it's a solution, not from
+just overlap, right? No, I think the way that I understood it is
+and I could be wrong here. So just a bit of whatever I
+understood eight to nine was actually morning. Eight to nine
+was last week
+Mayuri regarding CFP and Cfu, the timelines are fixed. Okay,
+we are not going to deviate from the timelines. I am not actually
+asking for the deviation. I was actually trying to explain to
+the group that I understand, but I understand, but actually these
+are these timelines are already fixed, so we cannot deviate from
+the timelines. Okay.
+So what do you think I was trying to do? I was not asking
+for a deviation. I was trying to explain to the students that,
+yeah, I understand, which you should actually so who's
+talking from the support team, please. This is Abhinav. Thank
+you.
+Okay,
+but Abhinav, these timelines are very stringent. You are just in
+the last in the last cohort. The test timings are on Sunday, 8am
+to 9am
+as you are working professionals, we have given
+some additional time, like from 9pm to 9am
+so after discussing with the faculty itself, we have given
+this timelines, and we are not going to deviate from these
+timelines. You have to
+adjust with the timelines itself, 9pm to 9am you're asking
+us to adjust.
+See, it's a 20 minutes duration, one second, one second. There
+are five or six. There are just five or six multiple choice
+questions. Okay, yes, our
+vendor, one second you please go on our class ends after lab
+session at four o'clock. Right
+after four o'clock, we are fresh with the knowledge that we have
+captured since morning till evening. We are only requesting
+or I'm.
+Others can comment, maybe, like from five o'clock till whatever
+time little late six hours or time overlap for the other time
+zones, all that can be taken into account. But 9pm when
+you're opening is, what is the concern? If you can just open
+the you know, opportunity for us to attempt the that six
+questions prior to 9pm where everybody has their dinner, and
+that's the time everybody goes to
+bed. Ashwin, I am reiterating, reiterating again, we are not
+going to change the timeline. These are fixed by the academic
+academic as per the academic guidelines. These are the
+timelines. So
+Can someone explain? What if you're not able to help us? Can
+we get another name where we can go and get a concern? Please see
+Ashwin. These are the timelines which were fixed by the faculty
+of IIT,
+Hyderabad.
+There should be some logic, right? I mean, what is the
+problem opening after
+five but Right?
+Why,
+even I missed your study test, because see, right, we are
+working five days. We are working professionals that you
+just mentioned now, our complete two days right here for
+studying, and then we have right other responsibilities and work.
+So sometime right this timeline is right, 9pm to 9am and even I
+didn't get time to log in again my system and perform it. But
+see this time I missed. I cannot miss this every time. So I
+understand based on some logic, these are defined, but right
+based on the practical situation needs to be redefined.
+I understand, but based on the consideration of other
+participants, no, I think you can raise this feedback to your
+faculties and the right of
+your admin, and I mean concerned people. And then I think there
+must be some solution. Okay, this is only you can say. It
+consists of only five questions. The time is 12.
+You are not following the problem. Problem is not about
+the duration of the test, right? So the attention span, right,
+which we are starting in the 9am and again, with this, we should
+be available till the 10pm in the night because of the
+timeline. But if you could prepone This too, right? 4pm to
+some timeline, we can close our schedule by 5pm and spend some
+time, right? Personal time. Otherwise, we should be hooked
+to our laptop from 9am to 10pm you're following, right? You we
+are increasing the time, which was not needed for a 20 minutes
+test, which we can complete by 5pm so there is extra 4pm we
+have to be just waiting for this test to open. You can open it on
+Sunday. Sunday itself, no, Sunday morning again. We have a
+test rate again, so we need to log in see simple I don't know
+why you are adamant on this and not able to follow we are trying
+to close, complete the session and it trying to attempt the
+exam, right? See, I understand. I don't
+know why we are going. You are explaining that previous code.
+There is one hour if you want to go, that you can go the same way
+and continue it after the session, rather having a four
+hours break and then opening the session, right? So it's not
+about how much span it was open. The concern with everyone is
+here, right? Keep it in a one stretch so time to refresh. See
+we are giving enough time to not
+and it's not a problem here. It's not a time, it's a problem.
+So you you have to understand that we are spending our whole
+weekend after the office, and I think we should have that
+dedicated personal time as well.
+Why don't we, like, have that slot in the app session, even I
+even see right now, we can't change the timelines. No, no,
+sure. I think,
+I don't think you're the right person. You can. You just share
+any other contact who can actually go? Who is the deciding
+member here? Yeah, even neither the talent is not, not the
+deciding factor. We have to consent. We have to check with
+the faculty itself.
+No one second we don't agree to that. We it is a talent sprint,
+the first point of contact for us, and we need somebody else to
+speak to it. Yes, we are the first point of
+problem. You're not understanding the problem at
+all. You say we are giving you enough time for you to answer
+those six questions, we agree 12 hours we don't need 60 minutes.
+I think I was trying to finish up my perspective, maybe this
+will help or maybe not. But what I was understood is that this is
+actually a 20 minute test with a duration of one hour. That is
+how the P.
+Previous cohort dealt with it to to adjust with different time
+zones, which is Malaysia, India, US, UK, they considered to push
+it to 12 hours. The 9pm is not for India.
+The 9pm is for other time zones, essentially, when they wake up.
+Time
+should be taken
+platform development, it's very easy. So when we say we have to
+log in at nine, I don't necessarily mean, I mean I
+that's what I understood. I could be wrong here. But 9pm is
+not for actually for people in
+India. Even for every time zone. Why can't they open it a bit
+early so that it will and have more time slot so that all the
+time zones can
+be the only thing is that you can go to that, but you can, we
+can use that, but they are not going to listen to us, because
+they have decided it based on certain time zones, and they
+don't see the need for to accommodate
+because there is a need. That's the point I think everybody is
+trying to make here. Well, they are. They're going to,
+I'm just talking to you students, actually, as a
+student, I don't really have any advantage or disadvantage for
+this, but I'm just doing that. That's the reason, I think,
+because this is a concern for many, that's where they're
+trying to make a point
+correct my unit. So let us talk to the triple it faculty, and
+then decide, instead of we come definitely, because yesterday,
+even I forgot to take the test and I recollected it at 1145 and
+then I woke up and I did the test because I'll have my
+morning routine. I can't take test before the class, before
+the class, it is very busy schedule for me.
+Okay, got it?
+Habib, you can, like, if you are back from the break You can take
+up the session.
+From,
+okay,
+I've been Abhinav, could you please publish the grading
+criteria once again so that, like how many percentage of
+tests we need to ah, it is already published in the
+academic guidelines. The academic guidelines is already
+enabled for you. You can see it from Sure. Thank you.
+Abhinav, one quick question.
+Yes. Si Krishna, so is there any way we can retain the chart
+history? Why? Because once we exit from the session due to
+some power cut, and when, when, once we'll re log in, the chart
+history will be gone.
+Is there any way to retain that?
+We'll see. We'll explore the option in the Zoom meeting sai
+Krishna, yeah, or else you can export the chart history and
+save it
+that we cannot do, that we cannot do. We'll see, we'll see,
+we'll explore the like
+we'll explore in the zoom, my option, and we'll get back to
+Sai Krishna,
+okay. Thank you.
+Hello, Abhinav. One more thing, the note is from, is not giving
+uploaded. I would recommend you to immediate upload, because
+which one that would notes from the class, right?
+It is not uploaded into
+the LMS. So there is a reference material for you guys. Like the
+reference material is nothing, but which you can read it after
+the session is over. Anyways, there was, there will be,
+sometimes
+for these, there will be some minor changes will happen in the
+slides. Sometimes, Professor will share little bit late, but
+will try to upload as early as possible. So yesterday, she is
+not done yet, right? Because what happens once we finish the
+class? It's better we go through that we can recollect and make
+there is what I am suggesting. No, in the LMS platform, we have
+released two things. One is read, uh, pre reading material
+and reference material. So reference material is nothing
+but which you have to read after the class.
+We have read it before. Both of them, we were not aware of
+talking about the notes from the sir. Sir has notes, right? He
+saved it as PDF yesterday. As soon as the class is over, if
+you can upload that will be your different to slides, your
+slides, the one he writes on the screen, also, right, the this
+one, the the
+whiteboard, whiteboard, whiteboard. He saves it as PDF.
+I saw he sent it immediately. You can just upload it, because
+that way we can recap,
+sure. Okay, that should be a quick right, okay, yeah, okay,
+Abhinav regarding this graded.
+Ones marks. Where can we see? I mean that in the grade book, in
+the grade book, in the grade book only, whether it's a graded
+we can see marks. Can't we see
+after the deadline? You can see the grade. So usually the marks
+for the the review and the marks will be enabled once we close
+the exam. So after that only,
+so marks also we can see in the grade section, right, yes, yes.
+Okay.
+So you can go to the LMS platform, and you can see there
+in the grade book section, if you want. I can guide you here
+itself. If you can share your screen. Oh, got it. Got it. I
+got it. Thank you. I got it. Okay, so if you want to review
+the attempt, you have to go back to the same test link, and you
+can find the review option over there.
+Okay,
+good.
+So one test will be in the evening, and one test will be
+from one to three, right? Yes, yes.
+When one for people who are commenting here, 146 people have
+taken the test within the timeline. So I would request
+everyone to please guide
+this
+way,
+to actually take the test. That doesn't mean we don't. We're not
+complaining about
+it, once again, once again. Let me complete one second. You made
+a statement. You let us respond to it. So let us respond to
+first of all, that is not a reflection of you making it easy
+for us. That's a reflection of how we are able to adjust our
+time. Once in a while yesterday, we could, some people could not.
+Next week, probably I would not be able to do it right, and
+somebody else would be able to do it. It is inconvenient. Let's
+agree that it's inconvenient. Now you tell us, what else is
+the choice over here? If there is no you can provide, which
+will find we already had this discussion. I think as a group,
+we will take it with somebody else. That's that's about it
+like, I don't think we have to go. We have to go through this
+loop with you again and again. On this one, we understood your
+point of view. Please don't make more statements that is
+aggravating the situation.
+I also agree with Kamal, because just that I took the test
+doesn't mean that it's comfortable for me either.
+I echo the same.
+Yeah, same for
+everyone, even for me, I happen to take it as yesterday, but I
+could miss next week. Many of us missed, actually, maybe few
+pointed out. Many of us missed due to this, because we complete
+the session right? It still stretches to the evening. We
+tend to go out, and again, we are bound to go, come back to
+take this test, right? So it's really messy. The time is so
+those of who missed the exam yesterday, I am one of them. So
+we'll be able to give the exam today, or no,
+no, we can. We cannot take after 9pm
+even last two weeks I attempted, but yesterday, I
+just forgot yesterday, Yeah, yesterday it was graded. One
+past weeks it was ungraded.
+And right guys,
+guys, please go on mute so we will discuss with the faculty,
+and we'll come back by the over the weekend. Right now, we can't
+able to decide right away, let's we will have a discussion with
+the faculty, and we will decide,
+sure and Abhinav, while you deciding, parallelly, who missed
+this test, right due to this very I mean, sorry, timeline.
+Can you enable once more? At least I missed it. I missed it
+as well. It's okay, it's okay. It's okay. We have a 15 test.
+We'll consider the 12 test, so whatever the thing is done, it's
+okay. So we will have a best of 12 out of 15. Okay. But still,
+my feedback, or my request to you, while you're discussing if
+there in any possibility for right unlock for us. Please do
+that. That will be helpful. Else we are looking for some right,
+more flexible tag links.
+Right now, it's okay. So you have missed the test. We have
+out of 15, we have a 1412, we'll consider we got
+it. I got
+it. That's fine. Top
+of that, what my request to you, I already placed so please have
+a look on that.
+If we are missing out of that, that's not the correct way to
+you can say right, some people, they may miss in the future. So.
+We have sufficient marks in the like we have an 900 marks, and
+the cut off score is for the merit certificate is 50%
+weightage only,
+I don't know, but yeah, it doesn't help.
+Anyway, this is not going to conclude anything. So better,
+we'll start our session. Yeah, hello,
+welcome back. Good to go. Yes,
+yeah, okay,
+let us start the session. Hope everybody is here.
+Okay.
+Have any questions we can continue with Abhinav, uh. Jai
+Krishna, can you just unmute your unmute yourself.
+Sorry. Jai Krishna, can you mute?
+Okay,
+so let us start the session.
+Yes. Sonal, do you have a question? So, sir, this question
+I asked two weeks back, also regarding the roles and
+responsibility. And you told, right,
+let's wait for one week, and then you will discuss, so when I
+can discuss on that
+which roles and responsibilities. So now, so you
+initially write, explain some roles for data scientist and so
+on. Yes, yes, yes, yes. So data engineer role and all those
+things, definitely I'll discuss for now. Okay, okay. So, I mean,
+should I ask this question again or donate? I will discuss, okay.
+Okay, so let us start with now we have seen a perceptron model.
+How perceptron model is working. Let us implement that using some
+of the data. For example, I'll take diabetes data sample, okay.
+Now let us implement that perceptron model step by step.
+Okay. Here we have first step is what? Import all the required
+libraries. So we say, import pandas as PD, import NumPy as
+NP, then from scale, learn dot, linear, underscore model, import
+which model we are using perceptron model, then from SQL,
+dot
+model selection, printer split, we can go with accuracy score
+and something like, okay, then we have from SQL and standard
+scalar we can use.
+We can use matplotlib, okay,
+any visualization if you have
+so basically,
+we are trying to import all the required libraries. First step
+is done. Second step is read the data into data frame. So we have
+PD, dot, read underscore, CSV, diabetes, and then DF, dot,
+head,
+okay, we got the data samples. Once we got data samples,
+look for DF, dot, info, if there is any mismatch, is there. So if
+you look into the data sample, we have, this is
+six and 148 130 so we have two decimal and remaining all
+integers. So two decimal remaining all integers. Float is
+there perfectly. We don't have any, what do you say?
+Categorical values? Okay, so we have only outcome is the
+prediction column. Okay. Now we need to define what is x, so d,
+dot columns.
+What is x? Now, x is the feature columns. How do you define
+feature columns is, let us consider starting from
+pregnancies, glucose, diabetics, age and up to this. So I have
+just talked about this data sample, right? Actually, this is
+a data sample given by some medical authority, which is
+talking about, like, you know, some, some of the ladies, when
+they are in the pregnancy and between three to six months,
+there's a chance of getting diabetic. Okay, they're prone to
+diabetic. So this data set is the one which belongs to those,
+you know, people. So using this data sample,
+they want to predict whether the particular lady is prone to
+diabetic. If they're prone to diabetic, they'll start the
+medication, and if they're not prone to diabetic, they can stop
+the medication. This is what the data sample actually it is
+collected. Now we have outcome is the one which is going to say
+one and zero, and it is a binary classification. We're good to go
+with the perceptron model right then we are splitting the data
+into train test split already we have, like, you know,
+what do you say?
+Here? We have
+x features, so we are splitting.
+Data done with the test size is 0.2 okay. Now,
+this exercise about the perception applying perception
+model and diabetes data, certainly okay. Now we got X ray
+and vestex White and White test. What should we do? Create an
+object, perceptron model, or let us take it as a model is equal
+perceptron model, and we can give some default values maximum
+iteration. Let us try with the one and change the learning rate
+to 0.1 for example. And then we have x train and y train fit the
+model.
+Okay, we got the model. So maximum iterations before
+convert means we say that because we have more of the data
+samples, is directly saying that give some more iterations, so
+increase to 100 good once it has done. What should we do now? So
+the first step is importing all the required libraries. Second
+step is injecting data into the data frame. Third step is
+looking for, is there any data mismatch? And then is any we
+have to look into? I know that the data sample doesn't have a
+null values. I'm not applying that one. And then I didn't
+apply the standard scalar. First of all, I want to test without
+scan standard scalar, and then we'll check for the standard
+scalar. Okay. Now, how do you get the accuracy model? Dot
+score
+of x, underscore train, right, x and y, underscore train.
+So we got how much 51 we got 51% as a score. We got it, which is
+not good. Actually, algorithm itself is not, you know,
+performing well. That means the debit data is not linearly
+separable. That is the reason we are getting something like 50%
+of the accuracy. One thing what we can do is let us try with the
+standard scalar applying, and then we'll see if the code
+changes or not, so create object of scalar as a standard scalar.
+Okay, then we got the new x train and extras.
+Now create the model again, fit train it.
+So we got around almost 70%
+right. Okay. Model is when you are applying the standard
+scalar. Model is performing, well, okay, well and good,
+because, due to the data is not in the uniform format, maybe
+model not understanding another way, what we can do later. So
+you may say that, okay, have you, Can we jump immediately to
+the another, you know, taking another algorithm, can I go with
+another algorithm and see the accuracy, and if it is good, can
+I implement no before that first try to inspect the data. Okay?
+Inspect the data in the sense, if you look into this data,
+sample Skin Thickness, we got something like zero, right? Is
+it possible a person to be having a skin with zero
+thickness? Is it possible,
+can we have a skin with no thickness? No, right? No. So
+that as even if you are not a subject matter expert, you are
+able to understand that, okay, zero doesn't play a role. So in
+this situation, what should we do? Now? Maybe these are the
+reasons that is, the accuracy of the model is going down. Another
+one in everybody body there is insulin will be there. So
+without insulin, human being will not survive. So there is a
+ranges between zero to something, like, you know, if
+the insulin level is zero to 90 something, you're non diabetic.
+If it is crossing 95 something, 95 we call it as a diabetic,
+right? We do
+post and, you know, pre diabetic test, we do it, fasting blood
+sugar, and then random blood sugar, we do it, right? So the
+instrument level, it is identifying so zero, so we know
+that these are the zeros. Doesn't play a role. So either
+we need to remove them, or we need to impute with what Mean,
+Median or standard deviation. That way accuracy of the model
+can increase. So these things will come as we go with some
+experiences, and the help of the subject matter expert is needed.
+But basically, in the first look and feel like skin thickness or
+something, blood pressure, they're saying zero. No person
+can ally with zero blood pressure, right? So we have some
+ranges of blood pressures. Minimum, we need to get 80 to
+90, something like that. Otherwise we call it as a low BB
+and the person and glucose levels, also those things, BMI,
+definitely it can't be zero, it can't be 10 or something like
+that. So those things we have to consider. After considering
+those things again, we rewrite the algorithm, just we trade,
+retrain the algorithm, and then we look for the scroll. If you
+are getting good score, we'll keep it up. Otherwise, go with
+another algorithm. Clear. So this is about perceptron model
+we have implemented. So in the perceptron model, what we did
+previously, in the before the session, just we are trying to
+understand how perceptron model is working. The mathematical
+intuition behind for that, I took only four sample to make
+you understand because the diabetic sample, they have a lot
+of you know, how many values?
+You have now around seven eight features are there. If I take
+seven eight features, and if I'm applying that, you know,
+learning rate and getting the weights totally, you will
+confused. So that is the reason. We just trying to understand the
+mathematical intuition with the sample data, then we are
+applying the algorithm in real data. So either you can take a
+diabetes data or go to UC repository. Okay, you see a
+machine learning repository. Try with some other data, the weak
+days, whenever you have some time and when you're sitting,
+just take any one of the data and implement that, maybe heart
+disease, language, whichever the classification is there, you can
+try with that and compare with how many algorithms still. Now
+we have seen classification. For example, you have seen one is
+the can ever classifier we have seen? And today we have seen
+perceptron classifier. And then we are going to look into
+logistic regression now, so you can try these three with same
+sample data or some other multi variants. See wherever algorithm
+is performing. Well you can adapt it otherwise, go on
+changing the algorithms.
+Okay, okay, so let us check the questions now, come on. What is
+the question? Come on. Dr, we had mentioned something about
+data leakage, I think probably couple of weeks back. Data
+leakage, meaning, when we are doing that Mean, Median option,
+do we take the mean median on the only on the training data or
+not on the test data, right?
+What do you mean by taking train data, test data? Boss, so when
+you're replacing zeros, when you're replacing zeros, let's
+say for a
+skin, this is original data,
+right? Okay, so what you are seeing now on the screen is
+original data correct. Now don't go for training or testing
+anything in this original data. There are some of the values
+which are zeros, doesn't have any meaning. If you want to
+impute, you can use simple computer or replace that with a
+mean. Or you can ask a subject matter expert, if you say that
+minimum is this much insulin, you have to keep that clear. Now
+here comes data leakage. I didn't understand. What do you
+mean by data leakage? I didn't say any data leakage.
+It is something like, you know, once you got this, then you go
+with the train test split if you are applying on the train, and
+if you leave out the testing, then again, the data is not
+properly aligned to the values right? Come on. So in the raw
+data itself, we have to take the data frame itself. You have to
+correct the values that imputing is. Either you take help of a
+subject matter expert to take a decision whether, shall I impute
+with the mean, median or standard deviation, or as it is
+a medical domain problem, we cannot directly into it with me.
+We need to have a subject matter expert involvement to decide
+what is the insulin understood?
+Yes, yes, yes, yes. Good to go. Yep. Yeah. Danish,
+yes, sir. So I've got a question related to
+zero values or blank values in the columns, though this data
+means that somehow, I mean, we won't be able to derive the
+value of, let's say, insulin, from glucose, blood pressure,
+skin thickness from from this record. But in the real world,
+do we have this type of data where we have, we would be able
+to derive, let's say, the value of column D from ABC, and then
+we are trying to predict, or, let's say, Yeah, predict,
+predict the final value, let's say the value of column y.
+This is the real time data. This is a medical domain data. No,
+no. So I understand that. That's why I said, Do we have any other
+examples where we there are dependent columns and then we
+use the dependent columns to finally predict the value of the
+for the final outcome? Basically,
+dependent column here Dinesh is outcome. Is our dependent
+column, output, output column, right? So, for example, we have
+glucose, blood pressure, skin takes. They are depending on
+outcome. We'll construct those by using some of the, what you
+call correlation techniques we implement, okay, correct? Yes.
+But now, when we discuss the feature engineering at the time,
+we'll say hand, like handmade feature engineering, and then we
+say using a logarithmic feature engineering at that time, you
+will get the clarity. So here, don't mix up here. So here what
+we are trying to do just we are trying to consider all the
+features, okay? And we are trying to implement the
+algorithm. Now we are understanding what is the
+algorithm is working. And we are discussing like the accuracy of
+algorithm going down. The reason is, maybe these are the zeros
+are making the, you know, making that classification not
+accurate. So now coming to the dependency all those things, we
+are having some other algorithm.
+There we have correlation function we define, and then
+we'll take a decision,
+okay,
+please mute yourself.
+So my question is around identifying this data
+inconsistency, right? The volume could be high and you could have
+more features right
+in typical day to day work. So for some developer to identify
+these inconsistencies or invalid data, right? What are the
+standard practices
+through GUI or
+we are going to get the you know, first of all, descriptive
+statistics will give us the idea the describe is there, right?
+DF, dot describe. Another option is, when we move on, we have a
+chapter called as a feature engineering at the time, we'll
+dig deeper into different kinds of libraries available to
+identify these inconsistencies and give a suggestion that you
+need to apply here, so and so. Mean here you need to apply the
+median. Here you need to discard the column like that, okay,
+okay, okay. And for the describe, it is going to give us
+only, not null, count only, right? Or is there any other not
+null,
+no, first quartile, second quarter, third quartile that
+also we can understand, right? The statistical description. So
+descriptive statistic will help in some matter. But
+visualization is like, you know, when we do the y data profiling,
+that is where we are able to visualize, and we'll get the
+complete idea, right. Okay, so that will be covered in feature
+engineering. Why data already covered? Why data profiling, I
+have shown you, right?
+Okay, no, no. I mean this data inconsistency. Ah, data
+inconsistent. Coming sessions, we'll discuss. Okay,
+so my question is that now I understand missing data missing
+like, imputing the missing values is more of a subject
+matter domain thing, right? I was thinking since yesterday,
+like, can we use KNN classifier or regression in order to first
+get the missing value? Like, if you have to do it from my side.
+Can we use like that will give a more of a very good answers,
+rather than just randomly putting more than the median
+mean value, like
+I was thinking, to use the KNN classifier in case we have a
+classification data and like classification column and put
+the missing value and regressor for the continuous or can in
+industry. Do we do such things? Yes, Saurabh, you got the
+correct point. Like yesterday, we did the
+K neighbor classifier, right? So here, for example, in this
+insulin column for take the remaining values of the insulin
+and then, using K neighbor classifier, somewhere we can
+find what is the, you know, minimum values and maximum
+values, so imputation can be done by using of another
+algorithm or simple computer. Also helpful. Okay, so good.
+Catch. Very good. Sorry. Thank you.
+Vikram, hello, sir, so you said that there is some invalid data
+where there is insulin is zero, right? Supposing we clean up all
+that data, and that act of cleaning up affects the outcome
+column disproportionately. What I mean by that is we end up with
+a data set that has outcome of one, a lot and very little,
+records of outcome that are zero. So will that affect the
+machine's ability to
+understand that data?
+Yeah, yeah, that may be one reason Vikram one is like, you
+know, inconsistencies in the data or the noise, what do we
+call? Or some values are impacting the prediction column.
+Another one is unnecessary, including unnecessary columns
+also deviate the model from understanding. So those things,
+when we discuss about the feature engineering part that
+will get be clarified in that Okay, so once you get that
+feature in anything, you will understand that not only the
+inconsistency in the data, apart from that, some columns also
+involving them are dropping them will play a vital role. Okay, so
+that's will be discussed, understood. Thank you. Yeah.
+Then Prashant, what's the question first?
+Uh, yeah. So basically, if we use KNN for, you know, fill out
+the missing values, then I think it's a memory intensive
+operation, right? So if we have millions of records, then will
+it be efficient? Again? That is, again, say, as you said, member,
+intensive, small amount of data, you can use it missing small
+values, right?
+You can take the main meter only, okay, simple impute, okay,
+yeah, that's it good. Jamal,
+sorry, sir, I think I misquoted the question if you can go to
+the standard scalar section.
+So yeah, actually, what I meant was, on the x train, you do a
+fit, but on the X ray and X test, you do the Transform.
+Basically, you're not using the X test to fit. That's basically
+what I wanted to confirm. Okay. So you want to know, like, why I
+did it. You want to understand, yes, basically, you're not using
+anything in the standard scaling of the test data, because you
+don't want the.
+Order to see what is in the test table. No, come on, you are
+taking wrong, okay, okay, it is wrong. So, yeah, that's what I'm
+a bit confused about. Okay. So actually, here directly, we can
+use either this or we can write directly, X train is equal to x,
+underscore train is equal to
+okay. What we do is scalar, dot, click, underscore, transform,
+then we apply the extreme. This is what we can do, okay, this is
+one step. Instead of writing this, what we are doing
+separately. We did the fit. Then I said, understand the pattern,
+so read all the values. Find me no mu and standard deviation,
+then apply an extreme already you found the mu and standard
+deviation. Apply an extra. This is what I'm saying. So in
+general, if you don't want here, what you can do here itself, you
+can just write down x underscore scale is equal. Then apply that
+on the complete scalar. Dot
+fit underscore, transform
+x. Now you got X scale right? Then you split the data here,
+that way you can do it. This is what, like, I don't know where I
+read this is what they're asking not to do, because this is the
+what you've implemented. Is they're saying is the right way,
+because it is
+not compulsory that you have to do after that. Only no the point
+that they're making is, when you are doing a fit, you're finding
+a mean or something at that point, if you use the test data,
+you're actually exposing the test data to the model, which is
+kind of what is they're defining as data that is wrong, unless
+you do fit to the model, there is no exposure here. See, this
+is the model. Okay, this is the standard scalar. Standard scale.
+Is only pre processing technique here is happening fit, so
+whatever, whenever you see the article is wrong one. So that's
+what, be careful when you're reading the articles. Okay,
+okay, okay, fine, thanks. Even same thing. I also read the same
+article that says that scalar as well as the encoding part, we do
+it only on the train side separately and the side
+separately, something maybe like the wrong article we are
+reading, or something like, Yeah, sort of see, actually very
+logical sensei. Anyway, you are giving extras to the scalar
+right, and we are giving extend to the scalar. Scalar is only
+transformation technique. So it is not an algorithm taking the
+data and exposing here perceptron is the where you are
+training. So if you are here, if you are explore, exploring
+extract you are passing, then we have a meaning that. Okay,
+extract is exposed with the perceptron model. Maybe score,
+may deviation is there, but here, just transformation. Okay,
+so nothing will happen. Just leave it. Okay, sir. Yeah. Okay,
+so done. I think Ayush is the last question. I should go with
+that question. Yeah, good morning, doctor. We wanted to
+ask you, how can we use KNN for finding the missing values? I
+heard there was a discussion that we can find those insulin
+levels being zero, skin thickness, it is not like that,
+instead of imputing with the mean. So if you are applying
+KNN, nearby average values are there, right that way, applying
+regression, regressor, we can get that. That was the
+impression it is possible. Okay, okay, the regressor, I thought,
+okay, the classification, Alright, got it. Got it. Thanks.
+Okay, done with the questions. Now,
+yeah.
+Hello, fast.
+Hello,
+we can hear your boss. Go ahead now.
+This is Prabhakar ready. Prabhakar idea, okay, what? What
+do you mean by this fit, sir, scalar dot fit.
+This is the Prabhakar. How many times you people have seen
+scalar dot fit? It is not the first time you're writing,
+right? Okay, so this is the, sorry, okay, fit, underscore
+transform, just transforming the data to
+using x minus mu. I have given example also, right? Because it
+is, uh, there is a two times it is scaling is there? That's why
+I'm asking. Okay, now let us do one thing.
+Scalar dot fit transform x. Then here I'll write x underscore,
+scale.
+Now, all the confusion gone.
+Okay, okay, thanks, thanks, done. So what we are doing, we
+are scaling the data, then that scale data we are splitting.
+That's it. Yes. Naveen classification, yeah, so, sir,
+this perceptron based classification, which you just
+explained, does it fall into logistic regression? Because the
+evening lab is on logistic regression. So just want to
+cross check Naveen, I did. Did I discuss logistic regression?
+Boss, no, right. I'm coming to logistic regression only the
+part, okay. Okay, thank you.
+So.
+Oh, okay, no problem, see, so we have seen. Now today, in the
+morning, we started with the perceptron model. So there I was
+trying to explain you the mathematical intuition behind
+that. So mathematical intuition to explain. I took very sample
+data, 00011011,
+then I said, Okay, we'll understand the mathematical
+intuition on this. So later, what we do, the real
+implementation. We did, what is the real implementation, first
+importing the libraries and reading into data frame and
+applying the scalar technique, and then splitting into X train
+and y train. And then what we did, we are going to apply the
+fit, and then we did the evaluation. This is what we did.
+It correct. So this is what in real time, implementation is
+done. So now you have an idea how perceptron works. Black Box,
+or perceptron you understood. And then real we take one data
+sample and we apply it using the complete X, train X, test y,
+train white test, right? Because most of the people, they are
+thinking that, have you been using this data? This is not
+implemented, so once you got this idea. So for any algorithm,
+this is similar, what should we do? Import the libraries, inject
+the data into data frame, check for any null values are there or
+in any mismatching then apply the standard scaling. After
+that, define what is x and y, and then split the data into
+extreme y frame, feed the data and evolution. So we have
+12345678,
+step. These steps are common for every algorithm. Remember. Okay,
+so these steps you have to follow all the times as a
+template you can remember.
+Now we got covered the perceptron model. Hope. Now
+perceptron model is clear, and we use the one of the realistic
+data, diabetic data. We used it and we implemented it, and we
+got a score around 74% which is not acceptable in medical
+domain. So that means we have to pre process the data, and we do
+feature engineering. So when we talk about feature engineering
+again, we take this data, we do the pre processing, and then we
+can implement okay. So at that time, I will show you like, how
+do we input with cannon or some other can we use it to impute
+anything we can try? So wherever you think that whichever
+imputation is giving good accuracy, we can adopt it. And
+subject matter, except expert is the one who is going to give us
+the final approval that the model need to go into the
+production by using explainability, we call it okay.
+Now let us come to the next part of the algorithm that is known
+as logistic regression.
+Now if anybody look into the algorithm, for example, Aditi
+got confused. She's saying that the name is linear, and we are
+applying to the logistic you know, for example, the
+classification now, out of your two, around 210 participants are
+there, right? So everybody will get confused with the name that
+okay, logistic regression means it is something working with the
+regression data, right?
+Yes or no,
+yes.
+But actually it is not for the regression data. So it is
+something related to which data related to classification
+problem. Now, when it is a classification problem,
+generally it is also used for binary classification. So today,
+the class complete agenda is on binary classification using
+perceptron model and then logistic regression. Okay, so
+logistic regression is used for classification model, but the
+term why do they include logistic regression here? Why
+don't we say logistic classification. The term
+regression is given. It is something. Logistic Regression
+is derived from linear regression. Okay, what do you
+mean by that? In linear regression? For example, if you
+take a formula 2x plus one is there y is equal to x plus one.
+So can I say this is a linear regression? Everybody agree,
+right? It is a linear regression. Yes, yes. Now, for
+example, when I put the value of zero, this will y becomes how
+much one. Okay. Now I will take this y and keep into one log it
+function, sigmoid function, we call it. So in this sigmoid
+function, if I keep this value, this will be summation of one by
+one plus e to the power of zero will be one. So how much we are
+getting one by two. One by two means 0.5 so 0.5 to zero, it say
+belongs to one class. 0.5 to above belongs to another class.
+That means the logistic regression. What it is doing is
+it is transforming this straight line to a yes curve like this.
+And here we are going to have 0.5 as the threshold, and zero
+to 0.5 belongs to one class that may be zero or something 0.5
+above to one belongs to another class. So here the logit
+function is going to take the probabilities. So here.
+Here we got this function. This function is known as a logit
+function. So generally, if you keep this into linear
+regression, how do we write our linear regression? Formula is y
+is equal in generalized formula, w x plus c. Can I write this
+other integration? Okay, now what I will do, I'll just write
+down one over one plus e to the power of negative wx plus C.
+This is known as a logistic regression. So I'm using this
+inside the logit function. That is the reason the linear
+regression is extended with the log it function. That is the
+reason the name is given as a logistic regression. But
+actually this works for classification, not for
+regression. So if you want to show me this one, I will show
+the example how things will work. Okay. For example, let us
+say we
+know probability of conditional probability. You know right.
+What is the conditional probability? We write condition
+probability y is equal to one given x, we write it correct.
+Now if I say, how do you define the odds? Odds means which is
+not getting okay? How do you define that? So we write as a
+probability of y is equal to one, given x over probability of
+y is equal to zero. Given x, this is known as odds. We call
+it so in our terminology, we can say this as probability of
+getting one is P, probability of not getting one is one minus p.
+Can I write
+some Yes, yes. Probability of getting one is P, not getting
+one means zero only. Getting zero means one minus p only,
+right.
+Okay, so we say that this one probability of getting p by one
+minus p is equal to we call it as a odds. We call it so when
+you apply log, it function to the odds. This becomes logarithm
+of P over one minus p. Logarithm of the odds is nothing. But you
+want linear regression. What is that? W, 1w x plus c. Okay. Now
+here logarithm nothing is there. Means, what is the base? Basis?
+E, right? Basis
+is or not
+yes. If
+yes, okay. Basis E, now it becomes
+okay. Let me take here. So this becomes p over one minus p will
+be when it comes to this side, this will become e, to the power
+of wx plus c, correct.
+Okay. So now p is equals to one minus p times of e to the power
+of wx plus c,
+okay. Now we can say p1 times of this will be e to the power of
+wx plus c minus p times of e to the power of W x plus C.
+Now this is B and this is p. Bring this P to this side. It
+becomes please, plus negative will become positive here, e to
+the power of W x plus c is equal to e to the power of W x plus C.
+Now, in these two terms, we have P take P outside, it becomes one
+plus already. We take P outside, it becomes w x plus c is equal
+to e to the power of W x plus C. Now, what is the probability of
+getting your odds e to the power of W x plus c divided by one
+plus e to the power of W x plus C. Now what I will do, I will
+divide this and this by e to the power of wx plus c.
+So this becomes
+one over
+so this becomes one by e to the power of wx plus C plus E, to
+the power of wx plus c by e to the power of wx plus C. This is
+nothing but one. So how much we got one by this if you bring
+upside, it becomes negative wx plus C plus one. This is your
+logistic regression we got it.
+So from where we got it from the linear regression we are taking
+logit option to apply, then we got it. So we derived this
+equation from linear regression. So that is the reason we call
+this as a logistic regression, the name, if anybody asks you
+that why the name logistic regression is given, we say that
+actually this is the
+next follow up of linear regression. So once you get the
+answer of linear regression, we take that answer and we'll keep
+into sigmoid function, that is a logit function that is one over
+one plus e to the power of negative wx plus c, that is
+going to give us the probability between zero to one. That way we
+can close.
+Classify whether it belongs to class zero or class one. It's
+clear,
+understood or not. So the last string is logistic what is that?
+After logistics, logistic regression. Algorithm is
+logistic regression,
+sir, can you repeat the last time you just told some last
+line, sir, where you divide by come again,
+stay here, sir. I'm still understand here.
+So we said probability is equal to we got finally e to the power
+of wx plus c divided by 1e to the power of wx plus c, right.
+Now, divide this by e to the power of wx plus c
+by e to the power of wx plus C. Now this becomes one. This
+becomes one by e to the power of wx plus C plus e to the power of
+wx plus c, divided by e to the power of wx plus c. So this
+becomes one plus one by x means x to the power of minus one,
+right? So x to the power of minus wx plus C. This is one.
+Where is the confusion?
+What it
+is we're dividing it by into probability to get the output is
+fractional. That's fine,
+yeah? Just to simplify, because instead of repeating two times
+UW, e to power of wx plus c, calculating, even if you write
+this one also will give the same answers. That's simplifying.
+That's it.
+Yeah.
+Okay, once you have completed your question, just mute
+yourself. Raghavender,
+okay, so now we got an idea what logistic regression is. Let us
+take some slides to more
+understanding towards logistic regression?
+So here we have
+325, logistic regression.
+Okay,
+so already you got some mathematical intuition, then we
+can understand.
+So, okay,
+now tell me logistic regression. What exactly logistic regression
+is? It is a classification so we say logistic regression is a
+supervised machine learning algorithm used for
+classification purpose. Okay, next one in linear regression in
+real world. How We Do we have something like x times w1 x2
+times of w2 okay, then we have, sorry, it is
+not, let me take
+as a not laser.
+Okay.
+So we have here
+something like wn terms of x1, this one, this is called as a
+linear regression. Now, after linear regression result, you
+are passing through the sigmoid function. What is that sigmoid
+function? Just now, we got it one over one over one plus e to
+the power of negative x. That is known as either it falls into
+between the boundary of zero to one probability, that way we can
+understand if it is crossing the threshold, it is going to give
+us a class zero. Otherwise it is going to give it as a class one.
+Okay, next one. How the transformation happens. This is
+your equation. Then we are getting this equation by
+applying logit function. So this derivation I have done right the
+complete derivation I did on the whiteboard to make you
+understand how the model is transforming from linear
+regression to logistic regression. So linear regression
+is a straight line. I'm just trying to transform that into S
+curve. So the people, the researchers, what they did is,
+so after getting a linear regression results, if you apply
+it to the logit function. It is a kind of classification. So
+they thought and they implemented the algorithm. So
+the limitation of logistic regression is it works only if
+you have a binary classification. Is more
+preferable. You can apply for ternary also. But again, the
+technique is one to one kind of thing it is going to do, but
+preferably on binary classification only logistic
+regression is applicable. Then how we are going to have this
+curve? Just now I have drawn like S curve, so between zero to
+negative, point five is one class more than point five to
+one is another class. This is what logistic regression is
+doing. So it is similar to a perceptron model. Only thing is,
+after getting the values, we are going to put that into logit
+function. So for example, here, let me give you an example.
+So for example, in
+here, let us take this value, which one is.
+Okay, let us do one thing.
+In the previous perceptron model, we got the final weights
+as two, two negative, three, correct
+sum. Yes, yes, okay. Let us take one equation, 2x plus 2x one
+plus k minus three. This is the equation. Okay, think as that.
+Now we have 00. Is 001,
+is 010,
+is 011, is one. This is what we have correct. Now let us apply.
+I am taking this one, so when you write this one, so tell me
+two times of 002,
+times of 00, minus three. What is the value of z?
+How much we got that value?
+Now,
+what I will do
+from that import exponential, then
+one
+over one, so sorry,
+one over
+one plus exponential of how much we got minus three, right? Yes,
+we got 0.95
+okay, it's zero point more than 0.5 belongs to one class.
+Understand like this belongs to one class. Okay, next one. When
+you put this, finally, if this, if you put these values, what we
+get that is equal, ah, one times of two times of one, two times
+of one,
+four minus three ones, one. Now let us apply one. See what
+happens
+now, one over
+one plus exponential of how much fun
+one, oh, sorry, this is already minus three. Is there, right?
+We got minus three here, correct. First one, so it must
+be plus three. Plus three means we got 0.04
+belongs to zero class, correct.
+Last one, we got negative 3r Correct. Negative three means
+negative. Negative three because positive, yes or no.
+Positive, how much we got one. This is how much we got 0.2 it
+has to be minus one, exponential,
+how
+much 73 means above 0.5 right above 0.5 belongs to which class
+now,
+which class? One class 0.5
+belongs to which class plus.
+So what we are doing now we are taking up to now. This is what
+we call the regression only right. This linear regression
+value we are putting into sigmoid function to get the
+classification. That is where we call it as logistic regression.
+Okay, the term regression, why we got it. You can see, like,
+you know, mathematically, how I derived this is not needed. But
+for your sake of understanding that why the name logistic
+regression is given, we are doing that. Okay, so for example
+here, if I implement the same one, okay, let us, instead of
+implementing the perceptron model, let us take this,
+okay.
+Now here, instead of
+which of which one, we are creating logistic regression
+done. Now the remaining process is the same.
+We'll take example model. Okay, we do the Okay.
+So let us take here log mode. Log m is equal to logistic
+regression.
+Then what we do? Log M, dot fit
+X and Y, correct fit the model. Once you fit the model, what
+should we do? We can get the values. What is that? Okay, here
+predictions. Let us take the predictions so
+now instead of model here, what is the name, login, login to the
+predictions. We got, 0000,
+correct. That means this algorithm is making mistake.
+Which one, how many wrong predictions it
+did one wrong
+prediction so we can get log M, dot score will give us
+x and y. How much we are getting the score, 0.75,
+correct, yep. So that means it is making a.
+A mistake. What is the mistake it is making that it is one
+misclassification is done. So on this data, which algorithm is
+best from your understanding? Now, on this data, logistic
+regression is best,
+or perceptron is best from
+scale on dot lean, sorry, matrix.
+Import confusion matrix. I'll take it
+then confusion matrix of y and the
+predictions, what do we got?
+You see this one?
+So this is what do we call, confusion matrix. So how do you
+get the score? We got score is 75 right? I'll explain you how
+the score 75 got it, because most of the time you will have a
+doubt, right, how the score is coming very simple. When you
+print the confusion matrix, it is doing something like this.
+Okay, so what I will do to understand more clearly. Let me
+say DFS is equal PD dot,
+data frame
+actual.
+Actual values
+is y and predicted values is
+predictions,
+then
+DFS.
+Okay, now I'll show you. How do we get the score.
+Okay, so for example, this 01 from the model,
+this 01 actual values. Okay, please mute your microphone, or
+is there, sorry to interrupt. I think this you explained
+yesterday. I guess, with this actual and predicted and the
+other the mode and the other one, that you're trying just
+one.
+Okay, just here, we got the score right. So 00, for input,
+zero, how many zeros we got? Output, zero, input, 01, input,
+01, input, 01, how many we got three values right for input
+zero. Do you have anything one? For input zero? Do you got
+anything one? No. So for one input one, how many we got zero?
+How many times it occurred? One time for input one, do you have
+any one? No, so now these are diagonal values. We have a three
+total samples are four, three by four. So we can say 0.75
+this is the value we are getting the score here. So that means
+one misclassification is happening. 00, is perfect. 00,
+is perfect for one. Actually, we predicted one model set one, but
+we got how much zero due to this misclassification. We got the
+score of 0.75
+now in this situation, we cannot use the perceptron model
+correct. So what is the sorry, we cannot use the logistic
+regression model. We need to use a perceptron model. Let us try
+with a huge amount of the data, and for example, using large
+diabetics data, and let us see how well the logistic regression
+performs, because we need a binary classification, right? So
+import all the libraries, import pandas as PD, import NumPy as NP
+and from SK learn
+dot, linear, underscore model. Import now logistic regression,
+then from
+SQL, learn model selection. Do it train display time? Plotting.
+Okay, done. Now, what is df? DF is equal, PD, dot, read,
+underscore, CSV.
+The file name is diabetics.dh, CSV, take it
+now DF, dot info, it
+is good and check df.is any dot sum, is there any null values?
+Are there no null values? Okay, so we can say, what is x? So DF,
+dot columns now define x, x is equal d, f of, so we have
+starting from pregnancies to age, right. Take that.
+Now, what is Y?
+Y will be d, f of, ah. What is the prediction? Prediction is
+outcome right
+now, done here, if you want to do the scaling, let us keep one
+code cell or scaling. Now without scaling, let us try
+first x train, then X test, then y train,
+then y test, so.
+SQL
+train, underscore, test, underscore. Splay, we are going
+to give X and Y test size 0.2,
+and
+random state is equal to zero,
+right?
+Or we can take any number. Suppose 42 as usual, we are
+getting again. Why you are taking zero is confusion. Okay?
+Now, what should we do? Create object LGR, logistic regression
+is equal logistic regression, it also has a max iteration. We
+call it inside so it can iterate up to, for example, 200 times I
+said iterate and try to find the best values. Okay. After that we
+are saying LGR dot fit. We have to give x train
+and y train.
+Okay. Then
+we got the data trend done.
+So once it is done, what should we do? We need to do the
+scoring, and your dot score on X train and y train, just with
+that. So how much we got? Zero point 77
+okay. So now, if you want to try with the scaling, we can write
+scalar is equal standard scalar, and then we transform the X. Now
+here, instead of x, what we take, we'll take X scale data,
+then we apply rejection algorithm, then we got it so in
+logistic regression, applying doesn't have any impact the
+scalar, right? So that means, in the logistic regression data,
+even if you're applying the standard scaling. It doesn't
+have an impact. And we got an accuracy of how much 77 if you
+consider the perceptron model we got. How much
+we got perceptron? 7070s Which model do you prefer on adiabatic
+data? Definitely this logistic
+for example, if you are considering which one,
+for example, the AND gate is there, right? So on AND gate
+which algorithm be preferred? Perceptron, logistic regression,
+yeah. So from this, we can understand that
+we are going to use sometimes as a logistic regression is better
+on the data. Sometimes linear regression is better on the
+data. Now, for example, here the binary, right? So doesn't mean
+that it doesn't work with, you know, what do you call
+multi class classification? No, it works. But the logic is,
+first of all, it will try to find between the two, then the
+third one it is going to compare with. Okay, so let us see that.
+I'll take example of Iris data also. Okay. So first of all,
+import all the samples, for example, the required libraries
+here, extra I want to import from SK learn
+dot data sets. Let me import load, underscore, Iris data.
+Okay, we know at least Iris data consists of how many, some, how
+many classes, three classes, right? So, let us apply logistic
+regression see how well it is performing. Okay. Now DF, we can
+say Iris is equal load, underscore, Iris loading the
+data now create x is equal. We can just write x is equal Iris
+dot data y is equal to Iris dot target. Then we can split the
+data as we know. We don't have any null values, and there is no
+type mismatches. So directly, we can write, extend X, test and
+whiter and whiter, split, and then random state is given.
+Okay, done. Splitting is done. After splitting, what should we
+do? Now? We need to create object so LGR is equal, or, for
+example, G Iris is equal. Logistic Regression. Here we can
+mention the max iterations, uh, around 200 very less samples we
+have anyway, 100 is enough, because 150 samples is the right
+and then do the trend test. We got the iris now find the
+logistic regression. Dot ISR,
+dot score of x, underscore train and y, underscore train.
+We got 97% accuracy. Okay, so let us try one thing here, x, so
+just a minute, Manu, let me finish it, and I'll take the
+questions again here.
+Have one sample data, this one, okay, let me take this data
+sample.
+Okay, then we say,
+LG, ISR, dot predict.
+Okay, we have this data,
+this question, one, okay, so we got zero. This is correct. One,
+right. Another one we can do is
+LG, ISR, dot predict
+probability can be
+and then here we have
+this sample. So two.
+So we got, for example, for zero, we got 90, 0.97 property
+for zero, and we got around 0.02 for
+one. And this is for 0.00004
+for two. So that is, whoever is having highest probability, who
+is having highest probability, zero is having highest
+probability, right? So that is the reason it is taking it as a
+prediction understood.
+So in logistic regression, we can predict the probabilities
+also
+clear.
+Can you repeat again? Sir,
+in logistic regression, when not only predict the class, we can
+find the probability of each class. So when it say 90.9 point
+710, to the power of minus one, that means 0.97 right? This is
+first
+one is 0.97
+Okay. What about the second one? It is exponents. Is divided by
+100. That means 0.023
+correct.
+Third one divided by 10 to the power of eight, that means we
+have to get 0.12345678 0.12345678
+then, four, eight, something correct. Now, which one is
+having highest property? This is zero sequence. This is one and
+two. Which is having highest probability, zero is having
+highest probability. That is the reason it is giving zero as the
+prediction understood,
+giving like the highest feature prediction? Is that? Right? Yes.
+Okay, next, okay, let us take up the questions. Yeah.
+Ramesh, Babu, what's the question? Raj, Bob, yeah. So for
+this Iris data sets, right? So we are passing this data 5.1,
+3.5, so is it like for one
+item, or is it like for four items? Can you explain this? The
+data what are we predicting? Is it like for sepal length?
+Sequel? That is how the Iris data set, right?
+Is data set we are passing sepal length, sepal width, petal
+length and petal weight, and then crossing whether it is
+Setosa, varjanika, varicosa, it said it is a Setosa, okay, zero.
+And here in below right probability, there is four in
+the result set. There are four items, results at three items,
+course, yeah. So why we have three? Sir, like how it was
+classified into three for one item, not for three actually,
+the predicted class three classes, right? Setosa. Oh,
+okay, okay, okay, so probability of Seto 7% okay. Oh, this makes
+sense. Thank you,
+sir. Can
+we just try out the prediction for the last entry of the
+Sentosa data set, of the Iris data set, because I'm expecting
+the value to be two, but we will be getting only zero or one,
+right?
+Who said, but I mean, either it will be zero or one class? No,
+it is multi class. We can use it. I said in the beginning,
+remember, if you have three classes, it is going to take one
+to one. So we have Setosa and Versicolor and Virginica. Now,
+first of all, it will find the in these two. It will find the
+value, and then whatever the value getting, then compare with
+this one, and then it will do it iterations while it is doing
+okay, not only for the binary, it can work for ternary, also
+okay. Log ISR, for example, uh.
+Log, Iris, right. Log, I, LG, LG, ISI, LG, LG, ISIR, dot
+predict now,
+do it so you can see what is, what is expected? It should be
+two. That is array of, okay, okay. Now if you print the
+probabilities here,
+so which one we get highest probability,
+the second last element, Last one, last the last element is,
+this is exponent one, right? So.
+About 74% 74% probability is that it is a class two. So
+highest probability whoever is having that is given clear.
+Yeah,
+thanks, sir.
+So, so, one more question. So earlier, when we are comparing
+the score of the linear classifier, sorry, the
+perceptron versus the logistic regression, right? We found that
+77 is a score. I mean 0.7 is score for this one. So there any
+expectation to the scores to be changed after the data set
+cleanup and imputing. So should we do the comparison again?
+Definitely? Yeah. Okay. So for example, say 97 we got accuracy,
+right? So, well, one thing we can do is, okay, we got very
+good score. And then, because the data doesn't have any null
+values and data is mostly on the similar scale, that is the
+reason we got 97 five. So this is directly acceptable. We can
+go with the prediction. Okay, for
+example, if you get something 60 or 40, then we need to revisit
+the data, revisit algorithm, revisit feature engineering part
+to get more scores.
+Yeah, so the rolling out of the model will decide upon the final
+version of the data set and the final trial. Yes. Okay, thanks,
+yeah. So Jenna,
+yes, sir, sir. Usually linear regression. So we'll see for the
+relationship between X and Y, I mean independent and dependent,
+like it is whether positive or negative. So in logistic means
+we cannot see that relationship here, right? We cannot see but
+in black box, first linear regression is applied, and the
+value is substituted in sigmoid function, yes. So, as we cannot
+see, so the relationship between independent and dependent. So
+first, directly, we will do the sigmoid, and then we will decide
+whether it can go for the logistic or not. Am I correct?
+Exactly? Thank you. Yeah. Sindhu,
+sir. So like, irrespective of number of classes, it's still a
+sigmoid curve only, right? Sir, yes.
+And also, like in linear regression, we had just one
+output, right? But here, why are we having probabilities for each
+class? Like having one is not enough,
+one is enough. But we I am showing that there are some
+functions, some what happens is sometimes, when you are doing
+working with the medical domain, probability also plays a vital
+role. Okay? So due to a little bit of change in property, it
+can say that it belongs to class two, maybe class one, also very
+near the probability in points. So in that situation, the
+subject matter expert will help us in understanding whether it
+is going with the Setosa or virginica, something like that.
+So that is the reason logistic revision is given a chance with
+the probability. Actually it is something like, you know, in
+advanced level of predictions, some people, you know,
+predicting on the probability. In the for particularly medical
+use cases, we can use the logistic regression, depending
+on, not only depending on the prediction, depending upon the
+probability, also we can take a decision. So that is the reason
+it is included in that as extra, you know, function, that's it.
+Okay, okay. Thank you. Welcome Chakrapani. Well, I've been
+seeing that in the perceptron model and also in this logistic
+regression. You have been using the random state as 42 is that
+42 any special number? Why I've been using only 42 can we not
+that is my lucky number? If you want to change your lucky
+number, you can change it. Okay, so if you change it, may be the
+probability of other like here you got setos are maybe we'll
+get probability higher numbers for other other variants. Is
+that possible? Come again, come again. So here in the
+prediction, finally, you got that 97% for one of them, right?
+And the other ones are probably negligible. So if you change the
+random state, will we get a better probability for other
+variants, instead of point 023, for the other ones, maybe I will
+get a better probability for them. Maybe there's a chance.
+Maybe there's a chance. But for this sample, it doesn't have
+impact data sample, because I am working from, you know, a lot of
+time, so it doesn't have impact. But when you have huge amount of
+the data, sometimes randomness may have an implication here.
+Why there is no implication? Because the data is uniformly
+distributed, that means we have 50 Setosa, 50 virginica, 50
+varicosa. So when it is uniformly separated, no
+question, no, no problem, right? That is the reason. But when you
+have something like 20 Setosa for 40s, Virginia, remaining 40
+something, then the shuffling will play a role. Oh, good
+question. Yeah, thank you, Manu,
+yeah, sir here while checking the score. So should we not
+check the Score on test data instead of train data?
+Yeah, that is when we are discussing about overfitting.
+But presently we are just using a trend. Accuracy is enough.
+Generally when we discuss in the next session, in addition to
+algorithms, we'll see overfitting. In overfitting, we
+are going to construct test data also.
+And we'll see if there is a lot of difference in test data and
+train data, the model will be discarded. Okay, okay, yeah, so
+that is overfitting. We'll discuss. Don't worry. In coming
+session, we have decision tree, Deepam and Sarkar. Please go
+ahead. Hi doctor. So my question is that, is it like, can we say
+that for ternary classes, you know, logistic regression is a
+better way to go, rather than the perceptron model. Like, yes,
+little bit yes, yeah. So compared to perceptron model,
+but when you have generally better not to go with logistic
+regression, better to go with the decision tree, or, you know,
+can and neighbor classifier or some other algorithms. Okay,
+understood. Thank you. Welcome. Mahesh, yes, sir. My question is
+like my, if you are doing a multiple runs on the models, by
+enhancing the data, like to say first iteration you do something
+louder. Is it audible?
+Hello.
+Yeah. Go ahead now, yeah. My My question is, like, now, when
+you're doing a multiple runs on a model,
+by fudging the data or enhancing the data, how do you keep track
+of, like, another scores that is getting predicted exactly? We
+keep the log records. Is
+it logged within somewhere in the do you have to keep the
+algorithm
+we have tried separately log. We have tried Pythonic code to
+maintain the log. Oh, I see. Okay, so that maybe you can take
+temporary data, Redis Cache, you can keep it or something. You
+can keep it into Postgres databases, something like that.
+Or you can creep in a text file, and then you can do the
+comparisons. Okay. Oh, I see. Okay. Thanks. Yeah. Welcome
+Naveen, sir. Can you go to the slide where you are showing the
+linear regression on the top and the logistical regression on the
+bottom?
+Okay,
+and the next one, sir, this is our calculation, right? So the
+next graph, where we have a curved graph, underline, yeah.
+So can you just reiterate what is the advantage that we are
+getting with the second graph? Sir.
+Okay, second graph is when you are converting it is trying to
+classify first graphs if the data is like, you know, for
+example, if the data in the first graph is like, you know,
+some as one line below is unlike on x axis zero, we have one data
+on y axis somewhere, we got another data. Right? If you draw
+the line, we cannot separate them. How do we separate them?
+If it is S curve, we are able to separate right? If the data is
+scattered, something like that, their linear regression doesn't
+work. It is using logistic regression to do the
+classification. That's what we are trying to understand.
+Okay, so the classifying labels are the same, but the way in
+which we classify is different. They produced it. Yes. Thank
+you, sir. Welcome. Okay. Next one, go ahead.
+Once you are done with the question, please lower your
+hands. Sure,
+yeah, on the same thing, if you go slightly one, slide up. Okay.
+Yeah, so to the follow up to the Hanuman question, right where
+here the output is always zero in one, because our step
+function will compare between zero to 0.5 and 0.5 to upright.
+So how we are getting the like more than one value in case of
+that set of like, whatever the data sample he was showing sure
+how many times I have drawn here
+this, like this graph, two to two. But what I'm saying, asking
+question, I understand this flow where it is comparing one to two
+versus and the two to three. Yeah, that's where it's so
+again, how it is getting missed. It's completely internally
+written code, right? Code is written in a way to understand
+multiple ternary, if you have it has to first compare with these
+two, get understanding and that values are predicted, and then
+the values predicted will be compared with this one, right?
+So that way it is growing. So that is where maximum iterations
+we are incorrect.
+Yeah, theoretically I was not able to like, get to like
+understanding that's where theoretically means I need to do
+the complete mathematic calculations and explain the
+code inside Kishore. So just very simple understanding is,
+for example, here we are comparing with the test data,
+okay? And here I have a test data split into three. So for
+this compare we got how many answers, for example, when we
+are taking Setosa, varnica varicosa, for example, sepal and
+sepal
+or rose for four rows, I got one is Setosa, second is varicosa,
+third is virginica, fourth is Setosa. I got it okay in these
+two classification now, using the same data, now I'm going to
+classify between these two. What is this one, varicosa, right? So
+whether it is varicosa or Setosa, I'm going to compare
+understood splitting
+is done. Okay,
+yeah,
+Sri Lakshmi,
+actually, same algorithm I used in my PC course section. So this
+registered me to use.
+Slowers, but I think it what is the purpose of slowers?
+Slow VRS, and, I mean, I tried to understand, but it was not,
+can help you? Come again. Come again. See same in the same
+algorithm, we have a slow verse, right and logistic regression,
+we are using slowers, LP, FGS, lead, blind. You. Linear like
+that. But what is the purpose? What it how it will impact the
+model that I didn't get in a slower
+Did I teach anything on that topic? Sri Lakshmi, no, but I
+mean, just
+trying to get the hand text, no, no, okay, do that later
+sessions, when we are getting those things, we'll discuss.
+Okay, yeah.
+Manu, you have a question?
+Okay, not similar things.
+Sorry, one last question, sir.
+So in logistic regression, when you implemented it for AND gate
+right? So we we were expecting zero and one, so you talked
+about the threshold limit. So I see in the implementation, you
+know where specified the threshold limit, right by
+threshold automatically will be considered not similar.
+Algorithm will take care of those things. Well. Algorithm,
+okay, simplified function itself, it will consider between
+zero to 0.5. Is one class more than point five considers
+another class that may be set up one or zero, anything. Okay,
+okay, so no manual intervention in deciding the threshold
+moment. No, no manual intervention. If you want to do
+manually, then you have tried the complete Python code of
+logistic regression. Then there we can change the threshold.
+Okay.
+Okay, so let us take a simple review what we discussed till
+now.
+So we discussed something like we started with perceptron
+model is something which is going to take, like a neuron
+kind of thing, which is taking the inputs, and then we are
+applying a step function, then we are going to predict y. This
+is what we discussed in perceptron model. Then in the
+perceptron model, how the weights are updated. We have
+taken an example, and then we are trying to mimic that, and we
+are able to understand how it is arriving with that particular
+equation. Then we took a diabetic data sample on that we
+have applied this perceptron model, and we are able to get
+around 70% of accuracy after applying the standard scaling.
+Next part of the session we discussed with logistic
+regression, where we are talking about like the name y regression
+is coming in, because the base of the logistic regression is
+coming from the linear regression and but it is used
+for the classification type. Okay, that is what we are trying
+to understand. And then I have derived for understanding how
+you got the logit function. And even after getting the z value,
+I have substituted into the logit function, and then we are
+able to get some probabilities. So one advantage of logistic
+regression is generally not only we are going to predict the
+final answer, and we have a chance of getting the
+probabilities of what is the probability of getting zero?
+What is the probability of getting one? What is the
+probability of getting two? So this will help us in taking a
+decision whether to go with this algorithm and whether to go with
+the output predicted. This is what we are trying to
+understand. Okay, this is all about the functions, whatever we
+implemented today's session in the logistic regression also so
+simple. Takeaway is, like logistic regression and the
+perceptron model is generally we can apply for if you have a
+binary classification, if you have a ternary for some sample
+data, if it is uniformly distributed, these algorithms
+works. But when it's not uniformly distributed, these
+algorithms doesn't work, we have to go with some other
+algorithms. That's what we are going to discuss in coming
+session. They are known as decision tree algorithms, and
+they will discuss what is an overfitting also. So shall we
+consider the training data, or shall we consider the testing
+data, which accuracies, and all those things? Okay? So let me
+take about,
+okay, some questions from Mahesh Babu, perceptron works only two
+classes, and logistics works with multiple classes as well.
+No Mahesh. Babu Mahesh, it is like, you know, it works even
+perceptron works for multi class also, okay, but it is not
+preferable. Can we say this? Logistic regression is using
+multiple neurons to predict the ternary, no money, there are no
+neurons in logistic regression, okay? If you say multiple
+neurons, then it is a neural network. Okay, so be careful
+when you are using the terminologies, okay. So if you
+say neuron is there in logistic regression, then whatever I'm
+teaching now that will become in vain. So.
+There is no neuron in logistic regression, okay, only sigmoid
+function is there in the sense that there are multiple steps in
+the linear regression output is further processed with sigmoid
+function. Yes. Think like that, correct. Vikram. So after linear
+regression output you are getting that is processed inside
+a sigmoid function so that we can get the S curve. That's
+what. Okay, so now let us take up the questions.
+Yes, line, balance. Sindhu, I think you have done your
+question. Please lower your hand. Or if you have a question,
+Okay, done. Manikanta, what is the question? Manikanta, yeah,
+just small question only, like as we see, with respect to the
+random state data, if we varies the set of it,
+the accuracy is being like decreased with the same one
+which you applied for the samples part only I can see if I
+given us 24 of it, it seems like 1% decreasing the accuracy of
+it. So on what basis we need like as the tested, dividing it
+as data more and providing it the accuracy is quite more. So
+we need to go with more number of random state in that case, or
+how, exactly, no, as I said, don't take off the money random
+states and all those things. They are hyper parameter tuning.
+Going onwards, we are going to take up to an algorithm. With
+the help of that, we'll decide it Okay, manually, hit and run.
+Will take lot of time. We take 2425 like that. Okay, so
+depending upon the data, we'll pass on to the optuna or grid
+search CV, which are the best algorithms give us all the hyper
+parameters.
+And can you share the notes like yesterday and today's one the
+notes one which you've done in the
+Yeah, I think yesterday I have just shown shared it right now
+this PDF also, I'll share. I'll export it in the PDF and I'll
+share that. Okay,
+yeah,
+it
+is there. I'll share, okay, and let's talk. Maybe today is
+logistic, right? Okay, I'll share the two notes. No problem.
+Thank you. Yeah, go ahead with the next question, please.
+Next Aditi,
+yes, sir. So any like one real example, Sir, you have probably
+come across so far which you think is best suitable, or you
+know will help best when you used that data and and the
+logistician gave you the best results, sir, in real life.
+Aditi, when I started my career at that time, I used logistic
+regression, later onwards, deep learning and generative only we
+are working on, okay, so this is like, like, sometimes in
+generative also, I'll give you an example when I'm working
+with, for example, okay, as you said, real time, the last POC, I
+did it. I'll explain you. When you are landing of Open API spec
+file. In the spec file, we need to classify whether it is a PI
+element. Pi element is something like, you know, name of the
+person, age of the person, address of the person, which not
+be visible. So when the people they are making API, if that
+those fields are visible. I have written a simple logistic
+regression and that the data will go it's a whether it is a
+PIA or non PA. If it is a pia, it is going to give a message to
+the developer that, please the, you know, mask that field
+because they are pi elements you cannot expose. That is one use
+case. Aditi, okay,
+I think, sir, I just to add sir. I myself work with insurance
+clients for last 10 years, sir. And sir, I completely understand
+the importance of this example that you gave because, sir, if
+for European customers, the PI is exposure, as per GDPR, the
+company has to pay 4% of the entire entire worldwide annual
+revenue. So I think that this example I can completely relate
+to, sir. Thank you. Yeah. Anupa, please go ahead. Yeah, sir.
+Actually, I was, I was not able to grasp the whole calculation,
+so I have asked
+mathematics of this is not needed anymore, okay, this
+calculus is not needed just for the difference. If you want, you
+want, you can keep the PDF, okay, okay, just to understand,
+like, you know how things are in the backside, we are opening the
+box and seeing what is there. But as a data scientist, you are
+not supposed to learn all those things if you want to do
+research. Okay, connect with me. We can do a lot in that, right?
+Okay,
+yeah, uh, Vikram. Vikram. Manava, then Vikram. Yeah. Thank
+you, sir. So just as a general question, nothing related with
+perceptron and logistic regression today, if I'm given a
+data set and a problem is, it just through experience that I
+will learn which algorithm to apply. I know you said trial and
+error is one way, but if I take an analogy, right? If I'm
+assembling some furniture without even looking at what
+screws are provided, if I start asking for a Phillips head,
+that's not the right approach, right? So is the answer like we
+will learn this when we have good experience, or is there
+something in the data that will allow us to at least guess which
+algorithm might be a good fit for the problem?
+Uh, okay, good question. Vikram. Till now, we completed only our
+four algorithms, right? So when you complete the classical
+machine learning algorithms at that time, after that, we can, I
+can show you some tips there. We can understand in a glance that
+here is the algorithm better fit with my experience. I can give
+okay. So another thing is with your experience, also you can
+get it. Two things are there. One thing is, with your
+experience, you can get it, or some base points are there which
+can guide us that. Okay, this is the best suitable so two ways
+I'll show you. Okay, don't worry. Understood. Thank you.
+Yeah. Vikram, ready,
+sir, in in a logistic regression model or conceptual model. So
+when we have like three outcomes, let's say in logistic
+regression model. So from one to two, we have one sigma function,
+point two to three, do we have another sigmoid function? Yes,
+exactly. So we have two sigma based on outcomes, it will be
+number of sigmoid function as it is applied. Yes. Thank you.
+Priyanka,
+sir. This is nothing related to this class, sir. I generally,
+I mean, not on the concepts that you taught today.
+My question is regarding to have some long time perspective on
+how regarding the interviews on AML. I just want to check like,
+suppose if we are applying for AML role after this course, I
+understand from Al ml perspective, will will get a
+good hands on it. But my question is, for that particular
+role, will there be questions on like DSCA as well and also, will
+do? Suppose I have 10 plus years of experience, so do I need to
+also concentrate on
+ml system design and all that? So how to how much extent will
+this course all will This course also touch upon ml system
+design? Yeah, good question. Priyanka,
+after completing this course, you will be Solution Architect
+of AI that level will be covered. Don't worry, okay?
+Because after professors and everybody is completing
+different topics, okay, we have a session known as a deployment
+at the time deployment, we'll discuss about how the system
+designed for a problem statement and that like enterprise
+readiness, how do you deploy in the different clouds, those
+things will also come in. Okay, so as a 10 plus years
+experience, you have to look into that matter. But this is
+very helpful, because even if I'm going for interview now,
+because casually, I'll attend interviews, and I'll try to see
+what the type of questions getting in, okay, yeah, so I'll
+see that people still some stupidity. Is that? Because when
+you are into the panel of you know interviews, you will ask a
+question, something you know, before something, they'll ask,
+okay, what is standard deviation? Is working out that
+kind of people will face it. And some people that literally,
+they'll see that you are suitable for that set problem
+statement according to the project, they will give you the
+clear problem statement. Okay, this is the problem we have,
+Priyanka. How did you solve it? If you, if he likes your
+approach, you are recruited like that. So that kind of people
+nowadays, a lot we have not, like, you know, simple
+questions. You are expecting some maths do it, or some
+statistics. It was, this was used to happen in the beginning
+of the questions. Like, you know, we can say, beginning last
+10 years before something or five years used to happen,
+because there is no tech stack of AI, ml, right? Yeah, after
+the tech stack now emerging, they're not concentrating on
+those questions, because they know what is the requirement,
+okay? So they are directly asking, this is a use case. And
+can you tell me, like, in one example? Okay, I'll tell you one
+example. Like,
+like, some interview questions. I'll tell you. One example is
+say that, okay, direct problem statement. I don't want to give
+the name of the company. It is one of the biggest company, MNC.
+They said that there is E commerce company approached us
+and they want to build, saying that, for example, in festive
+season, they will build, you know, the cartoon boxes to pack
+them Amazon or something like that, right? Suppose, if you are
+a cartoon pro box provider, how much carton should I pro, you
+know, produce in that particular month or something? So can you
+predict using AI ml algorithms? So just think of this use case.
+How can we implement this, right? So once you complete the
+chapter three or something at that time you are in a stage to
+decide, okay, how can I predict? Is it a time series problem, or
+it is a normal problem, something like that? Yeah,
+regression, perfect. But what are the impact, you know, what
+are the columns you think of like, you know, you are taking
+the previous data of Amazon or Flipkart. Then when should I
+start producting? Where should I keep the data so that it can,
+you know, nearby cities I can immediately transfer they can
+utilize, sometimes, even in the, you know, festival sale, maybe
+not going that much, whatever the production is done, it is
+going to be in vain. So we have to consider that cases, also a
+lot of things like that, kind of questions we can expect.
+Priyanka, okay, okay, so.
+So, so you mean to say that system, system design round for
+ml, we will also be able to handle that those rounds once
+this course is after the course completion, you are capable of
+doing all those things. Okay, okay. Thank you, sir. Yeah,
+thanks, everyone.
+I thought I said, Okay, goodbye, but Aish again, raise the hand.
+I go ahead. I'm so sorry. Just one simple question, these
+notebooks which are shared, are there on your personal drive?
+How long they will continue to remain there? How long will have
+access to them?
+It will be there is no time. But if you download your local
+system, they'll you can keep how much time you want, right? Of
+course, I just wanted to clarify that, all right, more than two
+years we can access them. But from I'm seeing from the first
+cohort to till now, we have all the same node deletion is
+happened. Everything is available. Okay, yeah, yeah,
+great. Thank you so much. The class is done. If anybody, if
+you don't have a questions, we can drop off. Not a problem.
+Okay, thanks everyone. Thank you for your patiently listening.
+Thank you so much, sir.
+Great class. Thank you. Thanks a lot. Thank you for your Thank
+you.
+Thank you. Yes, yes, Professor,
+like you have written one like for loop with the label marker
+and color right in the collab
+to
+label and x1,
+where somewhere here, I think right
+Number 13,
+like just explain, sir, what is this line? No, no. Simple.
+Actually, I want to take the label marker is I want to say,
+or x marker color black and red. Okay, I'm covering then scatter
+plot. And scatter plot will take only two features, right? So I'm
+considering wherever the viable is equal to that. Keep it in X,
+wherever variable of the second is there. Keep in second column
+and skip the marker. So this way you'll get all the dots and the
+markers. That's what I'm trying to do. It is something like, if
+condition you're keeping in a scatter plot, that's
+it. Okay, actually, do they don't need pause just to you
+know, visualization purpose I'm giving okay, don't worry about
+the code. We have mL extend libraries there which will do
+the job for us. That ring a line. Okay, so now, yeah, so
+sir, um, starting of the class, I asked So sir, for me to
+understand the role responsibility, where I can fit
+in. I raised this question, I think two weeks back. So my role
+is in program management. I'm working as a senior program
+manager with one okay, we'll see. Now I'm working cloud
+platform, and I want to increase my horizon with AI and things.
+So I want to understand, see, currently, what we're studying.
+Of course, it's very detailed, well and right wing program, and
+I'm not doing the coding now, so I want to understand the roles
+you explain right wing data scientist, where AI engineer,
+where I mean I'm I do not fit in those right patients. Once you
+finish, you need to, yeah, at this time, I'll draw a flow
+chart, and you're taking the data of implementation, where
+you can fit, or what are the rules expecting, okay, so you
+need to, okay, yeah, all the rules I'll explain. So little
+bit patience. Let us finish, first with the classical
+algorithms. Then we see feature engineering. At that time we'll
+understand, okay, there is a person who is doing this type of
+task. Also like that, okay, that is the reason I'm just like
+letting keep, you know, just postponing, once you finish Unit
+Two somewhere, I'll take up that also, okay, sure, sure. So I'm
+not aware about the unit you told wait for right one or two
+weeks.
+That's what my feature engineering is doing, right? So
+after that, roles will be more clarified. Okay, so then big
+planning part. So once your recto is done, I'll explain
+those line by line. Okay, okay, sir. Thank you so much. Okay.
+Tirupati, yeah, have you? Can you please provide the diabetic?
+CSV, okay, thank you. It is there. Okay, next, who is the
+Manoj? Manoj is
+else for me is similar. So I have a 15 plus years Express
+Cloud and DevOps, devsecops, necessary. So how we can fit
+this AI, ml, so we need to start changing role right now, or
+after completing that partially, we can do that right now and do
+that later. Part complete, to change up. Uh, mlops, kind of
+not now, not now. Later, once you've done the sessions, you'll
+do it. Meanwhile, you can look into the depth of the AIML,
+okay, so, so proceed with your work. Now, later, once you have
+done with the course part, you can look into that. I'll i.
+I can suggest you how to proceed. Okay, sure. Thank you,
+sir, yeah, okay, thanks everyone. It was a nice session.
+Happy weekdays. Enjoy your weekdays. Thank you the
+PPT like last, last time yesterday, it is already there
+in
+the LMS, Sita,
+okay, okay, thank you. Thanks, everyone. Take care. Everyone.
+Bye.

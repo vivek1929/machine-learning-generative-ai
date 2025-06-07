@@ -1,0 +1,2868 @@
+Video transcript
+This transcript is AI-generated and may not be 100% accurate.
+
+Unknown: Okay, so let us start the session
+today. We have two interesting topics. One is support vector
+machine.
+And after the break, we are going to discuss about ensemble
+technique. Okay.
+So both are
+like till now, we have seen the classifier right, similar to the
+one of the classifier. We have support vector machine
+classifier.
+So whenever we think of the classifier, remember that we are
+separating the data by drawing a line, and which is the best
+line, which is separating most of the data point that's we are
+going to find.
+So name, as the name indicates here, support vector machine
+means this algorithm is taking help of some support vectors to
+identify the baseline which can separate.
+You know, what do you say the two classes? Okay, we'll see
+today. So mathematical intuition behind that, and then we apply
+using mainly data sample, real time, data sample, okay,
+okay, so let us start
+with what is the linear classifier we have seen. Linear
+classifier is something which is separating two classes. For
+example, here we have a red circles and blue circles. Okay,
+so we can separate red circles and blue circles by drawing a
+line so that
+most of the positive sides will belongs to class one, negative
+side belongs to class zero, something like that. Okay,
+now this line is a separator, or this line also a separator, or
+this one also a separator, somewhere in the middle, also,
+this is a separator. Okay, any one of the line which is when,
+when you visualize it, any one of the line which is definitely
+separating these two, that is a linear classifier.
+Now, the problem in linear classifier is all of these four
+lines. They're able to classify perfectly without any
+misclassification. They are able to separate two classes. Okay,
+so which one should I choose? That is a problem. So for
+example, if I choose this line, what happens if I choose little
+bit from here? What happens
+if something, any red point, is coming here, the chance of
+misclassification, if I choose the line here, if anything on
+the boundary, or somewhere, if it is a blue point coming here,
+that's a misclassification. So to avoid that misclassification
+in future, they come up with an algorithm that is known as a
+support vector machine, SVM classifier. Okay. So what this
+algorithm is doing, this algorithm is trying to find the
+best line with separating the margin. So in middle we need to
+drop that is the mathematical addition behind support vector
+machine, the idea came in like that. Okay. So generally, if you
+use normal classifier with a linear classifiers, they also
+will do the job for us to classify whether to be whether
+it belongs to class one or class zero, something like that. So
+when we draw the line, which is the best line is the problem?
+Okay? So when a given data, it's not a problem. But in the
+future, there's a chance of misclassification. To avoid
+that, we are going to use support vector machine. Okay.
+Now, if anybody look into this line, you say that, okay, this
+is good line because there is a margin from here and here, okay,
+so whenever a new data comes in here, also the classification is
+good here. Also the classification is better. And
+even the data point is away from here, this is also like a blue
+data point, correctly classifying. But if I draw a
+line, something this, like, you know, here, from here, for
+example, then that is a problem. Okay, so decision boundary,
+similar to your linear classifier. What we studied W,
+transpose of x is equal to zero. If it is greater than zero
+belongs to one class less than zero belongs to another class,
+like a step function. You remember we did that step
+function, what we did one, if it is greater than or equal to 00,
+less than zero, similar way it is going to classify now,
+like, for example,
+if I have a complex curve better than the linear curve, yes,
+definitely. For example, if I'm drawing a line like this, there
+is no chance of misclassification correct.
+So is it possible to draw.
+A generalize this one, or a complex
+one for only, for two misclassification training and
+algorithm in depth in this way is not a good idea. Okay, one
+thing is resource intensive. Second one is mathematically
+it's not possible to implement such an algorithm so nearby
+means definitely there is some misclassifications are there. So
+this kind of, you know, for example, if you have something
+like this, the data is scattered and like this, if the data is
+scattered, we can classify this. Like this, we can classify so in
+support vector machine, we have linear and non linear. So today
+we are not going to discuss about non linear. Non linear
+comes in unit two, so clearly I'm turning so today we discuss
+only linear. We are not going to discuss about non linear.
+So support vector machine extension is even support vector
+machine can solve this one and support vector machines can
+solve these kind of problems. Also, the data is scattered
+inside like this by drawing a circle it can solve. So there we
+use the mechanism called as a kernel. We'll discuss when we
+are getting into non linear classifier. Today, our complete
+concentration is on linear classifier only okay
+now,
+so for example,
+linear classifiers are very simple and they're efficient. So
+we have different kinds of learning algorithm. We have HDD
+classifier, we call it, which is a stochastic gradient descent
+classifier, which is learning by itself. We have seen perceptron
+classifier, which is one of the linear classifier. We have seen
+like different kinds of linear classifier. Simple classifiers
+are existing. Okay, even we can say that logistic regression
+also a kind of linear classifier, only by using an S
+curve it is trying to separate. So they generalized formula
+means they'll work. But sometimes, when it comes to non
+linear separation, there is a problem. That means, if the data
+is not scattered in a linear format for the linear
+classifier, that will be the problem. So if you just recall
+the summary of linear classifier, we know that linear
+classifier is applicable. When you have the data which is
+linearly separable, then we can use linear classifier. If the
+data is not separable, linearly separable, or somewhere it is
+the closest one, or they're scattered away, then linear
+classifiers won't work well. So we'll come up with another
+algorithm and another example, again, recalling of the
+perceptron learning we have seen what is the perceptron model.
+Perceptron model is it is going to take one perceptron simple
+weights are coming in this calculating the Z after
+calculating that is going to keep into
+a sigmoid function, then it is going to classify belongs to
+which class. This is what we have seen, simple perceptron
+learning. We call it so perceptron learning, how it is
+working. It started with the random values of something like
+00, and bias is equal to zero, or maybe 1.2 2.1 something like
+that. And according to the linear What do you say the
+learning rate? That is a step function. We call it so it is
+trying to find the best W's by using maximum iterations there.
+We call it as in our network terminology. We call it as a
+box. That means it is trying to iterate from starting to end up
+the rows one by one. And then it is classifying uh
+on depending upon the W value, say, getting B, then it is going
+to draw a line and then classify. So perceptron, we call
+it as a learning algorithm. Why? Because, in every iteration, it
+is learning the weights. So that's we have discussed. Okay,
+so if you look into this, this one also
+uh linear classifier. Best one, this one also the best one,
+which is also classify by visualizing the data right now,
+if you see this line, compared to this and this and this one
+generally prefer this line. Why? Because, if you prefer this
+line, what happens is anything is closest near. If it is a blue
+color, then it is misclassifying. Now, coming to
+this line, even if you have here the blue color, this is a blue
+color, it is perfectly classified. Okay, so what is the
+solution for that?
+How do we get to know that this is the best fit line, or bit
+separation line, or it's a generalized line we can see. How
+do we know that? So for that, we are going to have a concept
+known as a margin, which is also known as a no man's band. Means
+in the margin, you don't have any data points lying.
+So we have to take a hyper plane in a way.
+That that must get most, biggest margin. Okay, for example, if I
+draw this hyper plane, and this is taking the support of this
+data point and taking this support of a data point
+parallely, if I'm drawing true hyper plane, the margin is
+something like this. Okay, now the next line, which you have
+the blue color, if I draw the line here, support vectors,
+taking the support vectors of class one and class two, if I
+draw the margin, you got something like this. So in this
+first case, the margin is not that much good. Second case also
+similar, but when it comes to third case, the margin is
+better. So out of these three, which one will prefer? The last
+one, green one, right? So first one is the maroon one, which is
+having
+less margin. The next one is the blue one, which is having less
+margin, and third one, which we have a green color, it is having
+the best margin. So we are going to use this one as the best
+margin and we are
+going to implement so margin is the important aspect of making
+the distance between two different data points.
+Okay, so we know that margin varies with the position right
+orientation. For example, in this orientation, orientation
+margin is less in this orientation, margin is more. In
+this orientation, margin is less. So according to the
+orientation marriage, margin changes. So support vector
+machine algorithm, what it will do, it is going to find that
+margin. So from that margin, it can, you know, most of the
+misclassifications can be avoided. So are we are going to
+find the margin, no support vector machine is going to find
+the margin. How it is going to find the margin? That is the
+important part. We'll see the mathematical intuition, like how
+it is constrained. These are the support vector points. Okay,
+we're taking a simple example similar to the previous classes.
+I'll explain. Okay. So one thing is, why should we maximize the
+margin correct? So from the beginning of the slides, we are
+talking about linear classifier. That linear classifier is the
+one which is drawing a line and separating the two classes. Now
+this line is good, this line is good and this one is good. So
+when you see the look and fail, you say that this is the best
+one. So why we need a margin? Margin here so there's a chance
+of being misclassified. So this one to avoid, we are depending
+upon the margin. So when the researchers see that linear
+classifier is taking this randomly generalized, we cannot
+force the linear classifier to get into the beginning, you
+know, middle of the separation. So they,
+you know, they change the concept of mathematical
+intuition of this linear classifier, and they implemented
+in the integrated concept of margin. And then they call it as
+a support vector machine. So it is extension to linear
+classifier. And we have two categories in support vector
+machine. One is a linear classifier. Second is the
+non linear classifier. So today, our concentration is totally a
+linear classifier. So for example here, as I discussed
+here, so if I use this line, there is no misclassification.
+But when I use this, you know this maroon line, the chance of
+misclass misclassification, right? It say belongs to which
+class, red class, but it's very near to Blue class. So coming to
+this point, if I consider this blue one, the chance of
+misclassification like this. So if you compare all these three
+lines, we say that this one is the best line, correct. So
+margin we need to find, if you have a margin, then most of the
+misclassifications will be gone.
+So summary is, in this
+classification, end of the day, we need to find the large margin
+which will reduce most of the misclassification Okay, so we
+can say large margin will be more generalized towards
+classifiers. That is the summary of the simple margin concept.
+Okay. So here, if you after the margin, when we induce two data
+points, here, there's less chance of misclassification and
+no misclassification. Now, perfectly, it is classifying
+correct. So it can classify these data points are blue and
+these one as a red. Whenever new data points test, data points
+are given clear. So this is what a margin is doing now. So one
+thing is a margin will reduce the misclassification future
+samples, unseen data, and it is generalized better, and the
+margin which you are drawing now the data points with the support
+of these data points, I am drawing true hyper planes. So
+these data points are known as support vectors. We call them as
+a support vectors. We can find the support.
+Vectors also, okay, using the support vectors, we are trying
+to find the best margin. So in support vector machine, the name
+support vector machine
+classifier, so we call it as SVC. So here we have in support
+vector regressor. Also we have support vector classifier as the
+name indicates support vectors are there. So depending upon
+these lines, okay, the in support vectors, it is going to
+classify and it's going to find the best margin. Once it is
+finding the best margin, then it is going to use that best margin
+for unseen data.
+So from totally we can say that support vectors are generalized
+one, compared to the
+normal classifiers, and we don't worry about the optimization
+automatically. There is a concept of C, we call it. There
+is a parameter C is given, which is, you know, we are forcing
+support vector to avoid the misclassification. That way it
+is going to draw the margin, okay, and
+compared to other algorithms, this also falls into category of
+the best solvers. Like yesterday, we have seen decision
+tree classifier similar kind, you know, it is also the best
+solver industry views, generally, for test
+classification, we use support vector machine and logistic
+regression, though we use it, okay, so they are very good in,
+you know, if you want to compare to the linear classifier,
+support vector machine classifiers, or linear
+classifiers are, you know, generalized towards, you know,
+identifying the best accuracies. Okay, so we'll take some
+questions, and then we'll jump into whiteboard to explain more.
+Before jumping into the whiteboard, let me take the
+questions first, yeah, go ahead,
+sir. Can I go
+Yeah? Go ahead. Yeah. So, sir, can you go to that green
+best fit line once that page, yeah. Now the way you're also
+showing the support vectors.
+You selected two support vectors on the blue side and one support
+vector on the red side,
+yeah.
+So sir, for drawing a line on the red side, we need to pick up
+two support vectors on the red side. Also, right? Like, or is
+there any limitation of how to select the support vectors?
+Because you can't draw us up one. We can't draw the line with
+one support vector, right? You need to. We can draw with lines
+one support vector if it is parallel. Not a problem, okay,
+this hyper plane W transpose of x is equal to zero, parallel to
+hyper plane. Okay. Thank
+you. Ron Sharma, yeah, so my reason this like, how are we
+selecting the I mean,
+this vectors actually support vectors, because that's where I
+mean which of them are the boundary. How we decide on that?
+Okay, mathematically, I'll do now. Okay, I'll show you. Don't
+worry. So Good morning, sir. What is the significance of word
+here, support and the vector? Because we are connecting two
+lines, I mean two few data points which are at the
+classification boundary. So one word support and why the word
+vector? Where is the vector here, sir,
+this line is not a vector. When you're drawing a line through a
+simple two dimensional point. Is not a vector without direction.
+Okay. Line, right data points we are passing in line, that is the
+name. We call it as a vector. Okay, okay,
+A, B, bar, without any direction, any data point is a
+vector. Okay, I'll see. I will show that on the whiteboard.
+Okay, don't worry. Okay,
+sir, with the higher margins, uh, are we not restricting the
+data space. So does it mean that, from the
+from the vector, the more more we are away, we are not we are
+avoiding any data points in that region.
+Corona, the question Kiran, you're saying with the margin,
+what we are doing,
+I mean, like, are we not
+restricting the data points, actually. Because why we are
+restricting data points, we are trying to find a good margin,
+right? Good separator only. This is where we are trying to do
+base data you have, but any unseen data might be present
+just around the central vector, right? Yeah, maybe
+that is where the linear classifier is failing. So we are
+taking help of margins to give best classification, right? So
+when the data is scattered in this way, and if you are able to
+get in the middle of the you know middle line exactly, if
+you're able to get testing will be test data will be more
+accurate if you have line here, there's a chance of
+misclassification.
+Question. That is the logic behind support vector machine,
+right? So it is trying to avoid that misclassification by giving
+more space. So when we are giving a more space here, so
+then when it is nearby here, so the data point is belongs to red
+one. If it is near to here, belongs to blue color. But if I
+draw another separator, linear classifier, the chance of
+misclassification, right? So to avoid that, logically, what they
+are doing, we are trying to find the baseline which is passing
+through middle of this too, so the avoiding of the
+misclassification will be removed,
+right? But then, if I have a smaller margin, then the red
+point mean, I'm still trying to understand the reason why we
+increase the margin, so
+maybe, when you mathematically, tell it so maybe then I can
+understand it. Okay, Jaipal,
+margin calculation, what basis will be tempting. Margin,
+I said we'll take my input and we'll do that. I am not going to
+leave you people without doing the calculations. I will
+explore. Okay,
+yeah, okay, just on the slide. Anything, yeah, basic doubt,
+sir, what are the x axis and y axis here?
+X axis is the two features right. One feature on x axis,
+second feature on y axis, and the value of that,
+okay, yeah, we are able to separate out based on that,
+yeah, based on that, we'll see mathematically. We'll see. Now,
+I'll take an example and do it. Okay, okay, thank you, Ashok,
+yeah. Ashok,
+yeah, sir. My doubt is like the middle line, right? So that is a
+linear classifier, and the side ones are support vectors. So, so
+what is the advantage we are gaining from having this
+margin, actually? So anyways, we are getting the support, I mean
+the linear classifier in middle, right? So how it help us to,
+I mean, advantage for this
+SVM,
+I didn't, you know, get your question. So when you
+visualizing here, tell me the linear classifier before is
+better, or this one? Do you think better?
+Middle is better from your perspective, yeah,
+yeah, this is better. Like, I mean, we are giving some margin.
+Uh, why it is better? You're thinking, why is better? Because
+it is going in the middle of
+the two separators. So that way most of the misclassification
+avoided. Right? Visualization is very simple. So by visualizing
+itself, we can understand that if you draw the line exactly in
+the between, so we have a space for new data points to come in,
+and that misclassification will be avoided. That's what we are
+trying to understand,
+right? We'll see mathematically.
+Okay, yeah, let's say yeah. Good morning. Once we have done your
+questions, please lower your hands. Okay, yeah, Hirak, tell
+me Yes, sir, good morning. Good morning. Quick question in the
+one of the questions, it was asked that, how is it a vector
+like and you answered that it is a line without a direction that
+is passing right? So that's why it's a vector. But isn't vectors
+are supposed to be with both have magnitude and
+direction. So you mentioned that the reason it is the
+relationship of vector and these lines are, is that because it's
+a
+it's a line with, without a direction, right? Should
+have magnitude and direction both
+No, no here, support vectors. Why? Because, generally, if you
+have a data point, this is vector. I'm saying A, B, for
+example, two data points, x1, y1, right? So it can be this
+side or it can be this side, but depending upon the margin, we
+are trying to take direction in this side, right? So, and if you
+have somewhere data point here direction, I'm saying Come to
+this side, this way it is trying to separate. So that is the way
+the name is given as support vectors.
+Okay? So we are not supposed to debate on why the name is given.
+Okay, so we are supposed to understand what is the
+mathematical intuition behind that. So the name is like, you
+know, to just classify the algorithms. And we are taking a
+simple data point, which is an vector. We call it, and vector
+can have a direction and magnitude. Also, once you are
+putting onto this I'm saying it's a vector because here
+moving towards the margin, here it is moving towards the margin.
+It is away from the margin if you draw the line, if your x and
+y axis right. So that is a way we are trying to understand the
+margin. And then after getting the margin, most of the
+misclassifications can be avoided. That is we are trying
+to understand.
+In support vector machine. So when I take a simple example,
+you'll get more idea. Okay, don't worry. Yeah. Navin, what's
+your question? In continuation to the previous question. So
+there you showed only one hyper plane, and then we are measuring
+the margin. So actually, internally, it will calculate
+the margin for different hyper planes and then pick the one
+with the maximum margin. Is my understanding exactly? I mean,
+yeah,
+okay, thank you. Manage.
+Yeah, yeah, sorry. So my question is, like, if there are
+more than two classes, then we'll have more than two
+margins, like the hyper planes and all
+come again. Come again. Here we are only classifying two
+classes, right? Let's say Class A and Class B. Let's say you
+want to classify like multiple classes, maybe Class C as well.
+So how do we like one margin plane or one hyper plane will
+not be sufficient, correct? So linear classifier. When we
+discussed you remember one to many relationship we do. First
+we take one to one, then we'll go to the next one like that,
+right. Okay, so similarly here as well, like we're also same,
+yeah, similar one. Okay, okay, thanks, Aditi, sir. This might
+be a repeat question, but midline now, so any point that
+is,
+if I if I say midline is a, and then the line on right side is a
+B, so any point between A and B will be shifted to beyond B.
+Sir, like
+point will not shift. Aditi, actually, we are going to
+calculate the, you know, first vectors, support vectors. Using
+the support vectors, we are going to draw the line. Okay,
+then hyper plane will be done. Okay, so let me explain you,
+step by step.
+I'll take, uh, let us take the questions from
+chart. Also slide number 20. You mean support vectors can also
+intercept each other, or not just parallel, parallel, they
+don't intercept with each other, okay, if they intercept, then is
+a multi perceptron model with higher margin or we not
+constrict restricted? I have answered Kiran, okay.
+Is the hyper plane drawn first or the support vectors? Is it
+something like we find an initial separator like and keep
+changing the angle to see maximum margin. No. Kumar, we'll
+see now, okay, if the data is scattered, how margin is drawn?
+Does SVM is the right algorithm? No. Hanuman, good question. If
+the data is scattered in a way that is not linearly
+classifying, then we can go with that, could you explain convex
+optimization? DPM, okay, what is this convex optimization? Did I
+talk about any convex optimization here? DPA, man, no,
+okay, we'll see when these things comes in, one by one.
+Okay, so let us start with a very basic example
+to make you Understand what I will do is
+so 12345678,
+so 12345678,
+5678,
+okay,
+let me take a data point two and three. For example, two and
+three. Three is the data point one. Another one, I will take
+three and four. For example, three and four somewhere here.
+Another one. Will take four and two. For example, four and two.
+I'll take here another one.
+Okay. Now let us name this as A, B and C for understanding, okay.
+Next one, I will take as six and two as one data point, six and
+four as another data point. And then I'll take something like
+seven and three somewhere as a data point
+understood,
+just to make you understand like,
+how linearly these things separable. Let
+us take this as a point D, as E and point F.
+What is the value of A? Now a will be, is
+it a point? How much two, three,
+what about b3,
+four,
+c3,
+1141424422,
+okay.
+D6,
+262,
+e6,
+46473,
+okay. Now what happens is.
+So it is going to calculate the distances first. Okay. So how it
+is going to calculate the distance? We know the distance
+formula, Euclidean distance correct. So let us say this one.
+I am labeling this as a negative one, negative one for
+understanding negative one. This is a positive one, positive one
+and positive. So now how we have the data points? Now if you find
+x and y, we have the data points like x we have and why we have
+in X, we have first data point as a two comma, three, what is
+the label?
+Negative one, second one. We have a three comma four, which
+is negative one, then four, comma two, which is negative
+one, then six. Comma two, which is positive one and six. Comma
+four, which is a positive one, seven, comma three, which is a
+positive one.
+This is our data points
+feature, right? Instead of writing x1, x2 I'm keeping in
+this, this is correct, right? We can keep like this. Also agree.
+Okay.
+Now as we have the labels negative one, first one, let us
+do one thing as a pair, distance, let us calculate. So
+what are the data points we have? A, B, C, D, E, F, A will
+be how much two comma, 3b. Is three comma, 4c, is how much we
+got something. A, four, comma, two, this is six comma, two,
+this is six comma, four, and this is seven comma, three.
+Now let us calculate the distance a to b, sorry, A to D,
+second, then A to
+E, then A to F, done. Now, distance from A to D, D to A
+both, same, right? Yes,
+you are going one
+place to another place for another place to we are coming.
+Back to next place. Same thing. X, 2y y, 2x is same, right? Yes.
+Okay. Now we'll take the B, B to D, B to E, B to F. Now, how do
+you calculate the distance? Tell me now, A to D, Euclidean
+distance. So this will be two minus three, whole square plus
+six minus two, whole square. This will be two minus three is
+one, six, minus two is four square. So we are getting four
+for the 16 plus one, root 17. Root 17 means approximately
+four, four. The 16 means we can say 4.12 something like that,
+approximately correct. Next A to E, A to E will be four minus
+three square plus six, minus two square. So this is also one plus
+four square. We got around 17, 4.12
+now A to F, A to F, so three, minus three square plus seven,
+minus two square. So this will be 07 minus two is five square.
+So we are going to get five square will be five now, B to D,
+B to D will be go ahead, anybody, B and D, so two minus
+four square
+six minus three man B to d2,
+minus four square six minus three square four plus nine. So
+this is how much two square plus
+So, four plus nine. Four plus nine may surprise make you how
+much
+root. 13 means three. Threes are 944, 16, so maybe three. Let
+us sit very good now, B to E, B to E, this one and this one.
+Okay,
+four minus four square next.
+So this will be 06 minus three. Is three square, three square
+root of three square. How much are you doing? Three?
+Next, one,
+three minus four, square B to F, so three minus four, four square
+plus seven minus three.
+So three minus four is one plus plus four, seven minus three is
+four. Square One Plus 16. How much variety? Seven, 4.145 4.1,
+next, we need to calculate from C to D,
+C to E,
+C to F, correct. Okay, let me write down the data points of D,
+D.
+Is six, two,
+this is 2d, six, four,
+then this is E, then f is how much seven, three, right? Or the
+data point C, C is how much we got four. Comma, two, this is
+what is the distance? Tell me now,
+so minus two,
+two minus two square plus
+six minus four, whole square. So this is 06 minus four is two
+square. So how much we get? Two, two, next, one, c2, e4, minus
+two, four minus two,
+root, eight. Six, minus four, root
+eight, two square plus two square two square root of eight,
+root of eight,
+root of eight means approximately two to the four,
+something two,
+okay, then
+three, minus two square plus
+how much we get.
+So one plus nine is square root of 10 approximate.
+Okay,
+now tell me, what are the minimum distances. Let us
+consider minimum three distances. Okay,
+why should take three? We can take four also, right? Five
+also. But for simple understanding, let us first
+start with the three minimum distances. Okay, we do E. So let
+us if you draw why? I'm taking three means, if you draw this
+line, we know that
+from C to D and C to E, the minimum distance right here is
+the maximum distances. So here I cannot draw the hyper plane
+anyway. So this is a chance that these are the hyper plane. Now,
+tell me which are the support vectors now, which are very
+close to each other. If I'm considering three distances, one
+is C to D, C to e2, points we have right. So if you see two
+distances, C to E and
+C to E and C to D, these two are the two distances we have right,
+two and 2.8
+so what are the data points we got now support vectors, C, D
+and E, correct?
+Yes or no.
+Okay, these are now known as a support vectors. Okay. Now what
+is the value of c? Now tell me, C is four. Comma, 2d is
+six, comma, two is six. Comma, four,
+correct now for four, comma, two, what is the class? Tell me
+negative value, right
+for six, comma, two plus one for six comma for what is the label?
+This one
+yes or no, yes, yes.
+And why? Yes, correctly, we got something like two comma three,
+so it is negative one, yes. When I What is the question? When I
+you raise the hand, yeah, you wanted to select three vectors,
+right, but you only selected two.
+I selected two vector, points, C, D, E,
+not three.
+Okay, they are points like you are saying minimum distance,
+whatever. They are connecting, right? Okay, yeah, okay. So now
+CDE, we got it. We know for C, what is the label negative one
+for D, what is the label positive one for E? What is the
+label?
+Which one plus, so that's one. Okay. Now see carefully,
+the hyper plane, any classifier, W transpose of x times of plus b
+is equal to zero agree this is hyper plane. Zero means no data
+points.
+Now coming to I need to draw two hyper planes, which is parallel
+to this one and this one, when you say parallel to this one,
+this one will be W transpose of x plus b is equal to positive
+1w.
+Transpose of x plus b is equal to negative one. We call it
+correct which are parallel to these two. So that is the reason
+we call this as a equation. W transpose of x plus b is equal
+plus or minus one. This is a plus one. Second one is a minus
+one. Now let us take which equation now for the plus one,
+or we can take it a negative one. So we have a data point
+from seeing like a C, which is having negative one, we have a
+D, which is positive one, and next one, which one we have E, I
+think right is the positive one. Let us take this for the
+negative one. So what is the negative one? We write.
+Now let us take two weights, because here we have two and
+three, right? So we can just write down
+for the value of C, value is four, comma two for the value of
+C, which equation I need, I need, like the negative one. So
+we need W transpose of x plus b is equal to negative one. So let
+us say four times of w1
+two times of w2,
+plus bias is equal to negative one. This is equation number one
+agree.
+Yes, yes.
+Now let us take the next data point. What is the next data
+point? We have D. D is six comma 2d,
+we have six comma two, where the value of y is how much positive
+one. So now if you substitute in this six same one, six times of
+w1, two times of w2, plus bias is equal to how much one is.
+Equation number two similar to the next data, point e6, comma,
+four, the value of y is equal to one, so we are going to get
+six w6, w1, plus 4w, two plus b is equal to how much one
+equation, number three.
+Okay. We got three equations. Now we need to find the values
+of what w1 and w2 correct.
+We need to find w1 or not. Weights. Is the main end of the
+day. By using the support vectors, we need to find the
+weights only right. If you find the weight, then we can check
+yes, yes. Okay, so let us find the rights. Let us. Let me take
+the equation number one and two. Equation number one and two.
+Equation number one is 4w one, 2w, two plus bias is equal
+negative one, six w1, 2w, two plus bias is equal to positive.
+One, if you subtract,
+this is canceled. This is canceled 4w one minus minus 2w.
+One negative, one negative one minus two, then what is the
+value of w 111,
+okay, negative, negative cancel two by two is one. We got value
+of w1 as one. So once we got the value of w1 let us write the w1
+in one and three.
+Okay. So what is the first equation here? This is the first
+equation I will take the third equation, okay, write down the
+w1 value. So this one will become how much w1 is equal to
+one, right? So it becomes four plus 2w, two plus b equal to
+minus one,
+okay, four plus 2w, two plus b is equal to minus one now,
+sorry, minus one
+in the t3 if you're writing six plus
+4w 2b
+is equal to
+Okay. This one we can transform as 2w two plus b is equal to
+negative one minus negative four. This one will be 4w two
+plus b is equal to one minus six. Now this becomes 2w two
+plus b is equal to negative five and 4w two plus b becomes
+negative five.
+Now you subtract this so two minus 2w, two is equal five plus
+five. Minus five plus five zero w2 is equal to how much 00,
+now if you keep this w2 value in this equation 4w two equal to
+minus one when
+this is zero, so b value is how much minus five. So totally we
+got w1 as one, w2 as zero, and b as minus one, minus one, minus
+five. Now this equation, what is the equation of this is w1 times
+of x1, plus w2 times of x2, plus bias is equal to zero. So this
+will becomes w1 times of x1, means one times of x1, is x1
+anyway, w2 is zero. Minus five is equal to zero. This is the
+equation right x1, minus five is equal to zero. Is equation next
+equation is what is the next equation for for example,
+w1, of x1 plus w2, of x2
+plus b is equal to negative one is one equation we need this one
+and w1, x1
+plus w2, x2 plus b is equal to positive one. This equation now
+tell me, this equation becomes w1. Is how much one. So one
+times of x1,
+minus five is equal to negative one. This one
+will be x1, minus five is equal to positive one. Correct. So.
+Yes or no, yes,
+sir. So we got parallel line now. So this is one the hyper
+plane, and this is the parallel line where we got C and we got
+here d, and we got here as a, e. So with that, we are able to get
+the value of this right now, if you, once you got these values,
+the margin is calculated. How is the margin calculated? Now? What
+is the best margin we can calculate margin? Formula is
+weight narration. We call it
+Okay, square root of modulus of w will be w1 square plus w2
+square. How much we got one
+correct. So the distance between two lines will be
+two divided by
+square root of
+w, sorry, modulus of w, how much we are getting u by one,
+right. So
+yes, sir, sir. Can you please
+listen, after getting this values,
+okay, is it clear general margin if you are considering two
+lines,
+if you have a x plus
+a x plus a x1 plus B y1, plus c is equal to something D. And
+you know, for example, I have one equation, a x plus b y, a x1
+plus b1, plus c is equal to zero. And here you have, I have
+something like a d1, a x plus b, y plus b1, a x plus b y, so
+distance will be distance between these two lines will be,
+distance will be this. One will be d1, minus d2, modulus square
+root of a, square plus b square this is a formula. So one minus
+one will be how much now, one minus minus one will be two, two
+over square root of one, square only. Right the coefficient of
+x1 is one plus coefficient of x2,
+is zero. So two by one, the margin is how much now between
+these two, two is the margin. Okay, so even if you see the
+distance, if you draw the line here, for example, so now we are
+able to get which line.
+So we got something like this, and then we got something like
+this, so four minus six, the margin is two points only,
+right?
+Yes or no. So now in between hyper plane, so most of the
+points will be discarded,
+okay? Now if I want to use this with support vector machine and
+find the values, let us try with support vector machine, real
+algorithm. We are able to get it or not, then I will take up the
+questions, okay? Or let us before going for the
+you know, the implementation. Tell me. What are the questions?
+If you have any questions, we can is that clear? Mathematical
+intuition is clear now.
+Saurabh, yes, sir, sir. Can you scroll down? Please? I have two
+question actually I understand. So we can for we calculated all
+the distances here. Can you scroll down? So please, when we
+were deriving the three equations, sir, we know that the
+middle equation is W, transpose of x plus b is equal to zero,
+right, and above and below is like, minus one and plus one,
+right? So now, up out of these three points, C, D and E, right?
+How we decided, like, which, which equation will have minus
+one and one here,
+because four two level is negative one, right? The
+label for four two is negative, oh, okay, okay, so you're
+talking about the Levels Level, right? Okay, and
+Okay. Second question is that this is useful. Maybe you will
+discuss this later on. This is useful, but we have a continuous
+value, we are able to deduce the distances. Now, in case of
+categorical values, how we are going to decide that the
+distances in the hyper plane, because they will be like in
+categorical values we are converting into the numerical
+values right level encoder, but then label encoder will have a
+generalized value like 012, or something like that, right? So
+then will the same equation be valid in that case also? Yes,
+same equation is valid in that case also. And in that
+categorical again, with the continuous values will be
+similar to the PDQ cut it will convert it into the numerical
+values and applied. Okay, okay, okay. Thank you. Thank you.
+Naveen,
+yes, sir. So the My daughter is regarding the initial labels
+that were taken minus one and one are those randomly taken, or
+any other just for you to make, to make you understand I have
+taken negative one and positive one. Okay, okay, yeah, labels
+can be anything it will consider automatically. SPF will convert
+them into negative one and positive one so that I did
+manually. Okay? Aditi sir,
+yeah.
+Sir, sir,
+after W calculation, sir, can you grow down to the last in the
+last part of the whiteboard? Sir? So the D part, sir, can you
+explain the D part? So d1 minus d2 sir, which is given with that
+I got, got confused, sir. This two so may be derived, right?
+Sir, which one is, sir, two, sir, this last distance, two by
+one, one root. So one root part is clear that w1, plus w2
+square. But so how this we are at is two, sir.
+This is a formula, actually distance. Formula is two by
+modulus of w. Okay, so two is a constant. Two is constant, yes,
+yeah. So this is a confusion, and second is now go up to the
+two lines that you now derived, sir. Okay, so no, so in the up,
+sir, where you have actual graph that you made, sir. So
+I think I'll come back to the same questions. So here now,
+sir, any point, sir, that lies between four and six, sir, we
+will exclude those points, right, sir,
+we don't exclude Aditi. Suppose in between, suppose here is the
+point, okay, zero, this point is belongs to which category
+negative one, if something is here, belongs to positive one,
+like that.
+Okay, okay, yeah. Ayush, Sir, good morning. Sir. Very good
+morning.
+Yeah, go ahead. Scroll down, please, sir. Scroll down. Okay,
+how much? Yes, that's that's it. So my question here is, I
+understood the entire mathematics and whatever
+manipulations we are doing. I have just, even if you No, no,
+even if people are not understanding, not a problem,
+just black box, a little bit of, you know, okay, things are
+happening like this. That also, if you're satisfying yourself,
+that is well and good. Okay, so don't worry about, from
+beginning saying, Don't worry about the mathematical
+calculations. So just, I'm trying to, you know, open it and
+tell you, like, how things are happening. Generally,
+people won't discuss, just, they'll write an institution,
+they say that, okay, this is a way algorithm is working. And
+we'll discuss, like, you know, mathematical intuition. So
+practically nobody will implement, okay. So my style is,
+if you implement, you know, whatever the questions in your
+mind you have that will be, you know, clear. That's the reason.
+Okay, yes. The question is, why did why we are saying the first
+line as line C and line D and line E? I understood the
+mathematics benefit. I'm not able to intuitively understand
+that. Why C, which is classified, when you
+mathematically understood, no need for intuition. Okay?
+Mathematically understood, C is the vector, right? D is another
+vector. Is another vector. That's it. Using that we are
+trying to get the margin. Margin is better, so we are accepting,
+that's it. Where is the intuition you want to see same
+thing. I need to draw very clearly points with the scaling
+and everything, right? So that is not possible. I will in the
+code. I will show you, okay, code, I think I will explain,
+right, yeah. Anubhav, Anubhav,
+I think you have done or you have a question. No, no, I have
+a question. So d1 and d2 are which lines, the lines C and E,
+d1, d2 which one d1, d2 can you go down?
+Okay,
+okay, yeah, this, so this is the point between the C and E line,
+the
+distance, d1, d2 okay. D1, d2, is just like, you know, the
+constant values, okay, so actually, let me do like this.
+For example. This is a x plus b, y plus some constant is equal to
+zero. Okay, here I have a x1, plus b, y1, plus c1, is equal to
+or C is equals to d1.
+A x2, plus b, y2, plus c is equal to negative d1.
+This is one line, and this line right. So the distance formula
+is modulus of d1, minus d2, by square root of a, square plus b,
+square. Now here the constant, anyway, minus c, minus c will be
+gone zero, right? So we have how much x1 minus five is equal to
+negative one. Here, x1 minus five is equal to positive one.
+That is the reason this is always constant, because
+negative one, positive one, right? So these two will come so
+now this will be two. What is the coefficient of x1 one
+square. Is there any x2 is there no zero square? So distance will
+be two like this. We are calculating understood. So the
+distances between those two lines, right? That one? This is
+mathematical formula. If there are two lines, ax plus b, y plus
+c is equal to d. A x plus plus b, y plus c is equal to negative
+d, distance will be modulus of d1, minus d2, by square root of
+a, square plus b, square, yeah, yeah. And in the graph, when you
+selected the lines, so that was based on like, negative and
+positive, and then line, yes, okay, yeah. Balaji,
+good morning. Sir. Very good morning. Yeah.
+Yeah, I'm not able to correlate with whatever we learned
+yesterday. Here Yesterday we learned about the day century,
+right? So we correlate. No need to correlate. Balaji. That is
+different algorithm. Is a different algorithm, okay?
+Because relation at all, every algorithm don't have any
+correlation. Mathematics is different, okay, okay. But
+finally, we are going to predict, right, based on predict
+only, yeah, why we are drawing the line here as a graphical
+representation.
+Why me just, I'm making you to understand. I'm drawing biology.
+So when researchers implementing linear classifier, I am doing my
+PhD. I thought that, okay, DNA classifier is not good. Let us
+go with this concept. This is introduced and it is the most
+working algorithm. Then we are implementing for some data
+samples, it is working. So there is a y means we cannot answer
+that. Why? Why we are, you know, taking this algorithm is first.
+We are trying to understand the algorithms, different
+mathematical intuitions we have so research people, they develop
+lot of algorithms. Right? As a data scientist, we are going
+through all that algorithms, and whenever you see the data, you
+are going to apply support vector machine, Mission
+algorithm, decision tree, classifier, and you're going to
+apply KNN, whichever is doing good score, you will accept that
+that is our end of the day, right? Okay, okay, yeah, yeah,
+thanks. Welcome anjit.
+Good morning, sir, sir, we did calculate distance between ABC
+and def. I'm believing here, the greater the margin, the better.
+So why did we take CD and CE, which have the lowest distance
+between two. How do you get the separation? And they are two
+different classes, right? That is the logic behind support
+vector machine.
+Okay, so we are not we are calculating all distance from
+all the data points where, where is the between these two minus
+one to one, wherever the minimum distance is there. I cannot put
+a line here, right? I can if I draw the line. Misclassification
+is done here, right? So we need to get those distances clear
+understood. Yeah, yeah. Kiran,
+sir, maybe I'll repeat the question again in which I asked
+earlier. Now, now that we have that margin between four and
+six, any point that is lying between four and five and five
+and six will be classified onto left and right. But that could
+have been achieved, that could have been achieved with the line
+five only right when, like, I'm just, how do you get that line
+five? Kiran, how do you get that line five? That is the target,
+right?
+How do you get that line five with the middle of the margin we
+are getting after getting the margin right. Oh, okay, okay,
+okay, okay, okay, okay, okay, yeah, got it. If it is not
+there, then linear classifier can do that. Javas, right?
+Yeah, exactly to get it. What we are doing like, you know, we are
+putting two bamboos. Here is the boundary, one bamboo. Here is
+another bamboo, right? So this is one bamboo we are just trying
+to put which is starting here, another bamboo. Now, this is the
+distance we are saying. Middle will be the line which is
+separating, correct? If I don't know these bamboo, how do you
+plot this one? Okay, what it's about? Yeah. Provider.
+This line separating two classes. Yeah, the middle line
+or Yeah, margin is, can we call it a hyper plane? And all? Yes,
+we can call hyper plane, but the value is equal to zero, yeah.
+Okay. Thank you.
+Ram Sharma, please. Once you have done it, please lower your
+hand so I couldn't get understand, like, why are we
+taking the lowest of, I mean the lowest of the distances.
+Because, if I understand, because the distance which we
+are not taking Sharma, the algorithm says it works on the
+distance we are considering it. We are not taking, we are not
+taking decision. This is from the algorithm. Algorithm is
+forcing us algorithm. The mathematical intuition behind
+algorithm is you need to take lowest distance. So we need to
+consider that only if you are changing it, then you are
+algorithm, right? Okay? Because my understanding is because if
+the distance is low between two points, it means they are
+actually close to each other. So yeah, but here, when we say c,
+and this should be in
+C, in same class, I mean, but here we are putting them in
+separate classes.
+So, yeah, good question. Ram Krishna, so, Ram Sharma, sorry,
+if it is something like this, then only we can do separation
+like this, right? So maybe very near, also not a problem. If
+you're more not near, very near, and we are able to get the
+margin, then we'll stop this. We'll go with which algorithm,
+normal, linear classifier. So in this situation, as the margin is
+going down, algorithm will give you less accuracy. Okay, so if
+there is separable distance, is there, then only this algorithm
+works. How do we know that? Clearly, as you said, By
+visualizing, visualizing.
+It is not possible, right? Once we are getting accuracy only, we
+can take a decision correct. So in this accuracy, if you are
+unable to get you know good accuracy in SVM, jump into SGD
+classifier, perceptron, classifier, different
+classifiers, mathematically. Okay, so this is work when, as
+you said, when there are separable distance, Is there
+good distance? Okay, okay, got it. Thank you. Welcome. Hirak,
+sir, what is the if you scroll down, you mentioned the distance
+formula. What was the distance formula between the two line
+that is being used? D1, minus d2, by square root of a, square
+plus b, square.
+Okay. Okay, okay. Parallel lines, okay,
+okay. Distance between parallel lines, not two lines, okay.
+Parallel lines, parallel lines, okay, okay, yeah. Manu Kumar,
+unable to hear you. Manu, your voice.
+Please. Once you have done with your questions, please lower
+your hands so that I can see who is. Yeah, we can hear you now,
+yeah. So I was saying so for example, we have two support
+vector at the one side and another side we have two support
+vector. So in that case, how this equation will look like
+to same thing. Equation will be same. Only. What is the problem
+in the equation? Which equation we're talking about? Left side
+equation,
+like we have taken CD in, for example, there is one more
+point, like K or something here, so it will be like that. Only if
+the K is coming like this. Okay, if the K is somewhere here, it
+doesn't take it, because this cross will not be parallel,
+right? We might have considered B, but the cross, so exactly on
+the same line it is coming here, it will consider not a problem.
+It's not that only one. Sometimes we can have three,
+three similar points, also not a problem.
+Okay, yeah. Jaipal, what's the
+question? Jaipa, w, transpose?
+It's x. Is the vector website. But how do we get that 4w one
+and plus six w2,
+yeah, yes, yes.
+Okay, so actually, J pal, we have two equations, right? So
+one equation is how many features we have, two features,
+right? So w1, times of x1, w2, times of x2, plus one bias will
+be there is equal to zero. This is actually hyper plane, okay,
+okay. In linear classifier, we have now plus or minus, above
+greater than zero, below less than zero. So one is w1, times
+of x1, w2, times of x2, plus b is equal to negative one is one
+line. And w1, times of x1, w2 times of x2, plus B plus two one
+is another line. So in this lines, negative one means where
+the label is. Negative one flowing on this side we are
+constrained. So that is, I took this one as a negative one and
+positive one. The two are of the positive one, right the D and E.
+So that I'm considering this one I'm substituting here. Is that
+clear? But W transpose X plus B, you return?
+Yeah, we can write it. But W transpose X is we have two
+features, right? I'm expanding. That's
+it. W transpose in the sense, if you're writing W, how many W's
+are there? W1 w2
+how many features we have? X1 x2 so w1 times of x1 plus w2 times
+of x2 only, right? We need to have a class, please. Same
+thing.
+Okay, so let us implement that. Um,
+then
+let us implement and see i
+c, 25 SVM today is 01, June, okay,
+justify, okay. So far, we have
+discussed about many classification algorithm but
+only once regression. Once, regression, linear regression
+algorithm. Is there any specific reason we have been discussing
+about more classification algorithm ready? Actually,
+regression is very good question. So for every
+algorithm, there is a regression, is there addition to
+regressor also? Is there so.
+The reason for teaching is regression generally doesn't
+have that much of differences. Only classification scattered.
+Due to that we are going to have more. So we have two kinds of
+regressions. One, the time series, problem stack X and pro,
+you know, that kind of problems. So that is, you need to
+understand the perception of the classification more. Later we
+have, again, the regression also will be included. Okay, so
+because the rhythm is first, basically the more concentration
+on classification to understand the scatter and all those
+things. Okay, good,
+so import pi as NP
+from the scale. Learn.or.
+We can say dot SVM, import,
+yes, we see support vector classifier, okay.
+Now, what is x? Now x will be
+in B dot array of
+sure we have first one is two, comma, three. Next one is
+three, comma, four, I think right,
+four, So,
+4334, 3442,
+everybody remember one, number 1142, okay,
+6264726464736473,
+736-473-6473,
+okay, what is
+why you missed a comma? I missed the comma. Okay, great. Okay,
+thank you.
+Okay, okay, good. Now again, the question comes Habib there. You
+take negative one and you are taking zeros here, right? So
+generally, in classifiers will take zeros only SVM will convert
+that into negative class and positive class understood in
+order to give negative positive SVM internally will convert. Now
+classifier is equal. Tell me what the classifier we are
+using, support vector, classifier,
+then
+negatives
+come again, 00, convert into negative, zero converted
+negative, one convert into positive. Okay, anything binary
+classification, it will convert negative like similar to label
+encoder, it will take care of those things. Okay. So now here
+we have tried kernel is equal to linear. Why the kernel is equal
+to linear? Because I said support vector classifier is non
+linear, also, right? So here we can apply for non linear. So how
+do you apply same algorithm for non linear? For example, if you
+have some data points like this,
+to support I want to convert this, the kernel will be
+poly.
+Okay, next one. If I have something like this,
+call it as RBF kernel. Now we have something like this. What
+is the kernel now?
+Linear. So these things we'll discuss in unit two, this one
+today, just we are discussing linear classifier. Okay.
+Okay, linear. Now there is a value for C. We call it. There
+is a hyper parameter, C. What is C? C, generally, we call it as
+you know.
+What do you call regularization parameter? We call it here,
+okay, when you're defining c value. So before that, let us
+take without C. I'll do that, and then we'll see this c value.
+Okay, now I need to print the vectors, right? So print
+support vectors
+immediately. Raise the hand one,
+right?
+CLF dot,
+support vectors,
+okay, so it was able to give four to six, two only, right? So
+what it is doing now, it is taking these two only it is
+considering as a 4262, and able to draw it line, right? But when
+you say strictly, you need, I need stick separation, then
+we write c is equal to 1000 if you write C, you.
+Okay, still, we are able to get how many four, two and six two
+clear. So
+manual calculations, we consider to draw the line. We consider
+that one also, but even it's internally calculated, but it is
+not showing that one because it is passing through the canal
+only, right? So that is the reason six two is six, four,
+both are above each other. So it is passing that line, it is not
+showing that support vectors clear. So we are able to get
+four two and six two correctly, which is classifying like two
+bamboos, which are classifying and support vector machine is
+going to calculate the margin according to that it is, you
+know, classifying the new data points
+clear. Yes,
+okay. So how we need to identify which can only to be used for
+the given data? It is completely, you know, best is
+like if you are able to visualize sample data, and if it
+is scattered like this, we need to use the kernel. But most of
+the cases, we have some millions of data, it is not parts
+possible to visualize, right? So change the canal and find the
+accuracy. Okay, so for example, in this situation, we can do,
+for example, find the accuracy. How do you find the score? CLF,
+dot score. Which 1x and Y, right? So I'll go to 100%
+now change the camera poly,
+find the accuracy
+one because separable any RBF,
+then no canal, radial basis function, It is
+small letter,
+small letter. Sorry, it's capital.
+Okay. Now classifier score one, so this way we need to
+calculate. So here, anyway, linearly separable. We know the
+data. Just use linear and we see, you know, RBF and poly
+later.
+Okay, so let us take the question, and then I will take
+an example on
+what is in Step C. C is like, you know, to understand we are
+forcing it. That means c is the regulation parameter we are
+forcing to go with the maximum margin. So we are saying that
+you are not supposed to make a mistake we are forcing. So we
+call it as a hard margin. If it is 1000, that means hard margin.
+I'm saying, Okay, you're not supposed to make any mistakes.
+So get the best margin when you say C is equal to something like
+0.1 Okay, soft margin means you can make a simple mistake, not
+not a problem. So when the c value is larger, we are forcing
+the algorithm. You're not supposed to make a
+misclassification. You are not allowed to that. I need a
+perfect separation. That is what your face forcing when c is
+equal to smaller one. We can, just generally. We can consider,
+and you can, you know, take, for example,
+some mismatch also not a problem. We call it okay. So
+that is the optimization that will be done by
+algorithm itself, C, okay, so no neediness. And here, from the
+beginning itself, I am telling you people that
+C is good 1000 okay, sir, if we have 1000s of data points, then
+it is not possible to find whether we should go with That's
+what I said. Manu Kumar, so just use the accuracies. What does
+two mean in printed support vectors? Two mean, where is two?
+What does two mean? Where is two mean? Four. Comma, two and six.
+Comma, two, four and six makes sense. The four and six are
+the ex coefficients. But two and two, I do not understand that.
+Did I say the coefficients? These are the values that we are
+getting right when we have computed manually, we got four
+and six, similarly way with the difference of two between them.
+So I'm just trying to understand what is two data points. Boss,
+they are two are data points. They are not the values.
+Okay. Okay, there are two data points. Now. This is the
+coefficient one and zero. W1 we got 1w. Zero, how much we got
+correct. W2 we got zero, right. These are the coefficient CLF,
+dot, intercept,
+okay, how much we got intercept, negative five minus five,
+correct.
+So these are the two data points, four, comma, two, six,
+comma, two. So these are the landing question, w1, w2, we got
+it right.
+Oh, okay, yeah, yes,
+okay, Prashant,
+yes, sir. Actually, if we're not able to find hyper plane, then
+we'll go, we'll try with Sgt, right? Or perceptron,
+yeah, SPM, if you're not able to find hyper plane, okay, fine,
+yeah, that's all, yeah, Iraq, sir. Is there any min max for
+the c value,
+minimum value, 0.1, that is, we call it as soft.
+Margin maximum value. We call it more than 100 is a maximum
+value, which is known as a hard margin. Okay, okay.
+It is something like you are asking your kid that if you are
+getting something, if you pass the exam, that is well and good.
+I'm not looking for any ranks or anything. And same kid, you're
+saying that, no, no, I you need to get state first, stage,
+second run, go only. So forcing hard margin right. That's why we
+are doing same intelligence we are working for
+algorithm also.
+Harmon, what is the question? Yes, sir. When we specify the
+hard margin, we are forcing them to maintain that right, or
+achieve that Yes. So since we are specifying that, can we
+assume that the score will be always good?
+Yeah, definitely, most sometime. But actually, again, main thing
+is, what kind of data you are using is very important, okay.
+Apart from that, how the data is scattered also very important,
+right? You might have now, from the beginning of the algorithm,
+still, now you got some idea of the data scatter also matters,
+right? Data Distribution also matters, right? So according to
+the data distribution, we have to take a decision, very simple
+till now, whatever you studied, it what you are doing, you're
+trying to implement, take the data, implement algorithms, but
+in real time, when you jump in, the best hidden way is what take
+the data and try to implement different kinds of algorithms.
+And if your richer algorithm is giving the good accuracy, you
+can keep it. That's it. That is the only style
+Correct. Okay, yeah, thanks, come on. What is that Kamal
+question?
+So the usual meaning the optuna or grid search review would give
+you a good suggestion on what the c should be. Yes, yes, yes.
+Grid search here, up tonight, can give us what the good c
+value. Also. Iterations can be
+done Jaipur,
+sir, c equal to 1000 on white port, where we can find let's
+see
+anything you can give. So we can give 100. Also not a problem. It
+is hit and run. So as just now, we are discussing with Kamal,
+right? So this is coming through up to now. We can take it, or we
+can use grids or CV. They can suggest us what is the group C,
+value and canal also, okay.
+Invite body explainers. See where we can see that. See, T is
+mathematically it is
+mathematic. Again, you'll get confused, but okay, I'll just
+show you see,
+okay, so the optimization. We call it optimization of C,
+optimization in SVM is done by minimum of one by two modulus of
+w square. Plus here c and this, you have an epsilon error. We
+call it epsilon so we need to maximize we minimize this error.
+So for there we are hard stopping C will be there. This
+is a inside your algorithm. Optimization will be used if you
+increase the c value, the value of that minimization will be
+means misclassification will go down. If you decrease it, the
+chance of minima. Minima, you know misclassification. So what
+we do, we can say that large is C, punish the misclassification
+heavily so that it can make fewer mistakes, smaller margin.
+Small C is tolerate some misclassification, go with the
+larger margin. Okay. So if I say, okay, there is sometimes
+this one, we are forcing it, okay, decrease the margin, so I
+don't want to do any misclassification. Increase the
+margin. Maybe one or two misclassification, not a problem
+for me. So that way C works. Okay, that is known as a
+optimization in algorithms.
+Clear, yes,
+yeah. What is the question?
+Yes, sir. My question is that you should not scale this now
+here, because the margin will decrease if you scale down the
+data,
+yeah, if the data is not scaled, then there is a, you know,
+actually the best accuracy is some algorithms they need to
+force them. Some algorithm they don't face decision tree even
+doesn't force. But if you are applying
+processing technique of standard scalar that is well and good,
+okay,
+okay, sir, yeah. Let us take an example of Iris data sample. We
+have seen a simple one, right? Let us implement an Iris data
+sample, SVC and find the accuracy. So import.
+What do we do? Pandas as PD, or shall we take diabetic iris or
+diabetic? Which one you want? Diabetic kinetics, diabetic
+diabetic, diabetic diabetic, okay, do.
+Import
+and
+import lumpy as NP,
+import matplotlib from SK learn dot SVM, import SVC from SK
+learn, dot, model, underscore, selection,
+import,
+which one
+train, underscore, test, underscore, split from skl,
+what else we need? Anything?
+Okay, metrics,
+import accuracy, score, for example. Anyway, score is
+working for us. Okay, what is df? DF is equal, PD, dot,
+read, underscore, CSV.
+What's the file name? Diabetic, dot, CSV,
+okay, DF, dot follows,
+then we have x as DFO. What are the things we need to consider,
+starting from pregnancies to
+age, we can simply say, drop dot outcome, sir, that will be easy.
+Yeah, that way. Also we can DF dot drop outcome as x and df of
+x, that also not a problem.
+Y is equal to df of outcome, so we got already trained displayed
+we can take up to
+0.2
+random state is equal to give something.
+Okay, we got extend then create object. How do we create object?
+SVC is equal to SVC.
+What is the kernel?
+Can on,
+then SVC dot fit
+X train and y train. It
+will take a moment to train optimize the algorithm.
+Okay, now want to find SVC, dot,
+score,
+X, underscore, train
+y, underscore, correct.
+S VC,
+yes. VC, okay, how much accuracy we got,
+okay. Now let us increase C to 1000 some value rigs. Let us
+try, if it doesn't changes
+or not, check the Score on test data. Yes, it will take check
+that. Okay, we'll check that
+so see when we increase c value, it is how much time it is
+taking. It's learning.
+Go on X test and y test. Let us see
+it
+is something like they're forcing SVC to get first rank.
+So it's going on, learning, learning, learning might have
+taken 1000 100 is enough. It's just
+okay. I
+in what
+scenario anyone will give a smaller
+value for CSV files. So your voice is breaking for me only
+for everyone. Ram, Krishna, okay,
+let us do one thing. It's taking a lot of time. Come on. Come on,
+stop.
+We'll take, uh, around 50.
+Okay,
+this is not defined, okay, it forget everything. They started
+the notebook Anyway, okay,
+sometimes your collab notebook also playing. You know, they're
+giving free free of free of cost,
+so sometimes it is taking time. More
+Yes, Aish, meanwhile it is processing. Let me take your
+question. So, sir, we have done SVC dot store without doing a
+pre SVC dot pred or the C.
+LF, dot trade. So is
+this function valid?
+Siring them. Ayush is the first time I'm using score in the
+class. No, no, no. I'm just
+confusion. No, I told you, right? White bread, instead of
+doing vibrate, we can use score also, right? The same thing.
+Okay, okay, so miss that part? Probably, yeah, yeah, no. So
+from the beginning, we are using score instead of doing pipeline.
+Okay,
+watch it is done.
+And two more questions, instead of CPU, let's use GPU or TPU.
+Venkatesh, this is a classical machine learning. GPU doesn't
+support, okay, if it's a deep learning, if it doesn't support,
+if you're adding GPU doesn't made increase, okay, increase
+the speed of the algorithm.
+Neha, what's the question?
+Neha, dr, Viti, can you like, practically explain like, small
+c, large C, what are the trade offs like? Till this is running
+practically we cannot explain it is a simple one, okay? It is
+like a wider margin. For example, like small c focuses on
+the wider policy. Small C means wider margin. Big C is lower
+margin. That's it. But practically means it's not
+possible. I have to do the complete algorithm, hands on,
+completely right? Know that what? But what is the trade off?
+Right? It's taking long. That means not a it's not taking
+long. Actually, it won't take for 50, this much time. The
+problem is the CoLab, because using cola for a long time,
+right? The caching also the problem. Okay, so from the CoLab
+notebook, if you are using it, will work. Okay, just increase
+the value of 5040, something like that. Check it. Okay, got
+it. Got it. But the Can we say that large C means it's trying
+to overfit, because it's trying to train on all the chance of
+overfitting? Yes, the chance of overfitting. So at that time,
+what we have to do again, we have to just minimize it and
+check with the test accuracy. So if your test accuracy, train
+accuracy is same, no chance of overfitting, then not a problem.
+We can keep it as it is. If it is, you know, when you are
+forcing hardly, it is training good on the classification, it
+is not doing good, then it is a over fitting chance, guys. So
+keep it minimum values. Got it?
+Yes. Ramesh, Babu, what is the question? Yeah. So checking
+Score on test data, it can give us the accuracy rate of the
+model, but we are also checking on the train. So does it have
+any use case
+or advantage? Do we use it advantages?
+How well it trained on the data? So we are giving the same data.
+Okay? It's something like his buttified, right? So reading
+same numerical values and checking that also is working
+fine or not, right, somewhere, sometimes that's also a problem,
+right? So that's what we are trying to do. Okay? So we
+typically use both, right? First, we check on the train,
+and then we go to test. Yes.
+Okay. Not similar,
+sir. Good morning. My question here is, is SPC SVC or SBN is
+sensitive to outlet, or there is no concept of outlier due to
+this clear margins
+that we are creating SVN
+SVC is sensitive to out layer, okay. See, all the algorithms
+are sensitive to outliers. Simple,
+okay, if you have an outlier in your in data, definitely, any
+algorithm you're implementing away, it is going to be a
+problem in the accuracy, okay, especially as we see, we cannot
+say this algorithm is, you know, problem for outlier. But
+distance matrix, when you are, whenever the algorithm, distance
+is there out here, if you do, if you have an outlet, there is a
+problem. Okay, so apart from that, if it is not a rule base,
+there is a chance of good. You know, sometimes out layers are,
+as I said, No, sometimes they are good, sometimes are bad. But
+anyway, when you're already in pre processing, you're applying
+removal of outlier eyes. So no problem.
+I read somewhere that you know some of the algorithms are
+punishing more,
+some for the outliers. Okay, that is what see, nothing. Some
+algorithms punishing, okay, but we are not getting at outliers,
+algorithms right? Been before only we are doing pre
+processing, correct?
+Okay, yes, yeah. So then if you don't do pre processing,
+definitely there's a problem. So that's the reason we are doing
+right.
+Okay, yeah, okay, thank you.
+Okay. Collab. Link, please. Anyone? Okay, are we taking a
+break? Yes, we are taking a break. Now it's 1040 we'll be
+back by 1110. Okay, so if anybody, if you don't have a
+question, you can take a break and we'll be back
+1110. I just wanted to
+let
+Yeah. I mean, what's the question? And not a question?
+Just wanted to let you know. By mistake, I pressed run in your
+notebook. Instead of creating a new one. Just wanted to let you
+know. Okay, okay, no, it doesn't have Okay. So do you have? I
+have given editing option for you. Okay.
+I was planning to create a copy, but by mistake, I created change
+it to and then c equal to 10, and then we know we cannot run.
+We cannot change that one. You cannot run. But I didn't have a,
+you know, I have just not given an edit option, right? How we
+are getting this? Maybe mistakenly. Have given editor
+No, they can only, yeah, okay, oh, okay, yeah. Doesn't have an
+impact, okay? Netaji, what's the question? Hi, sir. Let me have
+somebody Yeah,
+yeah. Go ahead. Scaling data can affect the scores here,
+definitely, so we need to try. Okay, sir. After break, I will
+share my sketch today, I will created some
+break what you will share? You'll share the notebook or
+questions here, questions here, questions you can ask, but you
+can share the notebook after the class. Only. Okay, okay, so
+thank you. Yeah. Next one. Jaipal, what's the question?
+So if in real time,
+if they give any problem statement, did they mention to
+use specific algorithm to use or up to now only,
+or any
+in requirement, they will keep mention, use this algorithm, or
+we have to go for our own way.
+Okay? If the problem is coming from your senior architect, he
+will suggest you this algorithm. Otherwise, you have to run your
+own. Okay.
+Okay, sir,
+yeah. Srinivas, yeah, sir. Small question, we are trying to the
+examples on Iris data. So why did we try to real time data,
+like NSA, any one month of data, trade data, yeah, yeah, you can
+take it, not a problem as classification, right? So NSE
+one month data is regression comes in time series problem, we
+didn't discuss that. We cannot use it. Yeah, please. Can type
+so you can try that one. We can show yeah, these are what's the
+question, is that? So, one question, one of topic,
+question. So in our code examples, we use SQL and library
+most of the time. And there are these other libraries, like
+TensorFlow pytorch, and also which one you personally use for
+most of the training topics.
+These are, we are into classical machine learning. We are talking
+about deep learning frameworks, TensorFlow, Keras and pytorch.
+So when you start deep learning, those we'll discuss. And this is
+SK only, I cannot implement TensorFlow in classical machine
+learning. Okay, okay, okay, frameworks from deep learning,
+okay, I see. Okay, yeah, when we discuss deep learning, we go
+with Python, TensorFlow, Keras and all those things.
+Okay? Netaji, you have a question or previously, raise
+the hand.
+Harmantha, just give me three. Big Man, sure,
+yeah, I'll take it later. Okay, just tell me what's the
+question? What's the question? I just want to understand more
+about see, since we are learning most of the algorithms, we may
+not get a chance to apply them in our at work, right? So when
+it comes to interviews and all right, what is, what are the
+expectations? Just want to know on that line, sir. Okay, Armand,
+so once we are getting into deployment stage, we'll discuss
+those things. Okay, so first will the flow will be first
+understanding basic algorithms, then we'll get into those
+things. Okay, yeah, yeah. So we'll Back by 1110,
+okay, I'm
+okay, shall we start?
+Yes, sir, yes, sir,
+sure. Okay, good.
+I already joined Aish.
+Okay. What is this yesterday?
+Yeah,
+21
+for hackathon. Okay,
+okay, good. Let
+us start.
+Next insect, interesting algorithm that is, and we call
+it as a ensemble methods and bagging.
+So before the break, we have seen an algorithm that is known
+as support vector machine in that we have discussed Support
+Vector classification, and it have a support vector regressor,
+also to
+regression and classification can be done okay.
+Now,
+for example, like we have discussed about a linear
+classifier, and then we have discussed about different kinds
+of SDD classifiers and those things, perceptron model, which
+is classifying. So next we said that those classifiers some the
+chance of misclassification and the learning is not that proper.
+So then we used a support vector machine classifier. So there, by
+using a margin, most of the misclassifications are avoided.
+This is what we have seen now. The next technique is ensemble.
+We call it as a name ensemble, and symbol in the means adding
+more than one algorithm together is known as ensemble.
+Okay, so bagging.
+We have two things, bagging, bootstrap aggregation. We call
+it. What do you mean by Bootstrap? Bootstrap in the
+sense random sampling with replacement from training data
+to create multiple new data sets. So we can say that random
+sampling is two
+is random sampling,
+random sampling
+with replacement from training data. So consider this is your
+training data. So what you are going to do, we are going to
+take a random samples from this training data and we create some
+multiple new data samples that is known as a bootstrap. Now
+aggregation means after that, we do the predictions, and from
+that prediction, we are going to get the average of whatever the
+prediction is, the highest prediction that will be
+considered. So Bootstrap is sampling correct. Now consider
+like this. I have some data.
+This is your sample training data I'm creating. How many bags
+now, one bag is d1, second bag is D, 2/3. Bag is d3, so how do
+we create the data we have like, you know, we select some random
+samples from here with replacement, with replacement.
+In the sense, for example, I'm selecting 60 samples from here.
+Remaining 40 will be replaced with this one. Okay, the
+repeated one from 60 only, it will take it. So how many unique
+samples we can get? Around 60 to 6570 65% something. We are going
+to get unique samples remaining on with repetitions. Okay, that
+is the bagging. We call it. Then after that, we are going to
+apply one classifier on this bag, another classifier and this
+bag, and another classifier on this bag, three bags, we are
+going to do the classification. And each test sample is
+classified by whenever you are giving a test sample, it's going
+to classify by this one, this one, and this one after that,
+what it is going to do, average that. So average will be
+considered, and from that average, it is going to give,
+take the final decision. So this is what a simple
+ensemble technique is going to, you know, work. So creating a
+bags is the first step. Is clear now, creating the bags
+understood.
+Any questions,
+background, mixed,
+raise your hands. Come on. What's the question? Come on.
+You spoke about replacement. What? What is the idea behind
+having duplicates in your subs?
+I'll tell that. Okay, just first understand the bags, how
+created. What is the idea replicating? We'll discuss now.
+Algorithm, okay? Prabi, yeah, maybe I missed it. So what? What
+is the replacement all about? Are we taking less number of
+samples from the training data, and then regarding them or or,
+okay, please, replacement. Okay. Naveen,
+so the same question, sir, regarding the replacement, what
+purpose of replacement,
+and how are we doing? Okay, so again, the replacement Same,
+same question, sir, I didn't understand the replacement part.
+Replacement part. Manoj, same question. And so, as you
+mentioned, that 60% will take the test data, so everyone have
+a 60. 60% that was 40% will be a, 20% will be a,
+all three may be a similar 40% may be a.
+Ah, unique, that is a correct No,
+okay, okay, let me do one thing.
+So if you can take some example, one to 10 and say, if you can
+then take this, this example, okay, I'll do that.
+Okay, let us take, I have some sample data, okay? And feature
+and the class y, for example, 2457,
+and let us construct this blue two belongs to one class and
+this belongs to another class. This is sample data, okay, so
+now like this, we have 2457,
+okay, it's not 25, 2457,
+samples we have. First I need to create a d1
+Okay, so how the d1 is created? Now it is going to select
+randomly, some data is chosen. So for example, it is going to
+take two, four, again, something two five, something like this.
+Okay, one, b1, then
+it is going to consider the second. Example, b2,
+okay. So
+when it is select, 2425, for example, that means 0123,
+so three.
+Okay, so now that samples will be selected for any with the
+index, since it's selecting, for example, 2425, any index number
+it is selecting. So we got some numbers here. 2457, something in
+b1,
+and d2, maybe you get 4527,
+or seven, two, something like this. D3, something like this.
+So this four is repeated two times here, maybe two is
+repeated two times here, like that. Okay, so there is a
+repetition of the data. So it's not going to take complete, you
+know, data samples. It is going to consider some of the data
+samples from that unique with the probability of not selected.
+Is there? Okay, using that formula, it is going to select
+that is known as a aggregation. So technically, if you think of
+let me, how is it Sorry to interrupt? So how is it
+different from K fold that we discussed careful also we were
+having one as a test data, and others are the testing data. So
+how is it differ from the key fold that we did?
+Okay, okay, let me. Let me first finish this one, and then I'll
+take up the question. You'll get more clarity on like, you know,
+how algorithm is working. Okay, sir. Okay, so first of all, we
+got the classifier like this, and we are implementing average.
+So bagging our bootstrap aggregation means we are
+reducing the variance in the prediction function, reducing a
+variance in the sense that is where we are trying to take the
+replacement. If you don't take a replacement, what happens that
+way? Completely they are, very simply, highly correlated with
+each other, because same data is that so that variation, we need
+to do it. So there we use the technique known as a beat strap
+Bootstrap. What is a bootstrap? Now, randomly, we are drawing
+some of the samples with displacement with from the
+training data. So each sample will the same size as the
+original training data set. Okay? Then, for example, in
+original data, trained data sample, if you have 100 samples,
+that means we are going to have same 100 samples in bag, 100
+samples in bag, two like that, same size, okay, as original.
+Then a committee of classifications means we are
+going to have a committee of classifiers. We can everybody.
+They cost their vote according to the vote, the prediction will
+be done. Okay? So one of the algorithm we can use is the
+ensemble technique. We call it as a random forest classifier.
+We call it so random forest classifier, like in yesterday's
+class, we discussed about decision tree classifier, right?
+Similar to that, we are going to use the Random Forest
+classifier, which is bunch of trees. They are putting
+together, something like trees, and then it is going to do the
+classification. So every tree is going to give their own, you
+know, classification answers that will be considered. Now,
+real bagging. How bagging happens? I will give you with a
+simple code sample that we solve all your all your queries. Okay,
+so first, let us start with new notebook. So a
+Okay, lot of questions when I say bag immediately, lot of
+questions come explain, replacement bag means
+replacement. Bag replacement, okay, problem, we'll see bag
+replacement, everything.
+Anyway. Anyone with the link, copy link. Done.
+Okay. Now let us connect the notebook, and
+let's take which data,
+diabetes data.
+Most of the time we are saying we are taking Iris right so
+sorry, it is.
+Let us use diabetic state. I
+Okay,
+import pandas as DD,
+import NumPy as NP,
+then
+from
+skill
+and dot order, underscore selection,
+brain, underscore test, underscore split
+is just Sir,
+can You please rename the file?
+Yeah, I'll rename Jessica.
+This is C 25
+and sample,
+okay, input, train, test,
+score, split.
+Now we need, for example, a classifier
+from Sq, learn,
+scale, dot ensemble,
+port, tagging, classifier, so
+now DF is equals PD, dot read underscore, CSV. What is the
+file name that is dot, CSV file.
+Sorry, disturbing. Uh, can you take that? This data? Uh, nse
+data, I told you. No, no, boss, no, I cannot take let me explain
+first. Then you can try with that, okay, first. Let me
+explain the concept first. Okay, that is a not a classification.
+That is a time series problem. And I see data you cannot
+integrate any data, okay? That is not a degree. That is a
+regression and time series problem. It is extra predicting
+the stock prices. Here we are talking about a classifier,
+clear,
+okay,
+yeah.
+So next we have DF, dot head.
+We got pregnancy, glucose, blood pressure, skin thickness,
+insulin, BM, uh,
+diabetics, agent, outcome right now, if you see DF dot shape,
+how many samples we have, write it down,
+diabetic
+dot CSV, there are 768, samples with uh,
+nine,
+columns, right? Okay, first thing is done.
+Now define what is x and y.
+What is x now d of dot
+columns x,
+x will be okay,
+and
+y, that's it, x and y, we got it correct. Now split the data x,
+underscore, train X, underscore, test y, underscore, train y,
+underscore. Test is equal to train underscore test under X
+and Y, test size.
+Test underscore size is equal to, let us take 0.2 random
+forest is equal to same budget to some number.
+Till now, I didn't apply any bagging or anything. This is a
+normal, classical machine learning program. Okay, now I'll
+take one of the algorithm just now we discussed. That is from
+SK learn,
+dot, SVM, I import SVC. This is also done.
+SK learn, typo, okay,
+clear enough. So till now, no questions. Very simple, I did
+it. Now I will create a bagging classifier. CLF is equal bagging
+classifier, okay. Base estimator means I'm importing SVC, right?
+SVC I want to. I.
+So I'm saying SPC is the base estimator. Number of estimators
+means I'm going to take here kernel is equal to what is the
+kernel for? Till now we discuss which one linear only, right?
+Yes. Linear number of estimators is equal to 10. Let us change
+random something like 21 randomness. Okay. Now after
+that, CLF dot fit, X, underscore train, CLF CFL has changed,
+okay,
+CLF dot fit.
+We can do it. Okay.
+X, underscore train.
+Then, why underscore train,
+base estimator, oh, sorry.
+Okay, so
+this line says that I'm creating, how many bags? How
+many
+bags I'm creating?
+10 bags. Okay, 10 bags I'm creating. Then model is trained
+on 10 bags. Now, what is there in that 10 bags? Let us see.
+Okay,
+I think something is happening. She with my notebook. Why it is
+taking this much time? 10 bucks itself.
+Next time onwards, you need to clear the casino. Yeah, clear
+the cache. That's problem. Anyway, luckily, it's got it.
+Okay,
+okay, so actually it comes okay. Now we got bagging classifier.
+Estimator is SVC. Now let us see how many estimators are there?
+CLF, dot
+estimators.
+When I print, you see 1-234-567-8910,
+estimators, right? Random it is taking a randomness is taking
+some number, any number it is taking now.
+Now let us take if you write
+CLF, dot
+estimator
+dot samples, to look into.
+So these are the samples we got it correct. So like how many
+buckets we got it now,
+10. This is the first. This is the number of these are index
+numbers of that. Second array, third, core, 567899,
+10,
+correct? We got 10 samples. We got it
+okay. Now the question is how it is creating the samples, and how
+many samples it is showing us. So let us find length of any one
+of the estimator. So when we write this one of zero, which
+bag I'm considering,
+which bag I'm considering, first
+one. Okay, first back, because you know that is in the list,
+first bag, right? Okay, first bag. I got it now in this first
+bag, if I write d1, is equal to length of this.
+So we got first bag, and then
+length of d1, will be
+sorry already, length is there, right? So just print b1, b1, how
+many samples we have, 614, correct? Now, if you write as a
+set, set means what happens it is going to remove duplicate
+one, yes or no, it
+will
+remove that. So when I say set of b1
+sorry,
+so this one let us take this one.
+Should
+so
+length of set
+how much we got, 395
+okay, so that means there are 395
+duplicate values. Are there? Sorry, 395 original values are
+there? Correct? Six, seven and 14, minus 395, with a duplicate,
+right? Sir. I.
+So that is the duplicate values we have. So original values with
+without repetition. How many we have, 395,
+suppose if you want to get the duplicate one, so how many will
+get Now, duplicate
+one means
+how many we get, 614, minus 395,
+okay, now the formula is actually how it is going to
+distribute. There is
+probability formula which is
+not present. Probability of not present will take it that is one
+minus one by n to the power of n, this is the formula which are
+not present. We call it okay. So how many different values will
+be there? So what it is going to do, according to our
+understanding, if you keep this value, we are going to get Okay,
+one minus
+one divided by totally how many samples we have, 614 correct.
+Then
+power of 614
+so how much? What 36 right? So that means we have
+36
+percentage is duplicate,
+and remaining 36 64% or without duplication. So original data,
+if it is 100 samples, it is having so it is collecting
+randomly. How many, 64 samples as connecting and to make it 100
+remaining, 36 samples, it is repeating with replacement like
+this, so like this. How many bags it is creating? Bag one,
+bag two, back to back 10 it is creating. Does that is that
+clear now?
+So in bagging classifier, the percentage is approximately 64%
+original data, remaining 36% what it is doing. It is
+repeating, replicating that so randomly, it is constrained.
+That means, if I have some 100 samples here, bag one is
+consisting of how many original samples from here randomly, 64
+samples. And then it is adding the same 64 it's taking randomly
+and repeating, making, taking as 36 total this bag is how much
+100 now, if you compare this original training with this bag.
+How many similar samples are there? Here, randomly, 64 is
+similar samples, right? Remaining 36 duplicates from
+this 64 sample. Now, when it comes to back to again, this
+randomness and this both are not same, right? So randomly. Now it
+is selecting another random 64 samples and 36 duplicate again,
+randomly selecting another 64 samples and plus 36 duplicates
+like this. How many backs we are creating now? How many bags are
+creating? 10? Okay, 10 box we created, okay, once you create
+the 1010 backs, correct?
+So
+now, already we did the Fit process. Correct in fit process,
+what is doing? Now it is applying SPC algorithm. So each
+and every bag which algorithm is applied SVC. So on this one, SVC
+applied, second one SVC applied, third one SVC applied. Now let
+us find the accuracy. What is the accuracy? We can just write
+Y, pret is equal to
+classifier. Dot predict
+X, underscore, test, right now, if I want accuracy score from SK
+learn matrix accuracy score, then accuracy score is okay. Why
+underscore, right and why underscore test
+how much I got now,
+18 78%
+accuracy, correct,
+understood.
+So this is the average accuracy of all the 1010,
+bags that we created, right? The 10? SVC,
+yes. So here we got the accuracy of SVC, SVC, SVC accuracies. We
+got it and the average accuracy is given that is what. Now the
+bagging is clear. Now, what? How the bag happens? Clear.
+Okay, okay, let me take the questions now. Now you got the
+code sample. Okay? Vinay, what is the question,
+sir? Like in our previous sessions, we wanted to remove
+the duplicates, and now in this approach, we are introducing
+duplicates. I just wanted to understand thought process a
+little bit on this. Okay, so actually, this technique is
+known as a bootstrap when i Okay, so we are not completely
+duplicating 5050, percentage. Okay, so. And another thing is
+the bag one with some repetitions back to with some
+reparations. With that we are trying to find the accuracy. So
+this technique in mathematics, we call it as a bootstrap
+technique. The same technique is applied in the.
+Algorithms. So if you are considering only one algorithm,
+then it is a problem. But due to the average of something, you
+know, 10 or 20 bags, then this is something like you are trying
+to make an understand algorithm with most of the data samples.
+Okay, that is the basic difference. Yes. Kishore, so
+like follow on question, sir. So let me what we are trying to say
+is, if we are using ensemble technique, we can have
+duplicates, but if you are having a individual, linear or
+logistic, we shouldn't have the duplicate. Is that correct?
+Perfect,
+correct? Sure. So the question on the same bagging, sir, as we
+are only taking 64% of the samples present on each bag,
+right? If there is a chance any sample is left from the original
+across these 10 bags,
+there's a chance maybe
+so if you're getting that's what 78 percentage we're writing. So
+you have to increase the bag size. Estimators, you have to
+increase, okay, yeah.
+So
+we are selecting 64 samples from the main samples,
+100 random samples from the the sample set. So yes, we'll have
+100 random samples taken from the main parent bank,
+while we have to go through 64 and then a percentage of 6436
+you know that percentage I'm unable to appreciate
+that's mathematically. I have Susan right for this. We got 36
+sub other algorithm samples may be different mathematically. We
+got how much here when applying, not selecting Formula One minus
+one by n Sam, so from this we got how much 36 percentage,
+right? Okay, so that is the reason we got 30 some other
+maybe 32 will commit, okay, you'll get 32 for example, in
+the in this example, we took how many, 1234, sample, right? What
+sample now? What is the percentage? Now, tell me, one
+minus
+one over four, four raised to power four, then to the power of
+four.
+How much we got 31%
+right? So this, according to mathematics, the internally is
+going to calculate number of samples according to that split
+happens.
+Okay, okay, right. Okay, thanks. Yeah, great. It is not fixed
+like 6436 for our for this 768, we got right. So that's we have
+to consider. Okay, okay, Santosh, sir, the concept is
+bootstrap aggregation, right? So in a year, aggregation means the
+last score itself is the aggregation, or last score is
+aggregation. Okay, thank you. Yeah, the
+sizes are different. Any reason less bag size. Okay. Ramesh,
+question is, there are 768 samples? Boss, 768 I did train
+test speed, right? 0.2 I'm taking 0.2 keeping testing 80%
+I'm taking as a training so 80% of 768 is 614, clear. Yeah,
+Aditi, what is the question? Aditi,
+sir, already, with 100 data, we would have probably trained the
+model. Now, taking these subsets and again. So with subsets, we
+are not trained. Just once you train a data with the 100 more
+100 data sets we are then the subsets we are using just to
+revalidate the results are, is it? How we interpret it?
+No. Aditi, we are not taking 100 for training. Okay. Bootstrap is
+something bagging. What it is doing. It is taking from the
+100, creating the bags, and each and every bag that particular
+algorithm is applied. If you are taking 100 applying, it might
+have SVC or it might have a decision tree algorithm done
+right. But here not that that's not the concept bootstrap
+concept is it is actually ensembling. Ensembling in the
+sense how things will work. You have to take, for example,
+one algorithm, combination of two, more than two algorithms
+together. Okay, then applying under the data. So what we can
+do, if I take 100 similar one, if I take 100, 100, 100, and I'm
+applying same algorithm, score will be similar. There is no
+meaning, right? So bootstrapping technique, what? What it says
+is, first of all, select around, like not selecting percentage
+your kind. For example, I don't want to select some of the
+samples. Okay. How can we do that? If you have 100, what
+should we do? One minus one by 100 to the power of 100 that is
+going to give like, how many samples should we not select?
+So, for example, we got around 36 percentage you you should not
+select. So remaining 64% we are selecting from this data. Okay,
+once you are selecting 64 percentage, 64% again,
+randomness like this, and after that, top of them, everyone,
+individually, the algorithm is applied. Score will be
+calculated, and the total average score will be given,
+understood.
+So that means we are not training the data with the 100,
+we're training data with the sub.
+Which we are creating, exactly, okay, okay. And so then we are
+saying that, let's say if, in this case, we have
+got 10 samples, 10 data sets, then you are saying we, it might
+be that we have two algorithms. In that case, we'll, let's say,
+probably use five sets to train the first with with the first
+algorithm, and the remaining five with the next algorithm. Is
+that correct? Also not, yes.
+So I got the technique samples, yeah, but still says the the
+idea behind it is little bit unscaleable. Maybe as a class
+progresses, we'll understand probably more. Yeah. So this is
+the actually bagging. Is this much only this is the bagging,
+okay? Bagging is a technique, nothing any you know, something
+like you know, any science which you are unable to understand.
+Everybody, every algorithm, they have their own mathematical
+intuition, right? So bagging is the concept. What they are doing
+is so we are splitting into some bags, individual bag, we are
+applying an algorithm, same algorithm, then getting average
+score. So that we say that every,
+for example, say that every part of that 100 samples is
+participating, understanding will be more. That is what the
+main lines idea of bootstrapping. So from that
+only, they derived the algorithm known as a random forest
+classifier. So there we are having simple which one, only
+random addition tree will be considered. But in the bagging
+classifier, you can take any algorithm in that as we can, we
+can apply SVC, we can apply logistic regression, we can
+apply anything. Okay,
+clear, next one, Vishnu,
+Dr habid, when you have, when we have put the things in a bag and
+we are adding duplicates. So
+don't you
+think that, can we say that each bag is skewed based on the
+duplicates
+your voice is making? Mr. Priya, you are not clear. What is your
+question? Clearly? Can you just repeat the question, please? I
+mean, the bad will have when the bad has duplicates. So that's,
+does that mean that duplicates makes the bad skew?
+And I mean,
+back skew,
+skewed. Skewed means Yeah, biased by estimate to say, Yeah,
+but we are considering average, right? Krishna Priya, so that
+bass will be eliminated. That's what repetition is done. So why
+do we even do this reputation? Is there a criteria when to
+choose this? Like, because when we have less data, we choose
+this to have duplicates and make make sure that it is trained
+properly. This is completely there is no idea, okay, this is
+completely with experience. And another thing is the different
+techniques, actually mathematical techniques. We are
+using algorithms, right? Why? Means, in this technique, using
+these duplicates, what happens is making the algorithm learning
+more. That's what the concept of bootstrapping, okay? So another
+thing, avoiding most of the mistakes. So when you have a
+some mixed samples are there, there is a chance of decreasing
+the accuracy and the chance of increasing the accuracy. And
+they say that if you are directly taking 100 sample and
+one algorithm, if you are applying without shuffling, and
+when you are putting into the production, when the shuffle
+happens and new data samples come in, there's a chance of
+error so that average can be found by using the bagging
+bootstrap technique. We call it. So where this bootstrap
+technique actually mathematically, when you are
+implementing the chance of overfitting will decrease,
+actually, that is the main idea behind bootstrap techniques. So
+whenever you think that an algorithm is mostly overfitting,
+then use the bootstrap bagging classifier. Then that is going
+to avoid the overfitting. So main idea implementing bagging
+bootstrapping is just to avoid the overfitting concept. That's
+it. So I have one more question, Doctor. Day one, we learnt about
+K fold, where we take a test and leave the rest for testing. So I
+think it's similar to that, but just that we are doing bagging
+and adding duplicates. It's similar to that, but only that
+is completely in a bag. But here separately, we are training on
+the that's completely trained on single algorithm. Here, separate
+algorithms can be combined together.
+Got it. Thank you. Similar concept is similar here, yeah.
+Ramakrishna, yeah. The two questions are big. The first
+question is, generally, we decide number of backs, right?
+Is there any formula? Is there anything to decide how many bags
+I need to for depending that, what exactly formula behind
+that? 10 or 20 random Ramakrishna, Ramakrishna, number
+of bags can be done by testing only after accuracy. If you are
+not getting good accuracy, change that to 20 to 12.
+Anything clear to start with? Is there any basic formula to start
+with? Some values like any? No, nothing.
+Yeah. The second is okay. Second question is you are saying
+Right? For example.
+Of the 10 bags. I mean, we can use a different algorithm.
+Doesn't mean that we we train the on this, on this different,
+not same algorithm. Okay. And bagging classifier, all the bags
+must be similar, okay, once it is done, okay, after that, we
+can create a another, another algorithm. We can apply last
+aggregation on that, like that, if you want, say
+we'll apply the different differences in all the bags. No.
+Boss, wrong understanding all the bags. 10 bags will take only
+one algorithm, okay, if you want to give different algorithms on
+10 bags, then it's a voting classifier, not bagging
+classifier, okay,
+okay, that's a different, completely okay, yes. Completely
+different, yeah. Okay.
+Next question,
+Dr Havi, I want to understand. So can I go or is it, yeah?
+Please go ahead. Yeah. So, how is the aggregation happening? Is
+it like taking the majority from all the bags, or is it something
+we can control?
+No aggregation in the sense here, Bootstrap is distributing
+the data into 10 bags, for example. Is the bootstrapping
+aggregation in the sense, result aggregation, like, like, all
+result aggregation. Okay, yeah. So end of the day, okay, let me
+okay. Let me take these two questions and then I'll explain
+in more detail why we need reputation questions, all those
+things. Questions, all those things. Okay, Ayush, what is the
+question? Aish, you have done with the question? Praveen, I
+have anything? Yes, yes, yeah, sir, same technique is
+applicable for regression
+also, sir, yes. We put the same regressor. So inside, you know,
+yeah, bagging regressor, inside, you have to use regress
+algorithm. That's it Okay. That's it alright, yeah,
+Kalyani,
+yeah, what's the question? Yeah, I can hear you. We have total
+768 samples, sir, in one bag. 614 samples are in one bag.
+There are 614 samples. Okay, in in second bag, also that 614
+samples are going and it is checking and it end. This
+process is going throughout the 1010, bags, or what, 614614614,
+yeah, okay. Out of 768 samples, each bag is dividing with 614,
+and with the same samples, right?
+The bag train. Bag is consist of 614, samples. Kalyani, okay,
+764, is total samples. We are splitting into X ray, 9x, test X
+train consists of 614, samples. We are taking that, creating a
+bag with 614, samples. There 395, is the without repetition,
+remaining, sorry, with repetition. 214, is with
+repetition, total will become how much 614, like that
+understood, yeah, but what about the second back set the same
+614, samples. It is randomly. It is selecting. Random selection.
+Is there, right? Okay, okay, out of six, okay, out of this total
+samples, it is randomly selecting and it is creating
+bags. Exactly. Okay, yeah, done. Yeah, yeah. Kamal, the last
+question please.
+So you're creating a 6436
+that means 36%
+average, something like that, 36%
+is duplicate values. Yeah, no, that means 36% of the original
+data set is also not available in the back. Yes. So is that
+used in validating that run itself? Meaning, no, no. Is it
+of any consequence to the No, no, we don't use for testing. So
+let me just explain you the concept behind bagging. First of
+all, lot of question is,
+what does bagging will achieve? Okay, question comes in saying
+that the lot of repetitions are there duplicate values we need
+to eliminate as a data scientist. Okay, bagging goal is
+the goal of the bagging is to reduce variance in the model.
+Is the first target of the bagging classifier technique.
+Okay. Second thing, what is media variance? Variance means
+model will become sensitive to small fluctuations in data.
+Okay, so model will be sensitive. Model will become
+sensitive
+when small fluctuation in the data, right? For the small
+fluctuation also it is sensitive. So this is a concept
+of overfitting, right? So if you change little bit of data, model
+will not give you correct one. So if we train one model on
+this, you know, without any reputations, what happens, there
+is a chance of overfitting. So now coming to bagging, what it
+is doing. Now the bagging what it is doing, bagging is building
+many diverse model slightly on different data, then compile.
+And stable output. So bagging what it is doing, it is taking
+creating many different models. How many models it is creating
+now, 10 models, and little bit slightly different, right? So
+randomly it is selecting means the slight difference is there,
+so that will understand that in the future, if there is a
+fluctuation in the data, how it is going to behave, that will be
+controlled. So we cannot take additions directly that okay,
+model we got 98% accuracy. We can go with the production
+bagging. Is the next alternative, which is going to
+give us the real fluctuation, how things are happening when
+you fluctuate the data samples here and there, how it is
+understanding. Okay. So next thing is, how do we create
+slightly different data? Now, this is a question, right? So
+simulate multiple data sets from original data. Simulate multiple
+data sets from original data. This is what we are saying,
+different data samples. Okay, since we don't have multiple
+data sets, what we do sampling with replacement technique. We
+use it. Sampling with replacement in the sense, what,
+take some of the samples and make it equal by replacement.
+Take some of the samples make equal by replacement. So then
+the question is, third, why with replacement? Why don't we use
+without replacement? Replacement is going to give you know bias
+towards the you know that particular replacement. That is
+a question. Okay? If we sample without replacement, every
+sample will be identical. This is identical, this is identical.
+This is identical. Identical. Applying an identical getting an
+average is the same one only, so there is no meaning, okay? So
+how do we get that? You know, the variability. All models will
+be stream on the same, you know, same data sample. There is no
+diversity. So if you want, then no benefit. So what should we do
+now the technique of mathematics, we call it as a
+sampling with replacement. So some samples will appear
+multiple times, some some may not, so not a problem. So this
+bootstrap data set is different from the original. So that way
+we can have a difference. So how much similarity is there? We can
+say that around 64% similarity, remaining 36% unsimilar. So
+combinely, we can say that this is different data sample. This
+is a different data sample. Now, what why we are repeating again?
+The question is, okay, we can create one, one bag only, then
+we can apply right? So we are creating repetition. The fourth
+one repetition will help us understanding the diversity.
+What do you mean by diversity? Each model focus on different
+aspect of data, right? Understanding the pattern. For
+example, d1, understands one pattern D to understand another
+pattern D to understand another pattern. So the fluctuation can
+be controlled. So this way, what happened when we average the
+predictions of these all of them, high variance model will
+make a mistakes in different places, right? So their mistakes
+will be controlled cancer, so the bagging will control that
+one unstable models, that is where we are using. So here we
+are going to use the formula, mathematical formula we are
+using. What is the mathematical formula, probability of not
+selecting? First thing, probability art not selected is
+equal to one minus one over n to the power of n. So for example,
+if you have 614, sample, then we are going to put it here so
+every bag will be so roughly, we can say around 36.8%
+is not selected, and 63.2 will be selected randomly. And
+naturally, we know that the 36.8 remaining will be the reputation
+understood. So that is what we are trying to do. So
+do, is
+that clear?
+So, sir, you are saying that in the in the diabetic sample, out
+of 760 or something, 36 are repeated values, and 63 are the
+original values, right? Unique values? Yes. Okay, this
+algorithm is, this algorithm is telling that they have
+60% of real values and 36% of duplicate values. That is the
+goal of this algorithm, to know the duplicate values, right?
+Yes,
+okay. Aish, still not done with your question.
+No, I think I didn't. I forgot to lower it. Sorry. Okay. Kiran
+sir, this 614 is 80% of the original data, and out of this
+14, again, the bagging is done, 63%
+random, plus 36% reputation out of the Exactly, exactly.
+Okay, yes, okay,
+yes. For the very large data set, I think we can use that
+bagging without replacement
+to get the we cannot use. We cannot use bagging with replace.
+Without replacement is not bagging, repeating the same
+data. Why you apply No, no for very large data set, we suppose
+may be very large data set also bananjay without repetition,
+same sample you are getting, right then. Why do you apply not
+some sample? Suppose that for the first two band, the two
+items are removed for the next done this two.
+Items will not be there that that you have to do by Pythonic
+code, bagging will not work like that. Bagging technique is
+implementing one minus one by n to the power of n, only if you
+don't use this formula automatically, bagging will do
+that. It would you cannot force the bagging to, you know,
+without repetitions.
+Okay, okay, yeah. Vijay, once you are done with your question,
+please lower your hand so I can see how many people are there.
+Okay. Vijay Kiran, you have done, please lower your hand.
+Yeah. Hello. Dr Habib, my question is
+because of this baggings, there might be chances some data may
+not be trained at all. Is
+because of this, this overfitting is averted.
+Not like that. Vijay, actually, if it is not trained, you are
+going to get, you know, the accuracy is less, so you have to
+hyper tune the parameters. So may be chance of one or two is,
+you know, skipping, it's not a problem. Okay, okay, thank you.
+Jaipal
+bagging is doing website. So how many levels we have to do only
+one level, or we can go attend for only one level, on one
+level.
+Okay, yeah, 614, count is came right side. So is this subset of
+the original data?
+768,
+oh. Okay,
+yeah, Priya. Priya Arora, hi. So it looks like bagging can help
+improve a model. So while we are testing, can we always have this
+as a step to try out bagging or other scenarios where we should
+think about not applying it?
+So bagging actually, as I said, No. So generally, decision tree
+is most prone to overfitting, right? Okay, so the reason for
+overfitting is just try to memorize the data. And that's
+mostly prone to overfitting to that kind of models. If you are
+thinking this overfitting is happening, and if you do that,
+then go with the bagging to just come out the overfitting. So one
+of the technique is using bagging yourself, or we can use
+random forest classifier to do that. Okay, got it? Okay, thank
+you. Yeah. Naveen, so can you just slide up a little where you
+are taking out the bags?
+Okay, in this note. So here I will, I was hearing the
+statement where you're saying, if you don't do the replica
+replacements, the samples will will be the same, right?
+But let's see if we have the root note, the main bag over
+here, my first 614, samples, then when we're creating the
+bags, right? 395 will be on the first bag, and then we are
+replicating, duplicating remaining 219
+so when you come to the second bag, the same 395 will be there,
+but it's the count, but the samples will be different,
+right? We are randomly selecting, right? So the 395 or
+in the first bag and 394 in the second bag, they might not be
+same, is my understanding exactly? Exactly? Yeah. So then,
+then comes the other question, like, if they're not same, that
+means the average score that when we take will be across
+different samples, isn't it? Yes,
+that is what variance we are, just fluctuation. We are trying
+to make it, and then we are trying to come out of the
+overfitting. Okay, that is the technique of bagging. Yeah. So
+then in the earlier conversations, I remember you
+were saying, like, if we don't add those replica do
+replacements, we'll be getting the same average, same score
+across all replicas, all bags. And then 100% agreed. Then I'm
+agree on that. What's the problem? But the samples are
+different, right? Sir, 395, are different in bag one and 394,
+different in bag. Navin. Navin, just listen, boss. Nazin, I
+said, if you don't do repetition, in the sense you are
+copying all 614, here, 614, here, 614, same. So accuracy is
+not same.
+So you're popping all 614, okay, then it's saying, that's what
+I'm saying, bagging. What it is doing. It is avoiding that 614,
+randomly, right?
+Yes, repetition,
+yeah, if it's one for we are good. Yeah, thank you. That's
+what I'm saying, right? Yeah. Balaji,
+Hello, yeah. So that ensembling means testing with multiple
+algorithms, right? So not multiple algorithms, okay, same
+algorithm. Okay, so bagging, I'm talking about the bagging is one
+ensemble, because same algorithm repeated on all so if you want
+ensemble, different algorithms, also known as M symbol, but it's
+voting classifier, okay, it is not bagging, right? So if you
+are the same algorithm tested with the multiple bags, so
+which, so each of the bag is considered as, finally, as a
+model. So which model is giving higher accuracy that one will be
+taken? Is it right? No, no, no. I said average, completely
+average of 510, yeah.
+Okay, it doesn't construct. So which model we will consider,
+finally,
+average of that boss bagging will do that. Only average will
+fund consider, that's it, not the model we'll see average. And
+similar to that, we are going to use another algorithm on this.
+Then whichever is giving good average, we are going to use
+that. So for example, I have another algorithm that is from
+SK learn dot, linear, underscore, model, import
+logistic regression.
+Yeah, scale logistic regression. Okay. Now after that LG is
+equal,
+we can say, okay, just write down logistic regression. Now,
+after that, take this
+bagging classifier.
+Now, instead of SVC, what should we write?
+Logic? Logistic Regression object.
+Okay,
+make it a CLF one sale of one
+with the algorithm.
+Okay, then. So here it is, asking for Max iteration. Let us
+keep the titration also.
+Max underscore, ITER is equal to, I don't say 300 for example.
+Okay, we got it. Now. What should we do now? Similar,
+vibrate
+is equal cl of one. Dot this,
+CLF, one. Now,
+accuracy.
+White test time, why pregnant?
+Why test we got?
+How much 74 here? How much we got 78 Now, which one do you
+prefer?
+SVC Do you prefer? Or logistic vision, which one you'll prefer?
+Yes, we see that's the reason. That is what we are trying to
+do. So in bagging, instead of taking an average of each and
+every algorithm individually, shuffling them and seeing how
+well it algorithm is working, we are giving that into the bags,
+and we are saying that, okay, tell me average of this one. So
+I got average of for this one, we got 78 and for this one,
+logistic regression got 74 so I can understand that in this
+data, SPC is working better than logistic regression. Okay, take
+a decision Correct.
+Yeah, when you say average, let's take w1 one of the
+you know parameters. So you are taking average of W ones in each
+of those runs, no, no, not w1 Suresh, complete accuracy after
+getting the function, what is the vibrate we are taking? Okay,
+accuracy of vibrate here, here, here and there. Everyone,
+whatever I'm doing here, individual accuracies will take,
+okay, okay, yeah,
+okay. Now the next one will take is same bagging classifier. So
+what is the purpose of buying classifier? Now tell me simple
+understanding bagging classifier is like we are taking original
+data sample, then splitting into training and testing. After
+getting the training on train data, we are applying the
+bagging classifier. So in that bagging classifier, if you say
+number of estimator is equal 10, means how many bags we are
+creating. 10 bags. Let us say we tried 20 bags. Now, if you write
+20 bags, and then we do the Y prediction, and we see the
+average we got the same thing. Okay, average we got the same
+thing. That means the maximum accuracy of logistic regression
+using for this data sample will achieved up to how much 74% is
+accuracy, whereas here we are getting an accuracy of 78% so
+from this, we can easily understand that SPC is the
+better one. Now without bagging. Now leave out the bagging. Now
+directly, write this SVC better, but to take the decision the
+metrics, what I did now, I use the bagging classifier. I'm
+combining the estimators together to get whether, how the
+algorithm is behaving with small fluctuations. That is the end of
+the idea of your bagging classifier. So with that
+reputations, okay, if I don't do reputation, what happens with
+risk play replacement, same data sample is coming in the all the
+bags, and same accuracy, so average also the same. So that's
+not going to make algorithm understand some fluctuations. So
+there we are trying to make algorithm to understand some
+fluctuations by giving that in a bagging classifier. So this is
+the takeaway of the bagging classifier. Now coming to the
+next algorithm. One of the bagging classifier is like
+another ensemble is random forest classifier. So what
+Random Forest classifier is going to be so for in the
+bagging classifier, you can use different algorithms, right? You
+can use logistic regression, you can use support vector, you can
+use decision tree, you can use any classifier. You can use it.
+Whereas in random forest classifier, you are forced to
+use only decision tree inside, even if you don't write decision
+tree only. So for example, for.
+From SK learn dot ensemble,
+import, which one random forest classifier.
+What happened? It's not working
+forest.
+Class E,
+fire.
+Okay,
+now
+I can create object of that Rf is equal Random Forest
+classifier, and number of estimators is, for example, 20
+random state is equal to any number here. Did I mention what
+is the algorithm name? No, but default it is going to take
+which algorithm, decision tree, algorithm it is going to
+construct. Okay, now train the algorithm after that if you want
+to predict or you can say, RF, dot score.
+XR, underscore train
+and y, underscore train, which accuracy we got, training
+accuracy, similar we can test with test and y, test
+so is the algorithm is overfitting or not?
+Yes, it
+is all fitting. So can I use the what should I do now it's over
+fitting, I'll change the parameter, for example, 100.
+Okay, and let us try.
+When I got it still overfitting, right? Maybe I can change the
+criteria, still, if it's overfitting problem with my
+data, I'll change the algorithm that's it understood.
+Okay, this is ensemble technique. We started with first
+one, bagging classifier. Again, I'll explain in a class how
+bagging works. Then we'll go to the coding classifier tool.
+Because in your one question before you just summarize in
+that random state, right when, yesterday, I was just trying
+with one of the algorithms. So when I change the random state
+from maybe one to 20, the accuracy was varying too much,
+actually. So it doesn't mean that, because I cannot keep on
+trying with one, two, whatever is the limit of that random
+state. So how do I basically come to a conclusion that, okay,
+maybe this bagging classifier is not fit for this kind of data.
+So that's what I'm Kiran. We are going to use an app tuna. And
+from the beginning, I'm saying grids are CV algorithms, right?
+Hyper parameter tuning. Those things will help us, otherwise,
+hit and run only till now. Okay, okay, okay.
+So you can, instead of writing one each and every one, write a
+for loop.
+Okay, but a for loop and
+print the accuracies, okay.
+So one thing question please help on explaining simple
+average versus weighted average. When algorithm uses which
+method, algorithm uses simple average. Okay,
+here we do not have 10 models, only one model which internally
+divide as 10 bags. Perfect, Santosh, average of this 10
+bags. Okay, only one in the bagging classifier in random
+forest. Also. Okay. Now I'll give you, if you want different
+also, we can take the different one for that, you need to use
+the coating classifier. So first one, we started with the bagging
+classifier.
+So what bagging classifier is doing, the technique is to give
+some variance in the data and test with the same algorithm
+with different variants. So if I create object of one algorithm,
+we cannot create a, you know, I need to do, for example, I want
+to create a variations with a random state or something. I
+need to create, how many instances, 10 instances I need
+to create. And then we need to apply the algorithm, 10
+accuracies I need to find. Then I need to take average, say
+that, okay, this algorithm is good, not good to go for the
+production, or good to go with the production, right? So,
+instead of that, the banking classifier came in with a
+bootstrap. Means bootstraps, in a sense, create a bags. So then
+after that, we are going to apply the aggregation. So take
+the average of all the scores, and if you are getting good
+average, if you are getting 80% something, we say that model is
+good to go. There is no chance of overfitting, and it will go
+with the production. This is the bagging classifier. So one of
+the bagging classifier replication, we have a random
+forest, we call it. So random forest is like, it's not going
+to take any algorithm except decision tree, inbuilt. It's
+going to take the decision tree, whereas in a bagging classifier,
+we can change it with, for example, this is SPC. We can use
+it, or we can use any algorithms. Clear. So that is
+the basic difference between a bagging classifier and random
+forest. Both are using different algorithms together. So that is
+the name. We call it as a ensemble. Ensemble, in the
+sense, assemble all the algorithms together, more than
+one algorithm. That is where bagging classifier and Random
+Forest classifier working. So here the repetition. The reason
+for repetition is just to create the fluctuation. So when you are
+creating a.
+Petition, and we are trying to find the average so most of the
+bias will be eliminated. That is the main idea of the bagging
+classifier. Okay,
+so let us ask two more questions. Are there from Neha?
+What is the question
+Neha like for both the ensemble, which and the this current one,
+right? Does it also do a subset of features as well, or is it
+just data? Only data, no subset of features? Okay, both, both
+the cases, right? Okay, yes, both the cases. If you want, in
+the pipeline later, we can implement principal component
+analysis or single value decomposer, two dimensional
+detection, but here only data, no concept of features, okay?
+And why did we change the name? Like, from ensemble to random
+forest, right? Eventually, if it's doing the same concept of
+bagging, trying to understand why the name change, like when
+we read, actually, that we don't know. The PhD researchers are
+little bit crazy once they go to PhD, they, you know, so actually
+the decision tree, actually decision tree. After that, they
+got a random forest, okay, then bagging classifier. So decision
+tree, when they implemented most poor only, they are saying that
+it is, you know, going for overfitting. They said that, why
+don't we combine more decision trees together? So, trees, when
+they're together, the name is given as forest, right? So, and
+the trees are randomly taken. So that is a random forest they
+have given later onwards, with the technique of bagging
+aggregation is implemented, they name it as a bagging classifier,
+okay, which can be used across algorithms and not just
+understood. Yes, yeah. Ramakrishna, yeah. I mean, is
+essential methods, right? It's a bang. Is one of the method, or
+is the only one method under assemble, methods,
+bagging is one of the method okay, there's other methods as
+well under assembly. Yes.
+Kalyani
+said this, My doubt is, before break, you explain like linear,
+lean, linear classifier, right? So we took an examples of for
+A, B, C, D and D. So we got the points, like 4.2 and 6.2 when
+you applied it in the collab notes, we we did like a kernel
+equals to linear and C of 50. And we got like, for example, we
+got like 70 percentage. So before we got like, 4.2 and 6.2
+are the supported vectors. So in the collab notes within how can
+we assume like, if we get 77% of 77% accuracy, what are the
+supported vectors for that example, sir, like diabetes
+example, if you
+took just print support vectors. Kalyani, you can see what are
+the support vectors for 4262, we got 100% accuracy. You are
+talking about the diabetic data sample. You got around 78 maybe.
+So there also print the support vectors. It is going to show the
+support vectors. Where are the points?
+Okay.
+Next. Question, Vikram,
+Dr havid, so this is about the understanding itself. So please
+correct if this is if my understanding is right. So
+currently, this topic is about ensemble technique, and ensemble
+has bagging classification and random forest classification and
+voting also, voting also, okay, there is one more voting. So in
+these three classifications, bagging is an option where you
+can specify our own algorithm to get the appropriate score, yes,
+averages, whereas the random forest classification always
+uses
+decision tree, so you can't change it. No, we cannot change
+it. Okay, correct, understand. Alright, then thank you. Yeah.
+Deepam,
+yeah. Dr Navid, so just for my understanding, in so in the
+bagging. So when we are, you know, separating from 100
+samples to 64 samples in each bag. So those four samples will
+be different across each bags, right? Yes, yeah, they will
+separate across each bag. Yeah, that is what I just wanted to
+confirm. Thank you. Okay.
+Next. Any other questions are good to
+go?
+Yeah, without scanning the model. Models might be bad
+prediction, but yesterday today discusses no scaling data. Can
+you speak
+little bit name? More with more pitch? Netaji, I'm unable to
+understand today, yesterday and today, discuss algorithm without
+scaling. The model, model a models might go model might be
+scaling without modeling, bad prediction only now. Why is
+employee not implemented? Scaling doesn't have any impact,
+generally that you can.
+Okay, and only distance based algorithm scaling is required.
+And going forward, when you're using deep learning techniques,
+scaling is required, okay, so for this thinking like that, no,
+we are trying to understand the algorithm, pre processing
+technique. Also, I didn't apply it, right? So you have to apply
+all the pre processing technique in the class. We just were
+trying to understand how algorithm is working. Okay,
+accuracy increasing, as I said, go visit the data, apply the
+standard scaling, or min, max scaling. That's we have to do
+all of things. Okay, so first we need to understand the concept,
+then you implement all of those things. Okay, good. Thank you.
+Thanks, yeah.
+Okay, done. Most of the questions, okay, now let me take
+a question in chat box. Once you have done with the question,
+please lower your hands. Can we hands. Can we equate bagging
+classifier to random start with different set of ranges. Can we
+equate bagging classifier to random state with defined set of
+ranges? No. Is there any ensemble method which uses
+intelligence in selecting classifier on its own given data
+set which gives the best acceptable score. Yes. Vijay, it
+is there that is known as auto ml. We'll discuss in unit four
+at the time. Okay. If you have duplicate, the point will
+coincide, so the hyper para, hyper plane remains the same,
+irrespective. No. Vikram, don't merge the duplicates duplicate.
+Don't worry about the duplicate. Duplicates here, in the sense we
+are not making complete duplicates. The data sample one
+is different, and data sample two is different. Okay, that is
+what the intention. Don't look into the same data sample. Okay.
+So that's why we are trying to create some variance, so that
+model is not biased towards anything. Could you just once
+repeat the disadvantages of not using the replacement technique
+in bagging? If I don't replace the payment same data sample we
+are getting right. So applying algorithm on same data sample
+accuracy similar.
+Please compare heterogeneous ensembles and bagging. Did I
+bhanunjay? Did I ask? Did I talk about heterogeneous ensemble?
+Anything? No. So can you please share the collab notebook? Okay.
+Can you explain about voting class? Yes, I'm coming. People
+are previous questions and moving to next questions. I'll
+do just have a patience. Can we decision tree? I'll go in
+bagging classifier. If we Yes, different between that, okay, so
+simply, Gaurav put a question that in the bagging classifier.
+If you keep decision tree, it is random forest. Okay, so the name
+is given as a random forest, only fixed to that. Okay, if you
+are not giving there is a bank classifier. Remember that,
+Ramakrishna, go with the question and just lower your
+hand once again. Good. Go ahead with your question. Ramakrishna,
+do you have a question? Lower the hand. Actually. Done with my
+question, sir. Okay, okay, done, done. So. QA, there is a
+question in question. Answer, sir, most of the class is going
+into and can we limit the number of questions and requests for
+the people take that lab sessions?
+Yes, sure, we can do it, but see,
+let us okay. Now let us get into the voting classifier. Then you
+will get clarity on that. Okay, so from SK learn dot
+ensemble, I'm going to import voting classifier. My
+suggestions are not coming.
+Okay.
+Now let me import we have three algorithms, right so? From SK,
+learn dot, linear, underscore model, import logistic
+regression, from SK, learn
+dot, SVM,
+import
+SVC
+from scale, learn, dot,
+tree importation, tree classifier. How many classifiers
+I'm using now? Three classifier, okay. Estimation is equal. I'm
+just keeping it as empty, and then let us write estimation.
+Dot, append,
+estimators. I'm writing, okay, so just write down.
+We say LR as logistic regression, maximum iteration is
+given 300 SVC, linear classifier like that. I'm just creating a
+list. Now, when you say
+estimator list, how many estimators we have now, three
+estimators.
+Okay. Now let us create voting. One is equal voting classifier,
+then estimators
+is equal to estimator. Voting is equal to hard. Then voting one
+dot fit
+X, underscore train by underscore train, then we can
+say y pred one by predict is good voting on prediction one,
+then we can print the accuracy score with a.
+Y test and y pre. Now see,
+so we got an voting accuracy of how much we got 75 correct. Now
+here we have two terms. One is the hard voting, and second one
+is the soft voting. Okay,
+so in soft voting models are using probabilities, whereas in
+hard voting models are using what do you call numbers? For
+example, 123, something like that. Okay, so for example, if I
+say
+I'm going to give for example, three people answer me,
+logistic regression, I'm bagging classifier. For example, which
+is the best one? So one said bagging classifier, and a set
+bagging classifier. B said, Okay, let me write down here I
+have
+two classifiers. Okay, so for example, I have
+bagging classifier and decision tree. And there are three
+people. I'm asking them a question that, which algorithm
+Do you prefer? So let us say we have A, B, C, A and B said that
+B, C, bank, last four is good. C, said decision tree as a good
+one. Okay. Now in the voting classifier. So how many words
+back in classifier got
+two,
+two words, whatever decision tree got one, one. Now in voting
+classifier, how many algorithms we use? Logistic regression, we
+used decision tree classifier. We used and then what we used,
+support vector classifier. Correct,
+yes, sir.
+Now what it is going to do here, for example, when I'm giving a
+sample data, for example, consider Iris data or diabetic
+data I'm giving so it said one that is the person is diabetic.
+Decision Tree says that no, it is diabetic. Support Vector said
+diabetic, non diabetic. Now, what is the if you are using
+hard voting, what is the output? Majority? Right? Majority means,
+what is the output? One?
+No, average. Majority, clearly. Okay, this is which technique.
+We call it
+hard, hard working, hard voting. Okay, then the next one we are
+going to take hard voting. There is a problem. What is the
+problem in hard voting? If you have a three different
+algorithms, no problem. If you have four algorithms, then both
+said. So, for example, I have random forest also zero. Which
+one is the majority? Now there's a problem, right? Yes,
+difficult.
+So difficult. So in that time it is going to take, what it is
+going to take. This is a hard voting right? Now it is going to
+take. For example, I got 0.6
+0.7 0.50
+point six. Now tell me, what is the probability of these two
+total property score, probability, score, one point
+What about this one?
+So which one will be given
+this is in which case? So soft voting probabilities will be
+considered, whereas in hard voting, like similar human
+beings, we vote for elections. We vote right. They count the
+number of votes, similar kind of voting will be happening. So
+this is, we call it one of the ensemble technique. We call it
+Okay, so when you are predicting that majority will be when here
+you can give voting, soft voting, we can give a hard
+voting so here how many algorithms we combine together
+three different algorithms, right? Whereas, coming to the
+random forest, default on a decision tree, whereas in a
+bagging classifier, only one algorithm is repeated on all the
+bags, right? So, whereas here it is going to be on different, you
+know, say, different algorithms on data sample.
+Is that clear?
+Yes, sir.
+Okay, so which one do you prefer now, bagging classifier or
+voting classifier, R which
+one you will prefer? Random Forest, which one do you'll
+prefer? Random
+Forest, which one? Yeah, soft voting classifier is better in
+industry, gender like, when you have more data sample,
+generally, we go with the voting software later onwards, we use,
+as I said, No, even with the not like, like with the voting
+classifier, we can use automl cells. Okay,
+okay, any questions now?
+Sorry, can I ask Yeah, please, go ahead. Sorry, so when you are
+in the line number 46 when you're saying is.
+Estimators. Basically, it is taking the list of
+the estimated the line number 44 where you are created three kind
+of estimators. Yes. And we can do more settings in those
+estimators to basically, okay, yes, yes. Here we can give
+inside, that's what I just separately have designed right
+here in kernel, we can give c value. Also we can mention, here
+in decision tree, we can type, what is the entropy you want to
+use our randomness. We can implement all those things,
+similar to individually, when you are using everything we can
+do, okay,
+yeah.
+Next question, hi, Abhi, the voting class here, the different
+models, and it will take, I mean, it will turn all the
+models on the data. It will take the average value. Then I can
+get the accuracy of the each model individually right. I
+mean, can I use? This is to take my decision to which model I
+need to use, finally, on my data. For example, I try the
+voting class with the 10 models. Then which is a market I score.
+Can I use that model state of instead of voting classifier,
+can I use the this one to take the decision which model is more
+accurate on my data? Can I use actually? Or is there any
+no no actually inside there is no method that we can find which
+is the best accuracy models? Okay, in ordering classifiers.
+So generally outside you have to do it, and then you have to do,
+you know, predict internally they are combined together, so
+there is no individual occurrence of each model, right?
+Using we cannot get individual accuracies. If you want
+individually, you prepare the models individually, then okay,
+you can see. But when you are inside the voting classifier, it
+is a black box. You cannot print them. Cannot print them. Okay,
+okay,
+okay.
+Next question, next one. Who is that Kiran? Kiran is done.
+Kiran done with the question.
+Okay, go with the Mohammed Lindi walaya,
+yeah. Can we combine bagging and voting classifier? Can we have?
+Yes, we can. We can? We can.
+So how is the things like, you know, we can do something like
+this, good question.
+So we have the boot stuff, samples, right?
+Bootstrap,
+samples. Then here we have model one,
+Model Two,
+model three, okay. Now in this model, this is a bagging,
+okay. After that here on top, we can use the voting classifier
+inside that we can take soft coating or hard voting like
+this. So these are the bags on that we can use voting
+classical, not a problem.
+So that model is it should be bag, isn't it bag one back to
+back three, right? Or is it that one back to back threes. Model
+only. We call in the terms of bagging classifier. Model only.
+Okay, next, Ramesh. Ramesh, yes, maybe kind of follow. So we can
+prepare models individually right for each of this algorithm
+and find the high accuracy one and use it. So what is the
+advantage of voting classifier here? Like combining multiple
+you don't say you don't find any advantage. Ramesh gaining,
+gaining. So I can use the best among the three, right? Not best
+among the three. If I try individually, core experts are
+giving suggestions for you, right?
+It's correct, sir. So let me repeat so they're giving I can
+pick the best one, right. Rather going through three again, you
+can pick individually, but having individual and expert
+suggestion, which one do you prefer? Yeah, so Yeah, which one
+do you prefer? Tell me in real life, which one you prefer.
+Yeah,
+yeah. Experts, right? I can think, yeah, that's what now,
+yeah, in the industry, agentic framework is something like
+you're doing that thing only right? So here voting classifier
+is, instead of individually, we are combining together, and we
+are saying that, according to your view, give us the votes. So
+from that, I can detect question classifier, that is the reason.
+Okay, okay, okay, so you mean to say it will have internally
+different models for each algorithm and for the given
+sample,
+the best model will return the
+prediction. Is it correct? Sir, yes. Okay, so is it resource
+intensive? Sir, in that sense,
+yeah, if you have a large amount of the data, little but if you
+want accuracies, this is interesting. Is not a problem,
+right? We can come over that.
+Oh, each sample will go through all the models and the best out,
+yes. So only one, one sample, it is going it right? So.
+Not, yeah, once I can go through all the models and it will
+return the best. Thank you.
+Nitika, go ahead.
+Yes, sir. So like you told that the bagging classifier can use
+either of the three, SVC, DTC or logistic regression, not either
+of the anything, any, yeah, any algorithm, and the random forest
+can only use the decision tree algorithm. Perfect. Apart from
+this, is there any other fundamental difference between
+bagging classifier and random forest?
+Other fundamental means generally, decision tree
+classifier is a rule based, right so strictly and rule based
+only, it is working bagging classifier. It's not strictly
+rule based. We can have rule based and different kinds of
+mathematical addition algorithms or algorithms also together.
+That's the only difference. Okay, so in the in the way they
+select the data or create the bags, there is no other
+difference. Yes, okay, got it. Thank you, sir. Indra, what is
+the question, sir? So how does voting works in case of
+regression? Maybe you will cover this in future. But just
+curious, how does it rag one that is very simple voting. We
+are not going to take majority voting, and if you have
+regressor, it is completely average, only,
+okay. So, yeah, you predicted for example. One said, for
+example, for auto mpg, one set 12 mileage, second set 13
+mileage, four set 12/5. Set, 13 mileage. So we'll take average
+of those things. Okay, so finally, we say that this is the
+average. Okay, like that. Okay, yeah. Kishore Kumar,
+so Dr Abhi, a question on the same like, which model to choose
+in other way, like, if I use a wooden classifier and give the
+list of models and whatever the accuracy score I'm getting,
+which is like, if I use the hard that is the maximum which is
+returning right? Can I use this technique to exclude any models
+I cannot get more than this if I use these models on these
+dataset,
+or do have to still try on the individual models and to be able
+to call it out,
+no better. See after See, step by step, we are going, first of
+all, implement individual models, and that's time taking.
+Then we use the voting classifier. So voting classifier
+is an alternative. Instead of using all the individual models,
+we are like, you know, creating a team of, you know, experts
+from that we are taking a decision, and then we are giving
+the outputs. So that is where. So instead of writing
+individual, you can take a help of a voting classifier.
+In the context of hackathon, we have a requirement your accuracy
+should be more than this. And when I use my voting classifier,
+if I'm getting less than that value, it means these models
+will not be able to give me better score if I even do the
+individual Right exactly.
+So other way I can use it that way. Yeah,
+thank you. Yeah, welcome. So let me take questions in the chat,
+whichever, give us a good accuracy voting. Dr Habib, I
+have to drop with you. Will be teaching something new done. I
+so if anybody completed with your questions, they can draw
+till today. Most of the algorithms are covered related
+to classifier, addition, but in case of regression only,
+regression algorithm, we are going to learn another s
+algorithm, ravish n, I told right in coming sessions, we are
+going to discuss about regression in depth also. Okay,
+so this is about like in the today's session. What we did, we
+started with which algorithm, bagging, sorry, support vector
+machine. Very simple. There is a machine, remember as a margin.
+Margin is the one which is going to classify. Now you have seen
+how we this margin is calculated mathematically. We have seen
+class, you know, taking the what
+do you see? The vectors and everything. Second, we started
+with a bagging. Lot of confusion in bagging first of all, but
+then you able to understand that bagging means we have to take
+original train data. Then we need to replicate the train data
+around 60% 62% something remaining 38% or whatever it may
+be, replication like this we are creating the bagging. So what is
+the advantage of bagging? Little bit variance we are creating so
+that we can see we try to overcome the concept, you know,
+the problem of overfitting. Then we discussed random forest.
+Random Forest is the same ensemble technique, but only
+thing is only single algorithm is default applied. That is a
+decision tree algorithm inside. Then later, we discussed about
+the voting classifier. Voting classifier is another ensemble
+technique. Here we can use different kinds of algorithms
+together as a special, you know,
+subject matter expert, then we take a vote from them. What is
+hard voting? Majority voting is a hard voting. Soft voting is we
+are going to consider the probabilities. For example, if
+you have four algorithms, and one is saying, stick to one
+category, another two is taking to another category, then we are
+going to take the probabilities we'll calculate and say
+whichever is getting the highest probability, that label will be
+assigned correct. So this is what we are trying to
+understand. And we made it very simple to understand. And later
+onwards, Srinivas, somebody, they suggested that, can we take
+MC data and those things in future? We can take.
+The data. But only thing is, depending upon the problem
+statement we can consider, okay? So in the classroom, if I
+consider the data pre processing itself, as I know, data
+scientist will take spend 80% of the time. So what you can do is,
+you people can do one thing. So before coming to the session, if
+you have a patience, you do one thing, go to that kind of data
+sample, to get data samples, do the pre processing and come up
+with red data. So we can use that data so we the time of pre
+processing can be eliminated, right? So, because if we need to
+finish the concept in the class, then pre processing technique,
+if I'm spending the time on pre processing, I'm going to lose
+the complete time, and I cannot complete the topics, right? You
+don't get that topic to be completed. So that is where, if
+you have the time, so you can curate the download data, take
+anything, no problem coming the curate, and sometimes we'll see
+if time permits. Later, when we are teaching about, you know,
+the deployment time, we can take real world real time and
+deployment we have a time, so at the time, we can take real time
+data, do the pre processing techniques, and then we can, you
+know, use any algorithm.
+Okay, thanks. Thank you everyone patiently listening to the, you
+know, the topics, and
+next week, I think you have an hackathon. You don't have a
+session on that. So good luck for your Yeah, my email address
+is Habib, dot v at the rate, talent sprint.com,
+anything you can drop an email. Okay, thanks everyone. Thank you
+for your patience. Does this mean unit one is kind of
+complete? Right class? Yes, designing an algorithm,
+yeah. Got it.
+So basically, we are trying to understand classical machine
+learning algorithms.
+Thank you.
+Yeah, I'll show Okay, I'll share the note. Thank you. I forgot,
+actually, okay, I'll share the note. Don't drop. Now, take the
+notes and then drop, because in the chart, it is not going to be
+yes.
+So SVM,
+PDF
+already, you have a groups, right? Or if anybody is missing,
+you can share with them,
+sure, sir, you said you will recommend books also at the end
+of unit one,
+yeah, sure. Sindhu, I'll give you some refers already books
+out there, I'll refer, okay, okay, first complete your
+hackathon. Once you get some, you know, a good understanding,
+we can do that, not a problem.
+Thank you. Yeah, thanks, everyone. Can you explain to
+just hack, then how it will start, and there is no
+introduction how they are going to conduct. No, actually, that
+team will be there. Okay, so lab team will explain all those
+things. Yesterday, explained, Yeah, yesterday it was
+explained. Theory, yeah,
+okay, in group it has not explained, no, actually, maybe
+we had, we didn't have any introduction in Group B, yeah,
+it is happened. Group B only happened. It
+is, I think people better look at the video of yesterday's
+very nice.
+And both the labs videos will be available for everyone.
+Okay, great. Okay, then everyone take care next week. Good luck
+for your hackathon. Thank
+you. Bye, thank you.

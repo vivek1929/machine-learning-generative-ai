@@ -1,0 +1,2681 @@
+Video transcript
+This transcript is AI-generated and may not be 100% accurate.
+
+Unknown: So let me
+give you what is the agenda of today's class?
+Okay,
+I want to go from the basics of data, pre processing and then a
+scale and technique, if time permits, I'll show you one cloud
+cluster creation with any databases, and we can do that.
+Okay, that is our agenda. Agenda is first understanding what is a
+data ingestion first. We need to understand this.
+Second part. We need to understand data pre processing,
+actually these two steps, where exactly these two steps comes in
+data science role.
+So we have some raw data, for example,
+which is an Excel sheet, or that may be in dot DHA format, or dot
+CSV format, or it is into your databases, or anything not a
+problem. We need to take this put into your format that is
+known as a data frame.
+Hope you got some idea of what is a pandas data frame means
+yes or no,
+you have an idea of what is pandas data frame, right?
+You got that?
+Yes,
+yeah. I think what we are looking at is x data, and then
+we have all the y also data, and that is what it has arranged in
+a particular format. That is what we call if I can
+understand, let's do one thing, okay. First, let me start with
+actually, to ingest the data into a particular format. We
+have a library known as pandas. We call it, okay, first of all,
+today, we'll start with pandas library. We'll give some basic
+commands we need to understand. How do we access the column and
+rows and all those things? So in pandas, you have any CSV or
+Excel file, we say we are going to use a data frame first of
+all.
+So the question is, what is data frame actually? Data Frame is?
+It is a two dimensional table. We call this as a two
+dimensional Table,
+table in Python, which is used for organizing and analyzing
+data. So this has two things. One is a rows, and then we have
+a columns. Means data frame consists of rows and columns. So
+rows, what they represent, they represent individual entries.
+Individual entries, for example,
+students, then we have a products or something like that,
+okay. Columns represent attributes. What they represent?
+They represent attributes like name, age of the student, or
+grade of the student, something like this. Okay, now, what are
+the key features of our data frame? Why should we use a data
+frame before that, and what is the advantage of using data
+frame into, you know,
+a raw process. So first is the structure. First, one key
+feature is the structure. What do you mean by a structure?
+Structure in the sense each column, all different data
+types. For example, you have every column. One column is
+sepal length. Another column sepal width, for example, petal
+and petal width, and I have a species, okay? Now this consists
+of 5.1 2.13
+4.5
+and then I have Setosa, for example.
+This is a numerical value, okay? And this is a float values, and
+it's an integer, and can take a text, so that means each column
+can hold different data types. Means there is no restriction of
+the data types. You can use number, text, dates or something
+like that. Then we have a row which has which have an index.
+We call it. So what do you mean by index? Actually, it is like a
+label to the data to easily access. For example, in a list I
+have 2040, 30, I want to access 40. How do we access a 40 in the
+list? For example, list is l1, how do we access l, 1r, what is
+the index of 41?
+Correct. So this way we can access the list item. Similar
+way in pandas data frame, we have an index. So this index,
+individual index, we call it as a label to ease data means, for
+example, here student information is there I want to
+get, for example, what is the student, name, age and grade of
+one student, so that we can access with zero when I say, get
+the.
+Index. With this index, find the name, age and grade of the
+person, easily. We can find this is the structure, about the
+structure, look and feel. Then we have a functionality over
+there.
+Okay. What is the functionality? Functionality in the sense we
+can apply. We can filter by using like, similar to writing a
+query, we can do that on the data frame, and then we can
+manipulate data like, for example, you want to change it.
+For example, whoever is having null values, replace with some
+mean median, something like that. Okay. So we can do filter
+and manipulate data this one second. We know, as we said, we
+can handling missing values, data merging like, you know,
+statistics. We can compute all those things, and after that, we
+can import and export,
+import and export to another format. Okay, that means into a
+table format or into the databases. We use it next one.
+This is about the functionality. Next, we have an efficiency. We
+call it, what is the efficiency here? Efficiency in the sense
+how good this is using in
+data science role. So these, they are actually partners data
+frames, or they're built for, you know, large data samples.
+Even it can handle 1000s and millions of data rows with rows,
+and we can do lot of fast operations. Okay, so this is the
+first what is a data frame means. Now you got an idea what
+a data frame. Data frame consists of structure where we
+have number of columns and rows. Rows consist of indexes. Then we
+have a functionality. What we can apply under the data frame.
+We can have filters are we can manipulate the data like that,
+we can handle missing data, and we can merge the data sample,
+and we can compute the statistics, and all those
+things. Apart from that, we can import and export to different
+formats. So once you take the data and ingest into a data
+frame, from that, we can convert into another data frame. That
+means we can convert into a CSV file, we can convert into Excel
+sheet, or we can convert to blah, blah, anything, not a
+problem. Okay, then, if you can efficiency is the efficacy of
+this data frames are we they can handle large amount of the data
+sample. Now, for example, I have some data that is known as Iris
+dot CSV file. Now, how do we use the CSV file and put into a data
+frame? Further generally, we start with import
+pandas as PD, right pandas data frame. Now we write df is equal
+PD, dot, read underscore CSV, then name of this file, and it
+is dot, CSV file done. Now it is converted into a data frame.
+Now, when it's converted into data frame, it have a structure,
+it have some functionality, then we have an efficiency upon that
+particular data correct. This is the first step we need to
+understand. Once you in this, ingest the data into a data
+frame, then we can play with the data. We need to understand,
+what is the data? You know? What do you call? We can say, for
+example, what is the data types? And all those things clear.
+So let me do one thing.
+I'll take Iris data sample, then We'll put it i
+Okay, So I'm
+Google
+colab notebook and
+it is dot, CSV.
+Okay,
+see 25 week two
+session.
+Okay, I'll take up the questions once. I'll stop at a moment.
+Sri Vidya say, says pandas is a library that enables us to work
+on large data sets or data frames. Is this right?
+Understanding? Yes. Srividya, so sometimes, if you have big data,
+which is not a large data, then we'll take a PI spark help. So
+in the PI Spark, instead of data frame.
+We have,
+what do you call
+RDD? We call it, okay.
+And ramohan says, why not numpy array? Numpy array is the data
+structure bus, so data structure cannot handle huge amount of the
+data data structure comes with a memory limitations. Okay,
+okay. Anyway, we'll start now. So first of all, you know how to
+upload the files, right?
+So take this
+Iris dot CSV file.
+Let me rename this
+to iris.cs
+done.
+Okay.
+So now, what should we do now?
+We need to import
+pandas as PD. Now DF is equal to PD dot read under four CSV,
+Iris, dot, CSV file.
+Then done. Okay. Now, if you want to know what is df, it says
+it
+is a pandas data frame,
+correct. So we need to say when we got pandas data frame and all
+the functionality, some help will be given. What is the
+column and
+how do we create a data frame and all those things, okay? So
+basically, once you dump this into a data frame, we need to
+understand
+how data look like. So basic operations will do on that. That
+means, first of all, I want to know DF, dot info, information
+of the data sample. So this will give us that there are how many
+columns, sepal length, sepal width, petal length, petal
+width, and species, the columns are there, and they consist of,
+you know, totally, 150 samples, count and data type is float,
+for example, if you want to see top five samples in the data
+frame and just write down DF dot head will give us the top five
+samples. For example, no, no, we don't want to use five samples.
+We want to take 15 samples. Then just write down in the head 15
+we are going to get top 15 samples. Okay. Now DF info, when
+you look into the info, we know that sepal length consists of
+5.1 which is a float value. Sepal worth 3.5
+petal length and petal width, and then Setosa is a text data
+correct. Now, if you look into the data types, what you got
+from DF dot info, we see that species is a object. So in
+Python string, we call this as a string, whereas in data frames,
+we call it as an object. So it is doing good. That means the
+information, what you are looking at the first glance and
+the information you are getting through the DF, both are same
+good to go another option is there if you want to know DF dot
+d types, we call it
+okay. So now, if you the information between df and df,
+dot info and df dot d types is basically it is going to give
+some glance information like data type, SL is a float 64
+sepal worth is float 64 everything is fine. Now,
+everything is fine. We are good to go correct so we don't have
+to change any for example, here it is a float, and it is showing
+it is an integer, and here it is an object, it is showing it as a
+float. Or if it is a float showing it as an object, then we
+need to convert those data values, the columns, but in the
+first class, not a problem. Now next thing is very important.
+Thing is, basically you need to understand, how can we access
+this sepal length, sepal width, petal length, petal width,
+column individually. In Python, we can access these columns in
+three different ways. Okay. One is, for example, here we have a
+sepal length and sepal width, petal length and petal width,
+then we have a species correct. Now, how do we access this? All
+of this we are keeping into data, frame, DF, correct. Now,
+first option is you can write df.sl,
+so.sl this is good to go. It can access the SL column, so output
+will be something like sepal length, we have some values,
+but here we have one problem. What is the problem? For
+example, the sepal length is a single word. This option is
+good, but if you have something like this, sepal length, okay.
+Now, when you say df, dot, sepal length, Python
+doesn't understand why, because there is a space here you throw
+an error. So if the column names are separated by spaces, this
+technique will not allow us to access the data sample. Okay,
+that means it's the individual column. Second option is you can
+do DF, SL. This way we can do it. So.
+Okay. So that means you can get a separate line here, similar
+now here in this even if you have, you know, there is a
+spaces, not a problem. So whatever the issue you are
+getting in df.sl, will be resolved in df of Sn. But the
+limitation is, if you want to access individual columns. You
+can separate them by sepal and sepal width. You can combine
+them, not a problem. Another thing, suppose I want to access
+the rows also inside instead of accessing the columns, rows,
+this option doesn't give us that option, okay, so then the most
+popular one we use, that is df, dot i location, then first
+colon, comma, second column, this first colon is to access
+the rows, second colonies to access the columns. Clear. So
+let us try these three different ways and see how. For example,
+df.sl,
+DF, data, frame.sl, okay, so we got
+SL column, perfect. Option one. This is
+option one. What
+is option two? Option two is dF or sepal. Length.
+This is
+option two,
+good. Option three, DF, dot i location.
+Okay. I want here. When you write df of SL, you are getting
+all the 150 samples correct. So that means I need all the rows.
+So when you need all the roads, just write down colon. Okay,
+then which column you want? Column is SL, right, SL. What is
+the index of SL?
+Index of SL is zero, index. Index of SW is one, index of PL
+is two, index of PW is three, species is four. So index is
+starting from zero to and ending with four. Now access sepal
+length. How do we do that? What's sepal length? Just write
+down. Access zero. Sorry, that particular index is zero. So
+we'll get sepal length as this one. For example, I want in the
+sepal length only five samples, or 10 samples or 50 samples, so
+we can write starting from zero to 50 samples of this. So we can
+get only 50 samples. So the slicing is possible in this
+option, that is dF dot i location. And here also, instead
+of taking zero, we can start from zero to two, for example.
+So it is going to give how many columns, two columns, sepal
+length and sepal width.
+So most popularly, we can use DF dot i location. This is option
+number.
+So these three options allow us to access individual columns. So
+once you access individual columns, we can
+you know after that, if you want to do any transactions on that,
+we can do those things. Okay. Now, after getting an idea of
+like, how do we access individual columns? Let us say
+here, I want something like df, dot describe
+descriptive statistics. I want to understand that means. Here I
+want to understand basically, what is the count, what is the
+mean of the column, standard deviation of the column, what is
+the minimum of the column? What is the first quartile, second
+quartile, third quartile, and what is the maximum value like
+this? So this descriptive statistics will help us. Is
+there any missing values? Are there in the count? Are missing?
+For example, one column consists of 151 column consists of 145
+something values. It is possible, and when you are
+missing values, you're, you know, imputing with a mean. We
+can see, how is the mean? How is standard division? Is scattered?
+What is the minimum value? What is the maximum value, and all
+those things. Okay, so this is the basic understanding of a
+pandas data frame.
+Hope it is clear everything.
+Now, I'll take up the questions.
+Any questions you have, okay,
+yeah, we they posted in the Q and A chart, QA,
+chatter, okay, right?
+Any limitations of data frames with big data? Kishore Kumar
+question, yes, limitation of big data like, you know, when you
+have unstructured data, data frames cannot handle that much
+perfectly. So you need to get into the big data like pi spark
+for the PI.
+And there is no limitation, okay, can the code be written in
+colab notebook and theoretical concept on whiteboard? Can the
+code written in colab notebook and theoretical concepts on
+whiteboard? I
+didn't get chakrapai. What is your question? No, no, you were
+explaining the all the data frame related commands in the
+notebook, and that is why I was saying probably you can write
+this all in the notebook so that later, when you share, it
+becomes easy for us to practice this whiteboard. Also, I'll
+share a PDF format. Okay, don't worry. This is this makes you
+understand easily how things are working. Okay. Anyway, not a
+problem.
+Please share the cola file at the end of the class. Okay,
+definitely, sir. Any limitation for size data frame can handle.
+No limitations we can why species is into being shown
+species is being shown.
+Right for the in this describe,
+in the describe, DF, dot describe, there is a species. I
+mean, it is only I said it is a descriptive statistics boss. So
+this means numerical values only. It doesn't take any
+categorical values. Okay, okay, so if there is a categorical
+value, uh, not as the species, but let's say something the
+color, color is categorical. Color, it should not be shown
+here. Yes, no, you have to convert that into label
+encoding. Convert the values, then use it. Okay, understood.
+If missing values are there, and we do describe so Jasmina, if
+the missing values do describe in count, you can see if it is
+there something empty, it can say that there is no count
+value. Okay. Can pandas handle three dimensional data as well?
+What do you mean by three dimensional data? Numerical
+values cannot be in three dimensional, right? Only when
+you have, what do you call in images? We have a three
+dimensional but that three dimensional space will convert
+it to numerical values, then we flatten and put into the data
+frame. Okay.
+Next one. What is the limitation of option 2d, F, of SL, there is
+no the limitation is like individually, if you want to
+slice it is not possible. Chaitanya, okay, you have to
+write I location and describe only numeric constraint, yes.
+Anubhav, we can't somebody, we can't use data frames for
+unstructured data. Then what to use it for? I didn't say we
+can't use data frame for unstructured bus. So when you
+have an unstructured data, we'll convert that. For example, if
+you have voice, we are going to take the frequency amplitude,
+and then we'll store into the data frames. Then we apply
+machine learning algorithm similar way we can have feature
+extraction with the images also, okay. Data frames can be used to
+write complex SQL queries, like joints, J pal, there is a
+limitation. We cannot write a complex SQL queries on that
+limitation is there, and we cannot write any similar to your
+SQL remote processor calls or those things. So don't compare
+with the,
+you know, SQL, some features we can take, like, you know, how do
+we query particular data where some value is missing something?
+It is possible. Okay. Also, we see that it connects to SV, CSV,
+Excel. What about the DB data? Does it have capital to connect
+to dB as well? Yes. Dvidya, it connect to any DB. For example.
+No. SQL database, Mango dB, if you have big data, Cassandra,
+and any thing, it's possible to connect. Okay. How can we see
+imported CSV file, all rows and columns. This is what university
+are looking at, right? So once you import it here, dot CSV,
+okay, now when you write df, dot head, we can see all this,
+right? If you want to see all the rows and columns, just write
+down DF, that's it, without head.
+Clear
+how to get only mean of sepal length column after DF
+described, yes, just write down DF. Dot particular mean you can
+get it okay. For example, a separate length is the right.
+How do we access generally df of
+sepal length, any option you can take. Dot mean this way you can
+get it,
+okay,
+okay, good to go.
+All the questions answered.
+Srinivas, do you raise your hand? Do you
+want to say something are done.
+Okay? Now
+question is, if billions of data rows available, still, pandas
+can be used, are there any limitations?
+Yes. But thing is, the processing will be little bit
+slower. And if you have a resource, for example, if you
+have a GPU, then it's not a problem, okay? On CPU when
+you're executing, definitely there is a constraint
+hardware also we need to consider, okay, it is anonymous
+participants.
+I don't know a good to go. I.
+Okay.
+Now, Ashwin,
+raise your hand. Ashwin,
+okay. Raju, let us take the question. Ashwin, go ahead.
+Yeah, you just unmuted me. So, sir, you showed the three
+different ways to extract data, right? I understood all of
+three. But is there any difference between the first and
+the second? Because both of them are almost like
+Ashwin. When I started, I said, like in the first dm.sl,
+if the column name is separated by species, for example, space,
+if you write df, dot that it doesn't accept, okay,
+okay, coming to here, okay. SL, okay, perfectly, because you are
+enclosing inside a single quotes, even a space is there,
+it will consider. But if you want to slice individual row, it
+is not possible. Okay, sure. Thank you. Yeah, one more last
+sorry. I'm also in the count, median standard the we have seen
+the descriptive way of data, right, sir, I understand is a
+mean and standard deviation of all the column values in the
+column. But you also mentioned this will help in some
+non null values in between. Can you throw some light on that?
+Yeah, that's what Ashwin I said that if you want to impute with
+mean, wherever you have a null values, you know that this is a
+mean. You can input that. So basically, understanding is
+like,
+what is the mean standard deviation, without calculation
+describe is going to provide according to that we can take
+addition to improve the null values. That's what I said.
+Okay, thank you, sir. That's yeah,
+next Siddharth,
+yeah. Go ahead. Siddharth,
+unmute,
+yeah, sorry, yeah.
+So yeah. The actually, my question is the same, like
+earlier, what so from the describe, how will understand.
+Is there any missing
+value? First we account, is there right in the count, if it
+unable to get that missing value funds, n, a n, is there some
+that those values will be captured, but some noise is
+there? For example, there is a question mark or anything that
+won't be captured. Okay, so the count is matching that is good,
+well, and good. The basic understanding, okay, sometimes
+that null values can be some space then count. They don't
+fall into count. Okay, sounds good, yeah,
+okay, good. Let us take a question in chat box. A lot of
+questions, okay,
+some of them won't have already answered, replied. Okay, no
+problem. Here. We just loaded, okay, the hacker click on
+questions. I can see, Okay, done. So I think good to go. We
+look into question answers. Okay, done, perfect. Any open
+questions. You know, those are index features of the data,
+sepal and sepal width and pedal and pedal width, what exactly
+consider a noise in 2d data.
+Sri, Vidya, everybody have a question like, you know, noise,
+noise, nice, you are saying, right? What is the noise? Noise
+means something. It is not like when I'm talking to you,
+somebody is interfering in my voice, and you are getting some
+disturbance, right? So that is not the noise, okay? Noise is
+something like when I'm entering the data by mistakenly instead
+of a date or instead of currency, is the Indian rupees,
+for example, by mistakenly have entered US dollar. So the
+complete data is Indian rupees, and particularly one or two
+values are in what do you say it is in another currency? This is
+one when you are typing a type. So there is something typos when
+people are entering the data. So while you are collecting the
+data, the data which is not falling into that category, also
+known as a noise only. Noise means don't think that
+something, when I'm talking to you, somebody is coming in
+between and they are giving you some answers, and you are
+thinking, it is a noise, no, it's not a nice. Okay, nice is
+something where the data doesn't fall into that category. Okay,
+good.
+Now what I will do in industry standards, basically, how do we
+implement those,
+you know, pre processing? I'll give you an example.
+Only the rows that have been counted in count will be used
+for means, meaning to the null or non numeric values ignored
+while calculating this, yes, yes. Govern if there's a null
+values if they can ignore, okay,
+okay.
+New message.
+Now, let me give you an
+basic understanding of what is. What
+do you call a.
+Exploratory data analysis means, okay, so generally, we do pre
+processing in that. Let me give you some examples of how do we
+do exploit data analysis. Okay, so you get come clarity on that.
+Still have a questions.
+Rejoin, fix for me. Okay, great.
+Okay, so
+So we start with EDA
+is also known as
+exploratory
+data analysis. So
+okay, before getting into exploratory data analysis, let
+me show you something.
+If you want to play with some data samples, we have
+a scale and package which consists of data sets.
+Okay,
+so if you click this data sets here, we have some of the data
+sets available.
+For example,
+load Iris. Let us consider load Iris,
+or we can do search something like this,
+toy data sets.
+Okay, so what is actually these toy data samples? Is skn is
+machine learning repository, and it is a package. We call it.
+This package consists of some of the data samples and whatever
+the classical machine learning algorithm needed, like linear
+regression, logistic regression, K, nearest neighbor, decision
+tree, all the algorithms are available in SQL now to play
+with SQL, some of the data samples, to understand what is
+the data frame and all those things they have included some
+of the data sets to work with. One is a load, Iris. Load,
+diabetes, load, digits, a load, linear load, wine, load, breast
+cancer, for example. Let us take an example of Iris plant data
+set as a toy data sample. Use it. Okay,
+here clearly description is given that there are total 150
+samples we have, and four are numeric, and one is the
+predictive attribute means they are talking about supervised
+machine learning. There we consist of sepal and sepal
+width, petal length and petal width. And then we have a class
+as IRI Setosa, Iris, particular Iris, iris virginica, one option
+is there. Here we directly got the information from the
+iris CSV, right? Another one we got from Toy data sample. Either
+you can use a toy data sample or we can use your own CSV file.
+Okay, so suppose, if you want to use the toy data sample, how do
+we access the data for that? Very simple. We can say, from SK
+learn
+dot data sets, import which one load underscore,
+Iris.
+Now create object. Iris is equal load, underscore, Iris.
+Iris is now like a dictionary where we have all the values. So
+when you say Iris, dot,
+keys in
+dictionary, we can get keys and values right
+when you are discussing about containers like list, tuple and
+dictionary and the sets you might have seen if you want to
+access in a dictionary, keys, we can use keys, dot values, dot
+items, correct. So now if you have, for example, Iris dot
+items,
+you can see
+data is the key which consists of this value, okay, key value
+pair and next one target is the key. Value is this one like
+this, okay, this is about like a think, like Iris is a
+dictionary. Okay, good. How do we access the data? Now,
+Iris dot data will give us data or not. Data consists of how
+many features now, sepal length, sepal width, petal length, petal
+weight. Suppose, if you want to
+know names, just write down target names
+so you can get in the target how many names are there? Setosa,
+vertical and.
+Virginica. Now if you want to know what are the feature names,
+just write down Iris, dot feature names. This will give us
+sepal length, sepal width, petal length and petal width, perfect.
+If you want to load the data from this Iris, also you can
+load and you can create a data frame. For example, DF,
+underscore, Iris. I want to create data frame. So you can
+write down PD, dot, data frame. Okay, data is equals to
+Iris, dot, data then columns equal to Iris, dot, feature
+names now, DF, underscore Iris, dot, head.
+See the data the whatever the column we have, we converted
+into a data frame. Now, do you have any species here? We don't
+have a species, right? So we need to add species also. How do
+we add DF, underscore, iris of species is equal half, Iris dot,
+where is the species target column correct.
+Now, if you write df, underscore Iris dot head, you can see the
+complete data frame, sepal length, sepal width, petal
+length, petal width, and the species. Now, species already in
+the numerical values, zeros, belongs to Setosa and once
+belongs to
+versicolor, two belongs to Virginia. Clear this way we can
+access the Paris data frame, toy dataset. If you want to access
+we can access in this way.
+Okay, now, next one, what we need to do now we got an option
+like we got two things. One is, first of all, we took something
+like dot CSV file, we kept that into a data frame. This is we
+have seen.
+Another option is we got one toy data from SK learn, and then we
+dumped into a data frame. Okay, so what is the data frame name
+for this one? DF, Iris. What is the data frame name this for DF?
+So now you have two options, understanding, like, how do we
+take the data dump into a data frame from the CSV file? This
+CSV can be a table and all those things. So in the class, I'll
+show you how to connect with external database also, okay,
+I'll create one data, and I'll show you how to use that also.
+Now the important part, a part is, as a data scientist, you are
+not going to do all those steps and everything, right? Because
+nowadays we have a lot of packages. We need to take help
+of those packages, okay? So first of all, let us understand
+what is data exploratory data analysis. So once you got this
+data frame, what is the next step we need to understand? What
+is the exploratory data analysis? Then we can take
+edition of, how do we do pre processing and all those things,
+right? So EDA is something the process of just in simple
+understanding, if anybody asks you process, uh,
+analyzing,
+data sets
+to
+summarize
+their main characteristics,
+often
+using visual methods.
+Okay, this is EDA. There is a confusion in ED and ETL. ETL,
+I'll explain later. First of all, try to understand what is
+EDA, exploratory data analysis first. Okay, so here we says
+that process of analyzing data sets to summarize their main
+characteristics, often using visual methods. Okay, good for
+that, generally, you know, before around like, you know,
+three, four years, what we used to do is we used to write
+visualization technique using a matplotlib and C bond by
+creating different plots and showing to the stakeholders
+that, Okay, boss, your data is looking like this, and there is
+an outlier in the data, or there is a noise in the data, or some
+missing values in the data, and there is a repetition of the
+data, or something like that. But later onwards, we got very
+good techniques which can give us a good analysis of your basic
+data by using one or two lines, of course. So for that, we need
+to use y data profiling. Okay, so let us try that y data
+profiling and understand what the output it is giving, and
+then what we can do with that means using that output. What
+are the things we can explore? We'll see those things. Okay, so
+let me take that first of all why data profiling is not
+available here in this collab notebook. How do we know how
+many packages are available in your collab notebook? Very
+simple. Just write down Pip, space, list command. It is going
+to show you all the available packages installed.
+And available in your collab notebook. So here you can see
+already, some of the packages already. This many packages are
+available, right? They are installed already. Now we use
+today. Which one we used? We use the pandas, correct.
+L, M, N, O, P, Q, P, pandas, okay, the version of pandas we
+used is two point 2.2 and then I said, y data profiling. So do
+you have y data profiling here? No, we don't have any y data
+profiling. Okay, so we need to install it. So how do we install
+we use the command VIP, install.
+Why data
+we a profile. I think, Okay, let us try.
+Okay, done
+by data profiling utility. Now we have a data sample, DF,
+underscore, Iris, right? If you look into this data sample, we
+have like, you know, these are the sample. Okay, now I want to
+use y data profiling. How do we do that? First of all, import so
+we can say from y data,
+profiling? Import profile report, then
+we need to create object. Profile is equals to profile
+report, DF, IRS. Title is pandas, profiling report for
+Iris data and do you want an explorative analysis? Yes, you
+just write down explorative is true after that profile.we,
+need to convert into two file. Two file. Example, we can say
+Iris, pandas, profiling, dot, HTML, okay, now you see here
+there is only two files right after executing this command,
+see what happens.
+Okay, done. Now here right side you can see when you refresh
+Iris, pandas, profiling, okay, download this file.
+Now, here is the Iris data profiling. This is given to the
+stakeholder,
+okay.
+There is a question,
+does Arita download it from SQL and has the target column label
+level imported? Yes. Kishore, okay.
+Now this is the preferred report you see. Everything is clearly
+given this profile in dot html format
+correct.
+Now let us understand step by step. What do we have? We have a
+section overview. There we have, how many number of variables we
+have. That means how many columns we have, five columns,
+number of observation, there are 150 samples we have. Do you have
+any missing cells? No duplicate rows? Yes, there is one
+duplicate row. And then we have, what is the percentage of
+duplicate row out of this? We can say 0.7 percentage. What is
+the size in the memory and average record size? How many
+numerical columns, how many categorical columns? Is given,
+then we have an alerts and then reproduction. So let us not get
+into alerts Now, let us take an example of a variable now. So
+when you look into the variables here, variable section consists
+of it says that it is a type, numeric. It is clearly writing
+here, what is the type? It is a numeric. That is unreal number.
+Then you can see, is there any missing values here? Yes. And
+distinct values means, how many values are a different unique
+values are there? So 23% are distinct values we have that is
+well and good, and in percentage missing we have zero. Means
+percentage also will be zero. Is there any infinity values are
+there? No and then we have an histogram here, besides this,
+which can give us some basic understanding. Here it is given
+4.3 is the minimum value. Maximum value is 7.9
+then we have zeros and zero percentage, any negative values
+are there? All those things it is going to give us, when you
+look into this bar chart, generally, what happens is we
+can get an idea like we can understand, is there any
+outliers are also available or not? So what do you mean by an
+outlier? Now, out there is something the data is not nearer
+to the data, which is away. So for example, if you look into
+this data science.
+Sample the histogram, generally, visualization sometimes will be,
+you know, not that much accurate, okay, so we have to be
+very careful. We have to apply IQR, intercontreal range to
+understand outliers. Also, we'll see that one by one, okay,
+let us not get confused. It takes one time. So this is a
+graphical presentation of this. So when there is a splitting or
+something, we can understand that there is maybe some chance
+of outliers are available. And look and feel here at the end,
+then how the data is got scattered, and some samples will
+be given, and it is showing that there are some duplicate rows
+are available. Okay, so this is the first glance of the complete
+EDA report exploratory data analysis. So from this, we can
+basically understand that, what is that the variable types are
+they have any statistical information like, you know,
+mean, standard deviation narration is needed or not, or
+if there are outliers, and all those things we can understand.
+And then it is going to show us some missing values, also some
+warnings, also, like, you know, there is a skew. Distribution
+correlation is about threshold, those things we can understand
+clear.
+Okay, let me take questions in chat box.
+Okay, we started profiling. Gives more granular data. When,
+from fair to data frame info, this is a best practice to check
+your data. Yes. Manoj, how are infinite values mentioned in a
+cell something which you have, you know, some symbols or
+something, however. Okay, sir, I had a question yesterday, unable
+to understand difference between out clear and a noise. Okay,
+yesterday you asked me the question.
+Okay? Yesterday session you asked the question. Okay,
+because yesterday I didn't take the session. I'm surprised you
+asked me the question. Okay, so there's no missing data, but in
+histogram, there is a gap. Why that visualization is there is
+some values in that range. It's not available. Santosh, so those
+values are not available. It is going to keep it empty only
+right? It doesn't plot. That means, here the value, for
+example, with seven to eight, maybe seven point like, you
+know, seven, 7.6 those values are not available. So you don't
+see that.
+Why? Why we choose only, Iris, pandas,
+why we choose Iris, pandas, only. I didn't understand your
+question.
+Srinivas, Can you unmute earlier? Tell me what's the
+question?
+Srinivas,
+okay, does y data needs whole data profiling our sample data
+will help. It is done locally. It also does profiling on string
+data type, yes, it will do profiling on string data also.
+Indra, why needs means whole data for profiling before
+understanding the data and the output we need to see at the
+glance.
+Good to go with or not? Okay? SD, column, separate, length,
+column related string values remaining. So understand
+duplicate CS shaper, maybe, for example, if I want to height and
+weight height, you can get some repeated values, but the
+combination will change. Okay.
+Next one, I was wondering whether we need to provide the
+entire path through the file. How does pandas know that CSV is
+in a particular location? Boss you are, it is something like
+the folder is in local machine, okay? So when you are in the
+same folder, you don't need to mention the path here.
+If you want to mention the path, you can say, copy path. This
+will give you Okay? Or if you are somewhere, if you are
+mounting your data frame or something GitHub, if you are
+taking then you have to give complete path, but this is
+completely in the same folder, okay? So you can see this is
+like a folder. Right in this folder we have a Python notebook
+as well as data sample, so you can access directly, not a
+problem. Can you please show the code that generated this? EDA
+once it is very simple, these three lines of code, okay, sir.
+Out clear means do not fall in data range. Could you explain?
+Okay, a lot of questions in outliers. Let me take an
+example. Okay. Next, have you been data from Iris
+data frame?
+Can you exclude some sections in report? No, you cannot exclude
+Aditi. This is default, okay. When you are representing you
+can exclude them. Why it is important have features with the
+main zero and standard deviation one, Ayush, those things. Will
+discuss about feature importance things. Okay, so why important
+and all those things? Let us keep a boundary. Let us not dig
+into those you know details. Now today, just you have to see some
+information and those details like you know, why need to
+cancel those things we discuss in future sessions. In sepal and
+bar diagram, there is one column empty. What does it signifies in
+sepal length bar diagram, that means there is no value for that
+particular
+bar graph. Okay, for example, there is 123, we can.
+What are we achieving in y data profiling? You tell me. Anupa,
+what are you achieving from y data profiling? So detailed
+review of what your data is, right? That's what I'm trying to
+explain here. That is you can see in a glance, instead of
+writing df.is
+is any dot, some finding the null values and df dot, finding
+the quad tiles, all those things are in a glance you are getting
+right? So that is what it is giving some information for you.
+Basically, before doing some pre processing, it is giving
+information. After that, we'll do pre processing, and then
+we'll apply machine learning algorithms. Okay.
+What other options, parameters, profile reports, why? What other
+options we have? A switch report also, which can do the job for
+us.
+Important thing is, Kumar here, we need to understand that what
+kind of variables you have and late onwards, when we do the
+feature engineering, these alerts help us a lot. That
+means, for example, this alert says that petal length is highly
+correlated, petal width is highly correlated. Sepal length
+is highly correlated. And species and what is missing
+here, sepal width is not correlated, right? That means,
+when you are building a machine learning algorithm, instead of
+taking all four features, we can consider these four, three
+features which are highly correlated with the species that
+will give the same accuracy, even if you are including the
+sepal event. So why those things? When we discuss in
+feature engineering, you will understand, Okay, can we do
+iData profiling on GBs of data, like 20 GB? Vijay Bhaskar, we
+can do 20 TB, also not a problem. But problem is, you
+have a GPU, okay, the resources, if you have we can do that is
+this profiling applies on the entire data set or any sample on
+it. It is going to be applied on entire data sample. Okay? And
+somebody said, please share the CoLab notebook. Okay, we have
+taken all the questions.
+Can you move up where you downloaded, imported, load iris
+in the collab notebook, even to say,
+okay,
+here I said,
+from a scaler, load Iris weighted, then load Iris. Now
+Iris is a dictionary type, then we are converting that into data
+frame, and from the data frame, once it is into data frame, we
+applied the pandas profiling to get the glance of all those
+things. Okay,
+so, Manoj, okay,
+you want me to upload HTML file? Okay, profile.
+You can take it. Okay,
+okay. Manikanta, what's your question? Go ahead. You
+unmute. Manikanda Raju,
+yeah, you can unmute.
+Go ahead. Manikan, yeah, one small inquiry or like,
+to handle the data set, we have Iris, like any other libraries
+or anything else where it's available to handle
+the data sets, come again.
+So here to handle the data sets and everything, we use Iris,
+right? Just yeah,
+so
+sorry, just one sample is given to understand why data
+profiling. Because Iris is the most used data sample, which is
+a clean one first step to use it. Later, what we can do is we
+can go to UCI repository and we can use another data sample.
+I'll take it one example. Okay. I was talking about we are
+taking the like, Iris is one of the library which being used. So
+IDC is not a library boss. IDC is a data set which is in the SK
+learn, okay. SK learn is the package in that there is a
+library data set which consists of different data samples. One
+data sample I took it as Iris. Don't say Iris is a library.
+Okay, okay.
+Next
+deep,
+I just had one question, is that Iris is a like it. Iris looks
+like a array, right? Numpy array. So why don't we need to,
+you know, import NumPy,
+package Iris is a numpy array. It
+is a dictionary, right?
+But it is an array, right? So that is why I was wondering
+like, but it is like the data is an array, is an array, right?
+Iris, dot data, data is an array, but we cannot do
+functional, functional, you know, operations on array, that
+is the reason we are converting into a data frame. Data has a
+smaller data. We can have an array, not a problem. But when
+you are if you want to do some functionality, for example, if
+you want to find mean or median standard deviation or impute,
+that is not possible those functionalities, okay?
+Okay, so that is the reason we are dumping into a data frame,
+and then we're using it. People, when they are using the data
+collecting from the resources, for example, they can put in
+different format. But as a data scientist, if you want to use
+the data and to get a glance of the data and profiling of the
+data, we have to dump into the data frame. DPM, okay, okay. And
+like, this is a numpy array, or like
+the iris dot data, is it? Yeah? It is like an Yeah, Iris dot,
+data, values, number, array, data is the key. Value is an
+array, okay? Array, okay,
+yeah, Sandhya,
+can this also help us in identifying invalid date form,
+date, not format, but anything like 1600 0101, or some birth
+date like ages going beyond 100 years like that, yes, but I
+actually data profiling doesn't give you
+like but in alerts, It can indicate that somewhere in the
+data there is an error. But exactly what is error? Why this
+classing? It doesn't
+give you, okay,
+yeah,
+those things, you have to use programming part to explore all
+those things. In y data profiling, we have been declared
+X or Y columns. Can we give this as an input with analysis
+different based on this? No rush. It is going to understand
+a relationship, just we are going to get in a glance. We are
+not in a stage first to define x and y. Okay, so once you got
+this, then we can apply X and Y on top of that and build a
+machine learning values here, missing cells, mean values is
+blank or not actually blank in the sense null and blank, there
+is a question, okay, for example, if you take an Excel
+sheet, okay, now I have,
+let me take an example. Here I have a name and age column,
+okay. Name is Peter, age is empty, and name is, for example,
+Alice, and age is zero. Now save this file
+as
+C, 25 let
+us take CSV format.
+Okay, Book One, save it
+now when I close this
+and see 25
+Book One, when I open
+with, for example, notepad.
+See here, you don't see anything, right, empty. So these
+are known as null values. Zero is not a null value, okay, if
+anything not you don't have then it is null value. So how we are
+going to see that? In pandas data frame, for example, if you
+import this data, they are known as na ns. We call it okay.
+And now book one, okay.
+Now write the code sample.
+Sample is equal TD, dot, read, underscore, CSV, and okay,
+somebody is asking the path, right? Let me take the path here
+this way. Else we can do it, but you are in the same folder.
+Okay. Now sample.
+You see this is known as a null value, N, E, N stands for not a
+number.
+Okay, when it is converting a data frame that empty is treated
+as a not a number. We need to find those things and remove
+them. It's not like a zero or anything clear,
+done.
+Okay, good to go,
+sir. Just one last question,
+if I have to understand the Cyrus data. So basically, it has
+some features of some if I understand it correctly, there
+they are flowers, and they have some features of the flowers,
+which are captured in a table format, and they are classified
+under different flower names. And that is what we are trying
+to analyze here. So if a new flower data is given, it can be
+classified under based on the previously existing data. That
+is what we are trying to achieve here, right? Perfect
+Understanding, good. Thank you
+for that. We are going to apply machine learning algorithm.
+Before applying machine learning algorithm, we have to do that.
+Okay, now I'll make it a very simple understanding, yeah, can
+we go to ourselves?
+Yes. Stop. Stop, stop.
+Okay, sir, thank you.
+You're typing the code. No need just have shared the collab
+notebook, right? Just open it. You can see those things.
+Okay? Do?
+Oh, sorry, sir, you have not shared that colab notebook. I
+didn't share the collab notebook. Oh, sorry, yes, sir,
+okay, okay. Anyway, I have a paste the top query. No, no.
+Actually, I have shared copy link in the beginning of the
+session itself. Maybe you joined little bit late. You can see the
+top. It
+is there. It is restricted, sir, okay, restricted, sir, okay. Can
+you get it now? See
+in chat box,
+Raju, who is there? Mohita Raju, can you take that link and
+share?
+Okay, let me do one thing in answers I have given, see Rajesh
+for the Rajesh, Rajesh, Babu, Rajesh, Bharat, right. And the
+question I've given the collab, can you try? Sorry, you have to
+give permission on the link,
+I think in the share here too.
+Yeah, already have given in the share everybody can access right
+here. Have given
+anyone with the link? Okay. Sorry, done. It's my mistake.
+Sorry, no,
+okay, so now good to go chart you can access, or, let
+us take, yeah, we can access here. Okay, good. Done. Okay,
+done, done. It is done. Ayush, thank you.
+Okay, so let me give you a basic understanding of, like, you know
+how I have a basic question. So let's see here we are doing this
+data cleaning and formatting for the tabular formats. And let's
+see if we have a different kind of data, for example, images,
+sound. So same techniques we are going to apply, it will be
+covered. And there are different techniques, come again, come
+again. So currently, right, we are doing data cleaning and
+formatting. Then you mentioned right? Then only we can apply
+the machine learning algorithm. Yeah, exactly. So currently we
+are mostly talking about the data which is in the tabular
+formats, right data?
+Yes, if we have a different kind of data, which is images and
+sounds and so forth, so we apply the same techniques on the
+different format of data, or it will be
+no so now, Srinivas, please mute yourself. Okay. So now, very
+good question here see if you have a numerical data that we
+can do pre processing and give it when it comes to images or
+unstructured data like videos, audios and those things, we have
+a deep learning technique, we call it. So those libraries will
+extract the features, and there inside those we have a
+parameters, like filters and those things that will give us
+the pre processing of the data. But as a numerical we can, we
+don't do those things here. Clear, okay, so, sir, will we
+cover, I mean, yes, we'll cover all those things will be
+covered. When we talk about deep learning at the time will be
+covered. Okay, okay, thank you so much. Yeah, welcome. Okay.
+Let me give you a simple example, like, what is an
+outlier? How an outlier will be, you know, how do you find, is
+there any outlier in that, or something like that? Okay,
+so, for example, I'll give you some handmade data to make you
+understand. Okay, so first from pandas,
+import, sorry,
+import pandas as PD, first of all, tell me,
+what is inter quartile? Do you have an idea? What is
+Interquartile?
+25% quartile, 2520 70% quarter mathematics. Do you have an idea
+25 to 75 percentile? Yeah. Do you have an idea of that? Yes,
+sir, yes.
+No, no. Okay, let's do one thing. Okay, let us do one
+thing. First of all, uh, let us understand that. For example, I
+have a list of values, for example, okay, um,
+2468,
+10 and 12 and 14 and 16 and 18, for example. Okay, this is a
+list,
+okay, this is a list, okay.
+Can we mute everyone? Can we mute everyone? Yes. Raju, you
+can mute everyone, okay. L1 we have
+first one. Tell me. Tell me, what is the middle number?
+Middle number is.
+Middle number is 10. Okay, now we have lower half. Lower half
+is we have something like 2468,
+before 10. Okay.
+Correct now
+we can say first quartile can be quartile one will be median of
+lower half. That means we can say, what is the median of lower
+half?
+Median of lower half here? So here we take two plus four,
+two plus four divided by two. Okay,
+this is what actually happens. Okay, then we have an upper
+half. Q1, we got it. Then upper half is like, you know, after we
+got, you know, 1416, something like that. Okay,
+so then we have in it we need to calculate that can give you the
+lower boundary. So just in understanding we got lower half
+as a 2468,
+then upper half,
+as
+you know what is that? 12 plus 14 plus 16 and 18. This
+recorded.
+Now, how do we calculate the q1 q1 will be in the lower half
+with the middle you have to take what is the middle four plus
+median of the lower half. You take it. So we got around maybe
+four plus six. We take it and divide by
+10, sorry, divided by how many number of elements we have. Two
+elements we got q1 then similar to we need to get the q3
+q3 will be mean of the upper half. So for example, we take 14
+plus 16 and divided by two, we got q3 okay. Now we need to get
+the lower bound and this one so IQ R will be q1
+minus sorry,
+q3 q3 minus q1
+then we can print
+IQR interquarter range, something.
+Sorry, sure,
+typos.
+So interquartile range, we got 10. That means IQR will help us
+finding the outliers generally. So
+how do we get this
+IQR? Very simple. We have, for example,
+let me take an example of
+one port
+at us as BD. Next one I can take, for example,
+data as,
+let me take height.
+Is some values, 150 and 161
+65
+155
+and 170
+then
+158
+then 159
+then 300
+the first one. Let me take weight
+as something
+50 comma, 60 comma, 65 comma, 55
+then 70, then 58
+then d9 then, for example, 200
+then I have a gender D will be
+male,
+then Female,
+then female. For example,
+then male,
+then
+male,
+then
+female,
+and female. I think we need one more, right? So let us take it
+to male,
+so convert that into data frame DF is equal P, dot data frame
+DF, you can see height, weight and gender is given,
+okay? So now, if I want to understand that,
+is
+there any outliers in this, when you look and feel of this, okay,
+we can understand that there is an outlier where is that out
+clear at 300
+so one thing we can do here is, let us do one thing, copy this.
+Okay. Now,
+paste here.
+Here instead of DFI risk, let us consider as a DF, pandas,
+profiling for
+sample and here
+some.
+Apple dot HTML, do this.
+Okay. Now we got sample dot HTML, download this.
+Okay, this is sample dot HTML,
+so distinct is 100% okay, when you see here, there is one thing
+which is missing away right here. So we can understand there
+is a out layer here. By looking at this graph itself, which is
+split from this and going away from the center, histogram
+itself presents that there is an outlier here. So okay,
+pictorially, you understood. But how do we confirm whether,
+whatever pictorially, visually we are seeing, whether it is
+correct or not? So further we have in SK learn, we have some
+of the libraries, let me use that so from SK learn, dot
+ensemble
+report. There is a class known as isolation forest, okay,
+import that once it is done, okay. Now what we need to do,
+when to define, what do you say,
+x and y here, the reason is here, this is a categorical
+value. Right, gender is a categorical value. So what we
+can do, we can convert the gender. How do we convert the
+gender? I just write down df of gender is equal,
+like df of gender, then map
+the male as a zero, female as a one. This is manual changing.
+Okay, if you don't want, because we didn't discuss about label
+encoder. I don't want to use label encoder. Now we didn't
+discuss about that, right? So manually, wherever you find
+male, make it as zero, female as
+a one. Okay.
+Now when you write df, you can see how is the data. Now we got
+everything is numerical. So once you got everything is a
+numerical values, okay, now we need to apply the isolation
+forest, okay. So for that, for example, ISO
+forest is equals to
+isolation forest
+contamination means how much you want, and
+then
+random underscore state is 42
+then let us add DF out clear new column, I'm adding to make you
+understand, okay, ISO forest dot fit predict
+df of whatever the data we have.
+Okay, now
+do this. Okay, once you did this, what I did, I created an
+object. I said, Okay, fit the data and try to get the
+outliers. Okay, so now let me show us.
+Df of we can say,
+out clear
+is equal.
+Here. D, F of out here map,
+one, two,
+let's say in layer and negative, one, two,
+out layer. So
+okay,
+there is single code stressing detect.
+Now when you say df,
+so you can say this is in layer. Clearly, it is mentioned that
+three head is a out clear which is away from the center. So this
+is a way we can get the outliers. This is using
+isolation forest. There is another function we use that is
+known as,
+there is a local out out here. Factor also is available. That
+means here, instead of using isolation forest, another
+technique is another function also available in SQL from SK
+learn dot, there is a neighbors. Import
+local, I think outlier factor, okay, this also we can use it.
+Okay. So for example, let us use this one local outlet factor is
+equal to local atria factor then, of how many number of
+neighbors, I'm going to consider the five neighbors and then 0.1
+Okay, good to go.
+Then outlier underscore labels is equal to.
+To Lof dot fit predict this one.
+Okay, now you can do the same thing,
+map it,
+map this, and then print the DF.
+So this also
+no somewhere it is getting,
+okay. So here it is not a data frame, actually
+series we can take it.
+Take this outer labels.
+Sorry,
+just have little patience. I'll answer all the questions. Okay,
+dot map
+one as out, layer two as out here, if okay, this
+way also you can see it is also saying that 300 is a clear so
+this is a way, actually, how do we get this outliers? By using
+interpartal range, we can get the outliers.
+Okay, now let me take the questions
+we discussed label encoder in our lab yesterday. Okay, good,
+then you can apply label encoder, not a problem.
+Now, let me take the questions.
+All the questions answered. Okay, it may be out of the
+topic. Just curious to know. Assume we have one TP of data
+and profiling. It requires a lot of hardware resource, like GPU.
+Is it possible to summarize this data one time into a smaller
+size, like one GB, and then use one GB as an index or reference
+to access the full TB.
+Yes, we can do that. That is actually we use for that one. We
+call it as a chunking techniques. Recursive chunking
+technique can be implemented when you discuss about
+generative AI, you learn to understand more in detail. Okay,
+next one. Can you tell how it is map? Map is very simple. Man, so
+whenever the values of one is, I'm saying right? Whenever you
+see one, write it as a in layer, whenever you see minus one, it's
+out layer. That's the number, okay, it's programmatically. I'm
+trying to
+do understand. And there is a question
+like, What do you mean by the contamination here, right?
+I'm edible. I
+Okay, okay, just let me take another question.
+On time, mute, okay, no problem. We'll take up the questions.
+Okay, you're audible. Okay, good to go. Okay, so here in
+isolation forest, or you are taking local forest, your local
+What do you call outlier detections? Also, we use the
+word called as a contamination. It is actually one of the
+parameter we are when you are defining algorithm we are using
+is okay, so 0.1 means you are saying that we can expect around
+10% of your data will be an outliers. So from this data,
+think like maybe up to 10% so I'm keeping the threshold. So if
+I don't keep the threshold, what happens, it may consider up to
+this also, right? It can come up to this from this here
+somewhere, so it can come up to this also. So that threshold, we
+have to give 0.1 means 10 percentage. If you give
+something 0.2 is a 20 percentage. Okay, so the
+algorithm will take that according to that threshold, it
+is going to use it. So that means whoever is having 10
+points as outlier, it will be labeled as negative one. Before
+that the remaining 90% will be labeled as a one. So that way we
+can cut off it. Okay,
+so in beginning, we are saying that I am thinking that from the
+visualization, 10% of my data is something like, you know,
+suspicious. Find them. That's what I'm saying. So that also
+hit and run only you have to try with that. Okay? So from
+visualization we can understand and then we can hit and try
+those things.
+Hope it is clear.
+Are there any guidelines on which function should be used,
+isolation, forest and all those things, etc. Okay, so very
+simple going forward, when we start with classical machine
+learning algorithm in the next session, when, when we start
+with linear regression, at that time, we'll understand that SK
+learn is a package which consists of different kinds of,
+you know, libraries according to requirement we are going to use
+those libraries, okay? And the reason we find out layers is we
+exclude them and skip them for model training. Yeah. So
+Hanuman, sometimes outliers are good. Means some IPs are good.
+Sometimes outliers play, you know, random accuracy in your
+model at that time we.
+Need to impute those things. We need to means remove those
+outliers. So how do we do that for outliers? For example, if
+you want to apply the technique of an outlier,
+how do we do that? Okay, let us do one thing. I'll take that. I
+have two minutes, right? So let me give you an example of Iris
+data, step by step. Okay, so first, everybody with me,
+whatever I'm writing, just in your you know, in your mind,
+read again. Okay, import pandas are speedy, okay. Done, from SK
+learn
+dot, data sets.
+Import, which one load, underscore, Iris, Okay, done.
+Then we write Iris is equal to go ahead, load underscore, Iris,
+okay. Now create a data frame. DF is equal PD, dot, data frame,
+okay. Now we write Iris, dot, data and column feature names
+are done. Okay, this is what you're doing,
+Iris dot data.
+Okay, then column feature name, species, Iris dot target. Let us
+remove the target first. Let us work with the data first.
+Okay, Okay, done. Now it is done. We need to get the first
+quartile. Q1, is equal to d, f of for example, I'll take sepal
+length, okay. I'm taking only one, one column. I'm considering
+sepal length, okay, sepal length, dot quantile
+of what percentage quantile I'm taking 0.25 percentage means the
+values below 25 percentage I'm considering then q3
+q3 will be sample length of quantile. 75 percentage, IQR,
+I'm getting now. What is the lower bound? Lower bound will be
+q1 minus 1.5% is IQR, and upper bound will be this one. Okay,
+done. Now, I got the range out here, right now. What do you
+mean to say? Print,
+print, lower
+bound is
+lower underscore bound. Okay, then print,
+upper underscore bound will be
+upper underscore bound,
+so 3.14
+below 3.414
+is a outlier. Above 8.35 is out clear, understood. Now, any
+value which is below 3.14 is treated as an outlier. Any value
+more than 8.35 is an outlier. So now, what should we do? Now we
+need to check our Iris data, sample, DF, and if there is
+something which is below
+this value, lower bound, remove them. And if they are above or
+lower value, remove them. This is what we are trying to do.
+Okay? So how do we do that? We can use data frame query. Have
+you seen data frame query? How do we query data frame for
+example, I want to find all the data where sepal length is equal
+to, for example, sepal length is there, right? So I want to get
+separate length is 5.1 I want to get all the data samples. How do
+we write so from the data frame, okay, df of sepal length
+is equal to how much 5.1 it is like simple query. So it is
+going to show the samples whose value is 5.1
+correct.
+Sorry, Mr. How did you arrive 1.5 IQR for lower and upper
+bound checker point. This is a formula to get lower bound and
+upper bound mathematical formula we are implementing, okay, q1
+minus 1.5% of the IQR, and q3 plus 1.5% of the IQR. Okay,
+multiplied IQR. This is mathematical formula.
+Next one. This is querying, I think yesterday's session, you
+might have seen the query,
+right? What is the querying here, for example, I want to
+select some samples whose value is 5.1 separate length, right?
+So this way we are going to get all the value, simple one, so
+from the DF, correct. Now, what I want to do is,
+now I want to get the outliers. Outliers
+is equal to DF from the data frame of
+we can say
+so now we have df of sepal length is less than lower bound,
+or df of sepal length greater than upper bound
+done. Now print
+out layers
+outliers so.
+Why two times do
+you have any out layers?
+We don't have any out layers
+because we don't have any value which is less than this one,
+this one. So in this data sample, Iris data, we don't have
+any out layers. So this is one of the technique we use
+actually, mathematically. If you want to use you can use it
+otherwise directly. We can use
+local outlier factor, or we can use this. So three ways we can
+do it was mathematically. If you're good, you can do this, or
+we can use that libraries, and that will do automatically.
+Okay.
+Next one, sir. Here in Iris data, we are finding out layers
+for
+a column using IQR length, but using isolation. For us, we are
+finding out layers based on all the columns.
+What is that? Saurabh, you said, sir. Here in Iris data, we are
+finding the outliers for a column using IQR length, but
+using isolation forest, we are finding out there based on all
+the columns.
+So we can give individual column also, okay, in that there is a
+outlier. Okay. So here generally, uh, how outlier works
+internally, mathematics I'm showing. Okay.
+These are all libraries are free. Nizar Babu, no need to pay
+anything. They are all libraries which are free. Okay, so sort
+of, for your question, answer is actually mathematically how
+these libraries are working. I'm just going to show those things.
+Okay, that is mathematical inside the implement this. So
+from this, we can understand that this is for individual
+height only. There is an out here. Okay, so good question.
+Okay, so before let us take a break. Before taking a break,
+I'll just Raju give a chance to unmute themselves, so that if
+they have any questions, they can ask. And then we'll take a
+broke break. Okay, so raise your hands in a sequence. We'll take
+one by one. Okay,
+no havoc, simple questions, and out of the bound questions will
+not be answered, okay, only the questions related to the
+session. Okay. Kalyani, go
+ahead. Good morning, sir. Can you hear very good morning.
+Yeah. I can hear you. Yeah. This is not a concept like this. This
+session question, like last time you explained, like supervised
+and unsupervised, right? Is this the continuation? Is this
+session is continuation for that class, or this is a separate
+topic.
+See, we are discussing completely in unit one,
+supervised learning algorithms only, okay, okay. And then one
+of the concept is pre processing. How do you utilize
+the data into model, because next session onwards, we are
+going to take the data and use into machine learning
+algorithms. So before using that, we need to do pre
+processing. So today's session, you are understanding. How do we
+do that pre processing? Clear, Sir, yesterday. This is a
+yesterday. We didn't understand. No, I didn't say, I don't want
+to say, like we didn't understand, like we understood,
+but you are again taking that session, right? Like, how, what
+is pre processing? Yes, I'm taking that and then we'll move
+on to the skn. So now in this session today, we have a pre
+processing using skrn Also, okay, so whatever you are unable
+to get it complete, things will be captured today. Okay, okay,
+okay. Thank you, sir. And this and this, outliers, would you
+explain is that this is like, from the queries Someone asked,
+like, what is, what is out place, right? Or this is the
+topic you you have you wanted to cover in this session? No.
+Outlier says, like, you know, coming sessions, we'll discuss
+more in detail, outliers. Okay? Because as we are into the first
+step, baby step, we'll see in a baby only, but when you are
+having huge amount of the data, how do we use that back spot and
+all those things, you know that scaling, we use it all those
+things we'll discuss. Okay, so just today to the word, the
+terminology out here means what, how you understood now, right?
+Which is data, for example, in electrical it Hyderabad, AML
+class, somebody MPC students are coming in, so he is an outlier
+for you, right? So he is not in, does not belong at AML course.
+So that is what we are trying to understand. That's it. Okay.
+Okay. Okay,
+sir. Thank you. Go ahead.
+Yeah. Hi, sir, sir. This is the question is, regarding the
+contaminant, actually you're giving point 1.2 right? So
+you're saying that model will take it as a threshold limit to
+confirm the outlier percentage what is provided input file, if
+I'm not aware the percentage of out layer in the file, right?
+I'm pretty not sure about the percentage of hot layer. So how
+is the model response in that case? Ah, so see when you are
+unable to do that, that's the reason we are getting a first
+glance of the visualization point as profiling. Right. From
+this pointless profiling, we can understand some basic that,
+okay, one or two may be falling in, okay, then we apply that
+threshold. Otherwise it is completely.
+Hit and Run, hit and run on a similar
+Is
+it a kind of mandatory parameter that we need to pass? No, not
+mandatory. But if you give that is well and good, if you don't
+give, not a problem, it will take randomly number, okay,
+okay.
+Rag, in the wrong Yeah. I answer, sir, last question.
+Suppose if I have given point one, and if the outliers are
+more than the point one, percentage how the model
+behaves, or what, sometimes model accuracy will go down.
+Sometimes you will get over fitting of the model. So though
+from this, we can understand, okay, okay, it will have
+implications. Yes, accuracy will go down and up. Something right?
+Go ahead, yeah, on the y data profiling, once data, once you
+have done with the question, please lower your hands. Okay, I
+can see how many people are remaining. Okay, yeah. So one
+more request. We'll start with the break 1040 we'll be back by
+1120 now we are into the break time. Let us consider and if
+anybody, if you don't have a question, you can enjoy your
+break. If you have a question, you can stay and you can listen.
+Okay, yes. Ragvin,
+yes, sir. So with y data profiling, can we pull our
+database data, like you need, table data, and do the y data
+profiling? So my question, yeah, see why data profiling is
+applied and data frame, right? So first of all, you pull the
+data into a data frame, then use it, not a problem. And all the
+things that is creating it is done locally. So just from the
+data security perspective, it is, it happens everything in the
+local, local environment, right? You're local only, but if your
+database is in the cloud, you have to provide username and
+password and that particular, you know, URL to connect it. And
+it can handle large volumes of data as well, right? Yes, it can
+handle large volumes of data resources. Is important. GP, if
+you have then, no problem. Okay, thanks. Yeah, Kira, I'll give
+you a break. After the break, I'll take one example. Okay,
+connecting to the databases, sir, when you, when you're
+calculating the content, the list had to be sorted because
+when you give a first Yes, sorted list only, we have to
+apply the sorted list. Okay. Thank you. Yeah. Manaj Kumar,
+I have a typical question, not in the class. You are getting a
+pre populated queries. So how that is happening? Come again.
+Come again. Come again. MANISH, can you speak a little bit
+louder when, when you're typing on the script, you get a lot of
+pre populate scripts? Yes, yes, yeah. So how that is happening
+when I typing? I'm not getting that one soon. So
+no settings. No settings. Actually, Gemini is there,
+right? So just restart the collab notebook, you will get
+those things, okay? Or you can say, control space. Control
+Space, it will give you the suggestions. Okay, tab also is
+using, yeah, but once you're getting suggestion, tab works.
+But before that control space, we give you, I'm not any
+suggestion. So that's it.
+No, no, no settings. That is then sometimes we are behalf of
+collab notebook. Don't worry. I don't think it likes that hobby.
+That's the reason it's giving suggestions. No everybody. There
+is no, you know, differentiation, okay. Only
+thing is restart the collab notebook and first time control
+space, you press it, then automatically it will understand
+you need suggestions. Arnab, what's your question? Yeah,
+sir. Sorry. Actually, I missed couple of things. First thing is
+that in that high to it and
+hydrate problem you like, made as per my understanding, one is
+in layer and minus. One is outlier, right? So in the last
+row, how come zero is outlier? I mean, I know you explained it. I
+somehow missed it. Suddenly, zero is not outlier. Boss, this
+is a gender. Gender is I have given zero is male, one is
+female. Label, yes, yes. Then out layer is another column. I
+said this is there is out layer here. What is that out layer?
+Height is the out layer?
+So, but, but, but, as per, we defined outlet as minus one
+right? Minus one belongs to outlet,
+right? If the value is minus one boss, this is actually algorithm
+is calculating, then it is going to give here, one minus one, one
+minus one, like this. Okay, so for understanding, I said, make
+one as an in layer. For Understanding, minus one means
+out layer. Means it is crossing out, outside the boundary,
+that's what.
+Yeah,
+okay, so, but I mean, how come the seventh race outlet I am
+still unable to
+understand. Arnab, yeah, even if you don't know outlier, tell me
+the range is from 150 to 159
+300 is away from that hedge height, right? 300 nobody can
+have height, so it's not out clear normal, yeah, yeah, okay,
+that you are identifying using a library, that's it. What's the
+problem? Okay, fine. And second thing, sorry, like after getting
+that profile report, how did you.
+Download it. I mean, after just
+dots, here, click the dots, click, download. That's it.
+Okay, okay, okay, thanks. Naveen, what's the question?
+Naveen,
+yeah, so, Professor, so the overall session, you said we
+start with data ignition, and then we move to data processing,
+right? So can we consider the reading of the DB CSV is not the
+DB CSV and excel things as data ingestion and the EDA and data
+provide data profiling is data pre processing? Yes, okay, thank
+you.
+Ashok, what's the question? Lauren, please, yeah, yeah, sir.
+Like, I mean, I have the question with respect to the
+outlier. Like, I mean, we are discussing here to find out the
+outliers by using the different methods, right? So my question
+is with respect to the data pre processing, right? So the
+outliers are important or
+not, so sometimes these data also can drive some important
+decisions, right? So, yeah, so that's what I it's saying a
+shock. It comes from problem statement to problem statement.
+When you're talking about machine learning, remember that
+for this problem statement, outlier needed further problem
+statement may be out there, not needed, like that. Okay, so
+decision will be made after building the model, only after
+you building the model, then only you take addition that.
+Okay, if the model drifting is happening. What is not
+performing well, outfitting, overfitting, or, you know,
+underfitting or something, then we can take a decision, and then
+we'll go back and we'll change the outliers. Okay,
+okay, okay, got it, sir. Yeah. Thank you, yeah. Iraq, go ahead.
+Hirak, yeah. So my question is regarding, it seems EDA is quite
+vast, so for us to kind of maybe develop a little bit of
+background and understanding, is there any text suggested text
+that we can read up to kind of develop the fundamentals around
+EDA? What? What kind of
+no need here that that's not needed in CI he actually EDA,
+that is something like, if you are going some research, then it
+is. I'll suggest, but generally for displaying EDA, no need for
+any text. But still, if you want lot of publishers, they have
+written, what is EDA? Basically, not only for data science
+perspective, any data. How do you explore in security purpose
+perspective, also if you want, I can suggest something, not a
+problem, okay, yes, please. That would be nice. Thank you. Yeah,
+sure. Ashok, I think you have done with your question.
+Santosh,
+hello. I'm trying to stand the sequence. So here finding an
+outlier, should it be after data scaling, or both are not
+both are not related. Santosh, okay, before scaling and after
+scaling, the same impact is there or don't take up Asana
+scaling and all those things. After the break, I'll show you
+what is scaling and all those things. Okay, okay, thank you.
+Yeah. Kumar, what's the question, sir, I think that why
+profiling is more CPU intensive than any other task.
+So as NumPy and this pandas are implemented c plus plus,
+C plus plus, then Python, it will be any helpful.
+Okay, so
+CPU intensive you are saying, right? So don't think it is CPU
+intensive. Actually, there is a parallel processing is embedded
+inside that. So you have to there is a technique we call it
+as we call through a fast API, using workers, we call it so we
+do the parallel processing. It is something like a master node
+and the child node kind of things. It's implemented. Then
+that CPU intensiveness, what you're saying that will be
+eliminated. Okay, so when in real time implementation those
+things, DevOps will take care of those things. So not nothing to
+worry. No means. So we are working on a project. We are
+trying to find out the part of the protein. So there we are
+facing problem is that you are not able to pre process the data
+because that it is in, Ah, okay, for the protein, better you go
+with the PI spark pies from already different. Don't use
+pandas, okay, big data you have to use. We have taken very small
+samples, trying locally, then we're planning to go to cloud
+later. Okay, so that's what I'm saying in the local also, if you
+want guys, install the PI spark and use it. Okay? In the coming
+sessions, we'll see that. Okay, pi Spark, special specialization
+is there for huge amount of the data. How do you do pre
+processing? Okay, thank you. Yeah. Manoj, what is the
+question? Manoj, last question, and give me a break to have some
+tea. Okay, yeah, earlier, like when you are creating isolation
+forest, you have given a parameter. Random state is equal
+to 42 so what actually, remember Manoj random is something like
+whatever we discussed from the beginning, when we are splitting
+the data, also we take random right? Random state is the same
+thing. Random state means it is shuffling and then it is
+applying. That's it. That's it. Okay. Suppose if you don't want
+to shuffle, remove the random state, that's it. It's not don't
+get confused here. Random state always wherever you use random
+state, same meaning shuffling of the data. Okay, good, okay.
+So hope I answered all the questions, and let me take any
+QA, some questions left over, and then we'll take a.
+Break and on 17 may, in Titanic data set, we did data cleaning,
+encoding, scaling, penetration, polymer, feature discretion,
+power transfer, feature selection. Where does the steps
+you discuss today will be done, Ayush, after the break. First of
+all, I'm just giving you a glance. A lot of basic questions
+are there, right? So those questions are answered. Then,
+okay, then after that, encoding, after the break, I'll show you
+all those things like, you know, data cleaning. We did it first
+part. Now we didn't do the encoding. Encoding. We did
+manually. What is that? We mapped right male as a zero
+female. This is a kind of encoding only. Instead of this,
+you can use label encoder, okay, then polynomial features,
+discretion, power transformation, all those
+things. Now no need to discuss when we are taking a real
+session of, you know, embedding into deep learning. At that
+time, you'll get more things, okay,
+okay, yeah. After the break, I am going to consider two things
+like, you know, I'll take one data sample, and then I'm going
+to
+apply these techniques. Okay. After that, we'll take one data
+connecting to any MySQL, something like that. Okay, so
+we'll be back.
+Okay. Welcome back, everyone. Shall we start?
+Yes, yes, okay,
+so now we got some basic understanding of what is the pre
+processing, and then we have seen like, you know, profiling,
+which is giving us the basic understanding of the data. We
+can say in our terminology, first inserts of the data is
+possible through, what do you call? Why they write it up,
+profiling. Okay, then we have seen there is a switch also
+available to just have a look and feel,
+but not ready. Now, let us do one thing. First of all, let us
+take a sample data, some data set, for example, go to Google,
+just write down UCI machine learning repository, okay.
+Now, in this machine learning repository,
+you have different kinds of data samples are available. Let us
+take any one of the data sample and try with pre processing, one
+by one. Okay,
+for example, let me consider r2 mpg. There's a data sample. I
+click Auto mpg. Now, right mouse corner, there is a button for
+download. Okay, click that download.
+So you are going to get that auto MPG data sample here.
+Okay, now, extract this. So
+So there are different files are available. Here we have auto
+mpg, dot, D, A T, a data file is available, and we have names of
+the data file. So first, let me open this. This D, a T, a file.
+We can see this is the data file. So we have 123456789,
+columns we have, okay, so these nine columns, we need to
+construct these nine column and let us do some pre processing on
+this data sample. But when you look into the first glance, you
+see the first record is started, but there is no column names.
+How do we know column names for that they have given a separate
+file onto mpg. Click this you can get here the information
+that there are how many columns we have, nine columns with
+column names. One first one is the miles per gallon, which is a
+continuous cylinders,
+multi value, discrete values are there? Displacement, continuous,
+horsepower, weight, acceleration, model, year,
+origin and Cardinal. Let us take the column names. Is equal. Let
+us write down the names. Tell me first one. What is the first
+name? We have column name, miles per gallon printed. Then the
+second column is cylinders.
+Take that and the third column is displacement,
+and fourth column hard, spur, then,
+wait one.
+Then acceleration.
+So then we have model here.
+Let us make it as a single word, model here,
+origin got splitted. Come again. Acceleration
+column got splitted. Yes, updated,
+okay.
+Acceleration model here, origin, the last one
+coordinate, okay.
+So cancel.
+This as a single column now closes so we got miles per
+gallon, cylinders, displacement, horsepower, weight acceleration,
+model, your origin and car name.
+Okay, name, then close it. These are the names first. Consider
+this
+in your collateral space, so we can do one more. Come again.
+Card name, have a space on the data? Yeah,
+I did that, right. So I got the names column now. Now upload
+your auto MPG file here. Select this downloads auto mpg. This is
+auto mpg. Dot, D, A T, a file.
+Okay, we got auto M, P, G, dot, D, A T, a file available.
+Okay, so now let us do one thing. How do we read that into
+our data frame? First step so we can just write down d, f is
+equals to
+P, D, dot, read underscore, CSV.
+Then we have the file name as r2, mpg, dot, D, A
+T, A, then write down,
+D, F, dot, head first. Okay,
+so we can see data is not properly aligned. One reason is
+there is in DHA, ta, there is no column names. That is the reason
+first row is treated as a column name, and the second row also
+not in a proper format. Actually, this 15 needs to be
+here, right? But here, so that means we need to use a separator
+here, and the separator is, what is the separator? Actually, when
+you open the data, do you have any
+uniform separator available here, we have four spaces here,
+we have five spaces here, maybe 10 here, maybe 11.
+Like that
+means it is a fixed one or something. But we don't have
+fixed one, right? So in this situation, if you have the data,
+we have Triton separator is equal
+single quotes s plus, okay. If
+you have unmuted yourself, once you have done immediately mute
+yourself. Okay. It will create disturbance to everyone. Okay.
+Now, when we write s plus, s plus means something like a
+space, whenever you have go up to the space, plus, okay, that's
+what we are trying to do.
+Now, let us see. Now data is properly aligned, okay, but
+again, the problem is we didn't define what are the column
+names? So it is taking first row as a column. So we need to
+define the names. How do you define the names? Names is equal
+to names. Here list of names we have mentioned, right that I am
+giving now click DF, dot, head. Now we got it. Now it is
+properly aligned. First step, we got it. So sometimes when you're
+reading the data, data is not properly aligned. You have to
+look into the data, how it is separated, whether it is
+separated by gamma, semicolon or tab. According to that, you have
+to look in and use it. This is about the DF dot head. Okay,
+perfect. Now, once you got the data, you have to do like, you
+know, first thing is df, dot, D types. First understand whether
+all the data types are properly aligned or not. Okay, miles per
+gallon is a float. Perfect cylinders is an integer. Perfect
+displacement is perfect. Horsepower, if you see, we got
+one 30.01 65 150 something like this, correct, so. But here,
+what do we have hearts power is an object. Is it correct or
+wrong? This is wrong. Why? Because horsepower consists of
+130 but it says it is having object actually, it needs to be
+a float, correct? So let us do one thing. I want to find, like,
+how many different kinds of values are there in this
+horsepower? Dot unique, okay, which will give us different
+values. How many different values are there. So when I'm
+looking at the values,
+okay, we see here somewhere There is a question mark,
+correct instead of a number, we see there is a question mark,
+okay, this question mark is a noise and which is making this
+data instead of a float, it is making an object. Okay? So what
+we have to do, we need to remove this question mark in different
+ways. We can remove the easiest way. I'll show you. Easiest way
+is here, when you are creating a data frame itself, write down
+that N A underscore values is equals to
+take question mark. That means what it is going to do wherever
+there is a question mark, I said, replace that with the null
+values. NULL value is not empty values. Okay, any values now,
+let us try this again. Okay. So now if you look into the data
+types.
+Now hotspot automatically converted to float. Why?
+Because, I said, wherever that question mark is there, I said,
+treat them as a null values. Now we got the correct presentation
+of the data. Now if you see here unique, you can see any n,
+right? That means a question mark is replaced as a any n. Any
+n can be a float or it can be integer. It can be any number.
+So first step, we resolve, okay, good. Now, first step. What is
+the first step? First step is, look for the data information or
+D types. Look that whatever the column names mentioned here, the
+data consists of the column names and the data in the data
+type is same or not if it is not matching. Do some inspection of
+the column. So when we inspected the hard spot, we found that
+there is some special character, question mark is there, which is
+making our
+data frame. You know this hotspot as a object. Now good to
+go. Now first step, we need to start with find if there any
+null values are there. Okay, how do you find DF is na.sa,
+now we got Okay. When you look into this, miles per gallon is
+don't have any null values, but in horsepower we have, how many
+null values, six null values we have. So what should we do now,
+we need to remove the null values. How do we remove null
+values? Just df.we,
+write, drop, Na,
+okay,
+then in place is equal true. What do you mean by in place is
+equal true? If you don't want to write, in place is equal true,
+you can write something like this, DF is equal DF. Dot, draw
+any so instead of writing like this, we are saying that update
+the existing data frame. So we just remove the null values.
+Okay, either you can use that option or this option not a
+problem. Now, click drop any in place is equal true, it is going
+to drop. So totally we have six samples, right? So that six
+samples are drawn. Now see again, is there any null values,
+df.is, Na, dot, sum,
+no, no. Now, no null values. So
+first pre processing technique we applied. Now two things we
+did it. First one, we look for the ray types. Second one is
+there a null values? We did it after that. Let us see DF, dot
+shape.
+There are 392, rows with how many columns, nine columns,
+good. So once you got number of rows and columns, let us see DF,
+dot, head, now, okay. Now. The thing is, if you look into the
+data samples, let us do one thing here. The car name is
+there, okay, and car name is a textual value, so we cannot
+apply any pre processing now. And the textual value, let us
+take one data frame, and then in that, after removing the car
+name we can dump over there. Okay,
+so let me take up. There is a questions here.
+How did we remove
+question mark? We didn't remove that question marks. Sri Vidya,
+actually, at the time of reading itself, we said that we know
+there are question marks. So null values are so wherever you
+have a question mark, replace with the n, a n, that's what we
+are doing. Once it is done, and now we know that there is n, a n
+just we write drop n, a n, that will remove the null values.
+Okay.
+Okay, that row will be dropped. Yes. We are not using column
+name or anything, row will be drop
+question answers in place is equal true. That means Jasmine
+just now I said, right. So instead of writing DF is equal
+to DF, dot, drop in a we can use in place is equal true. That
+will do the job. Okay, so drop in a remote six rows where for
+hotspot is null as perfectly correct, which means it drops
+all null rows, yes, car column also showing D type object,
+yeah, it must be, why? Because car is
+Chevrolet Malibu. This is not the D type. It's not the correct
+one. Object is right? So if you have a textual data, it's object
+only. So nothing to worry. Okay,
+done.
+Can we go not use mean for hotspot instead of removing
+Chakrapani? We can use it. But now I'll give you the
+reason why I didn't use the mean. Okay, we can impute with
+the mean values. Otherwise, what we can do is, generally, thumb
+rule is, if you have anything less than 5% of the data is a
+null values we can remove that. It doesn't have any impact,
+okay? As a community, we say that when you have more than 5%
+then impute with the mean, median, standard deviation, not
+a problem, okay. But here we have totally how many samples we
+have, 400 samples we have correct. So out of 400 sample,
+what is the 5% of 400 sample? 20 correct. But here we.
+Removing how many six so doesn't have any problem. So that is
+totally on you, even if you say, no hobby, we want to keep it and
+we want to impute with me. That is your wish, not a problem,
+okay? It is not compulsory. So in data science, when you are
+doing a job, it is on you. We are going to take a decision,
+okay? And we cannot say that you have to do in this way only that
+is your wish. According to data and the problem statement,
+things will show and change. Okay. If you are replacing
+question mark from any and replay D replacing none. Why we
+are replacing C, uh, so none actually drop in a will
+recognize only null values. So what should we do now? Question
+marks, it doesn't replace so we can do that. Okay? Otherwise, if
+you say no, we will let us do one thing. We want to remove the
+question marks. So another option is there? What is another
+option? Let me give you another option. Don't use that. See,
+first of all, remove this. Okay.
+Now we have question marks right when you look into D types
+question mark, okay, you don't know there is a question mark.
+Is there here, you can type it now there is a question mark
+here, so we know that it must be a float. So what should we do
+now? We need to convert it. How do we convert EF of horsepower
+is equals to df of horsepower? Spot. Where
+is hot spot? Okay,
+then
+convert as type, which one float? When I this? When your
+executive says that? Okay, there is question mark. You cannot
+convert what will be. What we can do is manual operation. DF
+is equal to df of df of horsepower. We are
+removing, okay, not equal to
+question mark. So now the new DFN, for example, let us take it
+as a DFN. Is equal to df of horsepower, not equal to
+question mark. That means it is going to select all the samples
+whose value is not equal to question mark. Now DFN is having
+all the data. Now we can convert that DFN into again, horsepower
+into forced, not a problem. So we can say that
+DFN of
+hearts for
+is equal to DFN of hard spot.
+Now convert as type
+float. This will work now. Okay, so this is one way you can do
+it. Instead of doing all this process, what we are doing here
+itself to easiest way we are writing. We say NA values is
+equal. There is a parameter which we can give as a question
+mark. Now all the question marks will be replaced with question
+now, sorry, any not a number. Now they are float. We need to
+remove it. So how do we remove that?
+We can remove using, okay, let me remove this code sample. It
+will create confusion for you.
+Okay, okay. Now
+so we say df.is, in a sum, there are six values. Now drop any now
+check there is no sum values. Now check the shape D of dot
+head,
+good.
+Can we have multiple values to be passed? Any values? Yes, we
+can in the list we can form. Does it mean that all null
+values are marked as the question marks? No Vikram, all
+the question marks are marked as a null values. Okay, reverse.
+Okay, done. First step is done. What is the first step
+identifying null values and removing them. Now we need to
+what do you call? Have a new data frame, DF, dot, clean is
+equal let us name this as a clean DF, dot, draw. I don't
+want the textual column. What's the textual column? Car name.
+Axis is equal to one.
+Okay, done. Now we got a DF clean, clear. So here in the DF
+clean, I'm just removing, do we need to checking of access here
+to make sure it's 2d Srividya. We know that data frame itself.
+It is truly you no need to check actually, when you are creating
+a data frame, we have a two types of navigation. For
+example, sepal length, sepal width, petal length, petal
+width. And then we have a species,
+okay? Then we have rows, something like this. So even if
+you take a matrix, 123456,
+we call this as a columns, right? And this is called as a
+rows. Now, columns are generally this for the for example, if you
+construct this one, we.
+Start here, like this, zero and one start with a 012,
+so this, we call it as axis one. This is known as the axis zero.
+So this is axis zero, which is going to give us the rows. This
+is known as a axis one. So we are saying that travel according
+to access one. Whenever you find car name, remove that car name,
+because sometimes the index can be instead of 0123, index can be
+a name also. So I need to tell panda. Shall I go with axis one
+or axis zero? That is where you have to mention, okay.
+Okay, done. Next one. Okay, we got a cleaned one. And if you
+want to impute. We can use a simple imputer, and we can just
+write down strategy is equal to mean. So, okay, let us do one
+thing. Let us not drop any or if you want to impute, we can do
+that. Okay. So first of all, these are the null values we
+have. Okay, now we have
+data types we have, okay. Now is any sum?
+Okay, suppose if you want to impute, uh, let me do one thing.
+I'll just write down the code and
+Okay, so we got sorry, drop any and we got null values. Okay,
+this is optional code. So
+optional code. What
+is that? If you want to impute, what should we do? We write
+imputer is equal. Before that we need to import the computer,
+okay?
+So in the skn itself, we have an imputer we can improve to use
+that. So from SK learn dot that
+is impute.
+Import, simple computer.
+Simple computer.
+Okay, now after that, here you can just write down, because
+already I have, I don't want to consider the imputing here. We
+can just write down here simple imputer strategy is equal to
+Main and I'm going to get a DF instead of clean right down
+here, DF
+imputed is equal imputed dot fit transform DF clean. So whatever
+the DF clean you're passing in, then you can see
+DF, underscore, imputed, dot, head, done. This is optional,
+because I'm not using you know, what do you call
+that? Imputing? If you want, you can try it.
+Okay, so anyone have God's data set link to download?
+It is auto mpg. Let me do one thing. I'll import, I'll put it
+put in the chat box
+on downloads. This is the data sample. Okay, you can use it,
+okay.
+An inputter is a data pre processing technique used to
+fill missing values in a data set. Many machine learning
+models cannot handle missing value data, so invitation helps
+ensure data set is complete before training. Yes. Kumany
+Kanta, so you are giving the definition Perfect. Okay, that's
+what we are doing. Yeah. Okay, good. Thanks for that.
+DF client is equal. DF dot, car name means we are deleting car
+Name column, yes. Stream mask we are because car name is a
+textual column. Let us play with the numerical columns only.
+Okay, so that's what we are trying to do. Okay. Now let us
+do one thing here, if you look into the data, DF, underscore,
+clean.
+DF, underscore clean, dot, head. Now tell me, data is on the same
+scale.
+Data is not on the same scale. How do we know? See, miles per
+gallon is 18, cylinders is eight, displacement is 307,
+horsepower is 130. Weight is 3000, acceleration is 12,
+something like that. Generally, what happens is, when you build
+a machine learning model, what it is going to do is it is going
+to look into the columns whose weight is more weight, in the
+sense, whose values are highest numerical values, depending upon
+that, it will try to understand the pattern. So to this will
+create a problem for us. So what should we do now? We should tell
+our machine learning model that, okay, don't bother about the
+values. I want to keep them into the same scaling. So we have
+different type of scaling. We use standard scaling, min, max
+scaling, and then we use Z scaling. So today, let us see
+one of the scaling techniques, standard scalar, okay. So for
+that, we need to import first the standard scalar. Okay, so
+how do we import standard scalar from SK learn dot pre
+processing,
+import standard scalar I'm using.
+Okay, done.
+So once I import the standard scaling, what should.
+I do now I need to apply. So let us say df, underscore, scale
+is equal. Just for understanding, I'm changing the
+name, okay, so we got the cleaned one, right now, the
+standard scalar, we can say something like PD, dot, data
+frame, I'm converting into data frame. Now scalar,
+we need to create object. So how do we get object? Scalar is
+equal standard scalar. We created object. Now we think
+scalar dot fit underscore transform,
+so we are asking the standard scale that fit your algorithm
+and transform it Okay, on which one DF, underscore, clean.
+Okay. And you want to give the column names, so columns is
+equal DF, cleaned, columns, then we can write down DF,
+underscore, scaled.
+Sorry. Scale, dot head.
+Now the data is scaled, done.
+So now the data, all the data, we make it in the similar
+format. This is the scaling. So first of all, we started with
+finding, is there any noise in the data? We have seen that when
+we see DF, dot d types, we are able to understand there is some
+noise in the data. So that's where we are trying to find what
+is the noise. By using unique we found it, and then here, if a
+chance of updating here itself, we can update otherwise
+manually. We have to change them. Okay? So we have a chance
+we did it, and then we look for in null values and remove it,
+and then we apply the standard scaling to make all the data
+into similar scaling. Okay. Now the next technique is the
+encoder, label encoder. We call it actually label encoder.
+Generally we are going to use for a textual data is there, for
+example, Setosa virginica varicosa Is there. We can
+convert that into 012, this is one option. Or we can take, for
+example, in the previous example, gender is there, male
+and female. We have written manually. We mapped it to 01, so
+there we can apply the label encoder. Okay, two options are
+there. So for understanding here, when we don't have any,
+you know, textual data, what I will do, origin is one and 01,
+and zero only, right? So one and zero or something like that. So
+what I will do again, I'll revert back origin to label
+encoder we can using. So where is the label encoder is present.
+Label encoder is present inside the standard scaling only, so we
+can copy this.
+Then instead of standard scaling, which one I'm going to
+apply now, label encoder. So take a label encoder. Okay,
+done.
+Once it is done, what should I do now? I apply this label
+encoder on for understanding we are taking, generally, we are
+going to apply label encoder if you have a categorical values.
+But in this we don't have any categorical values because
+already origin is in a categorical one and zeros are
+there. When I'm applying this into what do you say? Standard
+scaling. We got some values right. Let us revert back. How
+do we do that? We can say encoder is equal label, encoder.
+Okay. Create object. Then now, DF, underscore, scale of off. I
+can say origin,
+underscore encoded for understanding,
+okay is equal. How should we do encoder?
+Dot fit underscore, transform, okay, which column df
+of scaled origin.
+Okay, then print it
+now, origin encoded. We got it correct, and actually it's a
+numerical value. If you want to convert that, you can just write
+down as Type A string, so that way it will be an object format.
+So this is about label encoding. Okay,
+please. Can you explain on scaling part? Okay, Vikram
+scaling is like, for example, you have a min, max scaling and
+Z scaling, different kinds of scaling. Is there? Okay, so
+like, for example, standard scalar we are applying,
+okay.
+What should we do now? We are going to take
+one of the value, one of the column, then we apply standard
+scaling, okay, so if you want mathematics behind that. Let me
+give you an example.
+Let us consider we have miles per gallon. Okay, miles per
+gallon. How do we have 1817,
+1650,
+918, 21 maybe 20 something like this. This is the miles per
+gallon column.
+Now, if you want to apply a standard scaling, the formula
+is, z is equals to x minus mu by sigma, what is a mu? Mu is mean,
+where sigma is standard deviation, okay, and z is the
+value, for example. If I want to apply on this one, what should I
+do now? I need to find the first value. X is there. Then what is
+the mean of 18 plus 1716, plus 15 plus 18 plus 21? By two? How
+many numbers? 1234567,
+for example. So we add plus and then divide by seven, let us say
+approximately I got something like a 16. I got it. Then I need
+to find the standard deviation. So for example, I got the
+standard deviation as something like calculation one, I got it
+now 18 minus six will be 16 is how much now two. So that means,
+for this 18, how much I got the scaled one, scaled one, two will
+got it something like this, understood.
+You want me explain the standards. What do you say?
+Standard deviation also? Shall we calculate standard deviation
+also? It's good to go. I
+Okay. Scaling is getting all numerical values to common
+range. Okay, we'll simply replace question mark with
+specific value. No. Manage, no. Manju, only null values. We can
+do it. Okay. We only saw top five rows here, origin, initial,
+lever, one, and then we scaled encoded. Then it becomes zero,
+uh, it doesn't change the meaning. Actually a categorical
+Okay, so 012, the categories are same, right? So not a problem.
+Firstly, then scaling Is my understanding correct? No, no.
+Kishore labeling, anytime you can do it. Scaling is doing on
+only numerical values, okay. Level is doing on textual data.
+Not a problem.
+Okay, so there is no sequence. First you have to do this or
+that.
+So the scaling, standard scaling, is clear. Somebody
+asked me, good to go.
+What is the need for label encoding? Since the idea is to
+convert float to string, they know I didn't understand from
+when I'm saying boss, label encoding is something textual
+data, if you have convert that into numerical format, because
+machine learning will understand only that part, right? This is
+straight forward. Here. I said there is no textual data. That
+is the reason I am taking an example to make you understand
+that we can. How do we convert label encoder? Actually, here,
+no need to apply label encoder. Is that clear? Again, you people
+are coming and back, and why? Why something boss? I'm clearly,
+I'm mentioning that actual label encoder is applied on only
+textual data. Is that clear? That means, if you have in Iris
+data sample, when you have a target, something like Setosa
+virginica in the species we have right? So what we have Setosa
+virginica and versicolor. Now you want to convert this into
+numerical values. We have to say 012, either manually. You can
+map it, or we can use the label encoder. Now, in our data, we
+don't have right any textual data. So I have taken an example
+of origin, for example, then we are converting. That's it. This
+is just for understanding how label encoder is applied, but in
+our case, not needed. But if you want to apply, how do we apply?
+I'm just trying to give it understand. Now,
+level record is just like how we use enumeration. Don't get
+another keywords. Boss Hanuman, again, enumeration is different.
+Enumeration is a combination, again, of the zip kind of thing
+index you're mapping with, you know the values also, can we
+revert the drop deleted rows? No. So now, once it is dropped,
+you cannot. So that is the reason, whenever you're creating
+a new data frame, we are creating a saying that keep the
+DF as original data, frame, DF, clean like that. Otherwise,
+reverting is not possible. Is there a rule to which scaling
+method is applied to type of data? Kiran, there is nothing a
+rule that you have to apply standard scaling, min, max
+scaling or Z scaling. This is problem, statement to statement.
+When you are using your data, you can apply, okay, either you
+can go with
+Z scaling, or when we apply with, you know, anything, once
+you arrive, z is equal to what would be the next approach.
+That's it you are applying. All the values will be there, right?
+Z is equal to for 18, z is equal to so the 18 will be replaced
+with two for 17. I got 1.2 something like that. Ram Mohan,
+okay. All the values will be replayed, replaced, okay.
+That is scaling is done. Once scaling is done, what should we
+do now? Next approach?
+Okay, there is a technique called as a binarization here.
+It's not needed in a label has any what is data to be used
+in a.
+Will show if it is n a n. You don't get to this step only
+labeling right? If you have n a n in the label, that means in
+the data, you have to first remove first step is, what is
+the first step? First we write d f dot info to check all the data
+types are clear or not this one. Or we can use D F dot d types
+done after that we are looking for, is any this have to be
+first Next Step, remove them. Is any remove them after that,
+apply the scaling. If you have any categorical here before
+scaling, convert the categorical to label encoder. So what is the
+steps? Now? Steps are first of all,
+industry standards. First of all, you use DF dot info to
+check the information. This can be done by dF dot d types, also
+any comment, not a problem. After that, check, is there a
+null values df.is
+any we can apply. Okay. This can be done by df.is
+any dot sum which is going to give us any? Otherwise we have
+to drop it. Drop any. Then we got the new data frame. So now
+take this new data frame, and if that is categorical, what should
+we do? Apply label encoder. Okay, after applying label
+encoder, now the data complete data is in which format, numeric
+format. Once you got into the numeric format, what should we
+do now, we should apply scaling. Which scaling you want to apply,
+standard scaling, or Z scaling, or we can apply min, max scalar,
+and which one should we follow? It is completely up to you. You
+can take standard scalar Z scaling and win Max. There is no
+thumb rule that for this data, you have to take that scaling,
+this for according to your wish. Okay, you can use it anything.
+But scaling is important. After scaling, we can do the
+binarization, binaryation in the sense like, suppose, if you have
+some data which is falling some layer two limits are there, for
+example, 10 below 10 belongs to one class. Another 10. If you
+want to binaries, you can do it. But here I don't have anything
+to binary, so no need to apply binarizer here.
+Okay, so if you want to apply we can apply the binarizer. After
+that, the last step is selecting the best features.
+Okay, best features now in our data sample, in the auto mpg,
+okay, what we did, tell me now in auto MPG data, what we did,
+first, we applied DF, dot info,
+then we have applied ease, Na, then we have applied drop, any
+then if you want, you can apply label encoder
+and df dot scaling. Now the last step is
+features.
+This is step by step approach to data pre processing.
+We also need to check out clear reduction pre processing only.
+KAUSHIK, is any, is there right at that time only? We have to do
+that before. Is any going into drop, any after drop, any? You
+have to check for outlets and all those things, those things
+comes into at the time only. Okay. Bination is just simply
+tell the column to simply one zero instead of set of data
+which are apart from the clear separation, Yes, Kiran, that's
+it. So you can say that, for example, in binarization, we can
+say,
+what do you call?
+I'll give you a simple example. For example,
+okay, you want to check for particularly if the threshold is
+greater than 23 we say that, okay, gives you one. If it is,
+for example, I'm keeping a threshold, okay, greater than 23
+we say it is a one, and less than 23 we say it as a zero. So
+what it is doing now it is converting your continuous
+numbers into binary values. Okay? For example, if you want
+to convert our miles per gallon, is there? Okay? Miles per gallon
+is actually it is a regression problem, right? I want to
+convert that into classification problem. What should I do? I
+will see, is it possible or not? Maybe I'm thinking that most of
+the miles per gallon is greater than 23 I'll map them into one
+and this weeks are call it, call them as efficient cars. For
+example, whoever is giving Miles More than 23 now, less efficient
+car. I want to make miles, and mileage less than 23 I'm saying
+it as a zero. So if I want to classify with the name something
+like efficient car, non efficient car. Now, instead of
+the target column, NPG, I can do the binarizer. That's what?
+Okay,
+yeah, we can say that people less than 18 years, minor,
+greater than 18 major, perfect, Santosh, sir. Same encoder
+object can be used for all the string, come again. Come again.
+What is that? Sort of says, Sir, same encoder object can be used.
+For all the string fields in the data frame. Or do we have to
+create separate objects for each No, no, you can write the
+iterator list comprehension you might have studied in Python,
+right? So you can use the list comprehensions, okay? So you can
+iterate through and columns, and you can apply
+then why we do label encoding for origin columns? It was
+already numerical column. Mohammed Sami, I think you
+missed it, right? I said, already, boss, see somebody,
+everybody's laughing at me. How many times I explained, you
+people, that there is a textual column, we need to apply label
+encoding here. We don't have a column, so I'm taking origin as
+a label encoding. It is one of my very great mistake, I think,
+right, so I'll not do that. Agree.
+Okay, okay,
+explain how to do bination. But what's the motivation? Will it
+make our model more efficient, faster? No, Ayush, sometimes we
+need to convert your regression models to classification models
+to do something, then we can do it. For example, in our problem
+statement, let me explain you here, actually what we are
+trying to do. I'm taking number of cylinders, displacement,
+horsepower, weight acceleration model here and origin, then I'm
+deciding what is the miles per gallon. So miles per gallon is a
+continuous column, right? Everybody agree? Continuous
+values are there? Yes or no. Miles per gallon type in chart,
+yes. So miles per gallon is a continuous values, right? So it
+is supervised learning. Yes, supervised learning. But later
+onwards, what I thought is somebody asked me, Habib, can we
+get efficient cards and non efficient cards from this? Okay,
+what I will do after regression, if I say that regression I'm
+getting when I input cylinder displacement, horsepower,
+weight, acceleration, model, year and origin, I got the
+mileage as a 23 then I read if condition, if MPG is 23 I say
+efficient car. Else I say non efficient car. We can do like
+that right after getting the results, yes or no. So you said
+no, no, Habib, why don't we do at the time of in the data
+itself. Can we do that? Okay, what I will do now, I will
+convert this miles per gallon column to binary relation. That
+means what it will do. I'm going to give a threshold wherever 23
+is there. Greater than 23 make it as a one. Less than 23 make
+it as a zero. Now, instead of regression, what I can do, I can
+apply classification algorithm, and finally, result will be
+efficient car or non efficient car like that, right? That is
+the situation. That's it understood now, binary decision,
+yeah, perfect. Makes sense. Okay, so now, do we need
+bination here? We don't need okay, then good. So,
+uh, shall I proceed now after writing, then I'll take the
+questions. Don't worry, okay, from SK learn dot, feature,
+underscore, extraction. Uh, no, let's not take extraction.
+Selection.
+Okay, import.
+I will write select k best,
+best features. And another thing, I'm not going to dig
+deeper into the selection of the features, because, as I said, we
+have a separate session on feature selection itself. Okay,
+what we need to consider, what we won't consider, and all those
+things, so those things will
+be taught. Don't get panic. Just understand that this is a step
+we need to apply. Okay, that's it. How do we apply? We'll see
+that. Okay, when we are applying, you tell me in this
+what are the features we have? Tell me, what are the features x
+is equal? Go ahead. What are the features in chat box, you can
+type df of scale drop mpg. So when I drop mpg, all of these
+things falls into which one feature, okay, then what is my
+target column? Miles per gallon is my target column? Agree.
+Okay, I said x is this one and miles per gallon is my target
+column. Okay, good. Now, what should I do? I need to write
+selector is equal to select, K, best, okay, score function is
+something like, you know, I can use regression. Different
+techniques are there? I can use F regression,
+okay, and how many features I'm taking? Okay? Best I said, Now
+after that,
+okay, after that,
+x, underscore selected
+can be i
+selector dot fit transform x and y,
+if regression there is a space or something,
+score function,
+okay, sorry, I didn't import.
+It,
+select k, best and F, underscore. Regression here, we
+didn't import it. I'm using it. I thought I have imported it.
+Okay, done. We got X, K selected right. Now selected features.
+Selected Features is equal to how do you get selected
+features? Now,
+can I say x, dot columns, X,
+dot
+columns, okay, in this I need to get
+selector.be.
+Right. There is a function. Get support. Okay, got it.
+Get support Now, select, I'll keep that into data frame for
+you people to understand.
+Select, DF is equal
+shift, enter, we can, sorry.
+P, dot, data frame,
+okay, X selected.
+Then columns is equal. What are the columns I need to Selected
+Features.
+Then
+select DF, dot, head,
+so when I apply selection, so we are going to get how many we
+got, cylinders, displacement, R, weight and model here. These are
+the important features. And you may say that hobby. Why did you
+get k only five? Only if one more replace k with a five
+instead of five, we can take 10 also, or whatever the number of
+features you have. So actually, this is not the feasible
+technique. This is a basic, you know, the basic when you are a
+baby steps of data scientist stage, then you can use it, but
+real time. We don't use this just for to understanding. We'll
+use it correlation. We use generally, according to the
+correlation. If there is a more correlation between two, we use
+that. Otherwise we'll drop them. This is the inbuilt function
+using correlation only. But here you have to mention how many
+features you want, best features, then we are going to
+use these features to build our machine learning algorithm done.
+Now, these are the basic steps of pre processing. Okay, so in
+your terminology. Now, if you want to put it, how do you write
+first one,
+first one. Start with first ingest the data
+into which one data frame, this is first step, correct. What is
+the second step? Now you look for DF, dot info, which is going
+to give us the complete information, whether data types
+and all those things good. Third one, we are going to think of
+like, you know, if there are some mismatching type, we need
+to convert them mismatching, convert the mismatching columns
+to the data accordingly. Fourth one, check is there any null
+values? If there are null values, drop them.
+Okay. Fifth one, what we are doing now look for, is there any
+categorical? Is there categorical in the sense, if you
+have something like any characters, like a bunch of
+words you have, for example, he got a grade as an excellent,
+good, better something, convert them into label encoder. This is
+your did it?
+Then fifth 1/6, one. What we do after converting we are going to
+apply scaling. After scaling. What should we do
+after scaling? What should we do if you need a binarization, do
+it?
+Then last step is select best features,
+perfect. Ninth implement
+and algorithm on top of that,
+okay, I'll stay here for five minutes. Any questions I'll take
+up. Okay, please raise your hands if you don't have a
+question. And another thing, the question must be in the boundary
+of whatever we discuss, perfectly.
+Okay. Saurabh, go ahead.
+Raju, somebody else. Can you unmute them?
+Yes, sir. My question is, you said that. Let's say I have a
+four categorical feature, features in my in my data set,
+right? So I can use the same object for encoder to encode all
+the four features. Correct? Yes,
+it this. That object can I use in the train data set as well?
+Or do for the train data set? I have to use the different object
+to encode them. No, you have to use the same
+Okay. Okay.
+Next. Kishore,
+so just a clarification, sir, in place of fourth step where we
+are saying drop in here we can also use impute, right? We
+cannot. We can use impute, impute also right at the fourth
+step, either we can drop, drop in the sense pre process.
+You can find, you know, outliers, impute everything.
+Okay, that is there where the step is, okay, yeah, Aish,
+yeah. It was
+regarding the outliers, as you mentioned in the drop in a step
+out here analysis, and you can drop the LPS Exactly, yeah,
+sir. I have two question, uh, one is with respect to the step
+eight and nine. So here, do we like when you selected k is
+equal to five? Can Can there be kind of a regression like k is
+equal to five for set of five, or random five, and then go
+through that? No, not at the regression five, five features,
+only top five best features. But again, the tool can basically
+take the best out of it when there's then no need to
+basically regress
+with number of columns or something like that. Actually,
+this is Kiran. Is a basic, basic step. Kiran, actually, as a data
+scientist, I never used select k best, okay. What I will do, I
+use the principal component analysis, PC algorithm and
+single value decomposer on that. This is for her to basically,
+when you look into as a subject matter expert, you don't
+understand which one to take in that this will helpful, but
+technically, we don't use it. Okay, okay. And the last step,
+what you said is implement an algorithm that will come maybe
+in the future of the classes, right? Yes. Feature of the next
+initial next class, we are going to implement the first
+algorithm, linear regression. Okay, okay. The second question,
+what I want to ask is outliers. Like, if we drop the outliers,
+so will it cause any increase in the error? Actually, because, I
+mean, because that is maybe Kiran, because, depending upon
+your use case, I cannot say that's the reason. See, I don't
+discuss lot on outliers. Outliers are very simple.
+Actually, noise. We discuss them. What happens is, sometimes
+there is a good impact, sometimes the bad impact, good
+impact. Good impact is something like, you know, when we don't
+have, not only this category, sometime in the future,
+categories are coming in, we need to include, maybe we say
+that human being with the height of 300 also may come in. So if
+you are including that is better at good that is one thing you
+can think of otherwise. Anyway, we know that fixed, that there
+is no human being with 300 feet height, something, we can drop
+that, right? So that comes into your problem statement. For
+example, if you are taking a medical problem, for example,
+you're talking about the blood pressure. We know the limit of
+around 200 something, like so, but you got a blood pressure of
+something like 5000 you say that, then we need to drop it.
+But sometimes you have a at the time of beginning of any medical
+product you got, and glucose levels are, for example, 200
+something, but nowadays, people are reaching up to 404 80, then
+we are. Previously, we thought that 400 plus is an outlier, but
+we need to consider them, right? So that future perspective, you
+can think it or think of and then you can keep it or you can
+remove it. Sometimes keeping them will increase the you know,
+what do you say? The authenticity of the algorithm,
+explainability of the algorithm. Sometimes the scoring can
+increase, sometimes it will go down. So you are the person you
+are going to decide, shall I include or not? That's it clear.
+Yes. Srinivas next.
+Yeah, great, yeah. Hi, sir, I dropped the custom columns like
+clean drop that permanently deleted, or it will be
+temporarily, permanently deleted into your data frame. But first
+of all, we are dumping into DF, right? That is what the naming
+convention we are doing. In original data frame, they are
+available, but in the clean data from they are not available
+permanently deleted, okay, if you want get it again, those
+followers, yeah, you take like, suppose, if that new data frame
+cleaned is the right in the cleaned is equal, you can add df
+of that particular column automatically, it will emerge.
+Okay, yeah. Now, Jaipal, go ahead. Jaipal,
+sir, your binarization, etc. It it should apply for string
+columns or any column we can apply,
+actually string column, first we convert into numerical label
+encoder. Then you apply the binarizer, okay, numerical
+values when you apply binary,
+okay, okay, got it.
+Muhammad Sami, please, once you have done with your question,
+please lower your hand so that I can see remaining how many
+people? Yeah, go ahead. So, sir, why is simple imputer In
+preferred over using finna manually?
+That is your choice. Mohammed, you need to get some experience,
+right? That's the reason we have used simple imputer. I have
+given an example, or directly you can write a fill in your
+function. Okay, that is your wish. It is no cause that I need
+to use simple computer. Okay, okay, yeah. Priyanka, Hi, sir,
+the
+steps that you discussed for pre processing from one to eight. Do
+you mean? I mean we have this concept of splitting the data
+into train test and the validation, right? So all the
+steps are
+applied before splitting the data into test train and
+No, no, no. First, we split into x and y. Then we apply these
+steps, XR and x only. We apply all those things.
+No, X and Y is features versus our target, right? Sir, yes, no.
+My question is, suppose we have 100,000
+rows and suppose your splitting between training and testing is
+80% then 80 rows goes into the Priyanka first tell me, did I
+teach you any splitting here? No. So my question is that that
+means like that means we cannot apply on that stage, right? So
+generally, what happens is, first we take x, so
+df of whatever the features you have is x, right? Then we have a
+Y, correct or not? Yes, sir. Okay. So what we are doing,
+first of all, we have to take these two as a data frame we are
+taking so on the data frame overall, after doing all those
+features and everything, after collecting select k features, we
+know what is x and what is y, correct? Yes, after this step,
+you do the split train test script understood. Okay, got it.
+That was my question. Yeah. Next. Sonal, yes, go ahead.
+Sonal, so in step five, we are doing this encoding right level
+encoding. Let's say if we don't do, then what will be the
+impact?
+See, level encoder. If you're not doing there is not an
+impact, actually. So now if you are using decision tree
+algorithm and logistic regression, if the target column
+is categorical, they will accept directly and they will work. But
+some algorithms, for example, you have some of the algorithms
+regression, are a classification. They don't take
+any categorical values. You have to give them numerical values.
+So in that situation, depending upon that, we have to apply the
+label encoder. So label encoder is just to make algorithm
+understand numerical values clear. Okay, thank you.
+Manikanta,
+small things, like in the steps, which you provided, is
+everything, and I got it. There's a few things we need. We
+can have based on the data which is provided, and it's not much
+sequence or in order, non linear level that comes into the
+picture. Right for few of the columns. In that case, we need
+to apply the polynomial feature and then the power
+transformation. So why we have moved directly to the feature
+selection,
+markant, I said feature selections, all those things
+will be discussed in advanced sessions, right? If I'm talking
+about power transmissions and the polynomials you don't get
+here, okay, basically, in the first step, you have to do it in
+depth, feature one by one, label, encoder, also scaling,
+also that question like, you know, how do we apply scaling?
+And why need to apply those things in coming sessions, when
+we discuss about feature engineering in the time we
+discuss in depth that is not needed now, okay, yesterday in
+the lab, we had the smarter just for understanding the words
+manikanta, okay, understanding the terminology in the first
+unit we are using in deeper why we are implementing those things
+will be discussed. Okay, you know how to use it. That's
+enough. Now, coming sessions, when we get into advanced
+session at that time, you can have a question of, why. Now
+just use them clear and get some terminology clear.
+Yeah. Deepa man,
+Dr Habib, I had one question, like, you know, one doubt
+regarding the pre processing part is that, you know, in the
+features, and we have a step wherein we ensure that the we
+normalize the feature, the distribution of the feature.
+Can we have a step like that? Like, is it, you know, part of
+the you know, workflow of, you know, data pre processing, yes,
+we can have it. So this basically, I give the basic
+steps, right? So in this, if you are again, in the scaling, also,
+if you are expanding lot of techniques, we can apply binary.
+Also, we have a lot of techniques. And later onwards,
+what we do is like optimization is needed, or which columns are
+needed, and all those things manually. We don't do it like,
+you know, why? Data profiling, I have shown you right. Similar
+way. We have a library known as aptuna. We call it, or we use a
+grid search CV. These like algorithms also we use it, okay?
+So just for your understanding, before applying these advanced
+techniques, basically, you have to take these are the steps
+like, you know, understand the data and look for any null
+values. Or if you want to do imputing, you can do it. Or if
+you want to do scaling, you can do scaling, you can do it and
+then make it little bit perfect that you can basic algorithms
+can be applied, but later onwards, when we discuss about
+the advanced topics, we don't, you would manually. We don't do
+that. We use libraries for that. Doing, okay, okay, okay, so
+these will come later. So basically normalizing the
+feature will come later, like in normal in the feature
+instructions, okay? Understood. Thank you.
+Raghuvendra,
+yeah,
+sir. So generally we say, like out of the 100% of efforts for
+any data science project, 60% goes into the eight steps that
+you just said, Right? Data pre processing.
+So is it like, because of the complexity of the data, we get
+into 60% efforts or select model is not right? How we say that
+60% efforts goes into this? Okay? Actually, some people,
+they say 60% driver, and some people, they say 80% of the
+effort is in data pre processing. They call it,
+but if your company is following, you know the
+structure of the roles data engineer is doing the job for
+you, right? So once he's doing he's taking the effort of all
+the cleaning and everything, and when the data comes to your
+part, mostly clean data, you are getting little bit now and then,
+like, you know, best feature selection and using in
+statistical correlations and understanding and which are
+mostly participating in your target column, taking those
+things to optimize your model, to get the latency of the model,
+to decrease those things, what you are doing. Okay, so as
+totally 60 agreed that 60% to 80% work, we say that mostly on
+the data only because at the end, if the data is good, you on
+that data, whatever algorithms you're using, they are going to
+give good results. They produce good results, right? So, and
+totally that depends upon what kind of data you are consuming.
+That also plays vital role according to state use case to
+use case. For example, I'm working in a medical domain, the
+data plays a vital role because of some any one of the feature,
+which is having an impact later, can give a lot of impact to the
+patients. Okay? So in that situations, according to use
+case, for example, in the financial domain, okay, into the
+E commerce domain, into the different domains. According to
+that, the data which is coming in, the task can vary. So we can
+say the 60% sometimes 20% sometimes 40% but majorly up to
+60% is the main data. Working with the data, clear,
+yeah, yes.
+Thank you. Dinesh,
+Patel, yes. So when you mentioned cleaning and reposting
+all the data, is it possible or feasible that we take care of
+this part in the ETL stages itself? Or yes,
+yeah, in that stage itself. You know, as I said, data engineer
+is there at the time? ETL only he is going to take care of
+those things, okay.
+Oh, but
+sorry,
+yeah, so ETL would take care of in that specific, let's say
+scope, right? What is the data taken care of in ETL is? Is,
+let's say the requirement in the pre processing or the for the
+model. It's different
+than what is needed, okay? Dinesh, something like, you
+know, you have a raw data as a engineer, generally, we do ETL,
+okay, extract, transform into load, so you load it into some
+data framework. Now the data scientist will do the EDF from
+this, explore data analysis, then he will take a decision on
+pre processing and everything. This is the way things will
+happen. Okay,
+right? So, so my question is, when the second step occurs, the
+data engineer will take care of, let's say, basic steps of
+reprocessing and let's say filling up the non values or
+cleaning up the data. Up the data. But what is the filling up
+the null values, the requirement in EDA is, let's say, somewhat
+different, then we would still need to perform the same steps
+in the EDA itself, right? Yes. Thank you.
+Yeah, Suresh, what's the question? Yes, yes. Good
+morning, sir. Very good morning. Question is, see the data pre
+processing is so that I can prepare the data for my model,
+and then model also, as you said, we have multiple choices.
+We will do some trial and error. And you mentioned, for example,
+one of the data pre processing steps, label encoder for this
+methods, I will do this models, or, you know, classic
+regression, or whatever. Is there any cheat sheet which we
+can refer, not a final baseline, but kind of a refer, saying,
+Okay, for this, you know, this algorithm. This is a, you know,
+you can do. Don't keep it in a character format or convert it
+into binary, etc. Is there any cheat sheet I know, or should we
+develop our own? Just asking, we need to our own, but I'll try my
+best. Before you know or you need one, or you need to
+somewhere, I'll share with you people. Okay, okay, thank
+because that would may decrease the number of questions. Sure.
+Sure. Next question. Manoj, yeah.
+How will get to know that you have imported selected key based
+and F regression so? How will get to know you? All these
+things we need to import and come again, come again. Can you
+speak a little bit louder? Your imported our select key based
+and effort underscore regressions,
+right? How will get to know which kind of things we need to
+import before cleaning with code practice, Manoj with code
+practice, okay, okay, except that we can, we don't have
+anything like, you know when we are looking at the code and
+looking into the direction. And the best practice is, whenever
+you want to go, don't go for YouTube or anything. Just write
+down SQL. Learn.
+On documentation, okay, go to the documentation, official
+documentation. Keep on working. For example, SK Learn For
+example, search for any data. Okay, for example, let us say,
+here we are looking for where is the search? Okay, okay. Filter
+is there, yeah. Reprocessing, okay. Reprocessing,
+so you can type it, so it is going to give us a scale and pre
+processing. Okay. Now this driver, binarizer, function
+transformer, label binder is a label encoder, min, max scalar,
+Max, absolute scalar, lot of unbound encoding. Everything is
+there, right? Take any one of that and see how it is working.
+So with examples are given. So binary, for example, take this
+and here it is given with an example description and like
+this. So this way you learn. Okay, so whenever things come
+in, as a data scientist, real time, when you are writing
+better you, you know, use the documentation for you here. Is
+there any way we can compare to see the difference and okay, and
+we might some data frame API not show through which can can we
+export him into saying, okay, we can, okay. So data file, we can
+do that. Finally, what we got, we got something like, which
+one, select DF, right, take this, and then there are two
+underscore, which format you want as a dictionary. You want
+Excel, or you want whatever it format, you can take it, then
+you can give a path, any path. For example, He said, Habib,
+latest dot CSV, done.
+Now you can see here. This is how we latest dot CSV, which is
+having the data like this understood
+this way, so we can import it later. We can import into the
+databases also, as time is not permitted now we have only three
+more minutes to go.
+So in some other sessions, we'll see when we are discussing about
+linear regression. And there we have a session of like, you
+know, deployment coming sessions at that time, I will show you
+how to connect with the databases also, okay, very
+simple. Using SQL alchemy, we can do that
+is scaling and normalizing is the same? Yes, Russian scaling
+and normalizing also same. Once we do scaling the result data
+set will give the column data and specific range, right, for
+example, something like that. Yes, min, max, scaling, Jaipal,
+perfect. When you splitting the data into training and testing
+data, does the come step nine implements algorithm? Yes, after
+the splitting only, we apply Jasmine. Okay,
+so good to go. Everyone. Anybody have any other questions? Hope
+it is clear now.
+Yeah. Hi, sir. So I have a query that might sound silly, but the
+thing is, how do we decide or like, which algorithm we need to
+implement like And then Step nine, you said, select an
+algorithm. So based upon seeing the data, how we decide that
+what algorithm that we have to go for. No Did we started any
+algorithm implementation? Not yet. Then how can I tell you,
+which also tell me, once you implement the algorithm, you
+have an idea like, how do we import and implement right
+anytime, if you're discussing whether it is a linear
+regression or a classification problem or in linear regression,
+how many kinds of algorithms are there. So that is the reason
+celibacy is made in a way that first of all, we start with a
+linear regression, then logistic regression, then decision tree,
+support vector machine, then we are going to say random forest
+classifiers. After that, once you get all this classical
+machine learning algorithm again, go back. Now where you
+are going back, going back to any data sample. Now, after
+having or obtaining a knowledge of these set of algorithms, now
+we are in a position to understand which algorithm
+should I use it, right? So unless, until, you don't know
+the values, what is the mathematical intuition of the
+algorithms? And in the beginning stage, we cannot suggest that,
+okay, you can use this algorithm for this data, right? So first
+you have to understand what is the basic algorithm means, what
+is the mathematical intuition of every algorithm after
+considering five or six algorithms? Now, when I give a
+data sample, you are in a stage that, okay, Habib for this data.
+I use, you know, decisionary regressor, which will do better
+if I ask you why? Because it is something like, you know, nearby
+rule based additional statements. Are there something
+like that? But in this stage, we cannot do that. Okay. Oh, okay,
+okay, thank you great. Sonal, you didn't you know, lower your
+hand. Do you have any questions?
+Sonal, no, sir, sorry, let me do it. Oh, no, no, no, sorry.
+Nothing happens, right? So no. Sorry, please. Okay. Thanks for
+your patience, boss. I think you got now clear idea, like, what
+is the pandas and how do you implement and coming sessions,
+we are going to dig deeper in that whenever we are getting
+those topics. Okay, so we have a lot of things to come in in the
+coming sessions, and those at the time connecting to the
+databases. How do we do it? And how do we extract the data? How
+do you deploy an API?
+Okay, all those things will be in step by step. So today's
+session, takeaway what, what I'm expecting from you people, is
+basically, how do you take the data sample, put into a data
+frame and understand, how do we access the data frame columns,
+and then how do we do basic pre, pre processing technique like
+standard scaling, applying, label and coding, and if you
+want to, you know, drop null values, identifying them. Those
+steps are needed. If you are good with these steps, the
+complete session is good.
+So what are the steps? I said is good to go?
+Perfect. Yes.
+Okay.
+Most welcome.

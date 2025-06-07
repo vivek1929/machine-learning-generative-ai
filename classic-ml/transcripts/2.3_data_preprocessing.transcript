@@ -1,0 +1,2939 @@
+Video transcript
+This transcript is AI-generated and may not be 100% accurate.
+
+Unknown: Let's start. Let's start with the interesting
+stuff. Okay, this is, this is really important today. Now, I
+am hoping you're done with your Python sessions now, and you are
+going to enter into learning the theory. Correct. Yeah.
+Yes, yes,
+yes,
+right? So, yeah,
+you can see my screen, right? What are you seeing? The collab
+screen. It's an introduction,
+yes, yes. Thank you. Thank you. So as much as you learn Python,
+Python is really important to bridge this theory and the
+concepts, right? So in data science, there are two things
+that we really learn in parallel, right? One is the
+theory aspect of it, right? How do you
+mean? What are the different things that you need to take
+care? It's like a usual discussion, right? Okay, here is
+what you do with this. Here is what you do with this. And there
+is another thing where you get your hands dirty on the original
+data, or the how do you test the theory kind? And that's where
+the hands on comes in, right? And that's the reason why you
+have this hands on and theory sessions in your course right
+now.
+The next thing is this,
+the flow of the AML learning is going to be something like this,
+because you have to
+get your hands dirty initially. We start off with Python,
+because once we start explaining some theory concepts to you, if
+you want to test it, it would be easier for you to directly start
+with
+Python. Okay, done. You are done with Python. Now you are going
+to be introduced to the ML, right now, here is, where is the
+interesting stuff.
+Now, all of you, mean, most of you might have already learned
+about some of the models, correct, right? Some something
+about linear regression, because I can clearly see it from the
+chat, right.
+So
+some of you are directly asking about linear regression. KNN,
+directly, right? Like, so, yeah, yes, you're going to learn about
+all of those things right now, the thing is this,
+before going to model building, right, model building is
+actually one line, right. One line, only, one line, M, so
+model is equal to linear regression, then model dot fit
+done. Your model building is done. But does that mean your
+problems are solved?
+No, right? What are the major issues then? What? What's the
+typical data science this
+day in a life of a data scientist? Right? The thing is,
+first is you.
+So there's a huge planning that goes in before data scientist
+job starts to understand, is this use case worthy enough to
+be attempted? Right? A lot of discussion goes in there, and
+some of the senior folks might be involved there, senior data
+scientists, senior business guys, they might be involved
+there. They will try to understand the feasibility. They
+will understand to see if there is the need to solve this
+particular use case. Done. Use case discussion. Done. They have
+given you the use case now. Now the data scientist job starts.
+Okay,
+it's like this, right? When I said the data scientist life
+job, job starts, a senior data scientist deals with different
+set of problems, whereas a
+developer, like data science developer or a data scientist or
+Team Lead data scientist or junior data scientist, these
+guys deal with different types of problems. Right now,
+the major challenge for a developer data scientist is
+going to be okay. You are asking me to solve this use case. Where
+is my data? Yes, you're asking me to do a churn prediction.
+You're asking me to do a recommendation engine. But where
+is my data right now? Here is where you will understand. What
+are the different sources the data is spread across right, and
+you try to bring it into your system, right? This itself will
+be 30% of your job
+understanding, okay?
+Are you talk to different stakeholders, you try to
+understand what's the use case, what's going to be the impact?
+What are the business metrics? If you have to construct an
+experiment like, what are the So you are saying, you want me to
+build this data using the 100 features that you, you guys
+discussed, right? But where are these 100 features? Then you
+will go and talk to different people, read the documentation
+then understand okay, what are the different sources? Okay,
+data is spread across the sources. You will try to
+understand all of them. What are the different keys that you can
+connect your data with and bring it in? Okay?
+Ultimately, ultimately, you will have to create one large table
+of X variables and a Y variable. It's all about coming up with
+equations on X to solve for y, right? If you have to do it
+then, in structured data approach, all of your data needs
+to be in a single table, right? You have to arrange it that way.
+Otherwise, the model building is not going to happen, right? So
+you understood your data spread across many tables. You bought
+it, you merged it, you created one big table, right? X and Y,
+right now.
+Now. Do you think is the model building? No. 30% job done. But
+trust me, model building is only 10% of the task. So 30 plus 1040
+is gone. Then what's the remaining 60%
+the remaining 60%
+is actually out of which, again, 40% is this whatever we are
+going to discuss today. This is what is going to make you a
+better scientist, data scientist, and this is going to
+be the differentiating
+I don't much of this will be tested.
+That depends on the depth of
+interviewer. But please understand if you are really
+looking to solve something, irrespective of will you find a
+job or not, this is going crucial,
+because here is where you will coming back. Keep coming back.
+Change that, change this. This is the 40% of your job
+right now, what are we going to handle here? Now, let us
+understand, right?
+What is the need for pre processing, right? What is the
+need for pre processing?
+Whatever you send in that will be model
+right? Whatever you are sending in that will be model right. So
+that's the reason why, even
+this, this statement is pretty much clear to everyone, right?
+This statement is pretty much it applies to any scenario, not
+only in data science, garbage in, garbage out, is applicable
+to any scenario. Can you
+explain on any and paint board what you are saying to that will
+be easily understand to us. That intro is done right? I have
+structured this. I will keep using this going like we feel
+just, we are going to read other data. Just, we can example, give
+there some example, and you can explain to us, that's what I'm
+starting now. Good, is there? So the philosophy behind thing is
+done. I am I am doing. I'm using this. I have
+a your voice is breaking sometimes.
+Yeah, I can also sense that your voice is little breaking in
+between, and sometimes it is again coming.
+So some of them, it's fine for them,
+fine for me as well. Probably we should continue with the course.
+Yeah, thank you.
+Thank you. Thank you. Okay, we are requesting to that explain
+this problem.
+Can you
+see, if I am not making sense, I'll correct
+that was just a prerequisite, understanding that that layout
+that I've laid in, right? You can go ahead again. So you're we
+are fine, I think. So you can go ahead. Your voice is still
+breaking, yes, now, sensing the your voice, drinking
+just a second, guys, I'll change my internet. I'll use my
+earphones. Also. You
+Oh, his voice is working fine for me. Is it only for few
+individuals?
+It's not like maybe a few individuals who are facing this
+issue, right? It might change.
+It I for me also it's not working, and the way it's
+cutting off doesn't seem to be coming from our end. So yes,
+voice
+is okay, but it's just cutting off some
+words like,
+yeah, the voice clarity is okay. Just that, cutting off some
+words in between. That's that's the problem, some dropping of
+some packets. Yes, yes.
+So this is proof that my internet is good. Yeah,
+see, I, I'm under 65 mbps speed. I'm connected to earphones going
+forward, if anybody is facing any issues with my voice, so we
+are continuing
+with us and continuing with the session and having the QA
+question and answers to be addressed only after 45 minutes.
+Now, right? But it's a continuous class. Yes, yes,
+thank you.
+So yeah, as I was saying, right? If you guys can please give me
+at least 10 to 15 minutes space at a time without asking
+questions, right? Then you can grasp the overview then ask
+questions, right? Okay, now, why? Why did I say that pre
+processing is the most important step right now? It's most of the
+times I notice this right? People just start building the
+models without understanding the data. Right? See
+the biggest as a consultant, I usually keep getting requests
+like this, that is okay. I want to do
+forecast on this one. How much time will it take, and what will
+be the cost?
+I can't really say,
+I can't really say right, unless I see your data, unless I
+understand the complexities, unless I understand what are the
+pre processing challenges you have, model building challenges.
+You are sorry because the fixed bits don't work in data science.
+And if you, if there are any senior folks here from the
+business who deal with this kind of issues fixed bits, please
+avoid unless there's a there's a feasibility study, really, there
+is no way to do a fixed bid analysis, either it will
+overshoot or understood. It is not software engineering,
+right? So what actually we do is we try to do a
+concept check first, then the feasibility check right. Now,
+coming back to pre processing challenges right now. There are.
+So it's like this, right? If 80% of the data scientist job is
+spent in training, right?
+It's all about trying to do,
+trying to help the model build better stuff, right? And how can
+that happen only with better pre processing, right? One thing is
+the data, right? You can bring in more and more data, right.
+Next step is you process it better, right? You process it
+better. Then you move to model building. Model building is
+actually not a big task, bringing in new features,
+processing things properly, then building a model. And what very
+important step is, how do you look at the results and decide
+which one to change? Do you want to bring in more features? Do
+you want to change any pre processing steps, or do you want
+to tweak the model? These are the three different things that
+you will try to do by looking at the results
+right and here today, the model building, of course, will start
+from the next.
+I mean, after this, the model building will follow after the
+pre processing, right? Now
+the feature engineering aspect, it really depends on use case to
+use case, and do you have an opportunity to keep adding more
+features? Right? That is, use case to use case, right? What
+all are there within the scope of this training is pre
+processing and model building, really the
+feature bringing new feature aspect is not there
+in this right next. See the reason why I am talking about
+this is this right now. Pre processing is like.
+Laying a foundation, right? You're preparing, I told you,
+right? You arrange all of your x variables in the table, right?
+And there is this Y column, right? Now, it's all about
+coming up with a function f of x, right? You have two
+variables, x1, x2 you will have to figure out the function f of
+x that can model your y Well, right now,
+the thing is,
+if you're pre processing or your data is not well, right? It will
+be something like building a house on the foundation of a
+sand.
+Your model will be very complex. Makes it might be a neural
+network. You might have access to GPUs, right? You have entire
+Azure at your disposal. You have set up the DevOps pipeline,
+deployment pipeline, but if you don't spend enough time on this
+foundation to understand what's the target, what's the
+variables, right now, here is where the challenges come in.
+Right? It will be like
+laying a six way highway to a village that has nothing there,
+right? No man's land. You are laying a road to no man's land,
+right? So that's the thing with pre processing. Okay, now that
+the the history or philosophy is good, right, we will move on to
+understanding, what are those issues in pre processing, or
+what are the steps in general, right, one second.
+Right
+now,
+yeah, the next thing is this, what are the type of pre
+processing issues? Sometimes there are data quality issues.
+Okay, you you got your x variables sorted, right now.
+What are the issues? There are some issues that are present in
+the data that you have to handle irrespective of you want to
+build the model or not,
+right? Those are the data quality issues, right? What are
+they? Something like missing values, right? Now, the reason
+for missing values, is, is? Is a different story, right? It might
+be error handling. It might be genuinely missing some,
+sometimes the user doesn't want to disclose the data. So there
+are several challenges, right? Why? Why are there missing
+values in the first place? Right now?
+How do you handle it? We will discuss. Okay, then next missing
+values. Are there
+duplicates? Right? Sometimes there is a there's a chance that
+while recording something, you keep this duplicate records, or
+there's a error through which the duplicate records seep in,
+right? Some, some form of breakage issues, right? Then,
+inconsistent data, right? You have the column date right now
+somebody writes month to date? Here somebody writes DMY, right?
+How do you ensure that you collect the data properly? If
+you give a blank field, everybody write, everybody will
+write whatever they want. Instead you give a calendar,
+then you can collect it in a same form. Or if calendar is not
+possible, at least ask them to write it in a particular format,
+right? Even after all of those things, there might be some
+challenges because of the ETL process, right? So inconsistent
+data, right? Then outliers, right? Sometimes
+see it is like this, right?
+Outliers will be there in the data
+because of yes, there are truly outliers, or sometimes there are
+errors in processing the data, right? So you might have to
+understand with the SME subject matter expert to understand if
+the outliers are to be expected or erroneous,
+right? So
+now, so what's this? Missing values, then duplicates, then
+inconsistently.
+Data, then outliers, right now,
+the wrong data types is very similar to inconsistent data.
+The thing is this, right? How? How did your Python interpret
+the data types as right? Our dates as dates are numeric, or
+some numbers considered as categorical, right? Something
+like wrong data types,
+right? So now, these are the data quality issues right. Now
+these, these are to be expected and understood from a from a
+data analyst or data engineer or in general, right? These are to
+be dealt by everybody right now. What are specific types that are
+associated to data science modeling? Model building is
+this, right? Model building is something like this, sometimes
+there are highly correlated features. Now, what do you mean
+by correlation? Right? Correlation is nothing but
+something like this. For example, let us say
+there are two columns right, x1 and x2 right now, if they both
+represent the same information, right? For example, it is the
+balance tenure. Let us say we are doing some loan stuff, and
+the balance tenure is there. One of the column is in days, one of
+the column is in months, right? Or one of the column has the
+weekday, some of one of the column has other form of similar
+information. Now,
+what do you mean by correlated features? Is if these two
+there's a there's a way to test the correlation, we'll see that.
+And if that number, that test, if it suggests that these both
+are very similar, right?
+What happens
+is the model, it's like a redundant information that's
+present. There you have two columns with similar
+information. Why do you need to have two columns with similar
+information?
+Right? You're unnecessarily overloading the model.
+So it's a better step to handle the correlation before model
+building.
+Right? It happens several times, right?
+So, for example, I've been extensively working on model
+building in the financial space. So
+the interest rates and the inflation, these both are
+obviously related, right? Interest interest rates and the
+inflation. Do you really want to keep them as it is, or do you
+want to process them in such a way that you are focusing on
+what kind of special information each one of these features is
+bringing right now, correlation is not only about just checking
+if this information is similar and dropping them. No,
+right. What do you do? You try to see, okay,
+people have collected these two information is really, are these
+two different in any which ways? Okay, can we focus on that
+difference aspect? Can we try to extract that type of feature
+from this and then drop this correlated variable. Right now.
+That is why the coral handling the correlation is important.
+This is not a data issue. It's not a data quality issue. This
+is something very important for the model to understand what
+your data is right now.
+The next step is the feature scaling, right? What do you mean
+by feature scaling?
+Feature scaling is nothing, but for example, let us say it is
+something like this, right
+now,
+for example, there is this column age right, which is in
+what will be the min and max. Age right, it will all be
+intense. Maximum, it will either be one digit, two digit or
+maximum, three digits. Correct will not be much more than that.
+But on the other hand, if you take salary, right,
+if you take the salary, it will be much larger values, and it
+ranges very differently. Now, if you put these two columns
+together, if you put these two columns together, right.
+Right? And you ask the model to build something, what will
+happen is,
+inside the model, it will always try to minimize the errors.
+Right now, how? What does it classify as an important error?
+What is an important error is wherever the error numbers look
+very large, wherever the error numbers look very large, the
+model imagines, okay, I have to fix this number because it's
+showing a large error.
+Okay, so irrespective of age, it will keep focusing on the salary
+part only because the numbers are larger here, that's it.
+It doesn't mean age was not important. The model doesn't
+know that because in inherently, it works on something like this.
+That is okay. I have to minimize the very large errors. What is
+an error, very large number in difference. Now, age difference
+prediction versus actual. The initial age was seven, seven,
+right? And the prediction was 10. In terms of percentage, it's
+very large, right? But in terms of absolute value, it's just
+three. But for salary,
+one lakh versus 1.5 lakh. 50,000 is the difference, right?
+Difference of three versus difference of 50,000 so model
+will imagine, okay, I need to go and target the 50,000 number
+first, or let us say, 1.2 lakhs, 20,000 it's only 20% so 20%
+error versus 50% error, it will still not make
+model understand that, because it does not, you did not
+represent the number in terms of percentages. You represented the
+number in terms of absolute values. Right now, there are
+some methods that will help you, help the model understand your
+data better, and that's why you deal with feature scaling,
+right now. The other is the imbalance, right? What happens
+is, for example, let us say you are trying to model earthquakes,
+right? I am in Hyderabad. It's a decant plateau. I'm trying to
+model earthquakes here. There are rarely any earthquakes here,
+right? Among the 10 year data, there might be one or two
+earthquakes, right?
+How do you think the model can really understand from one or
+two instances of earthquakes, right? What happens is, in those
+kind of scenarios, we try to handle so the problem itself is
+actually called class imbalance, right? Class imbalance. Now,
+class imbalance sometimes is actually an issue. Sometimes is
+not an issue because, for example,
+it's very clear there is a there's very close to physics
+phenomena that okay, if this goes beyond this, then it's
+going to be bad, right? That means the variation of some
+feature really helps you understand that imbalance. In
+that case, class imbalance is not a problem, actually, right?
+What do you do? What do you do? You try to handle the class
+imbalance right.
+Whenever that kind of situation arises, how do you do the class
+imbalance? That is the class imbalance handling right? Then
+next multicollinearity, that is, you have your x variables and Y
+variable, right? For example,
+it is something like this, right? 3x one plus 4x two is
+equal to x4
+right? So, using multiple variables, you can actually
+construct the other variable,
+right? Then that becomes a redundancy again.
+Okay, so you try to handle those kind of features using
+multicollinearity tests, and you try to understand those.
+Okay. Then next, the data leakage issues, okay? Now,
+so it's like this, right? Unknowingly or knowingly,
+sometimes you might include some data from training to test or
+testing to train, or something like that. You need to avoid
+those kind of issues. Train this, train data, train data.
+You need to avoid these leakage issues. Okay, okay, so here is,
+I mean, I have just done a surface level introduction of
+all of these topics, right? Each of this topic, trust me, each of
+this is a research level topic, right? Depending.
+On how you want to handle each so there's a problem complexity,
+there is a solution complexity, and there is this domain,
+things, right? For example, in outlier detection, right?
+Sometimes, somebody might say, 1.5 IQR, is there outlier? That
+is their general guideline. It's not science, right? Depending on
+domain to domain, they try to change that number. They change
+1.5 to two or three,
+right? And sometimes, if none of the things are working, it
+clicks. It looks like a so it will go into a research zone,
+right? Done now, okay, I will take one question at a time.
+It's like 946 now. We will do the Q and A
+for five to 10 minutes. Then we'll start. I have the code.
+Please. Don't worry about the code, right?
+And all of these sections. It's a brief introduction. Everything
+will be discussed in detail there.
+Okay, okay, now let me see
+money. Content, yes, please go ahead, unmute yourself and ask
+me the question. Please. You.
+Kapu, Ganti, Mani Kanta,
+okay,
+sure that's fine. You can type your question money. Can then,
+then,
+Chakrapani,
+okay, wait, let me, let me unmute one at a time. Then,
+okay,
+yeah, I think money. Can you unmute me? Yeah, yeah,
+so can, as you're explaining about the feature scaling and
+multi core linearity, right in the feature scaling part, can
+you just re explain it? I was, I got a little bit confused on
+that scenario, which was helping in terms of future scaling part.
+Fine, fine. I will do that whenever we are so there is a,
+there's a very deep dive into feature scaling in upcoming
+right? It's just the overview surface level. We will do that,
+okay? And the same thing with multicollinearity as well. Sure,
+sure. And one more thing, just have you are like, there's a
+scenario for training and little company. How you how we can say
+that it's the do it comes to be like
+wrong data type or outliers with respect to that. How can we
+differentiate in that case as well? Good question. Yes, I'll
+answer that. Okay.
+Yeah. Chakrapani, your question, please.
+Yeah. So how is highly correlated features and
+multicollinearity different, right? Not same? Yes, okay, I
+will do that. Okay, next, Manoj, hello.
+Can you hear me? Yes? Please, yes. So as you mentioned, the
+data qualities. So when we are working on the AI, ml, so it
+will be your use data. So how we understood that?
+Yes, we had to train when we are doing trade. So how we fix it?
+The data quality understood, good question. Second
+thing request, sir. So can you use of whiteboard and something
+that to explain that that is will correlate when interaction
+session will happen, because you are giving example, that is
+good, but if you put it on the whiteboard, that will be more
+better to clarity, sure.
+So had it been a theory session, I would have really done that. I
+just walked three whatever I discussed, it's all there, here,
+right? I I did not speak anything out of this. Had it
+really been a theory session, I would have used that. But, yeah,
+what I will use that? Sure. Thank you. I can do that.
+Okay, yes,
+uh, Yes. Kiran, I
+uh, Hello, yeah. So when we are talking about data quality,
+right, so the input that we receive, so we should always
+believe that the input is always consistent, because, because we
+are going to do a lot of operations on missing values,
+duplicates, inconsistency and other things. So,
+I mean, like,
+so the input is, should always be the same data, right when
+always, because the whole pre processing of the data itself
+will be, will be lost.
+I understand what you're asking. Let us address it. Let us take
+other questions. And I.
+Letters, yeah. And one more question is multicollinearity,
+if you can just please give an example. I could not clearly
+understand that. Yeah, sure. We will. We will do that. We'll do
+it. Thank you. Thank you.
+Okay, yeah, sort of Yes,
+please, sir. Can you hear me? Yeah, so sir, regarding the
+outlier? So do we, let's say I have five features in my data,
+right? So do we consider, with the combination of all the five
+features, data as an outlier, or, like, individual columns
+value as an outlier? The reason I'm asking because feature
+scaling will trim down all the data into one scale. So there,
+we might not get an outlier in that sense, right? So, so we
+consider the combination of all the five like informed dBs, can
+we get minus one value, which is a combination of all the
+features? So do we consider as an outlier or the individual
+column as an outlier?
+Good, good. We will answer that. This is a very quality question
+that you have. Yes, we'll hand handle that. Thank you.
+Yes, Suresh,
+hey,
+when we say
+data quality issues, so this has to be discussed with the whoever
+is giving us requirement. Let's say they might give some data.
+We've figured it out.
+Some data is outlier. We need to communicate that and get their
+approval before going get in
+in a pre processing stage, yes, yes. Second question, and the
+second question is, I want to know a more clarity is required
+on the imbalance classes and the data, sure. Yeah, so all the
+deep dives will happen. This is just a small intro, like for
+some of them, this concepts are extremely new, right? So that's
+the reason why I've done a surface level intro. I
+understand there are folks here. You might have already done this
+right, and that's why they are looking for deeper dives. And
+whatever I am talking might look very shallow and inexperience,
+but trust me, there is deep dives, but you will have to be
+patient to accommodate others as well. Please.
+Sure.
+Yes. Please. Drag in the wrong place, please. So what is mixed
+units? And can you explain multicollinearity? Again, that?
+Yeah, we will do. Each one of them has their own section we
+will do. We will do,
+how about mixed units? Sorry,
+you asked something.
+Yes,
+please, yeah.
+So, as you said, for me, this is like everything new I wish
+explaining on a whiteboard, because somewhere we I feel
+like, though you are going really slow, but I'm feeling
+like I'm missing somewhere resume, last
+feedback taken. Yeah.
+Yes. Sindhu,
+yeah, so you spoke about correlation between the
+parameters, right? So to me, that itself looks like some sort
+of pattern detection. So how do we identify like which
+parameters are correlated, because there could be 1000s of
+parameters,
+and,
+yeah, and then, like, to what degree, right, like there could
+be, and to what degree, we'll say that below this limit, it is
+not really a correlation. And about this, it's something that
+we should keep in mind and take into consideration, good, good.
+I will let you know.
+Then, yes. Sid, yeah, good morning, sir. So just want to
+quickly check with you that in today's session, we are going to
+cover this KNN and the linear education part, which actually
+given to us in the readme. So that is, I'll just want to check
+here. So So Siddhartha today, there is no model building as
+such. If you are seeing anything like KNN or SVM here, how to
+leverage this models to handle pre processing, that's what will
+be covered. We are not actually going to cover the model
+building here. We should actually advance stop right to
+so it's like this, right? As much as you do model building to
+understand your target variable, you might also use them to do
+some pre processing, right? That's the reason why they are
+mentioned here. And it's like these are also you're not going
+to build a separate model to do.
+Pre processing. Yes, people in general do that, but
+here how to leverage them directly from sklm. These are
+the things that you go that you will see today.
+Okay, so Srini was,
+yeah, hi, Bharat, but second model building issue that I
+didn't understand. Can you explain again? So like as my
+example, sure. Okay, good.
+Okay, let me see.
+Right,
+sorry, yes, some other question, yes. My father, yes.
+Will there be anything common between highly correlated
+features and multi
+collinearity? For example, highly correlated features that
+you are talking maybe it's like interest rate and plane
+inflation rate both both move together, right? So will it come
+under multicollinearity? Highly correlated features?
+Yes, good, good. That's what the questions have been, why? Why is
+there a highly correlation and a multiple linearity, separately
+listed? Yes, we'll answer that.
+Yes. Siddhartha,
+yeah. So sorry to say, sir, but it is admitting is making can be
+very difficult, unlike the other classes we had, because the host
+is contrary, too much so you can we cannot ask the subsequent
+question. That's my feedback from my side, okay, and also
+that I found that what is being provided the readme document for
+today's session is not like what is going to cover today. I think
+probably a ALM team should take care about that one. What is the
+readme document is getting shared with us? Yeah, that
+that's Yeah noted. We will take care of it. See the thing is
+this, right? That notebook. Also, I only created this
+notebook. Also, I only created I was told that this is going to
+be a 200 plus member batch, right? Had it been a very small
+batch, I would have dealt with it very differently, because
+it's going to be 220 participants here. I thought I
+should document whatever I am going to speak, right?
+That's the reason why I created this particular document, which
+is much more detailed than the ones that are given to you. And
+trust me, this will also be shared with you. In fact, we
+will replace that right.
+Hope that's okay, right? And with respect to the unmuting
+part, you can ask your questions. Here I am stopping in
+between. I'm asking you to raise and giving you time to ask all
+of your questions, but if you still want to unmute yourself
+randomly, I'm really sorry. See, we have a tax system. Here we
+have raising of hand. I'm giving you time. I'm asking everybody
+to ask your questions. Whoever has asked questions,
+this is just to maintain that. Okay, you're we are not causing
+disturbance to others. That's it,
+right. Okay, so, so let us do this, right? Okay,
+I'll just, I'll just take couple of minutes to conclude few
+things here. Okay,
+okay. Here is your whiteboarding thing. Okay, so what's the usual
+process in data science is something like this. Let us
+assume your use case is finalized, right? Then you have
+your data sources.
+Yes, last question, please, yes, then go ahead ask
+it's unable to open that lab link. I did not share this. I
+will share it. I will
+Okay. Thank you.
+Okay, so this is source one, source, two, source, three,
+right? So these are all your data sources, right? Step one is
+to bring all of them in onto your environment and construct
+this X variables, right? So you will have to understand, okay,
+what is the key here? What is the key here? What is the key
+here? How can I merge these two? How can I merge these two?
+Finally, you should be able to create one data source, right?
+So this will have x1, x2
+x3 so on, and your y variable. Is this section clear? This is
+step number one. You will have to get.
+All of your data sources onto your this thing, and you will
+have to create your x and y.
+Right now, while doing so, while doing so, you will notice some
+data issues. Now, when I said model building is a single line,
+right? So it's like this. This is the model block. This is the
+model block. You will pass this data to the model, and it will
+give you the predictions,
+right? It will give you the predictions.
+Let me use a different color.
+If this predictions are good,
+right? Then, no problem. But
+if they are poor,
+what do you do if they are poor,
+right? So what all steps do you have in in your hand? You will
+either try to change this,
+right? And trust me, this is limited,
+right? This is and
+you guys asked me to do mine, but I don't have that pen thing
+else I would have done the whiteboard, right? So with
+respect to models, what all can we do? Either we can swap the
+entire model, or we can make it better by doing some form of
+tuning, right? Other than that, what else can you do if they are
+still poor? Yes, you did this model building. Try different
+models. You tune different models. It's improving from the
+baseline, but it's still poor, or in the sense it's not
+creating that impact to the business. What will you do? You
+will say you will go back and see, okay, can I do something
+about this? X variables? Can I do something? What is that? What
+is that you will do? Right? Pre process them differently,
+right? If not, you will try to find, is there a different
+source that I can connect a new data this?
+This is very I mean, I can say
+it really depends, right? For example, during the use case
+discussion itself, all of this will be laid down by a data
+scientist and a subject matter expert together, they will lay
+down all of these things. If this is really not working,
+this finding, this is really a challenge, right? And that
+depends on use case to use case and domain to domain. Can you
+bring in new data or not? But irrespective of that. See, this
+is, this is approach one,
+right. This is approach number two,
+right. This is approach number three. And this is what makes
+you a data scientist. Actually,
+that is okay, depending on your results, what will you change?
+Model, data, pre processing,
+right now, what do you mean by changing right how do you erase
+all of these things? It's already
+going to.
+Okay, so now, is that step clear for whoever wanted the white
+boarding thing? Can you? Is that clear?
+Now? I, I explained to you the process, first, whatever this
+thing, right? Now, now, we are coming back to these things,
+right, missing values. They were very important questions, right?
+How do you do? What do you do with this missing values? Right?
+So,
+some of them asked, right?
+Do you really? Do really change this? Does that mean you're
+going to change the distribution of the data? Are you going to
+tamper with the data?
+Right? But somebody said, Okay,
+before handling this by yourself, do you want to
+highlight the issues?
+Right? Highlight the issues? Yes, all of you are correct. All
+of you are correct. Now, when you feel that
+you're tampering with the data, that intuition is correct, but
+however, however, it's like this, right? There might be some
+fields, right? There might be some fields which you don't want
+to fill in. Okay? For example, let us say.
+So there is this stock prices, something like this. The stock
+prices is something like this. There's a small gap. It is like
+this. Now, what value should should you fill here?
+What value should you fill here? Some reason we don't know what
+the reason is. We will highlight it to the user while they are
+figuring out what has happened here. They might or might not
+give you a solution. They'll say, Okay, we don't know. Now
+you highlighted it. They'll say, Okay, I don't know. It's
+missing. We will fix the pipelines for it, but you will
+have to deal with this missing data for now. If they are able
+to debug and give you this value, good. Use it. Your
+problem is solved. But if you have to fill it, does it mean we
+are tampering with the data?
+No, what we are doing is it's all part of training the model
+right now.
+What's going to happen? What's going to be the impact here?
+When you say we are going to change this particular data, we
+are doing all of this just for model building, right. It's just
+for model building right. But you are correct that if this
+model building leads to wrong prediction and health wrong
+actions, right? Then your step is appropriate, absolutely
+incorrect way, right? This is wrong, right? It should always
+try to support. It should always try to support the model
+building and the predictions to help your actions better,
+right? You you want the actions to be better, right?
+This is the reason why you do the pre processing first. That
+is you highlight, highlight, highlight, I cannot really
+emphasize on the importance of highlighting the issues.
+Very good point to bring it up. That's the actual process. You
+highlight it. You say, Okay, boss, I'm see this is my
+observation. I'm bringing it to your notice. If you can help me
+fix it, fix it. Else I will try to deal with it. And you
+document all of your choices, such that whenever the
+predictions are happening, you will try to explain to the user
+why something is being set up in such a way, and what is the
+impact. If the impact is bad, definitely go back and change
+this. No, don't do this. Try something else, or drop this
+column. Remove, remove the NS, no, don't do anything.
+Okay, so it depends on the sensitivity of the subject
+there, right,
+irrespective of the results, some of them, some some
+directions might be No, no imputation, no missing data.
+Remove them. Some of the times,
+the use cases will be something like boss. We are sorry. You
+will have to deal with missing data. That's how my data
+collection process is.
+Now, what will you do? You will have to handle it by yourself,
+right? You will have to do this, right? So that's the reason why
+this entire flow, I am calling it as a iterative process. There
+is no escape. It's like, okay, you earlier, I told you, right.
+You got the data, you do the pre processing, you do the model
+building, you show the results. Is it done? No, it's a constant
+iterative process. It's a constant iterative process.
+Sometimes they might not understand why you are
+emphasizing so much on this. Na, then you say, Okay, you drop it,
+you build the results, you show them, boss, if I don't handle
+the NA, here is how your model performance is, and this is what
+I could do with the models I did that I need your help now. I
+cannot find new features. If you want me to improve this model,
+it should be the pre processing steps,
+right? So it is an iterative process. You will go round and
+round. It's not like
+silo, right? Step one, okay, data loaded. Step two, pre
+processing. Step three, model building. Step four, results
+done. No,
+if, if that is the expectation, then I mean not you. If the
+business or whoever has given you this task, if they are
+expecting you to do such things, it is your responsibility to
+clearly document document.
+You have to document,
+see before.
+Facing any issue, at least in data science, this is what I've
+learned, right?
+Here is the issue that you are noticing. Right? First of all,
+think about how big of an issue it is. What is the impact?
+Right?
+Then, what all did you try?
+Right? What all did you try? What's the impact? What did you
+try? What do the results say from this experiment? Right? And
+what do you think are the possible suggestions? So here
+are the results. Here are the suggestions,
+right?
+You try to document it this way and bring it to the user. That
+way you help them understand boss. Here was the issue. Here
+is the impact of it. I tried this thing. I observed this. And
+hence the suggestion,
+what happens is, as you build the trust, right? As you build
+the trust between these two guys, you will slowly keep
+saying, okay, okay, okay, okay, don't try just okay, you because
+the way you explain it will show how confident you are about
+this. If you keep observing this repeatedly in your experiments,
+again and again, again and again, you will tell him in a
+very strong voice, was it's happening every time. No, this
+is not the way I highlighted this enough. It's time for you
+to understand I don't want to spend time like this again.
+Better fix this or help me give approval to do something from my
+end,
+right? So this is the flow,
+right? Is that clear
+now?
+So it's, you know, so I'm not claiming that they're given
+wrong data, right? It's not, I'm not claiming that they have
+given wrong data. That's that's the iterative process, right?
+You assume the data is right. You go to model building, you
+check the results, then only establish, if you do this n
+number of times, you will realize, just by looking at the
+data, there is an issue with the data.
+Step one is not to claim that the data was wrong. You will
+have to have evidence to say that the data is wrong. And our
+entire
+class is not based on identifying the problems with
+the data. It's actually preparing the data for model
+building.
+We are saying, Okay, you have your issues. Okay, let there be
+issues. I will deal with it
+right
+now.
+We are not doing tampering. We are not doing manipulating. This
+is neither tampering. This is neither manipulating, because
+this whatever output, whatever model building is happening.
+It's not going and changing the original records in the DB. It's
+just for model building, right? You will have to deal with it.
+For example, let us say you are given a 200 column data, right?
+You are given a 200 column data with so many missing values.
+If you choose to take a perfect fit of this data, it will be
+condensed to 10 rows and two columns. Do you really want to
+build the data with this? Do you want to drop all of the columns?
+No, right? What do you have to do? You will have to deal with
+it step by step, systematic approach. That's what we will
+learn. That's what we are going to learn today.
+Okay?
+Now, there were quest now, yeah, outliers. There were some
+questions on, what do you call an outlet as right
+now?
+Yeah, so
+there was an important question, right?
+I saw x1 it is an outlier. It has one out there here. But if I
+add x2 variable and look at it, it's not an outlier. It looks
+fine to me,
+right? So that's the reason why outliers is one of the important
+topics, and that's what I would have covered that's there in
+this code as well, is
+do not try to treat the outliers all the time.
+It's only when you face challenges then you try to
+understand, is this an outlier issue? And how do you identify
+outlier issues? Right? And same is the case with any of these.
+Uh.
+Colinearity or multicollinearity.
+Now,
+highly correlated features, means x1, x2 x3
+these are the features, let us say, Okay, now you will generate
+a correlation matrix, right? X1 versus x1 x2 versus x2 x3 versus
+x3 all the numbers are filled here, all the nine numbers are
+filled here, you will only need to look at the lower triangle.
+From this you will find out how correlated is x1 with x2
+okay. Now,
+what do you mean by multicollinearity?
+It it clearly says right features that predict each
+other. That is, maybe there is a linear combination, or nonlinear
+combination of x1 and x2 that will give rise to x3
+right subject matter. Expert might not know this. You might
+also not know this in the beginning,
+right, but
+there are some models that have an inbuilt mechanism of handling
+this.
+Otherwise, if you feel you're out of scope, out of issues,
+then you will try to address this multicollinearity. If there
+are, like, sparse data set, right? Like 300 columns are
+there, right? Then you'll say, Okay, first I'll try to see if
+there is colinearity. If there is colinearity, then I'll also
+test for multicollinearity.
+Step one is remove highly correlated variables directly.
+Step two is okay among the remaining, right? Let us say 200
+are remaining among the remaining. Can I remove some
+more? Where this kind of relationship exists,
+right? That is multicollinearity, right? And
+there were questions on the imbalance, right?
+As I mentioned, imbalance might directly or not directly be a
+problem. Imbalance will actually see what is an imbalance. If
+these are the number of records, let us say right, total number
+of records. Imbalance is nothing. But
+this is class number one. This is class number zero.
+Okay, you're asking me to build a model to differentiate between
+one and zeros, right? If there are strong features that are
+explaining this x1 and x2 then you don't need to handle this.
+If there are strong features that are explaining this, no,
+this is not a problem.
+If there are no strong features, then what you will do, you will
+say, Okay, I will try to increase my zeros by doing
+something called as up sampling, where you create new records,
+right? Or you will say, I will do down sampling of once, right?
+I will try to maintain the ratio of zeros and ones similarly.
+These are just a hope that it will help with the model
+building. If it works, then you document it. Okay? This step
+work for me. I am documenting it such that we'll come back and
+revise it to explore it further. Does it make logical, legal
+sense to use it going forward?
+Right?
+Yes. Mayuri, yes, please.
+Hi, sorry. I didn't know we could ask questions. I was just
+raising my hand because I haven't I can wait until no, no,
+yeah, please go ahead. I mean, I was about to open up the
+session. Yes, please. Okay, so I just wanted to reiterate on the
+correlated and colinearity. So correlation is between two
+features that could how similar they are. And collinearity is
+basically a relation between
+a product of one and two is good. It's, it's kind of, it
+reminds me of independent versus dependent vectors in in linear
+algebra. So if they are really, if they are collinear, which
+means they're parallel, meaning that you don't need them, and
+you need unique ones to identify the features, henceforth your
+set is going to be unique. Is, is that? Would that be a good
+understanding of that?
+It's a good understanding, yes. So all the X variables are
+called dependent variables in model building the y variable is
+called the independent variable. I see, okay. So it's a
+combination of this
+dependent variables that you will come up tomorrow.
+Model the Y, that is the f of x, right? And the goal is to keep
+this as simple as possible. Yes, yes. And that's the reason why
+you're trying to see. Can you condense this information? Can
+you make this parse set into a dense set such that you will
+also be able to deal with explainability.
+Makes sense. I think, yes, I I'm able to understand that. Okay,
+so there was one more thing that I wanted to ask, as you were
+explaining, you were talking about
+Down and up.
+Yes, would you I didn't really understand what you mean by down
+sampling or up sampling. We will answer that. We'll answer it,
+but then
+we'll take a break at 1030 but before that, yeah, I'll I want
+to take all the questions. Sure I can wait. Thank you guys.
+Please go ahead. I mean, with the pre processing see, by the
+way, please don't assume I'm not showing you any code, and all
+the theory is really important here. Unless I talk about this,
+you will not understand what I'm showing why is it important? And
+all this discussion that we are having extremely important. And
+as I told you, code is one line, right? You are here to know
+about this from me, who has already worked on this kind of
+sets, right? As much as I am explaining to you, there might
+be learning for me as well, right?
+So,
+Mayuri, you are done right now,
+I'm done. Thank you. I'm going to lower my hand now, okay?
+Sonal, yes.
+Sonal, Jain, you wanted to ask question.
+Okay?
+Please. Hi,
+hi, Bharat, sir, so my question would be on the invalid. Sorry,
+sir,
+but now I am able to unmute earlier I was not able to. Can
+you wait? Because I have already started. Yeah. So what I was
+asking is on the imbalance class, can you maybe explain it
+a bit further, like just because
+Understood,
+understood, I will do that.
+Sure. Thanks.
+Yes. Sonal, please go ahead,
+sir, so here all these right data quality issues and model
+building issues. So is there any like predefined steps when we
+need to do what or how? I mean, we can take a decision, right?
+What matters, right, right? So it's like this, right? There are
+some basic steps that you need to do, mandatory to do model
+building. But as I told you, these are only basic mandatory
+steps. You will have to come back and revisit them again and
+again, depending on the results. And so, for example, if you are
+using linear regression, you will have to do some sort of pre
+processing, if you doing random forest, something like that. So
+as you're switching between models, or looking at the
+results, you will have to keep coming back. It's, as I said,
+it's not like step one, step two, step three, step four, and
+done. Yes, step one, step two, step three. Are there for model
+number one, experiment number one, I will talk about what are
+these for experiment number one, but it's you. You will have to
+come back the and that that's what makes you a unique data
+scientist.
+So as you mentioned, we need to come back so how one can decide,
+right? What are those parameters are right? Understood? So you do
+the initial exploration, EDA, right? You do the initial
+exploration, as someone asked, right? That was very important
+question. I found some na values, should I highlight this
+or use this? I am saying, first document, this, first document,
+this
+one second.
+I am saying, you first need to document this step and it's,
+it's, it will be based on your experience and number of times
+you have done this, that will help you relate the results to
+the pre processing step. For example, if you give me a new
+data set, extremely new data set today, i.
+And ask me, I will do this model building. I will have the
+results. I will be as confused as you will be to do what, what
+the next step will be really
+right? But what will be interesting is, okay, once I
+find the results, I will go back and see the impact of each of
+them. I will try to change one, only one step here. Change the
+see the result. Only one step. See the result here, here. So
+like this. What all issues you documented? Right? You? You
+listed the documented, right? You. So this is, this is going
+to be important. You did your EDA, you did your documentation.
+You did your first experiment. Now is the time to understand
+which one to handle first,
+and that comes from experience. That comes from experience of
+handling working on multiple things.
+Okay,
+this document, EDA documentation and experience, that's what will
+help you do a proper iteration without wasting time.
+Okay? So, yeah, little bit it's clear, and
+unless you get your hands dirty, it's really difficult to say,
+okay, here is how you do it. For example, it's like a recipe,
+right? I tell you, these are the ingredients. This is the recipe.
+These are the conditions. Go cook the food. Now, obviously it
+will turn out to be different than how I showed you in the
+video.
+Sure makes sense. Thank you so much.
+Sorry for the interruption.
+Can you use whiteboard or something while writing
+something instead of writing it here?
+Okay, okay, I will do that. No, here, it's it's easy for me to
+connect what I'm saying. That's why I'm writing it here.
+Yeah. Saurabh, yes, please.
+Yes, sir, sir. I have a two question. So we did the feature
+scaling where we are training down the features in terms of
+Max main scalar or any standard scale, right? So expectation is
+that whatever test data that we are getting it, we are also
+doing the scaling in the test data or the unseen data as well,
+right, right, right. So do we use the same method to do the
+scaling? Because then doesn't it comes in the data leakage part,
+because somehow, the
+somehow, sort of, this is important and needs to be
+discussed at length, and not now it is the notebook. Second
+question, very important. Okay, second question, sir, regarding
+a missing value imputation. We know some methods are there,
+right? But doesn't like shouldn't it depend upon the
+like business SME or data SME to fill the missing value, rather
+than be feeling it some random node mode? I told you that,
+right? So it's like, you do your EDA, you do the documentation,
+you highlight the issues and
+whatever selection you are making, you document that as
+well. I told you, right, okay, you have to do that. Okay?
+Explain
+feature scaling and outlier part
+I have noted here I have no imbalance, sort of feature
+scaling. I have noted
+Yes, money canter, yes, tell me please, yeah. The same question.
+What sort of asked for data leakage, but, and prior to that,
+one more thing is like here, the multi core linearity comes into
+the picture. Like, already we have some correlated one. And
+again, we are
+correlating the existing data, like internal function. We are
+correlating it, right? So that my correlation might happen,
+multiple correlations might come into that picture, right? So in
+that which one need to be picked up on based on the like, it may
+be multiple scenarios that need to be tested in all this
+different kind of data set, right? So how
+you are, right? There are automatic procedures to do that.
+As much as it feels complicated, it's a single line command,
+yeah, but as per the single line command, but internally, the
+flow how it happens and each one need to be suggested. How can
+I mean, this is just a surface level, right? We will do a deep
+dive. I am not showing you any code, right? When I show you the
+code, I will explain you how that works.
+And one more thing here for with respect to when you're going
+with outliers, level only, all the wrong type data and
+everything will counter comes under data errors only right. So
+why again? Wrong type data is being considered again.
+So see inconsistency, something like, okay, New York, NY, new
+space York. These are all inconsistent data. No, that's
+true.
+Wrong data type is.
+So you had this ratings, 1234,
+right. Ratings is only 1234, since the pandas is looking at
+it as numbers, it will treat it as numbers, but it is actually
+categorical information.
+I am asking about with respect to outliers, not with respect
+inconsistent data. So outliers already will be getting detected
+with respect to wrong data types and everything right. So why
+again? The wrong data types is being considered again, so we
+can consider the process flow is something like this, first you
+read the data, then you check for data types first, then the
+inconsistencies and outliers. Oh, okay, I thought the same
+order which was displayed in it, highlighting the issues in terms
+of importance. But when you look at the flow, it will be
+different.
+Thank you.
+Yes, correct,
+yeah. Firstly, thank you so much for considering the feedback and
+switching to the whiteboard. And so I have one question. So here
+in imbalancer classes, you mentioned, like, for example,
+considering the classification problem if you want to
+generalize a person to the male or female class. Okay, so you
+are saying like the population of the male records, like
+the count is more and the female records count is less. The in
+that way, the model becomes by acid, so the results are not
+accurate in that case. So what we're going to do if you're
+saying up sampling and down sampling, right?
+Do we, like a data scientist, decide,
+like, upset down sampling? Do you mean like removing some of
+the more most population? Like, if the mail records are more we
+want to remove them, removing them, since not from the actual
+database, but not considering for the model,
+do we need to do that or like what in what way we handle and
+each time we
+perform on the model, and record the accuracy right those
+accuracies so to whom We report, as a team within the data
+scientists, we decide, or to the customer, to the direct
+customer, we tell them that, like these are the different
+methodologies we went up. And this is how the results are
+coming in. So how they decide if that is the correct result?
+That's where I'm lacking in, and also with respect to the missing
+values. Also you are saying like, these are different
+methods to fill in the missing values. So
+the
+actual stockholder, I understood, I understood what
+you're asking missing values or multiple linearity, irrespective
+of whatever it is, there are
+initial steps, either advanced steps. There are basic, uh, ways
+of handling and guidelines. We will discuss all of those
+things. But when you when you talked about, how do you do this
+documentation, and where do you want to show it and all, it's
+like this, right? It happens in stages, right? You don't get to
+talk to customer each and every time, right? But that doesn't
+mean you will have to stop working. So you will do, you
+will work. You will document. You will do.
+So whatever choices that you are making, you will make a document
+of that as well, and then you will discuss it internally with
+the team. Sometimes your internal team agrees disagrees.
+Then all of you together try to change something. Finally, as a
+team, you present it to the client. It happens once a week
+or once a month, right? But yeah, it depends on how
+frequently do you get a chance to talk, right? But then
+documenting your observations, your choices and results will
+help you, not only communicating this, but you can come back and
+see okay, what was the choice that I made and what was the
+impact that it made? Okay? Do you want me to change that so
+your second change might be so good that you will not even tell
+that you will do you did the first experiment, unless asked
+specifically.
+Okay, right? Karthik, yes, please. Okay.
+Patrick,
+unmute, please, yeah, you're you're on
+right.
+Hi, Bharat, this is a slightly
+unrelated question.
+Me. So
+will there be any classes in the future regarding the
+preparation of model from scratch, or will we always be
+using the existing models throughout this course?
+So when you said model building from the scratch, right, right.
+So in ML, if you are given the data x to y, right, it's always
+building the model from the scratch. There is no pre built
+model here. But I understand your question. Your question
+might be, will it be low code, no code base, or will it be
+writing the entire thing by yourself, that question, I
+understand. But
+so the pre trained models, as we call it, right? The pre trained
+models are there in deep learning, models, generative AI,
+those kind of regions we have the pre trained models, but in
+structured data, it's always going to be a new model. Then
+again,
+when I say a new model, you might be confused, saying, okay,
+random forest. He's saying there is already random forest, but
+what does he mean by building it from the scratch?
+Right?
+Let me refine my question, right? So
+we are using the models like some libraries in other
+programming languages here, right, correct. So will we be
+building
+our own model, any sample model in the upcoming courses,
+upcoming session? So I will tell you.
+So it's like this, right? For example, let us say y is equal
+to mx plus c, right? And you are using a method called linear
+regression to fix the values for m and c,
+right? Now,
+when I say, train the model, you are now trying to understand
+what's the m value and what's the c value, right? That's what
+is training. When I say pre trained model, these values are
+fixed. You just need to supply your x and get your y. That is
+pre training. Now your other question is, Should I do this
+way, or any other way of trying to come up with this model,
+right? So new methods are really explorative, right? User
+research level, right? Trying to come up with entirely new logic,
+right? So we will definitely explain you how linear
+regression works, decision tree works, random forest works, SPM
+works. And how do these guys train to find different
+parameters? How do you connect your data to this to find new
+parameters? All of this will be there, right? But if you want to
+create new class of model
+that that's
+that's not there,
+yeah, but I think I got the answer. So there will be
+sessions on detailed explanation of linear regression, yes,
+decision tree and all those things, right? Yes, that's what
+I will have a different
+section each. You will understand how this works, how
+this works, how do you all of these detailed in depth
+discussions will be there, but not on. How do you create a new
+class?
+That's fine. No, as long as we understand the internal working
+of the existing algorithms, that's also fine for us. Yeah,
+yeah, yeah, that will be
+there. But thank you if you go, but if you go into the deep
+learning territory or generative AI territory kind of zone, it's
+simply not possible to build a model from the scratch, even if
+you know the internal working unless you have your data and
+resources.
+Okay, okay, yes. J pal,
+yeah, sir, this problem statement right for AML. So do
+we have any standard guidelines to follow these data quality
+checks, yeah, from the stakeholders? Or do do we, do we
+follow all these similar kind of data checks for every problem
+statement or only few of them.
+So you it's like this, right? You should know what are the
+different checks that you have to do, and depending on one
+check at a time, it will keep evolving, or it's not required.
+All the data doesn't need to be put through everything.
+And once we do this all data checks, we have to show these
+two stakeholders these many issues we found, and so do they
+give the
+separate data the thing?
+Is this, I understand what you're asking.
+The question is something like this? See, it's very important
+to maintain a log book of all of your experiment. But that
+doesn't mean everybody will hear you, right? They if you
+constantly keep going back right and say, Here is my observation.
+Here is my observation, without any solution, without any
+explanation of understanding why this problem is, what this
+problem is, they will not be ready, right? So you will have
+to create a proper case for for them to understand why is this
+very important to handle, and where do you need their support,
+right? If you're not able to explain that clearly, they will
+not be interested in looking at your document,
+right? Yeah? Vija, yes, please.
+Yeah, thanks.
+I'm just trying to correlate the quality issues, right? For
+example, if you assume a problem like, Okay, I have I'm running
+some tests for a few seconds, and other tests for a few hours.
+I'm trying to collect the samples for, okay, every one
+second. So in this scenario, okay, the smaller duration test,
+right? We'll get the less number of samples, and higher one will
+get the more number of samples. Okay, so higher, smaller ones,
+okay, we will have some missing samples, okay, compared to the
+higher ones, right? So how do like here we have Okay, missing
+values. And also, like the scaling issues also will come,
+right? So in general detail in the ML, so I know that recently,
+but I'm just checking that graph idea. So right now, what you are
+asking about is a difference between model building stage and
+the production stage, right? So during the model building, let
+us assume you will be given right, five years worth of data,
+right? And then during the production this data is
+generated on daily basis or hourly basis, or something like
+that, right? It is your responsibility to understand the
+distribution of missing values. Have they occurred here alone?
+Have they occurred here? Or is there any particular period
+where the missing values are? Because this is how you
+understand. Does this need to be treated or avoided?
+Right? And based on this understanding, you will set up
+the pipeline for the test cases. After setting up that also you
+will have something called as monitoring,
+monitoring mechanism to understand okay, in the past
+five years, I have observed 10% na and here is what I have done,
+right? But then in my test data, you will keep some buffer time
+and say, Okay, I'm observing 15% NS now, which is significantly
+larger than what I observed in my train should I go back and
+look at it? What is the reason for this? Does that need to
+change my na method, or imputation method, something
+like this. This monitoring is what is going to be a constant
+process.
+What you're saying is that okay for shorter duration? Okay?
+Runs, okay. We have to monitor and Okay, whether we have to
+see whether it will be okay, reused in the missing side, or
+maybe completely ignored, so that we have to activate right.
+So during the
+training phase, you will understand all of these issues
+and set up the monitoring pipelines to understand data
+drift.
+Is the data drifting from the train distribution? If so, you
+will trigger several different things.
+So, but if you want to filter the smaller samples and larger
+samples together, right? So in one window here, how do we deal
+that in general? So now that's a that's a different question that
+you are asking again. So it's, it's like this, right? You are
+saying, Okay, I have my x1 as this and and my x2 as months. Is
+this your question?
+Yeah, so both, if I want to
+like this right now, this day will correspond to one month,
+right, correct. You just fill that
+so. But how do we fit both into one window? Because I explain
+this one data set x2 is another data set right so from different
+runs, right, correct. But I.
+So you will not fit the data for a model for one run at a time,
+right? You will collect the data plus, right?
+You will set up. So, for example, you your data is being
+generated every day, every day you're writing to the database,
+right? What you will do is, okay. Step one, I will you will
+set up a cut off point. I will take the data until to
+particular date for my model building. And from here, what
+you do is you set up one
+threshold here. This is going to be my test data. This is going
+to be my train data. You will train on this data. You will
+test on this data, set up the pipeline such that you are doing
+predictions for the upcoming records and you are doing
+monitoring so that it will trigger the train process again.
+Okay. So what we are still doing, the data pre processing,
+we are trying to prepare the quality data. Now,
+right? The testing part will not come into picture. Now here,
+right, correct, the latest, correct. Now, can you give me a
+small example? Small example, take, take one small example,
+like, What do you mean by it?
+No, okay. My problem is okay. For example, as you mentioned
+here, right? Okay, I have run I have two sets of data. So one
+day, one set, I got it from in the in the days form, another
+set in the months form. So now I want to get both into the same I
+want to both data to be given to the same model. So before giving
+to the model, I want to qualify the data, right? So current
+issues I have to address, right? So, so one is in the days,
+another one is a month. So how do we fit both things together
+and give it to the model, right? So it's like this, right?
+It is days records. This is month records. These are two
+different sources, okay, you want to create a single record
+x1
+x2
+there will be one key right, at least one key to match these
+two.
+There should be some key to map these two as one record, right?
+Yeah, right. Let us assume there is one key right. Run, number
+one, right. Run, number one. Days. Run number one. So there
+will be days and what will be the corresponding month? You
+will pick it from this. Run number true. What will be the
+day? You will pick the month from this? Yes, some dif
+constant, right? Okay, we
+have to represent in the form of months and give it to them.
+Yeah, that's how you do it, right. Okay, okay,
+right, okay, thank you. Right. Okay,
+yeah, Suresh is done. Suresh is done, or who was done?
+Okay, Suresh,
+hey,
+so for example, now
+I have built a model which predict whether it's gonna rain
+or not,
+okay, upon the fires data. Now, I every continuously receive a
+data. Do I train the model on newly received data or not?
+So that's what I told you, right? The monitoring process
+will help you do that.
+You set up the monitoring See, setting up this also takes some
+intelligence, so you you will have to define this to do that,
+and that you can do it properly when you have done your EDA and
+all of your experiments well, and you have understood all of
+the issues and did that. Now, yes, how much ever intelligence
+you put in. There might still be some things that monitoring
+triggers might not do, but what will show is the performance
+metrics. Okay, so you are saying the data drift is there, the NS
+drift is there, all of this you are saying in the monitoring,
+but nothing is triggering but the performance is falling.
+Nothing is triggering but the performance is falling. So this
+also warrants you, so this also should be part of performance
+monitoring and then hence, understand, okay, nothing is
+changed, but the performance drop. Now, what you will do
+again, treat it as a new problem and work on it.
+Okay.
+Yeah, thank you. Yeah. Srivas, yes, please, yeah, but Sir, can
+you explain side by side? Tyrion, like some practical
+examples and code courses, it will be easy to understand. So
+we are beginners, but imagine problem. I mean, very problem.
+After this, they're working. They can understand their.
+Are asking questions, but slow, cinema, slow. You asked
+whiteboard. I bought the whiteboard. We are doing
+overview. Months after this, we will look at the code. I should
+get the chance to go into the questions whiteboard, right? If
+constantly questions keep coming up, how can I go to the court?
+That is, I'm sending sir, missing value, sir. We are going
+to side by side theory, one step, missing values duplicate
+and whatever the can you give me time? Can you give me breathing
+space? First, I am explaining you what are the missing values.
+Then I will show you the code.
+Yes. Yes.
+So my question is like, so we are dealing with different
+issues with respect to the data. These issues can happen during
+the training phase, testing phase, even
+once the model is deployed, still during after that, also we
+train the model, right model, which is in the training phase.
+So whatever the measures we have taken during the training phase
+to avoid these issues, like missing values, etc, the same
+measures we will take even when the monitoring pipeline is set
+up and everyday model, the model in the
+production need to be trained the same methodologies we take,
+or we keep changing approaches, depending upon the performance
+of the model.
+So
+see as much as you have a monitoring mechanism, your
+solution will be called a robust solution when this is triggering
+minimum number of times. If it is frequently triggering, they
+will drop your solution. It's not required.
+That means there's no robustness in your solution,
+just for the sake of building it. You said when, when there is
+no triggering from the monitoring pipeline, but still
+the performance is dropping. You need to treat it as a new
+problem. Do you mean? Like, we have to forget whatever earlier
+we did and from the scratch we have to work on the problem
+again. Like, what do you mean by treated as a problem?
+I mean, this is very simple, right? When I said this, treat
+it as a new problem. You are not chat GPT, right? I cannot remove
+the memory from your brain about the past experiences, right?
+Obviously, that will influence your news steps as well. You
+will see, I mean,
+right, yeah,
+yeah, yeah, I understood your question. Don't elaborate more.
+I understood Okay, when, when I said, treat it as a new problem.
+That doesn't mean you will again, start from building it
+from the scratch. Okay, you'll try to understand, Okay, I will
+look at it with a fresh mind. Have some coffee. Okay, I am
+doing this, I am doing this, I'm doing this, I'm doing this, but
+it's still dropping. Is this? The problem is it take slow
+steps towards understanding the pipeline this? This might be
+because you have done some things in a hurry.
+Okay, got it. We need to recheck whatever we did, look for the
+mistakes, right? Okay, okay, okay. Got it.
+Yes One Yes.
+Please, sir. My question is about, can you give a live
+example? Because we have been a
+question so means we have been hearing about missing value,
+duplicates, emphasis, data, so many things, but we never seen
+live example how to implement this. So if you can give me some
+complex live data, then you can start doing this thing like.
+These are the basic values I did this. These are the duplicates I
+did this. These are the outliers I did this. So we can understand
+what is really happening. Because theoretically, we have
+been listening since long, but you have not seen I am, I am
+extremely sorry. Apologies for that. I will move into the
+Yes, yeah. So what I'm saying that, can you give me live
+example?
+Yes,
+my appeal is for the COVID,
+I believe we should have less questions and focus on the
+content more, because the books needs to be very big. So yeah, I
+am not in a space to tell nobody to not to ask questions. But
+then thank you. Yeah. Okay, so yeah, thank you. Anchi, thanks.
+Thanks a lot, really. Thanks for understanding my pain here.
+Okay, now I'll stop taking the questions. Now, see if I don't
+let you ask questions, you feel bad. If I let you ask questions,
+you will feel bad. Sometimes you want more theory, sometimes you
+want to look at the code where.
+I have the code. I have to come here, right? You need to
+understand me, sir. There is, this is a cohort with wide range
+of population, people who have already worked, people who are
+starting to work on it. Some of them are managers who just want
+to understand it at overview level, so that they don't get
+carried away by their juniors. Some of them are actually
+juniors who will be receiving instructions to do all of those
+things. It's really important, right? All of what we are
+discussing is important, right? We have two sessions for it.
+Once you understand the basic fundamentals, right, it's easier
+to follow. It makes your life and my life easier to look at
+the code, okay?
+Code,
+okay, let us take a small break here. Let us come back at 1115,
+and we'll start looking at the code. You
+okay, so let us start now. Okay,
+forget everything.
+Let us, all of us, have some peace of mind, all of you,
+including me, let us take one deep breath. Okay, one deep
+breath. I understand how important of this time is for
+you, and please understand it's for me as well. I am also a
+working professional,
+right? I mean, yes, one deep breath and let's start. Please,
+please focus. It's important, right?
+Okay, let's start. See now here the important steps are these,
+right? See, I have the code coming up. Don't worry,
+right? Just a step away, just a step away, with this. Now, why
+is the reason to have this much theory about pre processing here
+is, see, as I told you model building is just a one line
+thing. If you if you just directly take the model and
+build it, and results are not coming up without knowing what
+to do, you will not know how to improve the performance, right?
+That's the reason why I am emphasizing on number of
+dimensions that are possible, that are there in your hand for
+doing model building. Okay, let us say, for example, you wanted
+to understand KNN. Let us say you understood KNN. You You gave
+it the data you did all the hyper parameter, Turing around
+it, then the result is still bad. Is it really cannons
+problem?
+We don't know, right? Unless, unless we figure out this
+challenges. It's we can't say we are. We can't reject cannons
+capabilities, okay, having said that, okay. Now, what is the
+usual flow? As I said, Right? As I said, first is data loading.
+You get the data. I will show you the number of ways you get
+the data. Then type conversion, right? Are all the data types
+interpreted correctly or not, right?
+And initial exploration, right? It's like, okay,
+it's like you're skimming through the entire data, right?
+It's not like if you find some missing value, you'll handle it
+then and there now, and you will not come back to it fixed, no
+initial exploration, just casual walk around the data, right?
+Then basic steps of handling data, then duplicates, outlier
+detection, feature extraction, encoding categorical features,
+scaling. Now, once all of this is done right, once all of this
+is done right, these are the basic steps, mandatory,
+mandatory to do all of these steps on any particular data
+right. Once this is done, you will be ready to do the model
+building, right. Okay,
+once, right,
+once, once this is done,
+right. So this will help you prepare the data. Once the data
+preparation is done, you know, you can do the model building
+all of these steps, right? All of these steps are related to
+how good your model can perform. You
+know, somebody saying the meeting is not recording, that's
+very important. Can you fix that?
+It is recorded. So,
+yeah, now all of this step without doing this, you you
+should not even attempt model building,
+right? Without.
+Are these steps you should not even attempt model building.
+These are the steps that will ensure that if the training is
+not happening properly, you will handle this. These are the major
+things. There are major things.
+Okay, now let us. Let us stop doing all of this theory. Okay,
+okay, so that's what I'm saying. Is pre processing a really
+straight line. This is what we have been discussing up till
+now. No, it's not a straight line. You will have to keep
+changing, right? I will not focus much on it, but now, yes,
+so this notebook is arranged in this way we have done the intro,
+right? The need for pre processing, then logical flow
+and iteration, okay, this is the logical flow and iteration. You
+have to set up first, and then you have to keep coming back to
+it. That's what is the iteration. Okay. Then next is
+the data ingestion, right? First step in data ingestion is, how
+do you lower the data you might have already touched upon few
+topics with respect to this in your Python class, right? Or, if
+not, we'll recheck it, we'll show you that right then is
+okay, type conversion, as we already showed. Then, some
+water. What do you call as initial exploration? What? What
+do you call as initial exploration, right? That is what
+we have, then we have duplicate removal. Right? Now
+it's like this, right? You have 100 records and the number of
+unique records are only 10 among it, right? You cannot say you
+have 100 records, and you cannot say that the model is not doing
+good, right? Duplicate records are as painful as collinear
+objects, because you send in the first model, it will update the
+weights. You send in the second sorry, first row, it will update
+the weights. Second row, if it has to change some weights, then
+it has to be something new, right? Unless the final model
+has happened, right? So that's why handling duplicates is very
+important, right? And inconsistency and data noise we
+discussed, right? But we will look at it whenever we go there
+as well. So inconsistency is nothing, but what you want it to
+be interpreted as, and what it was interpreted as, right? And
+don't worry, we have one more session tomorrow as well, if, if
+we are not able to cover anything here, this is the only
+notebook that we will use for the entire one and two day
+session, and we will share it with you appropriately. Don't
+worry if I, if I finish only up till here I will. I will share
+it with that changes only to you. Okay, tomorrow we will
+cover all of these things. I will not leave you with any
+topics that are not discussed. See, this is these are the
+things that I want to cover. I will cover in these two
+sessions. Okay, don't worry. You will not miss anything, even if
+the time does not permit because of any questions or anything. We
+will try to add an additional session. Don't worry this so
+this can be done in parallel with understanding the model.
+Okay? So these two days, we will focus. We'll try right then we
+we will do that, that one as well. Vijay, I am not running
+through the contents here. I I did all of this discussion here.
+That's the reason why I am saying, Okay, before going into
+that depth, I am reintroducing the topics I am not running
+through, please,
+right,
+okay, see you Make these kind of comments. And if I open for
+questions, you say I'm taking too much time for questions.
+If I talk about something at surface level, you want to see
+the code,
+yeah. Okay. Now let us come back to the data ingestion and
+cleaning right now. How many types of different sources there
+are based on that you will have to load your data from different
+sources. One way is usually going forward, how it will be is
+talent speed. Will either be sharing with you the link to
+download the data or the CSV files. Which will you will have
+to put manually in this section here, right? You will put the
+data files here and read it right. Or, sometimes you will
+have to connect to the databases right. You will have to connect
+to the databases to read your data, and sometimes
+to do some initial explorations, right,
+to
+load the data from pre so you know about this modules right in
+your previous session, you might have learned about the modules,
+right? So sometimes these kind of modules are inbuilt small
+time.
+Any tie data sets, as we call it, in them to, for example, if
+you want to quickly understand some concept, right, you can
+refer to that built in data sets. You can refer to that
+built in data sets, okay, that's what this SQL and data set c1,
+load data sets are there for, okay? And sometimes you might
+have to get the data from an API. Okay? For that, you use
+request to get the data, and you will use pandas data frame to
+format.
+Okay? Now, if you are given a simple csv file, block, CSV
+file, right? What will you do? You will put your file here,
+right in a collab or wherever, in whichever environment it is,
+you will copy the appropriate path for your data set, and you
+will use PD dot, read underscore CSV. I'm not going in depth of
+this one, because I'm assuming pandas was covered and you guys
+are aware of it. If not, this is enough, pandas data, PD, dot,
+read underscore. CSV is enough to get the data into your
+environment. Right now, if it was not CSV, if it was xlsx,
+then change the command. PD, dot, read underscore, CSV to
+read underscore, Excel.
+Right now,
+had it been a data set, right? Had it been a data sorry, DB,
+what you will do? Okay, DB is not going to be here, right? DB
+is going to be separately somewhere. So you will have to
+establish a connection first connect with your DB, right? If
+your DB usually we give you the DB files directly so you can
+connect it like this. Else you will have to share the username
+and password details as well here, right with that you will
+first establish the connection, right? You connect your database
+base. Establish the connection once the connection is
+established. If you notice here, PD, PD, PD is all common, and
+the commands are changing based on what is the type of the data,
+dot CSV, dot xlsx. Then for query, it's completely
+different, right? You're saying, okay, get my data from the SQL
+using this query. So there are two sections to it, SQL and
+query,
+right? So what's the SQL part of this first is, you need to give
+this connection as input, right? Then you will construct the
+query, the query,
+right?
+So now, yeah, like
+the simplest answer is, depending on what kind of
+database it is. There are several connectors. You can
+choose one of the connectors depending on where you want to
+connect, and you can connect this. This is helping you to
+understand that there's a possibility to connect to any
+database
+right then. Now, once you construct your query, right?
+This can be any complex query, a regular SQL query, right? And
+then you have the connection.
+Now, your data is here. Then you inspect the data. This is called
+Data inspection. Whenever you see this dot head command here,
+right? It is the inspection command. And then you close the
+connection with your DB. Your data is there. Now you close the
+connection. You keep working with your data, right? Then the
+next section is,
+I told you, right among the multiple ways you can lower the
+data, right? One is the built in data sets. Okay, one such way is
+this. Where is this Iris? Yeah, so from SK learn dot datasets in
+Iris, load Iris dataset, right? Then
+you are using Pandas and load Iris, right? So, Iris and then
+load Iris. This is this data as frame equal to true,
+right now. Let us. Let me show you this as a sample. Here is my
+reason connected. It's connected.
+Okay, so connected.
+Okay, okay. Step number one, I told you step number one. Right.
+Iris is loaded, right now, what all does Iris have? Right? Iris
+is a dictionary. It has several different things right now I'm
+saying, okay, Iris start as frame equal to true. It's a
+method, method as frame equal to true.
+We already did that. Then Iris, dot print.
+Okay, so now it will give you that data. Now you copy this
+into DF, dot, Iris, so.
+Okay, after time is dot,
+okay. We usually use this, right? We usually use this to
+quickly do some for example, you wanted to do one clustering
+example, or you wanted to test a combination of different process
+steps. So one way is
+directly do it on your usual data, or you use the sample data
+sets to construct the code for the pipeline. Right. Once the
+pipeline is set up, it's just a matching it's just a matter of
+switching the data from
+the this one, whatever we used as toy data to your original
+data, right? So to do these kind of quick things, or in, most
+likely in academic settings, we keep using this data sets here,
+right? You might be seeing this a lot, right?
+Then c1 also has something very similar, and this is how we see
+right then next is okay. Now there are some so there is some
+API that's there with you to get the data. You got it in the JSON
+form, you are converting it to the API data frame form. So here
+is the API, here is the API link that is giving you the data.
+You're using requests to get that data which was in the JSON
+form, which had which you are again converting it into the
+data. Finally, you are getting this data,
+right. So this is one way to access the data.
+Okay? Now, now one other way is so same thing, the API only, but
+it's like this, right? If it was not only this, there are several
+different No, no. Sonal. We did not choose Iris data set. No,
+no. I'm showing you different ways of accessing the data yet,
+we did not start doing anything with any data. Okay?
+Then,
+yeah, one way is so you if it was only one API call or one
+call, right? You could use this. But in fact, if it was a entire
+website which needs to go to different locations. Then what
+they what they do, they try to come up with a library just to
+get the data right. So Yahoo Finance is one such library
+which will get the stock data from Yahoo Finance. Okay? So you
+have y, f, dot download. You need to send in different
+parameters, and it will download the data for you. Okay, for
+that, you need to install your why finance? Most likely, this
+is not required because, by finance is part of collapse
+environment, so you don't need to do that. In case, if it's
+missing, or if you are doing it somewhere else, apart from
+collab, you can use this command to run or this particular
+command to install it. Now
+you need to know the ticker names to be able to run this
+command. You can get it from Yahoo or you do a Google search
+on what can be ticker for the stock that you're interested in.
+Right then you say, okay, pi, F, dot, download. Here is my
+ticker. Here is my start date. Here is my end you get the data.
+Now, this particular line, right, let us see what, what was
+a problem, right?
+Okay,
+okay. So when I, when I asked you to fetch the data for
+Apple, it fetched and the head, dot, head, right dot head is
+nothing, but it's trying. We are trying to look at the sample of
+the data. Right head means from top, right tail means from
+bottom. Right head right by default, has five as default.
+Instead, if you want to look at 10 records, you can ask for 10
+records. If you want to look at two records, you you can look at
+two records, right? Head is a so it it does not modify the data
+or anything. It just shows you whatever data it has, right? So
+that's what head is. Okay? Now, if you notice here, there are
+two columns here, there are two columns here.
+So it says it's a multi index, two columns here in Excel, if
+you have two rows of headers, right, that is something like
+this. One row is called as price. This thing, one row is
+called as sticker, right? In order to, uh.
+A format that I'm using, BF, dot columns, dot get level. Okay,
+it's something like this, right? When you do this, it will say,
+Okay, I want to remove one of the columns. It's like deleting
+one of the header rows from Excel, right? You select all the
+rows, you select that row and do control minus, it will delete
+the row, right? Just like that, we are saying, okay, whatever
+columns you have in your data frame, replace it with this. I
+don't want to have multiple columns. That's what we are
+saying here. Now you remember this, we had two things right
+after I run this,
+after I run this, you will see the change that is okay. Now
+it's only one column,
+right? It's only one column. Now if you go back and check the
+columns, it will give you as a list. It will give you as a
+list, list of column names.
+So yeah, if you ask the questions in Q A, right that
+way, we can share it with you as well. It's downloadable kind
+that's the only advantage.
+Okay, you please use Q A that way.
+It's easy to share with you as well, whatever questions you
+ask, whatever answers we answered, something okay, yes.
+Now
+this concludes our loading the data set right loading the data
+from multiple places. As I told you right in the beginning, you
+might have to get your data. So no,
+I mean, can someone help them? Click on More, and you will find
+the Q A there. There
+is no separate link for the Q A in the Zoom meeting, click More
+and there will be Q A.
+Okay. Yeah. So some of your data might be here, some of your data
+might be here, and you might have to assemble all of the data
+together, right? So the thing is,
+I'm showing you all of these steps such that, okay, you will
+have some CSV files. You will have some DB you will have some
+some API calls. You will have some package from here,
+ultimately, what will you do with it, right? What will you do
+with it? So here,
+I don't know why this is showing automatically lit,
+okay. So what you will do, source one, source two, source
+three. This was CSV, this was dB, this,
+this was API, right? What you will do, you will do, PD, dot,
+merge of
+s1, comma, s2 comma, s3
+on a common key, right. Like how is equal to out right? You will
+create your data set, the main data set, something like this.
+Yeah. So yeah, the mean, the reason why we removed that is
+just to avoid the multi index, right. Multi index slightly
+creates some problems while so if you are able to access the
+multi index properly, it's okay. You can keep it right. You can
+so with multi index, let me show you.
+I'll just show you one sample, and then we'll move on to the
+next section. Right.
+Right now, your DF dot columns is like this, right? When you
+have to access only close prices, if you do it like this,
+right? It, it shows you apple here. It's not close prices
+there,
+right? Then you will have to do it when you fix it like this and
+you ask for close, right? It represents close, some
+easy ways of handling the question. That's the data from
+that, if you are able to handle it with multi index, that's
+fine, but I prefer to not have multi index. That's
+okay. Yeah.
+Then next, okay.
+Will it result in unit or data from Yeah, so this is a pseudo
+code, right? Will it result directly? If you don't have a
+common key among all of these, right? Then you will have to
+first do s1 and s2 then merge it with s3 something like that, not
+similar. So it's not like without a common.
+Now it's just a pseudo code I'm showing here, where, if all of
+the common keys are there, you can do it like this in a simple
+else, we will have to do processing separately, step by
+stage wise. Okay. Now the next question is, can you do load,
+load from the unstructured data? As of now, in the model building
+for the ML, we are not going to deal with unstructured data as
+of now, right? Unstructured data is fixed and all right? Text,
+images, sound, PDF files, all of these is unstructured data. We
+are not there in that territory yet. It's only about the ML,
+right? ML, it's all structured data. There is no unstructured
+data. That's the reason why I've shown you only the steps to load
+structured data in it. Okay, now, so if you want to go more
+into how do you work with this, right? The data frames. Do you
+guys know about the pandas
+cheat sheet.
+Wait, let me share that with
+you. Pandas cheat sheet is really important to have, right?
+You don't need any.
+What do you say
+this thing? I
+uh,
+let me share it in the chat with everyone. Okay, so I shared with
+you the pandas cheat sheet, which has a majority of the
+functions that you primarily use. Using the pandas you can,
+you can try to work with that. Okay,
+now, promise we, we're not yet there, right? We are just at the
+data ingestion stage right. See, this is, this is the flow data
+loading, type conversion, initial exploration, the feature
+encoding. We will come there, right? So, right?
+No, no. Ramesh, no. I mean, can you please unmute yourself if
+you have any queries, I I will cover all of these topics. This
+is just the logical flow.
+I told you. If you're able to deal with multi index, it's
+okay.
+Then
+we should you're keeping on asking the same question.
+Yeah. I mean, sometimes it feels like I will have to ignore
+something to move forward. I told you I will cover all of the
+topics I will not leave you. In fact, I told you I will request
+for an additional session as well.
+Yeah, one second, I'll unmute you.
+Yeah, yes, Ramesh, please unmute yourself,
+yeah, it was more like reading through a document and code,
+right? Maybe what we have seen from earlier class, at least
+from a week, there was correlation when the topic was
+discussed, right? It was all in parallel, like some sample data
+set, some code and the topic.
+No,
+you're not listening. So that's the problem, right? So it all
+went together. Now it was going like reading the code, whatever
+there in the document, first read the topics, then read the
+code. So this is my understanding, or at least what
+I observed. But this is not how it went. In the class with
+Habib, the code, the topic, the sample, data set, right? It all
+went together, so that gave us a better understanding. But here
+we are reading through the text, then through the data, then
+through the code, right? It was more like reading something from
+the document, sure. Okay. Feedback taken. Thank
+you guys. Fine, fine. I at this point it's like this, right?
+I'm trying my best to accommodate most of you, but
+it's I really understand each of them have different learning
+pieces, backgrounds and all. It's okay. I will continue with
+my teaching without the overview. I can't teach these
+topics, right? I did an overview first, which you feel that it's
+all trading from the thing, right? I am coming back and
+showing you, right? I'm doing data loading. And then I said, I
+am doing data loading inside data loading, I'm showing you
+these many things are there, called as data loading. I am
+writing the code on the fly here to show you what's happening.
+If this is also not the connection between theory and
+code, I don't know what will I.
+Yeah, please. Okay.
+I mean, you're entitled to your opinions. I I'm sorry about it
+that I'm not being helpful to three of you in this session
+right now. The next section is, once you have the data set
+right, where all of this we have been asking about, what's the
+flow? What's the flow? What's the flow, data, data, data, and
+all okay, now
+see as we discussed, right? So first step is to get the data
+properly into your system and data loading, right? That's what
+we have done. We have seen several different ways of
+getting the data and construct the proper data right now that
+now that data is there, right? Where is it? Data is there? Now
+the next step is okay? Did everything
+fall in place in types of in terms of type conversion? Was
+numerical data understood as numerical data, something like
+that. Now let us see how to handle those kind of scenarios.
+Okay, so here,
+what are different types of data will be there, there will be
+numeric data, there will be categorical, there will be
+Boolean, there will be time and there will be text,
+right so now
+what happens here is,
+okay, you read the data and you have several different data
+types here, right now, One thing is,
+so
+this is the data frame that we created here as part of the
+loading the data. Now here I just showed you a sample data,
+and we did some massaging with the columns. That's it. We did
+not really inspect into what are these column data types and all
+okay. So what did we do? Okay. We said, okay, data types, data
+frame, dot, D types. It is saying, Okay, I am finding four
+columns to be in float, one column to be integer, and other
+column to be object, right now, what about the date?
+Date is actually in the
+index. Right now, if you see this
+DF dot, index, right so index, it says it's a date time object.
+It's a date time object, for example, if you bring it as
+column that you
+all right now. Now, what did it say? Okay, here. It said,
+here. It did not have date. Now, when we brought the date into
+index and asked, what is the data type? It says Date Time,
+index, day time, 64 ns, right? 64 Ns is one of the formats of
+data, right?
+One of the formats of the way, the date, the pandas will
+understand the data. Okay, so, yes, the this is important line.
+This is only common. The see to understand the data types, D
+types is enough. Now, what is the understanding from here? Why
+is one numeric as integer? One numeric as float? Because we
+know that volume is nothing but number of stocks traded. This
+cannot be a float, right? That's the reason why you always want
+this to be an integer. This need not be a float. This cannot be a
+float, in fact. And Prices, prices can be decimal, like
+float point objects, right? That's the reason why we have
+this
+volume as integer and price has to be in terms of float, point
+objects. Okay. Now let us say there is a need for some
+conversion. Okay, let us say volume. We want to convert it to
+float or let us say ticker, right.
+Let us see,
+ticker is object, right. Sticker is object.
+What is sticker? Ticker has AAPL, AAPL, AAPL, like this
+right now, if we want to convert this number right, ticker,
+ticker,
+right errors equal to coerce what we are saying. Okay, ticker
+is actually understood as object here, but we want to convert it
+into numeric, two dot numeric. Sometimes there might be errors
+doing that. And we are saying, wherever you find.
+S, this squares it right, ignore them.
+Okay, again, we have to do this.
+Okay, yes.
+Of DF, of, yeah, right.
+So what happened when initially we had this ticker as AAPL,
+AAPL, AAPL, right now I am, say, I am asking pandas to understand
+ticker as numeric values, to understand ticker as numeric
+values, and wherever it's not able to understand the values of
+this cell as numbers we are asking the errors to coerce
+right? That's the reason why it converted the entire column into
+any n, because it was not able to convert that back
+right. But this is what you generally use to convert the
+numeric columns that are understood as object to this.
+It's not vice versa, right volume, you convert it into
+numeric
+right?
+Now,
+next
+as type, right?
+So,
+you can also convert
+the type of
+the variable the data type of the variable using.as type
+pd.is.
+From pandas object, right.as.
+Type is directly a property of the data frame, right so you can
+use df of Yahoo
+and ticker
+right now, let us go back and see what are the data types.
+Right now, this is converted into object. Earlier it was also
+object. The earlier, also object. Now also it's object,
+right? The reason for it being object is we can convert this as
+a categorical column, if, even if there are strings, it will
+convert it into an object, right? So in this section, what
+are we doing? First, we are using the D types to understand
+if the data types are properly understood for the columns. Now,
+if you if there is a need for any modification of the data
+type, understood right? These are the things that you can try,
+right? Pd.to, underscore numeric as type, PD understood deep date
+type. These are the different aspects that you can use right
+to convert the date
+right now, for example, if you want to filter all the columns
+right, if you want to filter all the columns that have been
+understood as the object columns, right? You can just do
+DF, dot, select types include equal to object, right? What
+this will do? This will give you list of column names that have
+been understood as categorical.
+Right?
+This is useful, because during the pre processing flow, you
+might have to sometimes deal with the numeric columns
+separately, categorical columns separately. So this is the
+reason why this particular step is very important, right? This
+particular step is very important. That is, you separate
+out all the categorical columns separately. You deal with them,
+you keep it as a different data frame. You separate out all the
+numeric columns, separate out them,
+do the pre processing on both of them differently, then merge it.
+We will have all of this. But the first step, how do you
+select the different columns which are of different data
+types that is using this
+right? If you want to force something, you can just do
+convert data types automatically, right? It does
+this automatically. But then, if you have,
+for example, modified something, right? If you have modified
+something, you can do something called something like a reset
+here. This is a reset here.
+Okay, so, what all are we done with? We are done with data
+inspection and data types, okay, data loading.
+Yeah. We are done with data loading, data type conversion,
+okay. Now we are moving with initial exploration, right? So
+you got the data, you figured out the data types. Now we are
+moving to initial exploration,
+okay. Now what?
+What, what do you mean by initial exploration, right?
+Initial exploration is nothing, but before starting anything,
+right, before starting anything, you will try to understand
+the data from different perspectives. Okay, what is this
+shape of your data, what are the columns? What are the so data
+types? We already did there. We had to handle this separately,
+because
+the as much as this is initial exploration this, this is a
+different step on its own right. Then describe will give you the
+summary statistics of the current distribution of the data
+as soon as you read it, what does it say? Right? Then, as I
+told you, skimming through the missing values, then number of
+unique values in some constant columns, then historical plot,
+something like this. Okay, now let us see, okay. Initial
+exploration is nothing but trying to understand the
+dimensions of your data, rough missing values, if there are
+categorical columns, how many different values are there in
+it? All of these kinds, right? Okay. Now coming back the code.
+Here is what it is
+we are copying that Java minus data that we already had. First
+is we are trying to use DF dot shape, right DF, dot shape will
+will give you something like this, which is a couple of
+number of rows and columns, number of rows and columns.
+Right shape will help you understand how many rows and
+columns are there in your data columns. If the data is small,
+it might be fairly easy to count, right. But if you want to
+understand the number of rows, you can use this shape right.
+Sometimes, if the data is large or counting is really not
+possible in a single glance, if you're not able to understand
+then you can use DF dot shape, right. Then what do you have is
+df, dot columns, right columns. Now,
+we already did that. So I'm skipping this dot columns will
+just print you that column names, right, D types. We
+already did that earlier. Head, we already did that. Tail. We
+did that. Let us look at the describe. Okay. Now,
+so describe.
+We'll do it separately.
+We'll do it here. Okay?
+What describe will do is it will take all the numeric columns,
+and all the numeric columns, it will find out how many records
+were there. Then it will internally do something like
+this. DF, dot mean,
+right?
+Okay, right, so
+DF dot mean of close is 152
+right? 152 like this. It will try to find bunch of different
+distribution statistics of your numeric columns, right? So mean
+standard deviation, mean value match value, the median, the q1
+and the q3 quartile one, quartile three this, this will
+give you a rough estimate of how each numeric columns
+distribution is varying,
+right? This is important, because
+in the first glance, you might not have any actionable points
+right as you're changing or you're doing some pre processing
+when you want to understand what's the different kind of
+impact each step has you keep doing the describe.
+You keep doing the describe so that you keep observing what
+kind of changes are happening.
+Okay, so that is the reason why you have described here. Okay,
+describe, describe will give you that right next, the thing is E,
+is dot n, is dot null,
+right? Is dot null, what will it do? First thing let us see, is
+dot null, what will it return? Right? Is dot null will return.
+Okay, is there any null value? Is there any null value in any
+of the cells? Okay, it will return the Boolean true or
+false. Now, when you add some to it, when you add some to it, it
+will count the number of missing values. In my data frame, I did
+not have any missing values. So actually, there is no need to
+handle missing any values here that, please don't estimate.
+Me that I'm not going to teach you any missing values. That's a
+separate step. That's there. I genuinely introduce missing
+values to show you something. Okay, that's a different story.
+Okay, missing values is something. Df.is, null. Dot sum,
+then number of unique values per column. DF, dot n unique, right?
+DF, dot n unique, right? It will tell you number of unique values
+in each column. Actually, this doesn't make sense to use on
+numeric columns, because 22.1 and 22.2 are two different
+columns and two different values, and it will be counted
+as different values. So that's the reason why you are seeing
+that
+for the entire 251 rows, there are 2d 251 different values,
+right? That is why N unique. You use it on only categorical
+columns,
+okay, to understand how many different levels there are.
+Okay.
+Then,
+then what we are doing is we are moving ahead with quick
+distribution plots, right? Quick distribution plots to
+understand, okay, how is my close value? How is my low value
+distributed? How is my volume distributed, right? Something.
+This is for a very quick glance, right? There's no actionable
+point from here yet, but if you notice that, okay, there's only
+one value like this, and the small values are very small. It
+means that you have some sort of skewed data,
+right? And you which means that for one of that column you need
+to handle skewness or not, it will depend, but you will
+notice, you will write down your observation that there is a
+column which has skewed data in it later on, while building a
+model, you might handle it, you might not handle it because that
+skewness might actually be important, that might actually
+serve the purpose of building the model or modeling the y
+variable, right? That might be most important variable as well,
+right? So, if it is helping you, don't treat it. It's not helping
+you, try to treat it. Okay? That's
+the way, right? Now, what all things are there. Yeah, pair
+plot is very similar. I'll show that as well.
+So pair plot is nothing, but depending on the number of
+columns, what it will do is, Okay, close versus volume, high
+versus volume, low versus volume, it will try to do that
+scatter plot for us. Okay, close versus open, right? So this way
+we are not only trying to understand the distribution of
+uni variate analysis. So whenever you are doing with only
+analysis with only one variable, it is called as univariate
+analysis, right? The pair wise introduces you to bivariate
+analysis. Right? By variant, you are looking at two columns at a
+time to understand the distribution. Right? As I said,
+if something is extremely abnormal, you keep a note of it.
+If it needs to be treated there, you treat it. Else, you continue
+with model building, depending on the results, and you come
+back and say, okay, here is this one big outlier that is
+impacting the performance. Now, should that be there? Should we
+try to do any kind of different types of normalizations, will
+the model be able to address it? Well, something like that,
+right? So this is a bivariate plot, right? Okay, then next,
+okay, so we can use something called as pandas profiling as
+well, right? So pandas profiling, it's like this,
+right? It whatever analysis that we are doing on top of exploring
+the data, right? It does this extensive,
+this thing of understanding the data See, as much as the model
+building was important. You must understand looking at this that
+people are heavily investing on building the tools, not only
+using the tools, building the tools to do EDA
+that itself shows you how important is it to explore the
+data. This tool does nothing with respect to model, building
+partners, profiling. It is exclusively just to observe the
+different dimensions of the data, but I how? Why? The reason
+I did not touch upon this is because
+it's like, it's still only a bivariate analysis, right? But
+if you want to record something to show something, right, you
+can use something like pandas profiling. It's an advanced
+method. You can just use it. It's a fancy way.
+As well,
+right? Just so, here is the summarization of the data
+ingestion and initial cleaning, right? Initial cleaning we did
+only on the data types, right? Oh, is this duplicates? I had
+duplicates as well, right?
+Oh, sorry, and this is still good.
+No errors or nothing, guys. I'm not missing on anything. It's
+just the rearrangement of the sales tax. You
+okay,
+yeah, so next step is duplicate removal, okay,
+so as I said,
+right, so we are done with the
+data loading, data type on understanding initial
+exploration, we are now going to the duplicate removal. Okay,
+duplicate removal.
+The Zoom sections are edited. Okay? Now.
+Now, how do you do the duplicate thing is something like this,
+for example, if you have your data frame right, if you have
+your data frame DF, right, data frame is already here. Now, when
+do you call something as duplicate? Is the entire row.
+The entire row, all the values are together in the combination
+was repeated.
+Right now,
+what this DF dot duplicated does is internally, it has its own
+mechanism of identifying the duplicates. That is, whatever
+the if you were asked to write, how do you identify the
+duplicates? You might do some while loop or loop or something
+like that, to keep count of how many duplicates and how many
+number of times they appeared, and all. So it is the same thing
+internally, that's there. So what it will do is dF dot
+duplicated. What this will do is it will iterate over one row at
+a time and indicate, did this row already appear sometime
+back? Right? Yes or No, depending on that you do. Dot
+sum, just like how we did, for ease, any right? So let us see
+the F dot duplicated. DF dot duplicated, so it will do true
+or false, right, just like how we did for any then what it's
+doing, we are doing duplicated dot sum, right? Duplicated dot
+sum,
+it will print you Okay, in my data, I did not have any
+duplicates, right? If you had any duplicates, then you can
+just do, drop, underscore, duplicates, duplicates. Select,
+the entire row is repeating multiple times.
+Okay?
+Now this is, this
+is how it's so first is you check for duplicates, right
+then you drop the duplicates, then you check the shape again,
+right now. So the next step here is something like this. Let me
+show you.
+Will, Will, will come back to this similarity score. Actually,
+there was a code here that printed the similarity score. I
+wanted to handle it in a different section. That's why
+it's not here.
+Yeah. Okay. The next thing is, okay,
+inconsistent data we we talked about this, right? Okay, you
+have a data frame wherein one of the columns is city and the
+other column is prices. Okay, now you notice sometimes the
+price is dollars, USD, dollars afterwards, right? If you set up
+a standard process of collecting this data, that's fine, right?
+Then user can just enter the numbers. It will be numbers, but
+if it's a blank cell, users will keep entering numbers like this,
+and you will have to deal with the data later.
+Right now, when you come to the city, also, same thing. If there
+is no drop down, right? Then people keep entering all of
+this. And in fact, if there is a drop down as well, and then you
+allow them to enter other values, you might have to deal
+with all of these issues again. Some of these are dealt with at
+the ETL level. Some of them have will still creep into your
+analysis, and you will have to.
+Individual right now, what you will do is, okay,
+will? You will create a new column called City, right, city
+on screen. You will lower all the values, right? You will
+lower all the values, and you will
+try to
+so I'll show I'll break this down such that it will be easy
+for you to understand.
+Now, where is the DF?
+Here is my small DF.
+What am I doing in my column? First is lower. Just lower. All
+of these values. Just lower, all of these values, right? That
+way. First thing, capitalization is already fixed. Capitalization
+is already fixed. Then
+the convert this to string and strip, strip with a comma,
+space. So you do that right? Then what we are saying is map.
+You notice NY here, SF here, right? So we say, expand this NY
+and SF. You create a dictionary of mapping. And you say,
+wherever you find New York. Replace NY, replace it with New
+York, wherever you find SF, replace it with San Francisco.
+So what you do is, first, you do this,
+right? You have six different values first, okay, you see all
+of them. Only two things are there, but there are six
+different values, then you will say, pd.do, PD, dot,
+unique of city,
+right? Okay, from this, you will understand do you need to
+handle, do you need to handle the NH or, sorry, the
+inconsistencies then you might already have. Bio
+consistencies, right?
+Then, depending on your observations, you will have to
+create a dictionary of mapping like this, right after the
+lower. Right after the lower. These two things fixed, right?
+These two things fixed after lower. The only thing that
+needed to be fixed was this. NY for this, I am doing this
+mapping,
+and I am saying from where I did the lower and separated using
+the space. Use this dictionary to map.
+Right. Use this dictionary to map. Now, what happens to our
+city after this. Let us
+see the claim so the original city is this, and the cleaned
+city is this now, let us see how many unique values were there
+only two unique values earlier, there were six unique values so
+these two steps together, we were able to format it properly.
+Now, what's the important step here? This? It was fairly
+straightforward. This kind of mapping sometimes might involve
+domain expertise. You might need to get some domain expertise, or
+if they've already given you the information through the
+documentation, do it? Use it else you just try to help them
+understand, okay,
+if you document it only that is okay, these many unique values I
+found out. See you can use this one also.
+Right when you present it something like this, right, this
+versus this, you
+right in your first call after you got the data, when you are
+exploring, when you are presenting on EDA, right when
+you show this, let us assume you did not do Anything about the
+inconsistency. And when you show this right now,
+the user might the end user might be something, did I tell
+them this or not? If it was there in the documentation, it
+will be your problem. If it was not there in the documentation,
+then you can ask them, do you find this to be appropriate? And
+create
+else if, if it was not right the way of handling and if it was
+not there in the documentation, you will ask them, How do you
+generally handle it?
+Right? Sometimes you might not even know this is a problem,
+right? That's the reason why I'm emphasizing so much on.
+Documentation, documentation of your findings, right? This is
+very important,
+right now. The next step is about the
+values, the strings or the numeric values, right here, what
+are we doing? Replace x. So here we are actually extracting only
+the
+numeric part of the string. This will what it will do is, if it
+is not a numeric value in the string
+right, replace it with blank, then understand it as float.
+This data type conversion we have already seen on the top
+right. So what is so? What we are finally saying is, let us
+first see the data types.
+So price is also being understood as an object, which
+is a problem looking at it. We understand, okay, there are
+numbers, but the problem is with this dollars, dollar USD, this
+thing, this doesn't need any domain thing, right? We just if
+it needs, then you it has to be documented. If it doesn't need,
+then just say, Okay,
+this string, take it and replace all the non numeric part of the
+strings. This is called, this is a representation of non numeric
+part. Right, replace this with a blank right. Treat it as a
+regular expression. This one. These are not exact values. This
+is a regular expression. We call this way of representing the
+text as regular expressions, right? Consider this as a
+regular expression. Whatever I am asking you to do it, that's
+why I've represented it R as well. Then whatever resultant
+you have,
+this is the resultant, right? It still says object. It still says
+object. That's the reason why I had to add as float. It
+converted it to float. Now all the numbers are float,
+right? So this is the inconsistency mapping price
+underscore, clean. So sometimes it's like this, right? Whenever
+you are working with some data, you try to create a new column
+out of the existing column to save the original raw data,
+because if something goes wrong, you can go back and start from
+there again,
+right? And if all the cleaning steps are properly done, you
+will drop the old columns. You will drop the city, you will
+stop the price, because you now have the clean city, clean
+price.
+Okay,
+then next is something like this. So we are trying to find
+the using the fuzzy, right? We are trying to find, if
+so, is there any form of let us try to clean this first, and
+then we'll come back here where it will not create a machine.
+Okay. Now, what are we doing here?
+Unique cities is
+here, right? We got the unique cities right, and then we are
+seeing Okay,
+from each of the unique city we are trying to understand. Is
+there any name matching? In fact, I should do it on the
+city, right? Let me just do it on the city instead of clean
+city.
+What does these values have? Let us take this out.
+What does the unique cities have? This is before the pre
+processing. Right now. What I am saying is for city in unique
+cities. That is, take one city at a time, right? And then what
+I am doing, okay? Process, dot extract city comma, unique
+cities,
+right? And limit equal to three, right? Here, this line is
+saying, take one value of the list, compare it with all the
+other values of the list. This particular function will try to
+find the similar looking values, and it will return as matches
+and how many three
+take one value at a time, compare it with all the values
+and return three matching items, right? Three matching items. Let
+us see what it will print for this.
+Okay, top matches for New York, directly, New York is there 100%
+match New York, so it knows that just by lowering it will match
+this.
+But NY was 45 it did not bring San Francisco or SF, right?
+This, this has some form of processing inside it, right?
+That's the reason why it was able to identify in NY as the
+closest match like this. It did it for all the unique values,
+all the unique 123456123456,
+you're getting the scores as well. So while recording the
+documentation, you can include this. You say, Okay, I don't
+know anything. Let us say it is a commit information about
+chemicals. You don't know it CDs. Because I'm introduced to
+this subject, I'm able to handle this right now. What will happen
+if you don't know the subject?
+Then what happens
+is, irrespective of you know the subject or not fuzzy, will try
+to do the matching and record it something like this. This, you
+can present it to your user, because earlier I showed you,
+right, there were some missing values, and all this kind of
+analysis will help them also to create a proper documentation,
+right? If they are asking for how can we handle this? You can
+suggest something like
+this, right? So finally, this is how you address the
+inconsistencies, right? And these are the advanced
+techniques to do text normalization. Text See, most of
+the times this inconsistency matching is is overloaded in
+text related subjects, and it's handling text in itself is a
+very deep exploratory subject, right? So when you have text,
+you better be cautious, right now, this is the summary. I will
+not do the summary again. I will not bore you guys. These are the
+different steps we have done all of these steps. Okay, now going
+to the missing value handling. What I will show is, first is, I
+will just show you what are the missing values in a sample,
+right? So I created a data frame, and I created some
+missing values inside it, right? Df.is, null. It's saying, okay,
+in age, I have two missing values in city, I have one
+missing value in income. I have one missing value, right? But
+how are they spread across the rows? Right? Across the rows.
+This is a visual representation this, for example, if it is
+something like this, right?
+If it is something like this, right, you will have to figure
+out, like, if you are really good at it. You can understand
+where the missing one, but here, this one will help you
+understand, okay, there was this particular row with this kind of
+two missing values. There was this row with this kind of it
+gives you a broad sense of grouping of NAS, if, if it is an
+NA, Here is it? If, if
+it is an NA, here, will it be an NA? Here as well? If it is an N
+A here, will it be an N A here as well? Something like this, a
+broad grouping of N A values. What's the simplest thing that
+you can do? You can just drop any we will.
+I will go into the depths of any tomorrow as well. Since we are
+very close to the end of the time, and we discuss so much
+about handling missing values, that's the reason why I am doing
+this right
+now what, what we are going to do is, okay, drop full ns, or
+you set a threshold, you say, Okay, I am having these many NAS
+in each column, depending on Number of rows I have, I will
+say, drop all the columns that have more than 50% na innate
+that have more than 50% na in it. So now that's the reason why
+what we are saying is
+right. So we are saying, Okay, here we did not drop anything,
+because none of them were reaching the 0.5 threshold,
+right? That's the reason why you still have any we did not. So if
+you do drop all the rows, then it will look something like
+this. I told you, right.
+We started with six records. If you do just to drop any, no, I
+don't want to do any missing handling, nothing. Just to drop,
+find any drop, find in a drop, right? Then you will be left
+with half of the data if that's what you need, if that's what
+will help if, if those are the very strict guidelines and
+principles in that domain, do it. Yes. Else, no. We are a
+little flexible. We are we want to drop only the columns if they
+are more than certain threshold, then do threshold. Then do
+threshold. After that as well. You will still have m is, but
+there will be less than 50% any in the column. Then we will have
+to deal with how do you fill those things?
+Right now I will stop here. I will just, I mean, it doesn't
+mean I did not cover anything. There are so many things to
+cover. I will cover once we resume tomorrow. There is no
+theory, no theory, zero theory.
+We already did that. We will only finish these things right
+so every section will be arranged something like this.
+What is the so? What are we doing now? Why are we doing now?
+What are the different things there? How we do do it?
+Okay, so, yeah, let us just take some questions. Okay, yes,
+Santosh, yes, please.
+Santosh, you wanted to ask something.
+Okay, Santos is not responding.
+Okay. Who is next?
+Yeah, Kalyani, yes, please.
+Yes. Kalyani, yes, please. I was not able to unmute. Can I go,
+yes, please ask my question. Was about to drop, right? So you,
+you mentioned we can define a threshold. So is it a threshold
+where we say that, okay, in a row, if 50% of the data is
+missing, drop that row. Or is it a column, meaning if
+column
+not available?
+Yes, you're right. I mean, you can handle n is using either
+column wise or row wise. Right now, let us understand what's
+the difference between dropping column wise and row wise. Right
+now, whenever you are doing it at row level, you have to be a
+little careful about it, because columns, it's like this, right?
+You're just dropping the dimensions of the data, but you
+will still have if
+you started with 100 records, if you drop the columns, you will
+still have 100 records. But if you start dropping rows, you
+will not end with
+proper number of rows. You will reduce the data set, right? So
+step number one,
+first, drop the columns based on the threshold, then see our rows
+really after, even after dropping all of this, are there
+any rows that are really
+like? For example, if I am going to impute missing values, are
+there any rows where I am doing more than 60% of the imputation.
+That means you're creating
+a fake data there. So you will have to first do columns, then
+check for rows. If there is a need for handling those, handle
+it else. Don't touch the rows. As far as I've seen, very few
+times you touch the rows, it suits. It really depends,
+because it's directly impacting the size of your data, which
+nobody wants,
+right? Okay, yes, it's
+not clear. Yeah.
+Me. Maybe you can type in the chat. I'm sorry, but I cannot
+hear you.
+Yes. Saurabh, go ahead, please, sir, tomorrow may be if you can
+help me to two concepts regarding the outliers versus
+noise. I couldn't understand the difference between what is noise
+and what is how it is different from the outlier. Maybe
+tomorrow, if you can give some some
+like, we understand the outlier, but I I'm not comprehending what
+exactly we mean by noise and how we actually handle both of them.
+So it's not like you have to handle noise every time, right?
+But I didn't understand what exactly the noise in the data
+means, like, I understand the outlier, but what exactly is the
+noise that we are talking about? So noise is something like this.
+I am speaking to you right now in some frequency. Right? When
+you keep a recording device here and you try to translate that,
+right? If you plot it, you will see that my voice is going up
+and down, up and down. The volume as well. It's up and
+down, up and down, up and down. There is some mean value, and
+there is some noise around it.
+So this up and down the the amplitude changes that are
+there, right? That's the noise,
+okay? And sometimes no.
+Noise is good to have. That's what helps you model, okay, try
+to treat the noise Nice. Is, what is the variation? Noise is,
+what is the model?
+So how we identify that this particular part of my data
+contains noise like, let's say, in your example, you have
+several data set, right? So outlier we can detect. But is
+there a way to detect, like, Okay, this particular data set
+has some flavor of noise in it, like any pattern that we can
+it's like this, right? It's it looks very counter intuitive.
+But you call something as noisy when it's not helping, when it's
+helping, you don't call it nice. It's
+okay, yes. Kiran, go ahead, please. Yeah. Is
+it possible to give us this video of today's recording by
+today, because a lot of good things have been taken care. I
+mean, like you, I I'm not sure. I'm really not sure about that,
+because I'm not because, I mean, I could have spent some time in
+the evening to basically go through this thing so that I'm
+prepared for the tomorrow. Yeah, sir, please share the collab
+link now. It takes time for us to reach a couple of days. Can
+you share it here in the I am sorry to borrow you.
+Let you do that. I think
+I'm okay if you are looking at it, but do not try to dig deep
+into it. We will discuss all of those concepts as well. So I
+have, I'm having only until missing values in the current
+notebook, because we discussed only up till there rest of it. I
+will share it with you tomorrow, but then let me share it. Let me
+share and show it to you. What all I have, right? I removed
+some sections here, but I still have these sections, right? If
+you want to really go ahead and look at all of these concepts,
+please go ahead look, look at them, whatever we discussed
+versus whatever we did not discuss. I don't have the code
+for these because I did not show it to you yet. We will keep
+filling this tomorrow, but I have it until any, okay, you can
+look at it until any Thank you, sir. We will revise it today.
+Thank you. Thank you. And pre read also will be helpful for us
+for tomorrow.
+This is the pre read, madam. I'm saying whatever we not covered
+the second part. Okay,
+yeah,
+I pasted it in the chat.
+Thank you.
+Yeah, okay. Questions one second, okay, yes. Kiran.
+Kiran, done right. The deep I am. Yes, deep I am.
+Hi,
+my question was regarding the duplicates,
+the duplicate part, so can you just tell me? Like, you know, is
+there any way we can check how many duplicates are there?
+That's what I showed you, right?
+Yes, yes, yes. I just wanted to see that. But actually I kind of
+missed there so that. Okay, no worries. So this is, this is the
+only one. Okay, duplicated. Okay. So basically,
+okay, thank you.
+Okay, yes, check up on
+it, sir. I have just asked the question in the im talking about
+imputation, I just wanted to understand, like, when you do an
+imputation, there is a chance that you are maybe masking the
+data, and there is a chance that you are actually getting a good
+accuracy value of your model. But is there a way that to say
+that, without imputation and with imputation, what will be my
+accuracy? Right? Which value should I take? Yeah, correct,
+correct. So this is what we we do by saying
+the thing is this right?
+If the imputation is very sensitive component of the
+analysis, you first
+result or log the benchmark result by doing nothing. What
+see whenever you are attempting something, you if you want to
+store that result, do nothing and result, store the result.
+Then
+I did nothing. This. Here is the result. I tried this. Here is
+the result. Here is the improvement. Okay,
+that whenever you find an improvement, that doesn't mean
+you have done something right there, you have to come back and
+see, is it legal and logical? Whenever I say legal, it's not
+like, technical, legal, legal, it's like, Okay, does the domain
+allow you to do that? I
+Okay, okay, yeah, yeah, okay,
+yes, people, people, you have a question, you unmuted yourself.
+Oh, sorry, Abhinav, Abhinav, Anubhav, sorry, Anubhav,
+Anubhav, you have a question. Yeah, actually.
+You, can you hear me? Now? Yes, yes, I can hear so I wanted to
+understand that data which has been fetched from the Yahoo
+Finance. Okay, so in that scenario, when you were checking
+the index, how it is the date index, that is my question,
+like, how it is converted to date index, down, down.
+I hear this. Yeah, this one, yeah. What is this mean? Ending
+index here. So you know one thing, right? That whenever you
+have a data frame, you have names for the rows and names for
+the columns. Yes. Now this row names, we are used to seeing
+them as 01234, like this in data frame, right? But you can have
+anything in the index, they're actually speaking. So what, what
+Yahoo Finance does is it puts this date as index, so that it
+will help you with lot of plotting functions
+that are indexes instead of 0123, field, which we generally
+get from the so this is so easy to plot like this because the
+date, the date, has been put as index, so you don't need to take
+care of anything else.
+So wherever we are doing time series, and there is plotting
+involved or something with respect to time series, we try
+to put it in date, date into rows, no names.
+What happens when you say, reset index? In that case, so reset
+index, what it will do is let me program
+so right now, the column the dates here are missing, because
+whenever you said, reset index, what happens is this date comes
+in as a column
+instead of row name. So when I ask it to plot the close prices,
+it will use that index name and say, okay, the zero value is
+this. 50th value is this? This is intuitively easy to
+understand. So
+a reset index is done by the by us, like by putting the code,
+yeah, but it is coming as a indexed with the date, normally,
+right, right, correct.
+Okay, yes. And one more question is there? Go ahead, right in
+case, in case of the duplicates, when I was checking the
+thing good below,
+right,
+in case where there is be there, SF is there and San Francisco is
+there, suddenly, then there is a, there is a row where it
+signifies one $30 that San Francisco, and significantly, SF
+is one $20 so still the
+by computing, we make sure we conclude that there are only two
+columns,
+okay, New York and San Francisco. But what if the
+values are totally different in that scenario? How are we
+segregating? Ah, right. Good, good point. Good point, right?
+So it's, that's why I said it's an iterative point. I think what
+you want to summarize is, first you are removing the duplicates,
+but after handling the inconsistencies, but there might
+be still duplicates. Is that what you are asking? Yeah,
+duplicates, duplicates. I understood, but there are
+inconsistency in the like price, correct, correct, correct. So
+that that's why I'm saying inconsistencies. Price is
+normal, right? It's part of the data. Okay? I mean, that's what
+you're trying to model. But one point you raised, and I want to
+answer, is this, you did the initial duplicate removal, but
+after that you handle the inconsistencies. So you might
+have to do the duplicate check again.
+That's what I wanted to and that again, yeah, again, because,
+because, right now this New York and this NY, you are changing
+it, this NY to New York. Now it might be duplicated with this,
+right, right, right? That's what that's why you have to do it
+again. That's why it's an iterative process. I'm saying
+you do this, find out something, do this. That's why you need to
+be aware of what all things need to be taken care. How many
+different ways they can be taken care. How do you take care?
+Yes,
+sir, my question is about the terabytes of data.
+Suppose that I am working on very big data, or whether the
+data in.
+Terabytes. Okay, there, I want to do pre processing and feature
+engineering. So, so what I find that when we try to do feature
+engineering, these all query fails, whatever query we're
+writing in the Panda, they all fails. So what? Yes, what you
+can do there, yeah. So, I mean, not even terabytes, right? TV is
+a different so pandas becomes a joke only after MB soon. So even
+if your data is MB, also the panda will not sub. Pandas will
+not support sometimes, right? You need to use SQL, the spark,
+pi, Spark,
+right? You'll have to change the for me, right? Sorry, you have
+any question, I'm not yet done yet,
+sir, I can't hear you, sir, please. Can you repeat little
+loudly? I am saying you might have to use PI, Spark or cloud
+based advanced
+pre processing steps, right? And once you have all of your pre
+processing steps done, then you will have to use so I mean, if
+you're talking in that size of data, SK learn fails, pandas
+fails, the regular Python fails. So you will have to do a
+different pipeline for that, right, if you're really going to
+deal with that level of data. So what people usually do is,
+whenever the data is large, right? This pre processing
+steps, they do it in Spark, right? Because it's all
+distributed network, you can distribute the task and do it by
+Spark, then get it into the scaler, right? There are some
+steps that you just move it to pi spark and bring it back. Pi
+spark and bring it back.
+How much time this you should take? Me suppose that I go to
+one terabyte, then you should take,
+I mean, I am saying not even terabyte, even if you have one
+lakh rows, also, that's a problem. Leave terabytes of
+data. One lakh rows also is a problem, and the amount of time
+it takes depends on how vectorized your code is, and
+depending on that and the complexity of your data, the
+time will be taken. It's not just about terabytes of the
+data.
+Okay? So thank you very much.
+Yes, Suresh, please. Yeah, sir. One small input. I know you are
+definitely a long term teacher when you when you're talking
+theory, right? Maybe you want to quote some real time examples so
+that people can correlate. So I think that may be something we
+can consider. And the second point is, yeah, just so that,
+you know, everybody here is to learn, and they are putting a
+lot of effort to learn, which is really amazing, that may have
+triggered some of the feedback or input, we are sorry for that.
+It's never to hurt you. Personally. We respect you a
+lot. So just wanted to clarify for that. Okay, yeah, thanks a
+lot. No problem.
+Yes, Manju,
+your wife is not clear.
+Is it audible now? Yes, yes, it's all in the data type
+conversion section, you have given a command to change the
+data type of ticker column to category. Yes, after that, it
+didn't happen. It was still showing this object.
+You
+have changed it to category, but still it was showing this
+object. No. So the type is changed to category, but when
+you look at it from the D types, it will show as object only
+here. Okay, fine.
+So mean, the category is, by default, an object category
+only, then
+it's a subcategory of object, yeah, so your so it's like this,
+right? Whenever it's ordered, right? That's where you have to
+use category. It will show it as object only. Here,
+for example, ratings are there? 1234, there. You change it to
+categories, right? Else, you leave it as object only, but
+both of them will be represented as object here.
+Yes. Madhusana, you have a question you have unmuted
+yourself, yes, please go ahead. So my question is, on the plots
+that you have shown, some of the plots, they showed a linear
+representation of dots, yeah? This one, yeah. Okay, go ahead,
+tell me this inference that we are drawing out of this maybe if
+you've been Yeah. So this one.
+I know that this is supposed to happen because this is a plot of
+open to close off a stock price on a particular day. So that's
+the reason why they both are related, open and close. Open
+high they are within some bound, right? Yes, there are some days
+where it opened at close to 150 and closed at 160 right from
+this, you will try to identify how many times it has happened
+that it opened lower and closed higher, or closed lower and
+opened higher. Those kind of things. We can come up with
+this. And it's normal to see that most of the points are
+fallen on a straight line. That might be because of the scale as
+well, right? If you zoom in, right, somebody was asking about
+the noise, right?
+If you try to say, I will fit a linear regression here, right,
+the RMSE or the matrix, whatever metrics you find that might look
+like that linear regression is doing a very good job, right?
+But the actual performance of the model comes into picture,
+right only when you are able to connect that metrics to the
+business use case and business metrics,
+right? So
+it might look like an easy linear regression challenge, but
+the result might also look good, but that might not translate
+into good returns. So
+that's
+Sorry to interrupt here, but some examples here would help
+the team to understand maybe not, maybe tomorrow. Yeah,
+that's what example. Yeah. Yeah.
+So this, the example is this, I'm saying you fit a linear
+regression line here, and you try to build a model. So
+whenever there is an open, you say, Okay, before the close, I
+will make a call. The model might look good, performing
+well, here, right? But if you try to use that model the
+results might be bad and that that is because we might not
+have connected the error metrics to the business metrics
+properly.
+Okay.
+Yes. Ragandha, yeah, yeah. Thank you. And can can this help us to
+find the outliers as well? Looking at these, yes, yes. I
+mean precisely. This is what it it will help with and similar to
+noise, right? So, for example, if you see this, are these
+outliers? Do you say,
+yeah, so majority doesn't fall. Majority was falling between 0.5
+to one point we don't know, right? It might actually be
+useful.
+Okay? So that's the reason why we we notice, and we say, okay,
+there are certain points above q1 or there are certain points
+below q3 and we just make that point, and we move forward to
+model building. If the results are not working well, then it's
+a constant process of understanding, is it because of
+this outlier, that problem is there? Or is it because of that
+any or is it how the way we handle the inconsistencies? So
+these are the different challenges you will have because
+you will you will have only limited options to deal with
+model building
+and one other follow up question. So when we say COVID
+Those one year time frame, so
+can we take it as an outlier and remove that data entirely, or we
+do some sort of activity on that data to make it in line with the
+regular data, right? So again, here, right? Sometimes it's like
+this, at least in my domain, where I was building trading and
+investment strategies, they don't want to handle that. They
+say, Okay, your model should be good at every scenario.
+Now, if it means that we had some lossy periods, okay? But we
+don't want to constantly keep changing the model like that.
+How many times will you
+do? So what they will do is they will identify periods like COVID
+In the past, and they will try to understand how did the model
+perform on those periods. And they will try to have an
+estimate of when to trust, keep trusting the model, and when to
+stop trusting the model. It's like, okay, the dip in the COVID
+is much larger than what we have observed in the past. That's the
+point where you say, stop, stop using the model, exit all the
+trades done.
+That's the monitoring mechanism.
+So generally,
+we consider that data also, although it shows some Skewness
+in the graph, I know, I don't know, I can't answer it directly
+here, because unless we talk about a specific domain and a
+use case, we can't say, should we use it or not? So.
+A general practice is to keep it
+because you want your model to be robust.
+Yeah,
+when we do some sort of data addition to it to check for
+skewness, or we just use it as is. I mean, do you do any of
+these techniques that will be there that is okay?
+Is there a feature that we can add to explain how good or bad
+the current period is from the observed train data? Those kind
+of features we will add?
+Thank you.
+Thank
+you. Yes. Hanuman, yeah, thanks. So how do we decide if my data
+set is good enough or start with training the model, like, what
+is the optimal or minimum number of rows, especially in the data
+set, right? So, I mean,
+please don't feel bad that I'm answering. There is no
+definitive question or about it. I mean, this has been there the
+same kind of responses from the day I am learning data science,
+my mentors have been saying the same thing. I did not believe in
+them. I started working. That's when I started believing in it's
+like this, right? There's no definitive answer for it. For
+example, let us say you have 10,000 rows, right, but they
+don't have enough variation,
+and then models are not performing well. But on the
+other hand, you only have 1000 records with very good
+variations, and it's working well.
+Can I really call it a lot or data a good data science
+process, I don't know. It all depends on use case to use case.
+Got it? Yeah,
+yes, okay, so, so just to add, for example, maybe today I have
+10,000 rows, and maybe after a week, because the use case is
+more about analyzing a performance metrics. So say, a
+week or a month, I get another 20,000 rows. So if I start
+training the model with that additional set of rows, that
+should be sufficient, or should the training should be done from
+the beginning and again that so you might not need to train the
+model at all for the next 20,000 records. Also, if the model is
+doing good, if the model is not doing good, then you will
+consider the entire 30,000 records, as I told you all about
+robustness. But,
+but while building so, if you're not able to come up with a
+pipeline, right? Like, for example, it's like this, every
+profit as one model, right? Wherein you send in the time
+series, and it will tell you boss. Here are the different
+change points. Here is the trend change from here. The new trend
+started from here, new trend started. So you will try to do
+those kind of analysis, and you will try to factor in that
+change points also into your model. That is, that should be
+part of your model, monitoring and triggering mechanism.
+That is, if it is 20,000 5000 or 50,000 it should the triggering
+mechanism should be such a way that it will automatically
+trigger it. It should know that, yes, the change point has
+occurred. I It's no time to change, build a new model.
+Thanks. Thanks a lot.
+Yes, you
+uh, can you hear me? Yes, I can hear Yeah. My question is
+answered, though, in the chat, but I want to listen. Uh,
+elaborated. So we have different steps, right? Like you
+mentioned, different anomalies, like data noise in the data
+duplicates and sampling these all things. So does industry
+follow a standard pipelines? Like, one step need to be done,
+after that, this step need to be done, kind of a thing, and if
+the answer is given in the chart as s in that case, like, will
+you share us some references? Like, we want to be interview
+ready, right? So that will help. And one more thing, so for small
+kind of data, small means
+for reasonably small data, kind of data, like you said, MBs, so
+there's
+this, data frames, pandas, these will help. I mean, pandas
+library will help. As you scale, as you scale with the data, you
+need to change the tools as well, right? So this thing, the
+scale of the data, is defined at the initial
+step itself, and we are, we are freezing these tools we are
+going to use for.
+This, and as the problem changes, like in the two of us,
+for example, in five years
+now, I build a model, and after five years, the data is going to
+change a lot, then we are going to
+change the entire code base to suit the requirement, like how
+it works, if it is advanced question you can park, but This
+what want to understand.
+Bharat, are you there?
+I think Bharat has dropped, maybe something wrong with his
+connection. He may come back
+an issue. Yeah, he might join back. Yeah,
+he's not visible in the list.
+Hello,
+yes, so sorry. I was trying to answer Revathi, actually. So
+DHAI, there's no one yardstick or one process step,
+right? I understand your concern to do that if you really have to
+do well in your interviews, all I can say is practice more,
+because what will help is not learning more from the theory,
+but understanding it from your own experience. Hand handle as
+many data sets as possible. Encounter more and more
+problems. Pray to God that you will come you should come across
+more problems than solutions.
+I really cannot emphasize more on the learning part. From the
+problem perspective in data science, you really cannot solve
+it other ways. Okay, okay, thank you for that. And also you were
+saying there is no kind of because here there are many
+steps, right? Many like, we have to deal with the noise data,
+duplicate data, et cetera, et cetera. There are many things
+like, which one we need to start with after that, which step we
+need to go that comes with experience. You are saying there
+is no standard pipeline this. I am, I have arranged it in the
+standard pipeline only, but within that time, I'm telling
+you, right? So okay, okay, fine. We remove the duplicates, then
+we handle the inconsistencies. Once we handle the
+inconsistencies, we have to again see the duplicates, right?
+So iteration, right, right. We need to go back and see.
+That's what lucky you explained with the New York example,
+right? Once we converted them to standard format, again, we are
+going back and seeing for the duplicates. So how many levels
+we need to see? I don't know if that is the actual job of data.
+There
+are no limited layers for this onion.
+Unfortunately, has unknown number of layers. You might have
+to come back to things off. So there have been instances where
+I thought my production, my entire code was ready to
+production, right? That's when, when we showed the results and
+all then they said, Okay, you have very good results. Your
+model is performing very better, right? Very much in line. But
+unfortunately, the results are highly correlated with one of
+the existing results. What will you do? Then the entire thing
+is, then it's generating good results.
+Okay, I will have to do it again. All of through,
+okay, okay, I got it. There is no single there is no single
+answer, there is no single process, there is no single
+steps,
+okay, but what can help is, if you can we, if we can discuss
+on, okay, Bharat, here is the data set. Here is what I did.
+Here is what is not helping that will help me address you, okay,
+you did this. No, no, no, don't do this. Do this.
+I mean, in this academic setting, I cannot come up with
+all the things,
+right, right? I can understand, Yeah,
+true.
+Last two questions, yes. Mayuri.
+Some noise, actually, hi, Mayuri,
+yeah,
+okay, yeah,
+some support team
+actually, uh, now it is.
+In almost 1pm actually, some participants having some issues
+with their program, they want to discuss. We can continue this Q
+and A session tomorrow. Yeah, we'll take any uploads, sir. One
+minute. Can you upload the CSVs? Please see your
+No, we did not use any CSVs today. Yeah, that was the code
+that I was showing you how to run the CSV files. Okay, okay,
+then how is it loading the data data set, and so the data set
+loading is happening from the Yahoo Finance data the next
+steps after that, okay, okay. Thank you very much. Okay.
