@@ -1,0 +1,3310 @@
+Video transcript
+This transcript is AI-generated and may not be 100% accurate.
+
+Unknown: So welcome aboard everyone for next
+very interesting session today. Okay, so similar.
+I think
+I'm going very slow, but still, if you feel somewhere, if I'm
+going little bit faster, you can just stop me. Say, Habib, we are
+going little bit faster. So can you slow down? Definitely, I'll
+slow down. Okay,
+one or two sessions. First two sessions will feel little bit
+difficulty. Some some people may face difficulty, but I'm giving
+my 100% to make you understand. Okay, so let us try both. From
+my side, I am giving 100% I am expecting from you people also
+to give an 100% so that we can reach our target of completing,
+you know, the best course and getting into the market with all
+the skills and everything. Okay, so today's session is like more
+about what are the practical issues and what is an ML
+principle? So I want you people to use the chat and give your
+answers. No need to unmute yourself. Okay? So once I'm
+stopping at a point, for example, after in 45 minutes or
+something, I'll take up the questions. Okay, so
+let us start with the
+first part of the code. Sorry, course, that is ml principles
+and practical issues. So today we'll discuss briefly, not into
+deeper, only for the terminology, step by step. Okay,
+deeper in coming sessions, in unit two, unit three, we are
+going to discuss a lot when you are writing an algorithms. Also
+will see in the unit one, okay, so for example,
+if I ask you, if you want to build any machine learning
+model, so what is your approach? Okay, so then you have to say
+that, okay. First of all, if you want to build and very good
+machine learning implementation application, you need to have a
+clear use case, and then whatever the use case is defined
+related to that use case, you need to have a relevant data.
+Then you need to take a decision that which is the best algorithm
+to implement and get the accuracy. So as a data
+scientist, you are going to take the decision to apply a
+particular, you know, any algorithm you have, classical or
+anything. For example, if I say, I want to calculate age from
+data birth. Is this an ML problem? Use your chat box and
+just bring yes or no. I want to calculate date of birth from,
+I want to calculate age from date of birth, perfect. Okay, so
+most of the people said no, perfect. Now if I why, because
+in the rule base, we can write a simple formula, and then we can,
+you know, find what is the h. We can calculate the H from date of
+birth. Now, for example, if I say predicting the house price.
+For example, I want to predict what is the house price.
+Is it a ml problem?
+Yes. Perfect. Okay. Perfect. Good. Now another problem, if
+you want to predict given email is a spam or ham? Is it ml?
+Problem,
+perfect. So now we discussed about three different kinds of
+problem statements. Okay, one is first, one is,
+put it into a simple, you know, presentation problem, and then
+is ml needed?
+Okay, next one, why? Reason, let us say,
+age from
+date of birth.
+So we say it is not
+a
+ml problem. Why it is a rule based
+or we say it is a traditional programming now predict
+house price.
+We say this is a ml problem. Everybody agreed, yes. Why? It
+needs
+data
+to
+learn understand the prices. Next one flagging
+an email,
+whether it is a spam or ham, yes, it is. So. Why? Because,
+based on the pattern
+of text,
+okay, good.
+That
+everybody is aligned. So we can understand that if you don't
+have a data you don't need to go for machine learning algorithms.
+If it is a simple problem, for every problem, don't jump in and
+say that we can implement machine learning algorithms. So
+first of all, we need to understand clearly whether this
+falls this particular problem statement falls into ml or not.
+If it is into ml category, then we can use, like, you know,
+historical data. Then we'll take a decision to implement any one
+of the algorithms. Still, we didn't discuss about the
+algorithms. That is very good. Okay. Now coming to what is a
+pipeline actually? How do we build a problem? So somebody
+approached you like, you know, as a doctor, he approached and
+he said that you want, he want to build any ML model which can
+take some of the vitals. For example, it can take insulin,
+BMI, age, whatever, yesterday. Problem only, I'm taking okay?
+Or let us say, for example, house prediction problem. Let us
+consider house prediction problem. Real estate people
+approach you and they say that we want to predict the house
+price. I want to just say that, how many number of bedrooms are
+there? Which area it built into? How many you know, square feeds
+and then nearer by any hospital, nearby school is there, nearby
+commutation is there. So for example, I'm building three or
+four features. Okay, so one feature is, for example, what is
+the built area? Second feature is, like, you know, is nearby
+commutation is there. Third feature is nearby schools and
+hospital, something, yes or no, like that. So then I'm going to
+predict what is the price of the house. So I'm going to take how
+many features, for example, I'm taking three features. Then,
+based on that, I need to predict the house prices. Okay, when the
+stakeholder approach you. So you are going to say, first of all,
+in business value problem statement, what is the problem
+definition? Now, what is our problem definition? Our problem
+definition is given, we need to identify what is the price of
+the house. Okay, this is our problem statement. So how do you
+predict house of the price? As a data scientist, you are going to
+see some of the features which is impacting the house of the
+price. We are going to collect those features. So second part
+will be the data collection part. Either you can get into
+the real estate people, please, having all the data like, you
+know, for this prior we are having, for example, industry,
+this is the house which is having, which is built in this
+much area, this many bedrooms. And these are house, kitchen and
+something. And then we are having, this is something, price
+is available, okay, so that thing we are collecting so that
+we are collecting the data. So first part is understanding,
+connecting with the stakeholder, understanding the problem
+statement. This is first important thing. So once you
+understand the problem definition, then according to
+the problem definition, we need to collect the data. So let us
+say we collected the data. For example, we got 100 1000s of
+samples from that. Now to build a proof of concept POC, we call
+it proof of concept, what we are going to do is data preparation
+process. Is there? What do you mean by data preparation
+process? The data which you collected may consist of some
+you know, some columns may have null values, or some columns may
+have irrelevant data, or some columns may doesn't have
+anything. Okay? So we need to understand which data to keep
+and which data. How do we create the data, and all those things.
+So after that, what we are going to do, we are going to get some
+visualization to show that. Okay, actually, by using a bar
+chart or a pie chart, or anything, you're trying to
+visualize the data, saying that, okay, see Boss, this is the
+data, and most of the data is in, you know, related to
+hospitals are available, schools are available. Very less data is
+available into the previous price. You know, previous What
+do you say? For example, commutation data is not
+available that much so you by visualizing, you can understand
+the patterns after that. What we do is we call it as a feature
+engineering, feature engineering in the sense here we are not
+going to dig deeper. Feature in itself. It is a complete, you
+know topic which is going to be discussed in unit number two,
+feature engineering in precisely, we can say that, for
+example. Let me give you an example. Yesterday, we took an
+example of a salary prediction. Okay, now I have something like
+a name, is there, age of the person and address,
+then I have qualification, and then we have an experience, and
+then a salary. Now tell me when they are deciding the salary.
+Name. Does it matter? I have let us say gender is there. For
+example, the column gender is there. So how many features we
+have? 1234566,
+features are.
+There agree?
+So we are using these six features to predict what is the
+salary. Now, tell me, how does this fix six features in your
+chat box? Tell me how many features will be used to predict
+the salary? Which are the best features from your point of
+view?
+Okay, qualification and experience, good
+quality. Qualification, experience is good. Age doesn't
+matter. Address. Also, okay, don't see about the Metro City.
+Just leave it out, okay, experience and qualification,
+perfect. Qualification and experience perfect. So
+as bike, know, as a data scientist, when you look into
+the column, you can understand that as a subject matter, also
+expert, also, you say that, okay, maybe qualification and
+experience, these are the two important columns which are
+deciding in preparing the salary. So what about these
+columns? These columns are not much used, right? So we can
+discard these columns when we are building the model. We
+consider only these two columns, and we build the model. Okay? So
+if you are thinking like, for example, address also matters,
+because, you know, the city also they are considering,
+then it's okay. But let us say then address is not a concern
+here. Just concerned is qualification experience,
+depending on taking the salary. So what is feature engineering?
+Now, before building the model, how many features we have?
+123456,
+but in feature engineering manually, what we did is we
+tried to made okay qualification experiences, enough. We are
+dropping these four columns. So manually, we are trying to do
+this. After that, what we do by using some other algorithms, we
+are going to decide again, what is the impact of qualification
+experience on the salary, then we do the feature engineering on
+that. So feature engineering is something out of 10 or 15 or 100
+features. We are trying to select some of the features
+which are impacting our prediction. So that is the
+feature engineer we apply after applying feature engineering. So
+from this problem statement, for example, predicting the salary,
+I'm saying that everybody agreed that qualification experiences
+matter. So now how is your features? Now, qualification,
+time, experience, then we are going to predict the salary.
+Okay, okay. So then we decided now on this, tell me the salary
+is a column, right? So prediction column, is it a
+supervised learning or unsupervised learning?
+Supervised now, in the supervised learning, this salary
+consists of different salaries. So I'm not having a grade or
+anything. Let us say variable salaries are different. So is it
+a regression problem or a classification problem?
+Regression Perfect. So now you decided, all of you, the 210
+participants, are the data scientists who decided to take
+which model, any one of the regression model you took it
+correct. So once you took the regression model, for example,
+yesterday, we know linear regression. Let us say linear
+regression is applied after that. What we did, we deployed
+our model. Where did, where we are going to deploy the model in
+any cloud platform, yesterday. What we did, we created one
+Habib model, and we imported that and we used it correct. So
+that is so totally we have seven stages. Basic stages are there
+again. In the seven stages, again, we have internal stages
+are there, but basic ml pipeline is first of all, you need to
+understand the problem statement. Then data collection
+is the next part. Then, after collecting the data, curating
+the data, data pre processing, we call it okay. So after doing
+data pre processing, we do data visualization and pre
+processing. Then we apply the feature engineering after
+feature engineering. What we are going to do, we are going to
+apply any ML model. Okay, so that ML model, once you are
+doing we are going to deploy into the Cloud Platform. So that
+yesterday, we did a problem statement. What is that when
+0123, is given and 13579, is given. Whenever five, when input
+is five, we need to predict what is the next number. So what we
+did, we deployed a simple linear regression algorithm, and we
+imported into, you know, another collab notebook and used it. So
+actually, in real time what happens? We have to create a
+complete pipeline in this way. Okay.
+Now let us take a simple case study, one quick question. Just
+wait, wait, wait when I say, open to questions. Let us take
+Okay, give me a minute,
+five and ml, four should be six. Okay.
+Okay, go ahead,
+yeah, first fast questions. Go back one by one, previous
+question, previous question, you told, instead of first in this
+one first year of first problem to issue definition, after the
+collective data, after data preparation, data you told
+directly, feature of engineering, first modeling,
+first year.
+Modern after good future engineering.
+You run, you told directly, your, your, your, what I
+explained it previously was problem with which can
+understand the problem after the data collection, after that, Ito
+preparation, directly go to virtualization. You directly go
+to feature engineering. Before this stuff is skip this one
+here.
+So what do you want now? Is okay, that's fine, sir. The
+sweater you can your drive picture, please run the sweater.
+Yeah, actually, that is like, you know when they are preparing
+a four point slide. It mistakenly given up and down. It
+is five and six. Okay, first then AIML model, okay, okay.
+Thank you. Yeah, great. Next.
+Next question,
+Hi, I have gone out like as per my understanding. So when we
+have gotten the raw data and we have prepared the data, so when
+we extract the features, that is feature extraction. So at that
+time, also we use one ML model, and after extracting the
+features to map the features with our dessert. Ah,
+predictions. We use another model. Am I correct? So
+basically, we are using ml twice. This is my understanding,
+correct.
+Arnab, okay, okay. Can you mute yourself?
+Okay. Ana, this is the basic first step. Okay, in that, I
+said lot of steps are there. Okay, so let me explain one more
+slide here.
+That's what I'm saying. Just stick into the box. Don't get in
+advance. If you know AIML people, what happens is they're
+jumping. That will create a confusion. Okay, so let me first
+give you an example.
+So we have a raw data, okay, so raw data we have in this raw
+data, we are converting this raw data into, for example, a
+meaningful format, relational data, something, table format.
+Okay, so now we are going to all the housing people, and you're
+collecting the data. Some are will just take an example of the
+salary only you took address and something blah, blah, blah,
+something like that. Then you do the visualization. You whatever
+the null values are there you are removing, or some data
+you're curating. Then what you are doing here, here you decided
+only three columns are needed. How do you decide this two,
+three columns are needed? We can say feature engineering. We call
+it okay. So feature engineering can be done in two different
+ways. One thing is manually, we do the feature engineering.
+After that, we apply
+some of the algorithms. We call it as a PCA, principal component
+analysis, single value decomposition, SVD, we call it
+to get the feature and all those things. They are also treated as
+machine learning models only. But now we are not in a stage to
+discuss these algorithms, so we are just giving an overlap
+pipeline to understand so when you dig deeper this, then at the
+time, we'll discuss all those algorithms, then do the feature
+engineering, then we apply the ML model. Hope it is clear. So
+yes, yes, you can proceed. Yeah, thank you. Next, Suresh,
+yeah, you mentioned
+a problem statement, right? So if the problem statement is
+itself, is confusing. So will that take time to decide go and
+discuss with the product owner? Will that comes from directly a
+business?
+See that is depends upon in what environment you are working in,
+for example, for example, if you working in a product based
+company and you are directly facing the stakeholder, then you
+have to connect with the product owner, understand the flow, what
+is requested, that you can do it otherwise, one in the product
+again, there is a developer who is facing some difficulty in
+rule based programming. You need an automation using an AI. Then
+you have to connect with that developer, what exactly needed,
+how you are going to consume the service, what is the contract,
+and all those things, okay? So then only you can curate the
+problem clear.
+Okay? And another question, as you mentioned, the feature
+engineering, I'm not going into that part, but just a
+clarification. So let's say I have 10 features. I want to drop
+the two features later I realized that I want to have
+that those two features as well. So is it, is there a scenario
+where we train the model on different features and see the
+efficiency in real life? Yes, yeah, real life, what we do is
+actually, once you are dropping the features, we don't go back.
+Okay, that won't happen in real world. So before you're dropping
+your taking addition, because dropping a columns and using a
+machine learning algorithm training is very costly, okay,
+so we don't do that kind of things. First of all, it before
+deciding what kind of features are used that we are taking
+addition to the statistical model, sign manual checking with
+the subject.
+Matter. Expert, okay, so then only we are deciding. So once
+you decide, most of the chances we are going back means we are
+not a good data scientist. You don't have that capability of
+deciding whether these features are needed or not. Reverting
+back is not a good idea, Suresh, okay, it's actually. Industry
+doesn't accept those things.
+So that has to be clear before we are jumping into model
+implementation, training, convert to the business, whoever
+has given the problem, exactly. Okay. Okay, so let me take some
+of the questions from chat box, how it is derived into
+regression type for the salary prediction Balaji, the column is
+continuous values, right? So that is the reason we call it as
+a regression model. Salaries are continuous, real numbers. Great,
+great. Thanks. All there. Predict the salary. We are not
+trying to classify the employees. Okay, I have a
+okay. It's mandated to identify those independent features. We
+had this in the math. Class line, dependent, independency
+topic PC is example of future generation. Okay.
+Okay. So let us, first of all concentrate on our topic. And
+then I said in the break, I will take advanced questions for you,
+people. Anybody have any advanced question? Please write
+it down in the break I'll take up. Okay, and let us proceed
+with the topic. Once you understand, we'll get into that,
+Sir, one question, one small request. So please, please,
+request guys, please hold on until complete the habit.
+Then we can ask the question. You can write it yourself. Then
+after a break, once he give the option to ask the questions,
+then you can ask in between, we hold that really what is saying?
+We are confusing. Please write it to yourself, then ask the
+while question and answers. It will be easy to understand and
+perfect. Good idea.
+I do agree, because it is taking lot of time for questions and in
+between
+the Okay, let us stop here. Okay, whenever I say, after 45
+minutes, something, when I say, let us take the questions. At
+the time, we'll take the questions, okay, that is the
+better way we can understand we are. Okay, great, great. Thank
+you, sir. Yeah, okay. Now the problem statement is, let us
+take an hypothetical case study
+a lab scientist. He don't like, you know, neighbors dog to enter
+into his lab. So what he did is he want to build an automated
+system. For example, He is capturing an image, and then he
+want to allow only cat inside, not the DAG inside. So that
+means whenever cat comes in, it captured the image and opens the
+door. Cat can get in. When Doug comes in, you need to stop the
+dog. This is the simple hypothetical use case for
+example. Okay, so now we not we need to build our machine
+learning algorithm to make this to work. Implement it.
+Production is okay. So basically, we're not digging
+deeper into all those things, just we are trying to understand
+the flow first of all, okay, so the case study is clear.
+The data, the scientist, the lab scientist, he doesn't want
+neighbor dog to enter into his lab. He won't he just want to
+allow his cat to enter into the lab. So he want to build a
+machine learning model using a camera. Whenever a cat comes in,
+it will capture the photo, photo, and the sensor will open
+the flap of the door. Then cat can get in. If it is a dog, the
+sensor will not open the door, you know, the door, and dog
+cannot get in. This is the problem statement. So if you are
+yesterday's class, if you are comparing here, why is, what is
+our target? It is a supervised learning. How do you know it's a
+supervised learning? Because we are going to take one AIML
+animal is like, you know, for some of the features of the
+animal, for example, we are taking height, weight or
+something, like, you know, ears, shape or something. Then we are
+predicting, suppose saying that it is a cat or dog. So in a
+prediction column, how many values we have? Two values, one
+is a cat, second one is the dog. Okay, so then I need to predict
+with if it is a cat, I need to open the door. If it is a dog, I
+need to, I won't allow dog to enter him. So it is a supervised
+learning perfect. Why? Because there is a prediction column. Is
+there supervised learning? Now we have only two classes, so we
+call it as a classification problem Perfect. Now we have y
+is equal to f of x formula. Y is the predicting the label,
+whether it is a cat or dog. F is the function which is getting
+from a machine learning model x is the features from the image.
+For example, when through the camera, when they captured the
+image, we are going to get some of the features. And these
+features are given to the model, so model will take that features
+depending upon the feature, it is going to predict whether it
+is a cat or dog.
+Up, then it is going to take a decision. Now, build a ml
+classifier model on top of this. How do you build a classifier
+model on top of this? For example, first of all, we need
+to collect the data. Now the question is, what kind of data
+you need to collect? Okay, one thing you can do is take a
+camera, get into the streets. And whenever you see a cat, take
+a picture, whenever you see a dog, take a picture like that.
+You can take a data collection can be done. Other option is
+why? Like, you know, we can get into some websites where you
+have cats and dogs images. You can download them, okay, and
+keep it in a folder. Good. So we know that what kind of data we
+need? We need an image of cats and dogs. I need perfect. How
+much we need this is the next question. For example, let us
+decide on 100 of cat images, 100 of dog images. Now, as a source,
+I told you, get into the streets and get a photos of cats,
+whenever you find a cat, or whenever you see a dog, do that,
+and then we need to identify, you know, which one, like, you
+know, for example, which source is taking how much time and
+expense and the quality also, that also matters, because the
+quality what you're expecting, if it is not you're not getting
+through the source, for example, on any website you are
+collecting, Then better you jump into the streets with the camera
+and collect the photos. Or an option is what like you can buy
+some of the pictures. Like, you know, some websites, they are
+selling the pictures of high definition images are there, low
+resolution images are there according to requirement. You
+can do that. So in the first part, is collecting the data.
+Collecting the data is you need to decide what is your source,
+okay, how much you need, what kind of data, all those things
+that will be done in the first phase the collection of the
+data, then what we do, pre process the image data. Pre
+process the image data means, for example, when you are
+browsing through a website, sometimes you may get an image
+of, for example, 200 by 200 pixel image will get it.
+Sometimes you will get 1080 into 2060 something image you are
+getting. So this is a smaller size in image, and this is a
+larger size image. What we need to do when you are building an
+classifier in machine learning, if you are using a image data,
+you need to make everybody to the similar size. Let us say all
+of the images are 200 into 200 pixels. So what should I do now?
+I need to resize the images. That is done in the pre
+processing of the images, denoising images in the sense.
+Sometimes what happens is, when you're taking an image of a cat
+or back set, maybe some objects are there, or sometimes the blur
+pixels are there, so you need to denoise it. That means remove
+those obstacles or backside images, or remove the bad
+pixels, enhance the picture quality, something like that. So
+second phase is denoising. So this is comes into which
+category pre process of the image data. Third one is the
+feature generation and data modeling. So here we discuss
+about handcraft. Feature generation, statistical methods
+are deep learning. So for the image, we don't, for example, as
+we are into the starting of the class, we can do hand crafted.
+What do you mean by that? Hand crafted in the sense we are
+looking at the we know that there is a cat and Dawn
+generally, cat weights less, and dog waits more. And, you know,
+the dog ears are fluffy, and cat ears or not, like, you know,
+fluffy, and we can say the size is less. Size is bigger, for
+example, like that. We are trying to make some features
+that is known as a hand crafted feature. By looking at those
+statistical feature means by measuring that, you know,
+average and all those things we are trying to build some of the
+features we can do it. But in the case of images here, we
+cannot build statistical because if you have historical data of
+some stock market or something, we can build statistical. But in
+this case we cannot. We can do deep learn feature. That means
+we using a deep learn deep learning when we give an image,
+deep learning automatically extract the features. Okay, so
+you are the one. You need to decide which we need to use,
+whether handcrafted, statistical or deep learning feature. After
+that, you are getting the features. After getting the
+features, what should we do now? We need to apply when one of the
+classifier because what kind of problem it is, classification
+problem. So you can use, for example, decision tree
+classifier, support vector machine classifier, or, for
+example, Naive Bayes classifier, or stack as a gradient descent
+classifier. Or we can say any one of the classifier algorithm
+we can use it so which is going to classify depending upon the
+feature, whether it is a cat or that. Now evaluate the model.
+What we do? We are going to give, for example, in images
+which are not trained on, and we are checking whether it is
+classifying with cat or dog or not something. So this process,
+first of all.
+Model. What is happening? We are collecting the data, then we do
+the next process. Is the jumping pre process, the email. Once it
+is done, we are going to take the feature generation modeling,
+okay, then we need to feature engineering and modeling. Then
+finally, we are going to evaluate the model and been
+build the proof of concept. Once the proof of concept is approved
+and we got the accuracy, then we'll go further, deploying the
+model into production one. So if anyone supports, if you got less
+accuracy, what should we do? If you got features are not
+correct, what should we do? How? Means how we are reverting back
+those things. We'll see now, okay, so generally, what is the
+first step? Now, if you want to build whether a given image is a
+cat image or a dog image, we started with collecting the
+data. Then we do the pre processing. Next one feature
+generation, and the third one is the the last 1/4, one is the
+evaluate the model. Shall we go with the model or not? By you?
+We call it as a accuracy of the model, whether model is good to
+go or not. Okay. Now, for example, what are the practical
+issues we'll face now, generally, okay. Now I have set
+of images of cats. Set of images of dogs are collected. For
+example, let us say I am jumping into the street. I have
+collected around nine, nine images, and I'm going to train.
+For example, let us say ABC classifier I'm applying. Okay,
+let us not take the name of an algorithm, ABC classifier,
+algorithm I'm applying. So once you're applying, when we do the
+prediction, when I give a new sample as a
+cat, it is giving the output as a dog, which is not correct,
+correct. So actually, due to the shape or somewhere or model is
+not good. So when you look into this image, when I say, when I
+give a new image, it was unable to predict whether it is a cat
+or dog. It is when a cat is given, it is predicting as a
+dog, because nowadays you can see some of the dogs are in the
+cat shapes also, right? So I'm not taking those use cases. Let
+us say, bloody, the dog is a bigger in size. Easily we can
+differentiate. Because when you look into some of the dogs where
+size of the cats only, we have very small dogs also, puppies
+are available, right? So let us not consider that case. Okay, we
+are our case is, there is a big dog is available, and it is
+trying to get into the lab. We need to stop that. This is our
+model. But when you look into this problem statement here,
+when a new sample is given, it was unable to predict, even in
+that situation, that it is not the cat, it is saying it is a
+dog, where will be the problem, practically. What are the
+problems? Let us see the problems here. The reason maybe
+data. You agree totally, because maybe the data is not enough and
+the quality of the data is not good. The images which I
+collected is low resolution. That is not understandable by
+the model, and I applied poor data processing means I'm not
+good at data processing, or I didn't apply the techniques of
+denoising and removing the objects or all those things. So
+that may be one reason. Second reason is feature engineering.
+We call it feature engineering means I'm unable to decide what
+are the best features which are supporting me in predicting
+whether it is a cat or dog. So I need to take help of some other
+algorithms which can give me create a clear idea that these
+are the feature which are participating in predicting
+whether the given is a cat or not. This is one reason. Another
+reason will be the model which I am using is not a good model.
+That is not the one model. For example, ABC classifier is
+unable to predict the mathematic behind that is unable to predict
+whether it's a cat or dog. And when I'm doing training, because
+less data insufficient. In a insufficient Training, we call
+it sometimes excessive training, also will give you wrong
+information, and I didn't do the fine tuning of the algorithm.
+That means adjusting the algorithm. Every algorithm, they
+have a parameters that I need to adjust, otherwise, if you see
+that the prediction is gone wrong, what you can do, we can
+change the algorithm. Some other algorithms, we can change it.
+And we can, you know, use another algorithm. So here, if
+you for example, here, you can see we are saying that, for
+example, if it is unable to predict what is the given is a
+cat or Don maybe the reason with the
+feature engineering, or maybe a reason with the pre processing,
+or maybe it is a reason that we didn't collect it enough data.
+So these are the practical issues we face when you are
+building any classification algorithms. So what should we do
+now, first of all, suppose, if you want to connect this, we
+need to get good enough enough data, and we need to collect the
+images which are having in high quality, sufficient data volume
+also needed. And next, we need to decide, what are the good
+features like you know, which are deciding?
+In whether the given image is a cat or dog, that's also
+decision. When you take another one, you need to improve the
+model training by tuning the hyper parameters in that so by
+adjusting the hyper parameters, means yesterday, when we
+discussed about linear regression, inside there is some
+of the parameters. We call it that we didn't use it till now.
+So when we finish the this after the, you know, third session,
+when we start with linear regression, at the time, we'll
+discuss about what is the hyper parameter tuning and all those
+things. Okay,
+so now this is okay, so up to this, the problem statement we
+discussed. Now let us take up the questions one by one. Just
+raise your hands in a sequence, okay? Related Questions Only,
+okay, yeah, go ahead,
+just let me
+take the sequence. Yes. Saurabh, please go ahead. Yes, sir. So my
+question is that, in our AIML problem, right, we understand
+that what, what should be the industry standard that we go
+with, like, do we ask for new data, or do we go with a feature
+selection, or do we go with a different model? Like, what
+should be the solution? In that case, when we come across that
+problem, when we are giving the data as a cat and predicting as
+a torque, right? So in this case, what what we understand,
+the reason might be related to data features, or maybe model or
+something like that, right? So what, what should be our like
+resolution here? Like, what approach should we take in this
+case? Yeah, so generally, what happens is, the data is, data is
+the one reason so you collect more data to do that. Second is
+the pre processing may be a problem. Our feature engineering
+may be a problem. So industry says that first of all, when you
+are using any machine learning algorithm and you are unable to
+get the required results, one thing you can do is, first of
+all, get back to the feature engineering and try to use other
+methods, statistical methods, to get the best feature by using
+correlation techniques and all those things. Okay, so once you
+are getting even after that. Also, if you are able to get the
+accuracy, that means, again, the pre processing is not up to the
+mark. You did it. Go to that part and do it. Otherwise.
+Still, if you are able to get better, you are not collected
+enough to data. You have to collect all the data, so you do
+some augmentation and create a new data and use it. These are
+the techniques, okay? And there is no certain that okay. This
+technique only, we need to apply generally. For that, we have
+some of the libraries that is known as an aptu Now, okay, so
+when you give an app to now, apt now will tell you where is the
+problem, so that problem can be resolved. And after that, even
+before, you know, getting into that, when we are starting and
+after you are getting the session of, you know, data pre
+processing. I'll give you one of the easiest tool that is known
+as a pandas profiling. We call it, what is that?
+Pandas profiling? We call it this tool. So this still will
+give you the complete statistical information of your
+data, whether should you proceed or not. So from that only, we
+can take a decision before implementing any algorithms.
+Okay, so those I'll discuss when we are taking a linear
+regression. Next question, pie carrot also does the same thing,
+right? Sir. Which one pie character?
+Pie character, not that much, but this one will do better than
+that in the district. Will be displayed, okay? Abhishek, yeah.
+Um, Doctor. Abhi so we heard you saying that we have to make sure
+that there is enough data? Is there any definition for enough
+data for based on the problem? How do we define that we have
+sufficient data? Abhishek, till now, we don't have any
+measurement saying that for image classification, 100,000
+for some other problem, 2000 1000, 2000 samples, completely
+it is hit and run Abhishek. Okay, so if you are not getting
+accuracy, that means data is not enough. Go back and collect
+more data. So, so it's me, sir,
+yes, sir. Feature engineering like PCA, so when we have
+removed one column, thinking that it is not going to any
+effect on prediction. So when we are predicting, so how we have
+to add that column, which we have removed or we should not
+add that column, how the decision should be taken.
+Sujana, PCA is not the algorithm which is removing, actually it
+is going to build a new feature using the existing features.
+Instead of 10 columns, it can give you one column combining
+all those features. Okay, so that is what I the terminology
+might be wrong. So what I'm saying is one column. If we have
+removed from that entire data set, and we are, we have
+predicted the while label. So take x as a complete columns and
+y as label. So I have removed 1x column and we have predicted to
+y label. So when I am predicting new data, I have the new set of
+data. So when I have to predict, so I have to give that removed
+column, or we should ignore that while predicting as well, you
+have to ignore that column. It is something like.
+Jana, I'll give you a simple, blunt example.
+When you are going to a doctor and you need to perform a
+surgery, he said, by mistakenly, I have, you know, instead of one
+part, I have, you know, disconnected another part. Now
+he's saying that I will repair it, it doesn't happen. So that
+is the best step he need to take as a surgeon mission, right?
+Similar way in the data science, also when you're deciding on the
+feature engineering, that is where your skills come in. So
+once you are taking up and putting it and doing like that,
+that won't happen super soon, because it is very costly. For
+example, in the chat GPT, when they are building they are using
+a super computer for one hour. How much charge they are
+spending now, as a developer, you are using dust resources,
+and you are saying that, okay, by mistakenly, I have taken
+that. It is not giving me an accuracy. I need to include no
+no. So before that, you have to take a decision. We apply
+statistical metrology on that. We some of the algorithms which
+will give us that is, we call it as a explainability. We have to
+explain before that, why did you eliminated this column and all
+those things? Okay, so when we implement real time algorithms.
+We'll discuss those things. Don't worry. Sure, sure. Thank
+you. Siddharth, can we explain the scaling again in the
+features? Yes,
+yes, we can.
+What is that? Can you tell me,
+scaling come again? What do you say? What do you that means? I
+didn't get you scaling in the features you mentioned, like,
+right scaling is required. So what is the scaling would? Do
+you mean by scaling in this I didn't say scaling here, scaling
+in the sense, for example, you have some data. For example,
+height and weight is there, okay? And age is there, and we
+have a skin thickness. Skin Thickness, maybe one or two mm
+right. Height will be around, we say 170 centimeters. And weight
+will be 80 kilograms. If you sequence, look into the data.
+Data is in single digit, one is double digit, one is three
+digits, right. So we have to scale that into a single digit
+or into the decimal point. We use min, max scaling, standard
+scaling, Z scaling techniques to make all of them into a similar
+scale.
+Okay, that is we'll discuss in coming sessions. Yeah, okay, got
+it. Thank you, yeah. Rajiv, yeah, I think you might have
+answered the question. So see if the output is wrong. It could be
+error in the pre processing, or, you know, feature engineering,
+right? Is there a
+technique all the layers? It just suggests that,
+you know, pre processing,
+yes. Can you can you mute yourself? Rajiv, oh.
+Raji, please mute. I'll answer the question. Okay. So, yeah, we
+have, like, you know, as we proceed implementing unit two,
+unit three onwards, we have some of the packages which will help
+us in identifying those things before jumping into
+implementation of the algorithms. Okay, so those
+algorithms will discuss. Will those packages will discuss?
+Don't worry. Okay, all right, sure. Kiran,
+yeah, my question is like, is there any methods or tools to
+assess the quality at each step of ML, like you said that you
+are going to denoise the images. So these kind of steps, do we
+have? Yes. Kiran, yes. We have. Kiran, yes, we have. Those
+libraries are available nowadays, previously, it is
+completely job. But nowadays, luckily, we have lot of tools
+which do the job for us. So now it became our job, very easy,
+don't worry. So we'll discuss in real time we are implementing.
+We'll use the tools. I'll name it, and I'll implement those
+things. Okay, okay, yeah. Jaipal,
+yeah. Hi, sir,
+here, it's trained, right? Training is like the collection
+of samples data,
+yeah, collection of samples, then we train the data, yeah.
+What's the question? This one, yeah, this, this one, only
+training and testing. The testing is
+to validate the given samples data, right? Yeah, okay, and in
+real data. So real problem. So business people will provide
+this sample data, right? So, exactly, yeah, business people
+will provide the sample data. We need to. One person will be
+there. He's known as a data engineer. He is going to curate
+the data for us as a ml engineer. Okay? So in this case,
+you said,
+approach them and to provide the new sample data, right? Yes. Oh,
+okay. Srinivasan, once you are done with your question, please,
+you know, lower your hands. Yeah, yeah.
+We are following pre process. There is a visualization. You
+told that, where that that is we missed here that,
+can we explain that? Yeah, you mean to say visualization or
+where? Yeah, visualization. This process, yeah. Visualization is
+our part. Srinivas, okay?
+Which?
+Resolution is for the stakeholder. If you want to show
+something, you can generally when you are implementing
+classifier, no need for visualization. Okay,
+okay, next
+Manoj, yeah. So currently, we are taking the AIML data past 20
+to 30 years to protect the current new data. However, the
+data is not up to mark past data, because going for medical
+is discussed earlier, is offline. Everything is offline
+now we have to put it online and we have to predict. So as you
+mentioned, lot of tool come from the denois and all these things
+so. But how about the 2030, years data, like
+climate and all these things. We don't have a proper data. So how
+that will be? Your correct data will come in that if you plot
+that in the previous data is up to mark, see if the previous
+data is not up to the mark. Nowadays, we are having a
+subject matter expert, okay, who is going to take a decision on
+that? So maybe 30 years or 40 years is not a problem. We have
+subject matter expert like, you know, MBBS, or pathological
+doctors, who is now having an background of artificial
+intelligence. So they are, they are hiring those people to
+correct the data, to build the model. So that is where the
+problem, you know, how do you resolve? I'll give you best
+example, one of the example I'll show you people, uh, late,
+actually, when the human brain is there, I'll give you why AI
+is for, you know, flourishing. That is the reason why you are,
+why need, why you need to take that course. Also, I'll suggest
+you see, for example, in the human brain, you know, there
+are, if there is a tumor, there are two kinds of tumors. One is
+known as a benign and malign, okay, Ben, and means it is not
+cancerous. Malign is the cancerous tumor. So and some
+kind of tumor is there? That tumor, it will grow immediately.
+Within seven, eight days, it will grow even the person
+doesn't know the there is a tumor in the brain. Okay? So
+after that, what you have to do, when they are consulting any
+neurosurgeon, they'll open the skull first. They'll take one
+piece of this autopsy, they'll send it to biopsy. Okay? So the
+biopsy pathological report used to take minimum 15 days to
+decide whether it is that kind of, you know, tumor. So in this
+benign also, there is a tumor which will blast within seven
+days. So when it is blast, the person will die. So till now,
+there was no solution, okay, so, AI, what they did now AI, using
+an AI, they implemented, now real live performance surgery.
+They have shown that they open the skull. They took one part of
+small, small, you know, the part of the brain sample, and they
+are putting with the AI camera. They are putting under, under
+that it is understanding the molecular using the generative
+and all those things, the splitting is done falsely, and
+within a minute it is giving whether, okay, this is a tumor
+which is going to explode. Now, the surgeon opened the skull,
+right? So at immediately is removing the tumor. In this
+case, what is happening? He need to close the skull again. He
+need to perform after getting a biopsy, luckily, if the person
+survives. But here, within a minute, he's taking a decision,
+is it that type or not? So that kind of medical improvement also
+is done in AI. It is a real implementation. It's not the use
+case, really. It is working now they are using it, okay? So
+because, as I'm doing in my research most of the time, I'm
+getting into these journals and neuro journals and all those
+things in, you know, image classifications also, so you can
+see how they are reaching so that much of data is now
+publicly available. So previously it is hidden, but now
+medical data is publicly available, even the security
+data is available. So we can take it and we can write the
+models. Only thing is, after completing, for example, you're
+taking up the post. Come up with an enterprise entrepreneur idea
+and take it and build it. That's it clear. So data is available,
+so nothing to worry curation and subject matter expert is also
+available. Okay? So and tools are available. It's not like,
+you know, previously, a data scientist. Job is like, you
+know, very hectic, but nowadays it is very easy. Only thing is,
+you need to be in the market ready. You have to see what are
+the available libraries for your particular problem statement.
+Get that. Use it. That's it.
+Okay. Next, Kiran.
+Kiran, what's the question? Okay,
+anjit,
+can excessive training of our data also buys our model.
+Come again, training, excessive training of data can buy? Can it
+buy us a model?
+Yes, it will buy. Sometimes we'd call it as over fitting.
+Okay. So now,
+Hi, sir. So sir, here in this example, right? It's a simple we
+understand right from where we are collecting the right data.
+What are the criteria? But in real business problem, I mean
+how we define the.
+Criteria, right fully selection and right from where we select
+these datas. Yes, we need to find that is, as I said, No,
+when we are discussing in chapter number three, that
+pipeline, how do we write all those things will be discussed
+in detail. Okay, so just understand how is the pipeline
+works? Clear.
+Frankly,
+no. But maybe let me cover right in the upcoming sessions and
+discussion. Yes, so now that's what I'm saying in an
+introduction session. Only you cannot directly take raw data.
+How do you take and how do you collect? How do you use the
+APIs, all those things, right? That will make you have a
+everything. So this syllabus is designed by, you know, one of
+the top AI person, Professor Jahar. So according to that, if
+you follow end of the day now, like yesterday, I have connected
+with cohort 24 people that are doing their, you know, what do
+you say? The capstone project, and triple it Hyderabad for the
+campus visit. So now they are capable of building their own
+models and all those things. Okay, so little bit patience.
+One by one will be discussed. So first step by step, let us go
+on. Don't worry, everything will be covered. So now it's on us.
+So we are seeing, yeah, there may be right, some predefined
+criteria and some right data collection libraries are there,
+but yes, not for libraries. You need to use GitHub actions also
+after, you know, once we are building your model continuous
+learning is a lot of things will come in, okay, so just trying to
+understand the basic pipeline today, not in depth of real
+implementation. Okay, sure. Sure. Makes sense. Thank you.
+Yeah. Aish,
+yeah. Can you
+switch over to Class
+Number six,
+the green arrows which we have to go back if we are getting the
+wrong accuracy. Is there any analytical way where we can say
+that we have to go to feature generation, or we have to go to
+the pre processing step, or my data itself is biased and
+incorrect, or it is a hidden crime method. Actually Aish.
+Previously it was hit and run, but nowadays we have, luckily
+available libraries are there. We can use that libraries and
+which can tell you that the problem is here. Okay, okay,
+like find out profiling. You mentioned pandas profiling is in
+the basically before jumping into the data curation itself,
+it can give you all the insights of the data in between. We have,
+and we call it as aptize, the grid search series. A lot of
+algorithms are there. Okay, we'll discuss when you are
+taking data and if you are getting drifting, we'll use
+that, and we'll show you.
+Thank you. Yeah, clear, Priyanka,
+I just want to understand with some example, like, how come
+excessive training or overfitting will be an issue.
+Priyanka, if you look into the standard, there is a chapter
+discussing about overfitting and accuracies and all those things.
+Okay? So at that time, we'll discuss over fitting, but in a
+glance, I will tell you, in a for everyone to understand, like
+how model trains. Okay? Once the questions are done. All the
+questions done?
+Yeah, I guess. Okay, thank you. So let us take mayuru, so once
+you have done the question, please lower your hands.
+Mayuri, you have a question, please go ahead, yeah. So this
+is just a clarification of understanding. So you said that
+feature changing features is very expensive, but it cannot be
+done. But as a part of slide eight, you also change features.
+I mean in terms of,
+if the features are not correct, you continuously correct them
+right, like based on which part you're trying to fix. What is
+the difference between that? So is that this is at the time of
+the training and that's at the time of requirement. I'm trying
+to the people that they're asking about the deployment.
+Mayuri, this is about the training stage itself. We are
+changing, right? That I understand that difference.
+Okay, yeah, so after deployment, we cannot revert back. Actually,
+it is at the training stage because we didn't in the
+deployment stage. You can do that. Okay, okay, all right,
+that's fine. Thank you.
+Okay, now let us get into the something. I'll give you a
+simple example. For example, there are three students, one is
+A, B and C students, okay, they're attending an exam, for
+example, like, you know, in B Tech. Mostly they'll study, what
+do you say? Question Bank or something they're attending
+now there are three kinds of problems. One is asking about
+addition, subtraction and multiplication. The guy, First
+Person A, what he did is, there is a question bank is given. He
+buttified All the questions, addition, subtraction,
+multiplication, a guy. Person A, okay. Person B is little bit
+lazy. What he did is, when you have given a time to train, he
+just took the time to understand what is the addition. He left
+subtraction and multiplication. Person C, what he did is, he
+didn't, but if I had what he did, he'd understand the
+technique of patterns of.
+How addition works, how Subtraction works, how
+multiplication works, okay, what he did. He understood. Now, when
+a question paper comes in with these unseen data from this one,
+so the questions are not from this one. Which person will do
+better? Tell me,
+c3,
+will do better. C, C, perfect. Okay, you are in data scientist,
+then perfect. Why? Because, when you are giving a data, excessive
+training is happening. He if you ask anything from this one, you
+will feel happy. Okay, he can answer like anything exactly,
+but when unseen question comes in, he cannot give you the
+answers. So in the training, he performing very well, but when a
+testing, it is not performing well. This is known as an over
+fitting. We call it now, he is not understanding all the
+patterns, okay, so that only the questions related to addition,
+he can answer questions related to subtraction, medication. He
+cannot under answer that is known as an under fitting. The
+model is not a well coming to see. He understood the pattern.
+Whatever the question you give he is understanding this is
+known as a best fit. So when we are building the model, we need
+to look into the best fit part clear.
+Yes, thank
+you. I think this makes sense, right? Yes, yes. It's good.
+Yeah, good.
+Okay,
+so
+let us take one more slide, and then, practically, I showed some
+of the things. Okay,
+okay, now, so here we have an approach, like, you know,
+training the data. And generally we call it as a validation data.
+Also we call it
+so when I'm when we are discussing about the training of
+the model, actually before deployment of the model, we are
+going to check whether the model is performing well or not, how
+we are checking yesterday. Yesterday,
+we split the data into two parts. One is the training part,
+we did it. Second part, we took it as a testing now, in the
+training we are giving into fit process, so it's understanding
+the product pattern. After that. This is unseen data. We know
+these answers for this data, but we are getting the answers from
+this model and checking the answers which I kept aside. Both
+are same or not. So then, from that, we can take a decision,
+shall we proceed with the model or not? This is what we did.
+Okay? Now we can do another option. Also. What is that? We
+have three options now, training data, validation data and test
+data. What do you mean by that? Let me explain you this clearly.
+So for example, we have our samples yesterday. How many
+samples we got yesterday in the problem? Tell me how many
+samples we got in yesterday's problem, 0123, something like
+that.
+Seven. Okay. Somebody said 1000. Aditi,
+Ah, okay, so we took x is equal to something. So let me take
+some numbers. X is equal to 01234567,
+8y,
+is equals to 1-357-911-1315,
+and 70. So we have nine samples here. Here I have a nine samples
+clear. Now. What should I do yesterday? What we did? We did
+the split of, for example, 8020
+so we have x and y. We did 80% as a training 20% we kept at a
+testing. Everyone agree? This is for training. This is for
+testing. We did it correct.
+Yes. Okay, so after training, what we are doing after the
+model is completed at the training, after that, what we
+should we are going to give the test data. We have the answers,
+and we are checking that the answers which we are getting
+from the model and what the answers we kept beside these two
+answers are same, then we call this model is working perfectly
+fine. Now validation means what? For example, let us do one
+thing. When I split this into 8020 80% of this nine means
+approximately how many samples will get. Tell me out of 80
+percentage means
+six, six samples. Okay, so let us say 0123456,
+I'm not taking randomly. Actually, these things will come
+in random. Okay.
+Now in the test, how much we left,
+seven and eight, seven and 827, and eight for the seven, we got
+two, seven, the 14 plus 115,
+and 17. So this is
+training. What about.
+This in
+testing right now, from this training, I want to validate
+again, 20% I want to take a validation. 20% data. I want to
+take a validation. For example, I'm considering up to 401234,
+and then five, comma, six, I'm keeping aside and 13579,
+1113, so this is training,
+this is validation, and this is testing. So
+validation data from where I am taking, first of all, I need to
+split into train and test. Then I need to take the validation
+data correct or not?
+Yes or no?
+Yes. Now before testing, I need to use the validation data to
+test the model. So once it is tested, then what I will do, I
+will implement the real testing. So we can say that hypothetical
+testing while training itself. I'm implementing this part. So
+generally, we can have a three, three type testing. Also, what
+is that training validation and test split like that. Also, we
+can split generally, okay, so in a real time example, generally,
+validation is not needed, but if you are using a deep learning
+models. Sometime before deploying deep learning
+frameworks will give you while training itself, they'll test
+it. Okay. At that time, we can give the validation for the
+classical machine learning algorithm. No need for a
+validation data directly. You can use the testing. So here
+showing this is entirely for like, you know, coming sessions
+when we have a deep learning we may have a three way split. Also
+that is called as a training, validation and testing split.
+But in classical machine learning, generally, validation
+doesn't play any role, because most of the scale and libraries
+doesn't give you validation chance. Whereas a deep learning
+framework, TensorFlow is there? Karash is there, pytorch is
+there? Their training itself. They give the validation part,
+okay? So at that time, we can use it. So there are training
+splitting can be done in what two way split or three way
+split. So what is two way split? Now, two way split is splitting
+into training, training and test and testing, whereas three way
+split, three way split in the sense we are going to take a
+training again will be split into two part, that is the
+validation. Okay, then testing will be kept aside. So this is
+what do we call it, as a three way split. Okay, so let me give
+you an example of this to understand,
+okay, from SK, learn
+dot model. Underscore, selection,
+import, trade, underscore, test, underscore split, then from SK,
+learn dot linear, underscore model, import, linear
+regression.
+Then you can import NumPy as NP.
+Let us say this is all important. Let us define what is
+xx will be NP, dot, array of
+01234567898,
+is enough, right?
+We need to convert that into the shape, into negative one, comma,
+one, then y will be np.ar,
+y values are 1-357-911-1359,
+78, 17,
+we got X and Y.
+First of all, step one. What I will do is I will try to split
+that into 8020,
+how do we split like this? Right? So instead of x, train,
+let us do one thing. I'll make it as a them.
+Why train? I make it as a
+them.
+Okay, then x, test, y, test is common only. So what I'm trying
+to do here is
+we have 0123456781,
+5678,
+1-357-911-1315,
+17.
+This is x and this is y.
+First, I'm splitting this into two parts. For example, one part
+is this is extend. This is X test, this is y time, and this
+is
+why test 20% is there, and this is 80%
+now I need to take this 80%
+again. I want to split agree, yes or no,
+yes, yes.
+Yes, this part, everyone clear what I did now, 20% means
+testing is 20% now, x term y time consists of how many
+samples,
+80% of samples. Correct. Yes, okay. Now what I will do, I will
+split again, x, underscore, train, then x, underscore,
+validation, then, why? Underscore, train,
+then Y, underscore, validation I'm taking is equal. Train,
+underscore, test, underscore, split. Now I will take, which
+part I will take, extend, which is 80% I'm taking, and next, 1y,
+10, which is 80 percentage. Test size, let us say 25% I am taking
+validation, remaining 75 for
+this. Okay, done.
+This is step two,
+correct. This is what we did. Is a
+step two.
+Step two. Now, validation also done.
+Now we need to train the model correct, or if you want to see
+print,
+train size
+will Be
+length of
+x, underscore
+train,
+X, underscore train.
+Okay, you can see train says, What is the sample? Five samples
+are in train. Test size is two, validation is two, totally how
+much we got. Now,
+nine samples. Total, nine only, right? Zero to eight means
+yes.
+Okay, Okay, done. Now. What should we do now? We need to
+train the model so we can say model is equal linear
+regression, make it then we say model dot fit. Generally, we use
+extra 9y
+train Correct.
+Okay. Model train.
+Now we need to find the scores. How do you find the score? Print
+F, for example, validation score is
+model dot score X, validation by validation and test score of the
+model is like, you know, we can
+say something.
+When I print, I got validation score as a one. Test score is
+one.
+How did you it is something like, let us, I'll give you a
+very simple example to remember.
+You are a chef. Okay, you are preparing a dish.
+So before you are preparing a dish, what you are doing first
+of all, you are keeping all the contents and me between. You're
+tasting it correct. You're testing yourself or not to check
+whether the dish is going good or not correct. So this is
+testing in between training is known as a validation
+once it is done, you are public. You are putting somebody is
+coming in and testing it.
+Your whether dishes are good or not right. That is known as a
+testing phase in the real time, understood. So validation is
+while you are cooking itself, the chef itself is checking
+whether the dish is going good or not. You need to adjust the
+content or something like that. So validation will be used in
+the feature like that, in the testing. Finally, when you're
+deploying the model, testing will be done. So if the
+validation is not good, do you prefer to get into testing?
+No,
+perfect. So before getting into stakeholders, we can take a
+decision that is a validation. So this validation doesn't
+happen in classical machine learning, but when you are
+implementing real time deep learning, this validation will
+happens. Clear,
+understood,
+yes. Let us take the questions now, see a lot of questions in
+chat box first, let me take from the chat is a
+model created from training data is not validation and test
+logically mean the same? Yes, it is the different stage. That's
+it good. These tests are fixed in data classification stage.
+Why can't we take a new data sets for the validation stage
+after testing completed. Pawan, that is again, different thing.
+It is real time testing you are doing after the training of the
+model validation comes before real testing. So, okay.
+Arith, he said, No, no, what is known. Get it
+while you are asking the questions I was answering, sir,
+randomly. Okay, randomly. Okay, you need testing? Okay, good,
+yeah. Arnab, let us take the question. Arnab, what is the
+question? Arnab, yes, sir, sir. Very basic one. I didn't quite
+understand what validation exactly is and how it differs
+from Hasting actual testing. I mean training and.
+Testing, you understand, but how validation and testing, there
+are two different things. As I give you know, Arnav, when your
+chef is making a particular dish, when while preparing the
+dish itself, you are tasting it before putting in front of the
+tester, right? So that is a validation. We call it. Once you
+are done, then you are giving to the real time testing. So what
+happens is, generally, when you are productionizing the model,
+it is very expensive. Then we'll do at the time of, you know, the
+training itself. We do the validation part clear. So that
+is where we are using. What do you call?
+What is that? We call it as a validation samples. We call it
+clear. So for example, if you want to take an example we can
+for this validation. Actually, we are going to use one of the
+library known as a K fold. We call it, what is the library?
+Name? K fold library? So somebody asked me to show me,
+technically how things will happen. Somebody in coding, can
+you please explain the last part? Okay, so random state
+number should be the same in both validation and testing,
+right? Yeah, it can be anything, not must be same kind of smoke
+test. Yes, exactly. Validation is early feedback. The model is
+working or not perfect. That is Santosh, okay, so because most
+of the machine learning models are very expensive, we'll do
+that. Okay, so let me okay. I'll do one thing before that,
+C, 25
+session two. Let me share this notebook with you. So if you
+explain the last part, validation score is one I didn't
+understand. What is that
+validation score didn't understand? Okay?
+It is similar to the test score, right? So here
+I kept X validation, y validation aside, right? So here
+we have x validation and y validation in the training part.
+So after training, I'm giving this part to test the model, and
+it gave me score 100% accurate. And in the first train test
+split. This is a test split, right? So the test split also
+I'm passing I'm getting same answer. That means my model is
+good to go. Okay, yeah. So for this implementation, I'll give
+you one example of K fold. If you Okay, shall I write the code
+for k4 you want to
+see? So before the one question. So for this example, the testing
+and training, the process is same, but you are saying the
+stage at which we do this process
+gives a different name, like before deploying the model. If
+you are doing this kind of a test that we call as a
+validation, perfect, you bought it. Revati, everybody, okay,
+clearly, go ahead, yeah, good, yeah, like, Yeah, after the
+deployment, you are saying it is a testing, testing before
+deployment, okay,
+yeah, before deployment, let's say I am the stakeholder. Okay,
+you are before coming to me. I have a test data with me. Okay,
+so before you are coming to me, you have a test data from your
+training only you are splitting you did validation, and then you
+are coming to me, I'm going to give some test data. So before
+getting into the deployment stage, you are doing the testing
+that is written as a validation test. After deployment. You are
+testing the data that is a testing, normal testing. Okay,
+good.
+So this analogy could be similar to unit testing, QA and
+user acceptance testing, something like that, right?
+Something like that. Hypothetical testing and unit
+testing, AB testing, we call it, right. So before getting into
+the model, that is validation test we have performed. Yeah,
+correct.
+I correct
+locally when we are testing. That is a validation when we
+develop and locally testing, then code commit and create the
+buildup of the testing team. Deployment is a testing separate
+the validation is the local, local do ourself and testing
+done. The buying a separate team, production team, like
+that, QA team, or somebody, yeah, good, correct. So
+validation, we assume, like something like that, we have
+both the feature and the target known to us during validation,
+and when we are doing the testing, it's unknown data. So,
+I mean, we know the feature, not the target, or we know the
+target, not the features, or something like this,
+yeah, like that. Also, you can put it Aditi here,
+but when we do real time implementation in the deep
+learning, when we discuss no at that time, you'll get more idea,
+okay, implementation, generally. Just understand that validation
+split is a kind of split to test the model before getting into
+deployment. That's it. Okay,
+go madish. What's the question? Yeah, so you are, like,
+mentioning the word, like, costly, it will be cost. So can
+you just help us to understand what exactly you mean by the
+cost? We also hear that China has developed a model which is
+less cost compared to us. So what exactly cost in the sense
+it is a hardware or, like, how exactly hardware and.
+Out class go matesh, apart from that, the embedding cost also,
+okay. So for example, when you're sending some data, it is
+taking the data as a some numerical values and the length
+also it will be considered. Whereas the Chinese models, they
+are giving in less less expensive. Whereas in Claude
+anthropic model, they are charging a lot. And the cost
+effective in the sense, when you are deploying them, writing
+them. See, we are using collab notebook, free of cost. But when
+you change the run time, for example, here, to make the when
+we have bigger models, big data, we need to get into GPU. We need
+to take the TPU, which is costly per hour, they will charge you
+around $2 $3 something like that. So if you are
+unnecessarily, you are training the model, you know, then
+definitely it will be cost effective. That's what we are
+discussing here. Cost of the models, okay,
+yeah, you
+can go, sir, a little bit step function every model need to
+split 80 80% training data and 20% is testing. Need to
+mandatory for every model. Not mandatory. 20. If you have
+bigger data or small amount of data, you can change that. 60,
+6040 also maximum. 6040, you can get into 7525 like that. How
+much you want. You can split it clear. Okay, thank you. There is
+no thumb rule, just with practice only and see the
+accuracy if you can change it well and good.
+That's it better, sir. 60, 6040,
+is the last one you cannot get into 5050, thank you. Yeah.
+Chaitanya,
+hey. So when we are when we are training and validating both,
+shouldn't the validation have some feedback system so that
+what is the expected output from the validation, we should be
+validating it right?
+If both the training validation is like feedback. Only suppose,
+in the validation, if you are getting 60% accuracy, will not
+go with the real testing will stop here, only we'll try to
+retune the algorithm. Okay? So I
+understood, you're
+not audible,
+the validation. Validation is where the training and valid
+difference is. What I'm trying to
+understand. We train it with some data. We are also
+validating with the
+part of training data. Okay, let me put it in this way. Just
+okay, very simple.
+Let us say I have
+this is the training data. Okay.
+More question is regarding to the technical syntax or code
+writing perspective, yeah, just give me a moment. After
+explaining, you will say, have you I understood? Okay, give me
+a moment. Okay, now, what I'm doing now, I'm splitting into
+some parts,
+12345,
+okay, so when I say this is a validation
+which part I'm using is the validation? Fifth part Correct?
+Okay. Now everybody, just listen to me carefully. Now what I'm
+doing, I'm not going into this stage now here only what we do
+is, first of all, we have algorithms. They will take the
+validation. You have to mention what is the part of the
+validation in the training algorithm itself. You no need to
+split in algorithm. You have to mention, like linear regression,
+you are mentioning, there is a parameter to mention how much
+validation. So when you write linear regression there, you
+have to say, what is a part of validation? When I say 0.2 it
+will divide according to that two. Okay, now it will train
+here and then compare with this. Will get an accuracy. So, for
+example, we got an accuracy one, first, say 60 percentage. Now it
+will take, it will take, leave this one. It will consider 1234,
+parts. It will train whatever the leftover is there again, it
+will validate with this data, you will get an accuracy. Two,
+for example, I got 75 now it will left this one. Okay. Now it
+will use the remaining parts. For example, part this one, this
+one, this one, and train the model and validate. And this is
+known as accuracy three. Now it will leave this now it will take
+this part and the remaining parts, it will consider and test
+over this accuracy four, I got something 6070,
+after that model will give you the what is the average
+accuracy? Okay, so average accuracy, I got something like
+80 percentage average. When I get average accuracy, 80
+percentage while training the data itself, then I will go with
+the production if I'm getting so for example, I got a 40
+percentage average. That means I need to change my algorithm.
+This algorithm is not good to go in the production. This is where
+validation state is required in real time, so that to be in not
+classical machine learning. We use this in deep learning. Okay,
+so don't worry about the validation, how it is working.
+When we discuss in real time deep learning, you will
+understand.
+Okay, just understand what is the split means. So today's
+class, you need to understand. What do you mean by validation?
+Validation from where we get validation we get from the
+training data that you need to understand, if that is in
+understood, today's class is done for you. Clear,
+thanks a lot. Yeah, everybody. Clear. Now.
+So but take away must be something like from where
+validation is coming, coming in. So validation is part of the
+training data that you need to understand. That's it. If you
+understand that that is enough, and what are the complication of
+using and all those things when, unless, until we do real
+implementation, we cannot understand, right? So when we
+get into deep learning topic at the time, you know validation,
+how things will happen. But up to classical machine learning
+unit one and two, we don't use validation. We use training and
+testing only. Clear,
+sir,
+I have a question regarding the training and testing itself. I
+understand from the traditional point of view, that is going to
+be different set of users that will be performing the training
+and testing, but from a perspective of AI and making up
+learning algorithms training versus testing, how are they
+different? Like, what is like? Because both of them measure the
+accuracy and go back and you know, 80% accuracy in training,
+95% accuracy with testing data. It's just unseen data. That's
+the difference that I understand between training and testing,
+but from an implementation perspective, like I'm trying to
+understand what's the difference between training and testing in
+ML? No, you mean to say training and validation or training and
+testing? No, I'm not. I'm not. I understand the validation part
+of it, which is similar to testing, and you're doing it as
+part of training, but I'm asking the basic question. I'm sorry.
+I'm asking that question because I'm trying to understand it in
+machine learning, what's the difference between training and
+testing? Like, what's the conceptual difference between
+training and testing? Because from a model perspective, from
+implementation perspective, you're just giving input and
+you're getting output and measuring the accuracy of it in
+both did
+I measure any accuracy here? You don't need to worry about the
+accuracy actually, or whatever that is that you're trying to
+ultimately decide whether training model is failing or
+testing data is failing, etc, whatever. You decide what, what
+exactly, from an implementation perspective, is the difference
+between training and testing.
+Okay, for example, I have given a set of questions for you. You
+are reading all the set of questions. How do I check you
+did you know whatever the questions I have given to you,
+you read it properly. You understood. How can I judge you?
+I need to take a test of you correct.
+So that test is what something I'm not going to give from these
+questions. I'm going to give something which is not seen in
+that questions. So when you are answering this, that means I can
+understand that you are under answering whatever the questions
+you are answering in the test. That means you understood all
+the topics very well if you answer any one of the question,
+and if you're left with another question, I can understand that
+you didn't get the complete clarity of the topics. You are
+able to answer only one. So that means this is not the correct
+model. Model still needs a training to train understand the
+patterns as a human being, whatever you are doing, the same
+thing machine learning, things will happen in that way. So
+training is something we are giving a data and making the
+model to understand the pattern. Testing is the one thing which
+are testing whether the model is understood the patterns,
+whatever the given properly or not. If it understood the model
+work patterns properly, then we'll go with the production.
+Otherwise, we'll retrain the model with some more samples, or
+changing the algorithms and all those things. Is that clear?
+Yes, conceptually perfect. I understand in terms of
+implementation, is what my question is. Implementation
+comes in chapter number two. Mayuri, okay, okay, that's fine.
+Then I'll reiterate my question. Then, yeah, okay, so this
+chapter one totally, actually, I am writing the code part. You
+are supposed to just understand the terminology, what is the
+training, what is testing, what is validation? But to make you
+understand writing this code part, okay, so which will give
+you some more idea, but this implementation, all those things
+going on. Chapter number two, you will be having all those
+things, okay, okay, sounds good. So first chapter is only to make
+you understand the terminology. If you are good to be good, to
+go with the terminology. We can jump into the next unit. When we
+are doing there at the time, you'll see real implementation
+and all those things clear. Yeah, nothing to worry. Just
+understand the terminology. Okay. Last two questions, let us
+come up. Prabhakar, just go with your question.
+Okay. Raghu, you can come up with a what is the Score? Score
+means? Score one means it's 100% correct model. Yeah.
+100% is one, if you are getting 0.9 that means 90% 0.8 means 80%
+0.8585 means 85% like that. Okay. Thank you. Yeah, Raghu,
+what is the question? So the the data used for training and
+testing is different. We collaborate before.
+Is that correct understanding? Thanks, Raghu, we keep the data,
+some of the aside to test the model. Yep. J pal,
+sir, you return this code, right? How do you return so to
+write ourself, so we have to import this particular library
+on you. No need to write the code now, okay, just to
+understand the topic I'm making, I said you need to onwards. You
+will have a habit of writing the codes. This code, technically to
+explain you people how things are happening. I'm explaining,
+if you understand that's enough, don't worry about the code. As I
+said, no coding is needed. Okay, I'll guide you, like how to use
+all those things. Don't worry. But yeah,
+one more question, the train, train, you said, right?
+Actually, I'm confused that the input data which provided in in
+that only we are taking some part as a validation, right?
+Yes, exactly. So for example, here you gave this train data is
+012345678,
+right? So this is my train data, right? So this is actual data
+from that 20% I'm eliminating and taking up to six as a train
+data. Now again, I'm taking the train data, 126, and splitting
+into two parts as a five in one, another one validation, that's
+it. Okay. So validation means so if we do where the 80% of data
+validation, we have to get that
+accurate value right, exactly.
+Okay, yeah. Prabhaka,
+yeah.
+My, my question is, you mentioned that 80%
+average score is, is better to go ahead for testing, right?
+You know, in validation, in case, if you get a 80% score,
+yeah, accuracy, then, then you can go for you can go for this.
+You can go with the model, right? Yeah. So does it? Does
+it? Does it not mean that there is a probability of 20% going
+wrong, even in the test models? Test also, yes. Prabhakar, so no
+artificial model is 100% accurate. Provider, okay, so
+false positives will be there, but 80% is a good one will
+accept. Industry will accept, okay, but later on, also as a
+fine tool, you'll get it even see in the beginning of the
+chat, a bit lot of mistakes. Right now you can do a lot of
+things. So that is what a model will go on, learning, continuous
+learning. Okay, okay, right. Thank you. Yeah. Netaji
+aimunu, you mentioned 20 80% standing data. You can mention
+test size, 0.25
+Yeah, 80% 0.81 you know, that's right
+here. I said 0.2 80% train data out of 80% again, I took 25% as
+a training, sorry, validation, remaining 75 as a training.
+Here. What is there? Okay, okay, got it, yeah. Tarun ready.
+So my question is related to validation. So since validation
+data is a subset of training data, so validation data is
+having both what is the input and what is expected output, but
+when we validate so we are not feeding output into the model,
+right?
+We don't feed output into the model. How to understand the
+pattern
+the room, but if we are feeding output into the model, but what
+is it we are validating it?
+Boss, what you are testing? Tell me what you are testing.
+Same testing, only before you know, after your testing, before
+training itself you are testing. That's it.
+So here we have a training,
+and then we have a testing
+so training data, for example, 01134,
+say, two, five. Testing data is something like a, three, for
+example, 749,
+now in this training data, I'm splitting one part. We call this
+as a validation. So in the training we are giving this 01,
+as a input, one, three as a output, correct. So then we got
+the model. Then using this, we validate it. So the validation
+is good, we'll go with the testing part. So.
+What is the problem?
+Clear,
+okay, yeah,
+yeah, okay, what's your question,
+sir, during this training, if my validation score is high, and
+maybe not one probably high, but when I actually do the testing,
+if my score is less, what do I do? Then
+we'll reject the model.
+But the validation has already told me that my validation, the
+score is high. Question is Chakrapani, your question is,
+what do I do? We reject the model.
+Why? Because even it is not performing an unseen data. So
+what that is what we needed, right? So those cases are very
+less. And one more thing, that's what I'm saying, boss,
+everybody, stick to the box here I am trying to explain you, what
+is training, what is testing, what is validation? Split only
+you people are jumping ahead. Then you are asking, like, you
+know, if validation comes in, and all those things, those
+things will come in the coming sessions, if today's session
+only, if we discuss all the complexity of the algorithms,
+what do we discuss in coming sessions? Correct or not? So
+first of all, the path is try to understand the terminology. So
+in this session, you no need to worry about, like, you know, if
+the training fails, what happens? Testing fails, what
+happens, validation fails, what happens? Don't keep all those
+things in your mind. Now, we are in a stage of we didn't
+implement it. Anything till now, any we didn't implement it. So
+what we are trying to see is how model pipeline goes in. What is
+mean by training those terminology try to understand.
+So first, starting from today's session. What is the use case?
+Generally, what we do in your terminology? Tell me now you
+take raw data, okay, you say, pre process the data, then
+convert them into features, select some of the features,
+using that feature, build the model, then deploy the model.
+This pipeline, everybody knows, right? So, collect raw data, pre
+process the data. Can I convert them into a column, format,
+select some of the good features, then build the model,
+then deploy this stage. You understood correct this flow.
+You need to understand second thing we came across like, for
+example, what are the issues that practical issues we can
+face? Maybe we not. We did not collect it properly the data.
+This is also an issue. We didn't do the proper processing. This
+can be issue. We didn't select it proper features. This can be
+issue, or we didn't selected a proper model. This can be issue,
+okay, these are the practical issues now coming to the model
+before deploying. Do we have any kind of split? Is there? So
+there it comes. We said that generally we split the data into
+two parts. That is train and test. This is done in classical
+machine learning. Okay. So what is the training purpose? You are
+giving the model some input as an output. Okay. Then you are
+making the model understand the pattern, whatever the pattern,
+okay. Once it is done, we do the testing. And if you say that,
+okay, the answers are getting good. We go for the production.
+There is another strategy also, what is that another strategy?
+There is another strategy that, apart from splitting into train
+and test, we can split the training data into two parts.
+That is a validation. We call it. So what do you mean by that?
+After training each part validated, maybe say, I'm
+validating four or five times, and I'm getting an average
+score, and then I can go with the proceeding. Don't worry
+about the scoring and all those things. Now today's session, you
+are not worried about that implementation. You need to
+understand what is this. Split is three way split. Three way
+split is training only. We are splitting into two part as a
+validation before getting into testing, we are validating our
+model. That is what you need to understand. This is if you
+understood that means well and good in coming sessions, in real
+implementation, at that time, we have a question that, okay, I
+trained the model, I got this accuracy, but in testing, I'm
+getting this accuracy. That means it's over fitting or under
+fitting, and best fitting, those things, step by step, will come
+in. So today's session, the terminology, if you understood
+that, is enough. I hope you understand the terminology. Now.
+What is the validation from? Where we get the validation? We
+get the validation from the testing data, from
+training data, training data, training data, very good. How
+many ways we can split the data two ways one is train test one
+plot second is three ways. That is train validation and test t3.
+These two things you understood. Two,
+yes. Now coming to implementation, don't worry.
+Implementation is in the second chapter. When we discuss
+implementation, shall I stick Why do you the validation will
+be done? Okay, I can write an algorithm, deep learning
+algorithm.
+With the validation. If you see, you'll understand. But when I
+write the code, you will get have a, okay, this much of code
+I need to write, so that's, that's the reason I'm just
+stopping.
+Okay, coming sessions, I'll explain in detail with the code
+part also, and professors, everybody will get into deeper
+in those sessions. Okay, don't worry. So just try to understand
+in the first unit all the terminologies. So any
+terminology is missing, you can say, Happy. What do you mean by
+this terminology? What it is understanding those things you
+have to understood now as a data ml problem, or ml scientist, if
+I say, you take a problem statement and put into the
+implementation, what you will do, you will collect raw data,
+pre process the data, you select the features and then put into
+the model and deploy. This is what the pipeline. But in
+between that, again, in real time, lot of pipelines. We need
+to change continuous data is there, streaming data is there.
+Then you need to write a GitHub action so automatically training
+can happen. We need, we need to look into the data drifting and
+all those things. Okay, but we are not in that stage now. We
+are into the stage where we are understanding the basic
+terminology in unit one. Hope it is clear now, sir, can I add
+something if you don't mind? Yeah, please go ahead. Yeah. So
+everyone has been working on applications development,
+all of us developing applications.
+Use the reactions. Don't need to write essays in the things,
+application development, application testing, we do that
+right?
+So here also it is the same thing. You do a development, you
+do a unit testing, which is validation, you do the overall
+testing or UAT testing. You get 100 records. You split it up.
+That's all Sony syntax.
+Okay, that's what you are trying to do. That's all from my side,
+sir. Okay, thank you, Suresh, okay, Mahesh, what's the
+question? Mahesh,
+yeah, I'm pretty sure you're good to say this will be covered
+in future sessions that last candidate. If we have a scenario
+where you don't have enough training data to make the real
+life scenario, how do you make sure that your model is actually
+delivering the result you want to deliver it? Okay for that,
+there is a package known as AIML imbalance data learning is there
+algorithm we use that, and then we do the balancing. We do it.
+Augmentation also we do it. NLP, is there some of the packages we
+use it to get the data, then we'll decide, shall we go with
+the production or not? So a lot of stages are there? Mahesh, so
+when you have less data, how do we handle if you have imbalance
+data, how do we handle those things are discussed one by one.
+Okay.
+Okay, great. So before getting going for a break, I want to
+just make sure that if you want to build any machine learning
+model, first of all, you need to have a clear use case. This is
+what you have to second thing you need to understand, like,
+from where should we collect the data? That is the second thing.
+Third thing is you need to select the good model. Okay,
+that is the third thing. Now, in real time, what happens? First
+of all, we collect the raw data, then we are going to pre process
+the data, and then we are going to do the feature engineering,
+then we are selecting one of the model and then we are doing the
+deployment. This is two parts we discussed. Okay. Now, if some
+issues happening, model is not doing good. For example, we have
+considered the cat and dog example. If the model is not
+identifying whether it is a cat or dog, what should we do? Maybe
+we need to revert back the features we didn't select it
+properly, or the data which collected did not do proper pre
+processing. Or we need to, you know, collect the proper data
+quality, or something like that. So that we need to consider that
+is the basic understanding of the model, how model works. Next
+thing, we understood that how the training happens. So
+training can happen, split the data in two parts. First, that
+is a training and testing. So train the model using a training
+data and then check against the testing. Another part also is
+happening. Generally we don't use in classical machine
+learning. That's what I'm saying. What we do, the training
+can be split into validation. Then after that, it will be
+implemented in the testing. It is something like before getting
+into the testing, real time testing, we are validating
+ourself whether the model is good to go or not. So this is
+you need to understand. If this terminology is clear, that means
+the first session is understood by you. That's it. The
+terminology you need to understand. Is it clear?
+Everyone? Yes, sir,
+great.
+Stick to that. My humble request is see, anytime you need a real
+implementation around all those things, after the sessions,
+also, I'm available sometime, I can give you the time.
+You can discuss those real problems, but first of all, in
+the first sessions, one or two sessions, let us understand the
+terminology. First, what is going to happen if this is not
+happening? Our testing is not good training. If you wind up
+those questions, what happens is, your mind doesn't allow you
+to remember these terminology. So first of all, our base must
+be very strong. Then all the implementation coming up, you
+have up to capstone project, real time examples and all the
+real problems. How do we solve? We'll discuss each and every
+point. Okay, so if you ask anybody from the COVID 24 who is
+doing, and even, as I said, No, they are doing around five
+people are reporting me in, you know, as a for PhD holders. And
+they are already 10, like two, three decades of experience.
+They have an industry. And they're coming to me like, you
+know, coming up with a problem statement, doing their PhDs. So
+I'm guiding them, because every time you will get different
+problems. So as a research holders, you need to handle that
+problem according to that situation. So in a baby step
+only, if you are jumping your mind will be blast. Okay, so
+don't get into that stage first. Try to understand basic
+terminology step by step. So when we get into the next
+session, you will understand more about, you know,
+implementation code, part everything step by step, clear.
+So let us stick into that. Okay, I will take a break. Now it is
+1050 so we'll be back by same similar, 1120 Okay, so now I am
+here for 10 more minutes in the break. Any questions you have,
+you can ask. And people who don't have a questions, they can
+have a break and have your coffee and come back. Okay, 10
+minutes is yours now. Any questions, so what time are we
+back, sir, seven o'clock. 1120 Okay, 1120 will be back. Okay,
+so let me write down here, 1120,
+Okay, any questions, Basic to Advance anything now you are we
+can, can I can explain step one, step two, sir, okay,
+you can coding collapse program. Step one, step two,
+this one, this one, okay, so actually, actually, this is
+need, not needed. But let me explain you. This is to import
+the packages this part, okay, whatever the required things we
+are importing. Now in NumPy, we define, right? So how do you
+define the numbers? All those things we are doing in NumPy
+numerical Python, we are trying to do it.
+Then we are trying to define what is x and y. So for example,
+x is 012345678,
+why some numbers were defining then we are splitting the data
+into two parts, training and testing. So instead of giving a
+name at train, I said x term and y time. So this is how much
+percentage I'm taking, 80 percentage. Now I use this 80%
+of the data again, split into two parts, 75 and 25
+okay, that is I'm giving it as a validation. So when I'm
+training, I will train this data, okay, when I'm validating,
+I'll use this to validate my model. When I test, I use this
+to test, to test the model. That is what's happening in the
+board. Okay, okay, yeah. Next. Raghavendra, go ahead.
+So when, when we are trying to so which step exactly is
+validating it.
+Now,
+is
+it like fit or score? Which step is exactly trying to give the
+data and verified model score at this see, first of all here in
+the fit X train, y train is taken Correct. Yeah. Extreme
+white train is part of training. Only X temp is a training. Think
+like that. Okay, now I took the extreme 60% 75% of the data in
+the training. 75% on the training I'm taking, I'm
+training the model, so remaining 25% where it is here. It is
+right. It is validation, correct? Yes, validation,
+validation. So I'm giving this x validation by validation to the
+model, and I'm finding the score I got, how much 100% accurate
+next, I already test sample I kept aside, right? I'm passing
+those things and finding the score which is giving 100% that
+means model is whatever it's performing in the validation,
+performing same in the testing. So good to go with the
+production. Okay, so when we call model dot score, then only
+it is giving the value and validating or testing it, right?
+Yes, yes. After sweet only we have to call the model. And one
+other question, like, if we train a model with 70% of the
+data, let's say tomorrow I got another 20% of the data. Same
+thing. Everything is same. So again, I have to combine and
+give the full data every time. Or I can feed incremented data
+to train it. No, the part of the data you can give that is we
+call it as a in a neural network, we call it as a last
+layer. In the last layer, you give that data automatically, it
+will be retrained so it will have its learning from its
+previous train today, exactly, exactly that is. You need to
+build a model as a continuous learning we call it okay, and it
+will not learn from the test data because we are giving test
+question. No. It.
+It is a classical machine learning algorithms, they don't
+learn, but if it is a generative AI model, it will learn from
+test data. Also, that is what we call chain of thoughts. We call
+it right to fine tune the model prompting, also from prompting
+also will learn. But generative models, but classical machine
+learning model, they don't learn, they validate only You're
+welcome. Jaipal,
+yeah, sorry, here you said train, right, training. I am
+confused here. Like, like, for example, if gave 1234567,
+when we do validation on training set, so when we do the
+training right, we have to get the validation output right,
+finally. So for example, if 128, is there my data? 1234567878,
+I have taken as a validation. So remaining six, if I do summation
+or any thing, I have to get the validation as seven or eight,
+right. Yeah. No, is that my understanding correct? Or if you
+are predicting the answer, you have to do, I'm not doing
+prediction here, Jaipal, I'm direct, validating,
+okay, so already prediction is done. I'm validating, okay. So
+if you want to predict, you can say modal, dot, predict. For
+example, x underscore, validation. So then you are
+going to get,
+sorry, predict.
+So 11, one, we got it right. This prediction from x
+validation. Suppose if you want to get X test, you can validate
+and check the output is correct or not.
+Okay, okay,
+I'm confused here training actually, so you gave example at
+one to some actual data. So don't worry about one, two or
+anything. Okay, see, for example, 01231357,
+this is input. This is output, right? Okay, you train the data.
+Okay, you got the model or not? Yes, okay, you got the model.
+Now I have two sets, validation set and the test set. Validation
+set is 495,
+11, 613,
+715,
+now I will give this validation data to this one
+to which one model, model will take four and five. Model will
+give which answers nine and 11. So this nine and 11, and this
+911
+matching or not four matching or not matching, but four five way
+from where you got this validation data, validation
+data, I split, right? Splitting.
+But here I see only 01231357,
+it's a train. Data, right?
+Boss. Total data is 01234567,
+this is total data, okay, 20, 579, 11, 1517, is the data I'm
+taking up to this as a training, this as a validation, this as a
+testing, okay, okay, understood, Yeah, yeah.
+This is the formulation of 120110123175135,
+7m, n, remaining, which is expectation validation. So this
+is the process, how, how it's happening. Function, 1357, year,
+we are validating to 20% here, validating 60% the same
+functionality, exactly.
+Okay. Yeah, got it. Okay,
+so please take this cross talks offline, sir. Doctor, yeah,
+please
+go ahead my question, sir, in the beginning part of the
+lecture, you mentioned the various steps of the ai ai
+model. Now I asked the question, sir, where does this keywords,
+which I have been listening during my own self study,
+prescriptive statistics, descriptive statistics and
+inferential statistics. Where does terms fit in that flow? Or
+if they don't fit whichever they
+said number two or three, sir.
+Did I say descriptive statistics or something? No, no, no. You
+did not say sir. You said you said you can ask any questions.
+So that's why, okay, okay, actually, this is statistical
+methodology are using, but the implementation comes in. Some
+algorithms, they use descriptive statistics. Some algorithms use
+the different techniques, okay, so when you discuss the
+algorithms, you will came across like, you know, what is a
+descriptive statistics, what you are trying to do, and how do you
+analyze the data? Okay, so, but here, those things will not come
+into ml pipeline that comes into algorithms itself building,
+okay, so they're not part of any of these seven steps. No, no,
+they're not part of any steps. Seven Steps. Yeah.
+Okay, okay, right.
+Come
+again.
+Aditi, let's go over to the code, sir, the piece of code
+that you wrote, sir.
+Okay,
+so Yes, sir. Why did we do this? Reshape things, sir. Can you
+just go up, sir?
+Reshape things where we discuss about data frames. We'll discuss
+Aditi, not now.
+Thanks, sir. Answer this random state, Sir, here, Sir, let's
+say, am I
+the way you are showing success if I have taken some percentages
+that you know as my training data, some is validation data.
+So this random 42 will it like, basically, until I have those
+combinations, then will keep doing like, 42 times, some
+juggling, and then give me one, they say, or of. So let's say
+total five sets. If I got three training set and three valuation
+set, or, in this case, test set. So so it will keep like until
+all five times it has covered. It will give me many sets of
+commission of test and training and test data, sir, many
+multiple sets of test and training data, juggling it will
+do. Only for one once it will do, Sir, only one time it will
+do juggling.
+Okay, yeah. Pavani, yeah.
+One last question, sir, sir. You showed the out of these all
+steps that you were discussing today. This data cleaning will
+be done by data engineering, understand, sir. So feature to
+Anna to come to derive the features from the entire data
+set. So will it? Will that be role of the feature engineer,
+sir? Feature
+engineers is ml oxygen here only. Will ml engineer only?
+Will do that separately. We don't have any feature engineer
+role. And so the model answer, if the model is incorrect. Now,
+let's say, basically it's a to derive the model. Also it's,
+again, the AIML engineer only, right? Sir, exactly. Yes. Okay,
+thanks, yeah. Pavani, yeah. This is not regarding today's class,
+actually. I mean, trying to understand how we can identify
+the use case. So when in the industry, when the people ask
+for see how we can identify the use case, where we can implement
+this, AI, because there is a lot of buzzes happening, right? So
+in this case, how we can identify a scenario to know
+that, okay, this is where we can write it, put the AIML
+algorithms or something. We can start putting this technology
+into the landscape.
+Yeah. Pavin Bhavani is a very good question. Once you will
+complete unit two, like, you know, the feature engineering.
+Then in Unit Three, apart from the IIT professors, I have an
+session technical implementation. At that time,
+I'll give you how to take a real use cases, whether it is an AIML
+or not, and all those things will be discussed. Okay, so this
+is the first class we cannot put all those things you know, you
+don't understand clearly. So first of all, you need to
+understand how flow will happens. Once you write a simple
+algorithm, then you will understand the logic. Okay, this
+is the way we are doing. So now, can I relate this with any
+realistic problem? Okay, that way. So just little bit
+questions you need to definitely will discuss those things. Okay,
+yeah. Thank you, Ramesh. What is the question? Ramesh, you
+okay,
+we are
+spending more than 60% of the class in Q and A right, and we
+are 220
+so this how the program is designed. Or is it something
+going with Ramesh. Ramesh. See, Ramesh. We are taking 60% 80%
+end of the day, whatever the topics we have, we are covering
+all the topics. Don't worry, okay? And these things will
+happen only in every cohort, one or two classes. Because one
+thing is, like, you have a very curious to jump in the sessions.
+You have an anxiety, you know, curiosity to ask these
+questions, and comes comes in. Meanwhile, this lineup in one or
+two sessions will be done. Everything will be curated.
+Don't worry. And another thing, due to these questions, if I'm
+stopping any syllables and we are skipping that is a problem.
+We don't skip that. We know that how much questions we need to
+take, and in time we are able to complete that or not. So
+yesterday's session also completed, the complete slides,
+whatever we discussed, all the topics also covered, and today's
+sessions also before the break I took it. All the topics are
+covered. That is the reason I just stopped. You know, even I
+need to take a break, have a coffee, but I'm sitting here
+because I know the cohort strength is more and some people
+still, they have a basic question need to be answered.
+Okay, Ramesh, don't worry. Yeah, I don't have any problem, sir,
+you are giving your 100% but the problem, you see, is from the
+strength. So I don't have that. Don't worry,
+we have a cohort of 270 people also, Iit Hyderabad, we have so
+don't worry, it is completely covered, and 100% will be given
+to you. Don't worry. Okay, it's on us. Just little bit only for
+these two sessions, we'll feel that the simple questions will
+come in, right? We have to just cooperate with the people.
+That's it. And that too, also not. I'm taking some extra time,
+right? Even this time, the break time I'm mostly I'm answering so
+and another thing, sometimes, Ramesh, it is a good learning,
+because sometimes this.
+Questions. When you are getting into interviews, you know, those
+things will be, you know, you'll feel that, okay, at the time
+somebody asked me this question, somebody is asking you that kind
+of profit also will get it. So two things are there, so we'll
+do that. Don't worry. Ramesh, okay, yeah, sure, sure. Maybe
+one session, sir, maybe we need to set some strict timelines for
+the Q and A, because you are explaining some good topics,
+right? Suddenly it was cut off. Yeah,
+totally understand. Yeah. We need to practice strictly,
+definitely, so we'll do that every 45 years, like you know
+the previous one, as you suggested we did it. Let us do
+it same way. Okay, agree, totally you need to impose that.
+Thank you. Sure, sure. Thank you. Yeah. Mayuri, you
+Hi, sir. Sorry.
+So mine's not pertaining to, I guess this is going to wear off
+a topic a little bit. But since it's since we can ask
+so in terms of feature, feature selection, or any part of
+modification once it's deployed, we are unable to change which is
+going to be very expensive. But how do you scale up to future
+probability? Because they could potentially become obsolete as
+time goes on, and also the when you decide on the features, etc,
+it depends on the scope of the project of or the model, or
+whatever you're trying to do at that point of time. And I'm
+trying to understand, from an industry perspective, how this
+is dealt because if industry doesn't accept
+changing of anything, but
+okay, I understood your question, yeah, as I mean to
+from industry, we do daily basis of these things, actually, we
+have some of the tools which will help us. Okay? We'll take
+the help of those tools. No need to revisit to the features
+before betting getting into that. So every stage there will
+be a code review, and the architect will be there. Is
+involving and is looking at the features. And the explainability
+will be there. They have to explain whether these two
+columns are doing or not. Then only it will go to the next
+step. Okay? So that is where they're stopping, clear. So we
+have a technical people in every stage involving so that
+experienced people will subject matter expert will be there, and
+some statistical methods will help us deciding the features
+before getting into production, so that we cannot revert back
+and do the same thing again. That is not acceptable. Okay,
+okay. That is industry standard. Yeah,
+done.
+Okay, so just give me a break. I'll have some coffee and we'll
+be back.
+Sir, please include the roles in the slide. Yeah, definitely.
+Aditi, 45 minutes till the smaller window. Maybe two
+question. Answers are enough. Okay? They had done, done.
+Agree. Chin for need to worry. Nobody is there to you know,
+there is no discussion is going on. So
+we are going to resume the class 1120, but I'm only here if
+anybody have a question, they can
+famous Irani Chai, sir and samosa.
+And my
+sip of tea, I see lot of questions. I said, okay, yeah, I
+just want to change the topic. We keep talking only
+so we really appreciate your patience, sir. I mean, it's
+very, I mean, rare to find patience as a qualities are in
+any wedding.
+No, I got that patience, you know, after teaching from around
+20 cohorts. So
+I am into, you know, when you are supervising PhD students,
+you have to be very patient. So,
+you know. And another thing, industry, working people,
+working as an architect. So a lot of things come in in.
+Machine learning is not that much easy, as you you know. Just
+said, a lot of things come in. Sometimes things will go worse.
+And so definitely, you need to have a patience. It's not like a
+full stack developer. So machine learning engineer, be patient.
+From the beginning, you have to be very patient. Don't expect
+the results to be 90% accurate. Okay, so, sir,
+I have a question. See, yesterday we discussed about
+right some specific roles related to data science,
+and so see
+if I talk about specific myself, I'm working as a program
+manager,
+and I want to write, of course, why I attended this course. I
+want to understand right, how AIML is going in the industry
+and how things are working. So not sure. And of course, none of
+the role is fit for me. So I want to understand right more of
+how right in such roles one can stratage for the data science
+for the organization or AI, and right how the techno management
+roles will work in the field of AI.
+And which topics I should concentrate more during our
+right
+this training and
+session. So for everyone, what I will do is, once you complete
+unit one, I'll give you half an hour of time to you know, give
+you the correct answers and adapt that. Okay, definitely
+I'll beat but I want to be clear, right? What I should
+concentrate more, what I should first in unit one, concentrate
+with each and every terminology. Then you need to. I'll tell you
+what you have to proceed and how to do that. Okay, it's on me.
+Don't worry. I'll take half an hour of time, as I'm promising.
+Sometimes, just ping me after when you start the unit to after
+the session. Sometime, we'll connect. If anybody's
+interested, they can connect, and they can see, okay, sure.
+Thank you. Yes. Welcome,
+sir. Just one small question, like, I know in the future there
+will be small projects which are coming up. So can we take up
+some data which we have? Like, I'm from a VSI background, so I
+work for the EDA, where I generate lot of data from the
+IPs that we develop here. So then one of the things, like,
+one of the one of the data is Liberty files, which are
+developed across multi process, voltage and corners. So I just
+wanted to analyze that, that. So Can that be kind of an input to
+this kind of projects. Yes, you can take it your own projects.
+Yes, okay,
+okay, let us stop the Q and A so somebody is, you know, who is
+saying, promote, saying, Never any questions on, going on,
+yeah, one or two sessions will be like that. Only because you
+are in the first cohort, right? So that you will feel but with
+the experience of 20 plus cohorts, I can see that, but
+definitely I'll make you understand and clear all the
+questions. Okay, don't worry. I'm here to help you and that
+okay, so shall we start now? 720
+Yes. Sir,
+everybody's in. Shall we go?
+Yes, doctor,
+okay. I think that is the last notebook. I think I just closed
+it.
+C, 25 session two. Okay. So
+okay, okay, so a lot of questions, like, you know, what
+are the tools? What is split and all those things.
+What I will do is,
+I'll give you
+a simple library. Okay, everybody's in now, shall I
+start everybody just being in chat? Yes,
+yes, yes. Okay. A lot of things are coming in in the world,
+like, you know, Google and Microsoft. These people are
+making a lot of things easy for us. Okay, I'll do one thing, the
+example which I gave you, like, you know, what do you call
+example of a cat and dog, right? There is a teachable let me
+teachable machine, dot
+with google.com, for example.
+Okay? Now suppose if you want to make a POC of any images or
+anything. How easy? I will show you. It's very easy. Okay, get
+started. Click, get started. For example, which project you're
+working on, use case? What is your use case? Tell me, given is
+a cat or a dog? Agree? Everyone yes in the chat, yes. Okay, take
+that. So what is the pixel size? Is saying 224, 224, color pixel
+images. Okay, done. Click this. Now you can upload the images.
+For example, you have a class one, what is the class one?
+Class One is the cat, Class Two is the dog, correct? So let us
+take one image, any cat or dog. Let us do one thing,
+cat image.
+I'll take this cat, save image as
+the desktop. Go ahead 25
+let me make it as a cat,
+and then the dog image.
+Okay,
+let us take this talk.
+Save images.
+It's a web file, okay, we need jpg. Save images.
+Okay, JPG file,
+talk for example.
+Okay.
+Now, here we can upload C 25
+and there is a cat image.
+Now, here we have
+dog image.
+Okay. Next, just click the button, train the model.
+It will take a moment and train the model.
+Okay, model train, teachable. Want to use my Okay, let us not
+use that. Okay. So now export the model. Click it. You will
+get complete code sample when you say, download. Okay,
+that's it. This is simple implementation of a model which
+can classify cats and dog. But instead of giving one images,
+what we can give set of images you can give or you can import
+from your Google Drive like that. So this is where you need
+to just understand that we are having some images uploading,
+and then we are training the data and we are exporting the
+model to use. You can locally, download, use with the
+JavaScript and upload the model. Or you can shareable link. You
+can say, this is the shareable link, okay. Then click, click,
+for example, this is your shareable link. Open this
+orders will come in. So there you can upload the model and do
+it done.
+We are putting the labels. Here.
+We are defining the label. This is called cat, or This is dog.
+Here you can change class one is the cat. Class Two is the dog.
+These are the labels automatically. If you want to
+change this, you can make it as a cat
+and make this as a dog. That's it.
+Okay, okay. One more thing, this is, like, you know, very simple
+to understand. Just okay. We are not going to use now, later
+onwards, if you want to fire something, if you want to try,
+you can use this teachable. We call it very easy to
+understanding the flows. And if you want another class, you can
+add another class also. Okay. So just if you want to try, you
+want to see in the basically, in the beginning of the sessions,
+you can do this pipeline we can build by our own. Once you
+finish your class, you know the course, you can do all those
+things by yourself. Okay. Now here, let me take you one
+example. So this is x and this is y, right? Now, there is a lot
+of question that how the train and test split happens, and is
+it possible to visualize and all those things, right? So
+the what do you call here? For example, I use some of the
+libraries to make you don't see like, you know, don't worry
+about these libraries. This coming session, they will
+discuss all those libraries. Okay, SNS is one of the
+visualization libraries, and then I say, import pandas as PD.
+Then I'll create a data frame is equal PD, dot
+data frame.
+Then
+let some x values. I'm constrained. X is equal to
+list of, for
+example, range 1000 for example. Okay, let us take 100 samples.
+This is x value. Then we can write a split. Is something
+I can say,
+train 60%
+I will take it as a training purpose, and then, plus, I'll
+take validation. Don't worry about the code, just have trying
+to, you know, just make you understand graphically. Don't
+worry about the code samples.
+Test, let us see how much is remaining left, lower 20
+percentage, right.
+Okay, then
+SNS dot,
+which plot we use, strip plot,
+okay, data is equal to DF,
+and then x is equal to x, then y is equals to
+split.
+Then palette. We can construct two different colors. Okay, I
+can take set two palette.
+Then let us mention this size is equal to 10 something.
+See, this is the training split. This is a validation split, and
+this is the testing split like this. We have a visualization
+tools, also another one, as I said, the training happening,
+right? So there is a tool known as, we call it as a yellow
+brick. We call it, okay,
+so pip install. How
+do you install latest libraries here? Just to write down a
+library. Don't worry about the code samples. Okay, don't think
+that okay. We are not studying all this code coming sessions
+will study. But I'm trying to explain you, just graphically,
+just show that how training happens. So as I said, the
+validation test, right? So from,
+sorry, so.
+From Hello brick, that model selection import, we call it as
+a learning curve. And from SK learn locality, linear
+regression, we got it right. So we can say visualization is
+equals to learning curve of linear regression.
+Maybe Okay, let us take this directly fit x and y. We have x
+and y, right? Capital X are small X, capital X, okay,
+capital X and Y. And then we can say, Sure,
+so you can see that, okay, every time how much accuracy is
+getting in every you know how many splitted it, it split
+around seven, right? So then every time it is giving the
+curve that it's sample. So the score, validation score, and the
+training score, whatever you're getting, both are same, so that
+means model is good to go. This is what we do in real time
+industry. By using some of the libraries. Will test them
+manually. We don't write the code, just we import them and do
+it. Okay? So these things you will discuss when you are coming
+into the unit two chapter. You know those things? Okay, so let
+us left up to this, like, what is just you need to understand
+the terminology those things. Hope it is clear. Okay, done.
+Let us jump into the next part of the session that is AIML
+avatars.
+Okay, so now I've given my best to just to make you understand
+graphically, but later on, what we'll discuss in the code part.
+Now we'll just have again, some of the things like, you know,
+we'll just roll over what is machine learning? And
+those things,
+basically, we started with machine learning terminology. We
+call it. Machine learning is a part of artificial intelligence,
+correct? One was the one of the subset of artificial
+intelligence. So what we are doing now, we are trying to take
+some of the algorithms, and then
+we are using some data to train those algorithms. When using the
+historical data, what do we call right? Then, once a model is
+built, we are using that model. This is what a simple machine
+learning is. Now, in machine learning, the generally, needs
+an intelligence, so, but how do you get this intelligence? How
+do you get the knowledge? Generally, as a person, what we
+do when you study something, a given book or something, you
+will gain the knowledge right. Similar way intelligence will be
+acquired through the data. So the data can be from anywhere.
+Similarly, how we get the knowledge? So today, you are
+getting the knowledge by me. Okay, that external teachers, we
+can say, for example, if you are reading a book, you are getting
+the knowledge from that. Similar way, machine learning also
+acquires the knowledge from data. So for machine learning,
+who is the source of the knowledge? Data is the source of
+the knowledge, As for us, another external teacher is the
+source of the knowledge, or some PDF books or the source of the
+knowledge, or some blocks are the source of knowledge for
+machine learning algorithm. Source of the knowledge is the
+data. Okay, now, nowadays it is, you know, most of the places we
+don't have a limitation that machine learning will be
+implemented into SO and SO industry. So we don't say that
+it cannot be implemented into financial industry. It cannot be
+implemented into edtech. It cannot be implemented cannot be
+implemented into, you know, e commerce or something like that.
+No in HR, everywhere. Now we can use the machine learning
+algorithms. So as the popularity gains now we have a lot of
+things coming in, into medical domains, as a human being, a
+rule based machine learning model, whatever the things it
+cannot do. Those things can be performed by using machine
+learning. The reason is, nowadays, we have exposed with
+lot of data available, and you can see very good success
+stories like, you know, generate a after coming into the market,
+you have seen lot of success stories correct, and just now,
+have given an example in medical miracle. That is an biggest
+achievement, that that binarian and malignant tumor is
+identified by using a small sample immediately, within a
+minute, even you know the precision of that, for example,
+the COVID, also when they are giving that, you know, chest X
+ray images, the machine learning model was able to identify
+within a second that this person is having, you know,
+COVID or not, that was another success story. So a lot of
+things like, you know, coming to the pneumonia, fluids and all
+those things nowadays, machine learning AI is implemented in
+that so, which is doing a lot of things. Now, you might have seen
+nowadays, even in the cancer patients, also when they're
+doing the chemotherapies, they are using AI so that AI
+intelligently identifying those cells and that direction, giving
+that okay, destroy these cells only. So a lot of achievements
+are coming in, and it is very popular. That is a reason people
+are learning machine learning, okay? So if we just pick little
+bit more in the previous like, you know when it is started, and
+something, as I said in 1959 only the author, Samuel.
+Is given the definition of machine learning. So he says
+that like any computer which have an ability without doing
+any programming, that is the definition of machine learning
+given by Samuel. Okay, so that means machine machine is
+behaving like a human being, how the human being learns from the
+previous examples. He it's also learning. So for each and every
+task, you don't need to do the programming and explain the
+machine that, okay, you know you need to do this, this something
+like that. Okay? Now, in 2012 as I said, No, up to after that,
+some decades, it was just there is no word of machine learning,
+or any AI or something. In 12, Kevin Murphy then say that,
+okay, as a human being is understanding the data. Why
+don't a machine understand the data? So he is the person came
+up with an idea, and he said that, okay, let us feed the data
+to the machine and let the machine understand the patterns
+automatically. Okay, so then that was the time it just
+started flourishing like anything, and then now it's
+completely captured the market. Okay, so Kevin Murphy
+definition, what is that? So according to Kevin Kevin Morphe
+definition, machine learning is something which understanding
+the patterns from given data. So we can say that it is gaining
+the knowledge through the given data, and after that, whenever
+an unseen data is given which is not the part of the training,
+machine learning model can give the answers. This is what the
+definition given by Kevin Murphy, then the top definition
+actually adapted mostly is the term visual definition. He says
+that algorithm which is improving day by day by doing
+some tasks with an experience. So we say that the performance,
+task and experience, this is what the definition given by
+Tom Michelle in 1997
+okay, then you know this picture, what it means. It means
+a lot for us a beginner to understand how machine learning
+works. So to make a machine learning to understand the
+pattern, we need to give a data here. What is the data? Now,
+data is not only input. It consists of input plus and
+output so that it can understand the pattern and do the machine
+learning. Can understand the pattern, then whatever it is
+understanding, it can keep, keep into your function so the
+uncovered data, when it is given, it can be predict, it can
+do some predictions on that right now, for example, what are
+the different kinds of problem statements we'll discuss to
+understand, to give you more knowledge? Okay, so first of
+all, the feature extraction is the very important part. So for
+example, somebody, one doctor, approaches you and he says that
+he's given ECG, I need to predict whether the person is
+prone to heart attack or not. So taking the ECG predicting
+whether the person is prone to heart attack or not, directly,
+we cannot do that, right? So first of all, we need to extract
+the features from the ECG electrocardiogram. Like, what do
+you mean by you know that curves? What is the way? Where
+is the lower curve? What is the upper curve? Where it is
+touching the blood pressure, higher, lower? So we need to
+understand all those features. Then we can build on that.
+Whether it may be a classification we can build or
+we can build any, for example, regression problems, whichever
+is, according to a problem statement, you can build that.
+So first part is, what feature extraction is the part? For
+example, when I say I am giving some of the fruits, whenever the
+fruit is given, you need to identify whether it is a banana
+or orange or, let us say it is apple. So generally, if I ask
+you, what are the features you consider? You can say that,
+okay, hobby. We can consider shape, one thing, and we can
+consider color. We can consider, for example, say, weight also.
+Then we can give a name. For example, shape is spherical,
+round, and the color is red,
+and the weight is around, say, 200 grams, or 150 grams. We can
+say it's an apple, and the shape is curved, shape and color is
+yellow and the weight is around 50 grams, we can say it's a
+banana. And when it is orange, we say the shape is similar to
+spherical, but the color is yellow and the weight is around,
+say, 75 grams. We say orange. So when I say, can you build a
+model which can take a which can identify or which can classify
+the fruits you came up with feature extraction. You are
+saying that, okay, these are the features can give me the correct
+answers, right? So that feature extraction is very important
+part in your machine learning algorithms. After that, deciding
+whether it is a classification problem or regression problem is
+another task that is depending upon the what kind of prediction
+model, like industry is expecting, whether it is a
+continuous values or a discrete value, if it is a continuous we
+say, okay, happy. Let us go with the regression algorithm. If it
+is a discrete value, we'll say, Habib. Let us go with a
+continuous, you know, classification algorithm,
+something like that. Okay, so how do we get this framework? If
+you look into the framework already, we got it right. So
+yesterday's session. We.
+Discussed like, what is the why? Why is our output function? F is
+the prediction function, and x is the feature representation.
+Now tell me who is going to give this function? Who is going to
+give us the function training? So when you train the model,
+model is understanding the patterns and it is connected,
+giving us the function. So the function must be in a way that
+it must minimize the error. So if the prediction error is more
+no use of the function, right? So if it is zero, then that is
+one of the best function. We can say around 5% errors. It is
+giving a 95% model is accurate, then definitely it is more
+acceptable. Even 80 to 90% industry starts adapting the
+models later, onwards they do the continuous training. That is
+another thing. Okay, so what is the testing? Now, you know the
+term testing, right? What is the testing after the training is
+done, once the model understand the patterns you are checking
+how well the model understood whatever the patterns are given
+from the data. So in given data, how much it is understanding
+that is known as a testing part. These terms you understand
+right? So now coming to the example, let us take some of the
+real time examples. Spam detection is my problem
+statement. So what kind of things you consider when you are
+taking the spam detection? So whenever an E new email comes
+in, generally, we see that an email, something which consists
+of your words, like, you know, money or lottery or some
+medicine name or something, we say it is a spam. Otherwise, we
+say it's not a spam, correct? So what you have to do, you have to
+take the text of the email, then you need to look for the words,
+like, for example, any lottery. You got a lottery, and we are
+transferring, you know, $100,000 into your bank account or
+something. They are saying that there is a property they are
+getting into. You know, in around 50,000 you are getting
+the property. It's some deal is there are some medicine name,
+okay, these are medicines which is used for this. Some so and so
+diseases nowadays is popular. They are purchasing so you say
+that it is a spam, or somebody is saying that. Okay, so
+tomorrow, 10 o'clock, we are connecting for discussion of the
+RFP. Then it is a not a spam, right? So when you have a spam
+detection, what are the things you consider? So let us see
+that, what is the raw data? Tell me in your problem statement, in
+the spam detection, raw data, is the email content? Email
+Correct? Yeah. So from that email content feature
+extraction, what we are doing, you know, in the feature
+extraction, you are trying to find the words like, buy, sell,
+purchase, offer, etc, something. If these words are there, we say
+it is a spam. If it is not, we call it as a not spam. Now tell
+me, is it a classification problem or a regression problem?
+Classification, classification, classification, classification
+problem. Why classification? Because in the target column, we
+have only two categories, whether it is a spam or have
+correct
+yes, correct or not? Yes, yes. So this is the storm detection
+we are doing. So in storm detection, what we are doing, we
+are just taking raw data and all those features steps we are not
+doing just over. We overly, like, you know, glance how model
+will be developed. We are writing here only in three
+steps. So generally, lot of steps are there. Okay, feature
+engineering and, you know, data correction and all those things
+we are not keeping here in a glance. How do you build a
+model? Generally, we take the raw data of the email content
+and the feature extraction we need to understand what are the
+feature needs to consider. Then we apply the machine learning
+algorithm to understand whether it is a spam or have. Now let us
+take another example. Medical diagnosis is done. I have a
+patient history is there. Now I need to use this medical
+diagnosis in that I need to identify whether the person is
+ill or not ill. Now, this is my problem statement. Okay, so now
+when, then what I'm going to do is whenever, for example, I want
+to build a model. Okay? Corporate hospitals, they
+approached you, and they are saying that
+you want to build a model. Whenever a person going with you
+know any diagnosis center and doing some medical diagnosis, we
+are collaborating with them. The data will be added into our
+patient history. Now we are going to compare with the
+previous history and the present history. Then we are going to
+send a message that, Okay, Boss, you are ill. Come to the
+hospital. You are going to give an a treatment, something like
+that. That kind of machine learning model I want to build,
+okay, this is one. Otherwise you are looking into the diagnos.
+You know when the person is approaching you, for example,
+you went to diagnosis, any pathological lab, you did some
+investigations. You got the report. When you are approaching
+the doctor, doctor is looking at the reports and saying that,
+okay, so there is some, you know, we say, some say some
+cells are more, which is going, you know, which indicates that
+you are ill. You need to get some treatment, something like
+that. This is a problem statement. Okay, so what should
+we do now?
+Tell me generally, what should we do? What is the raw data
+here? Health records? Is the raw data? Then we are going to say
+some of the feature extraction. This is a simple
+model, if I'm building like, you know, symptoms of the patient
+and previous medical history, and he's allergic to drugs, and
+how is, you know, the blood pressure and all those things.
+Then, when it is given to Mel, algorithms with the new data,
+medical algorithm can decide whether the person is ill or not
+correct.
+Now, another example of the stock trading. For example, we
+have a stocks, and I want to invest into the stock, or I want
+to purchase the stocks. Shall I purchase the stock or not? So
+how do you know previous history of the stock is needed, correct?
+So if you put into the problem statement, what is the raw data?
+Let us say I'm taking last 30 days of the market data, then
+I'll do some feature engineering on that. So what is the current
+stock price? What is the past, stock price, amount, and all
+those things, I am just understanding the pattern from
+that pattern, then I can say that, Okay, shall I go with the
+purchase or not? All these problem statements are related
+to classification only correct so. And again, you may say that
+lot of things we are skipping in between feature engineering and
+after that, fine tuning and all those things. No broader way we
+need to collect raw data, extract the features, build an
+ML model and deploy this is what we are doing. Okay? So this is
+also classification problem, right? Shall I purchase the
+stock or not? Only two classes? Shall I purchase? Yes, no, yes
+or no? Two classes. So it falls into which category,
+classification, category. Now, sentiment analysis, another
+problem. For example, there is a hashtag about the movie ABC. I
+want to take that hashtag reviews. I want to say whether
+the past two sentiment or it is a negative sentiment. So
+whatever the tweet they are giving about the movie, I want
+to say it is a positive sentiment and it was a negative
+sentiment, something like that. Now, tell me what is the raw
+data? Now here, without seeing the image, tell me what
+is the raw data.
+Comments likes. Comments like the tweet is the raw data?
+Correct. Tweets are the Yeah. Now after that, what is the
+feature extraction? Share count? Like counts the comments in that
+like, you know, the movie is bad, movie is good, or wasted my
+time or something, depending upon that, we are going to say
+whether it is a positive sentiment or a negative
+sentiment. And you may say that, okay, sarcasm is there
+sometimes. So that's sarcasm also can be handled nowadays,
+latest sentiment analysis models are available, which can handle
+even the sarcasm also. That means even you are telling, in a
+way, that people they don't understand whether it is a
+positive sentiment or negative sentiment that is possible
+through machine learning models.
+Next, for example, x ray is given, and you need to check
+whether the person is he have pneumonia or not. Tell me what
+you will take. What is the raw data for you?
+Excellent images of X ray. Images, okay. What is the
+feature here?
+Symptoms of pneumonia?
+Pixels, pixels. Now,
+we have a normal, you know, we have two kinds of X rays. One is
+the normal X ray which doesn't have any pneumonia symptoms or
+anything, okay. And one image with the pneumonia. Means,
+whenever you see in X ray in lungs, there is a patches. If
+the patches are there, mostly the people are previously
+suffered from tuberculosis or suffered from, you know, COVID
+or any pneumonia, they can see some patches on the what do you
+say? The X ray inside the chest? X ray, okay. So if there is no
+patch, the roughness is there, the patches. Is nothing but
+roughness in the pixels. We can say, right. So if there is a
+rough roughness in the pixels, and even not in pixels are
+there, we can say, okay, that person is affected with
+pneumonia. Or we can say it doesn't have any pneumonia or
+anything, okay. So this is one use case of disease confirmation
+or something like that. Okay.
+Next one. Let us move on. Product recommendation. Okay, so
+you might have seen when you are going to Amazon, when you
+purchase a product, nowadays, they are recommending that,
+okay,
+the person who purchased the product, which you are
+purchasing, he's purchased another thing. Also, they do the
+combination, right, yes or no, yes, whenever you're purchasing
+through Amazon. So they say, Okay, I'll give you one more
+thing, because I have implemented in one of the e
+commerce website, similar kind of things as a consultant. I'll
+tell you something so.
+If you might have seen when you are taking an Amazon, okay, so,
+so, for example, say you got a salary at one every month of
+first you are getting in up to 10. So whenever you are cash and
+delivery, you are doing in this, in between these dates, you are
+paying that cash and delivery and taking the item, okay? This
+is one thing you are doing or another thing what you are doing
+is most of the time, in these days, you are choosing, like
+directly paying the amount, and you are making the product
+delivery to a door. After that, between 20 to 30 days, for
+example, in the length of the month you are doing body
+shopping. That means, when you look into the something offers
+you are purchasing, and you are selecting cash and delivery, but
+when it's coming to your doorstep, you are rejecting,
+okay, I don't need it because at the time you got something like,
+you know, curious about the product, and you are thinking
+that it is getting in a, you know, cheaper you are
+purchasing, but later on, for you deciding that most of the
+time now, I understood your pattern. What is your pattern?
+Your pattern is in between one to 10. Generally you do cash and
+delivery, are directly paying. You are taking the product. But
+in between, these days, even if you are doing cash and delivery,
+you are not taking the product. So what should I do now? As AI
+intelligence, what they will do if you are trying to purchase
+something between 20 to 30, they don't give an option of cash and
+delivery. They says that this product doesn't have cash and
+delivery. You have to do the payment when it comes you drop
+the idea of purchasing, right? So that way, the the cost of,
+you know, the logistics, they are decreasing. So that is also
+implemented in E commerce. Have you came across these things?
+Have you observed or not? Yes, sir, yes. Mostly, when you they
+understand that you are doing body shopping. So previously it
+was not there, even in the Prime members, they used to do it
+right easily, because somewhere you are purchasing but nowadays,
+after AI implementations, their understanding another you might
+have observed, what is that previously, when before you're
+purchasing the product. Okay? Used to see the reviews, right?
+So generally, we have a habit of looking at the reviews. Dum, if
+the reviews are 4.7 4.5 without any hesitation, we'll purchase
+the product correct. If the reviews are low, we don't
+purchase it. So what they did is, when this reviews, going
+through the reviews also big task for the purchaser. They are
+giving a comprehensive summary for every product. Have you seen
+that?
+Yes, purchasing summary saying that most of the time user, they
+will reject the product. They don't keep it. Most of the time
+the product, they'll keep it like that. So instead of going
+through all the reviews and taking a decision by looking at
+this comprehensive summary, you can take the decision correct.
+So that is the thing that is making easy for a customer,
+because nowadays, customer doesn't want to spend a lot of
+time on the product recommendation all those things.
+So that is the one option we are doing. So AI can give you
+product recommendation and purchase recommendations and all
+those things. Okay, this is where another thing you might
+have seen when you observe something like a Netflix when
+you watch any movie, then it will say that similar kind of
+movies here would you like to watch? Because, for example, you
+are watching a movie, a sci fi movie you are watching. So
+Netflix will suggest you that, okay, there is a sci fi movies
+existing. So it doesn't want you to go away from Netflix, okay?
+So they will give you another recommendations. So that kind of
+recommendations are possible through AI. So how do we do that
+cleansing? So raw data is what product reviews, customer
+purchase history. As I said, feature instruction is we are
+looking at the rating. What the user type? Is it a primer, you
+know, prime user or non prime user or something, then we can
+say that, okay, this person is likely purchased or unlikely
+purchase. If person is unlikely to purchase, what I will do? I
+will change cash and delivery to
+payment directly by credit card or something like that, correct?
+So this is where the product recommendation also can be done
+through AI. Okay. Next one loan approval. This
+is a very simple example. For example, anyone on the bank
+approached you and they said that, can you build a model
+to grant a loan or not. Previously, you might have seen
+if any bank want to grant a loan, they used to come to your
+address. They're taking eight days, 10 days. They are
+investigating. You're going to a office, and they're asking with
+the HR and all those things they used to collect. Then they used
+to decide whether to grant him loan or not. But nowadays,
+within a moment, they are taking a decision, should we miss?
+Shall we grant him loan or not? How they are doing that? So when
+they are approaching you, you are asking them that, okay, do
+you have previous history of the persons, right? So you have
+previous history, like civil score. Is there? He's a
+defaulter, for example, or not? For example, He's staying at the
+particular.
+Address for how many years something depending on that if
+they are granting the loan. Okay, you can build a machine
+learning model. So in the future, what you can take, you
+can take, for example, what is the civil score of the person,
+and you can take is a default or not, and you can consider one of
+the feature as, for example,
+you know how many days he's staying in the particular
+address. If these three things are satisfied, we can grant him
+a loan. If any one of the thing is not satisfied immediately,
+model will say, don't grant him a loan. So in loan approval
+system, what is the input? Now, input is the history of the
+previous borrowers, all the history of the period previous
+borrowers. In the feature extraction, we can consider,
+like, example, civil score. We can consider, are we according
+to the country to country vary, right? So in India, we consider
+civil score, and we can consider the address for how many days he
+is, you know, staying in that. Some people, they consider the
+salary, also okay. So according to that, we say, okay, the
+system can say, approve him alone or reject the loan. So
+this is also kind of regression or a classification,
+classification, it is a classification. Classification,
+perfect. Okay. Now face recognition. So when an image is
+given, I want to say whether it is a Bahubali or not. So a very
+simple when image is taken, we are going to see the distance
+between, you know, eyebrows, and dispense with nose to eyebrows,
+and those features will be extracted. And whenever a new
+feature is given, any image is given, it will calculate those
+things, and it will say that, okay, the given is above only or
+not. So face recognition kind of thing, okay. So what you will do
+now here, we collect raw data. Just now we have taken an
+example of a cats and dog, right? So we take all the raw
+data, then features will be pixels only pixels, that's it.
+So the pixel distance, everything will be calculated
+and algorithm given to the algorithm
+like, you know, deep learning algorithm, which can say if it
+is a Bahubali or not a Bahubali, something like that. Clear. So
+this is about the image recognition examples. So what we
+are trying to say is any problem statement. For example, you want
+to consider, first of all, we need to collect the raw data,
+then do the feature extraction, then implement a model
+algorithm. These are the basic steps we need to follow. Again,
+raw data, a lot of things will be there. For example, raw data
+you collecting from a JSON format, or you're collecting
+from a database. How do we do that? Or no SQL databases.
+Again, that is different thing, but in a generic format, we need
+to collect raw data, do the feature extraction, and then
+implement the ML algorithm. This is the complete ml authors, we
+call it, okay. So that means how any problem statement can be
+taken and considered for machine learning algorithms, depending
+upon the problem statement again, how do we rectify the you
+know what you pre process? The data is different. Features is
+different. Algorithm implementation also is
+different. Okay,
+so wise detection, for example. Another example, while detection
+is for example,
+let us say when I am talking for an hour or three hours, or
+something like that.
+So you are going to take the amplitude of the sound, and you
+know, intensity of the sound, then you are saying, Okay, this
+voice is happy voice
+you might have seen
+example of, like, you know,
+anybody saw the Rajnikant robot movie? Something?
+Okay? So there they will try to open the laptop, remember, in
+the absence of radikan movie,
+yes, they bring the different, you know, mimic artist artists,
+and they'll say the password, but system doesn't identify, and
+it gets locked Correct. Actually, it's a Shivaji movie.
+Oh, sorry, Shivaji or something. Okay, I don't recall it. Okay,
+anything? Okay. So, yeah, thanks for that. So there it. Model is
+identifying. What is the voice, right? So what is the features?
+Tell me now we take the voice, so generally, in the voice, what
+do we have? We have the intensity will be there,
+amplitude will be there. So people who study physics, they
+can describe better than me,
+yeah, modulation,
+modulation and those things we can identify. And depending upon
+that, we can give a label. Okay, this is Habib. This is, you
+know, AJ, this is train. Was something like that, correct? So
+while detection is possible in AIML, how do we do that? First,
+raw data is the speech data. So you are taking a speech of one
+minute or two minute, then you are going to find, you know,
+energy per the frequency, amplitude of the signals,
+whatever it may be. So.
+This is just a it is not definitely these features. Only
+according to your experience, we are going to collect those
+features, and you are saying whether the voice is detected or
+not. So when you are training the model, it can detect the
+voice, yes, otherwise, no. These are all the some of the
+classification algorithm. Now, if all those things comes in,
+how ml will be implemented in lot software system. In a
+glance, just we'll see, okay, so for example,
+here is the buyer he's approaching to any for example,
+opening an Internet Explorer browser for amazon.com or
+abc.com
+when he logs in, we are going to get buyer information right. So
+when the bear information comes in, we'll give that bear
+information to the ML model. Now, ML model will understand
+the pattern. What is that pattern? How in which date to
+which date he's purchasing, which date he's rejecting, all
+those information is available, right? So ML is ready with that
+information. Now, when he's doing some online purchase,
+anyway, this is different thing, anti fraud and all those things.
+When it's getting into the payment gateway, he's suggesting
+whether cash and delivery or No, no, me, PS or something, and the
+transaction is completed, and then he can purchase the model.
+So here the ML model is helping in taking the decision,
+recommending the products. So when the buyer logs in, all the
+patterns will be given to the ML model. Now ML model is ready to
+take the decision whether should he, should I offer him a cash
+and delivery or prepayment option so that he can purchase
+the product? Okay? So this is the way the role of ml can be
+implemented in a simple glance to understand how ml will be
+implemented, okay. Now,
+for example, we can take
+sort of sin, okay,
+okay. Now, let us take a simple problem statement. I want to
+hear from you people, okay,
+like,
+have something
+given a paragraph, okay?
+I want to when a paragraph is given to a model, so let us
+think that you're already aware of generative models and all
+those things. Just give me a generic solution for that.
+Anyway, classical machine learning models will not solve
+this problem. Okay, so think, how do you put in a similar way,
+given one paragraph, student is giving a paragraph, I want to
+classify this paragraph. This paragraph is stop talking about
+a sports or it is talking about politics
+like this. So tell me, how should you do this? What is the
+raw data?
+Raw
+data is
+collecting the data from newspapers, blogs or like that,
+correct, that's internet way
+get the data, data, then feature engineering. What you are doing,
+you are depending upon the keywords. For example, Cricket
+is there, boxing is there, or something you are saying it is a
+sports and something talking about, you know, some
+other prime minister, some things chief minister, we say it
+as a politics. Now, when the text is given, we build the
+model. When the text is given in the field, we see some keywords,
+like, you know, any cricket, football or something, we say it
+is talking about sports when it is some names are there, for
+example, PM, cm, or anything, or talking about the geographical
+information, something we say are talking about some of the
+benefits to the, you know, our income tax, or something we say
+it is talking about politics, or something like that, correct?
+Yes.
+So any problem statement generic. What we do the overall
+we are going to take a raw data, then we are going to do the
+feature extractions part, and then we implement the ML
+algorithms correct. This is the like a simple understanding of
+ml authors now open to questions. Jump in, come on.
+Please, raise your hand. Sequencing so in a sequence
+where we can unmute and you can answer, please, okay,
+go ahead.
+Hi, my.
+Small question is, according to the
+maybe the day advanced, so you showed a big image, okay, and in
+it made like Bahubali,
+so the extraction was,
+we lost, you, Anubhav. You okay, mana, you can go ahead.
+Yeah. So the model we need to create, the raw data when we
+given the picture, or we given the strength, then it is
+realized that it is a bowel or not. So we will need that lot of
+data, future data, or data is lot of movies, information, and
+all these things based on that will create that.
+Yeah, yeah, go ahead manager this. Then we'll put it to
+bowerly picture. Then it will decided that from the
+calculation it will provide that is about picture or not, right?
+Yes, yeah. So let us do one thing that Bahubali example. Let
+us say, Okay, so here, what is the label? Here, Bahubali.
+Okay, and what is the label?
+Not? Bahubali, correct?
+Okay. Now when you upload the image here, so when you upload
+the image of Bahubali or anything, when you say,
+here, not Bahubali or uploading screen is not displaying, not
+displayed. What happened?
+This. Okay, so if you're unable to see please log off and log
+in. Okay, log off and log in. Hi, Abby. I'm back. Sorry. It
+was network issue. Just give me a minute. Let me answer this,
+and I'll come back to you. Okay,
+Bahubali answered same question was given. Okay, so now we have
+given some baho Bali images. Let us say 10 images, 20 images. Now
+not bauble images, 1020 images we are giving okay. Now here in
+the training model, we are going to use deep learning model so
+you don't need to define the features. Deep learning model
+will extract the features. It will understand the difference
+between this, you know, ears, pixels and everything. Now it is
+ready to with that features with a Bahubali, and this features
+with the not Bahubali. So when you take the model and when you
+give the input, it will compare with those pixels. If those
+pixels are similar, then it will say it's a Bahubali. If the
+pixels are not similar, it will say it is a not Bahubali. So
+here we are separately non no need to build any What do you
+say? Columns, automatically. Model will take care of those
+things. Which models will take? We call it as a deep neural
+networks. They will take care of those things. Clear,
+okay, in on chain picture, then how that will take. It is a
+directly say that is not bound, no, no unseen picture. What it
+is going to do. It is going to convert the pixel into pixels.
+Right then already have pixel data. That pixel will be
+compared with the given pixel. If both are same, it will say
+it's a Bahubali. If it is different, say not Bucha Bali.
+Got it? Yeah,
+yes. Ravindra, what's your question? Maybe this is a little
+advance, but just wanted to check like on the paragraph
+example, where we are identifying and classifying
+whether it belongs to political or sports. So what if there are
+negating statements, which is about a game, but they say this
+is not a sport,
+right? So then it is containing sport and about politics as
+well, both things mentioned in the same paragraph. So great.
+Yes, that depends upon how well you are labeling the data,
+right? So as a subject matter expert, how do you label the
+data? If you have a good labeling experience, definitely
+the you know, classification would be very good. So those
+things will handle at the time of a labeling of the data and
+pre processing of the data and amount of the data you're
+feeding to the model to understand those things. So you
+have to take care of all those things.
+Yeah. Balaji,
+yeah. Actually, I'm coming from the development. So my question
+is, like any web request, right? We will search from the database
+and from the server, it will respond back. SAP response,
+right?
+There are multiple even there are bits of data is given to
+train the model, right? Yeah, if it is a bow Billy, right for
+that, you would have given some data when at least GB of data
+this and stored everything. So when I compare as a database, so
+is it like every time? Will it compare all those pixels,
+whatever the store data do?
+If I give the new image to
+so we need all those pixels, whatever given as data.
+It's like, because it's happening with in micro second
+sites.
+Okay, the biology question is balajis Question is, we have a
+database. Some millions of data samples are there, okay? Now,
+when we do a search query, it is going through this data and
+extracting the information. This is happening in databases, okay?
+And that to be in the databases to make efficient, we do some
+data structures, first in, first out, and lot of data structures.
+We write it to get the search perfectly okay. Coming to the
+visualization. What happens is, when you give millions of data,
+finally, it is building a sample pixels which are having most of
+the features of your body, only one pixel image is there. Now,
+whenever a new image comes in, it will compare with this one.
+It will not compare with all the images understood. So there is a
+one already. It understood the perfect pattern. It will compare
+with that pattern. If any one of the pattern matches, it will say
+it's a Bahubali. If you are training with 1000 samples, it
+will not compare with all 1000 samples. Okay,
+okay, okay, now that way you will see the result in a moment,
+sir. The pattern is not the picture itself, but it's like
+some calculation which tells like we created that mx plus c,
+right? Something similar to some kind of a calculation which can
+be, yeah, that. So I'm not taking about those calculations,
+because that will be done by convolution neural networks. We
+call it, so deep neural networks, that will take care of
+those things. Okay, think like for because as a we are into
+baby steps of machine learning. Thing that once pattern is
+developed, then new pattern will be compared. So that will be
+have a lot of lot of mathematics, like, you know,
+cosine similarity. We call it. Using that cosine similarity, it
+is going to see how similar the pixels are there. So then it is
+going to say Bahubali or not, like that, okay, even in the
+texture data, also, we'll see the cosine similarity.
+Yeah. What is the question?
+Come again. Vector embedding is what we are in there, introduced
+in
+the
+previous vector embeddings, yeah, numerical format of the
+data. Yeah,
+hurry.
+Okay, let me take the questions from the chat box. Bahubali
+means here only, it compares the features of only Prabhas
+picture, or all the characters in the movie Pavan. Simple use
+case, only Prabhas picture. Only Prabhas is the Bahubali, right?
+So that's what is an example, okay, if you want to compare all
+the movies and identify the Prabhas, you can take,
+you know, Prabhas gesture in different movies, and you can
+train the model. And when you're given image, it can say whether
+it's a Prabhas or not. Okay,
+I guess we are moving too slow in topics. And mean, today,
+three hour session, we only covered data set splits. Nizar
+Babu, see, we are into the track. Okay, don't worry. So
+first sessions, as we planned, according to the timings only.
+So don't worry, we are not moving very slow. Because some
+people they say that habit is going very fast. Some people
+they say that very slow. We have to be in neutral, right? So if I
+start, I directly. If you want me to teach deployment, I can
+teach. Not a problem. You want me to teach directly. I will
+take technical you. You give me any problem with the
+architecture level to implementation I can do, but
+that is not I need to inject my knowledge step by step to you
+people in every unit. So one unit I'm taking, second unit,
+other people are taking third unit. Other everybody who
+specialized are coming in and they're giving the knowledge.
+Okay, so
+slowness is in the first two sessions is needed for
+understanding. Once you get clarity and everything,
+definitely, you will be, you know, in the fast ways. Also you
+can adapt that, okay, that is my, you know, intuition, okay,
+yeah, training. Of the videos also performed similar, but
+instead of, you know, as I said, No, when you are taking the
+training generally, here, you have to choose the environment.
+That means, for example, here we have a ram. You cannot train
+videos or audios or something pictures on the ramp. You have
+to change your run time. You need to get a TPU Tensor
+Processing Unit. Then it will turn okay, it will take a
+moment, and then it will training will be taken. So that
+depends upon, like, you know, how we are implementing the
+algorithms and all those things. Okay, so let us take another
+question. AIML Kumar, what is the question? AIML, yeah, so if
+you upload the same image again and again, so when the first
+time we upload the image, it will.
+Predict, and it gives us the output bubble and non model the
+second time. If I give the same image again, it will prediction
+of predicting again. Can we store the first input output?
+Store somewhere, and we can use that output for giving like
+successory predictions yesterday. We call it as a Redis
+intermediate database. We can store it in Redis, or you can
+route it in kubeflow, instead of every time using, you know, date
+your model, if you have the similar kind of image, you can
+go to the Redis Cache and you can use it. Okay, yeah,
+yeah. The anchor, what's the question? The
+hacker, yeah, this regarding the false positive.
+So
+normal use cases, it's fine if there is a false positive, but
+are we in a state to discuss fast positives? Did we
+implemented any algorithms?
+Okay, yeah, I can wait. I guess. Okay, no, no, just tell me.
+Okay, I can give you the answer fast, fastest.
+For example, I'll give one example. Okay,
+let us say yes, yeah. I'll give you one example to everybody to
+understand, very simple example. Let us say, forest department
+approached you. You are doing. AIML, course, better. Good.
+Okay. Can you implement an algorithm? We are going to put a
+camera in the, you know, forest, and then whenever an element
+pass by, you need to identify the name of the element and what
+time it passed by. You have to, you know, log into a system. You
+said, Okay. So then you are asking, how many animals are
+there? He said, 100 animals are there in the forest. Now you are
+asking, Can you give the 100 animals data? So they are giving
+five, five samples of 100 animals. Now what you did? You
+train the model, very good. Then you kept the model and you
+checked with all the 100. You didn't get any false positives.
+It's identifying perfectly, okay. Now, when you kept your
+camera in the forest, mistakenly, dog entered into the
+forest, okay. Now, when dog passed by camera, what do you
+think the model say? This is not the animal in the forest or what
+you are expecting from the model?
+Anybody answer?
+Identify it as a fox, maybe me or nearby features, which are
+the near Fox or zebra or any nearby feature, it's
+identifying, right? So that is a false positive or not
+false positive? Yeah. So how do you avoid those false positives?
+Again? One thing is make that dog doesn't enter in the first
+forest. This is one thing which is not possible. So we need to
+train our model saying that. Okay, there is up to some
+threshold, if that features are matching, look into that, and if
+that features are not patching, say this, no, this animal is not
+in the forest, something like that. We can do it right. So on
+top of that model, we check the probability of the model, how
+well it is understanding that is, we handle the fast
+positives. Okay, yeah, thanks.
+Only thing I mean, as you're talking about mission critical
+systems like hospital where in surgery is trying to check that,
+that's where I was just trying to ask about this false
+positive. So during that time, if any is even the single false
+positive, can lead to
+trauma situations there. So such cases, as we are actually
+talking from basics. So I just want to see, like,
+understand, that's the reason I just asked, like, all the stages
+should be dealt very carefully to handle the recognition
+critical situations. Yeah. So nowadays they are performing
+robotic surgeries, also, right? When the robot is dissection,
+instead of,
+you know, do the surgery for the heart. It doesn't identify
+heart. It is going to the liver or somewhere, it is doing the,
+you know, any operation. It's a false positive, right? So when
+you are getting that, generally, we put the threshold to avoid
+that false positives. So how well it is understanding so
+especially in medical systems, they'll see accuracy threshold
+is very good. Then only they go ahead, otherwise they'll stop
+it. That's fair. Okay. Anyway, more techniques are there to
+avoid the false positive that is will be discussed when we are
+discussing about the deep learning in depth. Okay? So just
+today, you are just trying to understand how model will be
+built in the overall, you know, structure,
+okay? Kishore,
+so my question, yeah, can you hear me? Yeah, I can hear you.
+Kisho, go ahead, yeah. My question is, with respect to x
+ray example, habit, like in X ray example, you said you give
+an x ray as an input, where it will identify the some patterns
+and be able to tell whether it is a in law or not, right? So,
+instead of taking an extra if I take the x ray report data and
+still classifies, does, if I take the report data as a into
+account, still, still, it will be a classification or it will
+be a regression. It's a classification only, even though
+you have a continuous values and it has
+CCC.
+X ray data, what do you have? You are saying that some pixels
+are there, something like that. But end of the day, the
+combination of x ray and the pixels saying that you are ill
+or not, your target column is saying ill or not, right? So the
+target column consists of only two variables, so that is
+classification only right. Okay, even though the the data which
+is coming in the raw numbers instead of the image, still,
+yeah, not a problem, but, but the raw number, it is coming.
+But the raw number is not the prediction column, right
+Kishore, it is a feature, feature, yeah. If the raw number
+is a prediction column, then you can say, for example, if you
+have hemoglobin level, is there? Okay? So you are saying
+hemoglobin level low, or just you want to say, give the
+numbers only. You don't want to say low or high. You want to
+give the hemoglobin number. So the number is the target column.
+So then it's a regression. If you say between one to seven is
+anemic, seven to eight non enemy, two columns or two
+variables you are assigning, then it is a classification
+Correct. Okay. Yeah. Understood. Yeah. J pal, yeah. Welcome,
+yeah, sir,
+the medical example you told right in that what is trained
+data and what is validation? One we can consider,
+see train data is the one of the X rays, who is having pneumonia,
+not pneumonia, and all those things, right? So two kinds of
+data, we have pneumonia, not pneumonia, then test data is
+test data can be, again, the part of the training data we are
+keeping as a right. That is what you are trying to test it. And
+if it is giving good accuracy, then we'll go with the
+production
+like that. Got it? Yeah? Chaitanya,
+hi, good time for me to unmute. Hopefully I'm audible, but
+thank you so one doubt,
+My doubt is regarding the test data and model preparation
+we were talking about the
+one to one mapping of the post data.
+So how would I have a small problem? How would we, how would
+model preparation, handle this?
+Stop me if I'm going into topics, but sharing it here,
+what is your question first, I didn't understand your question.
+So the problem statement is no problem statement, what is the
+question?
+Question is, how will model identify the similarities
+between the input, input data set that we provide? Okay,
+similarity between that, right? So that's it.
+Okay. Now tell me, for example.
+I have, for example, as a human being, when you look into two
+images, how do you identify the two images are similar?
+We'll we
+will extract the features, and we'll identify if the eyes are
+looking same. Okay, good. Now, okay, good. I'll keep in front
+of you two cars and say that the two cars are same or not, not
+internal, external, technically same or not. What do you do? You
+will see the engine RPM, and then you will see that what kind
+of engine they have, and all those things both are having
+similar, you say it's a similar All right, correct,
+yes or no, okay, like that kind of statistical methods. We have
+algorithm internally. This consist of, okay, so every
+algorithm, they have different intuition. So for example, when
+linear regression is there, but still we have decision tree
+regressor implemented. People, they started building decision
+regressor. What is the reason because the math behind linear
+regression was unable to identify the correct
+relationship? Then they get with another technique in the
+mathematics, that is a decision tree, dividing into the trees.
+Then they said, No, it is not doing well. Then we go with
+another one, support vector machine regressor. Then it's not
+doing let us go with the deep learning like that. Day by day,
+lot of algorithms are coming in which are going to have
+different mathematical intuition behind that, and that is going
+to identify the similarity and giving the accuracies. So in
+your case, if one model is not performing well, that means the
+mathematics behind that model is not able to understand the
+similarities, then we'll go with another algorithm. So as a data
+scientist, your role is hit and run. You take the different
+algorithms and do it. So it is not like all algorithms are
+similar. Mathematical intuition. Everybody have their own
+mathematical intuition. So your job is taking that and finding
+the similarity. For example, two texts are there. How do you
+identify two texts are same. For example, I'll give you an
+example. There is a
+woman
+and Queen. Do you think both are similar?
+Men and King is similar? Which one is similar? Woman?
+And queen are similar. How do you know
+both of them are talking about women?
+That is, in this words, we are going to use cosine similarity.
+We call it okay, the dictionary cosine similarity we use so that
+cosine similarity will give us the similarity between the word
+textual data. So similar way when you're having some sample
+data in numerical format. So statistical methods built in the
+machine learning algorithms, they will help us finding the
+similarities. Okay? So as I said in the beginning, you don't need
+to worry about those things. Just implement the algorithm,
+look for the accuracy and go on if the accuracy is not good,
+change algorithm. Or if you want to do a research and say that,
+no, this algorithm is not performing well somewhere. I
+need to make the Tweak. Then get into the algorithm. That
+complete code also available. Just if you go get into the SK
+learn, you will see the complete what do you say? Open Source
+already. Okay. SK, learn, for example,
+you can see this one. This package consists of all the open
+source code. You can take it, you can refine, you can name
+with your name, linear regression with some other name.
+You can keep it and you can apply the model. If open source
+community accepted, understood. Is that clear? Yes,
+okay, thanks a lot. Yeah. Welcome
+next one, Fox. Okay. Mission critical systems, you look for
+accuracy close to 100 it all depends on risk taking, Suresh,
+it is not like, okay, so there we keep the threshold. As you
+said, accuracy also matters a lot, 100%
+Gaurav, as you said, no human in loop is that is also another
+type of, you know, solution.
+We can have a manual step wherever model accuracy is less
+than threshold, yes, we can do, sir, in a self driving sample of
+green signal based on distance it captured from the position of
+green light will be different than captured image. How we
+detect algorithm just a query, yeah? So yes, sort of
+like, you know, as you said, better algorithms, you know, not
+only like a classical machine learning algorithms, like
+supervised, unsupervised, as Saurabh said, we are going to
+use reinforcement learning algorithms. It is something
+like, you know, reward and punishment. So that kind of
+learning happens over there, like, for example, when you are
+playing a Super Mario game, when you hit, I think most of the
+people you played Super Mario game, right? So that is a simple
+example of reinforcement learning. Okay? So when you hit
+an object, the Super Mario size will decrease, but when you hit
+a brick, you will get a full you will the size increases.
+Remember, that is the price and the punishment is decreasing. So
+that way you will fine tune the algorithm again and again. That
+will reinforcement that way
+you didn't play Super Mario game. Nobody
+knows
+Super
+Mario, Super Mario, and this is what image, right? Super Mario
+you might have seen,
+yes,
+Super Mario, Nintendo game. Okay, so there you are hitting
+the food you are going to you are becoming bigger in size. And
+when it is, you know, size decreases. So that kind of
+learning is that that comes into reinforcement learning. So
+nowadays, a lot of improvement is there in reinforcement
+learning people are adopting so that is where the self driving
+cars are working on, okay,
+okay. What else question? Image from photo in one of the input,
+it will also have input from the map, based upon location of the
+car, speed of the car, everything decide the action
+actually not only a single for example, if you are looking at,
+you know, Mercedes or Benz and all those cars, they are going
+to have not only a single camera. They are going to have
+four to five, six cameras. They can, you know, who is besides
+you, and what is the distance, and everything will be
+calculated according to that. It will be driving, okay? So it is
+something like human being, human being having only two
+eyes, right? So it is going to have front eyes, back eyes, and
+the side by eyes, like the cameras, are the eyes. They are
+behaving. They are giving and streaming input to the model.
+Model is then taking a decision, calculating the distance, and
+all those things. Okay,
+so that is actually comes into reinforcement learning. So that
+is a part, you know, unit four will discuss. Yes, sir. What is
+the question?
+Hi?
+So my question is regarding so you had mentioned one term
+called K fold value during the validation when we're explaining
+the training test validation. So what does that mean? Can you pay
+further elaborate on that? That's what I said, Right?
+Careful. Validation means in the training it will divide into
+some folds, for example, 1234, folds. This is a training data,
+and one fold will be validation. So it will train with this and
+then compare with the test with the validation. Now it is done
+validation, which one it used? Validation? 1234,
+Fourth part it used as a validation. Right now it will
+three as a validation. Now it will take remaining as a
+training, then it will validate over there. Then it will take
+this as a validation left over we call it remaining. Will be
+training this as a validation. So every part will participate
+in validation. So then we are going to get accuracy of four.
+Then if the accuracy average is good, then we'll go with the
+testing. Deployment. Clear, okay,
+okay, understood. Thanks, yeah,
+okay, so let me give you a brief what we discussed today. So we
+started with the ML problem statement.
+Okay. So there we discussed about, how do you take a use
+case? It must be clear. You need to know from where we could get
+the data. And you know, we need to understand which algorithm.
+Then we take one use case of whether a cat and dog use case
+we took it. So there we said that we need to collect the raw
+images. Second thing, resize the image, or denies the images.
+Third thing, do the feature extraction. Fourth thing, build
+a model, for example, and evaluate the model. Now, for
+example, after doing all these things, if the model is not
+doing good when a cat is given, model is predicting a dog, that
+means there may be a problem with our data, or there may be a
+problem with our pre processing technique, or there may be a
+problem with our feature engineering or maybe the model
+which we selected may be a problem so according to our
+input. So first, change the model, not enough, change the
+feature engineering technique, pre processing technique, then
+collect more data, so that way we can check model accuracy.
+This is what we discussed. Then we discussed in the second part
+as a ml avatars. Then we started with basically, what is the
+definition of machine learning. So generally, if a PC behaving
+like a machine, you know, intelligent system, without any
+external programming, we call it as a machine learning. So for
+that machine learning, Kevin Murphy is given a definition.
+That definition we are adapting. So the machine learning model is
+getting the knowledge from data. Data is the source of the
+knowledge for machine learning model, okay, after getting this
+definition, then we took some of the examples, like, how do we
+identify a spam email. Take the text for data. Look for the text
+where you have something like, you know,
+money or something like that. You say it's a spam. It's not
+otherwise, we say it's an spam. Then we took an example of a
+stock example. Then we took an example of a loan examples. Then
+we took an example of, for example, x ray classification.
+We took it, then we took it example as a human being
+identifying whether it is a babali or not, then I have given
+an example of like, you know, in the forest, you want to identify
+an animal, something like that. So those are some of the use
+cases we discussed. Okay, next part is in the next session,
+mentor will discuss with you, like, what is the data pre
+processing, and what is SK learn, and what is a pandas, and
+these things. Once you have done with this, in the next session,
+after that, I am going to jump in. We'll start with the linear
+regression algorithm, real implementation. How do we do the
+linear regression algorithm? And one by one, algorithms will be
+jumping. We'll implement that. We'll understand the mathematics
+behind that. Why this algorithm? Why the fast positives are
+given? How do you fine tune everything? Step by step, will
+take each and every algorithm will dig deeper and will
+understand okay, so hope today's class is clear,
+yeah, yes, yes, sir, this video and PPT is used to be uploaded
+in LMS. Yes, yes, they will upload into the LMS
+for any test. Now we have a test at 123, right? What? Yeah, not
+needed. Those things are not needed, okay, yeah. And the
+other thing is, I think because of various discussions regarding
+question answer sessions, maybe people are suggesting that we
+can consider nine to 1030 continuously, the training
+teaching, and then 1030 to 11 is question, something like that.
+If you can come with a template, next big size and then lower the
+questions after the class, that would be great. Sure, sure. No
+problem done. I'll consider those things.
+Yes, come on, all the trainers, not only you, sir, sorry to say,
+we'll see no problem. No, we'll consider that, and we'll see,
+okay, how well end of the day see. Success is our criteria,
+right? So end of the day we have to get everything okay, agree,
+sir, in the lab and lecture examples that were shared with
+us on the portal. There's a fold
+training and testing. So are we considering that it will be
+covered, or we attempt the labs and just close it in which way
+they're not very actually, it is a lab lab experiment. You have
+to just attend. It Okay, going forward in that.
+Sessions, it will be covered. Okay, when we are writing an
+algorithm, we'll cover again. Okay, we can just finish those
+sessions. Yes, just to do it. Okay, all right. Arnab, ah,
+Hi, sir. Actually, it's not related to today's session. I
+just had a general query in today's lab, like, when the
+mentors will be allotted, or something like, at least. I
+mean, in my recollection, I didn't get an email regarding
+this.
+I'm not clear how
+this level discuss with you, okay,
+lab and all those things. Yeah. Kishore, you have a question.
+Yeah, one question on the programming language, a bit like
+I see you showed the teachable machine where you did some model
+right, where it is generated according JavaScript. So I just
+want to check whether the JavaScript also has good library
+where we can build these models and do no just for, you know,
+graphical interface these JavaScript,
+okay, just to show you, okay, okay, because when you showed
+the code ready. It was purely on the JavaScript.
+So, because already we downloaded the model and just we
+are TensorFlow supports only JavaScript for particular deep
+learning models only. It is not a full support. Is there? Okay?
+So definitely you need to have a fast API, convert that into REST
+API, then consume through any programming and a problem. Okay,
+yeah. Raja Lakshmi, yeah, hi, doctor. So in between the class
+you are mentioning we are covering in the unit two, Unit
+Three, like that, right? So where I can see the document,
+unit wise, so that in your elements, they will upload
+everything. And if you get into the, you know, the curriculum,
+you can see that, okay, intelligence website, you have
+that. Okay, sure, maybe, tonight they will be uploading. Okay,
+thank you, yeah. Okay, so here is the notebook to share with
+you people. I think somebody missed it. Okay,
+so let me share the notebook again.
+Sorry. Is the same one that you shared yesterday.
+No, no, this is a new one
+today, and
+the PPT will upload in that site. Yeah, PPT will be uploaded
+in your LMS, okay.
+Thank you. Sorry, sir. One question, there is a lab in our
+program schedule from 2pm to 6pm do we have to attend that? Is
+there a lab that you have to consider, you know, logistics
+only regarding the session you can ask the question,
+okay,
+connect with your Raju, can you answer that? How you're going
+forward? Okay? Saurabh, what's your question? Saurabh,
+okay, sorry. Srinivas, what's your question? Srinivas,
+before we discuss it on paragraph model,
+we get the data from raw data from internet. How do we get
+just I'm asking,
+how should we get that from internet, through API? How can
+we get it? Yeah, so we use a beautiful soap, web crawling. We
+do the web crawling, we call it. So first of all, we have to look
+for the website whether it is allowing or not. For example,
+amazon.net is there? Amazon.in then you just write down robots,
+dot txt, okay. So it will say here, it says that agent, it
+says whether it is allowed or not. So allow, what are the
+things allowed to do, the web scraping you're supposed to
+allow. If it says you are not allowed to do you are not
+legally, you are not supposed to do web scraping. Okay, so these
+are the sources we do. It says completely disallow, then you
+can't do anything.
+Okay, yeah.
+Next, yeah. Ravindra. Ravindra, yeah. So how, how do we decide
+what is the acceptable score of testing, right? So, so that we
+go into production. So what is the current standards that we
+follow? Yeah, right, when the currently depends upon problem
+statement to problem statement. Okay, so generally, industry
+accept more than 80% first industry will accept and they'll
+say that it will be kept into continuous learning to again
+fine tune and get more accuracies. Okay, so generally,
+80 plus accuracy is acceptable. Ravindra,
+yeah. Saurabh, you
+have any questions or No, sir. No sir. Thank you sir. Thanks.
+Okay. Thanks a lot, everyone. Thank you for your patient
+listening.
+I hope I have answered all the questions and people you know
+who is already there and who have some knowledge and
+patiently they are listening. Thank you for them, also. You.
